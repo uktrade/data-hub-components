@@ -1,6 +1,6 @@
 import React from 'react'
 
-class ActivityFeedFilters extends React.Component {
+export default class ActivityFeedFilters extends React.Component {
 	render() {
     return (
       <form>
@@ -10,5 +10,3 @@ class ActivityFeedFilters extends React.Component {
     )
   }
 }
-
-export default ActivityFeedFilters

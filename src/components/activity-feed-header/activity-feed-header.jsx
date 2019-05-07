@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import ActivityFeedFilters from '../activity-feed-filters/activity-feed-filters'
 
-class ActivityFeedHeader extends React.Component {
+export default class ActivityFeedHeader extends React.Component {
   static propTypes = {
     totalCards: PropTypes.number.isRequired,
   }
@@ -21,5 +21,3 @@ class ActivityFeedHeader extends React.Component {
     )
   }
 }
-
-export default ActivityFeedHeader

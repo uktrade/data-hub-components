@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders empty feed 1`] = `
+Array [
+  <article>
+    0
+     activities
+    <button>
+      Add activity
+    </button>
+    <form>
+      <div>
+        Show me 
+        <label>
+          <input
+            type="checkbox"
+          />
+          My filters
+        </label>
+      </div>
+      <div>
+        Activity type 
+        <select>
+          <option>
+            All activity
+          </option>
+        </select>
+      </div>
+    </form>
+  </article>,
+  <button>
+    Show more activity
+  </button>,
+]
+`;

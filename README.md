@@ -7,3 +7,9 @@ It's a set of React Components used by the Data Hub platform.
 ```bash
 yarn storybook
 ```
+
+## Run tests
+
+```bash
+jest
+```

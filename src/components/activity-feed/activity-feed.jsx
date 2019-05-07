@@ -5,7 +5,7 @@ import ActivityFeedCard from '../activity-feed-card/activity-feed-card'
 import ActivityFeedHeader from '../activity-feed-header/activity-feed-header'
 import ActivityFeedPagination from '../activity-feed-pagination/activity-feed-pagination'
 
-class ActivityFeed extends React.Component {
+export default class ActivityFeed extends React.Component {
   static propTypes = {
     activities: PropTypes.arrayOf(PropTypes.object).isRequired,
   }
@@ -25,5 +25,3 @@ class ActivityFeed extends React.Component {
     )
   }
 }
-
-export default ActivityFeed
