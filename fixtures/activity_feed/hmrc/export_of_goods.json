@@ -1,0 +1,16 @@
+{
+  "id": "dit:hmrc:1:Announce",
+  "type": "Announce",
+  "published": "2019-01-18T08:43:40.904649+00:00",
+
+  "generator": {
+    "name": "dit:hmrc",
+    "type": "Application"
+  },
+  "summary": "Export of goods",
+
+  "dit:commodityCodes": [
+    "84351000",
+    "84359000"
+  ]
+}

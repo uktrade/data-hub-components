@@ -1,0 +1,11 @@
+{
+  "id": "dit:companiesHouse:1:Announce",
+  "type": "Announce",
+  "published": "2019-01-18T08:43:40.904649+00:00",
+
+  "generator": {
+    "name": "dit:companiesHouse",
+    "type": "Application"
+  },
+  "summary": "Accounts due date"
+}

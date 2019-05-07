@@ -1,0 +1,14 @@
+{
+  "name": "datahub-components",
+  "version": "0.1.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "^8.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 9010"
+  }
+}

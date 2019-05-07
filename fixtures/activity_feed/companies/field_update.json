@@ -1,0 +1,51 @@
+{
+  "id": "dit:dataHub:Company:Update:1",
+  "type": "Update",
+  "published": "2019-05-03T08:43:40.904649+00:00",
+
+  "generator": {
+    "name": "dit:dataHub",
+    "type": "Application"
+  },
+
+  "actor": [
+    {
+      "dit:dataHubId": "2dc3c098-2f51-43c5-8767-752e8e5065b5",
+      "type": [
+        "Person",
+        "dit:Adviser"
+      ],
+      "dit:emailAddress": "mariobros@dit.com",
+      "name": "Mario Bros",
+      "dit:team": {
+        "dit:dataHubId": "3a48318c-9698-e211-a939-e4115bead28a",
+        "name": "Digital Data Hub - Live Service"
+      }
+    }
+  ],
+
+  "object":       {
+    "dit:dataHubId": "a4ead59f-dfc8-e511-a5e6-e4115bead28a",
+    "dit:dunsNumber": "123456789",
+    "dit:companiesHouseNumber": "987654321",
+    "type": [
+      "Organization",
+      "dit:Company"
+    ],
+    "name": "Marco Test"
+  },
+
+  "origin": [
+    {
+      "name": "ukregion",
+      "content": "London"
+    }
+  ],
+
+  "target": [
+    {
+      "name": "ukregion",
+      "content": "North West"
+    }
+  ]
+}
