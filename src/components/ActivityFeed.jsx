@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import ActivityFeedCard from '../activity-feed-card/activity-feed-card'
-import ActivityFeedHeader from '../activity-feed-header/activity-feed-header'
-import ActivityFeedPagination from '../activity-feed-pagination/activity-feed-pagination'
+import ActivityFeedCard from './ActivityFeedCard'
+import ActivityFeedHeader from './ActivityFeedHeader'
+import ActivityFeedPagination from './ActivityFeedPagination'
 
 export default class ActivityFeed extends React.Component {
   static propTypes = {

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import ActivityFeedFilters from '../activity-feed-filters/activity-feed-filters'
+import ActivityFeedFilters from './ActivityFeedFilters'
 
 export default class ActivityFeedHeader extends React.Component {
   static propTypes = {

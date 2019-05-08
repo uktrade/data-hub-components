@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import ActivityFeed from './activity-feed'
+import ActivityFeed from './ActivityFeed'
 
 test('renders empty feed', () => {
   const tree = renderer
