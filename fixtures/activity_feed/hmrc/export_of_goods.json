@@ -7,10 +7,25 @@
     "name": "dit:hmrc",
     "type": "Application"
   },
-  "summary": "Export of goods",
 
-  "dit:commodityCodes": [
-    "84351000",
-    "84359000"
-  ]
+  "object": {
+    "id": "dit:hmrc:1",
+    "name": "Export of goods",
+
+    "dit:commodityCodes": [
+      "84351000",
+      "84359000"
+    ]
+  },
+
+  "context": {
+    "id": "dit:DataHubCompany:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
+    "dit:dunsNumber": "123456789",
+    "dit:companiesHouseNumber": "987654321",
+    "type": [
+      "Organization",
+      "dit:Company"
+    ],
+    "name": "Marco Test"
+  }
 }

@@ -2,8 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import ActivityFeed from './ActivityFeed'
-import fixtureInteraction from '../../fixtures/activity_feed/interactions/interaction'
-import fixtureInvestmentProject from '../../fixtures/activity_feed/interactions/investment_project'
+import activityFeedFixtures from '../../fixtures/activity_feed/'
 
 storiesOf('ActivityFeed', module)
-  .add('entire feed', () => <ActivityFeed activities={[fixtureInteraction, fixtureInvestmentProject]} />)
+  .add('entire feed', () => <ActivityFeed activities={activityFeedFixtures} />)

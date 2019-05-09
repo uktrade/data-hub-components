@@ -1,5 +1,5 @@
 {
-  "id": "dit:dataHub:Order:53260d3b-15ea-4f04-b44b-33ded9c4518e:Create",
+  "id": "dit:DataHubOrder:53260d3b-15ea-4f04-b44b-33ded9c4518e:Create",
   "type": "Create",
   "published": "2019-05-03T08:43:40.904649+00:00",
 
@@ -10,7 +10,7 @@
 
   "actor": [
     {
-      "dit:dataHubId": "2dc3c098-2f51-43c5-8767-752e8e5065b5",
+      "id": "dit:DataHubAdviser:2dc3c098-2f51-43c5-8767-752e8e5065b5",
       "type": [
         "Person",
         "dit:Adviser"
@@ -18,18 +18,22 @@
       "dit:emailAddress": "mariobros@dit.com",
       "name": "Mario Bros",
       "dit:team": {
-        "dit:dataHubId": "3a48318c-9698-e211-a939-e4115bead28a",
+        "id": "dit:DataHubTeam:3a48318c-9698-e211-a939-e4115bead28a",
+        "type": [
+          "Group",
+          "dit:Team"
+        ],
         "name": "Digital Data Hub - Live Service"
       }
     }
   ],
 
   "object": {
-    "id": "dit:dataHub:Order:53260d3b-15ea-4f04-b44b-33ded9c4518e",
-    "type": "dit:dataHub:Order",
+    "id": "dit:DataHubOrder:53260d3b-15ea-4f04-b44b-33ded9c4518e",
+    "type": "dit:Order",
     "name": "MYV641/19",
 
-    "url": "https://www.datahub.dev.uktrade.io/omis/53260d3b-15ea-4f04-b44b-33ded9c4518e/work-order",
+    "url": "https://example.com/omis/53260d3b-15ea-4f04-b44b-33ded9c4518e/work-order",
 
     "dit:country": {
       "name": "Italy"
@@ -39,9 +43,9 @@
       "name": "East Midlands"
     },
 
-    "actor": [
+    "attributedTo": [
       {
-        "dit:dataHubId": "a4ead59f-dfc8-e511-a5e6-e4115bead28a",
+        "id": "dit:DataHubCompany:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
         "dit:dunsNumber": "123456789",
         "dit:companiesHouseNumber": "987654321",
         "type": [
@@ -51,7 +55,7 @@
         "name": "Marco Test"
       },
       {
-        "dit:dataHubId": "04cadecd-2de4-4cda-9fda-59db93495dba",
+        "id": "dit:DataHubContact:04cadecd-2de4-4cda-9fda-59db93495dba",
         "type": [
           "Person",
           "dit:Contact"
@@ -60,7 +64,7 @@
         "name": "John Doe"
       },
       {
-        "dit:dataHubId": "2dc3c098-2f51-43c5-8767-752e8e5065b5",
+        "id": "dit:DataHubAdviser:2dc3c098-2f51-43c5-8767-752e8e5065b5",
         "type": [
           "Person",
           "dit:Adviser"
@@ -68,7 +72,11 @@
         "dit:emailAddress": "mariobros@dit.com",
         "name": "Mario Bros",
         "dit:team": {
-          "dit:dataHubId": "3a48318c-9698-e211-a939-e4115bead28a",
+          "id": "dit:DataHubTeam:3a48318c-9698-e211-a939-e4115bead28a",
+          "type": [
+            "Group",
+            "dit:Team"
+          ],
           "name": "Digital Data Hub - Live Service"
         }
       }

@@ -1,5 +1,5 @@
 {
-  "id": "dit:dataHub:Company:Update:1",
+  "id": "dit:DataHubCompany:2dc3c098-2f51-43c5-8767-752e8e5065b5:Update:1",
   "type": "Update",
   "published": "2019-05-03T08:43:40.904649+00:00",
 
@@ -10,7 +10,7 @@
 
   "actor": [
     {
-      "dit:dataHubId": "2dc3c098-2f51-43c5-8767-752e8e5065b5",
+      "id": "dit:DataHubAdviser:2dc3c098-2f51-43c5-8767-752e8e5065b5",
       "type": [
         "Person",
         "dit:Adviser"
@@ -18,14 +18,18 @@
       "dit:emailAddress": "mariobros@dit.com",
       "name": "Mario Bros",
       "dit:team": {
-        "dit:dataHubId": "3a48318c-9698-e211-a939-e4115bead28a",
+        "id": "dit:DataHubTeam:3a48318c-9698-e211-a939-e4115bead28a",
+        "type": [
+          "Group",
+          "dit:Team"
+        ],
         "name": "Digital Data Hub - Live Service"
       }
     }
   ],
 
-  "object":       {
-    "dit:dataHubId": "a4ead59f-dfc8-e511-a5e6-e4115bead28a",
+  "object": {
+    "id": "dit:DataHubCompany:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
     "dit:dunsNumber": "123456789",
     "dit:companiesHouseNumber": "987654321",
     "type": [

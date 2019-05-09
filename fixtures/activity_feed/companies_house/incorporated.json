@@ -7,5 +7,20 @@
     "name": "dit:companiesHouse",
     "type": "Application"
   },
-  "summary": "Company officially incorporated in Companies House"
+
+  "object": {
+    "id": "dit:companiesHouse:1",
+    "name": "Company officially incorporated in Companies House"
+  },
+
+  "context": {
+    "id": "dit:DataHubCompany:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
+    "dit:dunsNumber": "123456789",
+    "dit:companiesHouseNumber": "987654321",
+    "type": [
+      "Organization",
+      "dit:Company"
+    ],
+    "name": "Marco Test"
+  }
 }
