@@ -55,13 +55,13 @@ export default class ActivityFeedCard extends React.Component {
             <Paragraph>{published}</Paragraph>
           </div>
           <div style={{ width: '100%', marginBottom: '10px' }}>
-            <H3>{subject}</H3>
+            <H3 style={{ fontWeight: 'normal', color: '#005ea5' }}>{subject}</H3>
           </div>
         </div>
         <Link href="#" onClick={this.onMoreContentClick}>Who was involved</Link>
         {
           this.state.showMoreContent ? <div>
-            <InsetText>
+            <InsetText style={{ backgroundColor: '#f8f8f8', marginTop: '10px' }}>
               <Table>
                 <Table.Row>
                   <Table.CellHeader>Advisers</Table.CellHeader>
