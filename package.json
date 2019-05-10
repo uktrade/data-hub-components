@@ -15,5 +15,12 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 9010"
+  },
+  "dependencies": {
+    "govuk-react": "^0.7.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "react-markdown": "^4.0.8",
+    "styled-components": "^4.2.0"
   }
 }

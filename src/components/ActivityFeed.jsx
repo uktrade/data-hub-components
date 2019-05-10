@@ -16,9 +16,13 @@ export default class ActivityFeed extends React.Component {
       <React.Fragment>
         <ActivityFeedHeader totalCards={activities.length} />
 
-        {activities.map(activity => {
-          return <ActivityFeedCard activity={activity} />
-        })}
+        <ol style={{ width: '600px', listStyleType: 'none', padding: 0 }}>
+          {activities.map(activity => {
+            return <li key={activity.id} style={{ marginBottom: '10px' }}>
+              <ActivityFeedCard activity={activity} />
+            </li>
+          })}
+        </ol>
 
         <ActivityFeedPagination />
       </React.Fragment>
