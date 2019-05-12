@@ -64,8 +64,8 @@ export default class ActivityFeedCard extends React.Component {
             <InsetText style={{ backgroundColor: '#f8f8f8', marginTop: '10px' }}>
               <Table>
                 <Table.Row>
-                  <Table.CellHeader>Advisers</Table.CellHeader>
-                  <Table.Cell>
+                  <Table.CellHeader style={{ fontWeight: 'normal', border: 0 }}>Advisers</Table.CellHeader>
+                  <Table.Cell style={{ border: 0 }}>
                     {advisers.map(({ id, name, emailAddress }) => {
                       return <React.Fragment key={id}>
                           <span>
@@ -76,14 +76,14 @@ export default class ActivityFeedCard extends React.Component {
                   </Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.CellHeader>DIT team</Table.CellHeader>
-                  <Table.Cell>
+                  <Table.CellHeader style={{ fontWeight: 'normal', border: 0 }}>DIT team</Table.CellHeader>
+                  <Table.Cell style={{ border: 0 }}>
                     team
                   </Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.CellHeader>Services</Table.CellHeader>
-                  <Table.Cell>{service}</Table.Cell>
+                  <Table.CellHeader style={{ fontWeight: 'normal', border: 0 }}>Services</Table.CellHeader>
+                  <Table.Cell style={{ border: 0 }}>{service}</Table.Cell>
                 </Table.Row>
               </Table>
               <Link href={url}>Go to the interaction detail page</Link>
