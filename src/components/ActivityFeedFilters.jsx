@@ -1,11 +1,32 @@
 import React from 'react'
+import {
+  Checkbox,
+  Select,
+  Label,
+  Link,
+  GridRow,
+  GridCol,
+} from 'govuk-react'
 
 export default class ActivityFeedFilters extends React.Component {
 	render() {
     return (
       <form>
-        <div>Show me <label><input type="checkbox" />My filters</label></div>
-				<div>Activity type <select><option>All activity</option></select></div>
+        <GridRow style={{ display: 'none' }}>
+          <GridCol>Show me</GridCol>
+          <GridCol>
+            <Checkbox>My activity</Checkbox>
+          </GridCol>
+          <GridCol>
+            <Label>Activity types</Label>
+            <Select>
+              <option>All activity</option>
+            </Select>
+          </GridCol>
+          <GridCol>
+            <Link href="#">All filters</Link>
+          </GridCol>
+        </GridRow>
       </form>
     )
   }
