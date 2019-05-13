@@ -8,10 +8,11 @@ import ActivityFeedPagination from './ActivityFeedPagination'
 export default class ActivityFeed extends React.Component {
   static propTypes = {
     activities: PropTypes.arrayOf(PropTypes.object).isRequired,
+    onLoadMore: PropTypes.func,
   }
 
   render() {
-    const { activities } = this.props
+    const { activities, onLoadMore, isLoading } = this.props
     return (
       <div style={{ margin: '10px' }}>
         <ActivityFeedHeader totalCards={activities.length} />
@@ -24,7 +25,7 @@ export default class ActivityFeed extends React.Component {
           })}
         </ol>
 
-        <ActivityFeedPagination />
+        {onLoadMore && <ActivityFeedPagination isLoading={isLoading} onLoadMore={onLoadMore}/>}
       </div>
     )
   }

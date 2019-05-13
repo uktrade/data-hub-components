@@ -1,13 +1,50 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 
-import { Main, GridRow, GridCol } from 'govuk-react'
+import {GridCol, GridRow, Main} from 'govuk-react'
 
 import ActivityFeed from './ActivityFeed'
 import activityFeedFixtures from '../../fixtures/activity_feed/'
+import {includes} from 'lodash'
+
+const filteredActivities = activityFeedFixtures.filter(activity => {
+  return includes(activity['object']['type'], 'dit:Interaction')
+})
+
+class ActivityFeedDemoApp extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      activities: filteredActivities,
+      isLoading: false,
+    }
+  }
+
+  onLoadMore = () => {
+    const activities = this.state.activities.concat(filteredActivities)
+    this.setState({
+      isLoading: true,
+    })
+
+    // Simulate delay.
+    setTimeout(() => {
+      this.setState({
+        activities,
+        isLoading: false,
+      })
+    }, 1500)
+  }
+
+  render() {
+    const {activities, isLoading} = this.state
+    return (
+      <ActivityFeed activities={activities} isLoading={isLoading} onLoadMore={this.onLoadMore}/>
+    )
+  }
+}
 
 storiesOf('ActivityFeed', module)
-  .add('Entire feed', () => <ActivityFeed activities={activityFeedFixtures} />)
+  .add('Entire feed', () => <ActivityFeedDemoApp />)
   .add('Data Hub company page', () => {
     return <Main>
       <GridRow>
@@ -17,7 +54,7 @@ storiesOf('ActivityFeed', module)
       </GridRow>
       <GridRow>
         <GridCol>
-          <ActivityFeed activities={activityFeedFixtures} />
+          <ActivityFeedDemoApp />
         </GridCol>
       </GridRow>
     </Main>
