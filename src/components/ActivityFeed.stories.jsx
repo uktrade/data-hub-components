@@ -1,13 +1,10 @@
 import React from 'react'
-import { storiesOf, addDecorator } from '@storybook/react'
-import { withA11y } from '@storybook/addon-a11y'
+import {storiesOf} from '@storybook/react'
 
 import { Main, GridRow, GridCol } from 'govuk-react'
 
 import ActivityFeed from './ActivityFeed'
 import activityFeedFixtures from '../../fixtures/activity_feed/'
-
-addDecorator(withA11y)
 
 storiesOf('ActivityFeed', module)
   .add('Entire feed', () => <ActivityFeed activities={activityFeedFixtures} />)
