@@ -13,7 +13,7 @@ export default class ActivityFeed extends React.Component {
   render() {
     const { activities } = this.props
     return (
-      <div style={{ width: '600px' }}>
+      <div style={{ margin: '10px' }}>
         <ActivityFeedHeader totalCards={activities.length} />
 
         <ol style={{ listStyleType: 'none', padding: 0 }}>
