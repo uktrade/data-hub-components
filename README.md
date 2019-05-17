@@ -13,11 +13,19 @@ yarn
 ## Start Storybook
 
 ```bash
-yarn storybook
+yarn run storybook
 ```
 
-## Run tests
+## Testing
+
+### Run tests
 
 ```bash
-jest
+yarn run test
+```
+
+### Update Jest snapshots
+
+```bash
+jest --updateSnapshot
 ```

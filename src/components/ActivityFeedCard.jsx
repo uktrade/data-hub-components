@@ -74,8 +74,9 @@ class ActivityFeedInteraction extends React.Component {
 export default class ActivityFeedCard extends React.Component {
   render() {
     const {activity} = this.props
+    const type = get(activity, 'object.type')
 
-    if (includes(activity['object']['type'], ACTIVITY_FEED_OBJECT_TYPE_INTERACTION)) {
+    if (includes(type, ACTIVITY_FEED_OBJECT_TYPE_INTERACTION)) {
       return <ActivityFeedInteraction activity={activity} />
     }
 

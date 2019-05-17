@@ -15,7 +15,8 @@
     "react-test-renderer": "^16.8.6"
   },
   "scripts": {
-    "storybook": "start-storybook -s ./assets -p 9010"
+    "storybook": "start-storybook -s ./assets -p 9010",
+    "test": "jest"
   },
   "dependencies": {
     "govuk-react": "^0.7.0",

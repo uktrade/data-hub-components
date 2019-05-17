@@ -1,19 +1,19 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import ActivityFeed from './ActivityFeed'
+import ActivityFeedCard from './ActivityFeedCard'
 import interactionActivityFixture from '../../fixtures/activity_feed/interactions/interaction'
 
-it('renders empty feed', () => {
+it('handles incomplete data', () => {
   const tree = renderer
-    .create(<ActivityFeed activities={[]}/>)
+    .create(<ActivityFeedCard activity={{}}/>)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
 
 it('renders interaction activity', () => {
   const tree = renderer
-    .create(<ActivityFeed activities={[interactionActivityFixture]}/>)
+    .create(<ActivityFeedCard activity={interactionActivityFixture}/>)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
