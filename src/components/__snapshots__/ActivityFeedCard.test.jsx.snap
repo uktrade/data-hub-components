@@ -1,8 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`handles incomplete data 1`] = `null`;
-
-exports[`renders interaction activity 1`] = `
+exports[`should render interaction activity 1`] = `
 <div
   style={
     Object {
@@ -200,3 +198,5 @@ exports[`renders interaction activity 1`] = `
   </details>
 </div>
 `;
+
+exports[`should render null 1`] = `null`;

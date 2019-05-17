@@ -1,123 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders empty feed 1`] = `
-<div
-  style={
-    Object {
-      "margin": "10px",
-    }
-  }
->
-  <div
-    className="sc-cmthru ehSlSy"
-  >
-    <div
-      className="sc-hMFtBS dZxfgE"
-    >
-      <h2
-        className="sc-cMljjf leOqMw"
-        size="LARGE"
-      >
-        0
-         activities
-      </h2>
-    </div>
-    <div
-      className="sc-cLQEGU oWkRe"
-    >
-      <button
-        className="sc-VigVT kJjasd"
-        disabled={false}
-      >
-        Add an interaction
-      </button>
-    </div>
-  </div>
-  <details
-    className="sc-kEYyzF ihcnje"
-    open={false}
-    style={
-      Object {
-        "fontSize": "100%",
-        "marginBottom": 0,
-      }
-    }
-  >
-    <summary
-      className="sc-kkGfuU cCdZFh"
-    >
-      <span
-        className="sc-iAyFgw jRkIxn"
-      >
-        Filter and sort activity
-      </span>
-    </summary>
-    <div
-      className="sc-hSdWYo dfimje"
-    >
-      <form>
-        <fieldset
-          className="sc-gipzik eBgapt"
-        >
-          <legend
-            className="sc-iRbamj eOWqGG"
-          >
-            Show me
-          </legend>
-          <div
-            className="sc-hzDkRC hNOsPM"
-          >
-            <div
-              className="sc-bRBYWo cfvpGy"
-            >
-              <div
-                className="sc-Rmtcm fMfOqA"
-              >
-                <label
-                  className="sc-cSHVUG jqlwpQ"
-                >
-                  <input
-                    className="sc-kAzzGY gsGxQW"
-                    type="checkbox"
-                  />
-                  <span
-                    className="sc-chPdSV hLZCFS"
-                  >
-                    My activity
-                  </span>
-                </label>
-                <label
-                  className="sc-cSHVUG jqlwpQ"
-                >
-                  <input
-                    className="sc-kAzzGY gsGxQW"
-                    type="checkbox"
-                  />
-                  <span
-                    className="sc-chPdSV hLZCFS"
-                  >
-                    My team's activity
-                  </span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </details>
-  <ol
-    style={
-      Object {
-        "listStyleType": "none",
-        "padding": 0,
-      }
-    }
-  />
-</div>
-`;
-
-exports[`renders interaction activity 1`] = `
+exports[`should render activity 1`] = `
 <div
   style={
     Object {
@@ -436,5 +319,122 @@ exports[`renders interaction activity 1`] = `
       </div>
     </li>
   </ol>
+</div>
+`;
+
+exports[`should render empty feed 1`] = `
+<div
+  style={
+    Object {
+      "margin": "10px",
+    }
+  }
+>
+  <div
+    className="sc-cmthru ehSlSy"
+  >
+    <div
+      className="sc-hMFtBS dZxfgE"
+    >
+      <h2
+        className="sc-cMljjf leOqMw"
+        size="LARGE"
+      >
+        0
+         activities
+      </h2>
+    </div>
+    <div
+      className="sc-cLQEGU oWkRe"
+    >
+      <button
+        className="sc-VigVT kJjasd"
+        disabled={false}
+      >
+        Add an interaction
+      </button>
+    </div>
+  </div>
+  <details
+    className="sc-kEYyzF ihcnje"
+    open={false}
+    style={
+      Object {
+        "fontSize": "100%",
+        "marginBottom": 0,
+      }
+    }
+  >
+    <summary
+      className="sc-kkGfuU cCdZFh"
+    >
+      <span
+        className="sc-iAyFgw jRkIxn"
+      >
+        Filter and sort activity
+      </span>
+    </summary>
+    <div
+      className="sc-hSdWYo dfimje"
+    >
+      <form>
+        <fieldset
+          className="sc-gipzik eBgapt"
+        >
+          <legend
+            className="sc-iRbamj eOWqGG"
+          >
+            Show me
+          </legend>
+          <div
+            className="sc-hzDkRC hNOsPM"
+          >
+            <div
+              className="sc-bRBYWo cfvpGy"
+            >
+              <div
+                className="sc-Rmtcm fMfOqA"
+              >
+                <label
+                  className="sc-cSHVUG jqlwpQ"
+                >
+                  <input
+                    className="sc-kAzzGY gsGxQW"
+                    type="checkbox"
+                  />
+                  <span
+                    className="sc-chPdSV hLZCFS"
+                  >
+                    My activity
+                  </span>
+                </label>
+                <label
+                  className="sc-cSHVUG jqlwpQ"
+                >
+                  <input
+                    className="sc-kAzzGY gsGxQW"
+                    type="checkbox"
+                  />
+                  <span
+                    className="sc-chPdSV hLZCFS"
+                  >
+                    My team's activity
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </details>
+  <ol
+    style={
+      Object {
+        "listStyleType": "none",
+        "padding": 0,
+      }
+    }
+  />
 </div>
 `;
