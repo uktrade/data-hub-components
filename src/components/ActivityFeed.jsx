@@ -1,9 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { SPACING } from '@govuk-react/constants'
 
 import ActivityFeedCard from './ActivityFeedCard'
 import ActivityFeedHeader from './ActivityFeedHeader'
 import ActivityFeedPagination from './ActivityFeedPagination'
+
+const ActivityFeedContainer = styled('div')`
+  margin: ${SPACING.SCALE_2};
+`
+
+const ActivityFeedCardList = styled('ol')`
+  list-style-type: none;
+  padding: 0;
+  
+  & > li {
+    margin-bottom: ${SPACING.SCALE_2};
+  }
+`
 
 export default class ActivityFeed extends React.Component {
   static propTypes = {
@@ -13,20 +28,21 @@ export default class ActivityFeed extends React.Component {
 
   render() {
     const { activities, onLoadMore, isLoading } = this.props
+
     return (
-      <div style={{ margin: '10px' }}>
+      <ActivityFeedContainer>
         <ActivityFeedHeader totalCards={activities.length} />
 
-        <ol style={{ listStyleType: 'none', padding: 0 }}>
+        <ActivityFeedCardList>
           {activities.map(activity => {
-            return <li key={activity.id} style={{ marginBottom: '10px' }}>
+            return <li key={activity.id}>
               <ActivityFeedCard activity={activity} />
             </li>
           })}
-        </ol>
+        </ActivityFeedCardList>
 
         {onLoadMore && <ActivityFeedPagination isLoading={isLoading} onLoadMore={onLoadMore}/>}
-      </div>
+      </ActivityFeedContainer>
     )
   }
 }
