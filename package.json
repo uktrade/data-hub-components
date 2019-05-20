@@ -1,9 +1,13 @@
 {
   "name": "data-hub-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
+  "homepage": "https://github.com/uktrade/data-hub-components",
+  "description": "Library of React Components used by the Data Hub platform (datahub.trade.gov.uk).",
+  "private": false,
   "scripts": {
     "start": "start-storybook",
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --ignore **/*.stories.jsx,**/*.test.jsx,**/__snapshots__",
     "build:storybook": "build-storybook",
     "test": "jest"
   },
@@ -20,6 +24,7 @@
     "react-dom": "*"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
@@ -36,6 +41,16 @@
     "react-test-renderer": "^16.8.6",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:uktrade/data-hub-components.git"
   },
   "babel": {
     "presets": [

@@ -65,5 +65,8 @@ typings/
 # IDE
 .idea/
 
+# Production build
+dist
+
 # Storybook build
 storybook-static/

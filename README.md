@@ -4,6 +4,20 @@ It's a set of React Components used by the Data Hub platform.
 
 This component library makes heavy use of the [govuk-react](https://github.com/govuk-react/govuk-react) project.
 
+## Usage
+
+```bash
+create-react-app demo-app
+yarn add data-hub-components
+```
+
+```jsx
+import { ActivityFeed } from 'data-hub-components'
+
+const activities = []
+<ActivityFeed activities={activities} />
+```
+
 ## Install dependencies
 
 ```bash
@@ -28,6 +42,12 @@ yarn test
 
 ```bash
 jest --updateSnapshot
+```
+
+## Creating a release
+
+```bash
+yarn publish
 ```
 
 ## Notes

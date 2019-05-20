@@ -4,7 +4,7 @@ import {storiesOf} from '@storybook/react'
 import {GridCol, GridRow, Main} from 'govuk-react'
 
 import ActivityFeed from './ActivityFeed'
-import activityFeedFixtures from '../../fixtures/activity_feed/'
+import activityFeedFixtures from '../../fixtures/activity_feed'
 import {includes} from 'lodash'
 
 import datahubBackground from '../../assets/images/data-hub-one-list-corp.png'

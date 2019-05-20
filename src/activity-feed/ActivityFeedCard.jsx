@@ -1,7 +1,7 @@
 import React from 'react'
 import { Details, Link, Table, Paragraph, H3 } from 'govuk-react'
 import { filter, includes, get, map } from 'lodash'
-import moment from 'moment'
+import moment from 'moment/moment'
 
 const ACTIVITY_FEED_OBJECT_TYPE_INTERACTION = 'dit:Interaction'
 
