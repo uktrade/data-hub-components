@@ -13,7 +13,7 @@ yarn
 ## Start Storybook
 
 ```bash
-yarn run storybook
+yarn start
 ```
 
 ## Testing
@@ -21,7 +21,7 @@ yarn run storybook
 ### Run tests
 
 ```bash
-yarn run test
+yarn test
 ```
 
 ### Update Jest snapshots
@@ -29,3 +29,7 @@ yarn run test
 ```bash
 jest --updateSnapshot
 ```
+
+## Notes
+
+* `react-markdown` is required only temporary to resolve dependency issue with [@govuk-react/paragraph](https://github.com/govuk-react/govuk-react/tree/master/components/paragraph), see issue on the [govuk-react](https://github.com/govuk-react/govuk-react/issues/425) project.

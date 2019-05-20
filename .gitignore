@@ -64,3 +64,6 @@ typings/
 
 # IDE
 .idea/
+
+# Storybook build
+storybook-static/

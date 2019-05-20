@@ -7,6 +7,8 @@ import ActivityFeed from './ActivityFeed'
 import activityFeedFixtures from '../../fixtures/activity_feed/'
 import {includes} from 'lodash'
 
+import datahubBackground from '../../assets/images/data-hub-one-list-corp.png'
+
 const filteredActivities = activityFeedFixtures.filter(activity => {
   return includes(activity['object']['type'], 'dit:Interaction')
 })
@@ -49,7 +51,7 @@ storiesOf('ActivityFeed', module)
     return <Main>
       <GridRow>
         <GridCol>
-          <img src="images/data-hub-one-list-corp.png" width="960" />
+          <img src={datahubBackground} width="960" alt="DataHub" />
         </GridCol>
       </GridRow>
       <GridRow>
