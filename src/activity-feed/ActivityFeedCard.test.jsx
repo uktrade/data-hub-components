@@ -10,14 +10,27 @@ describe('ActivityFeedCard', () => {
       const tree = renderer
         .create(<ActivityFeedCard activity={{}}/>)
         .toJSON()
-      expect(tree).toMatchSnapshot()
+      expect(tree).toBeNull()
     })
   })
 
   describe('when there is an interaction', () => {
     test('should render interaction activity', () => {
       const tree = renderer
-        .create(<ActivityFeedCard activity={interactionActivityFixture}/>)
+        .create(<ActivityFeedCard activity={interactionActivityFixture} />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('when there is an activity item of arbitrary type', () => {
+    test('should render default activity', () => {
+      const tree = renderer
+        .create(<ActivityFeedCard activity={{
+          object: {
+            'dit:subject': 'subject',
+          }
+        }}/>)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
