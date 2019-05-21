@@ -1,85 +1,31 @@
 import React from 'react'
-import { Details, Link, Table, Paragraph, H3 } from 'govuk-react'
-import { filter, includes, get, map } from 'lodash'
-import moment from 'moment/moment'
+import { find } from 'lodash'
 
-const ACTIVITY_FEED_OBJECT_TYPE_INTERACTION = 'dit:Interaction'
-
-const getPeople = (activity, personSubType) => {
-  return map(filter(activity['object']['attributedTo'], ({type}) => {
-    return includes(type, `dit:${personSubType}`)
-  }), ({id, name, 'dit:emailAddress': emailAddress}) => {
-    return {
-      id,
-      name,
-      emailAddress,
-    }
-  })
-}
-
-class ActivityFeedInteraction extends React.Component {
-  render() {
-    const {activity} = this.props
-    const published = moment(activity.published).fromNow()
-    const advisers = getPeople(activity, 'Adviser')
-    const subject = get(activity, 'object.dit:subject')
-    const service = get(activity, 'object.dit:service.name')
-    const url = get(activity, 'object.url')
-
-    return (
-      <div style={{border: '1px solid #c0c0c0', padding: '10px'}}>
-        <div style={{display: 'flex', flexFlow: 'row wrap'}}>
-          <div style={{flexGrow: 1, marginBottom: '10px'}}>
-            <Paragraph>An interaction with the company took place</Paragraph>
-          </div>
-          <div style={{flexGrow: 1, marginBottom: '10px', textAlign: 'right'}}>
-            <Paragraph>{published}</Paragraph>
-          </div>
-          <div style={{width: '100%', marginBottom: '10px'}}>
-            <H3 style={{fontWeight: 'normal', color: '#005ea5'}}>{subject}</H3>
-          </div>
-        </div>
-        <Details summary="Who was involved" style={{fontSize: '100%', marginBottom: 0}}>
-          <Table>
-            <Table.Row>
-              <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>Advisers</Table.CellHeader>
-              <Table.Cell style={{border: 0}}>
-                {advisers.map(({id, name, emailAddress}) => {
-                  return <React.Fragment key={id}>
-                      <span>
-                        {name} <Link href={"mailto:" + emailAddress}>{emailAddress}</Link>
-                      </span>
-                  </React.Fragment>
-                })}
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>DIT team</Table.CellHeader>
-              <Table.Cell style={{border: 0}}>
-                team
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>Services</Table.CellHeader>
-              <Table.Cell style={{border: 0}}>{service}</Table.Cell>
-            </Table.Row>
-          </Table>
-          <Link href={url}>Go to the interaction detail page</Link>
-        </Details>
-      </div>
-    )
-  }
-}
+import Cards from './ActivityFeedCards'
 
 export default class ActivityFeedCard extends React.Component {
-  render() {
-    const {activity} = this.props
-    const type = get(activity, 'object.type')
+  constructor(props) {
+    super(props)
 
-    if (includes(type, ACTIVITY_FEED_OBJECT_TYPE_INTERACTION)) {
-      return <ActivityFeedInteraction activity={activity} />
+    this.state = {
+      Card: null,
     }
+  }
 
-    return null
+  componentDidMount() {
+    const { activity } = this.props
+
+    const Card = find(Cards, (Card) => {
+      return Card.canRender(activity)
+    })
+
+    this.setState({ Card })
+  }
+
+  render() {
+    const { activity } = this.props
+    const { Card } = this.state
+
+    return Card ? <Card activity={activity} /> : null
   }
 }
