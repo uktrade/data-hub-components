@@ -10,7 +10,7 @@ const HeaderSummary = styled.div`
   border-bottom: 2px solid #000;
   margin-bottom: 10px;
   padding-bottom: 10px;
-`;
+`
 
 const HeaderCount = styled.div`
   flex-grow: 1;
@@ -20,7 +20,7 @@ const HeaderCount = styled.div`
     font-size: 28px;
     margin-bottom: 0;
   }
-`;
+`
 
 const HeaderActions = styled.div`
   flex-grow: 1;
@@ -28,7 +28,7 @@ const HeaderActions = styled.div`
   & > Button {
     margin-bottom: 0;
   }
-`;
+`
 
 export default class ActivityFeedHeader extends React.Component {
   static propTypes = {

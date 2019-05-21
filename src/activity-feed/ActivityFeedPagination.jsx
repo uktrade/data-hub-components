@@ -1,5 +1,11 @@
 import React from 'react'
 import {Button} from 'govuk-react'
+import styled from 'styled-components'
+
+const Pagination = styled('div')`
+  text-align: center;
+  margin-top: 40px;
+`
 
 export default class ActivityFeedPagination extends React.Component {
 	render() {
@@ -7,9 +13,9 @@ export default class ActivityFeedPagination extends React.Component {
     const buttonText = isLoading ? 'Loading...' : 'Show more activity'
 
     return (
-      <div style={{ textAlign: 'center', marginTop: '40px' }}>
+      <Pagination>
         <Button disabled={isLoading} onClick={onLoadMore} buttonColour="#dee0e2" buttonTextColour="#000">{buttonText}</Button>
-      </div>
+      </Pagination>
     )
   }
 }
