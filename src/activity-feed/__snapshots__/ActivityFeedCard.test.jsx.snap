@@ -1,5 +1,155 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ActivityFeedCard when there is a service delivery should render service delivery activity 1`] = `
+<div
+  className="sc-cmthru jjutsD"
+>
+  <div
+    className="sc-hMFtBS bSjygG"
+  >
+    <div
+      className="sc-cLQEGU ciAtZf"
+    >
+      <div
+        className="sc-jAaTju fBEFVB"
+      >
+        <p>
+          A service was provided to the company
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-gqPbQI fPqDmG"
+    >
+      <div
+        className="sc-jAaTju fBEFVB"
+      >
+        <p>
+          19 days ago
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-hORach eRIqAV"
+    >
+      <h3
+        className="sc-cMljjf kCLKvB"
+        size="MEDIUM"
+      >
+        Openening of overseas office
+      </h3>
+    </div>
+  </div>
+  <details
+    className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+    open={false}
+  >
+    <summary
+      className="sc-kkGfuU cCdZFh"
+    >
+      <span
+        className="sc-iAyFgw jRkIxn"
+      >
+        Who was involved
+      </span>
+    </summary>
+    <div
+      className="sc-hSdWYo dfimje"
+    >
+      <table
+        className="sc-bwCtUz iVExri"
+      >
+        <tbody
+          className="sc-eXEjpC fuVqJC"
+        >
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+            >
+              Advisers
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+            >
+              <span>
+                Mario Bros
+                 
+                <a
+                  className="sc-bwzfXH VXMCV"
+                  href="mailto:mariobros@dit.com"
+                  muted={false}
+                >
+                  mariobros@dit.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              DIT team
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              team
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Services
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Events - Overseas
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-bwzfXH VXMCV"
+        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/854d8d31-7405-4625-a957-0ed2c3092caa"
+        muted={false}
+      >
+        Go to the interaction detail page
+      </a>
+    </div>
+  </details>
+</div>
+`;
+
 exports[`ActivityFeedCard when there is an activity item of arbitrary type should render default activity 1`] = `
 <div
   className="sc-bAeIUo hKMfQm"
@@ -42,7 +192,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
         className="sc-jAaTju fBEFVB"
       >
         <p>
-          18 days ago
+          19 days ago
         </p>
       </div>
     </div>
