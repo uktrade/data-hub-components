@@ -108,8 +108,8 @@ export default class Interaction extends React.Component {
         <CardDetails summary="Who was involved">
           <Table>
             <Table.Row>
-              <Table.CellHeader>Advisers</Table.CellHeader>
-              <Table.Cell>
+              <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>Advisers</Table.CellHeader>
+              <Table.Cell style={{border: 0}}>
                 {advisers.map(({id, name, emailAddress}) => {
                   return <React.Fragment key={id}>
                       <span>
