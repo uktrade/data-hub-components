@@ -2,52 +2,30 @@
 
 exports[`ActivityFeedCard when there is an activity item of arbitrary type should render default activity 1`] = `
 <div
-  style={
-    Object {
-      "border": "1px solid #c0c0c0",
-      "padding": "10px",
-    }
-  }
+  className="sc-bAeIUo hKMfQm"
 >
-  <h3
-    className="sc-cMljjf kCLKvB"
-    size="MEDIUM"
-    style={
-      Object {
-        "color": "#005ea5",
-        "fontWeight": "normal",
-      }
-    }
+  <div
+    className="sc-iujRgT izOATC"
   >
-    subject
-  </h3>
+    <h3
+      className="sc-cMljjf kCLKvB"
+      size="MEDIUM"
+    >
+      subject
+    </h3>
+  </div>
 </div>
 `;
 
 exports[`ActivityFeedCard when there is an interaction should render interaction activity 1`] = `
 <div
-  style={
-    Object {
-      "border": "1px solid #c0c0c0",
-      "padding": "10px",
-    }
-  }
+  className="sc-cmthru jjutsD"
 >
   <div
-    style={
-      Object {
-        "display": "flex",
-        "flexFlow": "row wrap",
-      }
-    }
+    className="sc-hMFtBS bSjygG"
   >
     <div
-      style={
-        Object {
-          "flexGrow": 1,
-          "marginBottom": "10px",
-        }
-      }
+      className="sc-cLQEGU ciAtZf"
     >
       <div
         className="sc-jAaTju fBEFVB"
@@ -58,13 +36,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
       </div>
     </div>
     <div
-      style={
-        Object {
-          "flexGrow": 1,
-          "marginBottom": "10px",
-          "textAlign": "right",
-        }
-      }
+      className="sc-gqPbQI fPqDmG"
     >
       <div
         className="sc-jAaTju fBEFVB"
@@ -75,36 +47,19 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
       </div>
     </div>
     <div
-      style={
-        Object {
-          "marginBottom": "10px",
-          "width": "100%",
-        }
-      }
+      className="sc-hORach eRIqAV"
     >
       <h3
         className="sc-cMljjf kCLKvB"
         size="MEDIUM"
-        style={
-          Object {
-            "color": "#005ea5",
-            "fontWeight": "normal",
-          }
-        }
       >
         Invited to Technology Roundtable
       </h3>
     </div>
   </div>
   <details
-    className="sc-kEYyzF ihcnje"
+    className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
     open={false}
-    style={
-      Object {
-        "fontSize": "100%",
-        "marginBottom": 0,
-      }
-    }
   >
     <summary
       className="sc-kkGfuU cCdZFh"
@@ -129,22 +84,11 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
           >
             <th
               className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
             >
               Advisers
             </th>
             <td
               className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
             >
               <span>
                 Mario Bros

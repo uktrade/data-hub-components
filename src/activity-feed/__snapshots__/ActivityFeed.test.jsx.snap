@@ -2,13 +2,13 @@
 
 exports[`ActivityFeed when there are activities should render activity 1`] = `
 <div
-  className="sc-gqPbQI cvuVru"
+  className="sc-daURTG cCbora"
 >
   <div
-    className="sc-cmthru ehSlSy"
+    className="sc-GMQeP cPFqxA"
   >
     <div
-      className="sc-hMFtBS dZxfgE"
+      className="sc-exAgwC jnWYar"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -19,7 +19,7 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cLQEGU oWkRe"
+      className="sc-cQFLBn cxgntD"
     >
       <button
         className="sc-VigVT kJjasd"
@@ -103,32 +103,17 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
     </div>
   </details>
   <ol
-    className="sc-hORach epUzDL"
+    className="sc-bXGyLb buRwxd"
   >
     <li>
       <div
-        style={
-          Object {
-            "border": "1px solid #c0c0c0",
-            "padding": "10px",
-          }
-        }
+        className="sc-cmthru jjutsD"
       >
         <div
-          style={
-            Object {
-              "display": "flex",
-              "flexFlow": "row wrap",
-            }
-          }
+          className="sc-hMFtBS bSjygG"
         >
           <div
-            style={
-              Object {
-                "flexGrow": 1,
-                "marginBottom": "10px",
-              }
-            }
+            className="sc-cLQEGU ciAtZf"
           >
             <div
               className="sc-jAaTju fBEFVB"
@@ -139,13 +124,7 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
             </div>
           </div>
           <div
-            style={
-              Object {
-                "flexGrow": 1,
-                "marginBottom": "10px",
-                "textAlign": "right",
-              }
-            }
+            className="sc-gqPbQI fPqDmG"
           >
             <div
               className="sc-jAaTju fBEFVB"
@@ -156,36 +135,19 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
             </div>
           </div>
           <div
-            style={
-              Object {
-                "marginBottom": "10px",
-                "width": "100%",
-              }
-            }
+            className="sc-hORach eRIqAV"
           >
             <h3
               className="sc-cMljjf kCLKvB"
               size="MEDIUM"
-              style={
-                Object {
-                  "color": "#005ea5",
-                  "fontWeight": "normal",
-                }
-              }
             >
               Invited to Technology Roundtable
             </h3>
           </div>
         </div>
         <details
-          className="sc-kEYyzF ihcnje"
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
           open={false}
-          style={
-            Object {
-              "fontSize": "100%",
-              "marginBottom": 0,
-            }
-          }
         >
           <summary
             className="sc-kkGfuU cCdZFh"
@@ -210,22 +172,11 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
                 >
                   <th
                     className="sc-RefOD dxRfSY"
-                    style={
-                      Object {
-                        "border": 0,
-                        "fontWeight": "normal",
-                      }
-                    }
                   >
                     Advisers
                   </th>
                   <td
                     className="sc-RefOD gzbQXK"
-                    style={
-                      Object {
-                        "border": 0,
-                      }
-                    }
                   >
                     <span>
                       Mario Bros
@@ -309,13 +260,13 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
 
 exports[`ActivityFeed when there are no activities should render empty feed 1`] = `
 <div
-  className="sc-gqPbQI cvuVru"
+  className="sc-daURTG cCbora"
 >
   <div
-    className="sc-cmthru ehSlSy"
+    className="sc-GMQeP cPFqxA"
   >
     <div
-      className="sc-hMFtBS dZxfgE"
+      className="sc-exAgwC jnWYar"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -326,7 +277,7 @@ exports[`ActivityFeed when there are no activities should render empty feed 1`] 
       </h2>
     </div>
     <div
-      className="sc-cLQEGU oWkRe"
+      className="sc-cQFLBn cxgntD"
     >
       <button
         className="sc-VigVT kJjasd"
@@ -410,7 +361,7 @@ exports[`ActivityFeed when there are no activities should render empty feed 1`] 
     </div>
   </details>
   <ol
-    className="sc-hORach epUzDL"
+    className="sc-bXGyLb buRwxd"
   />
 </div>
 `;

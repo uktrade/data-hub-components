@@ -13,6 +13,44 @@ import {
   Table,
   H3,
 } from 'govuk-react'
+import styled from "styled-components";
+
+const Card = styled('div')`
+  border: 1px solid #c0c0c0;
+  padding: 15px;
+`
+
+const CardHeader = styled('div')`
+  display: flex;
+  flex-flow: row wrap;
+  
+  & > div {
+    margin-bottom: 5px;
+  }
+`
+
+const CardHeaderDescription = styled('div')`
+  flex-grow: 1;
+`
+
+const CardHeaderDate = styled('div')`
+  flex-grow: 1;
+  text-align: right;
+`
+
+const CardHeaderSubject = styled('div')`
+  width: 100%;
+  
+  & > H3 {
+    font-weight: normal;
+    color: #005ea5;
+  }
+`
+
+const CardDetails = styled(Details)`
+  font-size: 100%;
+  margin-bottom: 0;
+`
 
 const getPeople = (activity, personSubType) => {
   return map(filter(activity['object']['attributedTo'], ({type}) => {
@@ -42,23 +80,23 @@ export default class Interaction extends React.Component {
     const url = get(activity, 'object.url')
 
     return (
-      <div style={{border: '1px solid #c0c0c0', padding: '10px'}}>
-        <div style={{display: 'flex', flexFlow: 'row wrap'}}>
-          <div style={{flexGrow: 1, marginBottom: '10px'}}>
+      <Card>
+        <CardHeader>
+          <CardHeaderDescription>
             <Paragraph>An interaction with the company took place</Paragraph>
-          </div>
-          <div style={{flexGrow: 1, marginBottom: '10px', textAlign: 'right'}}>
+          </CardHeaderDescription>
+          <CardHeaderDate>
             <Paragraph>{published}</Paragraph>
-          </div>
-          <div style={{width: '100%', marginBottom: '10px'}}>
-            <H3 style={{fontWeight: 'normal', color: '#005ea5'}}>{subject}</H3>
-          </div>
-        </div>
-        <Details summary="Who was involved" style={{fontSize: '100%', marginBottom: 0}}>
+          </CardHeaderDate>
+          <CardHeaderSubject>
+            <H3>{subject}</H3>
+          </CardHeaderSubject>
+        </CardHeader>
+        <CardDetails summary="Who was involved">
           <Table>
             <Table.Row>
-              <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>Advisers</Table.CellHeader>
-              <Table.Cell style={{border: 0}}>
+              <Table.CellHeader>Advisers</Table.CellHeader>
+              <Table.Cell>
                 {advisers.map(({id, name, emailAddress}) => {
                   return <React.Fragment key={id}>
                       <span>
@@ -80,8 +118,8 @@ export default class Interaction extends React.Component {
             </Table.Row>
           </Table>
           <Link href={url}>Go to the interaction detail page</Link>
-        </Details>
-      </div>
+        </CardDetails>
+      </Card>
     )
   }
 }
