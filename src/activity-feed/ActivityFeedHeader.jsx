@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import { H2, Button } from 'govuk-react'
 import styled from 'styled-components'
 
-import ActivityFeedFilters from './ActivityFeedFilters'
-
 const HeaderSummary = styled.div`
   display: flex;
   border-bottom: 2px solid #000;
@@ -48,7 +46,6 @@ export default class ActivityFeedHeader extends React.Component {
             <Button buttonColour="#dee0e2" buttonTextColour="#000">Add an interaction</Button>
           </HeaderActions>
         </HeaderSummary>
-        <ActivityFeedFilters />
       </React.Fragment>
     )
   }
