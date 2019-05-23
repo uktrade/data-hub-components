@@ -29,79 +29,6 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
       </button>
     </div>
   </div>
-  <details
-    className="sc-kEYyzF ihcnje"
-    open={false}
-    style={
-      Object {
-        "fontSize": "100%",
-        "marginBottom": 0,
-      }
-    }
-  >
-    <summary
-      className="sc-kkGfuU cCdZFh"
-    >
-      <span
-        className="sc-iAyFgw jRkIxn"
-      >
-        Filter and sort activity
-      </span>
-    </summary>
-    <div
-      className="sc-hSdWYo dfimje"
-    >
-      <form>
-        <fieldset
-          className="sc-gipzik eBgapt"
-        >
-          <legend
-            className="sc-iRbamj eOWqGG"
-          >
-            Show me
-          </legend>
-          <div
-            className="sc-hzDkRC hNOsPM"
-          >
-            <div
-              className="sc-bRBYWo cfvpGy"
-            >
-              <div
-                className="sc-Rmtcm fMfOqA"
-              >
-                <label
-                  className="sc-cSHVUG jqlwpQ"
-                >
-                  <input
-                    className="sc-kAzzGY gsGxQW"
-                    type="checkbox"
-                  />
-                  <span
-                    className="sc-chPdSV hLZCFS"
-                  >
-                    My activity
-                  </span>
-                </label>
-                <label
-                  className="sc-cSHVUG jqlwpQ"
-                >
-                  <input
-                    className="sc-kAzzGY gsGxQW"
-                    type="checkbox"
-                  />
-                  <span
-                    className="sc-chPdSV hLZCFS"
-                  >
-                    My team's activity
-                  </span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </details>
   <ol
     className="sc-bXGyLb buRwxd"
   >
@@ -130,7 +57,7 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
               className="sc-jAaTju fBEFVB"
             >
               <p>
-                18 days ago
+                20 days ago
               </p>
             </div>
           </div>
@@ -172,11 +99,22 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
                 >
                   <th
                     className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
                   >
                     Advisers
                   </th>
                   <td
                     className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
                   >
                     <span>
                       Mario Bros
@@ -189,31 +127,6 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
                         mariobros@dit.com
                       </a>
                     </span>
-                  </td>
-                </tr>
-                <tr
-                  className="sc-iQKALj ftJWrM"
-                >
-                  <th
-                    className="sc-RefOD dxRfSY"
-                    style={
-                      Object {
-                        "border": 0,
-                        "fontWeight": "normal",
-                      }
-                    }
-                  >
-                    DIT team
-                  </th>
-                  <td
-                    className="sc-RefOD gzbQXK"
-                    style={
-                      Object {
-                        "border": 0,
-                      }
-                    }
-                  >
-                    team
                   </td>
                 </tr>
                 <tr
@@ -287,79 +200,6 @@ exports[`ActivityFeed when there are no activities should render empty feed 1`] 
       </button>
     </div>
   </div>
-  <details
-    className="sc-kEYyzF ihcnje"
-    open={false}
-    style={
-      Object {
-        "fontSize": "100%",
-        "marginBottom": 0,
-      }
-    }
-  >
-    <summary
-      className="sc-kkGfuU cCdZFh"
-    >
-      <span
-        className="sc-iAyFgw jRkIxn"
-      >
-        Filter and sort activity
-      </span>
-    </summary>
-    <div
-      className="sc-hSdWYo dfimje"
-    >
-      <form>
-        <fieldset
-          className="sc-gipzik eBgapt"
-        >
-          <legend
-            className="sc-iRbamj eOWqGG"
-          >
-            Show me
-          </legend>
-          <div
-            className="sc-hzDkRC hNOsPM"
-          >
-            <div
-              className="sc-bRBYWo cfvpGy"
-            >
-              <div
-                className="sc-Rmtcm fMfOqA"
-              >
-                <label
-                  className="sc-cSHVUG jqlwpQ"
-                >
-                  <input
-                    className="sc-kAzzGY gsGxQW"
-                    type="checkbox"
-                  />
-                  <span
-                    className="sc-chPdSV hLZCFS"
-                  >
-                    My activity
-                  </span>
-                </label>
-                <label
-                  className="sc-cSHVUG jqlwpQ"
-                >
-                  <input
-                    className="sc-kAzzGY gsGxQW"
-                    type="checkbox"
-                  />
-                  <span
-                    className="sc-chPdSV hLZCFS"
-                  >
-                    My team's activity
-                  </span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </details>
   <ol
     className="sc-bXGyLb buRwxd"
   />

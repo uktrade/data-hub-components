@@ -5,6 +5,7 @@ import {
   get,
   includes,
   map,
+  some,
 } from 'lodash'
 import {
   Details,
@@ -64,15 +65,27 @@ const getPeople = (activity, personSubType) => {
   })
 }
 
+const getDescription = (types) => {
+  if (includes(types, 'dit:ServiceDelivery')) {
+    return 'A service was provided to the company'
+  }
+
+  return 'An interaction with the company took place'
+}
+
 export default class Interaction extends React.Component {
   static canRender(activity) {
-    const type = get(activity, 'object.type')
+    const types = get(activity, 'object.type')
 
-    return includes(type, 'dit:Interaction')
+    return some([ 'dit:Interaction', 'dit:ServiceDelivery' ], (type) => {
+      return includes(types, type)
+    })
   }
 
   render() {
     const {activity} = this.props
+    const types = get(activity, 'object.type')
+    const description = getDescription(types)
     const published = moment(activity.published).fromNow()
     const advisers = getPeople(activity, 'Adviser')
     const subject = get(activity, 'object.dit:subject')
@@ -83,7 +96,7 @@ export default class Interaction extends React.Component {
       <Card>
         <CardHeader>
           <CardHeaderDescription>
-            <Paragraph>An interaction with the company took place</Paragraph>
+            <Paragraph>{description}</Paragraph>
           </CardHeaderDescription>
           <CardHeaderDate>
             <Paragraph>{published}</Paragraph>
@@ -95,8 +108,8 @@ export default class Interaction extends React.Component {
         <CardDetails summary="Who was involved">
           <Table>
             <Table.Row>
-              <Table.CellHeader>Advisers</Table.CellHeader>
-              <Table.Cell>
+              <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>Advisers</Table.CellHeader>
+              <Table.Cell style={{border: 0}}>
                 {advisers.map(({id, name, emailAddress}) => {
                   return <React.Fragment key={id}>
                       <span>
@@ -104,12 +117,6 @@ export default class Interaction extends React.Component {
                       </span>
                   </React.Fragment>
                 })}
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>DIT team</Table.CellHeader>
-              <Table.Cell style={{border: 0}}>
-                team
               </Table.Cell>
             </Table.Row>
             <Table.Row>
