@@ -25,7 +25,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
         className="sc-jAaTju fBEFVB"
       >
         <p>
-          19 days ago
+          20 days ago
         </p>
       </div>
     </div>
@@ -67,11 +67,22 @@ exports[`ActivityFeedCard when there is a service delivery should render service
           >
             <th
               className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
             >
               Advisers
             </th>
             <td
               className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
             >
               <span>
                 Mario Bros
@@ -84,31 +95,6 @@ exports[`ActivityFeedCard when there is a service delivery should render service
                   mariobros@dit.com
                 </a>
               </span>
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              DIT team
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              team
             </td>
           </tr>
           <tr
@@ -192,7 +178,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
         className="sc-jAaTju fBEFVB"
       >
         <p>
-          19 days ago
+          20 days ago
         </p>
       </div>
     </div>
@@ -234,11 +220,22 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
           >
             <th
               className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
             >
               Advisers
             </th>
             <td
               className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
             >
               <span>
                 Mario Bros
@@ -251,31 +248,6 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                   mariobros@dit.com
                 </a>
               </span>
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              DIT team
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              team
             </td>
           </tr>
           <tr
