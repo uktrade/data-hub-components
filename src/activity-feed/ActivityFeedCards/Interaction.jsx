@@ -120,12 +120,6 @@ export default class Interaction extends React.Component {
               </Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>DIT team</Table.CellHeader>
-              <Table.Cell style={{border: 0}}>
-                team
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row>
               <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>Services</Table.CellHeader>
               <Table.Cell style={{border: 0}}>{service}</Table.Cell>
             </Table.Row>
