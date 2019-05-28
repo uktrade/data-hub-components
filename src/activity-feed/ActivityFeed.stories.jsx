@@ -1,12 +1,10 @@
 import React from 'react'
-import {storiesOf} from '@storybook/react'
-
-import {GridCol, GridRow, Main} from 'govuk-react'
+import { storiesOf } from '@storybook/react'
+import { GridCol, GridRow, Main } from 'govuk-react'
+import { includes } from 'lodash'
 
 import ActivityFeed from './ActivityFeed'
 import activityFeedFixtures from '../../fixtures/activity_feed'
-import {includes} from 'lodash'
-
 import datahubBackground from '../../assets/images/data-hub-one-list-corp.png'
 
 const filteredActivities = activityFeedFixtures.filter(activity => {
@@ -17,46 +15,92 @@ class ActivityFeedDemoApp extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      activities: filteredActivities,
+      activities: [],
       isLoading: false,
+      hasMore: true,
+      offset: 0,
+      error: false,
     }
   }
 
-  onLoadMore = () => {
-    const activities = this.state.activities.concat(filteredActivities)
+  async componentDidMount() {
+    await this.onLoadMore()
+  }
+
+  fetchActivities = (offset, limit) => {
+    return new Promise((resolve, reject) => {
+      // Simulate delay.
+      setTimeout(() => {
+        resolve({
+          activities: filteredActivities,
+          total: 10,
+        })
+      }, 1500)
+    })
+  }
+
+  onLoadMore = async () => {
+    const { offset } = this.state
+    const limit = 20
+
     this.setState({
       isLoading: true,
     })
 
-    // Simulate delay.
-    setTimeout(() => {
+    try {
+      const { activities, total } = await this.fetchActivities(offset, limit)
+      const allActivities = this.state.activities.concat(activities)
+
       this.setState({
-        activities,
         isLoading: false,
       })
-    }, 1500)
+
+      this.setState({
+        activities: allActivities,
+        hasMore: total > allActivities.length,
+        offset: offset + limit,
+      })
+    }
+    catch (e) {
+      console.log(e.message)
+      this.setState({
+        isLoading: false,
+        hasMore: false,
+        error: true,
+      })
+    }
   }
 
   render() {
-    const {activities, isLoading} = this.state
+    const { activities, isLoading, hasMore, error } = this.state
+
     return (
-      <ActivityFeed activities={activities} isLoading={isLoading} onLoadMore={this.onLoadMore}/>
+      <div>
+        <ActivityFeed
+          activities={activities}
+          hasMore={hasMore}
+          onLoadMore={this.onLoadMore}
+          isLoading={isLoading}
+        />
+
+        {error && <div>Couldn't load more activities.</div>}
+      </div>
     )
   }
 }
 
 storiesOf('ActivityFeed', module)
-  .add('Entire feed', () => <ActivityFeedDemoApp />)
+  .add('Entire feed', () => <ActivityFeedDemoApp/>)
   .add('Data Hub company page', () => {
     return <Main>
       <GridRow>
         <GridCol>
-          <img src={datahubBackground} width="960" alt="DataHub" />
+          <img src={datahubBackground} width="960" alt="DataHub"/>
         </GridCol>
       </GridRow>
       <GridRow>
         <GridCol>
-          <ActivityFeedDemoApp />
+          <ActivityFeedDemoApp/>
         </GridCol>
       </GridRow>
     </Main>

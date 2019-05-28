@@ -35,12 +35,13 @@ export default class ActivityFeedHeader extends React.Component {
 
   render() {
     const { totalCards } = this.props
+    const headerText = totalCards > 0 ? `${totalCards} activities` : 'Activities'
 
     return (
       <React.Fragment>
         <HeaderSummary>
           <HeaderCount>
-            <H2>{totalCards} activities</H2>
+            <H2>{headerText}</H2>
           </HeaderCount>
           <HeaderActions>
             <Button buttonColour="#dee0e2" buttonTextColour="#000">Add an interaction</Button>
