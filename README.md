@@ -47,7 +47,7 @@ jest --updateSnapshot
 ## Creating a release
 
 ```bash
-yarn publish
+yarn release
 ```
 
 ## Notes
