@@ -28,14 +28,21 @@ const HeaderActions = styled.div`
   }
 `
 
+const Link = styled.a`
+margin-bottom: 0;
+`
+
 export default class ActivityFeedHeader extends React.Component {
   static propTypes = {
     totalCards: PropTypes.number.isRequired,
+    addContentText: PropTypes.string,
+    addContentLink: PropTypes.string,
   }
 
   render() {
-    const { totalCards } = this.props
+    const { totalCards, addContentText, addContentLink } = this.props
     const headerText = totalCards > 0 ? `${totalCards} activities` : 'Activities'
+    const showAddContentButton = addContentText && addContentLink
 
     return (
       <React.Fragment>
@@ -44,7 +51,9 @@ export default class ActivityFeedHeader extends React.Component {
             <H2>{headerText}</H2>
           </HeaderCount>
           <HeaderActions>
-            <Button buttonColour="#dee0e2" buttonTextColour="#000">Add an interaction</Button>
+            {showAddContentButton &&
+              <Button as={Link} href={addContentLink} buttonColour="#dee0e2" buttonTextColour="#000">{addContentText}</Button>
+            }
           </HeaderActions>
         </HeaderSummary>
       </React.Fragment>

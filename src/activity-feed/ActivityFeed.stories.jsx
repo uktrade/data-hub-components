@@ -81,6 +81,8 @@ class ActivityFeedDemoApp extends React.Component {
           hasMore={hasMore}
           onLoadMore={this.onLoadMore}
           isLoading={isLoading}
+          addContentText="Add interaction"
+          addContentLink="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create"
         />
 
         {error && <div>Couldn't load more activities.</div>}
