@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 const HeaderSummary = styled.div`
   display: flex;
-  border-bottom: 2px solid #000;
+  border-bottom: 5px solid #000;
   margin-bottom: 10px;
   padding-bottom: 10px;
 `
