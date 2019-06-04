@@ -1,11 +1,14 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
+import { storiesOf, addDecorator } from '@storybook/react'
+import { withKnobs, text } from '@storybook/addon-knobs';
 import { GridCol, GridRow, Main } from 'govuk-react'
 import { includes } from 'lodash'
 
 import ActivityFeed from './ActivityFeed'
 import activityFeedFixtures from '../../fixtures/activity_feed'
 import datahubBackground from '../../assets/images/data-hub-one-list-corp.png'
+
+addDecorator(withKnobs);
 
 const filteredActivities = activityFeedFixtures.filter(activity => {
   return includes(activity['object']['type'], 'dit:Interaction')
@@ -73,6 +76,7 @@ class ActivityFeedDemoApp extends React.Component {
 
   render() {
     const { activities, isLoading, hasMore, error } = this.state
+    const isEmptyFeed = activities.length === 0 && !hasMore
 
     return (
       <div>
@@ -82,17 +86,17 @@ class ActivityFeedDemoApp extends React.Component {
           onLoadMore={this.onLoadMore}
           isLoading={isLoading}
           addContentText="Add interaction"
-          addContentLink="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create"
-        />
-
-        {error && <div>Couldn't load more activities.</div>}
+          addContentLink="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create">
+          {isEmptyFeed && !error && <div>There are no activities to show.</div>}
+          {error && <div>Error occurred while loading activities.</div>}
+        </ActivityFeed>
       </div>
     )
   }
 }
 
 storiesOf('ActivityFeed', module)
-  .add('Entire feed', () => <ActivityFeedDemoApp/>)
+  .add('Entire feed', () => <ActivityFeedDemoApp />)
   .add('Data Hub company page', () => {
     return <Main>
       <GridRow>
@@ -102,8 +106,18 @@ storiesOf('ActivityFeed', module)
       </GridRow>
       <GridRow>
         <GridCol>
-          <ActivityFeedDemoApp/>
+          <ActivityFeedDemoApp />
         </GridCol>
       </GridRow>
     </Main>
   })
+  .add('Empty feed', () => <ActivityFeed />)
+  .add('With error', () => {
+    class ActivityFeedErrorDemoApp extends ActivityFeedDemoApp {
+      fetchActivities = (offset, limit) => {
+        throw new Error('Fake error!')
+      }
+    }
+    return <ActivityFeedErrorDemoApp />
+  })
+

@@ -22,8 +22,8 @@ const ActivityFeedCardList = styled('ol')`
 
 export default class ActivityFeed extends React.Component {
   static propTypes = {
-    activities: PropTypes.arrayOf(PropTypes.object).isRequired,
-    onLoadMore: PropTypes.func.isRequired,
+    activities: PropTypes.arrayOf(PropTypes.object),
+    onLoadMore: PropTypes.func,
     hasMore: PropTypes.bool,
     isLoading: PropTypes.bool,
     addContentText: PropTypes.string,
@@ -31,12 +31,20 @@ export default class ActivityFeed extends React.Component {
   }
 
   static defaultProps = {
-    hasMore: true,
+    activities: [],
+    hasMore: false,
     isLoading: false,
   }
 
   render() {
-    const { activities, onLoadMore, hasMore, isLoading, addContentText, addContentLink } = this.props
+    const {
+      activities,
+      onLoadMore,
+      hasMore,
+      isLoading,
+      addContentText,
+      addContentLink,
+    } = this.props
 
     return (
       <ActivityFeedContainer>
@@ -51,6 +59,8 @@ export default class ActivityFeed extends React.Component {
         </ActivityFeedCardList>
 
         {hasMore && <ActivityFeedPagination isLoading={isLoading} onLoadMore={onLoadMore} />}
+
+        {this.props.children}
       </ActivityFeedContainer>
     )
   }
