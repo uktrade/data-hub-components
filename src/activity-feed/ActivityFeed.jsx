@@ -8,7 +8,7 @@ import ActivityFeedHeader from './ActivityFeedHeader'
 import ActivityFeedPagination from './ActivityFeedPagination'
 
 const ActivityFeedContainer = styled('div')`
-  margin: ${SPACING.SCALE_2};
+  margin: ${SPACING.SCALE_2} 0;
 `
 
 const ActivityFeedCardList = styled('ol')`

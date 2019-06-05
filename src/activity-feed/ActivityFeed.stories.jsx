@@ -3,6 +3,7 @@ import { storiesOf, addDecorator } from '@storybook/react'
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { GridCol, GridRow, Main } from 'govuk-react'
 import { includes } from 'lodash'
+import { SPACING } from '@govuk-react/constants'
 
 import ActivityFeed from './ActivityFeed'
 import activityFeedFixtures from '../../fixtures/activity_feed'
@@ -105,8 +106,8 @@ storiesOf('ActivityFeed', module)
         </GridCol>
       </GridRow>
       <GridRow>
-        <GridCol>
-          <ActivityFeedDemoApp />
+        <GridCol style={{margin: SPACING.SCALE_2}}>
+          <ActivityFeedDemoApp/>
         </GridCol>
       </GridRow>
     </Main>
