@@ -1,6 +1,6 @@
 {
   "name": "data-hub-components",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "license": "MIT",
   "homepage": "https://github.com/uktrade/data-hub-components",
   "description": "Library of React Components used by the Data Hub platform (datahub.trade.gov.uk).",
