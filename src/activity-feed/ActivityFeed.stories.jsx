@@ -63,6 +63,7 @@ class ActivityFeedDemoApp extends React.Component {
         activities: allActivities,
         hasMore: total > allActivities.length,
         offset: offset + limit,
+        total,
       })
     }
     catch (e) {
@@ -76,13 +77,14 @@ class ActivityFeedDemoApp extends React.Component {
   }
 
   render() {
-    const { activities, isLoading, hasMore, error } = this.state
+    const { activities, isLoading, hasMore, error, total } = this.state
     const isEmptyFeed = activities.length === 0 && !hasMore
 
     return (
       <div>
         <ActivityFeed
           activities={activities}
+          totalActivities={total}
           hasMore={hasMore}
           onLoadMore={this.onLoadMore}
           isLoading={isLoading}

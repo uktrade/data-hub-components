@@ -28,12 +28,14 @@ export default class ActivityFeed extends React.Component {
     isLoading: PropTypes.bool,
     addContentText: PropTypes.string,
     addContentLink: PropTypes.string,
+    totalActivities: PropTypes.number,
   }
 
   static defaultProps = {
     activities: [],
     hasMore: false,
     isLoading: false,
+    totalActivities: 0,
   }
 
   render() {
@@ -44,11 +46,16 @@ export default class ActivityFeed extends React.Component {
       isLoading,
       addContentText,
       addContentLink,
+      totalActivities,
     } = this.props
 
     return (
       <ActivityFeedContainer>
-        <ActivityFeedHeader totalActivities={activities.length} addContentText={addContentText} addContentLink={addContentLink} />
+        <ActivityFeedHeader
+          totalActivities={totalActivities}
+          addContentText={addContentText}
+          addContentLink={addContentLink}
+        />
 
         <ActivityFeedCardList>
           {activities.map(activity => {
