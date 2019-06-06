@@ -11,11 +11,12 @@ const Pagination = styled('div')`
 
 export default class ActivityFeedPagination extends React.Component {
   static propTypes = {
-    onLoadMore: PropTypes.func.isRequired,
+    onLoadMore: PropTypes.func,
     isLoading: PropTypes.bool,
   }
 
   static defaultProps = {
+    onLoadMore: () => {},
     isLoading: false,
   }
 
@@ -25,7 +26,12 @@ export default class ActivityFeedPagination extends React.Component {
     return (
       <Pagination>
         <LoadingBox loading={isLoading} backgroundColorOpacity={1} timeOut={0}>
-          <Button disabled={isLoading} onClick={onLoadMore} buttonColour="#dee0e2" buttonTextColour="#000">Show more activity</Button>
+          <Button
+            disabled={isLoading}
+            onClick={onLoadMore}
+            buttonColour="#dee0e2"
+            buttonTextColour="#000"
+          >Show more activity</Button>
         </LoadingBox>
       </Pagination>
     )

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivityFeedHeader renders header with all props defined 1`] = `
+<div
+  className="sc-cmthru jNIEHA"
+>
+  <div
+    className="sc-hMFtBS dZxfgE"
+  >
+    <h2
+      className="sc-cMljjf leOqMw"
+      size="LARGE"
+    >
+      999 activities
+    </h2>
+  </div>
+  <div
+    className="sc-cLQEGU oWkRe"
+  >
+    <a
+      className="sc-VigVT kJjasd sc-gqPbQI eomoCb"
+      disabled={false}
+      href="http://testing.example.com"
+    >
+      Test button
+    </a>
+  </div>
+</div>
+`;
+
+exports[`ActivityFeedHeader renders header without props 1`] = `
+<div
+  className="sc-cmthru jNIEHA"
+>
+  <div
+    className="sc-hMFtBS dZxfgE"
+  >
+    <h2
+      className="sc-cMljjf leOqMw"
+      size="LARGE"
+    >
+      Activities
+    </h2>
+  </div>
+  <div
+    className="sc-cLQEGU oWkRe"
+  />
+</div>
+`;

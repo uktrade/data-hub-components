@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ActivityFeed when there are activities should render activity 1`] = `
+exports[`ActivityFeed renders empty feed 1`] = `
 <div
-  className="sc-daURTG cCbora"
+  className="sc-bXGyLb jaYGFQ"
 >
   <div
-    className="sc-GMQeP cPFqxA"
+    className="sc-GMQeP fgSkyU"
   >
     <div
       className="sc-exAgwC jnWYar"
@@ -14,23 +14,72 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
         className="sc-cMljjf leOqMw"
         size="LARGE"
       >
-        1
-         activities
+        Activities
       </h2>
     </div>
     <div
       className="sc-cQFLBn cxgntD"
-    >
-      <button
-        className="sc-VigVT kJjasd"
-        disabled={false}
-      >
-        Add an interaction
-      </button>
-    </div>
+    />
   </div>
   <ol
-    className="sc-bXGyLb buRwxd"
+    className="sc-lkqHmb bHXlYn"
+  />
+</div>
+`;
+
+exports[`ActivityFeed renders its children 1`] = `
+<div
+  className="sc-bXGyLb jaYGFQ"
+>
+  <div
+    className="sc-GMQeP fgSkyU"
+  >
+    <div
+      className="sc-exAgwC jnWYar"
+    >
+      <h2
+        className="sc-cMljjf leOqMw"
+        size="LARGE"
+      >
+        Activities
+      </h2>
+    </div>
+    <div
+      className="sc-cQFLBn cxgntD"
+    />
+  </div>
+  <ol
+    className="sc-lkqHmb bHXlYn"
+  />
+  <div>
+    Child element to test
+  </div>
+</div>
+`;
+
+exports[`ActivityFeed renders single activity 1`] = `
+<div
+  className="sc-bXGyLb jaYGFQ"
+>
+  <div
+    className="sc-GMQeP fgSkyU"
+  >
+    <div
+      className="sc-exAgwC jnWYar"
+    >
+      <h2
+        className="sc-cMljjf leOqMw"
+        size="LARGE"
+      >
+        1 activities
+      </h2>
+    </div>
+    <div
+      className="sc-cQFLBn cxgntD"
+    />
+  </div>
+  <ol
+    className="sc-lkqHmb bHXlYn"
   >
     <li>
       <div
@@ -57,7 +106,7 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
               className="sc-jAaTju fBEFVB"
             >
               <p>
-                20 days ago
+                a month ago
               </p>
             </div>
           </div>
@@ -171,12 +220,12 @@ exports[`ActivityFeed when there are activities should render activity 1`] = `
 </div>
 `;
 
-exports[`ActivityFeed when there are no activities should render empty feed 1`] = `
+exports[`ActivityFeed renders with "Load more" link 1`] = `
 <div
-  className="sc-daURTG cCbora"
+  className="sc-bXGyLb jaYGFQ"
 >
   <div
-    className="sc-GMQeP cPFqxA"
+    className="sc-GMQeP fgSkyU"
   >
     <div
       className="sc-exAgwC jnWYar"
@@ -185,23 +234,2978 @@ exports[`ActivityFeed when there are no activities should render empty feed 1`] 
         className="sc-cMljjf leOqMw"
         size="LARGE"
       >
-        0
-         activities
+        20 activities
       </h2>
     </div>
     <div
       className="sc-cQFLBn cxgntD"
+    />
+  </div>
+  <ol
+    className="sc-lkqHmb bHXlYn"
+  >
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+    <li>
+      <div
+        className="sc-cmthru jjutsD"
+      >
+        <div
+          className="sc-hMFtBS bSjygG"
+        >
+          <div
+            className="sc-cLQEGU ciAtZf"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                An interaction with the company took place
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-gqPbQI fPqDmG"
+          >
+            <div
+              className="sc-jAaTju fBEFVB"
+            >
+              <p>
+                a month ago
+              </p>
+            </div>
+          </div>
+          <div
+            className="sc-hORach eRIqAV"
+          >
+            <h3
+              className="sc-cMljjf kCLKvB"
+              size="MEDIUM"
+            >
+              Invited to Technology Roundtable
+            </h3>
+          </div>
+        </div>
+        <details
+          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          open={false}
+        >
+          <summary
+            className="sc-kkGfuU cCdZFh"
+          >
+            <span
+              className="sc-iAyFgw jRkIxn"
+            >
+              Who was involved
+            </span>
+          </summary>
+          <div
+            className="sc-hSdWYo dfimje"
+          >
+            <table
+              className="sc-bwCtUz iVExri"
+            >
+              <tbody
+                className="sc-eXEjpC fuVqJC"
+              >
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Advisers
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                       
+                      <a
+                        className="sc-bwzfXH VXMCV"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-iQKALj ftJWrM"
+                >
+                  <th
+                    className="sc-RefOD dxRfSY"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-RefOD gzbQXK"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-bwzfXH VXMCV"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
+      </div>
+    </li>
+  </ol>
+  <div
+    className="sc-daURTG cGdZDS"
+  >
+    <div
+      className="sc-eqIVtm fxHPMe"
     >
       <button
         className="sc-VigVT kJjasd"
         disabled={false}
+        onClick={[Function]}
       >
-        Add an interaction
+        Show more activity
       </button>
     </div>
   </div>
+</div>
+`;
+
+exports[`ActivityFeed renders with loader 1`] = `
+<div
+  className="sc-bXGyLb jaYGFQ"
+>
+  <div
+    className="sc-GMQeP fgSkyU"
+  >
+    <div
+      className="sc-exAgwC jnWYar"
+    >
+      <h2
+        className="sc-cMljjf leOqMw"
+        size="LARGE"
+      >
+        Activities
+      </h2>
+    </div>
+    <div
+      className="sc-cQFLBn cxgntD"
+    />
+  </div>
   <ol
-    className="sc-bXGyLb buRwxd"
+    className="sc-lkqHmb bHXlYn"
   />
+  <div
+    className="sc-daURTG cGdZDS"
+  >
+    <div
+      className="sc-eqIVtm fxHPMe"
+    >
+      <div
+        className="sc-fAjcbJ fsjQAG"
+      >
+        <svg
+          className="icon-loading"
+          fill="#0b0c0c"
+          height="50px"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+          version="1.1"
+          viewBox="-25 -25 50 50"
+          width="50px"
+        >
+          <title>
+            Loading
+          </title>
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "0ms",
+              }
+            }
+            transform="rotate(0, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "83ms",
+              }
+            }
+            transform="rotate(30, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "166ms",
+              }
+            }
+            transform="rotate(60, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "249ms",
+              }
+            }
+            transform="rotate(90, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "332ms",
+              }
+            }
+            transform="rotate(120, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "415ms",
+              }
+            }
+            transform="rotate(150, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "498ms",
+              }
+            }
+            transform="rotate(180, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "581ms",
+              }
+            }
+            transform="rotate(210, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "664ms",
+              }
+            }
+            transform="rotate(240, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "747ms",
+              }
+            }
+            transform="rotate(270, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "830ms",
+              }
+            }
+            transform="rotate(300, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "913ms",
+              }
+            }
+            transform="rotate(330, 0, 2) translate(10 0)"
+            width="12"
+          />
+        </svg>
+        <div
+          className="overlay sc-caSCKo cQyEyL"
+        />
+      </div>
+      <button
+        className="sc-VigVT kJjasd"
+        disabled={true}
+        onClick={[Function]}
+      >
+        Show more activity
+      </button>
+    </div>
+  </div>
 </div>
 `;
