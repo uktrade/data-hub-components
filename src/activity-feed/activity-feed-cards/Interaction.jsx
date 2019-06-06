@@ -15,10 +15,11 @@ import {
   H3,
 } from 'govuk-react'
 import styled from "styled-components";
+import { SPACING } from '@govuk-react/constants'
 
 const Card = styled('div')`
   border: 1px solid #c0c0c0;
-  padding: 15px;
+  padding: ${SPACING.SCALE_3};
 `
 
 const CardHeader = styled('div')`
@@ -26,7 +27,7 @@ const CardHeader = styled('div')`
   flex-flow: row wrap;
   
   & > div {
-    margin-bottom: 5px;
+    margin-bottom: ${SPACING.SCALE_1};
   }
 `
 

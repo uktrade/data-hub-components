@@ -2,17 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { H2, Button } from 'govuk-react'
 import styled from 'styled-components'
+import { SPACING } from '@govuk-react/constants'
 
 const HeaderSummary = styled.div`
   display: flex;
   border-bottom: 5px solid #000;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: ${SPACING.SCALE_2};
+  padding-bottom: ${SPACING.SCALE_2};
 `
 
 const HeaderCount = styled.div`
   flex-grow: 1;
-  margin-top: 4px;
+  margin-top: ${SPACING.SCALE_1};
   & > H2 {
     font-weight: normal;
     font-size: 28px;

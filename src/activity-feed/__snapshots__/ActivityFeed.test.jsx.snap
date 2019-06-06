@@ -8,7 +8,7 @@ exports[`ActivityFeed renders empty feed 1`] = `
     className="sc-GMQeP fgSkyU"
   >
     <div
-      className="sc-exAgwC jnWYar"
+      className="sc-exAgwC dbNXu"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -35,7 +35,7 @@ exports[`ActivityFeed renders its children 1`] = `
     className="sc-GMQeP fgSkyU"
   >
     <div
-      className="sc-exAgwC jnWYar"
+      className="sc-exAgwC dbNXu"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -65,7 +65,7 @@ exports[`ActivityFeed renders single activity 1`] = `
     className="sc-GMQeP fgSkyU"
   >
     <div
-      className="sc-exAgwC jnWYar"
+      className="sc-exAgwC dbNXu"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -228,7 +228,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     className="sc-GMQeP fgSkyU"
   >
     <div
-      className="sc-exAgwC jnWYar"
+      className="sc-exAgwC dbNXu"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -2946,7 +2946,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
   </ol>
   <div
-    className="sc-daURTG cGdZDS"
+    className="sc-daURTG ghspCD"
   >
     <div
       className="sc-eqIVtm fxHPMe"
@@ -2971,7 +2971,7 @@ exports[`ActivityFeed renders with loader 1`] = `
     className="sc-GMQeP fgSkyU"
   >
     <div
-      className="sc-exAgwC jnWYar"
+      className="sc-exAgwC dbNXu"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -2988,7 +2988,7 @@ exports[`ActivityFeed renders with loader 1`] = `
     className="sc-lkqHmb bHXlYn"
   />
   <div
-    className="sc-daURTG cGdZDS"
+    className="sc-daURTG ghspCD"
   >
     <div
       className="sc-eqIVtm fxHPMe"

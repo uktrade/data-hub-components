@@ -2,10 +2,11 @@ import React from 'react'
 import { get, isEmpty } from 'lodash'
 import { H3 } from 'govuk-react'
 import styled from 'styled-components'
+import { SPACING } from '@govuk-react/constants'
 
 const Card = styled('div')`
   border: 1px solid #c0c0c0;
-  padding: 15px;
+  padding: ${SPACING.SCALE_3};
 `
 
 const CardHeaderSubject = styled('div')`

@@ -5,7 +5,7 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
   className="sc-cmthru jNIEHA"
 >
   <div
-    className="sc-hMFtBS dZxfgE"
+    className="sc-hMFtBS kVBfdo"
   >
     <h2
       className="sc-cMljjf leOqMw"
@@ -33,7 +33,7 @@ exports[`ActivityFeedHeader renders header without props 1`] = `
   className="sc-cmthru jNIEHA"
 >
   <div
-    className="sc-hMFtBS dZxfgE"
+    className="sc-hMFtBS kVBfdo"
   >
     <h2
       className="sc-cMljjf leOqMw"
