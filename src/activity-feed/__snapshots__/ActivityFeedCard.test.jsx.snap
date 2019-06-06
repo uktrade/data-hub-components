@@ -25,7 +25,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
         className="sc-jAaTju fBEFVB"
       >
         <p>
-          20 days ago
+          a month ago
         </p>
       </div>
     </div>
@@ -178,7 +178,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
         className="sc-jAaTju fBEFVB"
       >
         <p>
-          20 days ago
+          a month ago
         </p>
       </div>
     </div>

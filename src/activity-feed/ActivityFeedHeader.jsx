@@ -34,14 +34,18 @@ margin-bottom: 0;
 
 export default class ActivityFeedHeader extends React.Component {
   static propTypes = {
-    totalCards: PropTypes.number.isRequired,
+    totalActivities: PropTypes.number,
     addContentText: PropTypes.string,
     addContentLink: PropTypes.string,
   }
 
+  static defaultProps = {
+    totalActivities: 0,
+  }
+
   render() {
-    const { totalCards, addContentText, addContentLink } = this.props
-    const headerText = totalCards > 0 ? `${totalCards} activities` : 'Activities'
+    const { totalActivities, addContentText, addContentLink } = this.props
+    const headerText = totalActivities > 0 ? `${totalActivities} activities` : 'Activities'
     const showAddContentButton = addContentText && addContentLink
 
     return (
@@ -52,7 +56,11 @@ export default class ActivityFeedHeader extends React.Component {
           </HeaderCount>
           <HeaderActions>
             {showAddContentButton &&
-              <Button as={Link} href={addContentLink} buttonColour="#dee0e2" buttonTextColour="#000">{addContentText}</Button>
+              <Button
+                as={Link}
+                href={addContentLink}
+                buttonColour="#dee0e2"
+                buttonTextColour="#000">{addContentText}</Button>
             }
           </HeaderActions>
         </HeaderSummary>

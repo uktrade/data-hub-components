@@ -4,6 +4,10 @@ import renderer from 'react-test-renderer'
 import ActivityFeedCard from './ActivityFeedCard'
 import interactionActivityFixture from '../../fixtures/activity_feed/interactions/interaction'
 import serviceDeliveryActivityFixture from '../../fixtures/activity_feed/interactions/service_delivery'
+import MockDate from 'mockdate'
+
+// Lock the date so moment's relative date doesn't break our deterministic tests.
+MockDate.set(1559750582706)
 
 describe('ActivityFeedCard', () => {
   describe('when the interaction is empty', () => {

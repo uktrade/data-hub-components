@@ -48,7 +48,7 @@ export default class ActivityFeed extends React.Component {
 
     return (
       <ActivityFeedContainer>
-        <ActivityFeedHeader totalCards={activities.length} addContentText={addContentText} addContentLink={addContentLink} />
+        <ActivityFeedHeader totalActivities={activities.length} addContentText={addContentText} addContentLink={addContentLink} />
 
         <ActivityFeedCardList>
           {activities.map(activity => {
