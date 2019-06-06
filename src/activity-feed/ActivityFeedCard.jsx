@@ -1,7 +1,7 @@
 import React from 'react'
 import { find } from 'lodash'
 
-import Cards from './ActivityFeedCards'
+import Cards from './activity-feed-cards'
 
 export default class ActivityFeedCard extends React.Component {
   constructor(props) {
