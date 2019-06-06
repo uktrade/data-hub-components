@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf, addDecorator } from '@storybook/react'
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs'
 import { GridCol, GridRow, Main } from 'govuk-react'
 import { includes } from 'lodash'
 import { SPACING } from '@govuk-react/constants'
@@ -9,7 +9,7 @@ import ActivityFeed from './ActivityFeed'
 import activityFeedFixtures from '../../fixtures/activity_feed'
 import datahubBackground from '../../assets/images/data-hub-one-list-corp.png'
 
-addDecorator(withKnobs);
+addDecorator(withKnobs)
 
 const filteredActivities = activityFeedFixtures.filter(activity => {
   return includes(activity['object']['type'], 'dit:Interaction')

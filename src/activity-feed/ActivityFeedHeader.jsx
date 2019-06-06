@@ -50,22 +50,20 @@ export default class ActivityFeedHeader extends React.Component {
     const showAddContentButton = addContentText && addContentLink
 
     return (
-      <React.Fragment>
-        <HeaderSummary>
-          <HeaderCount>
-            <H2>{headerText}</H2>
-          </HeaderCount>
-          <HeaderActions>
-            {showAddContentButton &&
-              <Button
-                as={Link}
-                href={addContentLink}
-                buttonColour="#dee0e2"
-                buttonTextColour="#000">{addContentText}</Button>
-            }
-          </HeaderActions>
-        </HeaderSummary>
-      </React.Fragment>
+      <HeaderSummary>
+        <HeaderCount>
+          <H2>{headerText}</H2>
+        </HeaderCount>
+        <HeaderActions>
+          {showAddContentButton &&
+          <Button
+            as={Link}
+            href={addContentLink}
+            buttonColour="#dee0e2"
+            buttonTextColour="#000">{addContentText}</Button>
+          }
+        </HeaderActions>
+      </HeaderSummary>
     )
   }
 }

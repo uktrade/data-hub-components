@@ -14,7 +14,7 @@ import {
   Table,
   H3,
 } from 'govuk-react'
-import styled from "styled-components";
+import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
 
 const Card = styled('div')`
