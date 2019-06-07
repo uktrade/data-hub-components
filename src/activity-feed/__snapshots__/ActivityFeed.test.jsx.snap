@@ -2,13 +2,13 @@
 
 exports[`ActivityFeed renders empty feed 1`] = `
 <div
-  className="sc-bXGyLb jaYGFQ"
+  className="sc-eLExRp dieyYx"
 >
   <div
-    className="sc-GMQeP fgSkyU"
+    className="sc-cQFLBn ltcKI"
   >
     <div
-      className="sc-exAgwC dbNXu"
+      className="sc-gojNiO fsYILh"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -18,24 +18,24 @@ exports[`ActivityFeed renders empty feed 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cQFLBn cxgntD"
+      className="sc-daURTG RCCuj"
     />
   </div>
   <ol
-    className="sc-lkqHmb bHXlYn"
+    className="sc-cbkKFq cOJAMG"
   />
 </div>
 `;
 
 exports[`ActivityFeed renders its children 1`] = `
 <div
-  className="sc-bXGyLb jaYGFQ"
+  className="sc-eLExRp dieyYx"
 >
   <div
-    className="sc-GMQeP fgSkyU"
+    className="sc-cQFLBn ltcKI"
   >
     <div
-      className="sc-exAgwC dbNXu"
+      className="sc-gojNiO fsYILh"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -45,11 +45,11 @@ exports[`ActivityFeed renders its children 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cQFLBn cxgntD"
+      className="sc-daURTG RCCuj"
     />
   </div>
   <ol
-    className="sc-lkqHmb bHXlYn"
+    className="sc-cbkKFq cOJAMG"
   />
   <div>
     Child element to test
@@ -59,13 +59,13 @@ exports[`ActivityFeed renders its children 1`] = `
 
 exports[`ActivityFeed renders single activity 1`] = `
 <div
-  className="sc-bXGyLb jaYGFQ"
+  className="sc-eLExRp dieyYx"
 >
   <div
-    className="sc-GMQeP fgSkyU"
+    className="sc-cQFLBn ltcKI"
   >
     <div
-      className="sc-exAgwC dbNXu"
+      className="sc-gojNiO fsYILh"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -75,11 +75,11 @@ exports[`ActivityFeed renders single activity 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cQFLBn cxgntD"
+      className="sc-daURTG RCCuj"
     />
   </div>
   <ol
-    className="sc-lkqHmb bHXlYn"
+    className="sc-cbkKFq cOJAMG"
   >
     <li>
       <div
@@ -99,7 +99,7 @@ exports[`ActivityFeed renders single activity 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -110,7 +110,7 @@ exports[`ActivityFeed renders single activity 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -210,13 +210,13 @@ exports[`ActivityFeed renders single activity 1`] = `
 
 exports[`ActivityFeed renders with "Load more" link 1`] = `
 <div
-  className="sc-bXGyLb jaYGFQ"
+  className="sc-eLExRp dieyYx"
 >
   <div
-    className="sc-GMQeP fgSkyU"
+    className="sc-cQFLBn ltcKI"
   >
     <div
-      className="sc-exAgwC dbNXu"
+      className="sc-gojNiO fsYILh"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -226,11 +226,11 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cQFLBn cxgntD"
+      className="sc-daURTG RCCuj"
     />
   </div>
   <ol
-    className="sc-lkqHmb bHXlYn"
+    className="sc-cbkKFq cOJAMG"
   >
     <li>
       <div
@@ -250,7 +250,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -261,7 +261,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -373,7 +373,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -384,7 +384,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -496,7 +496,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -507,7 +507,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -619,7 +619,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -630,7 +630,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -742,7 +742,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -753,7 +753,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -865,7 +865,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -876,7 +876,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -988,7 +988,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -999,7 +999,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1111,7 +1111,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1122,7 +1122,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1234,7 +1234,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1245,7 +1245,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1357,7 +1357,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1368,7 +1368,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1480,7 +1480,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1491,7 +1491,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1603,7 +1603,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1614,7 +1614,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1726,7 +1726,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1737,7 +1737,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1849,7 +1849,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1860,7 +1860,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1972,7 +1972,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1983,7 +1983,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2095,7 +2095,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -2106,7 +2106,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2218,7 +2218,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -2229,7 +2229,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2341,7 +2341,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -2352,7 +2352,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2464,7 +2464,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -2475,7 +2475,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2587,7 +2587,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             a month ago
           </div>
           <div
-            className="sc-hORach cvIZEb"
+            className="sc-bMVAic gYawyW"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -2598,7 +2598,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
+          className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2694,7 +2694,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
   </ol>
   <div
-    className="sc-daURTG ghspCD"
+    className="sc-lkqHmb gJqCYV"
   >
     <div
       className="sc-eqIVtm fxHPMe"
@@ -2918,13 +2918,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
 
 exports[`ActivityFeed renders with loader 1`] = `
 <div
-  className="sc-bXGyLb jaYGFQ"
+  className="sc-eLExRp dieyYx"
 >
   <div
-    className="sc-GMQeP fgSkyU"
+    className="sc-cQFLBn ltcKI"
   >
     <div
-      className="sc-exAgwC dbNXu"
+      className="sc-gojNiO fsYILh"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -2934,14 +2934,14 @@ exports[`ActivityFeed renders with loader 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cQFLBn cxgntD"
+      className="sc-daURTG RCCuj"
     />
   </div>
   <ol
-    className="sc-lkqHmb bHXlYn"
+    className="sc-cbkKFq cOJAMG"
   />
   <div
-    className="sc-daURTG ghspCD"
+    className="sc-lkqHmb gJqCYV"
   >
     <div
       className="sc-eqIVtm fxHPMe"
