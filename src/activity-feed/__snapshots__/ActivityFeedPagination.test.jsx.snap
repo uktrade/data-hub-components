@@ -2,7 +2,7 @@
 
 exports[`ActivityFeedPagination renders default pagination 1`] = `
 <div
-  className="sc-cmthru jYqSKN"
+  className="sc-cmthru dhFBXA"
 >
   <div
     className="sc-eqIVtm fxHPMe"
@@ -20,7 +20,7 @@ exports[`ActivityFeedPagination renders default pagination 1`] = `
 
 exports[`ActivityFeedPagination renders pagination with loader 1`] = `
 <div
-  className="sc-cmthru jYqSKN"
+  className="sc-cmthru dhFBXA"
 >
   <div
     className="sc-eqIVtm fxHPMe"
@@ -243,7 +243,7 @@ exports[`ActivityFeedPagination renders pagination with loader 1`] = `
 
 exports[`ActivityFeedPagination renders pagination with loader 2`] = `
 <div
-  className="sc-cmthru jYqSKN"
+  className="sc-cmthru dhFBXA"
 >
   <div
     className="sc-eqIVtm fxHPMe"

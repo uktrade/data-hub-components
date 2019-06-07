@@ -2,11 +2,12 @@ import React from 'react'
 import { Button, LoadingBox } from 'govuk-react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import { SPACING } from '@govuk-react/constants'
 
 const Pagination = styled('div')`
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-top: ${SPACING.SCALE_5};
+  margin-bottom: ${SPACING.SCALE_6};
 `
 
 export default class ActivityFeedPagination extends React.Component {
