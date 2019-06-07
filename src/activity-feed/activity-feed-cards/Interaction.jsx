@@ -87,7 +87,7 @@ export default class Interaction extends React.Component {
     const {activity} = this.props
     const types = get(activity, 'object.type')
     const description = getDescription(types)
-    const published = moment(activity.published).fromNow()
+    const startTime = moment(get(activity, 'object.startTime')).fromNow()
     const advisers = getPeople(activity, 'Adviser')
     const subject = get(activity, 'object.dit:subject')
     const service = get(activity, 'object.dit:service.name')
@@ -100,7 +100,7 @@ export default class Interaction extends React.Component {
             <Paragraph>{description}</Paragraph>
           </CardHeaderDescription>
           <CardHeaderDate>
-            <Paragraph>{published}</Paragraph>
+            <Paragraph>{startTime}</Paragraph>
           </CardHeaderDate>
           <CardHeaderSubject>
             <H3>{subject}</H3>
