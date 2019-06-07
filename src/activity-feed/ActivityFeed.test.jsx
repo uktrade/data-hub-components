@@ -18,7 +18,7 @@ describe('ActivityFeed', () => {
 
   test('renders single activity', () => {
     const tree = renderer
-      .create(<ActivityFeed activities={[interactionActivityFixture]}/>)
+      .create(<ActivityFeed totalActivities={1} activities={[interactionActivityFixture]}/>)
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
@@ -26,6 +26,7 @@ describe('ActivityFeed', () => {
   test('renders with "Load more" link', () => {
     const tree = renderer
       .create(<ActivityFeed
+        totalActivities={20}
         activities={
           Array.from({ length: 20 }, (e, i) => {
             return {
