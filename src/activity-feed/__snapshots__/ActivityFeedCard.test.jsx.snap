@@ -18,7 +18,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
       a month ago
     </div>
     <div
-      className="sc-hORach eRIqAV"
+      className="sc-hORach cvIZEb"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -159,7 +159,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
       a month ago
     </div>
     <div
-      className="sc-hORach eRIqAV"
+      className="sc-hORach cvIZEb"
     >
       <h3
         className="sc-cMljjf kCLKvB"

@@ -45,6 +45,7 @@ const CardHeaderSubject = styled('div')`
   & > H3 {
     font-weight: normal;
     color: #005ea5;
+    margin-bottom: ${SPACING.SCALE_2};
   }
 `
 
