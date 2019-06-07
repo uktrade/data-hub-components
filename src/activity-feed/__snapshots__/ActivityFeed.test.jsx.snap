@@ -91,24 +91,12 @@ exports[`ActivityFeed renders single activity 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -254,24 +242,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -389,24 +365,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -524,24 +488,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -659,24 +611,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -794,24 +734,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -929,24 +857,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -1064,24 +980,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -1199,24 +1103,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -1334,24 +1226,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -1469,24 +1349,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -1604,24 +1472,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -1739,24 +1595,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -1874,24 +1718,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -2009,24 +1841,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -2144,24 +1964,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -2279,24 +2087,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -2414,24 +2210,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -2549,24 +2333,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -2684,24 +2456,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"
@@ -2819,24 +2579,12 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           <div
             className="sc-cLQEGU ciAtZf"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                An interaction with the company took place
-              </p>
-            </div>
+            An interaction with the company took place
           </div>
           <div
             className="sc-gqPbQI fPqDmG"
           >
-            <div
-              className="sc-jAaTju fBEFVB"
-            >
-              <p>
-                a month ago
-              </p>
-            </div>
+            a month ago
           </div>
           <div
             className="sc-hORach eRIqAV"

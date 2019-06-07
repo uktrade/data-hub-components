@@ -10,24 +10,12 @@ exports[`ActivityFeedCard when there is a service delivery should render service
     <div
       className="sc-cLQEGU ciAtZf"
     >
-      <div
-        className="sc-jAaTju fBEFVB"
-      >
-        <p>
-          A service was provided to the company
-        </p>
-      </div>
+      A service was provided to the company
     </div>
     <div
       className="sc-gqPbQI fPqDmG"
     >
-      <div
-        className="sc-jAaTju fBEFVB"
-      >
-        <p>
-          a month ago
-        </p>
-      </div>
+      a month ago
     </div>
     <div
       className="sc-hORach eRIqAV"
@@ -163,24 +151,12 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
     <div
       className="sc-cLQEGU ciAtZf"
     >
-      <div
-        className="sc-jAaTju fBEFVB"
-      >
-        <p>
-          An interaction with the company took place
-        </p>
-      </div>
+      An interaction with the company took place
     </div>
     <div
       className="sc-gqPbQI fPqDmG"
     >
-      <div
-        className="sc-jAaTju fBEFVB"
-      >
-        <p>
-          a month ago
-        </p>
-      </div>
+      a month ago
     </div>
     <div
       className="sc-hORach eRIqAV"

@@ -10,7 +10,6 @@ import {
 import {
   Details,
   Link,
-  Paragraph,
   Table,
   H3,
 } from 'govuk-react'
@@ -97,10 +96,10 @@ export default class Interaction extends React.Component {
       <Card>
         <CardHeader>
           <CardHeaderDescription>
-            <Paragraph>{description}</Paragraph>
+            {description}
           </CardHeaderDescription>
           <CardHeaderDate>
-            <Paragraph>{startTime}</Paragraph>
+            {startTime}
           </CardHeaderDate>
           <CardHeaderSubject>
             <H3>{subject}</H3>
