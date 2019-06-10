@@ -2,7 +2,7 @@
 
 exports[`ActivityFeedCard when the interaction is a draft and upcoming should render interaction activity with "Upcoming interaction" badge 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-cmthru jXfkMP"
 >
   <div
     className="sc-hMFtBS bSjygG"
