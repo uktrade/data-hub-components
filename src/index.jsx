@@ -1,3 +1,6 @@
-import ActivityFeed from './activity-feed'
-
-export { ActivityFeed }
+export { default as ActivityFeed } from './activity-feed/ActivityFeed'
+export { default as ActivityFeedApp } from './activity-feed/ActivityFeedApp'
+export { default as ActivityFeedCard } from './activity-feed/ActivityFeedCard'
+export { default as ActivityFeedFilters } from './activity-feed/ActivityFeedFilters'
+export { default as ActivityFeedHeader } from './activity-feed/ActivityFeedHeader'
+export { default as ActivityFeedPagination } from './activity-feed/ActivityFeedPagination'
