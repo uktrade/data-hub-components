@@ -7,7 +7,7 @@ import { SPACING } from '@govuk-react/constants'
 import PropTypes from 'prop-types'
 
 const Card = styled('div')`
-  border: 1px solid #c0c0c0;
+  border: ${props => props.isUpcoming ? '1px dashed #c0c0c0' : '1px solid #c0c0c0'};
   padding: ${SPACING.SCALE_3};
 `
 
@@ -145,7 +145,7 @@ export default class Interaction extends React.Component {
     ))
 
     return (
-      <Card>
+      <Card isUpcoming={isUpcoming}>
         <CardHeader>
           <CardHeaderDescription>
             {description}
