@@ -10,7 +10,6 @@ import {
 import {
   Details,
   Link,
-  Paragraph,
   Table,
   H3,
 } from 'govuk-react'
@@ -40,18 +39,30 @@ const CardHeaderDate = styled('div')`
   text-align: right;
 `
 
+const CardHeaderStatus = styled('div')`
+  width: 100%;
+  padding: ${SPACING.SCALE_2} 0 ${SPACING.SCALE_2};
+`
+
 const CardHeaderSubject = styled('div')`
   width: 100%;
   
   & > H3 {
     font-weight: normal;
     color: #005ea5;
+    margin-bottom: ${SPACING.SCALE_2};
   }
 `
 
 const CardDetails = styled(Details)`
   font-size: 100%;
   margin-bottom: 0;
+`
+
+const Badge = styled('span')`
+  border: 2px solid #c0c0c0;
+  border-radius: 4px;
+  padding: 2px 4px;
 `
 
 const getPeople = (activity, personSubType) => {
@@ -74,6 +85,20 @@ const getDescription = (types) => {
   return 'An interaction with the company took place'
 }
 
+const INTERACTION_STATUS = {
+  draft: {
+    UPCOMING: 'Upcoming interaction',
+    INCOMPLETE: 'Incomplete interaction',
+  }
+}
+
+const getStatus = (activity, isUpcoming) => {
+  const status = get(activity, 'object.dit:status')
+  if (INTERACTION_STATUS[status]) {
+    return isUpcoming ? INTERACTION_STATUS[status].UPCOMING : INTERACTION_STATUS[status].INCOMPLETE
+  }
+}
+
 export default class Interaction extends React.Component {
   static canRender(activity) {
     const types = get(activity, 'object.type')
@@ -84,10 +109,15 @@ export default class Interaction extends React.Component {
   }
 
   render() {
-    const {activity} = this.props
+    const { activity } = this.props
     const types = get(activity, 'object.type')
     const description = getDescription(types)
-    const startTime = moment(get(activity, 'object.startTime')).fromNow()
+    const startTime = get(activity, 'object.startTime')
+    const isUpcoming = new Date(startTime) > new Date()
+
+    const status = getStatus(activity, isUpcoming)
+    const cardHeaderStatus = status ? <CardHeaderStatus><Badge>{status}</Badge></CardHeaderStatus> : null
+    const cardHeaderStartTime = moment(startTime).fromNow()
     const advisers = getPeople(activity, 'Adviser')
     const subject = get(activity, 'object.dit:subject')
     const service = get(activity, 'object.dit:service.name')
@@ -97,11 +127,12 @@ export default class Interaction extends React.Component {
       <Card>
         <CardHeader>
           <CardHeaderDescription>
-            <Paragraph>{description}</Paragraph>
+            {description}
           </CardHeaderDescription>
           <CardHeaderDate>
-            <Paragraph>{startTime}</Paragraph>
+            {cardHeaderStartTime}
           </CardHeaderDate>
+          {cardHeaderStatus}
           <CardHeaderSubject>
             <H3>{subject}</H3>
           </CardHeaderSubject>

@@ -1,5 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+import moment from 'moment'
+import { set } from 'lodash'
 
 import ActivityFeedCard from './ActivityFeedCard'
 import interactionActivityFixture from '../../fixtures/activity_feed/interactions/interaction'
@@ -23,6 +25,30 @@ describe('ActivityFeedCard', () => {
     test('should render interaction activity', () => {
       const tree = renderer
         .create(<ActivityFeedCard activity={interactionActivityFixture} />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('when the interaction is a draft in the past', () => {
+    test('should render interaction activity with "Incomplete interaction" badge', () => {
+      const fixture = { ...interactionActivityFixture };
+      set(fixture, 'object.dit:status', 'draft')
+      set(fixture, 'object.startTime', moment().subtract(1, 'years').toISOString())
+      const tree = renderer
+        .create(<ActivityFeedCard activity={fixture} />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('when the interaction is a draft and upcoming', () => {
+    test('should render interaction activity with "Upcoming interaction" badge', () => {
+      const fixture = { ...interactionActivityFixture };
+      set(fixture, 'object.dit:status', 'draft')
+      set(fixture, 'object.startTime', moment().add(1, 'days').toISOString())
+      const tree = renderer
+        .create(<ActivityFeedCard activity={fixture} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
