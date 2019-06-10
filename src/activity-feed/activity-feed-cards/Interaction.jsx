@@ -1,20 +1,10 @@
 import React from 'react'
 import moment from 'moment/moment'
-import {
-  filter,
-  get,
-  includes,
-  map,
-  some,
-} from 'lodash'
-import {
-  Details,
-  Link,
-  Table,
-  H3,
-} from 'govuk-react'
+import { filter, get, includes, map, some } from 'lodash'
+import { Details, H3, Link, Table } from 'govuk-react'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
+import PropTypes from 'prop-types'
 
 const Card = styled('div')`
   border: 1px solid #c0c0c0;
@@ -99,6 +89,23 @@ const getStatus = (activity, isUpcoming) => {
   }
 }
 
+class DetailsRow extends React.Component {
+  static propTypes = {
+    header: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
+  }
+
+  render() {
+    const { header, children } = this.props
+    return (
+      <Table.Row>
+        <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>{header}</Table.CellHeader>
+        <Table.Cell style={{border: 0}}>{children}</Table.Cell>
+      </Table.Row>
+    )
+  }
+}
+
 export default class Interaction extends React.Component {
   static canRender(activity) {
     const types = get(activity, 'object.type')
@@ -118,10 +125,24 @@ export default class Interaction extends React.Component {
     const status = getStatus(activity, isUpcoming)
     const cardHeaderStatus = status ? <CardHeaderStatus><Badge>{status}</Badge></CardHeaderStatus> : null
     const cardHeaderStartTime = moment(startTime).fromNow()
+
+    const contacts = getPeople(activity, 'Contact')
     const advisers = getPeople(activity, 'Adviser')
     const subject = get(activity, 'object.dit:subject')
     const service = get(activity, 'object.dit:service.name')
     const url = get(activity, 'object.url')
+
+    const contactsList = contacts.map(({id, name, emailAddress}) => (
+      <span key={id}>
+        {name} <Link href={"mailto:" + emailAddress}>{emailAddress}</Link>
+      </span>
+    ))
+
+    const advisersList = advisers.map(({id, name, emailAddress}) => (
+      <span key={id}>
+        {name} <Link href={"mailto:" + emailAddress}>{emailAddress}</Link>
+      </span>
+    ))
 
     return (
       <Card>
@@ -139,22 +160,9 @@ export default class Interaction extends React.Component {
         </CardHeader>
         <CardDetails summary="Who was involved">
           <Table>
-            <Table.Row>
-              <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>Advisers</Table.CellHeader>
-              <Table.Cell style={{border: 0}}>
-                {advisers.map(({id, name, emailAddress}) => {
-                  return <React.Fragment key={id}>
-                      <span>
-                        {name} <Link href={"mailto:" + emailAddress}>{emailAddress}</Link>
-                      </span>
-                  </React.Fragment>
-                })}
-              </Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>Services</Table.CellHeader>
-              <Table.Cell style={{border: 0}}>{service}</Table.Cell>
-            </Table.Row>
+            <DetailsRow header="Contact(s)">{contactsList}</DetailsRow>
+            <DetailsRow header="Adviser(s)">{advisersList}</DetailsRow>
+            <DetailsRow header="Services">{service}</DetailsRow>
           </Table>
           <Link href={url}>Go to the interaction detail page</Link>
         </CardDetails>

@@ -75,6 +75,21 @@ describe('ActivityFeedCard', () => {
       expect(tree).toMatchSnapshot()
     })
   })
+
+  describe('when there is an interaction without any people involved', () => {
+    test('should render interaction activity without advisers nor contacts', () => {
+      const interactionWithNoPeople = { ...interactionActivityFixture }
+      set(interactionWithNoPeople,
+        'object.attributedTo',
+        interactionActivityFixture.object.attributedTo.filter(a => !a.type.includes('Person'))
+      )
+
+      const tree = renderer
+        .create(<ActivityFeedCard activity={interactionWithNoPeople} />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
 })
 
 

@@ -71,7 +71,42 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                 }
               }
             >
-              Advisers
+              Contact(s)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                John Doe
+                 
+                <a
+                  className="sc-bwzfXH VXMCV"
+                  href="mailto:john@example.com"
+                  muted={false}
+                >
+                  john@example.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
             </th>
             <td
               className="sc-RefOD gzbQXK"
@@ -204,7 +239,42 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                 }
               }
             >
-              Advisers
+              Contact(s)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                John Doe
+                 
+                <a
+                  className="sc-bwzfXH VXMCV"
+                  href="mailto:john@example.com"
+                  muted={false}
+                >
+                  john@example.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
             </th>
             <td
               className="sc-RefOD gzbQXK"
@@ -328,7 +398,42 @@ exports[`ActivityFeedCard when there is a service delivery should render service
                 }
               }
             >
-              Advisers
+              Contact(s)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                John Doe
+                 
+                <a
+                  className="sc-bwzfXH VXMCV"
+                  href="mailto:john@example.com"
+                  muted={false}
+                >
+                  john@example.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
             </th>
             <td
               className="sc-RefOD gzbQXK"
@@ -469,7 +574,42 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                 }
               }
             >
-              Advisers
+              Contact(s)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                John Doe
+                 
+                <a
+                  className="sc-bwzfXH VXMCV"
+                  href="mailto:john@example.com"
+                  muted={false}
+                >
+                  john@example.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
             </th>
             <td
               className="sc-RefOD gzbQXK"
@@ -491,6 +631,150 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                 </a>
               </span>
             </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Services
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Account Management
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-bwzfXH VXMCV"
+        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+        muted={false}
+      >
+        Go to the interaction detail page
+      </a>
+    </div>
+  </details>
+</div>
+`;
+
+exports[`ActivityFeedCard when there is an interaction without any people involved should render interaction activity without advisers nor contacts 1`] = `
+<div
+  className="sc-cmthru jjutsD"
+>
+  <div
+    className="sc-hMFtBS bSjygG"
+  >
+    <div
+      className="sc-cLQEGU ciAtZf"
+    >
+      An interaction with the company took place
+    </div>
+    <div
+      className="sc-gqPbQI fPqDmG"
+    >
+      in a day
+    </div>
+    <div
+      className="sc-hORach dDnqOl"
+    >
+      <span
+        className="sc-iujRgT hrmgYI"
+      >
+        Upcoming interaction
+      </span>
+    </div>
+    <div
+      className="sc-bMVAic gYawyW"
+    >
+      <h3
+        className="sc-cMljjf kCLKvB"
+        size="MEDIUM"
+      >
+        Invited to Technology Roundtable
+      </h3>
+    </div>
+  </div>
+  <details
+    className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
+    open={false}
+  >
+    <summary
+      className="sc-kkGfuU cCdZFh"
+    >
+      <span
+        className="sc-iAyFgw jRkIxn"
+      >
+        Who was involved
+      </span>
+    </summary>
+    <div
+      className="sc-hSdWYo dfimje"
+    >
+      <table
+        className="sc-bwCtUz iVExri"
+      >
+        <tbody
+          className="sc-eXEjpC fuVqJC"
+        >
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Contact(s)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            />
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            />
           </tr>
           <tr
             className="sc-iQKALj ftJWrM"
