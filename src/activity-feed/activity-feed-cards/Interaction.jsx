@@ -27,28 +27,22 @@ const CardHeader = styled('div')`
   }
 `
 
-const CardHeaderDescription = styled('div')`
-  flex-grow: 1;
-`
-
-const CardHeaderDate = styled('div')`
-  flex-grow: 1;
-  text-align: right;
-`
-
-const CardHeaderStatus = styled('div')`
-  width: 100%;
-  padding: ${SPACING.SCALE_2} 0 ${SPACING.SCALE_2};
-`
-
 const CardHeaderSubject = styled('div')`
-  width: 100%;
+  flex: 50%;
   
   & > H3 {
     font-weight: normal;
     color: #005ea5;
     margin-bottom: ${SPACING.SCALE_2};
   }
+`
+
+const CardHeaderBadges = styled('div')`
+  text-align: right;
+`
+
+const CardHeaderStatus = styled('div')`
+  padding: ${SPACING.SCALE_2} 0 ${SPACING.SCALE_2};
 `
 
 const CardDetails = styled(Details)`
@@ -72,14 +66,6 @@ const getPeople = (activity, personSubType) => {
       emailAddress,
     }
   })
-}
-
-const getDescription = (types) => {
-  if (includes(types, 'dit:ServiceDelivery')) {
-    return 'A service was provided to the company'
-  }
-
-  return 'An interaction with the company took place'
 }
 
 const INTERACTION_STATUS = {
@@ -124,8 +110,6 @@ export default class Interaction extends React.Component {
 
   render() {
     const { activity } = this.props
-    const types = get(activity, 'object.type')
-    const description = getDescription(types)
     const startTime = get(activity, 'object.startTime')
     const isUpcoming = new Date(startTime) > new Date()
 
@@ -154,16 +138,13 @@ export default class Interaction extends React.Component {
     return (
       <Card isUpcoming={isUpcoming}>
         <CardHeader>
-          <CardHeaderDescription>
-            {description}
-          </CardHeaderDescription>
-          <CardHeaderDate>
-            {cardHeaderStartTime}
-          </CardHeaderDate>
-          {cardHeaderStatus}
           <CardHeaderSubject>
             <H3>{subject}</H3>
           </CardHeaderSubject>
+          <CardHeaderBadges>
+            {cardHeaderStartTime}
+            {cardHeaderStatus}
+          </CardHeaderBadges>
         </CardHeader>
         <CardDetails summary="Who was involved">
           <Table>
