@@ -1,6 +1,13 @@
 import React from 'react'
 import moment from 'moment/moment'
-import { filter, get, includes, map, some } from 'lodash'
+import {
+  filter,
+  get,
+  includes,
+  map,
+  some,
+  isEmpty,
+} from 'lodash'
 import { Details, H3, Link, Table } from 'govuk-react'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
@@ -97,7 +104,7 @@ class DetailsRow extends React.Component {
 
   render() {
     const { header, children } = this.props
-    return (
+    return isEmpty(children) ? null : (
       <Table.Row>
         <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>{header}</Table.CellHeader>
         <Table.Cell style={{border: 0}}>{children}</Table.Cell>

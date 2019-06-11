@@ -90,6 +90,18 @@ describe('ActivityFeedCard', () => {
       expect(tree).toMatchSnapshot()
     })
   })
+
+  describe('when the interaction does not have a service', () => {
+    test('should render interaction activity without services', () => {
+      const interactionWithoutService = { ...interactionActivityFixture }
+      set(interactionWithoutService, 'object.dit:service', null)
+
+      const tree = renderer
+        .create(<ActivityFeedCard activity={interactionWithoutService} />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
 })
 
 
