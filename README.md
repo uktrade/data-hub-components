@@ -21,6 +21,7 @@ const activities = []
 ## Install dependencies
 
 ```bash
+yarn policies set-version 1.16.0
 yarn
 ```
 

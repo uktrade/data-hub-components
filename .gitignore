@@ -70,3 +70,7 @@ dist
 
 # Storybook build
 storybook-static/
+
+# Yarn config
+.yarn/
+.yarnrc
