@@ -8,26 +8,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
     className="sc-hMFtBS bSjygG"
   >
     <div
-      className="sc-cLQEGU ciAtZf"
-    >
-      An interaction with the company took place
-    </div>
-    <div
-      className="sc-gqPbQI fPqDmG"
-    >
-      in a day
-    </div>
-    <div
-      className="sc-hORach dDnqOl"
-    >
-      <span
-        className="sc-iujRgT hrmgYI"
-      >
-        Upcoming interaction
-      </span>
-    </div>
-    <div
-      className="sc-bMVAic gYawyW"
+      className="sc-cLQEGU jZASmA"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -36,9 +17,23 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
         Invited to Technology Roundtable
       </h3>
     </div>
+    <div
+      className="sc-gqPbQI eyVvYh"
+    >
+      in a day
+      <div
+        className="sc-hORach kmaMmJ"
+      >
+        <span
+          className="sc-bAeIUo cVXWfh"
+        >
+          Upcoming interaction
+        </span>
+      </div>
+    </div>
   </div>
   <details
-    className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
+    className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -80,26 +75,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
     className="sc-hMFtBS bSjygG"
   >
     <div
-      className="sc-cLQEGU ciAtZf"
-    >
-      An interaction with the company took place
-    </div>
-    <div
-      className="sc-gqPbQI fPqDmG"
-    >
-      in a day
-    </div>
-    <div
-      className="sc-hORach dDnqOl"
-    >
-      <span
-        className="sc-iujRgT hrmgYI"
-      >
-        Upcoming interaction
-      </span>
-    </div>
-    <div
-      className="sc-bMVAic gYawyW"
+      className="sc-cLQEGU jZASmA"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -108,9 +84,23 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
         Invited to Technology Roundtable
       </h3>
     </div>
+    <div
+      className="sc-gqPbQI eyVvYh"
+    >
+      in a day
+      <div
+        className="sc-hORach kmaMmJ"
+      >
+        <span
+          className="sc-bAeIUo cVXWfh"
+        >
+          Upcoming interaction
+        </span>
+      </div>
+    </div>
   </div>
   <details
-    className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
+    className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -248,26 +238,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
     className="sc-hMFtBS bSjygG"
   >
     <div
-      className="sc-cLQEGU ciAtZf"
-    >
-      An interaction with the company took place
-    </div>
-    <div
-      className="sc-gqPbQI fPqDmG"
-    >
-      a year ago
-    </div>
-    <div
-      className="sc-hORach dDnqOl"
-    >
-      <span
-        className="sc-iujRgT hrmgYI"
-      >
-        Incomplete interaction
-      </span>
-    </div>
-    <div
-      className="sc-bMVAic gYawyW"
+      className="sc-cLQEGU jZASmA"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -276,9 +247,23 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
         Invited to Technology Roundtable
       </h3>
     </div>
+    <div
+      className="sc-gqPbQI eyVvYh"
+    >
+      a year ago
+      <div
+        className="sc-hORach kmaMmJ"
+      >
+        <span
+          className="sc-bAeIUo cVXWfh"
+        >
+          Incomplete interaction
+        </span>
+      </div>
+    </div>
   </div>
   <details
-    className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
+    className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -416,17 +401,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
     className="sc-hMFtBS bSjygG"
   >
     <div
-      className="sc-cLQEGU ciAtZf"
-    >
-      A service was provided to the company
-    </div>
-    <div
-      className="sc-gqPbQI fPqDmG"
-    >
-      a month ago
-    </div>
-    <div
-      className="sc-bMVAic gYawyW"
+      className="sc-cLQEGU jZASmA"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -435,9 +410,14 @@ exports[`ActivityFeedCard when there is a service delivery should render service
         Openening of overseas office
       </h3>
     </div>
+    <div
+      className="sc-gqPbQI eyVvYh"
+    >
+      a month ago
+    </div>
   </div>
   <details
-    className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
+    className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -569,10 +549,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
 
 exports[`ActivityFeedCard when there is an activity item of arbitrary type should render default activity 1`] = `
 <div
-  className="sc-GMQeP gtCKI"
+  className="sc-iujRgT jPamkG"
 >
   <div
-    className="sc-exAgwC fClkKZ"
+    className="sc-GMQeP jfCrle"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -592,17 +572,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
     className="sc-hMFtBS bSjygG"
   >
     <div
-      className="sc-cLQEGU ciAtZf"
-    >
-      An interaction with the company took place
-    </div>
-    <div
-      className="sc-gqPbQI fPqDmG"
-    >
-      a month ago
-    </div>
-    <div
-      className="sc-bMVAic gYawyW"
+      className="sc-cLQEGU jZASmA"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -611,9 +581,14 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
         Invited to Technology Roundtable
       </h3>
     </div>
+    <div
+      className="sc-gqPbQI eyVvYh"
+    >
+      a month ago
+    </div>
   </div>
   <details
-    className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
+    className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -751,26 +726,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
     className="sc-hMFtBS bSjygG"
   >
     <div
-      className="sc-cLQEGU ciAtZf"
-    >
-      An interaction with the company took place
-    </div>
-    <div
-      className="sc-gqPbQI fPqDmG"
-    >
-      in a day
-    </div>
-    <div
-      className="sc-hORach dDnqOl"
-    >
-      <span
-        className="sc-iujRgT hrmgYI"
-      >
-        Upcoming interaction
-      </span>
-    </div>
-    <div
-      className="sc-bMVAic gYawyW"
+      className="sc-cLQEGU jZASmA"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -779,9 +735,23 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
         Invited to Technology Roundtable
       </h3>
     </div>
+    <div
+      className="sc-gqPbQI eyVvYh"
+    >
+      in a day
+      <div
+        className="sc-hORach kmaMmJ"
+      >
+        <span
+          className="sc-bAeIUo cVXWfh"
+        >
+          Upcoming interaction
+        </span>
+      </div>
+    </div>
   </div>
   <details
-    className="sc-bAeIUo hRZRUf sc-kEYyzF ihcnje"
+    className="sc-bMVAic cchcEg sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
