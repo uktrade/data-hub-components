@@ -41,10 +41,6 @@ const CardHeaderBadges = styled('div')`
   text-align: right;
 `
 
-const CardHeaderStatus = styled('div')`
-  padding: ${SPACING.SCALE_2} 0 ${SPACING.SCALE_2};
-`
-
 const CardDetails = styled(Details)`
   font-size: 100%;
   margin-bottom: 0;
@@ -55,6 +51,23 @@ const Badge = styled('span')`
   border-radius: 4px;
   padding: 2px 4px;
 `
+
+const STATUS = {
+  DRAFT: 'draft',
+  COMPLETE: 'complete',
+  UPCOMING: 'upcoming',
+  INCOMPLETE: 'incomplete',
+  CANCELLED: 'cancelled',
+  UNKNOWN: 'unknown',
+}
+
+const BADGE_LABELS = {
+  COMPLETE: 'Completed interaction',
+  UPCOMING: 'Upcoming interaction',
+  INCOMPLETE: 'Incomplete interaction',
+  CANCELLED: 'Cancelled interaction',
+  UNKNOWN: 'Unknown status',
+}
 
 const getPeople = (activity, personSubType) => {
   return map(filter(activity['object']['attributedTo'], ({type}) => {
@@ -68,17 +81,20 @@ const getPeople = (activity, personSubType) => {
   })
 }
 
-const INTERACTION_STATUS = {
-  draft: {
-    UPCOMING: 'Upcoming interaction',
-    INCOMPLETE: 'Incomplete interaction',
-  }
-}
-
-const getStatus = (activity, isUpcoming) => {
-  const status = get(activity, 'object.dit:status')
-  if (INTERACTION_STATUS[status]) {
-    return isUpcoming ? INTERACTION_STATUS[status].UPCOMING : INTERACTION_STATUS[status].INCOMPLETE
+const getStatus = (activity, startTime) => {
+  const apiStatus = get(activity, 'object.dit:status')
+  switch (apiStatus) {
+    case STATUS.DRAFT:
+      const isArchived = get(activity, 'object.dit:archived')
+      if (isArchived) {
+        return STATUS.CANCELLED
+      }
+      const isUpcoming = new Date(startTime) > new Date()
+      return isUpcoming ? STATUS.UPCOMING : STATUS.INCOMPLETE
+    case STATUS.COMPLETE:
+      return STATUS.COMPLETE
+    default:
+      return STATUS.UNKNOWN;
   }
 }
 
@@ -110,12 +126,13 @@ export default class Interaction extends React.Component {
 
   render() {
     const { activity } = this.props
-    const startTime = get(activity, 'object.startTime')
-    const isUpcoming = new Date(startTime) > new Date()
+    const isUpcoming = status === STATUS.UPCOMING
 
-    const status = getStatus(activity, isUpcoming)
-    const cardHeaderStatus = status ? <CardHeaderStatus><Badge>{status}</Badge></CardHeaderStatus> : null
+    const startTime = get(activity, 'object.startTime')
     const cardHeaderStartTime = moment(startTime).fromNow()
+
+    const status = getStatus(activity, startTime)
+    const badgeLabel =  BADGE_LABELS[status.toUpperCase()]
 
     const contacts = getPeople(activity, 'Contact')
     const advisers = getPeople(activity, 'Adviser')
@@ -143,7 +160,7 @@ export default class Interaction extends React.Component {
           </CardHeaderSubject>
           <CardHeaderBadges>
             {cardHeaderStartTime}
-            {cardHeaderStatus}
+            <div style={{ padding: '10px 0 10px' }}><Badge>{badgeLabel}</Badge></div>
           </CardHeaderBadges>
         </CardHeader>
         <CardDetails summary="Who was involved">
