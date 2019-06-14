@@ -101,7 +101,7 @@ const getStatus = (activity, startTime) => {
 class DetailsRow extends React.Component {
   static propTypes = {
     header: PropTypes.string.isRequired,
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
   }
 
   render() {
@@ -126,7 +126,6 @@ export default class Interaction extends React.Component {
 
   render() {
     const { activity } = this.props
-    const isUpcoming = status === STATUS.UPCOMING
 
     const startTime = get(activity, 'object.startTime')
     const cardHeaderStartTime = moment(startTime).fromNow()
@@ -134,6 +133,7 @@ export default class Interaction extends React.Component {
     const status = getStatus(activity, startTime)
     const badgeLabel =  BADGE_LABELS[status.toUpperCase()]
 
+    const isUpcoming = status === STATUS.UPCOMING
     const contacts = getPeople(activity, 'Contact')
     const advisers = getPeople(activity, 'Adviser')
     const subject = get(activity, 'object.dit:subject')

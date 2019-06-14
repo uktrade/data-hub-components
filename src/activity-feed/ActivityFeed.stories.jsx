@@ -36,7 +36,7 @@ class ActivityFeedDemoApp extends React.Component {
       // Simulate delay.
       setTimeout(() => {
         resolve({
-          activities: filteredActivities,
+          activities: activityFeedFixtures,
           total: 10,
         })
       }, 1500)
