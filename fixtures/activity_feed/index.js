@@ -3,5 +3,6 @@ module.exports = [
   require('./interactions/investment_project'),
   require('./interactions/service_delivery'),
   require('./investment_projects/project_added_fdi'),
+  require('./investment_projects/project_added_non_fdi'),
   require('./investment_projects/project_added_cti'),
 ]
