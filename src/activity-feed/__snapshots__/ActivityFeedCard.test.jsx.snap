@@ -648,7 +648,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
         <span
           className="sc-iAyFgw jRkIxn"
         >
-          Who was involved
+          View interaction details
         </span>
       </summary>
       <div
@@ -717,7 +717,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
         <span
           className="sc-iAyFgw jRkIxn"
         >
-          Who was involved
+          View interaction details
         </span>
       </summary>
       <div
@@ -882,7 +882,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
         <span
           className="sc-iAyFgw jRkIxn"
         >
-          Who was involved
+          View interaction details
         </span>
       </summary>
       <div
@@ -1047,7 +1047,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
         <span
           className="sc-iAyFgw jRkIxn"
         >
-          Who was involved
+          View interaction details
         </span>
       </summary>
       <div
@@ -1212,7 +1212,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
         <span
           className="sc-iAyFgw jRkIxn"
         >
-          Who was involved
+          View interaction details
         </span>
       </summary>
       <div
@@ -1377,7 +1377,7 @@ exports[`ActivityFeedCard when the status is unknown should render interaction a
         <span
           className="sc-iAyFgw jRkIxn"
         >
-          Who was involved
+          View interaction details
         </span>
       </summary>
       <div
@@ -1542,7 +1542,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
         <span
           className="sc-iAyFgw jRkIxn"
         >
-          Who was involved
+          View interaction details
         </span>
       </summary>
       <div
@@ -1724,7 +1724,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
         <span
           className="sc-iAyFgw jRkIxn"
         >
-          Who was involved
+          View interaction details
         </span>
       </summary>
       <div
@@ -1889,7 +1889,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
         <span
           className="sc-iAyFgw jRkIxn"
         >
-          Who was involved
+          View interaction details
         </span>
       </summary>
       <div

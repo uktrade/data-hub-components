@@ -162,7 +162,7 @@ export default class Interaction extends React.Component {
           <H3>
             <Link href={url}>{subject}</Link>
           </H3>
-          <CardDetails summary="Who was involved">
+          <CardDetails summary="View interaction details">
             <Table>
               <DetailsRow header="Contact(s)">{contactsList}</DetailsRow>
               <DetailsRow header="Adviser(s)">{advisersList}</DetailsRow>

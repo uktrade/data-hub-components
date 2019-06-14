@@ -110,7 +110,7 @@ exports[`ActivityFeed renders single activity 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -302,7 +302,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -466,7 +466,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -630,7 +630,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -794,7 +794,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -958,7 +958,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -1122,7 +1122,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -1286,7 +1286,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -1450,7 +1450,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -1614,7 +1614,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -1778,7 +1778,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -1942,7 +1942,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -2106,7 +2106,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -2270,7 +2270,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -2434,7 +2434,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -2598,7 +2598,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -2762,7 +2762,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -2926,7 +2926,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -3090,7 +3090,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -3254,7 +3254,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
@@ -3418,7 +3418,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-iAyFgw jRkIxn"
               >
-                Who was involved
+                View interaction details
               </span>
             </summary>
             <div
