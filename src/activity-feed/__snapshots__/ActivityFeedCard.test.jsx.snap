@@ -17,7 +17,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
         New investment project added
       </h3>
       <span>
-        2 years ago
+        23 May 2017
       </span>
     </div>
     <h3
@@ -165,7 +165,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
         New investment project added
       </h3>
       <span>
-        2 years ago
+        05 Mar 2017
       </span>
     </div>
     <h3
@@ -413,7 +413,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
         New investment project added
       </h3>
       <span>
-        2 years ago
+        03 Oct 2017
       </span>
     </div>
     <h3
@@ -674,7 +674,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
   <div
     className="sc-iujRgT louFvU"
   >
-    in a day
+    06 Jun 2019
     <div
       className="sc-GMQeP eoADHI"
     >
@@ -839,7 +839,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
   <div
     className="sc-iujRgT louFvU"
   >
-    in a day
+    06 Jun 2019
     <div
       className="sc-GMQeP eoADHI"
     >
@@ -1004,7 +1004,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
   <div
     className="sc-iujRgT louFvU"
   >
-    in a day
+    06 Jun 2019
     <div
       className="sc-GMQeP eoADHI"
     >
@@ -1169,7 +1169,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
   <div
     className="sc-iujRgT louFvU"
   >
-    a year ago
+    05 Jun 2018
     <div
       className="sc-GMQeP eoADHI"
     >
@@ -1334,7 +1334,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
   <div
     className="sc-iujRgT louFvU"
   >
-    in a day
+    06 Jun 2019
     <div
       className="sc-GMQeP eoADHI"
     >
@@ -1499,7 +1499,7 @@ exports[`ActivityFeedCard when the status is unknown should render interaction a
   <div
     className="sc-iujRgT louFvU"
   >
-    in a day
+    06 Jun 2019
     <div
       className="sc-GMQeP eoADHI"
     >
@@ -1664,7 +1664,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
   <div
     className="sc-iujRgT louFvU"
   >
-    a month ago
+    29 Apr 2019
     <div
       className="sc-GMQeP eoADHI"
     >
@@ -1846,7 +1846,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
   <div
     className="sc-iujRgT louFvU"
   >
-    a month ago
+    02 May 2019
     <div
       className="sc-GMQeP eoADHI"
     >
@@ -1941,7 +1941,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
   <div
     className="sc-iujRgT louFvU"
   >
-    in a day
+    06 Jun 2019
     <div
       className="sc-GMQeP eoADHI"
     >
