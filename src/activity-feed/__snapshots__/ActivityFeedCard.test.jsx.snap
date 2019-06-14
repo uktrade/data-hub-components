@@ -573,10 +573,10 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
 
 exports[`ActivityFeedCard when the interaction does not have a service should render interaction activity without services 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bMVAic jzzJXz"
 >
   <div
-    className="sc-bMVAic jGXGeY"
+    className="sc-bAeIUo iPQBiH"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -591,7 +591,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
       </a>
     </h3>
     <details
-      className="sc-bAeIUo fYXVul sc-kEYyzF ihcnje"
+      className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
       open={false}
     >
       <summary
@@ -607,11 +607,58 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-bwCtUz iVExri"
+          className="sc-hORach lbbDCN sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
-          />
+          >
+            <tr
+              className="sc-iQKALj ftJWrM"
+            >
+              <th
+                className="sc-RefOD dxRfSY"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Contact(s)
+              </th>
+              <td
+                className="sc-RefOD gzbQXK"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              />
+            </tr>
+            <tr
+              className="sc-iQKALj ftJWrM"
+            >
+              <th
+                className="sc-RefOD dxRfSY"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Adviser(s)
+              </th>
+              <td
+                className="sc-RefOD gzbQXK"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              />
+            </tr>
+          </tbody>
         </table>
         <a
           className="sc-bwzfXH VXMCV"
@@ -624,14 +671,14 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
     </details>
   </div>
   <div
-    className="sc-iujRgT louFvU"
+    className="sc-GMQeP htIehK"
   >
     06 Jun 2019
     <div
-      className="sc-GMQeP eoADHI"
+      className="sc-exAgwC TTTFc"
     >
       <span
-        className="sc-exAgwC gMtzTF"
+        className="sc-cQFLBn eIyVOM"
       >
         Unknown status
       </span>
@@ -642,10 +689,10 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
 
 exports[`ActivityFeedCard when the interaction is a draft and archived should render interaction activity with "Cancelled interaction" badge 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bMVAic jzzJXz"
 >
   <div
-    className="sc-bMVAic jGXGeY"
+    className="sc-bAeIUo iPQBiH"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -660,7 +707,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
       </a>
     </h3>
     <details
-      className="sc-bAeIUo fYXVul sc-kEYyzF ihcnje"
+      className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
       open={false}
     >
       <summary
@@ -676,7 +723,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-bwCtUz iVExri"
+          className="sc-hORach lbbDCN sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -789,14 +836,14 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
     </details>
   </div>
   <div
-    className="sc-iujRgT louFvU"
+    className="sc-GMQeP htIehK"
   >
     06 Jun 2019
     <div
-      className="sc-GMQeP eoADHI"
+      className="sc-exAgwC TTTFc"
     >
       <span
-        className="sc-exAgwC gMtzTF"
+        className="sc-cQFLBn eIyVOM"
       >
         Cancelled interaction
       </span>
@@ -807,10 +854,10 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
 
 exports[`ActivityFeedCard when the interaction is a draft and upcoming should render interaction activity with "Upcoming interaction" badge 1`] = `
 <div
-  className="sc-hORach jvSxVN"
+  className="sc-bMVAic jEWbZv"
 >
   <div
-    className="sc-bMVAic jGXGeY"
+    className="sc-bAeIUo iPQBiH"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -825,7 +872,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
       </a>
     </h3>
     <details
-      className="sc-bAeIUo fYXVul sc-kEYyzF ihcnje"
+      className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
       open={false}
     >
       <summary
@@ -841,7 +888,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-bwCtUz iVExri"
+          className="sc-hORach lbbDCN sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -954,14 +1001,14 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
     </details>
   </div>
   <div
-    className="sc-iujRgT louFvU"
+    className="sc-GMQeP htIehK"
   >
     06 Jun 2019
     <div
-      className="sc-GMQeP eoADHI"
+      className="sc-exAgwC TTTFc"
     >
       <span
-        className="sc-exAgwC gMtzTF"
+        className="sc-cQFLBn eIyVOM"
       >
         Upcoming interaction
       </span>
@@ -972,10 +1019,10 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
 
 exports[`ActivityFeedCard when the interaction is a draft in the past should render interaction activity with "Incomplete interaction" badge 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bMVAic jzzJXz"
 >
   <div
-    className="sc-bMVAic jGXGeY"
+    className="sc-bAeIUo iPQBiH"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -990,7 +1037,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
       </a>
     </h3>
     <details
-      className="sc-bAeIUo fYXVul sc-kEYyzF ihcnje"
+      className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
       open={false}
     >
       <summary
@@ -1006,7 +1053,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-bwCtUz iVExri"
+          className="sc-hORach lbbDCN sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -1119,14 +1166,14 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
     </details>
   </div>
   <div
-    className="sc-iujRgT louFvU"
+    className="sc-GMQeP htIehK"
   >
     05 Jun 2018
     <div
-      className="sc-GMQeP eoADHI"
+      className="sc-exAgwC TTTFc"
     >
       <span
-        className="sc-exAgwC gMtzTF"
+        className="sc-cQFLBn eIyVOM"
       >
         Incomplete interaction
       </span>
@@ -1137,10 +1184,10 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
 
 exports[`ActivityFeedCard when the interaction is complete should render interaction activity with "Completed interaction" badge 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bMVAic jzzJXz"
 >
   <div
-    className="sc-bMVAic jGXGeY"
+    className="sc-bAeIUo iPQBiH"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -1155,7 +1202,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
       </a>
     </h3>
     <details
-      className="sc-bAeIUo fYXVul sc-kEYyzF ihcnje"
+      className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
       open={false}
     >
       <summary
@@ -1171,7 +1218,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-bwCtUz iVExri"
+          className="sc-hORach lbbDCN sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -1284,14 +1331,14 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
     </details>
   </div>
   <div
-    className="sc-iujRgT louFvU"
+    className="sc-GMQeP htIehK"
   >
     06 Jun 2019
     <div
-      className="sc-GMQeP eoADHI"
+      className="sc-exAgwC TTTFc"
     >
       <span
-        className="sc-exAgwC gMtzTF"
+        className="sc-cQFLBn eIyVOM"
       >
         Completed interaction
       </span>
@@ -1302,10 +1349,10 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
 
 exports[`ActivityFeedCard when the status is unknown should render interaction activity with "Unknown status" badge 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bMVAic jzzJXz"
 >
   <div
-    className="sc-bMVAic jGXGeY"
+    className="sc-bAeIUo iPQBiH"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -1320,7 +1367,7 @@ exports[`ActivityFeedCard when the status is unknown should render interaction a
       </a>
     </h3>
     <details
-      className="sc-bAeIUo fYXVul sc-kEYyzF ihcnje"
+      className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
       open={false}
     >
       <summary
@@ -1336,7 +1383,7 @@ exports[`ActivityFeedCard when the status is unknown should render interaction a
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-bwCtUz iVExri"
+          className="sc-hORach lbbDCN sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -1449,14 +1496,14 @@ exports[`ActivityFeedCard when the status is unknown should render interaction a
     </details>
   </div>
   <div
-    className="sc-iujRgT louFvU"
+    className="sc-GMQeP htIehK"
   >
     06 Jun 2019
     <div
-      className="sc-GMQeP eoADHI"
+      className="sc-exAgwC TTTFc"
     >
       <span
-        className="sc-exAgwC gMtzTF"
+        className="sc-cQFLBn eIyVOM"
       >
         Unknown status
       </span>
@@ -1467,10 +1514,10 @@ exports[`ActivityFeedCard when the status is unknown should render interaction a
 
 exports[`ActivityFeedCard when there is a service delivery should render service delivery activity 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bMVAic jzzJXz"
 >
   <div
-    className="sc-bMVAic jGXGeY"
+    className="sc-bAeIUo iPQBiH"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -1485,7 +1532,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
       </a>
     </h3>
     <details
-      className="sc-bAeIUo fYXVul sc-kEYyzF ihcnje"
+      className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
       open={false}
     >
       <summary
@@ -1501,7 +1548,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-bwCtUz iVExri"
+          className="sc-hORach lbbDCN sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -1614,14 +1661,14 @@ exports[`ActivityFeedCard when there is a service delivery should render service
     </details>
   </div>
   <div
-    className="sc-iujRgT louFvU"
+    className="sc-GMQeP htIehK"
   >
     29 Apr 2019
     <div
-      className="sc-GMQeP eoADHI"
+      className="sc-exAgwC TTTFc"
     >
       <span
-        className="sc-exAgwC gMtzTF"
+        className="sc-cQFLBn eIyVOM"
       >
         Completed interaction
       </span>
@@ -1632,10 +1679,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
 
 exports[`ActivityFeedCard when there is an activity item of arbitrary type should render default activity 1`] = `
 <div
-  className="sc-cQFLBn evPCdV"
+  className="sc-gojNiO hMAHIi"
 >
   <div
-    className="sc-gojNiO gbmeNG"
+    className="sc-daURTG dsOaUh"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -1649,10 +1696,10 @@ exports[`ActivityFeedCard when there is an activity item of arbitrary type shoul
 
 exports[`ActivityFeedCard when there is an interaction should render interaction activity 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bMVAic jzzJXz"
 >
   <div
-    className="sc-bMVAic jGXGeY"
+    className="sc-bAeIUo iPQBiH"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -1667,7 +1714,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
       </a>
     </h3>
     <details
-      className="sc-bAeIUo fYXVul sc-kEYyzF ihcnje"
+      className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
       open={false}
     >
       <summary
@@ -1683,7 +1730,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-bwCtUz iVExri"
+          className="sc-hORach lbbDCN sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -1796,14 +1843,14 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
     </details>
   </div>
   <div
-    className="sc-iujRgT louFvU"
+    className="sc-GMQeP htIehK"
   >
     02 May 2019
     <div
-      className="sc-GMQeP eoADHI"
+      className="sc-exAgwC TTTFc"
     >
       <span
-        className="sc-exAgwC gMtzTF"
+        className="sc-cQFLBn eIyVOM"
       >
         Completed interaction
       </span>
@@ -1814,10 +1861,10 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
 
 exports[`ActivityFeedCard when there is an interaction without any people involved should render interaction activity without advisers nor contacts 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bMVAic jzzJXz"
 >
   <div
-    className="sc-bMVAic jGXGeY"
+    className="sc-bAeIUo iPQBiH"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -1832,7 +1879,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
       </a>
     </h3>
     <details
-      className="sc-bAeIUo fYXVul sc-kEYyzF ihcnje"
+      className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
       open={false}
     >
       <summary
@@ -1848,11 +1895,57 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-bwCtUz iVExri"
+          className="sc-hORach lbbDCN sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
           >
+            <tr
+              className="sc-iQKALj ftJWrM"
+            >
+              <th
+                className="sc-RefOD dxRfSY"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Contact(s)
+              </th>
+              <td
+                className="sc-RefOD gzbQXK"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              />
+            </tr>
+            <tr
+              className="sc-iQKALj ftJWrM"
+            >
+              <th
+                className="sc-RefOD dxRfSY"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Adviser(s)
+              </th>
+              <td
+                className="sc-RefOD gzbQXK"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              />
+            </tr>
             <tr
               className="sc-iQKALj ftJWrM"
             >
@@ -1891,14 +1984,14 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
     </details>
   </div>
   <div
-    className="sc-iujRgT louFvU"
+    className="sc-GMQeP htIehK"
   >
     06 Jun 2019
     <div
-      className="sc-GMQeP eoADHI"
+      className="sc-exAgwC TTTFc"
     >
       <span
-        className="sc-exAgwC gMtzTF"
+        className="sc-cQFLBn eIyVOM"
       >
         Unknown status
       </span>

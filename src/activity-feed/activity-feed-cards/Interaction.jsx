@@ -1,10 +1,8 @@
 import React from 'react'
-import moment from 'moment/moment'
 import {
   filter,
   get,
   includes,
-  isEmpty,
   map,
   some,
 } from 'lodash'
@@ -12,11 +10,11 @@ import {
   Details,
   H3,
   Link,
-  Table,
 } from 'govuk-react'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
-import PropTypes from 'prop-types'
+
+import CardTable from './card/CardTable'
 import DateUtils from '../../utils/DateUtils'
 
 const Card = styled('div')`
@@ -43,6 +41,16 @@ const CardContent = styled('div')`
 const CardDetails = styled(Details)`
   font-size: 100%;
   margin: ${SPACING.SCALE_3} 0 0;
+  
+  & > div {
+    padding: ${SPACING.SCALE_1};
+    padding-bottom: ${SPACING.SCALE_3};
+    margin: ${SPACING.SCALE_1} 0 ${SPACING.SCALE_1} 4px;
+    
+    & > a {
+      padding: ${SPACING.SCALE_4} 0 ${SPACING.SCALE_2} ${SPACING.SCALE_2};
+    }
+  }
 `
 
 const CardMeta = styled('div')`
@@ -105,23 +113,6 @@ const getStatus = (activity, startTime) => {
   }
 }
 
-class DetailsRow extends React.Component {
-  static propTypes = {
-    header: PropTypes.string.isRequired,
-    children: PropTypes.node,
-  }
-
-  render() {
-    const { header, children } = this.props
-    return isEmpty(children) ? null : (
-      <Table.Row>
-        <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>{header}</Table.CellHeader>
-        <Table.Cell style={{border: 0}}>{children}</Table.Cell>
-      </Table.Row>
-    )
-  }
-}
-
 export default class Interaction extends React.Component {
   static canRender(activity) {
     const types = get(activity, 'object.type')
@@ -142,7 +133,6 @@ export default class Interaction extends React.Component {
     const status = getStatus(activity, startTime)
     const badgeLabel =  BADGE_LABELS[status.toUpperCase()]
 
-    const isUpcoming = status === STATUS.UPCOMING
     const contacts = getPeople(activity, 'Contact')
     const contactsList = contacts.map(({id, name, emailAddress}) => (
       <span key={id}>
@@ -164,11 +154,13 @@ export default class Interaction extends React.Component {
             <Link href={url}>{subject}</Link>
           </H3>
           <CardDetails summary="View interaction details">
-            <Table>
-              <DetailsRow header="Contact(s)">{contactsList}</DetailsRow>
-              <DetailsRow header="Adviser(s)">{advisersList}</DetailsRow>
-              <DetailsRow header="Services">{service}</DetailsRow>
-            </Table>
+            <CardTable rows={
+              [
+                { header: 'Contact(s)', content: contactsList },
+                { header: 'Adviser(s)', content: advisersList },
+                { header: 'Services', content: service },
+              ]
+            } />
             <Link href={url}>Go to the interaction detail page</Link>
           </CardDetails>
         </CardContent>
