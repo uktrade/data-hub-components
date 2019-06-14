@@ -6,6 +6,9 @@ import { set } from 'lodash'
 import ActivityFeedCard from './ActivityFeedCard'
 import interactionActivityFixture from '../../fixtures/activity_feed/interactions/interaction'
 import serviceDeliveryActivityFixture from '../../fixtures/activity_feed/interactions/service_delivery'
+import investmentProjectsCTIFixture from '../../fixtures/activity_feed/investment_projects/project_added_cti'
+import investmentProjectsFDIFixture from '../../fixtures/activity_feed/investment_projects/project_added_fdi'
+
 import MockDate from 'mockdate'
 
 // Lock the date so moment's relative date doesn't break our deterministic tests.
@@ -132,6 +135,26 @@ describe('ActivityFeedCard', () => {
 
       const tree = renderer
         .create(<ActivityFeedCard activity={interactionWithoutService} />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('when an investment project is CTI', () => {
+    test('should render the CTI investment project card', () => {
+      const commitmentToInvest = { ...investmentProjectsCTIFixture }
+      const tree = renderer
+        .create(<ActivityFeedCard activity={commitmentToInvest} />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('when an investment project is FDI', () => {
+    test('should render the FDI investment project card', () => {
+      const foreignDirectInvestment = { ...investmentProjectsFDIFixture }
+      const tree = renderer
+        .create(<ActivityFeedCard activity={foreignDirectInvestment} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })

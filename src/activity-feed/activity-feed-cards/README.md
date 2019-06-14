@@ -7,4 +7,3 @@ To add a card for a new activity type you will need to:
  Your new card will now render when the condition in `canRender` has been met.
  
  Ensure the tests in `~/src/ActivityFeedCard.test.jsx` are updated.
- 

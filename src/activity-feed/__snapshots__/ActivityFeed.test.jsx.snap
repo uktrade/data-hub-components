@@ -2,13 +2,13 @@
 
 exports[`ActivityFeed renders empty feed 1`] = `
 <div
-  className="sc-bXGyLb jaYGFQ"
+  className="sc-krvtoX GMxoX"
 >
   <div
-    className="sc-GMQeP fgSkyU"
+    className="sc-daURTG hNOFqZ"
   >
     <div
-      className="sc-exAgwC dbNXu"
+      className="sc-bXGyLb bzoqmE"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -18,24 +18,24 @@ exports[`ActivityFeed renders empty feed 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cQFLBn cxgntD"
+      className="sc-lkqHmb dZkoyQ"
     />
   </div>
   <ol
-    className="sc-lkqHmb bHXlYn"
+    className="sc-fYiAbW bohJMF"
   />
 </div>
 `;
 
 exports[`ActivityFeed renders its children 1`] = `
 <div
-  className="sc-bXGyLb jaYGFQ"
+  className="sc-krvtoX GMxoX"
 >
   <div
-    className="sc-GMQeP fgSkyU"
+    className="sc-daURTG hNOFqZ"
   >
     <div
-      className="sc-exAgwC dbNXu"
+      className="sc-bXGyLb bzoqmE"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -45,11 +45,11 @@ exports[`ActivityFeed renders its children 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cQFLBn cxgntD"
+      className="sc-lkqHmb dZkoyQ"
     />
   </div>
   <ol
-    className="sc-lkqHmb bHXlYn"
+    className="sc-fYiAbW bohJMF"
   />
   <div>
     Child element to test
@@ -59,13 +59,13 @@ exports[`ActivityFeed renders its children 1`] = `
 
 exports[`ActivityFeed renders single activity 1`] = `
 <div
-  className="sc-bXGyLb jaYGFQ"
+  className="sc-krvtoX GMxoX"
 >
   <div
-    className="sc-GMQeP fgSkyU"
+    className="sc-daURTG hNOFqZ"
   >
     <div
-      className="sc-exAgwC dbNXu"
+      className="sc-bXGyLb bzoqmE"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -75,21 +75,21 @@ exports[`ActivityFeed renders single activity 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cQFLBn cxgntD"
+      className="sc-lkqHmb dZkoyQ"
     />
   </div>
   <ol
-    className="sc-lkqHmb bHXlYn"
+    className="sc-fYiAbW bohJMF"
   >
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -99,7 +99,7 @@ exports[`ActivityFeed renders single activity 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -110,7 +110,7 @@ exports[`ActivityFeed renders single activity 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -118,7 +118,7 @@ exports[`ActivityFeed renders single activity 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -253,13 +253,13 @@ exports[`ActivityFeed renders single activity 1`] = `
 
 exports[`ActivityFeed renders with "Load more" link 1`] = `
 <div
-  className="sc-bXGyLb jaYGFQ"
+  className="sc-krvtoX GMxoX"
 >
   <div
-    className="sc-GMQeP fgSkyU"
+    className="sc-daURTG hNOFqZ"
   >
     <div
-      className="sc-exAgwC dbNXu"
+      className="sc-bXGyLb bzoqmE"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -269,21 +269,21 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cQFLBn cxgntD"
+      className="sc-lkqHmb dZkoyQ"
     />
   </div>
   <ol
-    className="sc-lkqHmb bHXlYn"
+    className="sc-fYiAbW bohJMF"
   >
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -293,7 +293,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -304,7 +304,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -312,7 +312,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -443,13 +443,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -459,7 +459,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -470,7 +470,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -478,7 +478,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -609,13 +609,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -625,7 +625,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -636,7 +636,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -644,7 +644,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -775,13 +775,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -791,7 +791,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -802,7 +802,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -810,7 +810,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -941,13 +941,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -957,7 +957,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -968,7 +968,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -976,7 +976,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1107,13 +1107,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1123,7 +1123,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -1134,7 +1134,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -1142,7 +1142,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1273,13 +1273,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1289,7 +1289,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -1300,7 +1300,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -1308,7 +1308,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1439,13 +1439,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1455,7 +1455,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -1466,7 +1466,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -1474,7 +1474,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1605,13 +1605,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1621,7 +1621,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -1632,7 +1632,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -1640,7 +1640,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1771,13 +1771,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1787,7 +1787,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -1798,7 +1798,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -1806,7 +1806,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -1937,13 +1937,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -1953,7 +1953,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -1964,7 +1964,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -1972,7 +1972,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2103,13 +2103,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -2119,7 +2119,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -2130,7 +2130,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -2138,7 +2138,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2269,13 +2269,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -2285,7 +2285,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -2296,7 +2296,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -2304,7 +2304,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2435,13 +2435,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -2451,7 +2451,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -2462,7 +2462,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -2470,7 +2470,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2601,13 +2601,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -2617,7 +2617,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -2628,7 +2628,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -2636,7 +2636,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2767,13 +2767,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -2783,7 +2783,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -2794,7 +2794,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -2802,7 +2802,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -2933,13 +2933,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -2949,7 +2949,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -2960,7 +2960,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -2968,7 +2968,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -3099,13 +3099,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -3115,7 +3115,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -3126,7 +3126,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -3134,7 +3134,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -3265,13 +3265,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -3281,7 +3281,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -3292,7 +3292,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -3300,7 +3300,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -3431,13 +3431,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-cmthru jjutsD"
+        className="sc-hORach fXVEzT"
       >
         <div
-          className="sc-hMFtBS bSjygG"
+          className="sc-bMVAic bUrlKN"
         >
           <div
-            className="sc-cLQEGU jZASmA"
+            className="sc-bAeIUo laQKDh"
           >
             <h3
               className="sc-cMljjf kCLKvB"
@@ -3447,7 +3447,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </h3>
           </div>
           <div
-            className="sc-gqPbQI eyVvYh"
+            className="sc-iujRgT louFvU"
           >
             a month ago
             <div
@@ -3458,7 +3458,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               }
             >
               <span
-                className="sc-bMVAic cuPimo"
+                className="sc-exAgwC gMtzTF"
               >
                 Completed interaction
               </span>
@@ -3466,7 +3466,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </div>
         </div>
         <details
-          className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+          className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
@@ -3597,7 +3597,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
   </ol>
   <div
-    className="sc-daURTG ghspCD"
+    className="sc-cbkKFq buSHMW"
   >
     <div
       className="sc-eqIVtm fxHPMe"
@@ -3821,13 +3821,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
 
 exports[`ActivityFeed renders with loader 1`] = `
 <div
-  className="sc-bXGyLb jaYGFQ"
+  className="sc-krvtoX GMxoX"
 >
   <div
-    className="sc-GMQeP fgSkyU"
+    className="sc-daURTG hNOFqZ"
   >
     <div
-      className="sc-exAgwC dbNXu"
+      className="sc-bXGyLb bzoqmE"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -3837,14 +3837,14 @@ exports[`ActivityFeed renders with loader 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cQFLBn cxgntD"
+      className="sc-lkqHmb dZkoyQ"
     />
   </div>
   <ol
-    className="sc-lkqHmb bHXlYn"
+    className="sc-fYiAbW bohJMF"
   />
   <div
-    className="sc-daURTG ghspCD"
+    className="sc-cbkKFq buSHMW"
   >
     <div
       className="sc-eqIVtm fxHPMe"

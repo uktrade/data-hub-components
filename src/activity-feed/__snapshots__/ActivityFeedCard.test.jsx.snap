@@ -1,14 +1,488 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ActivityFeedCard when the interaction does not have a service should render interaction activity without services 1`] = `
+exports[`ActivityFeedCard when an investment project is CTI should render the CTI investment project card 1`] = `
 <div
   className="sc-cmthru jjutsD"
 >
   <div
-    className="sc-hMFtBS bSjygG"
+    className="sc-hMFtBS cRJiJd"
   >
     <div
-      className="sc-cLQEGU jZASmA"
+      className="sc-cLQEGU jRpfLR"
+    >
+      <h3
+        className="sc-cMljjf kCLKvB"
+        size="MEDIUM"
+      >
+        New investment project added
+      </h3>
+      <span>
+        2 years ago
+      </span>
+    </div>
+    <h3
+      className="sc-cMljjf kCLKvB"
+      size="MEDIUM"
+    >
+      Aphrodite Mcdonald
+    </h3>
+  </div>
+  <details
+    className="sc-gqPbQI fSzgwk sc-kEYyzF ihcnje"
+    open={false}
+  >
+    <summary
+      className="sc-kkGfuU cCdZFh"
+    >
+      <span
+        className="sc-iAyFgw jRkIxn"
+      >
+        Key details and people for this project
+      </span>
+    </summary>
+    <div
+      className="sc-hSdWYo dfimje"
+    >
+      <table
+        className="sc-bwCtUz iVExri"
+      >
+        <tbody
+          className="sc-eXEjpC fuVqJC"
+        >
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Investment Type
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Commitment to invest
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Estimated land date
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              01 Oct 1973
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Company contact(s)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Reece Stevens
+                 
+                <a
+                  className="sc-bwzfXH VXMCV"
+                  href="mailto:tukite@yahoo.com"
+                  muted={false}
+                >
+                  tukite@yahoo.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Total Investment
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Capital expenditure value
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Gross value added (GVA)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-bwzfXH VXMCV"
+        href="https://www.datahub.dev.uktrade.io/investments/projects/8f2662e9-0691-435f-8edd-7fb9df9d8936"
+        muted={false}
+      >
+        Go to the investment project detail page
+      </a>
+    </div>
+  </details>
+</div>
+`;
+
+exports[`ActivityFeedCard when an investment project is FDI should render the FDI investment project card 1`] = `
+<div
+  className="sc-cmthru jjutsD"
+>
+  <div
+    className="sc-hMFtBS cRJiJd"
+  >
+    <div
+      className="sc-cLQEGU jRpfLR"
+    >
+      <h3
+        className="sc-cMljjf kCLKvB"
+        size="MEDIUM"
+      >
+        New investment project added
+      </h3>
+      <span>
+        2 years ago
+      </span>
+    </div>
+    <h3
+      className="sc-cMljjf kCLKvB"
+      size="MEDIUM"
+    >
+      Wig factory
+    </h3>
+  </div>
+  <details
+    className="sc-gqPbQI fSzgwk sc-kEYyzF ihcnje"
+    open={false}
+  >
+    <summary
+      className="sc-kkGfuU cCdZFh"
+    >
+      <span
+        className="sc-iAyFgw jRkIxn"
+      >
+        Key details and people for this project
+      </span>
+    </summary>
+    <div
+      className="sc-hSdWYo dfimje"
+    >
+      <table
+        className="sc-bwCtUz iVExri"
+      >
+        <tbody
+          className="sc-eXEjpC fuVqJC"
+        >
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Investment Type
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              FDI
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Estimated land date
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              01 Jan 2020
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Company contact(s)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Dean Cox
+                 
+                <a
+                  className="sc-bwzfXH VXMCV"
+                  href="mailto:dean@cox.com"
+                  muted={false}
+                >
+                  dean@cox.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Total Investment
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £
+              1,000,000
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Capital expenditure value
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £
+              200,000
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Gross value added (GVA)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £
+              11,620
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Number of new jobs
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              15,400
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-bwzfXH VXMCV"
+        href="https://www.datahub.dev.uktrade.io/investments/projects/3520b973-0e77-46cf-be75-3585f2f6691e"
+        muted={false}
+      >
+        Go to the investment project detail page
+      </a>
+    </div>
+  </details>
+</div>
+`;
+
+exports[`ActivityFeedCard when the interaction does not have a service should render interaction activity without services 1`] = `
+<div
+  className="sc-hORach fXVEzT"
+>
+  <div
+    className="sc-bMVAic bUrlKN"
+  >
+    <div
+      className="sc-bAeIUo laQKDh"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -18,7 +492,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
       </h3>
     </div>
     <div
-      className="sc-gqPbQI eyVvYh"
+      className="sc-iujRgT louFvU"
     >
       in a day
       <div
@@ -29,7 +503,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
         }
       >
         <span
-          className="sc-bMVAic cuPimo"
+          className="sc-exAgwC gMtzTF"
         >
           Unknown status
         </span>
@@ -37,7 +511,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
     </div>
   </div>
   <details
-    className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+    className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -73,13 +547,13 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
 
 exports[`ActivityFeedCard when the interaction is a draft and archived should render interaction activity with "Cancelled interaction" badge 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-hORach fXVEzT"
 >
   <div
-    className="sc-hMFtBS bSjygG"
+    className="sc-bMVAic bUrlKN"
   >
     <div
-      className="sc-cLQEGU jZASmA"
+      className="sc-bAeIUo laQKDh"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -89,7 +563,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
       </h3>
     </div>
     <div
-      className="sc-gqPbQI eyVvYh"
+      className="sc-iujRgT louFvU"
     >
       in a day
       <div
@@ -100,7 +574,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
         }
       >
         <span
-          className="sc-bMVAic cuPimo"
+          className="sc-exAgwC gMtzTF"
         >
           Cancelled interaction
         </span>
@@ -108,7 +582,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
     </div>
   </div>
   <details
-    className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+    className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -240,13 +714,13 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
 
 exports[`ActivityFeedCard when the interaction is a draft and upcoming should render interaction activity with "Upcoming interaction" badge 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-hORach gLNQwB"
 >
   <div
-    className="sc-hMFtBS bSjygG"
+    className="sc-bMVAic bUrlKN"
   >
     <div
-      className="sc-cLQEGU jZASmA"
+      className="sc-bAeIUo laQKDh"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -256,7 +730,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
       </h3>
     </div>
     <div
-      className="sc-gqPbQI eyVvYh"
+      className="sc-iujRgT louFvU"
     >
       in a day
       <div
@@ -267,7 +741,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
         }
       >
         <span
-          className="sc-bMVAic cuPimo"
+          className="sc-exAgwC gMtzTF"
         >
           Upcoming interaction
         </span>
@@ -275,7 +749,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
     </div>
   </div>
   <details
-    className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+    className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -407,13 +881,13 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
 
 exports[`ActivityFeedCard when the interaction is a draft in the past should render interaction activity with "Incomplete interaction" badge 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-hORach fXVEzT"
 >
   <div
-    className="sc-hMFtBS bSjygG"
+    className="sc-bMVAic bUrlKN"
   >
     <div
-      className="sc-cLQEGU jZASmA"
+      className="sc-bAeIUo laQKDh"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -423,7 +897,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
       </h3>
     </div>
     <div
-      className="sc-gqPbQI eyVvYh"
+      className="sc-iujRgT louFvU"
     >
       a year ago
       <div
@@ -434,7 +908,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
         }
       >
         <span
-          className="sc-bMVAic cuPimo"
+          className="sc-exAgwC gMtzTF"
         >
           Incomplete interaction
         </span>
@@ -442,7 +916,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
     </div>
   </div>
   <details
-    className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+    className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -574,13 +1048,13 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
 
 exports[`ActivityFeedCard when the interaction is complete should render interaction activity with "Completed interaction" badge 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-hORach fXVEzT"
 >
   <div
-    className="sc-hMFtBS bSjygG"
+    className="sc-bMVAic bUrlKN"
   >
     <div
-      className="sc-cLQEGU jZASmA"
+      className="sc-bAeIUo laQKDh"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -590,7 +1064,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
       </h3>
     </div>
     <div
-      className="sc-gqPbQI eyVvYh"
+      className="sc-iujRgT louFvU"
     >
       in a day
       <div
@@ -601,7 +1075,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
         }
       >
         <span
-          className="sc-bMVAic cuPimo"
+          className="sc-exAgwC gMtzTF"
         >
           Completed interaction
         </span>
@@ -609,7 +1083,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
     </div>
   </div>
   <details
-    className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+    className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -741,13 +1215,13 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
 
 exports[`ActivityFeedCard when the status is unknown should render interaction activity with "Unknown status" badge 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-hORach fXVEzT"
 >
   <div
-    className="sc-hMFtBS bSjygG"
+    className="sc-bMVAic bUrlKN"
   >
     <div
-      className="sc-cLQEGU jZASmA"
+      className="sc-bAeIUo laQKDh"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -757,7 +1231,7 @@ exports[`ActivityFeedCard when the status is unknown should render interaction a
       </h3>
     </div>
     <div
-      className="sc-gqPbQI eyVvYh"
+      className="sc-iujRgT louFvU"
     >
       in a day
       <div
@@ -768,7 +1242,7 @@ exports[`ActivityFeedCard when the status is unknown should render interaction a
         }
       >
         <span
-          className="sc-bMVAic cuPimo"
+          className="sc-exAgwC gMtzTF"
         >
           Unknown status
         </span>
@@ -776,7 +1250,7 @@ exports[`ActivityFeedCard when the status is unknown should render interaction a
     </div>
   </div>
   <details
-    className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+    className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -908,13 +1382,13 @@ exports[`ActivityFeedCard when the status is unknown should render interaction a
 
 exports[`ActivityFeedCard when there is a service delivery should render service delivery activity 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-hORach fXVEzT"
 >
   <div
-    className="sc-hMFtBS bSjygG"
+    className="sc-bMVAic bUrlKN"
   >
     <div
-      className="sc-cLQEGU jZASmA"
+      className="sc-bAeIUo laQKDh"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -924,7 +1398,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
       </h3>
     </div>
     <div
-      className="sc-gqPbQI eyVvYh"
+      className="sc-iujRgT louFvU"
     >
       a month ago
       <div
@@ -935,7 +1409,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
         }
       >
         <span
-          className="sc-bMVAic cuPimo"
+          className="sc-exAgwC gMtzTF"
         >
           Completed interaction
         </span>
@@ -943,7 +1417,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
     </div>
   </div>
   <details
-    className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+    className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -1075,10 +1549,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
 
 exports[`ActivityFeedCard when there is an activity item of arbitrary type should render default activity 1`] = `
 <div
-  className="sc-bAeIUo hKMfQm"
+  className="sc-cQFLBn evPCdV"
 >
   <div
-    className="sc-iujRgT izOATC"
+    className="sc-gojNiO gbmeNG"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -1092,13 +1566,13 @@ exports[`ActivityFeedCard when there is an activity item of arbitrary type shoul
 
 exports[`ActivityFeedCard when there is an interaction should render interaction activity 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-hORach fXVEzT"
 >
   <div
-    className="sc-hMFtBS bSjygG"
+    className="sc-bMVAic bUrlKN"
   >
     <div
-      className="sc-cLQEGU jZASmA"
+      className="sc-bAeIUo laQKDh"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -1108,7 +1582,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
       </h3>
     </div>
     <div
-      className="sc-gqPbQI eyVvYh"
+      className="sc-iujRgT louFvU"
     >
       a month ago
       <div
@@ -1119,7 +1593,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
         }
       >
         <span
-          className="sc-bMVAic cuPimo"
+          className="sc-exAgwC gMtzTF"
         >
           Completed interaction
         </span>
@@ -1127,7 +1601,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
     </div>
   </div>
   <details
-    className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+    className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
@@ -1259,13 +1733,13 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
 
 exports[`ActivityFeedCard when there is an interaction without any people involved should render interaction activity without advisers nor contacts 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-hORach fXVEzT"
 >
   <div
-    className="sc-hMFtBS bSjygG"
+    className="sc-bMVAic bUrlKN"
   >
     <div
-      className="sc-cLQEGU jZASmA"
+      className="sc-bAeIUo laQKDh"
     >
       <h3
         className="sc-cMljjf kCLKvB"
@@ -1275,7 +1749,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
       </h3>
     </div>
     <div
-      className="sc-gqPbQI eyVvYh"
+      className="sc-iujRgT louFvU"
     >
       in a day
       <div
@@ -1286,7 +1760,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
         }
       >
         <span
-          className="sc-bMVAic cuPimo"
+          className="sc-exAgwC gMtzTF"
         >
           Unknown status
         </span>
@@ -1294,7 +1768,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
     </div>
   </div>
   <details
-    className="sc-hORach jAeeDg sc-kEYyzF ihcnje"
+    className="sc-GMQeP clSAdl sc-kEYyzF ihcnje"
     open={false}
   >
     <summary
