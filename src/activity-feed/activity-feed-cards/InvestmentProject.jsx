@@ -102,9 +102,9 @@ export default class InvestmentProject extends React.Component {
     ))
 
     const estimatedLandDate = DateUtils.format(get(activity, 'object.dit:estimatedLandDate'))
-    const totalInvestment = NumberUtils.decimal(get(activity, 'object.dit:totalInvestment'))
-    const foreignEquityInvestment = NumberUtils.decimal(get(activity, 'object.dit:foreignEquityInvestment'))
-    const grossValueAdded = NumberUtils.decimal(get(activity, 'object.dit:grossValueAdded'))
+    const totalInvestment = NumberUtils.currency(get(activity, 'object.dit:totalInvestment'))
+    const foreignEquityInvestment = NumberUtils.currency(get(activity, 'object.dit:foreignEquityInvestment'))
+    const grossValueAdded = NumberUtils.currency(get(activity, 'object.dit:grossValueAdded'))
     const numberNewJobs = NumberUtils.decimal(get(activity, 'object.dit:numberNewJobs'))
     const url = get(activity, 'object.url')
 
@@ -122,9 +122,9 @@ export default class InvestmentProject extends React.Component {
             <DetailsRow header="Investment Type">{investmentType}</DetailsRow>
             <DetailsRow header="Estimated land date">{estimatedLandDate}</DetailsRow>
             <DetailsRow header="Company contact(s)">{contactsList}</DetailsRow>
-            <DetailsRow header="Total Investment">£{totalInvestment}</DetailsRow>
-            <DetailsRow header="Capital expenditure value">£{foreignEquityInvestment}</DetailsRow>
-            <DetailsRow header="Gross value added (GVA)">£{grossValueAdded}</DetailsRow>
+            <DetailsRow header="Total Investment">{totalInvestment}</DetailsRow>
+            <DetailsRow header="Capital expenditure value">{foreignEquityInvestment}</DetailsRow>
+            <DetailsRow header="Gross value added (GVA)">{grossValueAdded}</DetailsRow>
             <DetailsRow header="Number of new jobs">{numberNewJobs}</DetailsRow>
           </Table>
           <Link href={url}>Go to the investment project detail page</Link>
