@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ActivityFeedCard when an investment project is CTI should render the CTI investment project card 1`] = `
+exports[`ActivityFeedCard when an investment project is CTI should render the CTI investment project activity card 1`] = `
 <div
   className="sc-cmthru jjutsD"
 >
@@ -148,7 +148,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
 </div>
 `;
 
-exports[`ActivityFeedCard when an investment project is FDI should render the FDI investment project card 1`] = `
+exports[`ActivityFeedCard when an investment project is FDI should render the FDI investment project activity card 1`] = `
 <div
   className="sc-cmthru jjutsD"
 >
@@ -387,6 +387,229 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
       <a
         className="sc-bwzfXH VXMCV"
         href="https://www.datahub.dev.uktrade.io/investments/projects/3520b973-0e77-46cf-be75-3585f2f6691e"
+        muted={false}
+      >
+        Go to the investment project detail page
+      </a>
+    </div>
+  </details>
+</div>
+`;
+
+exports[`ActivityFeedCard when an investment project is Non-FDI should render the Non-FDI investment project activity card 1`] = `
+<div
+  className="sc-cmthru jjutsD"
+>
+  <div
+    className="sc-hMFtBS cRJiJd"
+  >
+    <div
+      className="sc-cLQEGU jRpfLR"
+    >
+      <h3
+        className="sc-cMljjf kCLKvB"
+        size="MEDIUM"
+      >
+        New investment project added
+      </h3>
+      <span>
+        2 years ago
+      </span>
+    </div>
+    <h3
+      className="sc-cMljjf kCLKvB"
+      size="MEDIUM"
+    >
+      Refined Rubber Chicken
+    </h3>
+  </div>
+  <details
+    className="sc-gqPbQI fSzgwk sc-kEYyzF ihcnje"
+    open={false}
+  >
+    <summary
+      className="sc-kkGfuU cCdZFh"
+    >
+      <span
+        className="sc-iAyFgw jRkIxn"
+      >
+        Key details and people for this project
+      </span>
+    </summary>
+    <div
+      className="sc-hSdWYo dfimje"
+    >
+      <table
+        className="sc-bwCtUz iVExri"
+      >
+        <tbody
+          className="sc-eXEjpC fuVqJC"
+        >
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Investment Type
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Non-FDI
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Estimated land date
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              01 Dec 2018
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Company contact(s)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Ruthie Cole
+                 
+                <a
+                  className="sc-bwzfXH VXMCV"
+                  href="mailto:Ruthie.Cole@example.com"
+                  muted={false}
+                >
+                  Ruthie.Cole@example.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Total Investment
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Capital expenditure value
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Gross value added (GVA)
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-bwzfXH VXMCV"
+        href="https://www.datahub.dev.uktrade.io/investments/projects/ff4005e5-f769-43cb-a46f-a483ec20eda7"
         muted={false}
       >
         Go to the investment project detail page

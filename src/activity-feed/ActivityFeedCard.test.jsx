@@ -8,6 +8,7 @@ import interactionActivityFixture from '../../fixtures/activity_feed/interaction
 import serviceDeliveryActivityFixture from '../../fixtures/activity_feed/interactions/service_delivery'
 import investmentProjectsCTIFixture from '../../fixtures/activity_feed/investment_projects/project_added_cti'
 import investmentProjectsFDIFixture from '../../fixtures/activity_feed/investment_projects/project_added_fdi'
+import investmentProjectsNonFDIFixture from '../../fixtures/activity_feed/investment_projects/project_added_non_fdi'
 
 import MockDate from 'mockdate'
 
@@ -141,7 +142,7 @@ describe('ActivityFeedCard', () => {
   })
 
   describe('when an investment project is CTI', () => {
-    test('should render the CTI investment project card', () => {
+    test('should render the CTI investment project activity card', () => {
       const commitmentToInvest = { ...investmentProjectsCTIFixture }
       const tree = renderer
         .create(<ActivityFeedCard activity={commitmentToInvest} />)
@@ -151,10 +152,20 @@ describe('ActivityFeedCard', () => {
   })
 
   describe('when an investment project is FDI', () => {
-    test('should render the FDI investment project card', () => {
+    test('should render the FDI investment project activity card', () => {
       const foreignDirectInvestment = { ...investmentProjectsFDIFixture }
       const tree = renderer
         .create(<ActivityFeedCard activity={foreignDirectInvestment} />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('when an investment project is Non-FDI', () => {
+    test('should render the Non-FDI investment project activity card', () => {
+      const nonForeignDirectInvestment = { ...investmentProjectsNonFDIFixture }
+      const tree = renderer
+        .create(<ActivityFeedCard activity={nonForeignDirectInvestment} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })

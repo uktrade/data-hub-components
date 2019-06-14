@@ -1,8 +1,6 @@
 {
-  "generator": {
-    "name": "dit:dataHub",
-    "type": "Application"
-  },
+  "type": "Add",
+  "published": "2017-05-23T17:44:15.396451Z",
   "id": "dit:DataHubInvestmentProject:8f2662e9-0691-435f-8edd-7fb9df9d8936:Add",
   "object": {
     "attributedTo": [
@@ -37,6 +35,8 @@
     ],
     "url": "https://www.datahub.dev.uktrade.io/investments/projects/8f2662e9-0691-435f-8edd-7fb9df9d8936"
   },
-  "published": "2017-05-23T17:44:15.396451Z",
-  "type": "Add"
+  "generator": {
+    "name": "dit:dataHub",
+    "type": "Application"
+  }
 }
