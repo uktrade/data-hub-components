@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { isEmpty } from 'lodash'
 import { Table } from 'govuk-react'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
