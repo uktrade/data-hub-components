@@ -112,7 +112,7 @@ export default class InvestmentProject extends React.Component {
       <Card>
         <CardHeader>
           <CardHeaderTitle>
-            <H3>{title}</H3>
+            <H3>{title} - {investmentType}</H3>
             <span>{publishedTime}</span>
           </CardHeaderTitle>
           <H3>{name}</H3>
