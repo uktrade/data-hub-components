@@ -5,7 +5,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
   className="sc-cmthru jjutsD"
 >
   <div
-    className="sc-hMFtBS cRJiJd"
+    className="sc-hMFtBS jNzJDC"
   >
     <div
       className="sc-cLQEGU jRpfLR"
@@ -26,7 +26,13 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
       className="sc-cMljjf kCLKvB"
       size="MEDIUM"
     >
-      Aphrodite Mcdonald
+      <a
+        className="sc-bwzfXH VXMCV"
+        href="https://www.datahub.dev.uktrade.io/investments/projects/8f2662e9-0691-435f-8edd-7fb9df9d8936"
+        muted={false}
+      >
+        Aphrodite Mcdonald
+      </a>
     </h3>
   </div>
   <details
@@ -156,7 +162,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
   className="sc-cmthru jjutsD"
 >
   <div
-    className="sc-hMFtBS cRJiJd"
+    className="sc-hMFtBS jNzJDC"
   >
     <div
       className="sc-cLQEGU jRpfLR"
@@ -177,7 +183,13 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
       className="sc-cMljjf kCLKvB"
       size="MEDIUM"
     >
-      Wig factory
+      <a
+        className="sc-bwzfXH VXMCV"
+        href="https://www.datahub.dev.uktrade.io/investments/projects/3520b973-0e77-46cf-be75-3585f2f6691e"
+        muted={false}
+      >
+        Wig factory
+      </a>
     </h3>
   </div>
   <details
@@ -407,7 +419,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
   className="sc-cmthru jjutsD"
 >
   <div
-    className="sc-hMFtBS cRJiJd"
+    className="sc-hMFtBS jNzJDC"
   >
     <div
       className="sc-cLQEGU jRpfLR"
@@ -428,7 +440,13 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
       className="sc-cMljjf kCLKvB"
       size="MEDIUM"
     >
-      Refined Rubber Chicken
+      <a
+        className="sc-bwzfXH VXMCV"
+        href="https://www.datahub.dev.uktrade.io/investments/projects/ff4005e5-f769-43cb-a46f-a483ec20eda7"
+        muted={false}
+      >
+        Refined Rubber Chicken
+      </a>
     </h3>
   </div>
   <details
