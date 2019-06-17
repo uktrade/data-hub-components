@@ -90,7 +90,7 @@ export default class InvestmentProject extends React.Component {
     const type = get(activity, 'type')
     const title = TITLES[type.toLowerCase()]
     const published = get(activity, 'published')
-    const publishedTime = moment(published).fromNow()
+    const publishedTime = DateUtils.format(published)
     const name = get(activity, 'object.name')
     const investmentType = get(activity, 'object.dit:investmentType.name')
 

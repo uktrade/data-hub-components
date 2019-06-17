@@ -17,6 +17,7 @@ import {
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
 import PropTypes from 'prop-types'
+import DateUtils from '../../utils/DateUtils'
 
 const Card = styled('div')`
   border: ${({ isUpcoming }) => isUpcoming ? '1px dashed #c0c0c0' : '1px solid #c0c0c0'};
@@ -137,7 +138,7 @@ export default class Interaction extends React.Component {
     const subject = get(activity, 'object.dit:subject')
     const service = get(activity, 'object.dit:service.name')
     const startTime = get(activity, 'object.startTime')
-    const cardHeaderStartTime = moment(startTime).fromNow()
+    const cardHeaderStartTime = DateUtils.format(startTime)
     const status = getStatus(activity, startTime)
     const badgeLabel =  BADGE_LABELS[status.toUpperCase()]
 
@@ -162,7 +163,7 @@ export default class Interaction extends React.Component {
           <H3>
             <Link href={url}>{subject}</Link>
           </H3>
-          <CardDetails summary="Who was involved">
+          <CardDetails summary="View interaction details">
             <Table>
               <DetailsRow header="Contact(s)">{contactsList}</DetailsRow>
               <DetailsRow header="Adviser(s)">{advisersList}</DetailsRow>
