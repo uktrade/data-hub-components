@@ -2,13 +2,13 @@
 
 exports[`ActivityFeed renders empty feed 1`] = `
 <div
-  className="sc-fYiAbW kuyZMR"
+  className="sc-fOKMvo kPvCWE"
 >
   <div
-    className="sc-bXGyLb hCHGPD"
+    className="sc-lkqHmb kqTFtF"
   >
     <div
-      className="sc-lkqHmb cipibu"
+      className="sc-eLExRp htQtud"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -18,24 +18,24 @@ exports[`ActivityFeed renders empty feed 1`] = `
       </h2>
     </div>
     <div
-      className="sc-eLExRp cCYzcE"
+      className="sc-cbkKFq gszEQi"
     />
   </div>
   <ol
-    className="sc-fOKMvo dRBnjW"
+    className="sc-dUjcNx jIzCzP"
   />
 </div>
 `;
 
 exports[`ActivityFeed renders its children 1`] = `
 <div
-  className="sc-fYiAbW kuyZMR"
+  className="sc-fOKMvo kPvCWE"
 >
   <div
-    className="sc-bXGyLb hCHGPD"
+    className="sc-lkqHmb kqTFtF"
   >
     <div
-      className="sc-lkqHmb cipibu"
+      className="sc-eLExRp htQtud"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -45,11 +45,11 @@ exports[`ActivityFeed renders its children 1`] = `
       </h2>
     </div>
     <div
-      className="sc-eLExRp cCYzcE"
+      className="sc-cbkKFq gszEQi"
     />
   </div>
   <ol
-    className="sc-fOKMvo dRBnjW"
+    className="sc-dUjcNx jIzCzP"
   />
   <div>
     Child element to test
@@ -59,13 +59,13 @@ exports[`ActivityFeed renders its children 1`] = `
 
 exports[`ActivityFeed renders single activity 1`] = `
 <div
-  className="sc-fYiAbW kuyZMR"
+  className="sc-fOKMvo kPvCWE"
 >
   <div
-    className="sc-bXGyLb hCHGPD"
+    className="sc-lkqHmb kqTFtF"
   >
     <div
-      className="sc-lkqHmb cipibu"
+      className="sc-eLExRp htQtud"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -75,21 +75,21 @@ exports[`ActivityFeed renders single activity 1`] = `
       </h2>
     </div>
     <div
-      className="sc-eLExRp cCYzcE"
+      className="sc-cbkKFq gszEQi"
     />
   </div>
   <ol
-    className="sc-fOKMvo dRBnjW"
+    className="sc-dUjcNx jIzCzP"
   >
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -101,7 +101,7 @@ exports[`ActivityFeed renders single activity 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -117,7 +117,7 @@ exports[`ActivityFeed renders single activity 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -251,13 +251,13 @@ exports[`ActivityFeed renders single activity 1`] = `
 
 exports[`ActivityFeed renders with "Load more" link 1`] = `
 <div
-  className="sc-fYiAbW kuyZMR"
+  className="sc-fOKMvo kPvCWE"
 >
   <div
-    className="sc-bXGyLb hCHGPD"
+    className="sc-lkqHmb kqTFtF"
   >
     <div
-      className="sc-lkqHmb cipibu"
+      className="sc-eLExRp htQtud"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -267,21 +267,21 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
       </h2>
     </div>
     <div
-      className="sc-eLExRp cCYzcE"
+      className="sc-cbkKFq gszEQi"
     />
   </div>
   <ol
-    className="sc-fOKMvo dRBnjW"
+    className="sc-dUjcNx jIzCzP"
   >
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -293,7 +293,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -309,7 +309,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -439,13 +439,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -457,7 +457,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -473,7 +473,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -603,13 +603,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -621,7 +621,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -637,7 +637,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -767,13 +767,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -785,7 +785,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -801,7 +801,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -931,13 +931,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -949,7 +949,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -965,7 +965,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1095,13 +1095,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -1113,7 +1113,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -1129,7 +1129,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1259,13 +1259,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -1277,7 +1277,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -1293,7 +1293,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1423,13 +1423,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -1441,7 +1441,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -1457,7 +1457,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1587,13 +1587,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -1605,7 +1605,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -1621,7 +1621,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1751,13 +1751,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -1769,7 +1769,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -1785,7 +1785,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1915,13 +1915,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -1933,7 +1933,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -1949,7 +1949,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2079,13 +2079,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -2097,7 +2097,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -2113,7 +2113,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2243,13 +2243,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -2261,7 +2261,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -2277,7 +2277,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2407,13 +2407,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -2425,7 +2425,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -2441,7 +2441,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2571,13 +2571,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -2589,7 +2589,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -2605,7 +2605,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2735,13 +2735,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -2753,7 +2753,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -2769,7 +2769,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2899,13 +2899,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -2917,7 +2917,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -2933,7 +2933,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -3063,13 +3063,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -3081,7 +3081,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -3097,7 +3097,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -3227,13 +3227,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -3245,7 +3245,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -3261,7 +3261,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -3391,13 +3391,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-bMVAic jzzJXz"
+        className="sc-hORach iKNari"
       >
         <div
-          className="sc-bAeIUo iPQBiH"
+          className="sc-bMVAic epiyOU"
         >
           <h3
-            className="sc-cMljjf kCLKvB"
+            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
             size="MEDIUM"
           >
             <a
@@ -3409,7 +3409,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-iujRgT htRllR sc-kEYyzF ihcnje"
+            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
             open={false}
           >
             <summary
@@ -3425,7 +3425,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-hORach lbbDCN sc-bwCtUz iVExri"
+                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -3555,7 +3555,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
   </ol>
   <div
-    className="sc-krvtoX kZJSIb"
+    className="sc-fYiAbW bWBaJM"
   >
     <div
       className="sc-eqIVtm fxHPMe"
@@ -3779,13 +3779,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
 
 exports[`ActivityFeed renders with loader 1`] = `
 <div
-  className="sc-fYiAbW kuyZMR"
+  className="sc-fOKMvo kPvCWE"
 >
   <div
-    className="sc-bXGyLb hCHGPD"
+    className="sc-lkqHmb kqTFtF"
   >
     <div
-      className="sc-lkqHmb cipibu"
+      className="sc-eLExRp htQtud"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -3795,14 +3795,14 @@ exports[`ActivityFeed renders with loader 1`] = `
       </h2>
     </div>
     <div
-      className="sc-eLExRp cCYzcE"
+      className="sc-cbkKFq gszEQi"
     />
   </div>
   <ol
-    className="sc-fOKMvo dRBnjW"
+    className="sc-dUjcNx jIzCzP"
   />
   <div
-    className="sc-krvtoX kZJSIb"
+    className="sc-fYiAbW bWBaJM"
   >
     <div
       className="sc-eqIVtm fxHPMe"

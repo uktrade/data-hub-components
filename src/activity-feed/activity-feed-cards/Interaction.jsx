@@ -1,175 +1,46 @@
 import React from 'react'
+
 import {
-  filter,
-  get,
-  includes,
-  map,
-  some,
-} from 'lodash'
-import {
-  Details,
-  H3,
-  Link,
-} from 'govuk-react'
-import styled from 'styled-components'
-import { SPACING } from '@govuk-react/constants'
-
-import CardTable from './card/CardTable'
-import DateUtils from '../../utils/DateUtils'
-
-const Card = styled('div')`
-  border: ${({ isUpcoming }) => isUpcoming ? '1px dashed #c0c0c0' : '1px solid #c0c0c0'};
-  padding: ${SPACING.SCALE_3};
-  display: flex;
-  flex-flow: row wrap;
-`
-
-const CardContent = styled('div')`
-  flex: 50%;
-  
-  & > H3 {
-    font-weight: normal;
-    color: #005ea5;
-    margin-bottom: ${SPACING.SCALE_2};
-    
-    & > a:link, a:visited, a:hover, a:active {
-      text-decoration: none;
-    }
-  }
-`
-
-const CardDetails = styled(Details)`
-  font-size: 100%;
-  margin: ${SPACING.SCALE_3} 0 0;
-  
-  & > div {
-    padding: ${SPACING.SCALE_1};
-    padding-bottom: ${SPACING.SCALE_3};
-    margin: ${SPACING.SCALE_1} 0 ${SPACING.SCALE_1} 4px;
-    
-    & > a {
-      padding: ${SPACING.SCALE_4} 0 ${SPACING.SCALE_2} ${SPACING.SCALE_2};
-    }
-  }
-`
-
-const CardMeta = styled('div')`
-  text-align: right;
-`
-
-const CardBadges = styled('div')`
-  padding: ${SPACING.SCALE_2} 0 ${SPACING.SCALE_2};
-`
-
-const Badge = styled('span')`
-  border: 2px solid #c0c0c0;
-  border-radius: 4px;
-  padding: 2px 4px;
-`
-
-const STATUS = {
-  DRAFT: 'draft',
-  COMPLETE: 'complete',
-  UPCOMING: 'upcoming',
-  INCOMPLETE: 'incomplete',
-  CANCELLED: 'cancelled',
-  UNKNOWN: 'unknown',
-}
-
-const BADGE_LABELS = {
-  COMPLETE: 'Completed interaction',
-  UPCOMING: 'Upcoming interaction',
-  INCOMPLETE: 'Incomplete interaction',
-  CANCELLED: 'Cancelled interaction',
-  UNKNOWN: 'Unknown status',
-}
-
-const getPeople = (activity, personSubType) => {
-  return map(filter(activity['object']['attributedTo'], ({type}) => {
-    return includes(type, `dit:${personSubType}`)
-  }), ({id, name, 'dit:emailAddress': emailAddress}) => {
-    return {
-      id,
-      name,
-      emailAddress,
-    }
-  })
-}
-
-const getStatus = (activity, startTime) => {
-  const apiStatus = get(activity, 'object.dit:status')
-  switch (apiStatus) {
-    case STATUS.DRAFT:
-      const isArchived = get(activity, 'object.dit:archived')
-      if (isArchived) {
-        return STATUS.CANCELLED
-      }
-      const isUpcoming = new Date(startTime) > new Date()
-      return isUpcoming ? STATUS.UPCOMING : STATUS.INCOMPLETE
-    case STATUS.COMPLETE:
-      return STATUS.COMPLETE
-    default:
-      return STATUS.UNKNOWN;
-  }
-}
+  Card,
+  CardContent,
+  CardDetails,
+  CardHeading,
+  CardMeta,
+  CardTable,
+} from './card'
+import CardUtils from './card/CardUtils'
+import InteractionUtils from './InteractionUtils'
 
 export default class Interaction extends React.Component {
   static canRender(activity) {
-    const types = get(activity, 'object.type')
-
-    return some([ 'dit:Interaction', 'dit:ServiceDelivery' ], (type) => {
-      return includes(types, type)
-    })
+    return CardUtils.canRenderByTypes(activity, [
+      'dit:Interaction',
+      'dit:ServiceDelivery',
+    ])
   }
 
   render() {
     const { activity } = this.props
-
-    const url = get(activity, 'object.url')
-    const subject = get(activity, 'object.dit:subject')
-    const service = get(activity, 'object.dit:service.name')
-    const startTime = get(activity, 'object.startTime')
-    const cardHeaderStartTime = DateUtils.format(startTime)
-    const status = getStatus(activity, startTime)
-    const badgeLabel =  BADGE_LABELS[status.toUpperCase()]
-
-    const contacts = getPeople(activity, 'Contact')
-    const contactsList = contacts.map(({id, name, emailAddress}) => (
-      <span key={id}>
-        {name} <Link href={"mailto:" + emailAddress}>{emailAddress}</Link>
-      </span>
-    ))
-
-    const advisers = getPeople(activity, 'Adviser')
-    const advisersList = advisers.map(({id, name, emailAddress}) => (
-      <span key={id}>
-        {name} <Link href={"mailto:" + emailAddress}>{emailAddress}</Link>
-      </span>
-    ))
+    const transformed = {
+      ...CardUtils.transform(activity),
+      ...InteractionUtils.transform(activity),
+    }
 
     return (
-      <Card isUpcoming={status === STATUS.UPCOMING}>
+      <Card isUpcoming={transformed.isUpcoming}>
         <CardContent>
-          <H3>
-            <Link href={url}>{subject}</Link>
-          </H3>
-          <CardDetails summary="View interaction details">
+          <CardHeading link={{ url: transformed.url, text: transformed.subject }}></CardHeading>
+          <CardDetails summary="View interaction details" link={{ url: transformed.url, text: 'Go to the interaction detail page' }}>
             <CardTable rows={
               [
-                { header: 'Contact(s)', content: contactsList },
-                { header: 'Adviser(s)', content: advisersList },
-                { header: 'Services', content: service },
+                { header: 'Contact(s)', content: CardUtils.getPeopleAsList(activity, 'Contact') },
+                { header: 'Adviser(s)', content: CardUtils.getPeopleAsList(activity, 'Adviser') },
+                { header: 'Services', content: transformed.service },
               ]
             } />
-            <Link href={url}>Go to the interaction detail page</Link>
           </CardDetails>
         </CardContent>
-        <CardMeta>
-          {cardHeaderStartTime}
-          <CardBadges>
-            <Badge>{badgeLabel}</Badge>
-          </CardBadges>
-        </CardMeta>
+        <CardMeta startTime={transformed.startTime} badge={transformed.badge} />
       </Card>
     )
   }
