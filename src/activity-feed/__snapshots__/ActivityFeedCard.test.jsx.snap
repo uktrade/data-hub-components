@@ -122,15 +122,16 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
               }
             >
               <span>
-                Reece Stevens
-                 
                 <a
                   className="sc-bwzfXH VXMCV"
-                  href="mailto:tukite@yahoo.com"
+                  href="#"
                   muted={false}
                 >
-                  tukite@yahoo.com
+                  Reece Stevens
                 </a>
+                 (
+                Some job title
+                )
               </span>
             </td>
           </tr>
@@ -270,15 +271,16 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               }
             >
               <span>
-                Dean Cox
-                 
                 <a
                   className="sc-bwzfXH VXMCV"
-                  href="mailto:dean@cox.com"
+                  href="#"
                   muted={false}
                 >
-                  dean@cox.com
+                  Dean Cox
                 </a>
+                 (
+                Some job title
+                )
               </span>
             </td>
           </tr>
@@ -518,15 +520,16 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
               }
             >
               <span>
-                Ruthie Cole
-                 
                 <a
                   className="sc-bwzfXH VXMCV"
-                  href="mailto:Ruthie.Cole@example.com"
+                  href="#"
                   muted={false}
                 >
-                  Ruthie.Cole@example.com
+                  Ruthie Cole
                 </a>
+                 (
+                Some job title
+                )
               </span>
             </td>
           </tr>
