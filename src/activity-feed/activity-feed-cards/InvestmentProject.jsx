@@ -4,7 +4,6 @@ import {filter, get, includes, map, some} from 'lodash'
 import { Details, H3, Link, Table } from 'govuk-react'
 import { SPACING } from '@govuk-react/constants'
 import styled from 'styled-components'
-import moment from 'moment/moment'
 
 import DateUtils from '../../utils/DateUtils'
 import NumberUtils from '../../utils/NumberUtils'
@@ -18,6 +17,10 @@ const CardHeader = styled('div')`
   H3 {
     color: #005ea5;
     font-weight: normal;
+    
+    & > a:link, a:visited, a:hover, a:active {
+      text-decoration: none;
+    }
   }
 `
 
@@ -115,7 +118,9 @@ export default class InvestmentProject extends React.Component {
             <H3>{title} - {investmentType}</H3>
             <span>{publishedTime}</span>
           </CardHeaderTitle>
-          <H3>{name}</H3>
+          <H3>
+            <Link href={url}>{name}</Link>
+          </H3>
         </CardHeader>
         <CardDetails summary="Key details and people for this project">
           <Table>
