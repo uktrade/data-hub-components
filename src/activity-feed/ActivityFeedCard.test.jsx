@@ -81,17 +81,6 @@ describe('ActivityFeedCard', () => {
     })
   })
 
-  describe('when the status is unknown', () => {
-    test('should render interaction activity with "Unknown status" badge', () => {
-      const fixture = { ...interactionActivityFixture };
-      set(fixture, 'object.dit:status', 'null')
-      const tree = renderer
-        .create(<ActivityFeedCard activity={fixture} />)
-        .toJSON()
-      expect(tree).toMatchSnapshot()
-    })
-  })
-
   describe('when there is a service delivery', () => {
     test('should render service delivery activity', () => {
       const tree = renderer
