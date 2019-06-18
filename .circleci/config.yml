@@ -1,0 +1,45 @@
+version: 2 # Do not upgrade to 2.1 until CircleCI CLI supports it
+aliases:
+  - &node_version node:10.16.0
+  # Common steps
+  - &restore_yarn_cache
+    restore_cache:
+      name: Restore yarn dependencies cache
+      key: yarn-dependency-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+
+jobs:
+  dependencies:
+    docker:
+      - image: *node_version
+    working_directory: ~/app
+    steps:
+      - checkout
+      - *restore_yarn_cache
+      - run: yarn install --pure-lockfile
+      - save_cache:
+          name: Save npm dependencies cache
+          key: yarn-dependency-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/app/node_modules
+
+  test:
+    docker:
+      - image: *node_version
+    working_directory: ~/app
+    steps:
+      - checkout
+      - *restore_yarn_cache
+      - run: yarn install --pure-lockfile
+      - run:
+          name: Jest tests
+          command: yarn run test
+          when: always
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - dependencies
+      - test:
+          requires:
+            - dependencies
