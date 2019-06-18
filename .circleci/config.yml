@@ -21,6 +21,18 @@ jobs:
           key: yarn-dependency-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
           paths:
             - ~/app/node_modules
+  yarn-check:
+    docker:
+      - image: *node_version
+    working_directory: ~/app
+    steps:
+      - checkout
+      - *restore_yarn_cache
+      - run: yarn install --pure-lockfile
+      - run:
+          name: Check yarn packages
+          command: yarn check
+          when: always
 
   test:
     docker:
@@ -40,6 +52,9 @@ workflows:
   build:
     jobs:
       - dependencies
+      - yarn-check:
+          requires:
+            - dependencies
       - test:
           requires:
             - dependencies
