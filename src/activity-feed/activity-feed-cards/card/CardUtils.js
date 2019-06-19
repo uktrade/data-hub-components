@@ -2,13 +2,38 @@ import {filter, get, includes, map, some} from 'lodash'
 import {Link} from 'govuk-react'
 import React from 'react'
 
+const createEmailAddressMarkup = ({id, name, emailAddress}) => {
+  if (!name || !emailAddress) {
+    return null
+  }
+
+  return (
+    <span key={id}>
+      {name}, <Link href={`mailto:${emailAddress}`}>{emailAddress}</Link>
+    </span>
+  )
+}
+
+const createJobTitleMarkup = ({id, name, jobTitle}) => {
+  if (!name || !jobTitle) {
+    return null
+  }
+
+  return (
+    <span key={id}>
+      <Link href="#">{name}</Link> ({jobTitle})
+    </span>
+  )
+}
+
 const getPeople = (activity, personSubType) => {
   return map(filter(activity['object']['attributedTo'], ({type}) => {
     return includes(type, `dit:${personSubType}`)
-  }), ({id, name, 'dit:emailAddress': emailAddress}) => {
+  }), ({ id, name, 'dit:jobTitle': jobTitle, 'dit:emailAddress': emailAddress}) => {
     return {
       id,
       name,
+      jobTitle,
       emailAddress,
     }
   })
@@ -34,10 +59,17 @@ export default class CardUtils {
 
   static getPeopleAsList(activity, personSubType) {
     const people = getPeople(activity, personSubType)
-    return people.map(({id, name, emailAddress}) => (
-      <span key={id}>
-        {name} <Link href={`mailto:${emailAddress}`}>{emailAddress}</Link>
-      </span>
-    ))
+    return people.map(obj => createEmailAddressMarkup(obj))
+  }
+
+  static getContactsWithJobTitle(activity) {
+    const people = getPeople(activity, 'Contact')
+    return people.map(obj => createJobTitleMarkup(obj))
+  }
+
+  static getAddedBy = (activity) => {
+    const name = get(activity, 'actor.name')
+    const emailAddress = get(activity, 'actor.dit:emailAddress')
+    return createEmailAddressMarkup({name, emailAddress})
   }
 }

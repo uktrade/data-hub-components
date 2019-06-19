@@ -13,7 +13,6 @@ const Heading = styled(H3)`
   }
 `
 
-
 export default class CardHeading extends React.Component {
   render() {
     const { link } = this.props

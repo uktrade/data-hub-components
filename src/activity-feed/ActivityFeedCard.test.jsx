@@ -9,6 +9,7 @@ import serviceDeliveryActivityFixture from '../../fixtures/activity_feed/interac
 import investmentProjectsCTIFixture from '../../fixtures/activity_feed/investment_projects/project_added_cti'
 import investmentProjectsFDIFixture from '../../fixtures/activity_feed/investment_projects/project_added_fdi'
 import investmentProjectsNonFDIFixture from '../../fixtures/activity_feed/investment_projects/project_added_non_fdi'
+import omisAddFixture from '../../fixtures/activity_feed/omis/omis-add'
 
 import MockDate from 'mockdate'
 
@@ -155,6 +156,16 @@ describe('ActivityFeedCard', () => {
       const nonForeignDirectInvestment = { ...investmentProjectsNonFDIFixture }
       const tree = renderer
         .create(<ActivityFeedCard activity={nonForeignDirectInvestment} />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('when a New OMIS order is added', () => {
+    test('should render an activity card', () => {
+      const omisAdd = { ...omisAddFixture }
+      const tree = renderer
+        .create(<ActivityFeedCard activity={omisAdd} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })

@@ -21,13 +21,12 @@ const Badge = styled('span')`
 export default class CardMeta extends React.Component {
   render() {
     const { startTime, badge } = this.props
+    const cardBadge = badge ? <CardBadges><Badge>{badge}</Badge></CardBadges> : null
 
     return (
       <CardMetaContainer>
         {DateUtils.format(startTime)}
-        <CardBadges>
-          <Badge>{badge}</Badge>
-        </CardBadges>
+        {cardBadge}
       </CardMetaContainer>
     )
   }
