@@ -8,7 +8,7 @@ This component library makes heavy use of the [govuk-react](https://github.com/g
 
 ```bash
 create-react-app demo-app
-yarn add data-hub-components
+yarn add data-hub-components react react-dom
 ```
 
 ```jsx
@@ -18,37 +18,45 @@ const activities = []
 <ActivityFeed activities={activities} />
 ```
 
-## Install dependencies
+## Development
+
+**Install dependencies**
+
+Recommended Node.js version: `10.16.0`
+
+Recommended Yarn version: `1.16.0`
 
 ```bash
-yarn policies set-version 1.16.0
+nvm use # 10.16.0 from .nvmrc will be used
+npm i -g yarn@1.16.0
 yarn
 ```
 
-## Start Storybook
+**Start Storybook**
 
 ```bash
 yarn start
 ```
 
-## Testing
-
-### Run tests
+**Run tests**
 
 ```bash
 yarn test
 ```
 
-### Update Jest snapshots
+**Update Jest snapshots**
 
 ```bash
 yarn test:update
 ```
 
-## Creating a release
+**Create a release**
+
+Caution: Remember to be on the latest master, yarn will increase the version number in `package.json` and will create a tag and a commit message including the new version.
 
 ```bash
 yarn release
+git push
 ```
 
 ## Notes
