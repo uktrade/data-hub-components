@@ -1,5 +1,7 @@
 # Data Hub Components
 
+[![CircleCI](https://circleci.com/gh/uktrade/data-hub-components.svg?style=svg)](https://circleci.com/gh/uktrade/data-hub-components)
+
 Collection of React Components used by the Data Hub platform.
 
 This component library makes heavy use of the [govuk-react](https://github.com/govuk-react/govuk-react) project.
