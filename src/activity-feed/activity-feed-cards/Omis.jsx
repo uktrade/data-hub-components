@@ -1,4 +1,5 @@
 import React from 'react'
+import { get } from 'lodash'
 
 import {
   Card,
@@ -10,9 +11,8 @@ import {
 } from './card'
 
 import CardUtils from './card/CardUtils'
-import { get } from "lodash"
 
-export default class Interaction extends React.Component {
+export default class Omis extends React.Component {
   static canRender(activity) {
     return CardUtils.canRenderByTypes(activity, [
       'dit:OMISOrder',
@@ -31,17 +31,17 @@ export default class Interaction extends React.Component {
     return (
       <Card>
         <CardContent>
-          <CardHeadingBlock text={'New Order (OMIS) added'} />
+          <CardHeadingBlock text="New Order (OMIS) added" />
           <CardHeading link={{ url, text: reference }}/>
           <CardDetails
             summary="View key details and people for this order"
             link={{ url, text: 'Go to the order detail page' }}>
             <CardTable rows={
               [
-                { header: 'Country:', content: country },
-                { header: 'UK region:', content: ukRegion },
-                { header: 'Added by:', content: CardUtils.getAddedBy(activity) },
-                { header: 'Company contact:', content: CardUtils.getContactsWithJobTitle(activity) }
+                { header: 'Country', content: country },
+                { header: 'UK region', content: ukRegion },
+                { header: 'Added by', content: CardUtils.getAddedBy(activity) },
+                { header: 'Company contact', content: CardUtils.getContactsWithJobTitle(activity) }
               ]}
             />
           </CardDetails>
