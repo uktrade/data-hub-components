@@ -59,7 +59,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                   }
                 }
               >
-                Country:
+                Country
               </th>
               <td
                 className="sc-RefOD gzbQXK"
@@ -84,7 +84,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                   }
                 }
               >
-                UK region:
+                UK region
               </th>
               <td
                 className="sc-RefOD gzbQXK"
@@ -109,7 +109,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                   }
                 }
               >
-                Added by:
+                Added by
               </th>
               <td
                 className="sc-RefOD gzbQXK"
@@ -144,7 +144,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                   }
                 }
               >
-                Company contact:
+                Company contact
               </th>
               <td
                 className="sc-RefOD gzbQXK"

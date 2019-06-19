@@ -7,7 +7,7 @@ import fixtureInvestmentProject from '../../fixtures/activity_feed/interactions/
 import foreignDirectInvestment from '../../fixtures/activity_feed/investment_projects/project_added_fdi'
 import nonCommitmentToInvest from '../../fixtures/activity_feed/investment_projects/project_added_non_fdi'
 import commitmentToInvest from '../../fixtures/activity_feed/investment_projects/project_added_cti'
-import omisAdd from '../../fixtures/activity_feed/omis/omis-add'
+import orderAdded from '../../fixtures/activity_feed/omis/order_added'
 
 storiesOf('ActivityFeedCard', module)
   .add('interaction', () => <ActivityFeedCard activity={fixtureInteraction} />)
@@ -15,4 +15,4 @@ storiesOf('ActivityFeedCard', module)
   .add('investment project added - FDI', () => <ActivityFeedCard activity={foreignDirectInvestment} />)
   .add('investment project added - Non-FDI', () => <ActivityFeedCard activity={nonCommitmentToInvest} />)
   .add('investment project added - CTI', () => <ActivityFeedCard activity={commitmentToInvest} />)
-  .add('OMIS - Add', () => <ActivityFeedCard activity={omisAdd} />)
+  .add('omis - new order added', () => <ActivityFeedCard activity={orderAdded} />)
