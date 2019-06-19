@@ -2,13 +2,13 @@
 
 exports[`ActivityFeed renders empty feed 1`] = `
 <div
-  className="sc-fOKMvo kPvCWE"
+  className="sc-dUjcNx ipbPbn"
 >
   <div
-    className="sc-lkqHmb kqTFtF"
+    className="sc-eLExRp emRVxV"
   >
     <div
-      className="sc-eLExRp htQtud"
+      className="sc-cbkKFq kuAhUI"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -18,24 +18,24 @@ exports[`ActivityFeed renders empty feed 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cbkKFq gszEQi"
+      className="sc-krvtoX wTNDe"
     />
   </div>
   <ol
-    className="sc-dUjcNx jIzCzP"
+    className="sc-gHboQg gBQvXu"
   />
 </div>
 `;
 
 exports[`ActivityFeed renders its children 1`] = `
 <div
-  className="sc-fOKMvo kPvCWE"
+  className="sc-dUjcNx ipbPbn"
 >
   <div
-    className="sc-lkqHmb kqTFtF"
+    className="sc-eLExRp emRVxV"
   >
     <div
-      className="sc-eLExRp htQtud"
+      className="sc-cbkKFq kuAhUI"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -45,11 +45,11 @@ exports[`ActivityFeed renders its children 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cbkKFq gszEQi"
+      className="sc-krvtoX wTNDe"
     />
   </div>
   <ol
-    className="sc-dUjcNx jIzCzP"
+    className="sc-gHboQg gBQvXu"
   />
   <div>
     Child element to test
@@ -59,13 +59,13 @@ exports[`ActivityFeed renders its children 1`] = `
 
 exports[`ActivityFeed renders single activity 1`] = `
 <div
-  className="sc-fOKMvo kPvCWE"
+  className="sc-dUjcNx ipbPbn"
 >
   <div
-    className="sc-lkqHmb kqTFtF"
+    className="sc-eLExRp emRVxV"
   >
     <div
-      className="sc-eLExRp htQtud"
+      className="sc-cbkKFq kuAhUI"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -75,11 +75,11 @@ exports[`ActivityFeed renders single activity 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cbkKFq gszEQi"
+      className="sc-krvtoX wTNDe"
     />
   </div>
   <ol
-    className="sc-dUjcNx jIzCzP"
+    className="sc-gHboQg gBQvXu"
   >
     <li>
       <div
@@ -117,7 +117,7 @@ exports[`ActivityFeed renders single activity 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -146,7 +146,7 @@ exports[`ActivityFeed renders single activity 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -181,7 +181,7 @@ exports[`ActivityFeed renders single activity 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -230,14 +230,14 @@ exports[`ActivityFeed renders single activity 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -251,13 +251,13 @@ exports[`ActivityFeed renders single activity 1`] = `
 
 exports[`ActivityFeed renders with "Load more" link 1`] = `
 <div
-  className="sc-fOKMvo kPvCWE"
+  className="sc-dUjcNx ipbPbn"
 >
   <div
-    className="sc-lkqHmb kqTFtF"
+    className="sc-eLExRp emRVxV"
   >
     <div
-      className="sc-eLExRp htQtud"
+      className="sc-cbkKFq kuAhUI"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -267,11 +267,11 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cbkKFq gszEQi"
+      className="sc-krvtoX wTNDe"
     />
   </div>
   <ol
-    className="sc-dUjcNx jIzCzP"
+    className="sc-gHboQg gBQvXu"
   >
     <li>
       <div
@@ -309,7 +309,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -338,7 +338,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -373,7 +373,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -422,14 +422,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -473,7 +473,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -502,7 +502,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -537,7 +537,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -586,14 +586,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -637,7 +637,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -666,7 +666,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -701,7 +701,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -750,14 +750,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -801,7 +801,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -830,7 +830,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -865,7 +865,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -914,14 +914,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -965,7 +965,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -994,7 +994,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -1029,7 +1029,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -1078,14 +1078,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -1129,7 +1129,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1158,7 +1158,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -1193,7 +1193,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -1242,14 +1242,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -1293,7 +1293,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1322,7 +1322,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -1357,7 +1357,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -1406,14 +1406,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -1457,7 +1457,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1486,7 +1486,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -1521,7 +1521,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -1570,14 +1570,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -1621,7 +1621,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1650,7 +1650,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -1685,7 +1685,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -1734,14 +1734,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -1785,7 +1785,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1814,7 +1814,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -1849,7 +1849,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -1898,14 +1898,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -1949,7 +1949,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -1978,7 +1978,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -2013,7 +2013,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -2062,14 +2062,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -2113,7 +2113,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2142,7 +2142,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -2177,7 +2177,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -2226,14 +2226,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -2277,7 +2277,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2306,7 +2306,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -2341,7 +2341,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -2390,14 +2390,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -2441,7 +2441,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2470,7 +2470,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -2505,7 +2505,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -2554,14 +2554,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -2605,7 +2605,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2634,7 +2634,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -2669,7 +2669,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -2718,14 +2718,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -2769,7 +2769,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2798,7 +2798,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -2833,7 +2833,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -2882,14 +2882,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -2933,7 +2933,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -2962,7 +2962,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -2997,7 +2997,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -3046,14 +3046,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -3097,7 +3097,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -3126,7 +3126,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -3161,7 +3161,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -3210,14 +3210,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -3261,7 +3261,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -3290,7 +3290,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -3325,7 +3325,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -3374,14 +3374,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -3425,7 +3425,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               className="sc-hSdWYo dfimje"
             >
               <table
-                className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
               >
                 <tbody
                   className="sc-eXEjpC fuVqJC"
@@ -3454,7 +3454,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         John Doe
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:john@example.com"
@@ -3489,7 +3489,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     >
                       <span>
                         Mario Bros
-                         
+                        , 
                         <a
                           className="sc-bwzfXH VXMCV"
                           href="mailto:mariobros@dit.com"
@@ -3538,14 +3538,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-GMQeP htIehK"
+          className="sc-exAgwC bLFBla"
         >
           02 May 2019
           <div
-            className="sc-exAgwC TTTFc"
+            className="sc-cQFLBn fHFhni"
           >
             <span
-              className="sc-cQFLBn eIyVOM"
+              className="sc-gojNiO bqdgIh"
             >
               Completed interaction
             </span>
@@ -3555,7 +3555,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
   </ol>
   <div
-    className="sc-fYiAbW bWBaJM"
+    className="sc-fOKMvo ircusm"
   >
     <div
       className="sc-eqIVtm fxHPMe"
@@ -3779,13 +3779,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
 
 exports[`ActivityFeed renders with loader 1`] = `
 <div
-  className="sc-fOKMvo kPvCWE"
+  className="sc-dUjcNx ipbPbn"
 >
   <div
-    className="sc-lkqHmb kqTFtF"
+    className="sc-eLExRp emRVxV"
   >
     <div
-      className="sc-eLExRp htQtud"
+      className="sc-cbkKFq kuAhUI"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -3795,14 +3795,14 @@ exports[`ActivityFeed renders with loader 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cbkKFq gszEQi"
+      className="sc-krvtoX wTNDe"
     />
   </div>
   <ol
-    className="sc-dUjcNx jIzCzP"
+    className="sc-gHboQg gBQvXu"
   />
   <div
-    className="sc-fYiAbW bWBaJM"
+    className="sc-fOKMvo ircusm"
   >
     <div
       className="sc-eqIVtm fxHPMe"

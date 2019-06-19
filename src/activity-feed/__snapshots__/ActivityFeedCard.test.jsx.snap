@@ -1,5 +1,193 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ActivityFeedCard when a New OMIS order is added should render an activity card 1`] = `
+<div
+  className="sc-hORach iKNari"
+>
+  <div
+    className="sc-bMVAic epiyOU"
+  >
+    <h3
+      className="sc-GMQeP danEmM sc-cMljjf kCLKvB"
+      size="MEDIUM"
+    >
+      New Order (OMIS) added
+    </h3>
+    <h3
+      className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+      size="MEDIUM"
+    >
+      <a
+        className="sc-bwzfXH VXMCV"
+        href="https://www.datahub.dev.uktrade.io/omis/504b7a34-c083-4e7a-998b-61cbe7b6b269"
+        muted={false}
+      >
+        EYX193/17
+      </a>
+    </h3>
+    <details
+      className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+      open={false}
+    >
+      <summary
+        className="sc-kkGfuU cCdZFh"
+      >
+        <span
+          className="sc-iAyFgw jRkIxn"
+        >
+          View key details and people for this order
+        </span>
+      </summary>
+      <div
+        className="sc-hSdWYo dfimje"
+      >
+        <table
+          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+        >
+          <tbody
+            className="sc-eXEjpC fuVqJC"
+          >
+            <tr
+              className="sc-iQKALj ftJWrM"
+            >
+              <th
+                className="sc-RefOD dxRfSY"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Country:
+              </th>
+              <td
+                className="sc-RefOD gzbQXK"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                Bahamas
+              </td>
+            </tr>
+            <tr
+              className="sc-iQKALj ftJWrM"
+            >
+              <th
+                className="sc-RefOD dxRfSY"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                UK region:
+              </th>
+              <td
+                className="sc-RefOD gzbQXK"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                South East
+              </td>
+            </tr>
+            <tr
+              className="sc-iQKALj ftJWrM"
+            >
+              <th
+                className="sc-RefOD dxRfSY"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Added by:
+              </th>
+              <td
+                className="sc-RefOD gzbQXK"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                <span>
+                  Test CMU 1
+                  , 
+                  <a
+                    className="sc-bwzfXH VXMCV"
+                    href="mailto:cmuuser1test@mobile.ukti.gov.uk"
+                    muted={false}
+                  >
+                    cmuuser1test@mobile.ukti.gov.uk
+                  </a>
+                </span>
+              </td>
+            </tr>
+            <tr
+              className="sc-iQKALj ftJWrM"
+            >
+              <th
+                className="sc-RefOD dxRfSY"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Company contact:
+              </th>
+              <td
+                className="sc-RefOD gzbQXK"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                <span>
+                  <a
+                    className="sc-bwzfXH VXMCV"
+                    href="#"
+                    muted={false}
+                  >
+                    Alysia Tolley
+                  </a>
+                   (
+                  Some job title
+                  )
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a
+          className="sc-bwzfXH VXMCV"
+          href="https://www.datahub.dev.uktrade.io/omis/504b7a34-c083-4e7a-998b-61cbe7b6b269"
+          muted={false}
+        >
+          Go to the order detail page
+        </a>
+      </div>
+    </details>
+  </div>
+  <div
+    className="sc-exAgwC bLFBla"
+  >
+    20 Jul 2017
+  </div>
+</div>
+`;
+
 exports[`ActivityFeedCard when an investment project is CTI should render the CTI investment project activity card 1`] = `
 <div
   className="sc-cmthru jjutsD"
@@ -508,6 +696,41 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
                 }
               }
             >
+              Added by
+            </th>
+            <td
+              className="sc-RefOD gzbQXK"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Test CMU 1
+                , 
+                <a
+                  className="sc-bwzfXH VXMCV"
+                  href="mailto:cmuuser1test@mobile.ukti.gov.uk"
+                  muted={false}
+                >
+                  cmuuser1test@mobile.ukti.gov.uk
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-iQKALj ftJWrM"
+          >
+            <th
+              className="sc-RefOD dxRfSY"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
               Estimated land date
             </th>
             <td
@@ -607,7 +830,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -671,14 +894,14 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
     </details>
   </div>
   <div
-    className="sc-GMQeP htIehK"
+    className="sc-exAgwC bLFBla"
   >
     06 Jun 2019
     <div
-      className="sc-exAgwC TTTFc"
+      className="sc-cQFLBn fHFhni"
     >
       <span
-        className="sc-cQFLBn eIyVOM"
+        className="sc-gojNiO bqdgIh"
       >
         Completed interaction
       </span>
@@ -723,7 +946,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -752,7 +975,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
               >
                 <span>
                   John Doe
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:john@example.com"
@@ -787,7 +1010,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
               >
                 <span>
                   Mario Bros
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:mariobros@dit.com"
@@ -836,14 +1059,14 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
     </details>
   </div>
   <div
-    className="sc-GMQeP htIehK"
+    className="sc-exAgwC bLFBla"
   >
     06 Jun 2019
     <div
-      className="sc-exAgwC TTTFc"
+      className="sc-cQFLBn fHFhni"
     >
       <span
-        className="sc-cQFLBn eIyVOM"
+        className="sc-gojNiO bqdgIh"
       >
         Cancelled interaction
       </span>
@@ -888,7 +1111,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -917,7 +1140,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
               >
                 <span>
                   John Doe
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:john@example.com"
@@ -952,7 +1175,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
               >
                 <span>
                   Mario Bros
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:mariobros@dit.com"
@@ -1001,14 +1224,14 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
     </details>
   </div>
   <div
-    className="sc-GMQeP htIehK"
+    className="sc-exAgwC bLFBla"
   >
     06 Jun 2019
     <div
-      className="sc-exAgwC TTTFc"
+      className="sc-cQFLBn fHFhni"
     >
       <span
-        className="sc-cQFLBn eIyVOM"
+        className="sc-gojNiO bqdgIh"
       >
         Upcoming interaction
       </span>
@@ -1053,7 +1276,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -1082,7 +1305,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
               >
                 <span>
                   John Doe
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:john@example.com"
@@ -1117,7 +1340,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
               >
                 <span>
                   Mario Bros
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:mariobros@dit.com"
@@ -1166,14 +1389,14 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
     </details>
   </div>
   <div
-    className="sc-GMQeP htIehK"
+    className="sc-exAgwC bLFBla"
   >
     05 Jun 2018
     <div
-      className="sc-exAgwC TTTFc"
+      className="sc-cQFLBn fHFhni"
     >
       <span
-        className="sc-cQFLBn eIyVOM"
+        className="sc-gojNiO bqdgIh"
       >
         Incomplete interaction
       </span>
@@ -1218,7 +1441,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -1247,7 +1470,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
               >
                 <span>
                   John Doe
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:john@example.com"
@@ -1282,7 +1505,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
               >
                 <span>
                   Mario Bros
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:mariobros@dit.com"
@@ -1331,14 +1554,14 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
     </details>
   </div>
   <div
-    className="sc-GMQeP htIehK"
+    className="sc-exAgwC bLFBla"
   >
     06 Jun 2019
     <div
-      className="sc-exAgwC TTTFc"
+      className="sc-cQFLBn fHFhni"
     >
       <span
-        className="sc-cQFLBn eIyVOM"
+        className="sc-gojNiO bqdgIh"
       >
         Completed interaction
       </span>
@@ -1383,7 +1606,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -1412,7 +1635,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
               >
                 <span>
                   John Doe
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:john@example.com"
@@ -1447,7 +1670,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
               >
                 <span>
                   Mario Bros
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:mariobros@dit.com"
@@ -1496,14 +1719,14 @@ exports[`ActivityFeedCard when there is a service delivery should render service
     </details>
   </div>
   <div
-    className="sc-GMQeP htIehK"
+    className="sc-exAgwC bLFBla"
   >
     29 Apr 2019
     <div
-      className="sc-exAgwC TTTFc"
+      className="sc-cQFLBn fHFhni"
     >
       <span
-        className="sc-cQFLBn eIyVOM"
+        className="sc-gojNiO bqdgIh"
       >
         Completed interaction
       </span>
@@ -1514,10 +1737,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
 
 exports[`ActivityFeedCard when there is an activity item of arbitrary type should render default activity 1`] = `
 <div
-  className="sc-daURTG fIklyT"
+  className="sc-bXGyLb rlzKV"
 >
   <div
-    className="sc-bXGyLb fwHUMc"
+    className="sc-lkqHmb gepgMb"
   >
     <h3
       className="sc-cMljjf kCLKvB"
@@ -1565,7 +1788,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -1594,7 +1817,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
               >
                 <span>
                   John Doe
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:john@example.com"
@@ -1629,7 +1852,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
               >
                 <span>
                   Mario Bros
-                   
+                  , 
                   <a
                     className="sc-bwzfXH VXMCV"
                     href="mailto:mariobros@dit.com"
@@ -1678,14 +1901,14 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
     </details>
   </div>
   <div
-    className="sc-GMQeP htIehK"
+    className="sc-exAgwC bLFBla"
   >
     02 May 2019
     <div
-      className="sc-exAgwC TTTFc"
+      className="sc-cQFLBn fHFhni"
     >
       <span
-        className="sc-cQFLBn eIyVOM"
+        className="sc-gojNiO bqdgIh"
       >
         Completed interaction
       </span>
@@ -1730,7 +1953,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
         className="sc-hSdWYo dfimje"
       >
         <table
-          className="sc-gojNiO DuorS sc-bwCtUz iVExri"
+          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
         >
           <tbody
             className="sc-eXEjpC fuVqJC"
@@ -1819,14 +2042,14 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
     </details>
   </div>
   <div
-    className="sc-GMQeP htIehK"
+    className="sc-exAgwC bLFBla"
   >
     06 Jun 2019
     <div
-      className="sc-exAgwC TTTFc"
+      className="sc-cQFLBn fHFhni"
     >
       <span
-        className="sc-cQFLBn eIyVOM"
+        className="sc-gojNiO bqdgIh"
       >
         Completed interaction
       </span>

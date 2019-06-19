@@ -5,4 +5,5 @@ module.exports = [
   require('./investment_projects/project_added_fdi'),
   require('./investment_projects/project_added_non_fdi'),
   require('./investment_projects/project_added_cti'),
+  require('./omis/omis-add'),
 ]

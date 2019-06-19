@@ -7,6 +7,7 @@ import styled from 'styled-components'
 
 import DateUtils from '../../utils/DateUtils'
 import NumberUtils from '../../utils/NumberUtils'
+import CardUtils from "./card/CardUtils";
 
 const Card = styled('div')`
   border: 1px solid #c0c0c0;
@@ -109,6 +110,7 @@ export default class InvestmentProject extends React.Component {
     const foreignEquityInvestment = NumberUtils.currency(get(activity, 'object.dit:foreignEquityInvestment'))
     const grossValueAdded = NumberUtils.currency(get(activity, 'object.dit:grossValueAdded'))
     const numberNewJobs = NumberUtils.decimal(get(activity, 'object.dit:numberNewJobs'))
+    const addedBy = CardUtils.getAddedBy(activity)
     const url = get(activity, 'object.url')
 
     return (
@@ -125,6 +127,7 @@ export default class InvestmentProject extends React.Component {
         <CardDetails summary="Key details and people for this project">
           <Table>
             <DetailsRow header="Investment Type">{investmentType}</DetailsRow>
+            <DetailsRow header="Added by">{addedBy}</DetailsRow>
             <DetailsRow header="Estimated land date">{estimatedLandDate}</DetailsRow>
             <DetailsRow header="Company contact(s)">{contactsList}</DetailsRow>
             <DetailsRow header="Total Investment">{totalInvestment}</DetailsRow>
