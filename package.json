@@ -14,9 +14,6 @@
     "type": "git",
     "url": "git@github.com:uktrade/data-hub-components.git"
   },
-  "engines": {
-    "yarn": "1.16.0"
-  },
   "scripts": {
     "start": "start-storybook",
     "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --ignore **/*.stories.jsx,**/*.test.jsx,**/*.test.js,**/__snapshots__,**/__tests__",
