@@ -14,14 +14,14 @@ const createEmailAddressMarkup = ({id, name, emailAddress}) => {
   )
 }
 
-const createJobTitleMarkup = ({id, name, jobTitle}) => {
+const createJobTitleMarkup = ({id, url, name, jobTitle}) => {
   if (!name || !jobTitle) {
     return null
   }
 
   return (
     <span key={id}>
-      <Link href="#">{name}</Link> ({jobTitle})
+      <Link href={url}>{name}</Link> ({jobTitle})
     </span>
   )
 }
@@ -29,9 +29,10 @@ const createJobTitleMarkup = ({id, name, jobTitle}) => {
 const getPeople = (activity, personSubType) => {
   return map(filter(activity['object']['attributedTo'], ({type}) => {
     return includes(type, `dit:${personSubType}`)
-  }), ({ id, name, 'dit:jobTitle': jobTitle, 'dit:emailAddress': emailAddress}) => {
+  }), ({ id, url, name, 'dit:jobTitle': jobTitle, 'dit:emailAddress': emailAddress}) => {
     return {
       id,
+      url,
       name,
       jobTitle,
       emailAddress,

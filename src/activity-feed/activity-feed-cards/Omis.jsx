@@ -4,7 +4,8 @@ import { get } from 'lodash'
 import {
   Card,
   CardContent,
-  CardDetails, CardHeading,
+  CardDetails,
+  CardHeading,
   CardHeadingBlock,
   CardMeta,
   CardTable,

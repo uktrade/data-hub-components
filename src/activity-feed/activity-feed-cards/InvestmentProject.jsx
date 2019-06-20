@@ -49,9 +49,10 @@ const TITLES = {
 const getContacts = (activity) => {
   return map(filter(activity['object']['attributedTo'], ({type}) => {
     return includes(type, 'dit:Contact')
-  }), ({id, name, 'dit:jobTitle': jobTitle}) => {
+  }), ({id, url, name, 'dit:jobTitle': jobTitle}) => {
     return {
       id,
+      url,
       name,
       jobTitle,
     }
@@ -99,9 +100,9 @@ export default class InvestmentProject extends React.Component {
     const investmentType = get(activity, 'object.dit:investmentType.name')
 
     const contacts = getContacts(activity)
-    const contactsList = contacts.map(({id, name, jobTitle}) => (
+    const contactsList = contacts.map(({id, url, name, jobTitle}) => (
       <span key={id}>
-        <Link href="#">{name}</Link> ({jobTitle})
+        <Link href={url}>{name}</Link> ({jobTitle})
       </span>
     ))
 
