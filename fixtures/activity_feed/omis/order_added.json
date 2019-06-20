@@ -27,6 +27,7 @@
         "dit:jobTitle": "Some job title",
         "dit:emailAddress": "fred@acme.org",
         "id": "dit:DataHubContact:ec1be329-ae82-47a9-9d65-c289f91c39ed",
+        "url": "https://www.datahub.dev.uktrade.io/contacts/ec1be329-ae82-47a9-9d65-c289f91c39ed/details",
         "name": "Alysia Tolley",
         "type": [
           "Person",

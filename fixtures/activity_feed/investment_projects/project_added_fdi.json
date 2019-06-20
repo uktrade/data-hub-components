@@ -18,6 +18,7 @@
         "dit:jobTitle": "Some job title",
         "dit:emailAddress": "dean@cox.com",
         "id": "dit:DataHubContact:952232d2-1d25-4c3a-bcac-2f3a30a94da9",
+        "url": "https://www.datahub.dev.uktrade.io/contacts/952232d2-1d25-4c3a-bcac-2f3a30a94da9/details",
         "name": "Dean Cox",
         "type": [
           "Person",

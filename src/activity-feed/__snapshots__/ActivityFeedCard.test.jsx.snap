@@ -157,7 +157,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                 <span>
                   <a
                     className="sc-bwzfXH VXMCV"
-                    href="#"
+                    href="https://www.datahub.dev.uktrade.io/contacts/ec1be329-ae82-47a9-9d65-c289f91c39ed/details"
                     muted={false}
                   >
                     Alysia Tolley
@@ -320,7 +320,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
               <span>
                 <a
                   className="sc-bwzfXH VXMCV"
-                  href="#"
+                  href="https://www.datahub.dev.uktrade.io/contacts/82e24a82-0688-424d-911f-2666d3ddcf9b/details"
                   muted={false}
                 >
                   Reece Stevens
@@ -477,7 +477,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               <span>
                 <a
                   className="sc-bwzfXH VXMCV"
-                  href="#"
+                  href="https://www.datahub.dev.uktrade.io/contacts/952232d2-1d25-4c3a-bcac-2f3a30a94da9/details"
                   muted={false}
                 >
                   Dean Cox
@@ -769,7 +769,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
               <span>
                 <a
                   className="sc-bwzfXH VXMCV"
-                  href="#"
+                  href="https://www.datahub.dev.uktrade.io/contacts/889dc0e6-a60c-4368-822c-e6b644bfcbf7/details"
                   muted={false}
                 >
                   Ruthie Cole
