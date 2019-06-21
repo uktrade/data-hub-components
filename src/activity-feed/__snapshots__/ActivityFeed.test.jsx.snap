@@ -2,54 +2,54 @@
 
 exports[`ActivityFeed renders empty feed 1`] = `
 <div
-  className="sc-dUjcNx ipbPbn"
+  className="sc-cbkKFq lnzXex"
 >
   <div
-    className="sc-eLExRp emRVxV"
+    className="sc-gojNiO epeSzt"
   >
     <div
-      className="sc-cbkKFq kuAhUI"
+      className="sc-daURTG grzJiW"
     >
       <h2
-        className="sc-cMljjf leOqMw"
+        className="sc-jDwBTQ iexTys"
         size="LARGE"
       >
         Activities
       </h2>
     </div>
     <div
-      className="sc-krvtoX wTNDe"
+      className="sc-bXGyLb bDEOtv"
     />
   </div>
   <ol
-    className="sc-gHboQg gBQvXu"
+    className="sc-krvtoX iNpMLf"
   />
 </div>
 `;
 
 exports[`ActivityFeed renders its children 1`] = `
 <div
-  className="sc-dUjcNx ipbPbn"
+  className="sc-cbkKFq lnzXex"
 >
   <div
-    className="sc-eLExRp emRVxV"
+    className="sc-gojNiO epeSzt"
   >
     <div
-      className="sc-cbkKFq kuAhUI"
+      className="sc-daURTG grzJiW"
     >
       <h2
-        className="sc-cMljjf leOqMw"
+        className="sc-jDwBTQ iexTys"
         size="LARGE"
       >
         Activities
       </h2>
     </div>
     <div
-      className="sc-krvtoX wTNDe"
+      className="sc-bXGyLb bDEOtv"
     />
   </div>
   <ol
-    className="sc-gHboQg gBQvXu"
+    className="sc-krvtoX iNpMLf"
   />
   <div>
     Child element to test
@@ -59,41 +59,41 @@ exports[`ActivityFeed renders its children 1`] = `
 
 exports[`ActivityFeed renders single activity 1`] = `
 <div
-  className="sc-dUjcNx ipbPbn"
+  className="sc-cbkKFq lnzXex"
 >
   <div
-    className="sc-eLExRp emRVxV"
+    className="sc-gojNiO epeSzt"
   >
     <div
-      className="sc-cbkKFq kuAhUI"
+      className="sc-daURTG grzJiW"
     >
       <h2
-        className="sc-cMljjf leOqMw"
+        className="sc-jDwBTQ iexTys"
         size="LARGE"
       >
         1 activity
       </h2>
     </div>
     <div
-      className="sc-krvtoX wTNDe"
+      className="sc-bXGyLb bDEOtv"
     />
   </div>
   <ol
-    className="sc-gHboQg gBQvXu"
+    className="sc-krvtoX iNpMLf"
   >
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -101,32 +101,32 @@ exports[`ActivityFeed renders single activity 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -137,7 +137,7 @@ exports[`ActivityFeed renders single activity 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -148,7 +148,7 @@ exports[`ActivityFeed renders single activity 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -158,10 +158,10 @@ exports[`ActivityFeed renders single activity 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -172,7 +172,7 @@ exports[`ActivityFeed renders single activity 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -183,7 +183,7 @@ exports[`ActivityFeed renders single activity 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -193,10 +193,10 @@ exports[`ActivityFeed renders single activity 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -207,7 +207,7 @@ exports[`ActivityFeed renders single activity 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -220,7 +220,7 @@ exports[`ActivityFeed renders single activity 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -230,14 +230,14 @@ exports[`ActivityFeed renders single activity 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -251,41 +251,41 @@ exports[`ActivityFeed renders single activity 1`] = `
 
 exports[`ActivityFeed renders with "Load more" link 1`] = `
 <div
-  className="sc-dUjcNx ipbPbn"
+  className="sc-cbkKFq lnzXex"
 >
   <div
-    className="sc-eLExRp emRVxV"
+    className="sc-gojNiO epeSzt"
   >
     <div
-      className="sc-cbkKFq kuAhUI"
+      className="sc-daURTG grzJiW"
     >
       <h2
-        className="sc-cMljjf leOqMw"
+        className="sc-jDwBTQ iexTys"
         size="LARGE"
       >
         20 activities
       </h2>
     </div>
     <div
-      className="sc-krvtoX wTNDe"
+      className="sc-bXGyLb bDEOtv"
     />
   </div>
   <ol
-    className="sc-gHboQg gBQvXu"
+    className="sc-krvtoX iNpMLf"
   >
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -293,32 +293,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -329,7 +329,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -340,7 +340,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -350,10 +350,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -364,7 +364,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -375,7 +375,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -385,10 +385,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -399,7 +399,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -412,7 +412,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -422,14 +422,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -439,17 +439,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -457,32 +457,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -493,7 +493,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -504,7 +504,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -514,10 +514,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -528,7 +528,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -539,7 +539,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -549,10 +549,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -563,7 +563,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -576,7 +576,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -586,14 +586,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -603,17 +603,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -621,32 +621,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -657,7 +657,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -668,7 +668,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -678,10 +678,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -692,7 +692,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -703,7 +703,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -713,10 +713,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -727,7 +727,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -740,7 +740,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -750,14 +750,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -767,17 +767,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -785,32 +785,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -821,7 +821,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -832,7 +832,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -842,10 +842,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -856,7 +856,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -867,7 +867,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -877,10 +877,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -891,7 +891,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -904,7 +904,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -914,14 +914,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -931,17 +931,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -949,32 +949,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -985,7 +985,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -996,7 +996,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -1006,10 +1006,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1020,7 +1020,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1031,7 +1031,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -1041,10 +1041,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1055,7 +1055,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1068,7 +1068,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1078,14 +1078,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -1095,17 +1095,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1113,32 +1113,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1149,7 +1149,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1160,7 +1160,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -1170,10 +1170,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1184,7 +1184,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1195,7 +1195,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -1205,10 +1205,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1219,7 +1219,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1232,7 +1232,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1242,14 +1242,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -1259,17 +1259,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1277,32 +1277,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1313,7 +1313,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1324,7 +1324,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -1334,10 +1334,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1348,7 +1348,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1359,7 +1359,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -1369,10 +1369,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1383,7 +1383,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1396,7 +1396,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1406,14 +1406,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -1423,17 +1423,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1441,32 +1441,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1477,7 +1477,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1488,7 +1488,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -1498,10 +1498,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1512,7 +1512,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1523,7 +1523,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -1533,10 +1533,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1547,7 +1547,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1560,7 +1560,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1570,14 +1570,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -1587,17 +1587,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1605,32 +1605,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1641,7 +1641,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1652,7 +1652,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -1662,10 +1662,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1676,7 +1676,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1687,7 +1687,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -1697,10 +1697,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1711,7 +1711,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1724,7 +1724,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1734,14 +1734,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -1751,17 +1751,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1769,32 +1769,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1805,7 +1805,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1816,7 +1816,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -1826,10 +1826,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1840,7 +1840,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1851,7 +1851,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -1861,10 +1861,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1875,7 +1875,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1888,7 +1888,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1898,14 +1898,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -1915,17 +1915,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1933,32 +1933,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -1969,7 +1969,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -1980,7 +1980,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -1990,10 +1990,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2004,7 +2004,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2015,7 +2015,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -2025,10 +2025,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2039,7 +2039,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2052,7 +2052,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2062,14 +2062,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -2079,17 +2079,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2097,32 +2097,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2133,7 +2133,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2144,7 +2144,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -2154,10 +2154,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2168,7 +2168,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2179,7 +2179,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -2189,10 +2189,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2203,7 +2203,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2216,7 +2216,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2226,14 +2226,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -2243,17 +2243,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2261,32 +2261,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2297,7 +2297,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2308,7 +2308,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -2318,10 +2318,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2332,7 +2332,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2343,7 +2343,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -2353,10 +2353,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2367,7 +2367,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2380,7 +2380,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2390,14 +2390,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -2407,17 +2407,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2425,32 +2425,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2461,7 +2461,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2472,7 +2472,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -2482,10 +2482,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2496,7 +2496,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2507,7 +2507,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -2517,10 +2517,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2531,7 +2531,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2544,7 +2544,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2554,14 +2554,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -2571,17 +2571,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2589,32 +2589,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2625,7 +2625,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2636,7 +2636,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -2646,10 +2646,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2660,7 +2660,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2671,7 +2671,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -2681,10 +2681,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2695,7 +2695,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2708,7 +2708,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2718,14 +2718,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -2735,17 +2735,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2753,32 +2753,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2789,7 +2789,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2800,7 +2800,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -2810,10 +2810,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2824,7 +2824,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2835,7 +2835,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -2845,10 +2845,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2859,7 +2859,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2872,7 +2872,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2882,14 +2882,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -2899,17 +2899,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2917,32 +2917,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2953,7 +2953,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2964,7 +2964,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -2974,10 +2974,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -2988,7 +2988,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -2999,7 +2999,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -3009,10 +3009,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -3023,7 +3023,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -3036,7 +3036,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -3046,14 +3046,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -3063,17 +3063,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -3081,32 +3081,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -3117,7 +3117,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -3128,7 +3128,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -3138,10 +3138,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -3152,7 +3152,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -3163,7 +3163,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -3173,10 +3173,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -3187,7 +3187,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -3200,7 +3200,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -3210,14 +3210,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -3227,17 +3227,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -3245,32 +3245,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -3281,7 +3281,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -3292,7 +3292,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -3302,10 +3302,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -3316,7 +3316,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -3327,7 +3327,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -3337,10 +3337,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -3351,7 +3351,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -3364,7 +3364,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -3374,14 +3374,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -3391,17 +3391,17 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
     <li>
       <div
-        className="sc-hORach iKNari"
+        className="sc-bdVaJa cCKGim"
       >
         <div
-          className="sc-bMVAic epiyOU"
+          className="sc-bwzfXH kYAhuD"
         >
           <h3
-            className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+            className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
             size="MEDIUM"
           >
             <a
-              className="sc-bwzfXH VXMCV"
+              className="sc-bxivhb cnzZSK"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -3409,32 +3409,32 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
             </a>
           </h3>
           <details
-            className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+            className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
             open={false}
           >
             <summary
-              className="sc-kkGfuU cCdZFh"
+              className="sc-hSdWYo gbrPKp"
             >
               <span
-                className="sc-iAyFgw jRkIxn"
+                className="sc-eHgmQL duXTff"
               >
                 View interaction details
               </span>
             </summary>
             <div
-              className="sc-hSdWYo dfimje"
+              className="sc-cvbbAY dhiWBt"
             >
               <table
-                className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+                className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
               >
                 <tbody
-                  className="sc-eXEjpC fuVqJC"
+                  className="sc-RefOD kzCQXs"
                 >
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -3445,7 +3445,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Contact(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -3456,7 +3456,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         John Doe
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:john@example.com"
                           muted={false}
                         >
@@ -3466,10 +3466,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -3480,7 +3480,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Adviser(s)
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -3491,7 +3491,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         Mario Bros
                         , 
                         <a
-                          className="sc-bwzfXH VXMCV"
+                          className="sc-bxivhb cnzZSK"
                           href="mailto:mariobros@dit.com"
                           muted={false}
                         >
@@ -3501,10 +3501,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                     </td>
                   </tr>
                   <tr
-                    className="sc-iQKALj ftJWrM"
+                    className="sc-hrWEMg fOsrtz"
                   >
                     <th
-                      className="sc-RefOD dxRfSY"
+                      className="sc-bwCtUz rkyVs"
                       style={
                         Object {
                           "border": 0,
@@ -3515,7 +3515,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       Services
                     </th>
                     <td
-                      className="sc-RefOD gzbQXK"
+                      className="sc-bwCtUz eyaJuE"
                       style={
                         Object {
                           "border": 0,
@@ -3528,7 +3528,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                 </tbody>
               </table>
               <a
-                className="sc-bwzfXH VXMCV"
+                className="sc-bxivhb cnzZSK"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -3538,14 +3538,14 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           </details>
         </div>
         <div
-          className="sc-exAgwC bLFBla"
+          className="sc-bMVAic gunhqD"
         >
           02 May 2019
           <div
-            className="sc-cQFLBn fHFhni"
+            className="sc-bAeIUo eEATTv"
           >
             <span
-              className="sc-gojNiO bqdgIh"
+              className="sc-iujRgT hrmgYI"
             >
               Completed interaction
             </span>
@@ -3555,13 +3555,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
   </ol>
   <div
-    className="sc-fOKMvo ircusm"
+    className="sc-eLExRp fqUmPd"
   >
     <div
-      className="sc-eqIVtm fxHPMe"
+      className="sc-caSCKo fVQnDO"
     >
       <div
-        className="sc-fAjcbJ fsjQAG"
+        className="sc-gisBJw fyCZIq"
       >
         <svg
           className="icon-loading"
@@ -3762,11 +3762,11 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
           />
         </svg>
         <div
-          className="overlay sc-caSCKo cQyEyL"
+          className="overlay sc-kjoXOD bwIveo"
         />
       </div>
       <button
-        className="sc-VigVT kJjasd"
+        className="sc-fjdhpX cjVMDB"
         disabled={false}
         onClick={[Function]}
       >
@@ -3779,36 +3779,36 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
 
 exports[`ActivityFeed renders with loader 1`] = `
 <div
-  className="sc-dUjcNx ipbPbn"
+  className="sc-cbkKFq lnzXex"
 >
   <div
-    className="sc-eLExRp emRVxV"
+    className="sc-gojNiO epeSzt"
   >
     <div
-      className="sc-cbkKFq kuAhUI"
+      className="sc-daURTG grzJiW"
     >
       <h2
-        className="sc-cMljjf leOqMw"
+        className="sc-jDwBTQ iexTys"
         size="LARGE"
       >
         Activities
       </h2>
     </div>
     <div
-      className="sc-krvtoX wTNDe"
+      className="sc-bXGyLb bDEOtv"
     />
   </div>
   <ol
-    className="sc-gHboQg gBQvXu"
+    className="sc-krvtoX iNpMLf"
   />
   <div
-    className="sc-fOKMvo ircusm"
+    className="sc-eLExRp fqUmPd"
   >
     <div
-      className="sc-eqIVtm fxHPMe"
+      className="sc-caSCKo fVQnDO"
     >
       <div
-        className="sc-fAjcbJ fsjQAG"
+        className="sc-gisBJw fyCZIq"
       >
         <svg
           className="icon-loading"
@@ -4009,11 +4009,11 @@ exports[`ActivityFeed renders with loader 1`] = `
           />
         </svg>
         <div
-          className="overlay sc-caSCKo cQyEyL"
+          className="overlay sc-kjoXOD bwIveo"
         />
       </div>
       <button
-        className="sc-VigVT kJjasd"
+        className="sc-fjdhpX cjVMDB"
         disabled={true}
         onClick={[Function]}
       >

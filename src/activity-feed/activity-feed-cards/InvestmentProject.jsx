@@ -1,92 +1,29 @@
 import React from 'react'
-import PropTypes from "prop-types"
-import {filter, get, includes, map, some} from 'lodash'
-import { Details, H3, Link, Table } from 'govuk-react'
-import { SPACING } from '@govuk-react/constants'
-import styled from 'styled-components'
+import { get } from 'lodash'
 
+import {
+  Card,
+  CardContent,
+  CardDetails,
+  CardHeading,
+  CardHeadingBlock,
+  CardMeta,
+  CardTable,
+} from './card'
+
+import CardUtils from "./card/CardUtils"
 import DateUtils from '../../utils/DateUtils'
 import NumberUtils from '../../utils/NumberUtils'
-import CardUtils from "./card/CardUtils";
-
-const Card = styled('div')`
-  border: 1px solid #c0c0c0;
-  padding: ${SPACING.SCALE_3};
-`
-
-const CardHeader = styled('div')`
-  H3 {
-    color: #005ea5;
-    font-weight: normal;
-    
-    & > a:link, a:visited, a:hover, a:active {
-      text-decoration: none;
-    }
-  }
-`
-
-const CardHeaderTitle = styled('div')`
-  display: flex;
-  justify-content: space-between;
- 
-  & > H3 {
-    color: white;
-    padding: 2px 5px;
-    font-weight: normal;    
-    background-color: #005ea5; 
-  }
-`
-
-const CardDetails = styled(Details)`
-  font-size: 100%;
-  margin-bottom: 0;
-`
 
 const TITLES = {
   add: 'New investment project added'
 }
 
-const getContacts = (activity) => {
-  return map(filter(activity['object']['attributedTo'], ({type}) => {
-    return includes(type, 'dit:Contact')
-  }), ({id, url, name, 'dit:jobTitle': jobTitle}) => {
-    return {
-      id,
-      url,
-      name,
-      jobTitle,
-    }
-  })
-}
-
-class DetailsRow extends React.Component {
-  static propTypes = {
-    header: PropTypes.string.isRequired,
-    children: PropTypes.node,
-  }
-
-  render() {
-    const { header, children } = this.props
-
-    if (!children) {
-      return null
-    }
-
-    return (
-      <Table.Row>
-        <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>{header}</Table.CellHeader>
-        <Table.Cell style={{border: 0}}>{children}</Table.Cell>
-      </Table.Row>
-    )
-  }
-}
-
 export default class InvestmentProject extends React.Component {
   static canRender(activity) {
-    const types = get(activity, 'object.type')
-    return some([ 'dit:InvestmentProject' ], (type) => {
-      return includes(types, type)
-    })
+    return CardUtils.canRenderByTypes(activity, [
+      'dit:InvestmentProject',
+    ])
   }
 
   render() {
@@ -94,50 +31,44 @@ export default class InvestmentProject extends React.Component {
 
     const type = get(activity, 'type')
     const title = TITLES[type.toLowerCase()]
-    const published = get(activity, 'published')
-    const publishedTime = DateUtils.format(published)
+    const url = get(activity, 'object.url')
     const name = get(activity, 'object.name')
     const investmentType = get(activity, 'object.dit:investmentType.name')
-
-    const contacts = getContacts(activity)
-    const contactsList = contacts.map(({id, url, name, jobTitle}) => (
-      <span key={id}>
-        <Link href={url}>{name}</Link> ({jobTitle})
-      </span>
-    ))
-
+    const addedBy = CardUtils.getAddedBy(activity)
     const estimatedLandDate = DateUtils.format(get(activity, 'object.dit:estimatedLandDate'))
+    const contacts = CardUtils.getContactsWithJobTitle(activity)
+
+    // Specific to Foreign direct investment (FDI) only
     const totalInvestment = NumberUtils.currency(get(activity, 'object.dit:totalInvestment'))
     const foreignEquityInvestment = NumberUtils.currency(get(activity, 'object.dit:foreignEquityInvestment'))
     const grossValueAdded = NumberUtils.currency(get(activity, 'object.dit:grossValueAdded'))
     const numberNewJobs = NumberUtils.decimal(get(activity, 'object.dit:numberNewJobs'))
-    const addedBy = CardUtils.getAddedBy(activity)
-    const url = get(activity, 'object.url')
+
+    const published = get(activity, 'published')
 
     return (
       <Card>
-        <CardHeader>
-          <CardHeaderTitle>
-            <H3>{title} - {investmentType}</H3>
-            <span>{publishedTime}</span>
-          </CardHeaderTitle>
-          <H3>
-            <Link href={url}>{name}</Link>
-          </H3>
-        </CardHeader>
-        <CardDetails summary="Key details and people for this project">
-          <Table>
-            <DetailsRow header="Investment Type">{investmentType}</DetailsRow>
-            <DetailsRow header="Added by">{addedBy}</DetailsRow>
-            <DetailsRow header="Estimated land date">{estimatedLandDate}</DetailsRow>
-            <DetailsRow header="Company contact(s)">{contactsList}</DetailsRow>
-            <DetailsRow header="Total Investment">{totalInvestment}</DetailsRow>
-            <DetailsRow header="Capital expenditure value">{foreignEquityInvestment}</DetailsRow>
-            <DetailsRow header="Gross value added (GVA)">{grossValueAdded}</DetailsRow>
-            <DetailsRow header="Number of new jobs">{numberNewJobs}</DetailsRow>
-          </Table>
-          <Link href={url}>Go to the investment project detail page</Link>
-        </CardDetails>
+        <CardContent>
+          <CardHeadingBlock text={`${title} - ${investmentType}`} />
+          <CardHeading link={{ url, text: name }}/>
+          <CardDetails
+            summary="Key details and people for this project"
+            link={{ url, text: 'Go to the investment project detail page' }}>
+            <CardTable rows={
+              [
+                { header: 'Investment Type', content: investmentType },
+                { header: 'Added by', content: addedBy },
+                { header: 'Estimated land date', content: estimatedLandDate },
+                { header: 'Company contact(s)', content: contacts },
+                { header: 'Total Investment', content:  totalInvestment },
+                { header: 'Capital expenditure value', content: foreignEquityInvestment},
+                { header: 'Gross value added (GVA)', content: grossValueAdded},
+                { header: 'Number of new jobs', content: numberNewJobs},
+              ]}
+            />
+          </CardDetails>
+        </CardContent>
+        <CardMeta startTime={published} />
       </Card>
     )
   }
