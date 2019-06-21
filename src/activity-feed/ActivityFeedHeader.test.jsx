@@ -23,6 +23,17 @@ describe('ActivityFeedHeader', () => {
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
+
+  test('renders header with one activity', () => {
+    const tree = renderer
+      .create(
+        <ActivityFeedHeader
+          totalActivities={1}
+        />
+      )
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })
 
 

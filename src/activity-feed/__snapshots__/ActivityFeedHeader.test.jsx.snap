@@ -28,6 +28,26 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
 </div>
 `;
 
+exports[`ActivityFeedHeader renders header with one activity 1`] = `
+<div
+  className="sc-cmthru jNIEHA"
+>
+  <div
+    className="sc-hMFtBS kVBfdo"
+  >
+    <h2
+      className="sc-cMljjf leOqMw"
+      size="LARGE"
+    >
+      1 activity
+    </h2>
+  </div>
+  <div
+    className="sc-cLQEGU oWkRe"
+  />
+</div>
+`;
+
 exports[`ActivityFeedHeader renders header without props 1`] = `
 <div
   className="sc-cmthru jNIEHA"

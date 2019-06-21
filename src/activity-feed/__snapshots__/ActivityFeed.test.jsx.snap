@@ -71,7 +71,7 @@ exports[`ActivityFeed renders single activity 1`] = `
         className="sc-cMljjf leOqMw"
         size="LARGE"
       >
-        1 activities
+        1 activity
       </h2>
     </div>
     <div
