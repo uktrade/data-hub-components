@@ -1,4 +1,4 @@
-import { get } from 'lodash'
+import { get, includes } from 'lodash'
 
 const STATUS = {
   DRAFT: 'draft',
@@ -14,7 +14,7 @@ const BADGE_LABELS = {
   UPCOMING: 'Upcoming interaction',
   INCOMPLETE: 'Incomplete interaction',
   CANCELLED: 'Cancelled interaction',
-  UNKNOWN: 'Unknown status',
+  COMPLETED_SERVICE_DELIVERY: 'Completed service delivery',
 }
 
 const getStatus = (activity) => {
@@ -33,15 +33,22 @@ const getStatus = (activity) => {
   }
 }
 
+const isServiceDelivery = (activity) => {
+  const activityTypes = get(activity, 'object.type')
+  return includes(activityTypes, 'dit:ServiceDelivery')
+}
+
 export default class CardUtils {
   static transform(activity) {
     const status = getStatus(activity)
-    const badge = BADGE_LABELS[status.toUpperCase()]
+    const badge = isServiceDelivery(activity) ? BADGE_LABELS.COMPLETED_SERVICE_DELIVERY : BADGE_LABELS[status.toUpperCase()]
     const isUpcoming = status === STATUS.UPCOMING
+    const typeText = isServiceDelivery(activity) ? 'service delivery' : 'interaction'
 
     return {
       badge,
       isUpcoming,
+      typeText,
     }
   }
 }

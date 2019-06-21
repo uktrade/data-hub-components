@@ -30,7 +30,8 @@ export default class Interaction extends React.Component {
       <Card isUpcoming={transformed.isUpcoming}>
         <CardContent>
           <CardHeading link={{ url: transformed.url, text: transformed.subject }}></CardHeading>
-          <CardDetails summary="View interaction details" link={{ url: transformed.url, text: 'Go to the interaction detail page' }}>
+          <CardDetails summary={`View ${transformed.typeText} details`}
+                       link={{ url: transformed.url, text: `Go to the ${transformed.typeText} detail page` }}>
             <CardTable rows={
               [
                 { header: 'Contact(s)', content: CardUtils.getPeopleAsList(activity, 'Contact') },
