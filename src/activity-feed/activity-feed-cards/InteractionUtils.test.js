@@ -81,7 +81,7 @@ describe('InteractionUtils.js', () => {
           object: {
             type: 'dit:ServiceDelivery',
             'dit:status': 'complete',
-          }
+          },
         })
 
         expect(actual).toEqual({

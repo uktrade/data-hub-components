@@ -30,11 +30,7 @@ const getStatus = (activity) => {
     return isUpcoming ? STATUS.UPCOMING : STATUS.INCOMPLETE
   }
 
-  if (apiStatus === STATUS.COMPLETE) {
-    return STATUS.COMPLETE
-  }
-
-  return null
+  return STATUS.COMPLETE
 }
 
 const isServiceDelivery = (activity) => {
@@ -45,7 +41,9 @@ const isServiceDelivery = (activity) => {
 export default class CardUtils {
   static transform(activity) {
     const status = getStatus(activity)
-    const badge = isServiceDelivery(activity) ? BADGE_LABELS.COMPLETED_SERVICE_DELIVERY : BADGE_LABELS[status.toUpperCase()]
+    const badge = isServiceDelivery(activity)
+      ? BADGE_LABELS.COMPLETED_SERVICE_DELIVERY
+      : BADGE_LABELS[status.toUpperCase()]
     const isUpcoming = status === STATUS.UPCOMING
     const typeText = isServiceDelivery(activity) ? 'service delivery' : 'interaction'
 

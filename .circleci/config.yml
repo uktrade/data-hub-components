@@ -34,6 +34,19 @@ jobs:
           command: yarn check
           when: always
 
+  lint:
+    docker:
+      - image: *node_version
+    working_directory: ~/app
+    steps:
+      - checkout
+      - *restore_yarn_cache
+      - run: yarn install --pure-lockfile
+      - run:
+          name: Check linyer
+          command: yarn lint
+          when: always
+
   test:
     docker:
       - image: *node_version
@@ -53,6 +66,9 @@ workflows:
     jobs:
       - dependencies
       - yarn-check:
+          requires:
+            - dependencies
+      - lint:
           requires:
             - dependencies
       - test:
