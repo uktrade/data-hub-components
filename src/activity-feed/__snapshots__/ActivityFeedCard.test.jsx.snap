@@ -1712,7 +1712,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
       <span
         className="sc-iujRgT hrmgYI"
       >
-        Completed interaction
+        Completed service delivery
       </span>
     </div>
   </div>
