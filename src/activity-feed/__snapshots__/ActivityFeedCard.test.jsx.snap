@@ -2,23 +2,23 @@
 
 exports[`ActivityFeedCard when a New OMIS order is added should render an activity card 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bdVaJa cCKGim"
 >
   <div
-    className="sc-bMVAic epiyOU"
+    className="sc-bwzfXH kYAhuD"
   >
     <h3
-      className="sc-GMQeP danEmM sc-cMljjf kCLKvB"
+      className="sc-hORach ePPHnj sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       New Order (OMIS) added
     </h3>
     <h3
-      className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://www.datahub.dev.uktrade.io/omis/504b7a34-c083-4e7a-998b-61cbe7b6b269"
         muted={false}
       >
@@ -26,32 +26,32 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
       </a>
     </h3>
     <details
-      className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
       open={false}
     >
       <summary
-        className="sc-kkGfuU cCdZFh"
+        className="sc-hSdWYo gbrPKp"
       >
         <span
-          className="sc-iAyFgw jRkIxn"
+          className="sc-eHgmQL duXTff"
         >
           View key details and people for this order
         </span>
       </summary>
       <div
-        className="sc-hSdWYo dfimje"
+        className="sc-cvbbAY dhiWBt"
       >
         <table
-          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
         >
           <tbody
-            className="sc-eXEjpC fuVqJC"
+            className="sc-RefOD kzCQXs"
           >
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -62,7 +62,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                 Country
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -73,10 +73,10 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -87,7 +87,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                 UK region
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -98,10 +98,10 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -112,7 +112,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                 Added by
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -123,7 +123,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                   Test CMU 1
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:cmuuser1test@mobile.ukti.gov.uk"
                     muted={false}
                   >
@@ -133,10 +133,10 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -147,7 +147,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                 Company contact
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -156,22 +156,21 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               >
                 <span>
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="https://www.datahub.dev.uktrade.io/contacts/ec1be329-ae82-47a9-9d65-c289f91c39ed/details"
                     muted={false}
                   >
                     Alysia Tolley
                   </a>
-                   (
-                  Some job title
-                  )
+                   
+                  (Some job title)
                 </span>
               </td>
             </tr>
           </tbody>
         </table>
         <a
-          className="sc-bwzfXH VXMCV"
+          className="sc-bxivhb cnzZSK"
           href="https://www.datahub.dev.uktrade.io/omis/504b7a34-c083-4e7a-998b-61cbe7b6b269"
           muted={false}
         >
@@ -181,7 +180,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
     </details>
   </div>
   <div
-    className="sc-exAgwC bLFBla"
+    className="sc-bMVAic gunhqD"
   >
     20 Jul 2017
   </div>
@@ -190,623 +189,608 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
 
 exports[`ActivityFeedCard when an investment project is CTI should render the CTI investment project activity card 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-bdVaJa cCKGim"
 >
   <div
-    className="sc-hMFtBS jNzJDC"
+    className="sc-bwzfXH kYAhuD"
   >
-    <div
-      className="sc-cLQEGU jRpfLR"
-    >
-      <h3
-        className="sc-cMljjf kCLKvB"
-        size="MEDIUM"
-      >
-        New investment project added
-         - 
-        Commitment to invest
-      </h3>
-      <span>
-        23 May 2017
-      </span>
-    </div>
     <h3
-      className="sc-cMljjf kCLKvB"
+      className="sc-hORach ePPHnj sc-jDwBTQ kyTlsc"
+      size="MEDIUM"
+    >
+      New investment project added - Commitment to invest
+    </h3>
+    <h3
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://www.datahub.dev.uktrade.io/investments/projects/8f2662e9-0691-435f-8edd-7fb9df9d8936"
         muted={false}
       >
         Aphrodite Mcdonald
       </a>
     </h3>
-  </div>
-  <details
-    className="sc-gqPbQI fSzgwk sc-kEYyzF ihcnje"
-    open={false}
-  >
-    <summary
-      className="sc-kkGfuU cCdZFh"
+    <details
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
+      open={false}
     >
-      <span
-        className="sc-iAyFgw jRkIxn"
+      <summary
+        className="sc-hSdWYo gbrPKp"
       >
-        Key details and people for this project
-      </span>
-    </summary>
-    <div
-      className="sc-hSdWYo dfimje"
-    >
-      <table
-        className="sc-bwCtUz iVExri"
-      >
-        <tbody
-          className="sc-eXEjpC fuVqJC"
+        <span
+          className="sc-eHgmQL duXTff"
         >
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Investment Type
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              Commitment to invest
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Estimated land date
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              01 Oct 1973
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Company contact(s)
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              <span>
-                <a
-                  className="sc-bwzfXH VXMCV"
-                  href="https://www.datahub.dev.uktrade.io/contacts/82e24a82-0688-424d-911f-2666d3ddcf9b/details"
-                  muted={false}
-                >
-                  Reece Stevens
-                </a>
-                 (
-                Some job title
-                )
-              </span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <a
-        className="sc-bwzfXH VXMCV"
-        href="https://www.datahub.dev.uktrade.io/investments/projects/8f2662e9-0691-435f-8edd-7fb9df9d8936"
-        muted={false}
+          Key details and people for this project
+        </span>
+      </summary>
+      <div
+        className="sc-cvbbAY dhiWBt"
       >
-        Go to the investment project detail page
-      </a>
-    </div>
-  </details>
+        <table
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
+        >
+          <tbody
+            className="sc-RefOD kzCQXs"
+          >
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Investment Type
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                Commitment to invest
+              </td>
+            </tr>
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Estimated land date
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                01 Oct 1973
+              </td>
+            </tr>
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Company contact(s)
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                <span>
+                  <a
+                    className="sc-bxivhb cnzZSK"
+                    href="https://www.datahub.dev.uktrade.io/contacts/82e24a82-0688-424d-911f-2666d3ddcf9b/details"
+                    muted={false}
+                  >
+                    Reece Stevens
+                  </a>
+                   
+                  (Some job title)
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a
+          className="sc-bxivhb cnzZSK"
+          href="https://www.datahub.dev.uktrade.io/investments/projects/8f2662e9-0691-435f-8edd-7fb9df9d8936"
+          muted={false}
+        >
+          Go to the investment project detail page
+        </a>
+      </div>
+    </details>
+  </div>
+  <div
+    className="sc-bMVAic gunhqD"
+  >
+    23 May 2017
+  </div>
 </div>
 `;
 
 exports[`ActivityFeedCard when an investment project is FDI should render the FDI investment project activity card 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-bdVaJa cCKGim"
 >
   <div
-    className="sc-hMFtBS jNzJDC"
+    className="sc-bwzfXH kYAhuD"
   >
-    <div
-      className="sc-cLQEGU jRpfLR"
-    >
-      <h3
-        className="sc-cMljjf kCLKvB"
-        size="MEDIUM"
-      >
-        New investment project added
-         - 
-        FDI
-      </h3>
-      <span>
-        05 Mar 2017
-      </span>
-    </div>
     <h3
-      className="sc-cMljjf kCLKvB"
+      className="sc-hORach ePPHnj sc-jDwBTQ kyTlsc"
+      size="MEDIUM"
+    >
+      New investment project added - FDI
+    </h3>
+    <h3
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://www.datahub.dev.uktrade.io/investments/projects/3520b973-0e77-46cf-be75-3585f2f6691e"
         muted={false}
       >
         Wig factory
       </a>
     </h3>
-  </div>
-  <details
-    className="sc-gqPbQI fSzgwk sc-kEYyzF ihcnje"
-    open={false}
-  >
-    <summary
-      className="sc-kkGfuU cCdZFh"
+    <details
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
+      open={false}
     >
-      <span
-        className="sc-iAyFgw jRkIxn"
+      <summary
+        className="sc-hSdWYo gbrPKp"
       >
-        Key details and people for this project
-      </span>
-    </summary>
-    <div
-      className="sc-hSdWYo dfimje"
-    >
-      <table
-        className="sc-bwCtUz iVExri"
-      >
-        <tbody
-          className="sc-eXEjpC fuVqJC"
+        <span
+          className="sc-eHgmQL duXTff"
         >
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Investment Type
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              FDI
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Estimated land date
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              01 Jan 2020
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Company contact(s)
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              <span>
-                <a
-                  className="sc-bwzfXH VXMCV"
-                  href="https://www.datahub.dev.uktrade.io/contacts/952232d2-1d25-4c3a-bcac-2f3a30a94da9/details"
-                  muted={false}
-                >
-                  Dean Cox
-                </a>
-                 (
-                Some job title
-                )
-              </span>
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Total Investment
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              £1,000,000
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Capital expenditure value
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              £200,000
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Gross value added (GVA)
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              £11,620
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Number of new jobs
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              15,400
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <a
-        className="sc-bwzfXH VXMCV"
-        href="https://www.datahub.dev.uktrade.io/investments/projects/3520b973-0e77-46cf-be75-3585f2f6691e"
-        muted={false}
+          Key details and people for this project
+        </span>
+      </summary>
+      <div
+        className="sc-cvbbAY dhiWBt"
       >
-        Go to the investment project detail page
-      </a>
-    </div>
-  </details>
+        <table
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
+        >
+          <tbody
+            className="sc-RefOD kzCQXs"
+          >
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Investment Type
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                FDI
+              </td>
+            </tr>
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Estimated land date
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                01 Jan 2020
+              </td>
+            </tr>
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Company contact(s)
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                <span>
+                  <a
+                    className="sc-bxivhb cnzZSK"
+                    href="https://www.datahub.dev.uktrade.io/contacts/952232d2-1d25-4c3a-bcac-2f3a30a94da9/details"
+                    muted={false}
+                  >
+                    Dean Cox
+                  </a>
+                   
+                  (Some job title)
+                </span>
+              </td>
+            </tr>
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Total Investment
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                £1,000,000
+              </td>
+            </tr>
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Capital expenditure value
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                £200,000
+              </td>
+            </tr>
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Gross value added (GVA)
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                £11,620
+              </td>
+            </tr>
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Number of new jobs
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                15,400
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a
+          className="sc-bxivhb cnzZSK"
+          href="https://www.datahub.dev.uktrade.io/investments/projects/3520b973-0e77-46cf-be75-3585f2f6691e"
+          muted={false}
+        >
+          Go to the investment project detail page
+        </a>
+      </div>
+    </details>
+  </div>
+  <div
+    className="sc-bMVAic gunhqD"
+  >
+    05 Mar 2017
+  </div>
 </div>
 `;
 
 exports[`ActivityFeedCard when an investment project is Non-FDI should render the Non-FDI investment project activity card 1`] = `
 <div
-  className="sc-cmthru jjutsD"
+  className="sc-bdVaJa cCKGim"
 >
   <div
-    className="sc-hMFtBS jNzJDC"
+    className="sc-bwzfXH kYAhuD"
   >
-    <div
-      className="sc-cLQEGU jRpfLR"
-    >
-      <h3
-        className="sc-cMljjf kCLKvB"
-        size="MEDIUM"
-      >
-        New investment project added
-         - 
-        Non-FDI
-      </h3>
-      <span>
-        03 Oct 2017
-      </span>
-    </div>
     <h3
-      className="sc-cMljjf kCLKvB"
+      className="sc-hORach ePPHnj sc-jDwBTQ kyTlsc"
+      size="MEDIUM"
+    >
+      New investment project added - Non-FDI
+    </h3>
+    <h3
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://www.datahub.dev.uktrade.io/investments/projects/ff4005e5-f769-43cb-a46f-a483ec20eda7"
         muted={false}
       >
         Refined Rubber Chicken
       </a>
     </h3>
-  </div>
-  <details
-    className="sc-gqPbQI fSzgwk sc-kEYyzF ihcnje"
-    open={false}
-  >
-    <summary
-      className="sc-kkGfuU cCdZFh"
+    <details
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
+      open={false}
     >
-      <span
-        className="sc-iAyFgw jRkIxn"
+      <summary
+        className="sc-hSdWYo gbrPKp"
       >
-        Key details and people for this project
-      </span>
-    </summary>
-    <div
-      className="sc-hSdWYo dfimje"
-    >
-      <table
-        className="sc-bwCtUz iVExri"
-      >
-        <tbody
-          className="sc-eXEjpC fuVqJC"
+        <span
+          className="sc-eHgmQL duXTff"
         >
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Investment Type
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              Non-FDI
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Added by
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              <span>
-                Test CMU 1
-                , 
-                <a
-                  className="sc-bwzfXH VXMCV"
-                  href="mailto:cmuuser1test@mobile.ukti.gov.uk"
-                  muted={false}
-                >
-                  cmuuser1test@mobile.ukti.gov.uk
-                </a>
-              </span>
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Estimated land date
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              01 Dec 2018
-            </td>
-          </tr>
-          <tr
-            className="sc-iQKALj ftJWrM"
-          >
-            <th
-              className="sc-RefOD dxRfSY"
-              style={
-                Object {
-                  "border": 0,
-                  "fontWeight": "normal",
-                }
-              }
-            >
-              Company contact(s)
-            </th>
-            <td
-              className="sc-RefOD gzbQXK"
-              style={
-                Object {
-                  "border": 0,
-                }
-              }
-            >
-              <span>
-                <a
-                  className="sc-bwzfXH VXMCV"
-                  href="https://www.datahub.dev.uktrade.io/contacts/889dc0e6-a60c-4368-822c-e6b644bfcbf7/details"
-                  muted={false}
-                >
-                  Ruthie Cole
-                </a>
-                 (
-                Some job title
-                )
-              </span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <a
-        className="sc-bwzfXH VXMCV"
-        href="https://www.datahub.dev.uktrade.io/investments/projects/ff4005e5-f769-43cb-a46f-a483ec20eda7"
-        muted={false}
+          Key details and people for this project
+        </span>
+      </summary>
+      <div
+        className="sc-cvbbAY dhiWBt"
       >
-        Go to the investment project detail page
-      </a>
-    </div>
-  </details>
+        <table
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
+        >
+          <tbody
+            className="sc-RefOD kzCQXs"
+          >
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Investment Type
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                Non-FDI
+              </td>
+            </tr>
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Added by
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                <span>
+                  Test CMU 1
+                  , 
+                  <a
+                    className="sc-bxivhb cnzZSK"
+                    href="mailto:cmuuser1test@mobile.ukti.gov.uk"
+                    muted={false}
+                  >
+                    cmuuser1test@mobile.ukti.gov.uk
+                  </a>
+                </span>
+              </td>
+            </tr>
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Estimated land date
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                01 Dec 2018
+              </td>
+            </tr>
+            <tr
+              className="sc-hrWEMg fOsrtz"
+            >
+              <th
+                className="sc-bwCtUz rkyVs"
+                style={
+                  Object {
+                    "border": 0,
+                    "fontWeight": "normal",
+                  }
+                }
+              >
+                Company contact(s)
+              </th>
+              <td
+                className="sc-bwCtUz eyaJuE"
+                style={
+                  Object {
+                    "border": 0,
+                  }
+                }
+              >
+                <span>
+                  <a
+                    className="sc-bxivhb cnzZSK"
+                    href="https://www.datahub.dev.uktrade.io/contacts/889dc0e6-a60c-4368-822c-e6b644bfcbf7/details"
+                    muted={false}
+                  >
+                    Ruthie Cole
+                  </a>
+                   
+                  (Some job title)
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a
+          className="sc-bxivhb cnzZSK"
+          href="https://www.datahub.dev.uktrade.io/investments/projects/ff4005e5-f769-43cb-a46f-a483ec20eda7"
+          muted={false}
+        >
+          Go to the investment project detail page
+        </a>
+      </div>
+    </details>
+  </div>
+  <div
+    className="sc-bMVAic gunhqD"
+  >
+    03 Oct 2017
+  </div>
 </div>
 `;
 
 exports[`ActivityFeedCard when the interaction does not have a service should render interaction activity without services 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bdVaJa cCKGim"
 >
   <div
-    className="sc-bMVAic epiyOU"
+    className="sc-bwzfXH kYAhuD"
   >
     <h3
-      className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -814,32 +798,32 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
       </a>
     </h3>
     <details
-      className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
       open={false}
     >
       <summary
-        className="sc-kkGfuU cCdZFh"
+        className="sc-hSdWYo gbrPKp"
       >
         <span
-          className="sc-iAyFgw jRkIxn"
+          className="sc-eHgmQL duXTff"
         >
           View interaction details
         </span>
       </summary>
       <div
-        className="sc-hSdWYo dfimje"
+        className="sc-cvbbAY dhiWBt"
       >
         <table
-          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
         >
           <tbody
-            className="sc-eXEjpC fuVqJC"
+            className="sc-RefOD kzCQXs"
           >
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -850,7 +834,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
                 Contact(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -859,10 +843,10 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
               />
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -873,7 +857,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
                 Adviser(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -884,7 +868,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
           </tbody>
         </table>
         <a
-          className="sc-bwzfXH VXMCV"
+          className="sc-bxivhb cnzZSK"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -894,14 +878,14 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
     </details>
   </div>
   <div
-    className="sc-exAgwC bLFBla"
+    className="sc-bMVAic gunhqD"
   >
     06 Jun 2019
     <div
-      className="sc-cQFLBn fHFhni"
+      className="sc-bAeIUo eEATTv"
     >
       <span
-        className="sc-gojNiO bqdgIh"
+        className="sc-iujRgT hrmgYI"
       >
         Completed interaction
       </span>
@@ -912,17 +896,17 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
 
 exports[`ActivityFeedCard when the interaction is a draft and archived should render interaction activity with "Cancelled interaction" badge 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bdVaJa cCKGim"
 >
   <div
-    className="sc-bMVAic epiyOU"
+    className="sc-bwzfXH kYAhuD"
   >
     <h3
-      className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -930,32 +914,32 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
       </a>
     </h3>
     <details
-      className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
       open={false}
     >
       <summary
-        className="sc-kkGfuU cCdZFh"
+        className="sc-hSdWYo gbrPKp"
       >
         <span
-          className="sc-iAyFgw jRkIxn"
+          className="sc-eHgmQL duXTff"
         >
           View interaction details
         </span>
       </summary>
       <div
-        className="sc-hSdWYo dfimje"
+        className="sc-cvbbAY dhiWBt"
       >
         <table
-          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
         >
           <tbody
-            className="sc-eXEjpC fuVqJC"
+            className="sc-RefOD kzCQXs"
           >
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -966,7 +950,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                 Contact(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -977,7 +961,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                   John Doe
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:john@example.com"
                     muted={false}
                   >
@@ -987,10 +971,10 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1001,7 +985,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                 Adviser(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1012,7 +996,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                   Mario Bros
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -1022,10 +1006,10 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1036,7 +1020,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                 Services
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1049,7 +1033,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
           </tbody>
         </table>
         <a
-          className="sc-bwzfXH VXMCV"
+          className="sc-bxivhb cnzZSK"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -1059,14 +1043,14 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
     </details>
   </div>
   <div
-    className="sc-exAgwC bLFBla"
+    className="sc-bMVAic gunhqD"
   >
     06 Jun 2019
     <div
-      className="sc-cQFLBn fHFhni"
+      className="sc-bAeIUo eEATTv"
     >
       <span
-        className="sc-gojNiO bqdgIh"
+        className="sc-iujRgT hrmgYI"
       >
         Cancelled interaction
       </span>
@@ -1077,17 +1061,17 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
 
 exports[`ActivityFeedCard when the interaction is a draft and upcoming should render interaction activity with "Upcoming interaction" badge 1`] = `
 <div
-  className="sc-hORach jvSxVN"
+  className="sc-bdVaJa jxxdOH"
 >
   <div
-    className="sc-bMVAic epiyOU"
+    className="sc-bwzfXH kYAhuD"
   >
     <h3
-      className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -1095,32 +1079,32 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
       </a>
     </h3>
     <details
-      className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
       open={false}
     >
       <summary
-        className="sc-kkGfuU cCdZFh"
+        className="sc-hSdWYo gbrPKp"
       >
         <span
-          className="sc-iAyFgw jRkIxn"
+          className="sc-eHgmQL duXTff"
         >
           View interaction details
         </span>
       </summary>
       <div
-        className="sc-hSdWYo dfimje"
+        className="sc-cvbbAY dhiWBt"
       >
         <table
-          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
         >
           <tbody
-            className="sc-eXEjpC fuVqJC"
+            className="sc-RefOD kzCQXs"
           >
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1131,7 +1115,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                 Contact(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1142,7 +1126,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                   John Doe
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:john@example.com"
                     muted={false}
                   >
@@ -1152,10 +1136,10 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1166,7 +1150,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                 Adviser(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1177,7 +1161,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                   Mario Bros
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -1187,10 +1171,10 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1201,7 +1185,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                 Services
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1214,7 +1198,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
           </tbody>
         </table>
         <a
-          className="sc-bwzfXH VXMCV"
+          className="sc-bxivhb cnzZSK"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -1224,14 +1208,14 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
     </details>
   </div>
   <div
-    className="sc-exAgwC bLFBla"
+    className="sc-bMVAic gunhqD"
   >
     06 Jun 2019
     <div
-      className="sc-cQFLBn fHFhni"
+      className="sc-bAeIUo eEATTv"
     >
       <span
-        className="sc-gojNiO bqdgIh"
+        className="sc-iujRgT hrmgYI"
       >
         Upcoming interaction
       </span>
@@ -1242,17 +1226,17 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
 
 exports[`ActivityFeedCard when the interaction is a draft in the past should render interaction activity with "Incomplete interaction" badge 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bdVaJa cCKGim"
 >
   <div
-    className="sc-bMVAic epiyOU"
+    className="sc-bwzfXH kYAhuD"
   >
     <h3
-      className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -1260,32 +1244,32 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
       </a>
     </h3>
     <details
-      className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
       open={false}
     >
       <summary
-        className="sc-kkGfuU cCdZFh"
+        className="sc-hSdWYo gbrPKp"
       >
         <span
-          className="sc-iAyFgw jRkIxn"
+          className="sc-eHgmQL duXTff"
         >
           View interaction details
         </span>
       </summary>
       <div
-        className="sc-hSdWYo dfimje"
+        className="sc-cvbbAY dhiWBt"
       >
         <table
-          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
         >
           <tbody
-            className="sc-eXEjpC fuVqJC"
+            className="sc-RefOD kzCQXs"
           >
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1296,7 +1280,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                 Contact(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1307,7 +1291,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                   John Doe
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:john@example.com"
                     muted={false}
                   >
@@ -1317,10 +1301,10 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1331,7 +1315,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                 Adviser(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1342,7 +1326,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                   Mario Bros
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -1352,10 +1336,10 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1366,7 +1350,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                 Services
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1379,7 +1363,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
           </tbody>
         </table>
         <a
-          className="sc-bwzfXH VXMCV"
+          className="sc-bxivhb cnzZSK"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -1389,14 +1373,14 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
     </details>
   </div>
   <div
-    className="sc-exAgwC bLFBla"
+    className="sc-bMVAic gunhqD"
   >
     05 Jun 2018
     <div
-      className="sc-cQFLBn fHFhni"
+      className="sc-bAeIUo eEATTv"
     >
       <span
-        className="sc-gojNiO bqdgIh"
+        className="sc-iujRgT hrmgYI"
       >
         Incomplete interaction
       </span>
@@ -1407,17 +1391,17 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
 
 exports[`ActivityFeedCard when the interaction is complete should render interaction activity with "Completed interaction" badge 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bdVaJa cCKGim"
 >
   <div
-    className="sc-bMVAic epiyOU"
+    className="sc-bwzfXH kYAhuD"
   >
     <h3
-      className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -1425,32 +1409,32 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
       </a>
     </h3>
     <details
-      className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
       open={false}
     >
       <summary
-        className="sc-kkGfuU cCdZFh"
+        className="sc-hSdWYo gbrPKp"
       >
         <span
-          className="sc-iAyFgw jRkIxn"
+          className="sc-eHgmQL duXTff"
         >
           View interaction details
         </span>
       </summary>
       <div
-        className="sc-hSdWYo dfimje"
+        className="sc-cvbbAY dhiWBt"
       >
         <table
-          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
         >
           <tbody
-            className="sc-eXEjpC fuVqJC"
+            className="sc-RefOD kzCQXs"
           >
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1461,7 +1445,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                 Contact(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1472,7 +1456,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                   John Doe
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:john@example.com"
                     muted={false}
                   >
@@ -1482,10 +1466,10 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1496,7 +1480,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                 Adviser(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1507,7 +1491,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                   Mario Bros
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -1517,10 +1501,10 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1531,7 +1515,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                 Services
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1544,7 +1528,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
           </tbody>
         </table>
         <a
-          className="sc-bwzfXH VXMCV"
+          className="sc-bxivhb cnzZSK"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -1554,14 +1538,14 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
     </details>
   </div>
   <div
-    className="sc-exAgwC bLFBla"
+    className="sc-bMVAic gunhqD"
   >
     06 Jun 2019
     <div
-      className="sc-cQFLBn fHFhni"
+      className="sc-bAeIUo eEATTv"
     >
       <span
-        className="sc-gojNiO bqdgIh"
+        className="sc-iujRgT hrmgYI"
       >
         Completed interaction
       </span>
@@ -1572,17 +1556,17 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
 
 exports[`ActivityFeedCard when there is a service delivery should render service delivery activity 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bdVaJa cCKGim"
 >
   <div
-    className="sc-bMVAic epiyOU"
+    className="sc-bwzfXH kYAhuD"
   >
     <h3
-      className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/854d8d31-7405-4625-a957-0ed2c3092caa"
         muted={false}
       >
@@ -1590,32 +1574,32 @@ exports[`ActivityFeedCard when there is a service delivery should render service
       </a>
     </h3>
     <details
-      className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
       open={false}
     >
       <summary
-        className="sc-kkGfuU cCdZFh"
+        className="sc-hSdWYo gbrPKp"
       >
         <span
-          className="sc-iAyFgw jRkIxn"
+          className="sc-eHgmQL duXTff"
         >
           View interaction details
         </span>
       </summary>
       <div
-        className="sc-hSdWYo dfimje"
+        className="sc-cvbbAY dhiWBt"
       >
         <table
-          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
         >
           <tbody
-            className="sc-eXEjpC fuVqJC"
+            className="sc-RefOD kzCQXs"
           >
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1626,7 +1610,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
                 Contact(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1637,7 +1621,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
                   John Doe
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:john@example.com"
                     muted={false}
                   >
@@ -1647,10 +1631,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1661,7 +1645,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
                 Adviser(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1672,7 +1656,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
                   Mario Bros
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -1682,10 +1666,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1696,7 +1680,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
                 Services
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1709,7 +1693,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
           </tbody>
         </table>
         <a
-          className="sc-bwzfXH VXMCV"
+          className="sc-bxivhb cnzZSK"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/854d8d31-7405-4625-a957-0ed2c3092caa"
           muted={false}
         >
@@ -1719,14 +1703,14 @@ exports[`ActivityFeedCard when there is a service delivery should render service
     </details>
   </div>
   <div
-    className="sc-exAgwC bLFBla"
+    className="sc-bMVAic gunhqD"
   >
     29 Apr 2019
     <div
-      className="sc-cQFLBn fHFhni"
+      className="sc-bAeIUo eEATTv"
     >
       <span
-        className="sc-gojNiO bqdgIh"
+        className="sc-iujRgT hrmgYI"
       >
         Completed interaction
       </span>
@@ -1737,13 +1721,13 @@ exports[`ActivityFeedCard when there is a service delivery should render service
 
 exports[`ActivityFeedCard when there is an activity item of arbitrary type should render default activity 1`] = `
 <div
-  className="sc-bXGyLb rlzKV"
+  className="sc-exAgwC jYcRxB"
 >
   <div
-    className="sc-lkqHmb gepgMb"
+    className="sc-cQFLBn iuzIyv"
   >
     <h3
-      className="sc-cMljjf kCLKvB"
+      className="sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       subject
@@ -1754,17 +1738,17 @@ exports[`ActivityFeedCard when there is an activity item of arbitrary type shoul
 
 exports[`ActivityFeedCard when there is an interaction should render interaction activity 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bdVaJa cCKGim"
 >
   <div
-    className="sc-bMVAic epiyOU"
+    className="sc-bwzfXH kYAhuD"
   >
     <h3
-      className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -1772,32 +1756,32 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
       </a>
     </h3>
     <details
-      className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
       open={false}
     >
       <summary
-        className="sc-kkGfuU cCdZFh"
+        className="sc-hSdWYo gbrPKp"
       >
         <span
-          className="sc-iAyFgw jRkIxn"
+          className="sc-eHgmQL duXTff"
         >
           View interaction details
         </span>
       </summary>
       <div
-        className="sc-hSdWYo dfimje"
+        className="sc-cvbbAY dhiWBt"
       >
         <table
-          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
         >
           <tbody
-            className="sc-eXEjpC fuVqJC"
+            className="sc-RefOD kzCQXs"
           >
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1808,7 +1792,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                 Contact(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1819,7 +1803,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                   John Doe
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:john@example.com"
                     muted={false}
                   >
@@ -1829,10 +1813,10 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1843,7 +1827,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                 Adviser(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1854,7 +1838,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                   Mario Bros
                   , 
                   <a
-                    className="sc-bwzfXH VXMCV"
+                    className="sc-bxivhb cnzZSK"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -1864,10 +1848,10 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
               </td>
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1878,7 +1862,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                 Services
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1891,7 +1875,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
           </tbody>
         </table>
         <a
-          className="sc-bwzfXH VXMCV"
+          className="sc-bxivhb cnzZSK"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -1901,14 +1885,14 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
     </details>
   </div>
   <div
-    className="sc-exAgwC bLFBla"
+    className="sc-bMVAic gunhqD"
   >
     02 May 2019
     <div
-      className="sc-cQFLBn fHFhni"
+      className="sc-bAeIUo eEATTv"
     >
       <span
-        className="sc-gojNiO bqdgIh"
+        className="sc-iujRgT hrmgYI"
       >
         Completed interaction
       </span>
@@ -1919,17 +1903,17 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
 
 exports[`ActivityFeedCard when there is an interaction without any people involved should render interaction activity without advisers nor contacts 1`] = `
 <div
-  className="sc-hORach iKNari"
+  className="sc-bdVaJa cCKGim"
 >
   <div
-    className="sc-bMVAic epiyOU"
+    className="sc-bwzfXH kYAhuD"
   >
     <h3
-      className="sc-iujRgT cqnRWG sc-cMljjf kCLKvB"
+      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
       size="MEDIUM"
     >
       <a
-        className="sc-bwzfXH VXMCV"
+        className="sc-bxivhb cnzZSK"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -1937,32 +1921,32 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
       </a>
     </h3>
     <details
-      className="sc-bAeIUo Flahq sc-kEYyzF ihcnje"
+      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
       open={false}
     >
       <summary
-        className="sc-kkGfuU cCdZFh"
+        className="sc-hSdWYo gbrPKp"
       >
         <span
-          className="sc-iAyFgw jRkIxn"
+          className="sc-eHgmQL duXTff"
         >
           View interaction details
         </span>
       </summary>
       <div
-        className="sc-hSdWYo dfimje"
+        className="sc-cvbbAY dhiWBt"
       >
         <table
-          className="sc-daURTG eRKlwG sc-bwCtUz iVExri"
+          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
         >
           <tbody
-            className="sc-eXEjpC fuVqJC"
+            className="sc-RefOD kzCQXs"
           >
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1973,7 +1957,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
                 Contact(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -1982,10 +1966,10 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
               />
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -1996,7 +1980,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
                 Adviser(s)
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -2005,10 +1989,10 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
               />
             </tr>
             <tr
-              className="sc-iQKALj ftJWrM"
+              className="sc-hrWEMg fOsrtz"
             >
               <th
-                className="sc-RefOD dxRfSY"
+                className="sc-bwCtUz rkyVs"
                 style={
                   Object {
                     "border": 0,
@@ -2019,7 +2003,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
                 Services
               </th>
               <td
-                className="sc-RefOD gzbQXK"
+                className="sc-bwCtUz eyaJuE"
                 style={
                   Object {
                     "border": 0,
@@ -2032,7 +2016,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
           </tbody>
         </table>
         <a
-          className="sc-bwzfXH VXMCV"
+          className="sc-bxivhb cnzZSK"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -2042,14 +2026,14 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
     </details>
   </div>
   <div
-    className="sc-exAgwC bLFBla"
+    className="sc-bMVAic gunhqD"
   >
     06 Jun 2019
     <div
-      className="sc-cQFLBn fHFhni"
+      className="sc-bAeIUo eEATTv"
     >
       <span
-        className="sc-gojNiO bqdgIh"
+        className="sc-iujRgT hrmgYI"
       >
         Completed interaction
       </span>

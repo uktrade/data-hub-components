@@ -15,13 +15,15 @@ const createEmailAddressMarkup = ({id, name, emailAddress}) => {
 }
 
 const createJobTitleMarkup = ({id, url, name, jobTitle}) => {
-  if (!name || !jobTitle) {
+  if (!name) {
     return null
   }
 
+  const contactJobTitle = jobTitle ? `(${jobTitle})` : null
+
   return (
     <span key={id}>
-      <Link href={url}>{name}</Link> ({jobTitle})
+      <Link href={url}>{name}</Link> {contactJobTitle}
     </span>
   )
 }
