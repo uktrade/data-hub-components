@@ -43,10 +43,12 @@ export default class CardUtils {
     const status = getStatus(activity)
     const badge = isServiceDelivery(activity) ? BADGE_LABELS.COMPLETED_SERVICE_DELIVERY : BADGE_LABELS[status.toUpperCase()]
     const isUpcoming = status === STATUS.UPCOMING
+    const typeText = isServiceDelivery(activity) ? 'service delivery' : 'interaction'
 
     return {
       badge,
       isUpcoming,
+      typeText,
     }
   }
 }
