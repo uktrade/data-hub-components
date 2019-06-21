@@ -1719,22 +1719,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
 </div>
 `;
 
-exports[`ActivityFeedCard when there is an activity item of arbitrary type should render default activity 1`] = `
-<div
-  className="sc-exAgwC jYcRxB"
->
-  <div
-    className="sc-cQFLBn iuzIyv"
-  >
-    <h3
-      className="sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
-    >
-      subject
-    </h3>
-  </div>
-</div>
-`;
+exports[`ActivityFeedCard when there is an activity item of unknown type should not render an activity card 1`] = `null`;
 
 exports[`ActivityFeedCard when there is an interaction should render interaction activity 1`] = `
 <div
