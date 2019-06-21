@@ -18,7 +18,7 @@ describe('ActivityFeedHeader', () => {
           totalActivities={999}
           addContentText="Test button"
           addContentLink="http://testing.example.com"
-        />
+        />,
       )
       .toJSON()
     expect(tree).toMatchSnapshot()
@@ -29,13 +29,9 @@ describe('ActivityFeedHeader', () => {
       .create(
         <ActivityFeedHeader
           totalActivities={1}
-        />
+        />,
       )
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
 })
-
-
-
-

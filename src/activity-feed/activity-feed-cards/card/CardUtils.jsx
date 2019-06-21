@@ -1,8 +1,12 @@
-import {filter, get, includes, map, some} from 'lodash'
-import {Link} from 'govuk-react'
+/* eslint-disable react/prop-types */
+
+import {
+  filter, get, includes, map, some,
+} from 'lodash'
+import { Link } from 'govuk-react'
 import React from 'react'
 
-const createEmailAddressMarkup = ({id, name, emailAddress}) => {
+const createEmailAddressMarkup = ({ id, name, emailAddress }) => {
   if (!name || !emailAddress) {
     return null
   }
@@ -14,7 +18,7 @@ const createEmailAddressMarkup = ({id, name, emailAddress}) => {
   )
 }
 
-const createJobTitleMarkup = ({id, url, name, jobTitle}) => {
+const createJobTitleMarkup = ({ id, url, name, jobTitle }) => {
   if (!name) {
     return null
   }
@@ -29,9 +33,9 @@ const createJobTitleMarkup = ({id, url, name, jobTitle}) => {
 }
 
 const getPeople = (activity, personSubType) => {
-  return map(filter(activity['object']['attributedTo'], ({type}) => {
+  return map(filter(activity.object.attributedTo, ({ type }) => {
     return includes(type, `dit:${personSubType}`)
-  }), ({ id, url, name, 'dit:jobTitle': jobTitle, 'dit:emailAddress': emailAddress}) => {
+  }), ({ id, url, name, 'dit:jobTitle': jobTitle, 'dit:emailAddress': emailAddress }) => {
     return {
       id,
       url,
@@ -46,9 +50,7 @@ export default class CardUtils {
   static canRenderByTypes(activity, types) {
     const activityTypes = get(activity, 'object.type')
 
-    return some(types, (type) => {
-      return includes(activityTypes, type)
-    })
+    return some(types, type => includes(activityTypes, type))
   }
 
   static transform(activity) {
@@ -73,6 +75,6 @@ export default class CardUtils {
   static getAddedBy = (activity) => {
     const name = get(activity, 'actor.name')
     const emailAddress = get(activity, 'actor.dit:emailAddress')
-    return createEmailAddressMarkup({name, emailAddress})
+    return createEmailAddressMarkup({ name, emailAddress })
   }
 }

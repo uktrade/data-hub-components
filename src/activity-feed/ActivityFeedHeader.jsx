@@ -43,6 +43,8 @@ export default class ActivityFeedHeader extends React.Component {
 
   static defaultProps = {
     totalActivities: 0,
+    addContentText: null,
+    addContentLink: null,
   }
 
   render() {
@@ -56,12 +58,17 @@ export default class ActivityFeedHeader extends React.Component {
           <H2>{headerText}</H2>
         </HeaderCount>
         <HeaderActions>
-          {showAddContentButton &&
-          <Button
-            as={Link}
-            href={addContentLink}
-            buttonColour="#dee0e2"
-            buttonTextColour="#000">{addContentText}</Button>
+          {showAddContentButton
+          && (
+            <Button
+              as={Link}
+              href={addContentLink}
+              buttonColour="#dee0e2"
+              buttonTextColour="#000"
+            >
+              {addContentText}
+            </Button>
+          )
           }
         </HeaderActions>
       </HeaderSummary>

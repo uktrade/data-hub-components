@@ -19,18 +19,22 @@ const BADGE_LABELS = {
 
 const getStatus = (activity) => {
   const apiStatus = get(activity, 'object.dit:status')
-  switch (apiStatus) {
-    case STATUS.DRAFT:
-      const isArchived = get(activity, 'object.dit:archived')
-      if (isArchived) {
-        return STATUS.CANCELLED
-      }
-      const startTime = get(activity, 'object.startTime')
-      const isUpcoming = new Date(startTime) > new Date()
-      return isUpcoming ? STATUS.UPCOMING : STATUS.INCOMPLETE
-    case STATUS.COMPLETE:
-      return STATUS.COMPLETE
+
+  if (apiStatus === STATUS.DRAFT) {
+    const isArchived = get(activity, 'object.dit:archived')
+    if (isArchived) {
+      return STATUS.CANCELLED
+    }
+    const startTime = get(activity, 'object.startTime')
+    const isUpcoming = new Date(startTime) > new Date()
+    return isUpcoming ? STATUS.UPCOMING : STATUS.INCOMPLETE
   }
+
+  if (apiStatus === STATUS.COMPLETE) {
+    return STATUS.COMPLETE
+  }
+
+  return null
 }
 
 const isServiceDelivery = (activity) => {

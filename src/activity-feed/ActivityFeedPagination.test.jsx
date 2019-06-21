@@ -15,7 +15,7 @@ describe('ActivityFeedPagination', () => {
   test('renders pagination with loader', () => {
     const tree = renderer
       .create(
-        <ActivityFeedPagination isLoading={true} />
+        <ActivityFeedPagination isLoading={true} />,
       )
       .toJSON()
     expect(tree).toMatchSnapshot()
@@ -26,7 +26,7 @@ describe('ActivityFeedPagination', () => {
       .create(
         <ActivityFeedPagination
           isLoading={true}
-        />
+        />,
       )
       .toJSON()
     expect(tree).toMatchSnapshot()
@@ -34,10 +34,12 @@ describe('ActivityFeedPagination', () => {
 
   test('simulates click events', () => {
     const onLoadMoreClick = jest.fn()
-    const wrapper = <ActivityFeedPagination
-      isLoading={false}
-      onLoadMore={onLoadMoreClick}
-    />
+    const wrapper = (
+      <ActivityFeedPagination
+        isLoading={false}
+        onLoadMore={onLoadMoreClick}
+      />
+    )
 
     mount(wrapper)
       .find('button')
@@ -45,7 +47,3 @@ describe('ActivityFeedPagination', () => {
     expect(onLoadMoreClick).toHaveBeenCalledTimes(1)
   })
 })
-
-
-
-

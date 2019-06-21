@@ -10,8 +10,8 @@ describe('CardUtils.js', () => {
               'Event',
               'dit:Interaction',
             ],
-          }
-        }, [ 'dit:Interaction' ])
+          },
+        }, ['dit:Interaction'])
 
         expect(actual).toBeTruthy()
       })
@@ -25,8 +25,8 @@ describe('CardUtils.js', () => {
               'Event',
               'dit:Interaction',
             ],
-          }
-        }, [ 'dit:InvestmentProject' ])
+          },
+        }, ['dit:InvestmentProject'])
 
         expect(actual).toBeFalsy()
       })
@@ -43,7 +43,7 @@ describe('CardUtils.js', () => {
             name: 'service',
           },
           startTime: '2019-06-17T15:44:27.298Z',
-        }
+        },
       })
 
       expect(actual).toEqual({

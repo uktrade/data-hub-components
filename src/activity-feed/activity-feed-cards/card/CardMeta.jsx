@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
 
-import DateUtils from "../../../utils/DateUtils";
+import PropTypes from 'prop-types'
+import DateUtils from '../../../utils/DateUtils'
 
 const CardMetaContainer = styled('div')`
   text-align: right;
@@ -19,6 +20,15 @@ const Badge = styled('span')`
 `
 
 export default class CardMeta extends React.Component {
+  static propTypes = {
+    startTime: PropTypes.string.isRequired,
+    badge: PropTypes.string,
+  }
+
+  static defaultProps = {
+    badge: null,
+  }
+
   render() {
     const { startTime, badge } = this.props
     const cardBadge = badge ? <CardBadges><Badge>{badge}</Badge></CardBadges> : null

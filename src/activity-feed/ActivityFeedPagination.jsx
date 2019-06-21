@@ -21,7 +21,7 @@ export default class ActivityFeedPagination extends React.Component {
     isLoading: false,
   }
 
-	render() {
+  render() {
     const { onLoadMore, isLoading } = this.props
 
     return (
@@ -32,7 +32,9 @@ export default class ActivityFeedPagination extends React.Component {
             onClick={onLoadMore}
             buttonColour="#dee0e2"
             buttonTextColour="#000"
-          >Show more activity</Button>
+          >
+          Show more activity
+          </Button>
         </LoadingBox>
       </Pagination>
     )

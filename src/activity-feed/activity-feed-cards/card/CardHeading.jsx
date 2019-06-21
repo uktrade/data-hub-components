@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
 import { H3, Link } from 'govuk-react'
+import PropTypes from 'prop-types'
 
 const Heading = styled(H3)`
   font-weight: normal;
@@ -14,6 +15,13 @@ const Heading = styled(H3)`
 `
 
 export default class CardHeading extends React.Component {
+  static propTypes = {
+    link: PropTypes.shape({
+      url: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+    }).isRequired,
+  }
+
   render() {
     const { link } = this.props
 

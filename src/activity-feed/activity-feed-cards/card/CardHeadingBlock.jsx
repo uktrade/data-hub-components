@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
 import { H3 } from 'govuk-react'
+import PropTypes from 'prop-types'
 
 const BlockHeading = styled(H3)`
   display: inline-block;
@@ -13,6 +14,10 @@ const BlockHeading = styled(H3)`
 `
 
 export default class CardBlockHeading extends React.Component {
+  static propTypes = {
+    text: PropTypes.string.isRequired,
+  }
+
   render() {
     const { text } = this.props
 
