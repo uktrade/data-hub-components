@@ -420,6 +420,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -453,8 +454,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -588,6 +591,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -621,8 +625,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -756,6 +762,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -789,8 +796,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -924,6 +933,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -957,8 +967,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1092,6 +1104,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1125,8 +1138,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1260,6 +1275,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1293,8 +1309,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1428,6 +1446,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1461,8 +1480,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1596,6 +1617,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1629,8 +1651,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1764,6 +1788,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1797,8 +1822,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1932,6 +1959,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1965,8 +1993,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2100,6 +2130,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2133,8 +2164,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2268,6 +2301,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2301,8 +2335,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2436,6 +2472,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2469,8 +2506,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2604,6 +2643,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2637,8 +2677,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2772,6 +2814,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2805,8 +2848,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2940,6 +2985,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2973,8 +3019,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -3108,6 +3156,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -3141,8 +3190,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -3276,6 +3327,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -3309,8 +3361,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -3444,6 +3498,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -3477,8 +3532,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -3612,6 +3669,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -3645,8 +3703,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -4028,6 +4088,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -4061,8 +4122,10 @@ exports[`ActivityFeed when there is a single activity should render single activ
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
