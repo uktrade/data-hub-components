@@ -173,6 +173,7 @@ exports[`ActivityFeed renders single activity 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -206,8 +207,10 @@ exports[`ActivityFeed renders single activity 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -369,6 +372,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -402,8 +406,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -537,6 +543,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -570,8 +577,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -705,6 +714,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -738,8 +748,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -873,6 +885,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -906,8 +919,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1041,6 +1056,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1074,8 +1090,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1209,6 +1227,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1242,8 +1261,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1377,6 +1398,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1410,8 +1432,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1545,6 +1569,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1578,8 +1603,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1713,6 +1740,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1746,8 +1774,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -1881,6 +1911,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -1914,8 +1945,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2049,6 +2082,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2082,8 +2116,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2217,6 +2253,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2250,8 +2287,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2385,6 +2424,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2418,8 +2458,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2553,6 +2595,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2586,8 +2629,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2721,6 +2766,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2754,8 +2800,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -2889,6 +2937,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -2922,8 +2971,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -3057,6 +3108,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -3090,8 +3142,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -3225,6 +3279,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -3258,8 +3313,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -3393,6 +3450,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -3426,8 +3484,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>
@@ -3561,6 +3621,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                       >
                         john@example.com
                       </a>
+                       
                     </span>
                   </td>
                 </tr>
@@ -3594,8 +3655,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
-                        mariobros@dit.com
+                        mariobros@dit.com,
                       </a>
+                       
+                      Digital Data Hub - Live Service
                     </span>
                   </td>
                 </tr>

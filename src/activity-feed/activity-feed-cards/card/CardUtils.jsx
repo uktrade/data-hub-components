@@ -6,14 +6,16 @@ import {
 import { Link } from 'govuk-react'
 import React from 'react'
 
-const createEmailAddressMarkup = ({ id, name, emailAddress }) => {
+const createEmailAddressMarkup = ({ id, name, emailAddress, teamName }) => {
   if (!name || !emailAddress) {
     return null
   }
 
+  const formattedEmailAddress = teamName ? `${emailAddress},` : emailAddress
+
   return (
     <span key={id}>
-      {name}, <Link href={`mailto:${emailAddress}`}>{emailAddress}</Link>
+      {name}, <Link href={`mailto:${emailAddress}`}>{formattedEmailAddress}</Link> {teamName}
     </span>
   )
 }
@@ -33,13 +35,15 @@ const createJobTitleMarkup = ({ id, url, name, jobTitle }) => {
 }
 
 const getPeople = (activity, personSubType) => {
-  return map(filter(activity.object.attributedTo, ({ type }) => {
+  const { attributedTo } = activity.object
+  return map(filter(attributedTo, ({ type }) => {
     return includes(type, `dit:${personSubType}`)
-  }), ({ id, url, name, 'dit:jobTitle': jobTitle, 'dit:emailAddress': emailAddress }) => {
+  }), ({ id, url, name, 'dit:jobTitle': jobTitle, 'dit:emailAddress': emailAddress, 'dit:team': team }) => {
     return {
       id,
       url,
       name,
+      teamName: team ? team.name : null,
       jobTitle,
       emailAddress,
     }

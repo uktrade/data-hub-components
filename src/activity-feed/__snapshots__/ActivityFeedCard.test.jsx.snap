@@ -139,6 +139,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                 >
                   cmuuser1test@mobile.ukti.gov.uk
                 </a>
+                 
               </span>
             </td>
           </tr>
@@ -717,6 +718,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
                 >
                   cmuuser1test@mobile.ukti.gov.uk
                 </a>
+                 
               </span>
             </td>
           </tr>
@@ -1006,6 +1008,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                 >
                   john@example.com
                 </a>
+                 
               </span>
             </td>
           </tr>
@@ -1039,8 +1042,10 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                   href="mailto:mariobros@dit.com"
                   muted={false}
                 >
-                  mariobros@dit.com
+                  mariobros@dit.com,
                 </a>
+                 
+                Digital Data Hub - Live Service
               </span>
             </td>
           </tr>
@@ -1175,6 +1180,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                 >
                   john@example.com
                 </a>
+                 
               </span>
             </td>
           </tr>
@@ -1208,8 +1214,10 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                   href="mailto:mariobros@dit.com"
                   muted={false}
                 >
-                  mariobros@dit.com
+                  mariobros@dit.com,
                 </a>
+                 
+                Digital Data Hub - Live Service
               </span>
             </td>
           </tr>
@@ -1344,6 +1352,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                 >
                   john@example.com
                 </a>
+                 
               </span>
             </td>
           </tr>
@@ -1377,8 +1386,10 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                   href="mailto:mariobros@dit.com"
                   muted={false}
                 >
-                  mariobros@dit.com
+                  mariobros@dit.com,
                 </a>
+                 
+                Digital Data Hub - Live Service
               </span>
             </td>
           </tr>
@@ -1513,6 +1524,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                 >
                   john@example.com
                 </a>
+                 
               </span>
             </td>
           </tr>
@@ -1546,8 +1558,10 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                   href="mailto:mariobros@dit.com"
                   muted={false}
                 >
-                  mariobros@dit.com
+                  mariobros@dit.com,
                 </a>
+                 
+                Digital Data Hub - Live Service
               </span>
             </td>
           </tr>
@@ -1682,6 +1696,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
                 >
                   john@example.com
                 </a>
+                 
               </span>
             </td>
           </tr>
@@ -1715,8 +1730,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
                   href="mailto:mariobros@dit.com"
                   muted={false}
                 >
-                  mariobros@dit.com
+                  mariobros@dit.com,
                 </a>
+                 
+                Digital Data Hub - Live Service
               </span>
             </td>
           </tr>
@@ -1853,6 +1870,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                 >
                   john@example.com
                 </a>
+                 
               </span>
             </td>
           </tr>
@@ -1886,8 +1904,10 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                   href="mailto:mariobros@dit.com"
                   muted={false}
                 >
-                  mariobros@dit.com
+                  mariobros@dit.com,
                 </a>
+                 
+                Digital Data Hub - Live Service
               </span>
             </td>
           </tr>
