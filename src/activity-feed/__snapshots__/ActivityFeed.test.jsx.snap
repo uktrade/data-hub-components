@@ -5,10 +5,10 @@ exports[`ActivityFeed renders empty feed 1`] = `
   className="sc-lkqHmb cseOUX"
 >
   <div
-    className="sc-exAgwC boTjBp"
+    className="sc-exAgwC fPSyDN"
   >
     <div
-      className="sc-cQFLBn gyLMVy"
+      className="sc-cQFLBn hIFkBR"
     >
       <h2
         className="sc-jDwBTQ iexTys"
@@ -18,7 +18,7 @@ exports[`ActivityFeed renders empty feed 1`] = `
       </h2>
     </div>
     <div
-      className="sc-gojNiO hRCWHk"
+      className="sc-gojNiO hzESrl"
     />
   </div>
   <ol
@@ -32,10 +32,10 @@ exports[`ActivityFeed renders its children 1`] = `
   className="sc-lkqHmb cseOUX"
 >
   <div
-    className="sc-exAgwC boTjBp"
+    className="sc-exAgwC fPSyDN"
   >
     <div
-      className="sc-cQFLBn gyLMVy"
+      className="sc-cQFLBn hIFkBR"
     >
       <h2
         className="sc-jDwBTQ iexTys"
@@ -45,7 +45,7 @@ exports[`ActivityFeed renders its children 1`] = `
       </h2>
     </div>
     <div
-      className="sc-gojNiO hRCWHk"
+      className="sc-gojNiO hzESrl"
     />
   </div>
   <ol
@@ -62,10 +62,10 @@ exports[`ActivityFeed renders single activity 1`] = `
   className="sc-lkqHmb cseOUX"
 >
   <div
-    className="sc-exAgwC boTjBp"
+    className="sc-exAgwC fPSyDN"
   >
     <div
-      className="sc-cQFLBn gyLMVy"
+      className="sc-cQFLBn hIFkBR"
     >
       <h2
         className="sc-jDwBTQ iexTys"
@@ -75,7 +75,7 @@ exports[`ActivityFeed renders single activity 1`] = `
       </h2>
     </div>
     <div
-      className="sc-gojNiO hRCWHk"
+      className="sc-gojNiO hzESrl"
     />
   </div>
   <ol
@@ -254,10 +254,10 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
   className="sc-lkqHmb cseOUX"
 >
   <div
-    className="sc-exAgwC boTjBp"
+    className="sc-exAgwC fPSyDN"
   >
     <div
-      className="sc-cQFLBn gyLMVy"
+      className="sc-cQFLBn hIFkBR"
     >
       <h2
         className="sc-jDwBTQ iexTys"
@@ -267,7 +267,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
       </h2>
     </div>
     <div
-      className="sc-gojNiO hRCWHk"
+      className="sc-gojNiO hzESrl"
     />
   </div>
   <ol
@@ -3782,10 +3782,10 @@ exports[`ActivityFeed renders with loader 1`] = `
   className="sc-lkqHmb cseOUX"
 >
   <div
-    className="sc-exAgwC boTjBp"
+    className="sc-exAgwC fPSyDN"
   >
     <div
-      className="sc-cQFLBn gyLMVy"
+      className="sc-cQFLBn hIFkBR"
     >
       <h2
         className="sc-jDwBTQ iexTys"
@@ -3795,7 +3795,7 @@ exports[`ActivityFeed renders with loader 1`] = `
       </h2>
     </div>
     <div
-      className="sc-gojNiO hRCWHk"
+      className="sc-gojNiO hzESrl"
     />
   </div>
   <ol
