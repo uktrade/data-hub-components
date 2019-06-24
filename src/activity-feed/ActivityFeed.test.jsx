@@ -18,7 +18,7 @@ describe('ActivityFeed', () => {
 
   test('renders single activity', () => {
     const tree = renderer
-      .create(<ActivityFeed totalActivities={1} activities={[interactionActivityFixture]}/>)
+      .create(<ActivityFeed totalActivities={1} activities={[interactionActivityFixture]} />)
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
@@ -28,12 +28,10 @@ describe('ActivityFeed', () => {
       .create(<ActivityFeed
         totalActivities={20}
         activities={
-          Array.from({ length: 20 }, (e, i) => {
-            return {
-              ...interactionActivityFixture,
-              id: i,
-            }
-          })
+          Array.from({ length: 20 }, (e, i) => ({
+            ...interactionActivityFixture,
+            id: i,
+          }))
         }
         hasMore={true}
       />)
@@ -47,7 +45,7 @@ describe('ActivityFeed', () => {
         <ActivityFeed
           isLoading={true}
           hasMore={true}
-        />
+        />,
       )
       .toJSON()
     expect(tree).toMatchSnapshot()
@@ -58,13 +56,9 @@ describe('ActivityFeed', () => {
       .create(
         <ActivityFeed>
           <div>Child element to test</div>
-        </ActivityFeed>
+        </ActivityFeed>,
       )
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
 })
-
-
-
-

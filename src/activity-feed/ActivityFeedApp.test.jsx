@@ -18,24 +18,20 @@ describe('ActivityFeedApp', () => {
       .reply(200, esResults)
 
     renderer.create(
-        <ActivityFeedApp
-          addContentText="Add interaction"
-          addContentLink={addContentLink}
-          apiEndpoint={apiEndpoint}
-          render={( state ) => {
-            if (state.error) {
-              fail('Exception raised.')
-            }
-            if (!state.isLoading) {
-              expect(state).toMatchSnapshot()
-              done()
-            }
-          }}
-        />
-      )
+      <ActivityFeedApp
+        addContentText="Add interaction"
+        addContentLink={addContentLink}
+        apiEndpoint={apiEndpoint}
+        render={(state) => {
+          if (state.error) {
+            throw Error('Exception raised.')
+          }
+          if (!state.isLoading) {
+            expect(state).toMatchSnapshot()
+            done()
+          }
+        }}
+      />,
+    )
   })
 })
-
-
-
-

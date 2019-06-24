@@ -1,5 +1,6 @@
 import React from 'react'
 import { get } from 'lodash'
+import PropTypes from 'prop-types'
 
 import {
   Card,
@@ -11,15 +12,19 @@ import {
   CardTable,
 } from './card'
 
-import CardUtils from "./card/CardUtils"
+import CardUtils from './card/CardUtils'
 import DateUtils from '../../utils/DateUtils'
 import NumberUtils from '../../utils/NumberUtils'
 
 const TITLES = {
-  add: 'New investment project added'
+  add: 'New investment project added',
 }
 
 export default class InvestmentProject extends React.Component {
+  static propTypes = {
+    activity: PropTypes.object.isRequired,
+  }
+
   static canRender(activity) {
     return CardUtils.canRenderByTypes(activity, [
       'dit:InvestmentProject',
@@ -50,20 +55,21 @@ export default class InvestmentProject extends React.Component {
       <Card>
         <CardContent>
           <CardHeadingBlock text={`${title} - ${investmentType}`} />
-          <CardHeading link={{ url, text: name }}/>
+          <CardHeading link={{ url, text: name }} />
           <CardDetails
             summary="Key details and people for this project"
-            link={{ url, text: 'Go to the investment project detail page' }}>
+            link={{ url, text: 'Go to the investment project detail page' }}
+          >
             <CardTable rows={
               [
                 { header: 'Investment Type', content: investmentType },
                 { header: 'Added by', content: addedBy },
                 { header: 'Estimated land date', content: estimatedLandDate },
                 { header: 'Company contact(s)', content: contacts },
-                { header: 'Total Investment', content:  totalInvestment },
-                { header: 'Capital expenditure value', content: foreignEquityInvestment},
-                { header: 'Gross value added (GVA)', content: grossValueAdded},
-                { header: 'Number of new jobs', content: numberNewJobs},
+                { header: 'Total Investment', content: totalInvestment },
+                { header: 'Capital expenditure value', content: foreignEquityInvestment },
+                { header: 'Gross value added (GVA)', content: grossValueAdded },
+                { header: 'Number of new jobs', content: numberNewJobs },
               ]}
             />
           </CardDetails>

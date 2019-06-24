@@ -22,6 +22,7 @@ const ActivityFeedCardList = styled('ol')`
 
 export default class ActivityFeed extends React.Component {
   static propTypes = {
+    children: PropTypes.node,
     activities: PropTypes.arrayOf(PropTypes.object),
     onLoadMore: PropTypes.func,
     hasMore: PropTypes.bool,
@@ -32,9 +33,13 @@ export default class ActivityFeed extends React.Component {
   }
 
   static defaultProps = {
+    children: null,
     activities: [],
+    onLoadMore: () => {},
     hasMore: false,
     isLoading: false,
+    addContentText: null,
+    addContentLink: null,
     totalActivities: 0,
   }
 
@@ -47,6 +52,7 @@ export default class ActivityFeed extends React.Component {
       addContentText,
       addContentLink,
       totalActivities,
+      children,
     } = this.props
 
     return (
@@ -58,16 +64,16 @@ export default class ActivityFeed extends React.Component {
         />
 
         <ActivityFeedCardList>
-          {activities.map(activity => {
-            return <li key={activity.id}>
+          {activities.map(activity => (
+            <li key={activity.id}>
               <ActivityFeedCard activity={activity} />
             </li>
-          })}
+          ))}
         </ActivityFeedCardList>
 
         {hasMore && <ActivityFeedPagination isLoading={isLoading} onLoadMore={onLoadMore} />}
 
-        {this.props.children}
+        {children}
       </ActivityFeedContainer>
     )
   }

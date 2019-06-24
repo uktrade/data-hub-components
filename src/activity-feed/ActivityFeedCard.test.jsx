@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer'
 import moment from 'moment'
 import { set } from 'lodash'
 
+import MockDate from 'mockdate'
 import ActivityFeedCard from './ActivityFeedCard'
 import interactionActivityFixture from '../../fixtures/activity_feed/interactions/interaction'
 import serviceDeliveryActivityFixture from '../../fixtures/activity_feed/interactions/service_delivery'
@@ -11,7 +12,6 @@ import investmentProjectsFDIFixture from '../../fixtures/activity_feed/investmen
 import investmentProjectsNonFDIFixture from '../../fixtures/activity_feed/investment_projects/project_added_non_fdi'
 import orderAddedFixture from '../../fixtures/activity_feed/omis/order_added'
 
-import MockDate from 'mockdate'
 
 // Lock the date so moment's relative date doesn't break our deterministic tests.
 MockDate.set(1559750582706)
@@ -20,7 +20,7 @@ describe('ActivityFeedCard', () => {
   describe('when the interaction is empty', () => {
     test('should render null', () => {
       const tree = renderer
-        .create(<ActivityFeedCard activity={{}}/>)
+        .create(<ActivityFeedCard activity={{}} />)
         .toJSON()
       expect(tree).toBeNull()
     })
@@ -37,7 +37,7 @@ describe('ActivityFeedCard', () => {
 
   describe('when the interaction is a draft in the past', () => {
     test('should render interaction activity with "Incomplete interaction" badge', () => {
-      const fixture = { ...interactionActivityFixture };
+      const fixture = { ...interactionActivityFixture }
       set(fixture, 'object.dit:status', 'draft')
       set(fixture, 'object.startTime', moment().subtract(1, 'years').toISOString())
       const tree = renderer
@@ -49,7 +49,7 @@ describe('ActivityFeedCard', () => {
 
   describe('when the interaction is a draft and upcoming', () => {
     test('should render interaction activity with "Upcoming interaction" badge', () => {
-      const fixture = { ...interactionActivityFixture };
+      const fixture = { ...interactionActivityFixture }
       set(fixture, 'object.dit:status', 'draft')
       set(fixture, 'object.startTime', moment().add(1, 'days').toISOString())
       const tree = renderer
@@ -61,7 +61,7 @@ describe('ActivityFeedCard', () => {
 
   describe('when the interaction is a draft and archived', () => {
     test('should render interaction activity with "Cancelled interaction" badge', () => {
-      const fixture = { ...interactionActivityFixture };
+      const fixture = { ...interactionActivityFixture }
       set(fixture, 'object.dit:status', 'draft')
       set(fixture, 'object.dit:archived', true)
       const tree = renderer
@@ -73,7 +73,7 @@ describe('ActivityFeedCard', () => {
 
   describe('when the interaction is complete', () => {
     test('should render interaction activity with "Completed interaction" badge', () => {
-      const fixture = { ...interactionActivityFixture };
+      const fixture = { ...interactionActivityFixture }
       set(fixture, 'object.dit:status', 'complete')
       const tree = renderer
         .create(<ActivityFeedCard activity={fixture} />)
@@ -97,8 +97,9 @@ describe('ActivityFeedCard', () => {
         .create(<ActivityFeedCard activity={{
           object: {
             'dit:subject': 'subject',
-          }
-        }}/>)
+          },
+        }}
+        />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -109,8 +110,7 @@ describe('ActivityFeedCard', () => {
       const interactionWithNoPeople = { ...interactionActivityFixture }
       set(interactionWithNoPeople,
         'object.attributedTo',
-        interactionActivityFixture.object.attributedTo.filter(a => !a.type.includes('Person'))
-      )
+        interactionActivityFixture.object.attributedTo.filter(a => !a.type.includes('Person')))
 
       const tree = renderer
         .create(<ActivityFeedCard activity={interactionWithNoPeople} />)
@@ -171,7 +171,3 @@ describe('ActivityFeedCard', () => {
     })
   })
 })
-
-
-
-

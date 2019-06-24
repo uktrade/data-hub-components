@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Table } from 'govuk-react'
@@ -21,6 +22,10 @@ class DetailsRow extends React.Component {
     children: PropTypes.node,
   }
 
+  static defaultProps = {
+    children: null,
+  }
+
   render() {
     const { header, children } = this.props
 
@@ -30,24 +35,31 @@ class DetailsRow extends React.Component {
 
     return (
       <Table.Row>
-        <Table.CellHeader style={{fontWeight: 'normal', border: 0}}>{header}</Table.CellHeader>
-        <Table.Cell style={{border: 0}}>{children}</Table.Cell>
+        <Table.CellHeader style={{ fontWeight: 'normal', border: 0 }}>{header}</Table.CellHeader>
+        <Table.Cell style={{ border: 0 }}>{children}</Table.Cell>
       </Table.Row>
     )
   }
 }
 
 export default class CardTable extends React.Component {
+  static propTypes = {
+    rows: PropTypes.arrayOf(PropTypes.shape({
+      header: PropTypes.string,
+      content: PropTypes.node,
+    })).isRequired,
+  }
+
   render() {
     const { rows } = this.props
 
     return (
       <GovUkTable>
-        {rows.map(({ header, content }, i) => {
-          return <DetailsRow header={header} key={i}>
+        {rows.map(({ header, content }) => (
+          <DetailsRow header={header} key={header}>
             {content}
           </DetailsRow>
-        })}
+        ))}
       </GovUkTable>
     )
   }

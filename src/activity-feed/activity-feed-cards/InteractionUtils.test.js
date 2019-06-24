@@ -11,7 +11,7 @@ describe('InteractionUtils.js', () => {
             type: 'dit:Interaction',
             'dit:status': 'draft',
             'dit:archived': true,
-          }
+          },
         })
 
         expect(actual).toEqual({
@@ -28,8 +28,8 @@ describe('InteractionUtils.js', () => {
           object: {
             type: 'dit:Interaction',
             'dit:status': 'draft',
-            'startTime': moment().add(1, 'days').toISOString(),
-          }
+            startTime: moment().add(1, 'days').toISOString(),
+          },
         })
 
         expect(actual).toEqual({
@@ -46,8 +46,8 @@ describe('InteractionUtils.js', () => {
           object: {
             type: 'dit:Interaction',
             'dit:status': 'draft',
-            'startTime': moment().subtract(1, 'days').toISOString(),
-          }
+            startTime: moment().subtract(1, 'days').toISOString(),
+          },
         })
 
         expect(actual).toEqual({
@@ -64,7 +64,7 @@ describe('InteractionUtils.js', () => {
           object: {
             type: 'dit:Interaction',
             'dit:status': 'complete',
-          }
+          },
         })
 
         expect(actual).toEqual({
@@ -81,7 +81,7 @@ describe('InteractionUtils.js', () => {
           object: {
             type: 'dit:ServiceDelivery',
             'dit:status': 'complete',
-          }
+          },
         })
 
         expect(actual).toEqual({

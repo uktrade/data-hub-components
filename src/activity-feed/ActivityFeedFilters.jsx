@@ -9,9 +9,9 @@ import {
 } from 'govuk-react'
 
 export default class ActivityFeedFilters extends React.Component {
-	render() {
+  render() {
     return (
-      <Details summary="Filter and sort activity" style={{fontSize: '100%', marginBottom: 0}}>
+      <Details summary="Filter and sort activity" style={{ fontSize: '100%', marginBottom: 0 }}>
         <form>
           <Fieldset>
             <Fieldset.Legend>Show me</Fieldset.Legend>
@@ -19,7 +19,7 @@ export default class ActivityFeedFilters extends React.Component {
               <GridCol>
                 <FormGroup>
                   <Checkbox>My activity</Checkbox>
-                  <Checkbox>My team's activity</Checkbox>
+                  <Checkbox>My team&apos;s activity</Checkbox>
                 </FormGroup>
               </GridCol>
             </GridRow>

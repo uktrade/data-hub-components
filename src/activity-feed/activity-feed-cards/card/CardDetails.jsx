@@ -1,7 +1,8 @@
 import React from 'react'
-import {Details, Link} from 'govuk-react'
+import { Details, Link } from 'govuk-react'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
+import PropTypes from 'prop-types'
 
 const GovUkDetails = styled(Details)`
   font-size: 100%;
@@ -19,8 +20,17 @@ const GovUkDetails = styled(Details)`
 `
 
 export default class CardDetails extends React.Component {
+  static propTypes = {
+    summary: PropTypes.string.isRequired,
+    link: PropTypes.shape({
+      url: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+    }).isRequired,
+    children: PropTypes.node.isRequired,
+  }
+
   render() {
-    const { summary, children, link } = this.props
+    const { summary, link, children } = this.props
 
     return (
       <GovUkDetails summary={summary}>

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import PropTypes from 'prop-types'
 import {
   Card,
   CardContent,
@@ -12,6 +13,10 @@ import CardUtils from './card/CardUtils'
 import InteractionUtils from './InteractionUtils'
 
 export default class Interaction extends React.Component {
+  static propTypes = {
+    activity: PropTypes.object.isRequired,
+  }
+
   static canRender(activity) {
     return CardUtils.canRenderByTypes(activity, [
       'dit:Interaction',
@@ -29,16 +34,19 @@ export default class Interaction extends React.Component {
     return (
       <Card isUpcoming={transformed.isUpcoming}>
         <CardContent>
-          <CardHeading link={{ url: transformed.url, text: transformed.subject }}></CardHeading>
-          <CardDetails summary={`View ${transformed.typeText} details`}
-                       link={{ url: transformed.url, text: `Go to the ${transformed.typeText} detail page` }}>
+          <CardHeading link={{ url: transformed.url, text: transformed.subject }} />
+          <CardDetails
+            summary={`View ${transformed.typeText} details`}
+            link={{ url: transformed.url, text: `Go to the ${transformed.typeText} detail page` }}
+          >
             <CardTable rows={
               [
                 { header: 'Contact(s)', content: CardUtils.getPeopleAsList(activity, 'Contact') },
                 { header: 'Adviser(s)', content: CardUtils.getPeopleAsList(activity, 'Adviser') },
                 { header: 'Services', content: transformed.service },
               ]
-            } />
+            }
+            />
           </CardDetails>
         </CardContent>
         <CardMeta startTime={transformed.startTime} badge={transformed.badge} />

@@ -19,18 +19,18 @@ const BADGE_LABELS = {
 
 const getStatus = (activity) => {
   const apiStatus = get(activity, 'object.dit:status')
-  switch (apiStatus) {
-    case STATUS.DRAFT:
-      const isArchived = get(activity, 'object.dit:archived')
-      if (isArchived) {
-        return STATUS.CANCELLED
-      }
-      const startTime = get(activity, 'object.startTime')
-      const isUpcoming = new Date(startTime) > new Date()
-      return isUpcoming ? STATUS.UPCOMING : STATUS.INCOMPLETE
-    case STATUS.COMPLETE:
-      return STATUS.COMPLETE
+
+  if (apiStatus === STATUS.DRAFT) {
+    const isArchived = get(activity, 'object.dit:archived')
+    if (isArchived) {
+      return STATUS.CANCELLED
+    }
+    const startTime = get(activity, 'object.startTime')
+    const isUpcoming = new Date(startTime) > new Date()
+    return isUpcoming ? STATUS.UPCOMING : STATUS.INCOMPLETE
   }
+
+  return STATUS.COMPLETE
 }
 
 const isServiceDelivery = (activity) => {
@@ -41,7 +41,9 @@ const isServiceDelivery = (activity) => {
 export default class CardUtils {
   static transform(activity) {
     const status = getStatus(activity)
-    const badge = isServiceDelivery(activity) ? BADGE_LABELS.COMPLETED_SERVICE_DELIVERY : BADGE_LABELS[status.toUpperCase()]
+    const badge = isServiceDelivery(activity)
+      ? BADGE_LABELS.COMPLETED_SERVICE_DELIVERY
+      : BADGE_LABELS[status.toUpperCase()]
     const isUpcoming = status === STATUS.UPCOMING
     const typeText = isServiceDelivery(activity) ? 'service delivery' : 'interaction'
 

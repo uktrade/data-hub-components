@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
-import ActivityFeed from './ActivityFeed'
 import PropTypes from 'prop-types'
+import ActivityFeed from './ActivityFeed'
 
 export default class ActivityFeedApp extends React.Component {
   static propTypes = {
@@ -14,9 +14,12 @@ export default class ActivityFeedApp extends React.Component {
 
   static defaultProps = {
     queryParams: {},
+    addContentText: null,
+    addContentLink: null,
+    render: null,
   }
 
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       activities: [],
@@ -30,28 +33,12 @@ export default class ActivityFeedApp extends React.Component {
     this.onLoadMore = this.onLoadMore.bind(this)
   }
 
-  async componentDidMount () {
+  async componentDidMount() {
     await this.onLoadMore()
   }
 
-  static async fetchActivities (apiEndpoint, offset, limit, queryParams = {}) {
-    const params = {
-      size: limit,
-      from: offset,
-      ...queryParams,
-    }
-
-    const { data } = await axios.get(apiEndpoint, { params })
-    const { total, hits } = data.hits
-
-    return {
-      total: total,
-      activities: hits.map(hit => hit._source),
-    }
-  }
-
-  async onLoadMore () {
-    const { offset } = this.state
+  async onLoadMore() {
+    const { activities, offset } = this.state
     const { apiEndpoint, queryParams } = this.props
     const limit = 20
 
@@ -60,8 +47,10 @@ export default class ActivityFeedApp extends React.Component {
     })
 
     try {
-      const { activities, total } = await ActivityFeedApp.fetchActivities(apiEndpoint, offset, limit, queryParams)
-      const allActivities = this.state.activities.concat(activities)
+      const { activities: newActivities, total } = await ActivityFeedApp.fetchActivities(
+        apiEndpoint, offset, limit, queryParams,
+      )
+      const allActivities = activities.concat(newActivities)
 
       this.setState({
         activities: allActivities,
@@ -79,7 +68,23 @@ export default class ActivityFeedApp extends React.Component {
     }
   }
 
-  render () {
+  static async fetchActivities(apiEndpoint, offset, limit, queryParams = {}) {
+    const params = {
+      size: limit,
+      from: offset,
+      ...queryParams,
+    }
+
+    const { data } = await axios.get(apiEndpoint, { params })
+    const { total, hits } = data.hits
+
+    return {
+      total,
+      activities: hits.map(hit => hit._source),
+    }
+  }
+
+  render() {
     const { activities, isLoading, hasMore, total, error } = this.state
     const { addContentText, addContentLink, render } = this.props
 
@@ -93,7 +98,8 @@ export default class ActivityFeedApp extends React.Component {
         activities={activities}
         hasMore={hasMore}
         onLoadMore={this.onLoadMore}
-        isLoading={isLoading}>
+        isLoading={isLoading}
+      >
         {isEmptyFeed && !error && <div>There are no activities to show.</div>}
         {error && <div>Error occurred while loading activities.</div>}
         {render && render(this.state, this.props)}

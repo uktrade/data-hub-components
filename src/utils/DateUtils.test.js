@@ -3,7 +3,7 @@ import DateUtils from './DateUtils'
 
 describe('DateUtils.js', () => {
   describe('the format() function', () => {
-    test('should correctly format today\'s date' , () => {
+    test('should correctly format today\'s date', () => {
       const today = moment().format('DD MMM YYYY')
       expect(DateUtils.format()).toEqual(today)
     })

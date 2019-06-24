@@ -1,0 +1,50 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "ecmaVersion": "es6",
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-underscore-dangle": ["error", {"allow": ["_source"]}],
+    "react/prefer-stateless-function": "off",
+    "react/no-multi-comp": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-boolean-value": ["error", "always"],
+    "react/jsx-one-expression-per-line": "off",
+    "react/sort-comp": ["error", { "order": [
+      "lifecycle",
+      "everything-else",
+      "render"
+    ]}],
+    "semi": ["error", "never"],
+    "object-curly-newline": "off",
+    "no-else-return": "off",
+    "arrow-body-style": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**.stories.{js,jsx}"],
+      "rules": {
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+      }
+    },
+    {
+      "files": ["**.test.{js,jsx}"],
+      "env": {
+        "jest": true,
+        "browser": true
+      }
+    }
+  ]
+}
