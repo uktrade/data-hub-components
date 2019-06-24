@@ -2,13 +2,13 @@
 
 exports[`ActivityFeed renders empty feed 1`] = `
 <div
-  className="sc-cbkKFq lnzXex"
+  className="sc-lkqHmb cseOUX"
 >
   <div
-    className="sc-gojNiO epeSzt"
+    className="sc-exAgwC boTjBp"
   >
     <div
-      className="sc-daURTG grzJiW"
+      className="sc-cQFLBn gyLMVy"
     >
       <h2
         className="sc-jDwBTQ iexTys"
@@ -18,24 +18,24 @@ exports[`ActivityFeed renders empty feed 1`] = `
       </h2>
     </div>
     <div
-      className="sc-bXGyLb bDEOtv"
+      className="sc-gojNiO hRCWHk"
     />
   </div>
   <ol
-    className="sc-krvtoX iNpMLf"
+    className="sc-eLExRp glzvHx"
   />
 </div>
 `;
 
 exports[`ActivityFeed renders its children 1`] = `
 <div
-  className="sc-cbkKFq lnzXex"
+  className="sc-lkqHmb cseOUX"
 >
   <div
-    className="sc-gojNiO epeSzt"
+    className="sc-exAgwC boTjBp"
   >
     <div
-      className="sc-daURTG grzJiW"
+      className="sc-cQFLBn gyLMVy"
     >
       <h2
         className="sc-jDwBTQ iexTys"
@@ -45,11 +45,11 @@ exports[`ActivityFeed renders its children 1`] = `
       </h2>
     </div>
     <div
-      className="sc-bXGyLb bDEOtv"
+      className="sc-gojNiO hRCWHk"
     />
   </div>
   <ol
-    className="sc-krvtoX iNpMLf"
+    className="sc-eLExRp glzvHx"
   />
   <div>
     Child element to test
@@ -59,13 +59,13 @@ exports[`ActivityFeed renders its children 1`] = `
 
 exports[`ActivityFeed renders single activity 1`] = `
 <div
-  className="sc-cbkKFq lnzXex"
+  className="sc-lkqHmb cseOUX"
 >
   <div
-    className="sc-gojNiO epeSzt"
+    className="sc-exAgwC boTjBp"
   >
     <div
-      className="sc-daURTG grzJiW"
+      className="sc-cQFLBn gyLMVy"
     >
       <h2
         className="sc-jDwBTQ iexTys"
@@ -75,11 +75,11 @@ exports[`ActivityFeed renders single activity 1`] = `
       </h2>
     </div>
     <div
-      className="sc-bXGyLb bDEOtv"
+      className="sc-gojNiO hRCWHk"
     />
   </div>
   <ol
-    className="sc-krvtoX iNpMLf"
+    className="sc-eLExRp glzvHx"
   >
     <li>
       <div
@@ -251,13 +251,13 @@ exports[`ActivityFeed renders single activity 1`] = `
 
 exports[`ActivityFeed renders with "Load more" link 1`] = `
 <div
-  className="sc-cbkKFq lnzXex"
+  className="sc-lkqHmb cseOUX"
 >
   <div
-    className="sc-gojNiO epeSzt"
+    className="sc-exAgwC boTjBp"
   >
     <div
-      className="sc-daURTG grzJiW"
+      className="sc-cQFLBn gyLMVy"
     >
       <h2
         className="sc-jDwBTQ iexTys"
@@ -267,11 +267,11 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
       </h2>
     </div>
     <div
-      className="sc-bXGyLb bDEOtv"
+      className="sc-gojNiO hRCWHk"
     />
   </div>
   <ol
-    className="sc-krvtoX iNpMLf"
+    className="sc-eLExRp glzvHx"
   >
     <li>
       <div
@@ -3555,7 +3555,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
     </li>
   </ol>
   <div
-    className="sc-eLExRp fqUmPd"
+    className="sc-bXGyLb gNMAOa"
   >
     <div
       className="sc-caSCKo fVQnDO"
@@ -3779,13 +3779,13 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
 
 exports[`ActivityFeed renders with loader 1`] = `
 <div
-  className="sc-cbkKFq lnzXex"
+  className="sc-lkqHmb cseOUX"
 >
   <div
-    className="sc-gojNiO epeSzt"
+    className="sc-exAgwC boTjBp"
   >
     <div
-      className="sc-daURTG grzJiW"
+      className="sc-cQFLBn gyLMVy"
     >
       <h2
         className="sc-jDwBTQ iexTys"
@@ -3795,14 +3795,14 @@ exports[`ActivityFeed renders with loader 1`] = `
       </h2>
     </div>
     <div
-      className="sc-bXGyLb bDEOtv"
+      className="sc-gojNiO hRCWHk"
     />
   </div>
   <ol
-    className="sc-krvtoX iNpMLf"
+    className="sc-eLExRp glzvHx"
   />
   <div
-    className="sc-eLExRp fqUmPd"
+    className="sc-bXGyLb gNMAOa"
   >
     <div
       className="sc-caSCKo fVQnDO"

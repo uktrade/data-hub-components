@@ -91,8 +91,8 @@ describe('ActivityFeedCard', () => {
     })
   })
 
-  describe('when there is an activity item of arbitrary type', () => {
-    test('should render default activity', () => {
+  describe('when there is an activity item of unknown type', () => {
+    test('should not render an activity card', () => {
       const tree = renderer
         .create(<ActivityFeedCard activity={{
           object: {
