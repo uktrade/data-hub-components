@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ActivityFeed renders empty feed 1`] = `
+exports[`ActivityFeed when activities are being loaded should display a loader 1`] = `
 <div
   className="sc-eLExRp dieyYx"
 >
@@ -24,10 +24,230 @@ exports[`ActivityFeed renders empty feed 1`] = `
   <ol
     className="sc-cbkKFq cOJAMG"
   />
+  <div
+    className="sc-lkqHmb gJqCYV"
+  >
+    <div
+      className="sc-fAjcbJ jVWwyG"
+    >
+      <div
+        className="sc-caSCKo BUyAm"
+      >
+        <svg
+          className="icon-loading"
+          fill="#0b0c0c"
+          height="50px"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+          version="1.1"
+          viewBox="-25 -25 50 50"
+          width="50px"
+        >
+          <title>
+            Loading
+          </title>
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "0ms",
+              }
+            }
+            transform="rotate(0, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "83ms",
+              }
+            }
+            transform="rotate(30, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "166ms",
+              }
+            }
+            transform="rotate(60, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "249ms",
+              }
+            }
+            transform="rotate(90, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "332ms",
+              }
+            }
+            transform="rotate(120, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "415ms",
+              }
+            }
+            transform="rotate(150, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "498ms",
+              }
+            }
+            transform="rotate(180, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "581ms",
+              }
+            }
+            transform="rotate(210, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "664ms",
+              }
+            }
+            transform="rotate(240, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "747ms",
+              }
+            }
+            transform="rotate(270, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "830ms",
+              }
+            }
+            transform="rotate(300, 0, 2) translate(10 0)"
+            width="12"
+          />
+          <rect
+            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
+            fill="#0b0c0c"
+            height="5"
+            opacity="0"
+            rx="2.5"
+            ry="2.5"
+            style={
+              Object {
+                "animationDelay": "913ms",
+              }
+            }
+            transform="rotate(330, 0, 2) translate(10 0)"
+            width="12"
+          />
+        </svg>
+        <div
+          className="overlay sc-gisBJw goEqoi"
+        />
+      </div>
+      <button
+        className="sc-jTzLTM evXbRq"
+        disabled={true}
+        onClick={[Function]}
+      >
+        Show more activity
+      </button>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`ActivityFeed renders its children 1`] = `
+exports[`ActivityFeed when the activity feed has child elements should render the children 1`] = `
 <div
   className="sc-eLExRp dieyYx"
 >
@@ -57,7 +277,7 @@ exports[`ActivityFeed renders its children 1`] = `
 </div>
 `;
 
-exports[`ActivityFeed renders single activity 1`] = `
+exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
 <div
   className="sc-eLExRp dieyYx"
 >
@@ -71,7 +291,7 @@ exports[`ActivityFeed renders single activity 1`] = `
         className="sc-jAaTju gvcKNJ"
         size="LARGE"
       >
-        1 activity
+        Activities
       </h2>
     </div>
     <div
@@ -80,180 +300,11 @@ exports[`ActivityFeed renders single activity 1`] = `
   </div>
   <ol
     className="sc-cbkKFq cOJAMG"
-  >
-    <li>
-      <div
-        className="sc-bdVaJa bitMfj"
-      >
-        <div
-          className="sc-cLQEGU kmbhXR"
-        >
-          <div
-            className="sc-hORach hWIXLH"
-          >
-            <h3
-              className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
-              size="MEDIUM"
-            >
-              <a
-                className="sc-htpNat jdOrDl"
-                href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
-                muted={false}
-              >
-                Invited to Technology Roundtable
-              </a>
-            </h3>
-          </div>
-          <div
-            className="sc-bAeIUo XzIGe"
-          >
-            02 May 2019
-            <div
-              className="sc-iujRgT bQDONv"
-            >
-              <span
-                className="sc-GMQeP gJuUpj"
-              >
-                Interaction
-              </span>
-            </div>
-          </div>
-        </div>
-        <details
-          className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
-          open={false}
-        >
-          <summary
-            className="sc-iAyFgw dcdfbw"
-          >
-            <span
-              className="sc-hSdWYo ctAAoI"
-            >
-              View interaction details
-            </span>
-          </summary>
-          <div
-            className="sc-eHgmQL jEgifR"
-          >
-            <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
-            >
-              <tbody
-                className="sc-ibxdXY clQDsv"
-              >
-                <tr
-                  className="sc-bwCtUz kLbHbK"
-                >
-                  <th
-                    className="sc-iQKALj hLpCNL"
-                    style={
-                      Object {
-                        "border": 0,
-                        "fontWeight": "normal",
-                      }
-                    }
-                  >
-                    Contact(s)
-                  </th>
-                  <td
-                    className="sc-iQKALj ldWFKA"
-                    style={
-                      Object {
-                        "border": 0,
-                      }
-                    }
-                  >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
-                      >
-                        john@example.com
-                      </a>
-                    </span>
-                  </td>
-                </tr>
-                <tr
-                  className="sc-bwCtUz kLbHbK"
-                >
-                  <th
-                    className="sc-iQKALj hLpCNL"
-                    style={
-                      Object {
-                        "border": 0,
-                        "fontWeight": "normal",
-                      }
-                    }
-                  >
-                    Adviser(s)
-                  </th>
-                  <td
-                    className="sc-iQKALj ldWFKA"
-                    style={
-                      Object {
-                        "border": 0,
-                      }
-                    }
-                  >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
-                      >
-                        mariobros@dit.com
-                      </a>
-                    </span>
-                  </td>
-                </tr>
-                <tr
-                  className="sc-bwCtUz kLbHbK"
-                >
-                  <th
-                    className="sc-iQKALj hLpCNL"
-                    style={
-                      Object {
-                        "border": 0,
-                        "fontWeight": "normal",
-                      }
-                    }
-                  >
-                    Services
-                  </th>
-                  <td
-                    className="sc-iQKALj ldWFKA"
-                    style={
-                      Object {
-                        "border": 0,
-                      }
-                    }
-                  >
-                    Account Management
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <a
-              className="sc-htpNat jdOrDl"
-              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
-              muted={false}
-            >
-              Go to the interaction detail page
-            </a>
-          </div>
-        </details>
-      </div>
-    </li>
-  </ol>
+  />
 </div>
 `;
 
-exports[`ActivityFeed renders with "Load more" link 1`] = `
+exports[`ActivityFeed when there are more activities to load should render with "Load more" link 1`] = `
 <div
   className="sc-eLExRp dieyYx"
 >
@@ -3861,7 +3912,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
 </div>
 `;
 
-exports[`ActivityFeed renders with loader 1`] = `
+exports[`ActivityFeed when there is a single activity should render single activity with appropriate header 1`] = `
 <div
   className="sc-eLExRp dieyYx"
 >
@@ -3875,7 +3926,7 @@ exports[`ActivityFeed renders with loader 1`] = `
         className="sc-jAaTju gvcKNJ"
         size="LARGE"
       >
-        Activities
+        1 activity
       </h2>
     </div>
     <div
@@ -3884,226 +3935,175 @@ exports[`ActivityFeed renders with loader 1`] = `
   </div>
   <ol
     className="sc-cbkKFq cOJAMG"
-  />
-  <div
-    className="sc-lkqHmb gJqCYV"
   >
-    <div
-      className="sc-fAjcbJ jVWwyG"
-    >
+    <li>
       <div
-        className="sc-caSCKo BUyAm"
+        className="sc-bdVaJa bitMfj"
       >
-        <svg
-          className="icon-loading"
-          fill="#0b0c0c"
-          height="50px"
-          preserveAspectRatio="xMidYMid meet"
-          style={
-            Object {
-              "display": "block",
-            }
-          }
-          version="1.1"
-          viewBox="-25 -25 50 50"
-          width="50px"
-        >
-          <title>
-            Loading
-          </title>
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "0ms",
-              }
-            }
-            transform="rotate(0, 0, 2) translate(10 0)"
-            width="12"
-          />
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "83ms",
-              }
-            }
-            transform="rotate(30, 0, 2) translate(10 0)"
-            width="12"
-          />
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "166ms",
-              }
-            }
-            transform="rotate(60, 0, 2) translate(10 0)"
-            width="12"
-          />
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "249ms",
-              }
-            }
-            transform="rotate(90, 0, 2) translate(10 0)"
-            width="12"
-          />
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "332ms",
-              }
-            }
-            transform="rotate(120, 0, 2) translate(10 0)"
-            width="12"
-          />
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "415ms",
-              }
-            }
-            transform="rotate(150, 0, 2) translate(10 0)"
-            width="12"
-          />
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "498ms",
-              }
-            }
-            transform="rotate(180, 0, 2) translate(10 0)"
-            width="12"
-          />
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "581ms",
-              }
-            }
-            transform="rotate(210, 0, 2) translate(10 0)"
-            width="12"
-          />
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "664ms",
-              }
-            }
-            transform="rotate(240, 0, 2) translate(10 0)"
-            width="12"
-          />
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "747ms",
-              }
-            }
-            transform="rotate(270, 0, 2) translate(10 0)"
-            width="12"
-          />
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "830ms",
-              }
-            }
-            transform="rotate(300, 0, 2) translate(10 0)"
-            width="12"
-          />
-          <rect
-            className="Spinner__Rect-sc-1pm4zwa-0 glkcMw"
-            fill="#0b0c0c"
-            height="5"
-            opacity="0"
-            rx="2.5"
-            ry="2.5"
-            style={
-              Object {
-                "animationDelay": "913ms",
-              }
-            }
-            transform="rotate(330, 0, 2) translate(10 0)"
-            width="12"
-          />
-        </svg>
         <div
-          className="overlay sc-gisBJw goEqoi"
-        />
+          className="sc-cLQEGU kmbhXR"
+        >
+          <div
+            className="sc-hORach hWIXLH"
+          >
+            <h3
+              className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+              size="MEDIUM"
+            >
+              <a
+                className="sc-htpNat jdOrDl"
+                href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+                muted={false}
+              >
+                Invited to Technology Roundtable
+              </a>
+            </h3>
+          </div>
+          <div
+            className="sc-bAeIUo XzIGe"
+          >
+            02 May 2019
+            <div
+              className="sc-iujRgT bQDONv"
+            >
+              <span
+                className="sc-GMQeP gJuUpj"
+              >
+                Interaction
+              </span>
+            </div>
+          </div>
+        </div>
+        <details
+          className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+          open={false}
+        >
+          <summary
+            className="sc-iAyFgw dcdfbw"
+          >
+            <span
+              className="sc-hSdWYo ctAAoI"
+            >
+              View interaction details
+            </span>
+          </summary>
+          <div
+            className="sc-eHgmQL jEgifR"
+          >
+            <table
+              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+            >
+              <tbody
+                className="sc-ibxdXY clQDsv"
+              >
+                <tr
+                  className="sc-bwCtUz kLbHbK"
+                >
+                  <th
+                    className="sc-iQKALj hLpCNL"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Contact(s)
+                  </th>
+                  <td
+                    className="sc-iQKALj ldWFKA"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      John Doe
+                      , 
+                      <a
+                        className="sc-htpNat jdOrDl"
+                        href="mailto:john@example.com"
+                        muted={false}
+                      >
+                        john@example.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-bwCtUz kLbHbK"
+                >
+                  <th
+                    className="sc-iQKALj hLpCNL"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Adviser(s)
+                  </th>
+                  <td
+                    className="sc-iQKALj ldWFKA"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      Mario Bros
+                      , 
+                      <a
+                        className="sc-htpNat jdOrDl"
+                        href="mailto:mariobros@dit.com"
+                        muted={false}
+                      >
+                        mariobros@dit.com
+                      </a>
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  className="sc-bwCtUz kLbHbK"
+                >
+                  <th
+                    className="sc-iQKALj hLpCNL"
+                    style={
+                      Object {
+                        "border": 0,
+                        "fontWeight": "normal",
+                      }
+                    }
+                  >
+                    Services
+                  </th>
+                  <td
+                    className="sc-iQKALj ldWFKA"
+                    style={
+                      Object {
+                        "border": 0,
+                      }
+                    }
+                  >
+                    Account Management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a
+              className="sc-htpNat jdOrDl"
+              href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+              muted={false}
+            >
+              Go to the interaction detail page
+            </a>
+          </div>
+        </details>
       </div>
-      <button
-        className="sc-jTzLTM evXbRq"
-        disabled={true}
-        onClick={[Function]}
-      >
-        Show more activity
-      </button>
-    </div>
-  </div>
+    </li>
+  </ol>
 </div>
 `;

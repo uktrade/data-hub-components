@@ -23,7 +23,7 @@ const GovUkDetails = styled(Details)`
   }
 `
 
-export default class CardDetails extends React.Component {
+export default class CardDetails extends React.PureComponent {
   static propTypes = {
     summary: PropTypes.string.isRequired,
     link: PropTypes.shape({

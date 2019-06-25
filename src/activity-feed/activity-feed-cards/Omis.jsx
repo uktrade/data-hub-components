@@ -13,7 +13,7 @@ import {
 
 import CardUtils from './card/CardUtils'
 
-export default class Omis extends React.Component {
+export default class Omis extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
   }

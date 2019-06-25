@@ -8,7 +8,7 @@ const CardContainer = styled('div')`
   padding: ${SPACING.SCALE_3};
 `
 
-export default class Card extends React.Component {
+export default class Card extends React.PureComponent {
   static propTypes = {
     isUpcoming: PropTypes.bool,
     children: PropTypes.node,

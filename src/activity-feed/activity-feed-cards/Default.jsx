@@ -19,7 +19,7 @@ const CardHeaderSubject = styled('div')`
   }
 `
 
-export default class Default extends React.Component {
+export default class Default extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
   }

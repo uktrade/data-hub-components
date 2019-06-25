@@ -16,7 +16,7 @@ const GovUkTable = styled(Table)`
   }
 `
 
-class DetailsRow extends React.Component {
+class DetailsRow extends React.PureComponent {
   static propTypes = {
     header: PropTypes.string.isRequired,
     children: PropTypes.node,

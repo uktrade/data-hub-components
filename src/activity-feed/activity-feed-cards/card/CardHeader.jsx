@@ -7,7 +7,7 @@ const CardHeaderContainer = styled('div')`
   flex-flow: row wrap;
 `
 
-export default class CardHeader extends React.Component {
+export default class CardContent extends React.PureComponent {
   static propTypes = {
     children: PropTypes.node.isRequired,
   }

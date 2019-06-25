@@ -31,7 +31,7 @@ class ActivityFeedDemoApp extends React.Component {
     setTimeout(() => {
       resolve({
         activities: activityFeedFixtures,
-        total: 10,
+        total: 1000,
       })
     }, 1500)
   })

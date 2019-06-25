@@ -32,7 +32,7 @@ const Badge = styled('span')`
   padding: 2px 4px;
 `
 
-export default class CardMeta extends React.Component {
+export default class CardMeta extends React.PureComponent {
   static propTypes = {
     startTime: PropTypes.string.isRequired,
     badge: PropTypes.shape({
