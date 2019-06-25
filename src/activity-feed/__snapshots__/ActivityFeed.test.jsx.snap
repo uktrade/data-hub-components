@@ -114,7 +114,7 @@ exports[`ActivityFeed renders single activity 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -310,7 +310,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -478,7 +478,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -646,7 +646,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -814,7 +814,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -982,7 +982,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -1150,7 +1150,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -1318,7 +1318,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -1486,7 +1486,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -1654,7 +1654,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -1822,7 +1822,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -1990,7 +1990,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -2158,7 +2158,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -2326,7 +2326,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -2494,7 +2494,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -2662,7 +2662,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -2830,7 +2830,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -2998,7 +2998,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -3166,7 +3166,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -3334,7 +3334,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
@@ -3502,7 +3502,7 @@ exports[`ActivityFeed renders with "Load more" link 1`] = `
               <span
                 className="sc-GMQeP gJuUpj"
               >
-                Completed interaction
+                Interaction
               </span>
             </div>
           </div>
