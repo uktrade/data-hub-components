@@ -4,10 +4,9 @@ import PropTypes from 'prop-types'
 
 import {
   Card,
-  CardContent,
   CardDetails,
+  CardHeader,
   CardHeading,
-  CardHeadingBlock,
   CardMeta,
   CardTable,
 } from './card'
@@ -53,28 +52,27 @@ export default class InvestmentProject extends React.Component {
 
     return (
       <Card>
-        <CardContent>
-          <CardHeadingBlock text={`${title} - ${investmentType}`} />
-          <CardHeading link={{ url, text: name }} />
-          <CardDetails
-            summary="Key details and people for this project"
-            link={{ url, text: 'Go to the investment project detail page' }}
-          >
-            <CardTable rows={
-              [
-                { header: 'Investment Type', content: investmentType },
-                { header: 'Added by', content: addedBy },
-                { header: 'Estimated land date', content: estimatedLandDate },
-                { header: 'Company contact(s)', content: contacts },
-                { header: 'Total Investment', content: totalInvestment },
-                { header: 'Capital expenditure value', content: foreignEquityInvestment },
-                { header: 'Gross value added (GVA)', content: grossValueAdded },
-                { header: 'Number of new jobs', content: numberNewJobs },
-              ]}
-            />
-          </CardDetails>
-        </CardContent>
-        <CardMeta startTime={published} />
+        <CardHeader>
+          <CardHeading link={{ url, text: name }} blockText={`${title} - ${investmentType}`} />
+          <CardMeta startTime={published} />
+        </CardHeader>
+        <CardDetails
+          summary="Key details and people for this project"
+          link={{ url, text: 'Go to the investment project detail page' }}
+        >
+          <CardTable rows={
+            [
+              { header: 'Investment Type', content: investmentType },
+              { header: 'Added by', content: addedBy },
+              { header: 'Estimated land date', content: estimatedLandDate },
+              { header: 'Company contact(s)', content: contacts },
+              { header: 'Total Investment', content: totalInvestment },
+              { header: 'Capital expenditure value', content: foreignEquityInvestment },
+              { header: 'Gross value added (GVA)', content: grossValueAdded },
+              { header: 'Number of new jobs', content: numberNewJobs },
+            ]}
+          />
+        </CardDetails>
       </Card>
     )
   }

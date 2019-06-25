@@ -2,1720 +2,1760 @@
 
 exports[`ActivityFeedCard when a New OMIS order is added should render an activity card 1`] = `
 <div
-  className="sc-bdVaJa cCKGim"
+  className="sc-bdVaJa bitMfj"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-hORach ePPHnj sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      New Order (OMIS) added
-    </h3>
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
-    >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://www.datahub.dev.uktrade.io/omis/504b7a34-c083-4e7a-998b-61cbe7b6b269"
-        muted={false}
+      <h3
+        className="sc-gqPbQI gmjEqk sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        EYX193/17
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
+        New Order (OMIS) added
+      </h3>
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          View key details and people for this order
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Country
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                Bahamas
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                UK region
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                South East
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Added by
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  Test CMU 1
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:cmuuser1test@mobile.ukti.gov.uk"
-                    muted={false}
-                  >
-                    cmuuser1test@mobile.ukti.gov.uk
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Company contact
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="https://www.datahub.dev.uktrade.io/contacts/ec1be329-ae82-47a9-9d65-c289f91c39ed/details"
-                    muted={false}
-                  >
-                    Alysia Tolley
-                  </a>
-                   
-                  (Some job title)
-                </span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://www.datahub.dev.uktrade.io/omis/504b7a34-c083-4e7a-998b-61cbe7b6b269"
           muted={false}
         >
-          Go to the order detail page
+          EYX193/17
         </a>
-      </div>
-    </details>
+      </h3>
+    </div>
+    <div
+      className="sc-bAeIUo XzIGe"
+    >
+      20 Jul 2017
+    </div>
   </div>
-  <div
-    className="sc-bMVAic gunhqD"
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
   >
-    20 Jul 2017
-  </div>
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View key details and people for this order
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Country
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Bahamas
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              UK region
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              South East
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Added by
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Test CMU 1
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:cmuuser1test@mobile.ukti.gov.uk"
+                  muted={false}
+                >
+                  cmuuser1test@mobile.ukti.gov.uk
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Company contact
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="https://www.datahub.dev.uktrade.io/contacts/ec1be329-ae82-47a9-9d65-c289f91c39ed/details"
+                  muted={false}
+                >
+                  Alysia Tolley
+                </a>
+                 
+                (Some job title)
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://www.datahub.dev.uktrade.io/omis/504b7a34-c083-4e7a-998b-61cbe7b6b269"
+        muted={false}
+      >
+        Go to the order detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;
 
 exports[`ActivityFeedCard when an investment project is CTI should render the CTI investment project activity card 1`] = `
 <div
-  className="sc-bdVaJa cCKGim"
+  className="sc-bdVaJa bitMfj"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-hORach ePPHnj sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      New investment project added - Commitment to invest
-    </h3>
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
-    >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://www.datahub.dev.uktrade.io/investments/projects/8f2662e9-0691-435f-8edd-7fb9df9d8936"
-        muted={false}
+      <h3
+        className="sc-gqPbQI gmjEqk sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        Aphrodite Mcdonald
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
+        New investment project added - Commitment to invest
+      </h3>
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          Key details and people for this project
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Investment Type
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                Commitment to invest
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Estimated land date
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                01 Oct 1973
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Company contact(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="https://www.datahub.dev.uktrade.io/contacts/82e24a82-0688-424d-911f-2666d3ddcf9b/details"
-                    muted={false}
-                  >
-                    Reece Stevens
-                  </a>
-                   
-                  (Some job title)
-                </span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://www.datahub.dev.uktrade.io/investments/projects/8f2662e9-0691-435f-8edd-7fb9df9d8936"
           muted={false}
         >
-          Go to the investment project detail page
+          Aphrodite Mcdonald
         </a>
-      </div>
-    </details>
+      </h3>
+    </div>
+    <div
+      className="sc-bAeIUo XzIGe"
+    >
+      23 May 2017
+    </div>
   </div>
-  <div
-    className="sc-bMVAic gunhqD"
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
   >
-    23 May 2017
-  </div>
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        Key details and people for this project
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Investment Type
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Commitment to invest
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Estimated land date
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              01 Oct 1973
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Company contact(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="https://www.datahub.dev.uktrade.io/contacts/82e24a82-0688-424d-911f-2666d3ddcf9b/details"
+                  muted={false}
+                >
+                  Reece Stevens
+                </a>
+                 
+                (Some job title)
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://www.datahub.dev.uktrade.io/investments/projects/8f2662e9-0691-435f-8edd-7fb9df9d8936"
+        muted={false}
+      >
+        Go to the investment project detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;
 
 exports[`ActivityFeedCard when an investment project is FDI should render the FDI investment project activity card 1`] = `
 <div
-  className="sc-bdVaJa cCKGim"
+  className="sc-bdVaJa bitMfj"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-hORach ePPHnj sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      New investment project added - FDI
-    </h3>
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
-    >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://www.datahub.dev.uktrade.io/investments/projects/3520b973-0e77-46cf-be75-3585f2f6691e"
-        muted={false}
+      <h3
+        className="sc-gqPbQI gmjEqk sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        Wig factory
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
+        New investment project added - FDI
+      </h3>
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          Key details and people for this project
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Investment Type
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                FDI
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Estimated land date
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                01 Jan 2020
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Company contact(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="https://www.datahub.dev.uktrade.io/contacts/952232d2-1d25-4c3a-bcac-2f3a30a94da9/details"
-                    muted={false}
-                  >
-                    Dean Cox
-                  </a>
-                   
-                  (Some job title)
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Total Investment
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                £1,000,000
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Capital expenditure value
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                £200,000
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Gross value added (GVA)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                £11,620
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Number of new jobs
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                15,400
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://www.datahub.dev.uktrade.io/investments/projects/3520b973-0e77-46cf-be75-3585f2f6691e"
           muted={false}
         >
-          Go to the investment project detail page
+          Wig factory
         </a>
-      </div>
-    </details>
+      </h3>
+    </div>
+    <div
+      className="sc-bAeIUo XzIGe"
+    >
+      05 Mar 2017
+    </div>
   </div>
-  <div
-    className="sc-bMVAic gunhqD"
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
   >
-    05 Mar 2017
-  </div>
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        Key details and people for this project
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Investment Type
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              FDI
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Estimated land date
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              01 Jan 2020
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Company contact(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="https://www.datahub.dev.uktrade.io/contacts/952232d2-1d25-4c3a-bcac-2f3a30a94da9/details"
+                  muted={false}
+                >
+                  Dean Cox
+                </a>
+                 
+                (Some job title)
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Total Investment
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £1,000,000
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Capital expenditure value
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £200,000
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Gross value added (GVA)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £11,620
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Number of new jobs
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              15,400
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://www.datahub.dev.uktrade.io/investments/projects/3520b973-0e77-46cf-be75-3585f2f6691e"
+        muted={false}
+      >
+        Go to the investment project detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;
 
 exports[`ActivityFeedCard when an investment project is Non-FDI should render the Non-FDI investment project activity card 1`] = `
 <div
-  className="sc-bdVaJa cCKGim"
+  className="sc-bdVaJa bitMfj"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-hORach ePPHnj sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      New investment project added - Non-FDI
-    </h3>
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
-    >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://www.datahub.dev.uktrade.io/investments/projects/ff4005e5-f769-43cb-a46f-a483ec20eda7"
-        muted={false}
+      <h3
+        className="sc-gqPbQI gmjEqk sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        Refined Rubber Chicken
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
+        New investment project added - Non-FDI
+      </h3>
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          Key details and people for this project
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Investment Type
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                Non-FDI
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Added by
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  Test CMU 1
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:cmuuser1test@mobile.ukti.gov.uk"
-                    muted={false}
-                  >
-                    cmuuser1test@mobile.ukti.gov.uk
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Estimated land date
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                01 Dec 2018
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Company contact(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="https://www.datahub.dev.uktrade.io/contacts/889dc0e6-a60c-4368-822c-e6b644bfcbf7/details"
-                    muted={false}
-                  >
-                    Ruthie Cole
-                  </a>
-                   
-                  (Some job title)
-                </span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://www.datahub.dev.uktrade.io/investments/projects/ff4005e5-f769-43cb-a46f-a483ec20eda7"
           muted={false}
         >
-          Go to the investment project detail page
+          Refined Rubber Chicken
         </a>
-      </div>
-    </details>
+      </h3>
+    </div>
+    <div
+      className="sc-bAeIUo XzIGe"
+    >
+      03 Oct 2017
+    </div>
   </div>
-  <div
-    className="sc-bMVAic gunhqD"
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
   >
-    03 Oct 2017
-  </div>
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        Key details and people for this project
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Investment Type
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Non-FDI
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Added by
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Test CMU 1
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:cmuuser1test@mobile.ukti.gov.uk"
+                  muted={false}
+                >
+                  cmuuser1test@mobile.ukti.gov.uk
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Estimated land date
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              01 Dec 2018
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Company contact(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="https://www.datahub.dev.uktrade.io/contacts/889dc0e6-a60c-4368-822c-e6b644bfcbf7/details"
+                  muted={false}
+                >
+                  Ruthie Cole
+                </a>
+                 
+                (Some job title)
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://www.datahub.dev.uktrade.io/investments/projects/ff4005e5-f769-43cb-a46f-a483ec20eda7"
+        muted={false}
+      >
+        Go to the investment project detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;
 
 exports[`ActivityFeedCard when the interaction does not have a service should render interaction activity without services 1`] = `
 <div
-  className="sc-bdVaJa cCKGim"
+  className="sc-bdVaJa bitMfj"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
-        muted={false}
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        Invited to Technology Roundtable
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
-      >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          View interaction details
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Contact(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              />
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Adviser(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              />
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Go to the interaction detail page
+          Invited to Technology Roundtable
         </a>
-      </div>
-    </details>
-  </div>
-  <div
-    className="sc-bMVAic gunhqD"
-  >
-    06 Jun 2019
+      </h3>
+    </div>
     <div
-      className="sc-bAeIUo eEATTv"
+      className="sc-bAeIUo XzIGe"
     >
-      <span
-        className="sc-iujRgT hrmgYI"
+      06 Jun 2019
+      <div
+        className="sc-iujRgT bQDONv"
       >
-        Completed interaction
-      </span>
+        <span
+          className="sc-GMQeP hLjrDh"
+        >
+          Completed interaction
+        </span>
+      </div>
     </div>
   </div>
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
+  >
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View interaction details
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Contact(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            />
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            />
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+        muted={false}
+      >
+        Go to the interaction detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;
 
 exports[`ActivityFeedCard when the interaction is a draft and archived should render interaction activity with "Cancelled interaction" badge 1`] = `
 <div
-  className="sc-bdVaJa cCKGim"
+  className="sc-bdVaJa bitMfj"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
-        muted={false}
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        Invited to Technology Roundtable
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
-      >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          View interaction details
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Contact(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  John Doe
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:john@example.com"
-                    muted={false}
-                  >
-                    john@example.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Adviser(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  Mario Bros
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:mariobros@dit.com"
-                    muted={false}
-                  >
-                    mariobros@dit.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Services
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                Account Management
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Go to the interaction detail page
+          Invited to Technology Roundtable
         </a>
-      </div>
-    </details>
-  </div>
-  <div
-    className="sc-bMVAic gunhqD"
-  >
-    06 Jun 2019
+      </h3>
+    </div>
     <div
-      className="sc-bAeIUo eEATTv"
+      className="sc-bAeIUo XzIGe"
     >
-      <span
-        className="sc-iujRgT hrmgYI"
+      06 Jun 2019
+      <div
+        className="sc-iujRgT bQDONv"
       >
-        Cancelled interaction
-      </span>
+        <span
+          className="sc-GMQeP hLjrDh"
+        >
+          Cancelled interaction
+        </span>
+      </div>
     </div>
   </div>
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
+  >
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View interaction details
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Contact(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                John Doe
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:john@example.com"
+                  muted={false}
+                >
+                  john@example.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Mario Bros
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:mariobros@dit.com"
+                  muted={false}
+                >
+                  mariobros@dit.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Services
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Account Management
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+        muted={false}
+      >
+        Go to the interaction detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;
 
 exports[`ActivityFeedCard when the interaction is a draft and upcoming should render interaction activity with "Upcoming interaction" badge 1`] = `
 <div
-  className="sc-bdVaJa jxxdOH"
+  className="sc-bdVaJa cIbqez"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
-        muted={false}
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        Invited to Technology Roundtable
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
-      >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          View interaction details
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Contact(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  John Doe
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:john@example.com"
-                    muted={false}
-                  >
-                    john@example.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Adviser(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  Mario Bros
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:mariobros@dit.com"
-                    muted={false}
-                  >
-                    mariobros@dit.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Services
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                Account Management
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Go to the interaction detail page
+          Invited to Technology Roundtable
         </a>
-      </div>
-    </details>
-  </div>
-  <div
-    className="sc-bMVAic gunhqD"
-  >
-    06 Jun 2019
+      </h3>
+    </div>
     <div
-      className="sc-bAeIUo eEATTv"
+      className="sc-bAeIUo XzIGe"
     >
-      <span
-        className="sc-iujRgT hrmgYI"
+      06 Jun 2019
+      <div
+        className="sc-iujRgT bQDONv"
       >
-        Upcoming interaction
-      </span>
+        <span
+          className="sc-GMQeP hLjrDh"
+        >
+          Upcoming interaction
+        </span>
+      </div>
     </div>
   </div>
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
+  >
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View interaction details
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Contact(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                John Doe
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:john@example.com"
+                  muted={false}
+                >
+                  john@example.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Mario Bros
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:mariobros@dit.com"
+                  muted={false}
+                >
+                  mariobros@dit.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Services
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Account Management
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+        muted={false}
+      >
+        Go to the interaction detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;
 
 exports[`ActivityFeedCard when the interaction is a draft in the past should render interaction activity with "Incomplete interaction" badge 1`] = `
 <div
-  className="sc-bdVaJa cCKGim"
+  className="sc-bdVaJa bitMfj"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
-        muted={false}
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        Invited to Technology Roundtable
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
-      >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          View interaction details
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Contact(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  John Doe
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:john@example.com"
-                    muted={false}
-                  >
-                    john@example.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Adviser(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  Mario Bros
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:mariobros@dit.com"
-                    muted={false}
-                  >
-                    mariobros@dit.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Services
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                Account Management
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Go to the interaction detail page
+          Invited to Technology Roundtable
         </a>
-      </div>
-    </details>
-  </div>
-  <div
-    className="sc-bMVAic gunhqD"
-  >
-    05 Jun 2018
+      </h3>
+    </div>
     <div
-      className="sc-bAeIUo eEATTv"
+      className="sc-bAeIUo XzIGe"
     >
-      <span
-        className="sc-iujRgT hrmgYI"
+      05 Jun 2018
+      <div
+        className="sc-iujRgT bQDONv"
       >
-        Incomplete interaction
-      </span>
+        <span
+          className="sc-GMQeP hLjrDh"
+        >
+          Incomplete interaction
+        </span>
+      </div>
     </div>
   </div>
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
+  >
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View interaction details
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Contact(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                John Doe
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:john@example.com"
+                  muted={false}
+                >
+                  john@example.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Mario Bros
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:mariobros@dit.com"
+                  muted={false}
+                >
+                  mariobros@dit.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Services
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Account Management
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+        muted={false}
+      >
+        Go to the interaction detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;
 
 exports[`ActivityFeedCard when the interaction is complete should render interaction activity with "Completed interaction" badge 1`] = `
 <div
-  className="sc-bdVaJa cCKGim"
+  className="sc-bdVaJa bitMfj"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
-        muted={false}
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        Invited to Technology Roundtable
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
-      >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          View interaction details
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Contact(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  John Doe
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:john@example.com"
-                    muted={false}
-                  >
-                    john@example.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Adviser(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  Mario Bros
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:mariobros@dit.com"
-                    muted={false}
-                  >
-                    mariobros@dit.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Services
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                Account Management
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Go to the interaction detail page
+          Invited to Technology Roundtable
         </a>
-      </div>
-    </details>
-  </div>
-  <div
-    className="sc-bMVAic gunhqD"
-  >
-    06 Jun 2019
+      </h3>
+    </div>
     <div
-      className="sc-bAeIUo eEATTv"
+      className="sc-bAeIUo XzIGe"
     >
-      <span
-        className="sc-iujRgT hrmgYI"
+      06 Jun 2019
+      <div
+        className="sc-iujRgT bQDONv"
       >
-        Completed interaction
-      </span>
+        <span
+          className="sc-GMQeP hLjrDh"
+        >
+          Completed interaction
+        </span>
+      </div>
     </div>
   </div>
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
+  >
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View interaction details
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Contact(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                John Doe
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:john@example.com"
+                  muted={false}
+                >
+                  john@example.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Mario Bros
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:mariobros@dit.com"
+                  muted={false}
+                >
+                  mariobros@dit.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Services
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Account Management
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+        muted={false}
+      >
+        Go to the interaction detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;
 
 exports[`ActivityFeedCard when there is a service delivery should render service delivery activity 1`] = `
 <div
-  className="sc-bdVaJa cCKGim"
+  className="sc-bdVaJa bitMfj"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/854d8d31-7405-4625-a957-0ed2c3092caa"
-        muted={false}
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        Openening of overseas office
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
-      >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          View service delivery details
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Contact(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  John Doe
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:john@example.com"
-                    muted={false}
-                  >
-                    john@example.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Adviser(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  Mario Bros
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:mariobros@dit.com"
-                    muted={false}
-                  >
-                    mariobros@dit.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Services
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                Events - Overseas
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/854d8d31-7405-4625-a957-0ed2c3092caa"
           muted={false}
         >
-          Go to the service delivery detail page
+          Openening of overseas office
         </a>
-      </div>
-    </details>
-  </div>
-  <div
-    className="sc-bMVAic gunhqD"
-  >
-    29 Apr 2019
+      </h3>
+    </div>
     <div
-      className="sc-bAeIUo eEATTv"
+      className="sc-bAeIUo XzIGe"
     >
-      <span
-        className="sc-iujRgT hrmgYI"
+      29 Apr 2019
+      <div
+        className="sc-iujRgT bQDONv"
       >
-        Completed service delivery
-      </span>
+        <span
+          className="sc-GMQeP hLjrDh"
+        >
+          Completed service delivery
+        </span>
+      </div>
     </div>
   </div>
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
+  >
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View service delivery details
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Contact(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                John Doe
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:john@example.com"
+                  muted={false}
+                >
+                  john@example.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Mario Bros
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:mariobros@dit.com"
+                  muted={false}
+                >
+                  mariobros@dit.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Services
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Events - Overseas
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/854d8d31-7405-4625-a957-0ed2c3092caa"
+        muted={false}
+      >
+        Go to the service delivery detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;
 
@@ -1723,306 +1763,314 @@ exports[`ActivityFeedCard when there is an activity item of unknown type should 
 
 exports[`ActivityFeedCard when there is an interaction should render interaction activity 1`] = `
 <div
-  className="sc-bdVaJa cCKGim"
+  className="sc-bdVaJa bitMfj"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
-        muted={false}
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        Invited to Technology Roundtable
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
-      >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          View interaction details
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Contact(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  John Doe
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:john@example.com"
-                    muted={false}
-                  >
-                    john@example.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Adviser(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                <span>
-                  Mario Bros
-                  , 
-                  <a
-                    className="sc-bxivhb cnzZSK"
-                    href="mailto:mariobros@dit.com"
-                    muted={false}
-                  >
-                    mariobros@dit.com
-                  </a>
-                </span>
-              </td>
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Services
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                Account Management
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Go to the interaction detail page
+          Invited to Technology Roundtable
         </a>
-      </div>
-    </details>
-  </div>
-  <div
-    className="sc-bMVAic gunhqD"
-  >
-    02 May 2019
+      </h3>
+    </div>
     <div
-      className="sc-bAeIUo eEATTv"
+      className="sc-bAeIUo XzIGe"
     >
-      <span
-        className="sc-iujRgT hrmgYI"
+      02 May 2019
+      <div
+        className="sc-iujRgT bQDONv"
       >
-        Completed interaction
-      </span>
+        <span
+          className="sc-GMQeP hLjrDh"
+        >
+          Completed interaction
+        </span>
+      </div>
     </div>
   </div>
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
+  >
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View interaction details
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Contact(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                John Doe
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:john@example.com"
+                  muted={false}
+                >
+                  john@example.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <span>
+                Mario Bros
+                , 
+                <a
+                  className="sc-htpNat jdOrDl"
+                  href="mailto:mariobros@dit.com"
+                  muted={false}
+                >
+                  mariobros@dit.com
+                </a>
+              </span>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Services
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Account Management
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+        muted={false}
+      >
+        Go to the interaction detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;
 
 exports[`ActivityFeedCard when there is an interaction without any people involved should render interaction activity without advisers nor contacts 1`] = `
 <div
-  className="sc-bdVaJa cCKGim"
+  className="sc-bdVaJa bitMfj"
 >
   <div
-    className="sc-bwzfXH kYAhuD"
+    className="sc-cLQEGU kmbhXR"
   >
-    <h3
-      className="sc-gqPbQI jVHVKu sc-jDwBTQ kyTlsc"
-      size="MEDIUM"
+    <div
+      className="sc-hORach hWIXLH"
     >
-      <a
-        className="sc-bxivhb cnzZSK"
-        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
-        muted={false}
+      <h3
+        className="sc-bMVAic Cqvrn sc-jAaTju jwklkP"
+        size="MEDIUM"
       >
-        Invited to Technology Roundtable
-      </a>
-    </h3>
-    <details
-      className="sc-cLQEGU ftmMxm sc-iAyFgw iljECs"
-      open={false}
-    >
-      <summary
-        className="sc-hSdWYo gbrPKp"
-      >
-        <span
-          className="sc-eHgmQL duXTff"
-        >
-          View interaction details
-        </span>
-      </summary>
-      <div
-        className="sc-cvbbAY dhiWBt"
-      >
-        <table
-          className="sc-GMQeP bvmKWM sc-eTuwsz cbnLOq"
-        >
-          <tbody
-            className="sc-RefOD kzCQXs"
-          >
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Contact(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              />
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Adviser(s)
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              />
-            </tr>
-            <tr
-              className="sc-hrWEMg fOsrtz"
-            >
-              <th
-                className="sc-bwCtUz rkyVs"
-                style={
-                  Object {
-                    "border": 0,
-                    "fontWeight": "normal",
-                  }
-                }
-              >
-                Services
-              </th>
-              <td
-                className="sc-bwCtUz eyaJuE"
-                style={
-                  Object {
-                    "border": 0,
-                  }
-                }
-              >
-                Account Management
-              </td>
-            </tr>
-          </tbody>
-        </table>
         <a
-          className="sc-bxivhb cnzZSK"
+          className="sc-htpNat jdOrDl"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Go to the interaction detail page
+          Invited to Technology Roundtable
         </a>
-      </div>
-    </details>
-  </div>
-  <div
-    className="sc-bMVAic gunhqD"
-  >
-    06 Jun 2019
+      </h3>
+    </div>
     <div
-      className="sc-bAeIUo eEATTv"
+      className="sc-bAeIUo XzIGe"
     >
-      <span
-        className="sc-iujRgT hrmgYI"
+      06 Jun 2019
+      <div
+        className="sc-iujRgT bQDONv"
       >
-        Completed interaction
-      </span>
+        <span
+          className="sc-GMQeP hLjrDh"
+        >
+          Completed interaction
+        </span>
+      </div>
     </div>
   </div>
+  <details
+    className="sc-hMFtBS djUxGl sc-kkGfuU bEQKnh"
+    open={false}
+  >
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View interaction details
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Contact(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            />
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Adviser(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            />
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Services
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              Account Management
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
+        muted={false}
+      >
+        Go to the interaction detail page
+      </a>
+    </div>
+  </details>
 </div>
 `;

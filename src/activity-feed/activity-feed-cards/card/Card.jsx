@@ -6,8 +6,6 @@ import PropTypes from 'prop-types'
 const CardContainer = styled('div')`
   border: ${({ isUpcoming }) => (isUpcoming ? '1px dashed #c0c0c0' : '1px solid #c0c0c0')};
   padding: ${SPACING.SCALE_3};
-  display: flex;
-  flex-flow: row wrap;
 `
 
 export default class Card extends React.Component {

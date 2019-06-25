@@ -2,11 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-const CardContentContainer = styled('div')`
-  flex: 50%;
+const CardHeaderContainer = styled('div')`
+  display: flex;
+  flex-flow: row wrap;
 `
 
-export default class CardContent extends React.Component {
+export default class CardHeader extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
   }
@@ -15,9 +16,9 @@ export default class CardContent extends React.Component {
     const { children } = this.props
 
     return (
-      <CardContentContainer>
+      <CardHeaderContainer>
         {children}
-      </CardContentContainer>
+      </CardHeaderContainer>
     )
   }
 }
