@@ -1,6 +1,21 @@
 # Data Hub Components
 
-[![CircleCI](https://circleci.com/gh/uktrade/data-hub-components.svg?style=svg)](https://circleci.com/gh/uktrade/data-hub-components)
+[![NPM Version][npm-version-image]][npm-url]
+[![NPM Downloads][npm-downloads-image]][npm-url]
+
+[![Build Status][circleci-image]][circleci-url]
+[![LGTM Alerts][lgtm-alerts-image]][lgtm-alerts-url]
+[![LGTM Grade][lgtm-grade-image]][lgtm-grade-url]
+
+[npm-url]: https://npmjs.org/package/data-hub-components
+[npm-downloads-image]: https://badgen.net/npm/dm/data-hub-components
+[npm-version-image]: https://badgen.net/npm/v/data-hub-components
+[circleci-image]: https://circleci.com/gh/uktrade/data-hub-components.svg?style=svg
+[circleci-url]: https://circleci.com/gh/uktrade/data-hub-components
+[lgtm-alerts-image]: https://img.shields.io/lgtm/alerts/g/uktrade/data-hub-components.svg?logo=lgtm&logoWidth=18
+[lgtm-alerts-url]: https://lgtm.com/projects/g/uktrade/data-hub-components/alerts/
+[lgtm-grade-image]: https://img.shields.io/lgtm/grade/javascript/g/uktrade/data-hub-components.svg?logo=lgtm&logoWidth=18
+[lgtm-grade-url]: https://lgtm.com/projects/g/uktrade/data-hub-components/context:javascript
 
 Collection of React Components used by the Data Hub platform.
 
