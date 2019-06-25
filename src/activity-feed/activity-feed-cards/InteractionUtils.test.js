@@ -1,3 +1,4 @@
+import { RED, GREEN, BLUE } from 'govuk-colours'
 import moment from 'moment'
 
 import InteractionUtils from './InteractionUtils'
@@ -15,9 +16,12 @@ describe('InteractionUtils.js', () => {
         })
 
         expect(actual).toEqual({
-          badge: 'Cancelled interaction',
-          isUpcoming: false,
           typeText: 'interaction',
+          isUpcoming: false,
+          badge: {
+            text: 'Cancelled interaction',
+            borderColour: RED,
+          },
         })
       })
     })
@@ -33,9 +37,12 @@ describe('InteractionUtils.js', () => {
         })
 
         expect(actual).toEqual({
-          badge: 'Upcoming interaction',
-          isUpcoming: true,
           typeText: 'interaction',
+          isUpcoming: true,
+          badge: {
+            text: 'Upcoming interaction',
+            borderColour: BLUE,
+          },
         })
       })
     })
@@ -51,9 +58,12 @@ describe('InteractionUtils.js', () => {
         })
 
         expect(actual).toEqual({
-          badge: 'Incomplete interaction',
-          isUpcoming: false,
           typeText: 'interaction',
+          isUpcoming: false,
+          badge: {
+            text: 'Incomplete interaction',
+            borderColour: BLUE,
+          },
         })
       })
     })
@@ -68,9 +78,12 @@ describe('InteractionUtils.js', () => {
         })
 
         expect(actual).toEqual({
-          badge: 'Completed interaction',
-          isUpcoming: false,
           typeText: 'interaction',
+          isUpcoming: false,
+          badge: {
+            text: 'Completed interaction',
+            borderColour: GREEN,
+          },
         })
       })
     })
@@ -85,9 +98,12 @@ describe('InteractionUtils.js', () => {
         })
 
         expect(actual).toEqual({
-          badge: 'Completed service delivery',
-          isUpcoming: false,
           typeText: 'service delivery',
+          isUpcoming: false,
+          badge: {
+            text: 'Completed service delivery',
+            borderColour: GREEN,
+          },
         })
       })
     })

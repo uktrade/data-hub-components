@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { SPACING, MEDIA_QUERIES } from '@govuk-react/constants'
-
+import { GREY_2 } from 'govuk-colours'
 import PropTypes from 'prop-types'
+
 import DateUtils from '../../../utils/DateUtils'
 
 const CardMetaContainer = styled('div')`
@@ -26,7 +27,7 @@ const CardBadges = styled('div')`
 `
 
 const Badge = styled('span')`
-  border: 2px solid #c0c0c0;
+  border: ${({ borderColour }) => `2px solid ${borderColour || GREY_2}`};
   border-radius: 4px;
   padding: 2px 4px;
 `
@@ -34,7 +35,10 @@ const Badge = styled('span')`
 export default class CardMeta extends React.Component {
   static propTypes = {
     startTime: PropTypes.string.isRequired,
-    badge: PropTypes.string,
+    badge: PropTypes.shape({
+      text: PropTypes.string,
+      borderColour: PropTypes.string,
+    }),
   }
 
   static defaultProps = {
@@ -43,7 +47,14 @@ export default class CardMeta extends React.Component {
 
   render() {
     const { startTime, badge } = this.props
-    const cardBadge = badge ? <CardBadges><Badge>{badge}</Badge></CardBadges> : null
+
+    const cardBadge = badge ? (
+      <CardBadges>
+        <Badge borderColour={badge.borderColour}>
+          {badge.text}
+        </Badge>
+      </CardBadges>
+    ) : null
 
     return (
       <CardMetaContainer>

@@ -5189,6 +5189,7 @@ good-listener@^1.2.2:
 govuk-colours@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/govuk-colours/-/govuk-colours-1.0.3.tgz#41d983693626dbaadb05594c5931a51696f79488"
+  integrity sha512-xdVD7YzHG+KEwCs8Rl+MgVfgEagjANVau4dJNTe30Xi6KySJ1LaI1vzBRRgThBjmJC8YFTwk4CshRtRfSbXKcA==
 
 govuk-react@^0.7.0:
   version "0.7.0"

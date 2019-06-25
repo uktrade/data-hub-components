@@ -825,7 +825,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
         className="sc-iujRgT bQDONv"
       >
         <span
-          className="sc-GMQeP hLjrDh"
+          className="sc-GMQeP gJuUpj"
         >
           Completed interaction
         </span>
@@ -945,7 +945,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
         className="sc-iujRgT bQDONv"
       >
         <span
-          className="sc-GMQeP hLjrDh"
+          className="sc-GMQeP gqSTea"
         >
           Cancelled interaction
         </span>
@@ -1114,7 +1114,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
         className="sc-iujRgT bQDONv"
       >
         <span
-          className="sc-GMQeP hLjrDh"
+          className="sc-GMQeP bYNJMh"
         >
           Upcoming interaction
         </span>
@@ -1283,7 +1283,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
         className="sc-iujRgT bQDONv"
       >
         <span
-          className="sc-GMQeP hLjrDh"
+          className="sc-GMQeP bYNJMh"
         >
           Incomplete interaction
         </span>
@@ -1452,7 +1452,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
         className="sc-iujRgT bQDONv"
       >
         <span
-          className="sc-GMQeP hLjrDh"
+          className="sc-GMQeP gJuUpj"
         >
           Completed interaction
         </span>
@@ -1621,7 +1621,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
         className="sc-iujRgT bQDONv"
       >
         <span
-          className="sc-GMQeP hLjrDh"
+          className="sc-GMQeP gJuUpj"
         >
           Completed service delivery
         </span>
@@ -1792,7 +1792,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
         className="sc-iujRgT bQDONv"
       >
         <span
-          className="sc-GMQeP hLjrDh"
+          className="sc-GMQeP gJuUpj"
         >
           Completed interaction
         </span>
@@ -1961,7 +1961,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
         className="sc-iujRgT bQDONv"
       >
         <span
-          className="sc-GMQeP hLjrDh"
+          className="sc-GMQeP gJuUpj"
         >
           Completed interaction
         </span>
