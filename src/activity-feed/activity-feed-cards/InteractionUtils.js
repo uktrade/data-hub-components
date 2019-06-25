@@ -1,4 +1,5 @@
 import { get, includes } from 'lodash'
+import { RED, GREEN, BLUE } from 'govuk-colours'
 
 const STATUS = {
   DRAFT: 'draft',
@@ -9,12 +10,27 @@ const STATUS = {
   UNKNOWN: 'unknown',
 }
 
-const BADGE_LABELS = {
-  COMPLETE: 'Completed interaction',
-  UPCOMING: 'Upcoming interaction',
-  INCOMPLETE: 'Incomplete interaction',
-  CANCELLED: 'Cancelled interaction',
-  COMPLETED_SERVICE_DELIVERY: 'Completed service delivery',
+const BADGES = {
+  COMPLETE: {
+    text: 'Completed interaction',
+    borderColour: GREEN,
+  },
+  UPCOMING: {
+    text: 'Upcoming interaction',
+    borderColour: BLUE,
+  },
+  INCOMPLETE: {
+    text: 'Incomplete interaction',
+    borderColour: BLUE,
+  },
+  CANCELLED: {
+    text: 'Cancelled interaction',
+    borderColour: RED,
+  },
+  COMPLETED_SERVICE_DELIVERY: {
+    text: 'Completed service delivery',
+    borderColour: GREEN,
+  },
 }
 
 const getStatus = (activity) => {
@@ -41,9 +57,11 @@ const isServiceDelivery = (activity) => {
 export default class CardUtils {
   static transform(activity) {
     const status = getStatus(activity)
+
     const badge = isServiceDelivery(activity)
-      ? BADGE_LABELS.COMPLETED_SERVICE_DELIVERY
-      : BADGE_LABELS[status.toUpperCase()]
+      ? BADGES.COMPLETED_SERVICE_DELIVERY
+      : BADGES[status.toUpperCase()]
+
     const isUpcoming = status === STATUS.UPCOMING
     const typeText = isServiceDelivery(activity) ? 'service delivery' : 'interaction'
 
