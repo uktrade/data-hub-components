@@ -1,16 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
-import { SPACING } from '@govuk-react/constants'
+import { SPACING, MEDIA_QUERIES } from '@govuk-react/constants'
 
 import PropTypes from 'prop-types'
 import DateUtils from '../../../utils/DateUtils'
 
 const CardMetaContainer = styled('div')`
-  text-align: right;
+  width: 100%;
+  margin-bottom: ${SPACING.SCALE_1};
+  
+  ${MEDIA_QUERIES.TABLET} {
+    width: 200px;
+    text-align: right;
+  }
 `
 
 const CardBadges = styled('div')`
   padding: ${SPACING.SCALE_2} 0 ${SPACING.SCALE_2};
+  display: inline;
+  margin-left: 5px;
+  
+  ${MEDIA_QUERIES.TABLET} {
+    display: block;
+  }
 `
 
 const Badge = styled('span')`

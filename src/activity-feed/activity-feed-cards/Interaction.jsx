@@ -3,8 +3,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {
   Card,
-  CardContent,
   CardDetails,
+  CardHeader,
   CardHeading,
   CardMeta,
   CardTable,
@@ -33,23 +33,23 @@ export default class Interaction extends React.Component {
 
     return (
       <Card isUpcoming={transformed.isUpcoming}>
-        <CardContent>
+        <CardHeader>
           <CardHeading link={{ url: transformed.url, text: transformed.subject }} />
-          <CardDetails
-            summary={`View ${transformed.typeText} details`}
-            link={{ url: transformed.url, text: `Go to the ${transformed.typeText} detail page` }}
-          >
-            <CardTable rows={
-              [
-                { header: 'Contact(s)', content: CardUtils.getPeopleAsList(activity, 'Contact') },
-                { header: 'Adviser(s)', content: CardUtils.getPeopleAsList(activity, 'Adviser') },
-                { header: 'Services', content: transformed.service },
-              ]
-            }
-            />
-          </CardDetails>
-        </CardContent>
-        <CardMeta startTime={transformed.startTime} badge={transformed.badge} />
+          <CardMeta startTime={transformed.startTime} badge={transformed.badge} />
+        </CardHeader>
+        <CardDetails
+          summary={`View ${transformed.typeText} details`}
+          link={{ url: transformed.url, text: `Go to the ${transformed.typeText} detail page` }}
+        >
+          <CardTable rows={
+            [
+              { header: 'Contact(s)', content: CardUtils.getPeopleAsList(activity, 'Contact') },
+              { header: 'Adviser(s)', content: CardUtils.getPeopleAsList(activity, 'Adviser') },
+              { header: 'Services', content: transformed.service },
+            ]
+          }
+          />
+        </CardDetails>
       </Card>
     )
   }
