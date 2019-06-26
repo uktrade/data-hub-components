@@ -1,6 +1,6 @@
 {
   "name": "data-hub-components",
-  "version": "0.3.5",
+  "version": "0.0.0-semantic-release",
   "license": "MIT",
   "homepage": "https://github.com/uktrade/data-hub-components",
   "description": "Library of React Components used by the Data Hub platform (datahub.trade.gov.uk).",
@@ -14,6 +14,10 @@
     "type": "git",
     "url": "git@github.com:uktrade/data-hub-components.git"
   },
+  "release": {
+    "branch": "master",
+    "npmPublish": true
+  },
   "scripts": {
     "start": "yarn storybook",
     "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --ignore **/*.stories.jsx,**/*.test.jsx,**/*.test.js,**/__snapshots__,**/__tests__",
@@ -21,11 +25,12 @@
     "test:update": "jest --updateSnapshot",
     "lint": "eslint './src/**/*.{js,jsx}'",
     "lint:fix": "yarn lint --fix",
-    "release": "yarn build && yarn publish",
-    "postpublish": "[ \"${npm_config_tag:-latest}\" != latest ] || yarn release:storybook",
     "storybook": "start-storybook",
     "storybook:build": "rimraf storybook-static && build-storybook",
-    "storybook:release": "yarn storybook:build && git-directory-deploy --directory storybook-static --branch gh-pages"
+    "storybook:release": "yarn storybook:build && git-directory-deploy --directory storybook-static --branch gh-pages",
+    "prepack": "yarn build",
+    "release": "semantic-release",
+    "postpublish": "[ \"${npm_config_tag:-latest}\" != latest ] || yarn release:storybook"
   },
   "pre-commit": "lint",
   "dependencies": {
@@ -61,6 +66,8 @@
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^5.16.0",
@@ -77,6 +84,7 @@
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
     "rimraf": "^2.6.3",
+    "semantic-release": "^15.13.18",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   },
