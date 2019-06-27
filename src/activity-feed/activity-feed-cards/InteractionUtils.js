@@ -7,12 +7,11 @@ const STATUS = {
   UPCOMING: 'upcoming',
   INCOMPLETE: 'incomplete',
   CANCELLED: 'cancelled',
-  UNKNOWN: 'unknown',
 }
 
 const BADGES = {
   COMPLETE: {
-    text: 'Completed interaction',
+    text: 'Interaction',
     borderColour: GREEN,
   },
   UPCOMING: {
@@ -27,8 +26,8 @@ const BADGES = {
     text: 'Cancelled interaction',
     borderColour: RED,
   },
-  COMPLETED_SERVICE_DELIVERY: {
-    text: 'Completed service delivery',
+  SERVICE_DELIVERY: {
+    text: 'Service delivery',
     borderColour: GREEN,
   },
 }
@@ -59,7 +58,7 @@ export default class CardUtils {
     const status = getStatus(activity)
 
     const badge = isServiceDelivery(activity)
-      ? BADGES.COMPLETED_SERVICE_DELIVERY
+      ? BADGES.SERVICE_DELIVERY
       : BADGES[status.toUpperCase()]
 
     const isUpcoming = status === STATUS.UPCOMING

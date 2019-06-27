@@ -81,7 +81,7 @@ describe('InteractionUtils.js', () => {
           typeText: 'interaction',
           isUpcoming: false,
           badge: {
-            text: 'Completed interaction',
+            text: 'Interaction',
             borderColour: GREEN,
           },
         })
@@ -101,7 +101,7 @@ describe('InteractionUtils.js', () => {
           typeText: 'service delivery',
           isUpcoming: false,
           badge: {
-            text: 'Completed service delivery',
+            text: 'Service delivery',
             borderColour: GREEN,
           },
         })
