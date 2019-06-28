@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "yarn storybook",
-    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --ignore **/*.stories.jsx,**/*.test.jsx,**/*.test.js,**/__snapshots__,**/__tests__",
+    "build": "rimraf dist && NODE_ENV=production babel src --out-dir dist --ignore **/*.stories.jsx,**/*.test.jsx,**/*.test.js,**/__snapshots__,**/__tests__",
     "test": "jest",
     "test:update": "jest --updateSnapshot",
     "lint": "eslint './src/**/*.{js,jsx}'",
@@ -63,6 +63,7 @@
     "@storybook/addon-knobs": "^5.0.11",
     "@storybook/addons": "^5.0.11",
     "@storybook/react": "^5.0.11",
+    "@types/jest": "^24.0.15",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
@@ -77,6 +78,7 @@
     "eslint-plugin-react": "^7.13.0",
     "git-directory-deploy": "^1.5.1",
     "jest": "^24.8.0",
+    "jest-junit": "^6.4.0",
     "mockdate": "^2.0.2",
     "nock": "^10.0.6",
     "pre-commit": "^1.2.2",
@@ -89,9 +91,19 @@
     "webpack-cli": "^3.3.0"
   },
   "jest": {
+    "coverageDirectory": "test-results/coverage",
+    "collectCoverage": true,
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
     "setupFilesAfterEnv": [
       "<rootDir>/scripts/setupTests.js"
     ]
+  },
+  "jest-junit": {
+    "outputDirectory": "test-results/jest",
+    "outputName": "results.xml"
   },
   "babel": {
     "presets": [
