@@ -13,7 +13,7 @@ const BlockHeading = styled(H3)`
   margin-bottom: ${SPACING.SCALE_2};
 `
 
-export default class CardBlockHeading extends React.Component {
+export default class CardBlockHeading extends React.PureComponent {
   static propTypes = {
     text: PropTypes.string.isRequired,
   }

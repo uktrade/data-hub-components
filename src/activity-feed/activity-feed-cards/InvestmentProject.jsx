@@ -19,7 +19,7 @@ const TITLES = {
   add: 'New investment project added',
 }
 
-export default class InvestmentProject extends React.Component {
+export default class InvestmentProject extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
   }

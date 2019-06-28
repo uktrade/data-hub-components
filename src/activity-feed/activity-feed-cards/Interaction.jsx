@@ -12,7 +12,7 @@ import {
 import CardUtils from './card/CardUtils'
 import InteractionUtils from './InteractionUtils'
 
-export default class Interaction extends React.Component {
+export default class Interaction extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
   }

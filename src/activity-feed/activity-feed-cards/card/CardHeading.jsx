@@ -25,7 +25,7 @@ const Heading = styled(H3)`
   }
 `
 
-export default class CardHeading extends React.Component {
+export default class CardHeading extends React.PureComponent {
   static propTypes = {
     link: PropTypes.shape({
       url: PropTypes.string.isRequired,

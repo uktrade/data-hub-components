@@ -57,7 +57,7 @@ jobs:
       - run: yarn install --pure-lockfile
       - run:
           name: Jest tests
-          command: yarn run test
+          command: yarn run test --verbose
           when: always
 
 workflows:
