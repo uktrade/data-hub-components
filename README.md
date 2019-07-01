@@ -61,6 +61,13 @@ yarn start
 yarn test
 ```
 
+Optionally, you can execute the CircleCI tests locally:
+
+```bash
+curl -fLSs https://circle.ci/cli | bash # Install CircleCI CLI
+circleci local execute --job build
+```
+
 **Update Jest snapshots**
 
 ```bash
@@ -69,11 +76,47 @@ yarn test:update
 
 **Create a release**
 
-Caution: Remember to be on the latest master, yarn will increase the version number in `package.json` and will create a tag and a commit message including the new version.
+This project is using [Semantic Release](https://github.com/semantic-release/semantic-release).
 
-```bash
-yarn release
-git push
+When committing please always use the following pattern for you messages (scope, body and footer are optional):
+
+```
+<type>(<scope>): <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+```
+
+| Commit message types (tags)                                                                                        | Release type              | Example                                                  |
+|--------------------------------------------------------------------------------------------------------------------|---------------------------|----------------------------------------------------------|
+| **feat**: A new feature                                                                                            | Minor release (0.**1**.0) | `feat: Add "Investment project" activity card`           |
+| **fix**: A bug fix                                                                                                 | Patch release (0.0.**1**) | `fix: Remove default activity card`                      |
+| **docs**: Documentation only changes                                                                               | None                      | `docs(README): Add testing instructions`                 |
+| **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)  | None                      | `style: Use tabs instead of spaces`                      |
+| **refactor**: A code change that neither fixes a bug nor adds a feature                                            | None                      | `refactor: Add missing props validation to ActivityFeed` |
+| **perf**: A code change that improves performance                                                                  | None                      | `perf: Improve rendering speed of ActivityFeed`          |
+| **test**: Adding missing or correcting existing tests                                                              | None                      | `test: Add integration tests to ActivityFeedCard`        |
+| **build** Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)      | None                      | `build: Update webpack config`                           |
+| **ci** Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs) | None                      | `ci: Update CircleCI config`                             |
+| **chore**: Changes to the build process or auxiliary tools and libraries such as documentation generation          | None                      | `chore: Update CircleCI config`                          |
+
+To create a major/breaking (**1**.0.0) release, please add `BREAKING CHANGE` to the commit message body with some explanation, example message:
+
+```
+fix: Remove ActivityFeedApp component
+
+BREAKING CHANGE: This components is no longer used so we removed it.
+Optionally add more info in the second line of your message.
+```
+
+To ease the process, [commitizen](https://github.com/commitizen/cz-cli) was added to the project to help creating properly formatted commit messages.
+
+Command `git cz` supports the same arguments as `git commit` and should be used as its replacement, example:
+
+```
+git add .
+git cz
 ```
 
 ## Notes
