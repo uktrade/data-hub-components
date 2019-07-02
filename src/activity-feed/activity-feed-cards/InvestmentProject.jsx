@@ -22,6 +22,7 @@ const TITLES = {
 export default class InvestmentProject extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
+    showDetails: PropTypes.bool.isRequired,
   }
 
   static canRender(activity) {
@@ -31,7 +32,7 @@ export default class InvestmentProject extends React.PureComponent {
   }
 
   render() {
-    const { activity } = this.props
+    const { activity, showDetails } = this.props
 
     const type = get(activity, 'type')
     const title = TITLES[type.toLowerCase()]
@@ -59,6 +60,7 @@ export default class InvestmentProject extends React.PureComponent {
         <CardDetails
           summary="Key details and people for this project"
           link={{ url, text: 'Go to the investment project detail page' }}
+          showDetails={showDetails}
         >
           <CardTable rows={
             [

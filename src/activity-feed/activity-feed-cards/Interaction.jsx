@@ -15,6 +15,7 @@ import InteractionUtils from './InteractionUtils'
 export default class Interaction extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
+    showDetails: PropTypes.bool.isRequired,
   }
 
   static canRender(activity) {
@@ -25,7 +26,7 @@ export default class Interaction extends React.PureComponent {
   }
 
   render() {
-    const { activity } = this.props
+    const { activity, showDetails } = this.props
     const transformed = {
       ...CardUtils.transform(activity),
       ...InteractionUtils.transform(activity),
@@ -40,6 +41,7 @@ export default class Interaction extends React.PureComponent {
         <CardDetails
           summary={`View ${transformed.typeText} details`}
           link={{ url: transformed.url, text: `Go to the ${transformed.typeText} detail page` }}
+          showDetails={showDetails}
         >
           <CardTable rows={
             [

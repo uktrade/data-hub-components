@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardDetails when the details for all activities are hidden should open the card details 1`] = `
+<details
+  className="sc-cmthru fyGmeL sc-kEYyzF ihcnje"
+  open={false}
+>
+  <summary
+    className="sc-kkGfuU cCdZFh"
+  >
+    <span
+      className="sc-iAyFgw jRkIxn"
+    >
+      View interaction details
+    </span>
+  </summary>
+  <div
+    className="sc-hSdWYo dfimje"
+  >
+    <p>
+      children
+    </p>
+    <a
+      className="sc-bwzfXH VXMCV"
+      href="#"
+      muted={false}
+    >
+      Go to the interaction detail page
+    </a>
+  </div>
+</details>
+`;
+
+exports[`CardDetails when the details for all activities are shown should open the card details 1`] = `
+<details
+  className="sc-cmthru fyGmeL sc-kEYyzF ihcnje"
+  open={true}
+>
+  <summary
+    className="sc-kkGfuU cCdZFh"
+  >
+    <span
+      className="sc-iAyFgw jRkIxn"
+    >
+      View interaction details
+    </span>
+  </summary>
+  <div
+    className="sc-hSdWYo dfimje"
+  >
+    <p>
+      children
+    </p>
+    <a
+      className="sc-bwzfXH VXMCV"
+      href="#"
+      muted={false}
+    >
+      Go to the interaction detail page
+    </a>
+  </div>
+</details>
+`;

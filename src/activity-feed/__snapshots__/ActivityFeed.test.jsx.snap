@@ -2,7 +2,7 @@
 
 exports[`ActivityFeed when activities are being loaded should display a loader 1`] = `
 <div
-  className="sc-eLExRp dieyYx"
+  className="sc-krvtoX GMxoX"
 >
   <div
     className="sc-cQFLBn gXpeAH"
@@ -11,7 +11,7 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
       className="sc-gojNiO jgMPgU"
     >
       <h2
-        className="sc-jAaTju gvcKNJ"
+        className="sc-cMljjf leOqMw"
         size="LARGE"
       >
         Activities
@@ -21,17 +21,30 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
       className="sc-daURTG joGgTH"
     />
   </div>
+  <div
+    className="sc-lkqHmb hlvLiE"
+  >
+    <a
+      className="sc-bwzfXH sc-eLExRp cSVFll"
+      href="#"
+      muted={false}
+      onClick={[Function]}
+    >
+      Show
+       details for all activities
+    </a>
+  </div>
   <ol
-    className="sc-cbkKFq cOJAMG"
+    className="sc-fYiAbW eHMQsy"
   />
   <div
-    className="sc-lkqHmb gJqCYV"
+    className="sc-cbkKFq buSHMW"
   >
     <div
-      className="sc-fAjcbJ jVWwyG"
+      className="sc-eqIVtm fxHPMe"
     >
       <div
-        className="sc-caSCKo BUyAm"
+        className="sc-fAjcbJ fsjQAG"
       >
         <svg
           className="icon-loading"
@@ -232,11 +245,11 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
           />
         </svg>
         <div
-          className="overlay sc-gisBJw goEqoi"
+          className="overlay sc-caSCKo cQyEyL"
         />
       </div>
       <button
-        className="sc-jTzLTM evXbRq"
+        className="sc-VigVT kJjasd"
         disabled={true}
         onClick={[Function]}
       >
@@ -249,7 +262,7 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
 
 exports[`ActivityFeed when the activity feed has child elements should render the children 1`] = `
 <div
-  className="sc-eLExRp dieyYx"
+  className="sc-krvtoX GMxoX"
 >
   <div
     className="sc-cQFLBn gXpeAH"
@@ -258,7 +271,7 @@ exports[`ActivityFeed when the activity feed has child elements should render th
       className="sc-gojNiO jgMPgU"
     >
       <h2
-        className="sc-jAaTju gvcKNJ"
+        className="sc-cMljjf leOqMw"
         size="LARGE"
       >
         Activities
@@ -268,8 +281,21 @@ exports[`ActivityFeed when the activity feed has child elements should render th
       className="sc-daURTG joGgTH"
     />
   </div>
+  <div
+    className="sc-lkqHmb hlvLiE"
+  >
+    <a
+      className="sc-bwzfXH sc-eLExRp cSVFll"
+      href="#"
+      muted={false}
+      onClick={[Function]}
+    >
+      Show
+       details for all activities
+    </a>
+  </div>
   <ol
-    className="sc-cbkKFq cOJAMG"
+    className="sc-fYiAbW eHMQsy"
   />
   <div>
     Child element to test
@@ -279,7 +305,7 @@ exports[`ActivityFeed when the activity feed has child elements should render th
 
 exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
 <div
-  className="sc-eLExRp dieyYx"
+  className="sc-krvtoX GMxoX"
 >
   <div
     className="sc-cQFLBn gXpeAH"
@@ -288,7 +314,7 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
       className="sc-gojNiO jgMPgU"
     >
       <h2
-        className="sc-jAaTju gvcKNJ"
+        className="sc-cMljjf leOqMw"
         size="LARGE"
       >
         Activities
@@ -298,15 +324,28 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
       className="sc-daURTG joGgTH"
     />
   </div>
+  <div
+    className="sc-lkqHmb hlvLiE"
+  >
+    <a
+      className="sc-bwzfXH sc-eLExRp cSVFll"
+      href="#"
+      muted={false}
+      onClick={[Function]}
+    >
+      Show
+       details for all activities
+    </a>
+  </div>
   <ol
-    className="sc-cbkKFq cOJAMG"
+    className="sc-fYiAbW eHMQsy"
   />
 </div>
 `;
 
 exports[`ActivityFeed when there are more activities to load should render with "Load more" link 1`] = `
 <div
-  className="sc-eLExRp dieyYx"
+  className="sc-krvtoX GMxoX"
 >
   <div
     className="sc-cQFLBn gXpeAH"
@@ -315,7 +354,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
       className="sc-gojNiO jgMPgU"
     >
       <h2
-        className="sc-jAaTju gvcKNJ"
+        className="sc-cMljjf leOqMw"
         size="LARGE"
       >
         20 activities
@@ -325,12 +364,25 @@ exports[`ActivityFeed when there are more activities to load should render with 
       className="sc-daURTG joGgTH"
     />
   </div>
+  <div
+    className="sc-lkqHmb hlvLiE"
+  >
+    <a
+      className="sc-bwzfXH sc-eLExRp cSVFll"
+      href="#"
+      muted={false}
+      onClick={[Function]}
+    >
+      Show
+       details for all activities
+    </a>
+  </div>
   <ol
-    className="sc-cbkKFq cOJAMG"
+    className="sc-fYiAbW eHMQsy"
   >
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -339,11 +391,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -367,32 +419,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -403,7 +455,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -414,7 +466,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -424,10 +476,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -438,7 +490,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -449,7 +501,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -459,10 +511,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -473,7 +525,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -486,7 +538,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -498,7 +550,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -507,11 +559,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -535,32 +587,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -571,7 +623,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -582,7 +634,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -592,10 +644,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -606,7 +658,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -617,7 +669,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -627,10 +679,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -641,7 +693,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -654,7 +706,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -666,7 +718,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -675,11 +727,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -703,32 +755,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -739,7 +791,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -750,7 +802,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -760,10 +812,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -774,7 +826,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -785,7 +837,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -795,10 +847,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -809,7 +861,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -822,7 +874,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -834,7 +886,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -843,11 +895,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -871,32 +923,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -907,7 +959,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -918,7 +970,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -928,10 +980,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -942,7 +994,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -953,7 +1005,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -963,10 +1015,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -977,7 +1029,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -990,7 +1042,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1002,7 +1054,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -1011,11 +1063,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1039,32 +1091,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1075,7 +1127,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1086,7 +1138,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -1096,10 +1148,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1110,7 +1162,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1121,7 +1173,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -1131,10 +1183,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1145,7 +1197,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1158,7 +1210,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1170,7 +1222,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -1179,11 +1231,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1207,32 +1259,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1243,7 +1295,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1254,7 +1306,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -1264,10 +1316,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1278,7 +1330,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1289,7 +1341,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -1299,10 +1351,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1313,7 +1365,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1326,7 +1378,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1338,7 +1390,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -1347,11 +1399,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1375,32 +1427,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1411,7 +1463,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1422,7 +1474,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -1432,10 +1484,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1446,7 +1498,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1457,7 +1509,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -1467,10 +1519,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1481,7 +1533,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1494,7 +1546,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1506,7 +1558,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -1515,11 +1567,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1543,32 +1595,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1579,7 +1631,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1590,7 +1642,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -1600,10 +1652,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1614,7 +1666,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1625,7 +1677,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -1635,10 +1687,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1649,7 +1701,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1662,7 +1714,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1674,7 +1726,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -1683,11 +1735,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1711,32 +1763,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1747,7 +1799,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1758,7 +1810,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -1768,10 +1820,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1782,7 +1834,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1793,7 +1845,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -1803,10 +1855,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1817,7 +1869,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1830,7 +1882,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -1842,7 +1894,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -1851,11 +1903,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -1879,32 +1931,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1915,7 +1967,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1926,7 +1978,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -1936,10 +1988,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1950,7 +2002,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1961,7 +2013,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -1971,10 +2023,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -1985,7 +2037,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -1998,7 +2050,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2010,7 +2062,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -2019,11 +2071,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2047,32 +2099,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2083,7 +2135,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2094,7 +2146,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -2104,10 +2156,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2118,7 +2170,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2129,7 +2181,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -2139,10 +2191,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2153,7 +2205,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2166,7 +2218,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2178,7 +2230,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -2187,11 +2239,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2215,32 +2267,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2251,7 +2303,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2262,7 +2314,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -2272,10 +2324,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2286,7 +2338,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2297,7 +2349,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -2307,10 +2359,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2321,7 +2373,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2334,7 +2386,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2346,7 +2398,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -2355,11 +2407,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2383,32 +2435,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2419,7 +2471,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2430,7 +2482,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -2440,10 +2492,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2454,7 +2506,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2465,7 +2517,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -2475,10 +2527,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2489,7 +2541,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2502,7 +2554,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2514,7 +2566,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -2523,11 +2575,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2551,32 +2603,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2587,7 +2639,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2598,7 +2650,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -2608,10 +2660,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2622,7 +2674,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2633,7 +2685,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -2643,10 +2695,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2657,7 +2709,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2670,7 +2722,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2682,7 +2734,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -2691,11 +2743,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2719,32 +2771,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2755,7 +2807,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2766,7 +2818,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -2776,10 +2828,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2790,7 +2842,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2801,7 +2853,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -2811,10 +2863,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2825,7 +2877,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2838,7 +2890,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -2850,7 +2902,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -2859,11 +2911,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -2887,32 +2939,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2923,7 +2975,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2934,7 +2986,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -2944,10 +2996,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2958,7 +3010,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -2969,7 +3021,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -2979,10 +3031,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -2993,7 +3045,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3006,7 +3058,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -3018,7 +3070,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -3027,11 +3079,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -3055,32 +3107,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3091,7 +3143,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3102,7 +3154,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -3112,10 +3164,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3126,7 +3178,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3137,7 +3189,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -3147,10 +3199,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3161,7 +3213,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3174,7 +3226,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -3186,7 +3238,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -3195,11 +3247,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -3223,32 +3275,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3259,7 +3311,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3270,7 +3322,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -3280,10 +3332,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3294,7 +3346,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3305,7 +3357,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -3315,10 +3367,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3329,7 +3381,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3342,7 +3394,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -3354,7 +3406,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -3363,11 +3415,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -3391,32 +3443,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3427,7 +3479,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3438,7 +3490,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -3448,10 +3500,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3462,7 +3514,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3473,7 +3525,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -3483,10 +3535,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3497,7 +3549,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3510,7 +3562,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -3522,7 +3574,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -3531,11 +3583,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -3559,32 +3611,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3595,7 +3647,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3606,7 +3658,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -3616,10 +3668,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3630,7 +3682,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3641,7 +3693,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -3651,10 +3703,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -3665,7 +3717,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -3678,7 +3730,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >
@@ -3690,13 +3742,13 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
   </ol>
   <div
-    className="sc-lkqHmb gJqCYV"
+    className="sc-cbkKFq buSHMW"
   >
     <div
-      className="sc-fAjcbJ jVWwyG"
+      className="sc-eqIVtm fxHPMe"
     >
       <div
-        className="sc-caSCKo BUyAm"
+        className="sc-fAjcbJ fsjQAG"
       >
         <svg
           className="icon-loading"
@@ -3897,11 +3949,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
           />
         </svg>
         <div
-          className="overlay sc-gisBJw goEqoi"
+          className="overlay sc-caSCKo cQyEyL"
         />
       </div>
       <button
-        className="sc-jTzLTM evXbRq"
+        className="sc-VigVT kJjasd"
         disabled={false}
         onClick={[Function]}
       >
@@ -3914,7 +3966,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
 
 exports[`ActivityFeed when there is a single activity should render single activity with appropriate header 1`] = `
 <div
-  className="sc-eLExRp dieyYx"
+  className="sc-krvtoX GMxoX"
 >
   <div
     className="sc-cQFLBn gXpeAH"
@@ -3923,7 +3975,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
       className="sc-gojNiO jgMPgU"
     >
       <h2
-        className="sc-jAaTju gvcKNJ"
+        className="sc-cMljjf leOqMw"
         size="LARGE"
       >
         1 activity
@@ -3933,12 +3985,25 @@ exports[`ActivityFeed when there is a single activity should render single activ
       className="sc-daURTG joGgTH"
     />
   </div>
+  <div
+    className="sc-lkqHmb hlvLiE"
+  >
+    <a
+      className="sc-bwzfXH sc-eLExRp cSVFll"
+      href="#"
+      muted={false}
+      onClick={[Function]}
+    >
+      Show
+       details for all activities
+    </a>
+  </div>
   <ol
-    className="sc-cbkKFq cOJAMG"
+    className="sc-fYiAbW eHMQsy"
   >
     <li>
       <div
-        className="sc-bdVaJa bitMfj"
+        className="sc-cmthru jjutsD"
       >
         <div
           className="sc-cLQEGU kmbhXR"
@@ -3947,11 +4012,11 @@ exports[`ActivityFeed when there is a single activity should render single activ
             className="sc-hORach hWIXLH"
           >
             <h3
-              className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+              className="sc-bMVAic dEbRoq sc-cMljjf kCLKvB"
               size="MEDIUM"
             >
               <a
-                className="sc-htpNat jdOrDl"
+                className="sc-bwzfXH VXMCV"
                 href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
                 muted={false}
               >
@@ -3975,32 +4040,32 @@ exports[`ActivityFeed when there is a single activity should render single activ
           </div>
         </div>
         <details
-          className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+          className="sc-hMFtBS gUaJXr sc-kEYyzF ihcnje"
           open={false}
         >
           <summary
-            className="sc-iAyFgw dcdfbw"
+            className="sc-kkGfuU cCdZFh"
           >
             <span
-              className="sc-hSdWYo ctAAoI"
+              className="sc-iAyFgw jRkIxn"
             >
               View interaction details
             </span>
           </summary>
           <div
-            className="sc-eHgmQL jEgifR"
+            className="sc-hSdWYo dfimje"
           >
             <table
-              className="sc-exAgwC beKOIl sc-hrWEMg duUoFv"
+              className="sc-exAgwC beKOIl sc-bwCtUz iVExri"
             >
               <tbody
-                className="sc-ibxdXY clQDsv"
+                className="sc-eXEjpC fuVqJC"
               >
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -4011,7 +4076,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                     Contact(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -4022,7 +4087,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                       John Doe
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:john@example.com"
                         muted={false}
                       >
@@ -4032,10 +4097,10 @@ exports[`ActivityFeed when there is a single activity should render single activ
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -4046,7 +4111,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                     Adviser(s)
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -4057,7 +4122,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                       Mario Bros
                       , 
                       <a
-                        className="sc-htpNat jdOrDl"
+                        className="sc-bwzfXH VXMCV"
                         href="mailto:mariobros@dit.com"
                         muted={false}
                       >
@@ -4067,10 +4132,10 @@ exports[`ActivityFeed when there is a single activity should render single activ
                   </td>
                 </tr>
                 <tr
-                  className="sc-bwCtUz kLbHbK"
+                  className="sc-iQKALj ftJWrM"
                 >
                   <th
-                    className="sc-iQKALj hLpCNL"
+                    className="sc-RefOD dxRfSY"
                     style={
                       Object {
                         "border": 0,
@@ -4081,7 +4146,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                     Services
                   </th>
                   <td
-                    className="sc-iQKALj ldWFKA"
+                    className="sc-RefOD gzbQXK"
                     style={
                       Object {
                         "border": 0,
@@ -4094,7 +4159,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
               </tbody>
             </table>
             <a
-              className="sc-htpNat jdOrDl"
+              className="sc-bwzfXH VXMCV"
               href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
               muted={false}
             >

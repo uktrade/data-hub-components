@@ -7,6 +7,7 @@ import Cards from './activity-feed-cards'
 export default class ActivityFeedCard extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
+    showDetails: PropTypes.bool.isRequired,
   }
 
   constructor(props) {
@@ -16,9 +17,9 @@ export default class ActivityFeedCard extends React.PureComponent {
   }
 
   render() {
-    const { activity } = this.props
+    const { activity, showDetails } = this.props
     const { Card } = this
 
-    return Card ? <Card activity={activity} /> : null
+    return Card ? <Card activity={activity} showDetails={showDetails} /> : null
   }
 }

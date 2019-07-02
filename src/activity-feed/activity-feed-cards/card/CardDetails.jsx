@@ -26,6 +26,7 @@ const GovUkDetails = styled(Details)`
 export default class CardDetails extends React.PureComponent {
   static propTypes = {
     summary: PropTypes.string.isRequired,
+    showDetails: PropTypes.bool.isRequired,
     link: PropTypes.shape({
       url: PropTypes.string.isRequired,
       text: PropTypes.string.isRequired,
@@ -34,10 +35,10 @@ export default class CardDetails extends React.PureComponent {
   }
 
   render() {
-    const { summary, link, children } = this.props
+    const { summary, showDetails, link, children } = this.props
 
     return (
-      <GovUkDetails summary={summary}>
+      <GovUkDetails summary={summary} open={showDetails}>
         {children}
         <Link href={link.url}>{link.text}</Link>
       </GovUkDetails>

@@ -1,31 +1,39 @@
 import React from 'react'
-import {
-  Checkbox,
-  Details,
-  Fieldset,
-  FormGroup,
-  GridRow,
-  GridCol,
-} from 'govuk-react'
+import styled from 'styled-components'
+import { GREY_3 } from 'govuk-colours'
+import { SPACING, FONT_SIZE } from '@govuk-react/constants'
+import { Link } from 'govuk-react'
+import PropTypes from 'prop-types'
 
-export default class ActivityFeedFilters extends React.Component {
+const StyledActivityFeedFilters = styled('div')`
+  background-color: ${GREY_3};
+  padding: ${SPACING.SCALE_2};
+`
+
+const StyledLink = styled(Link)`
+  font-size: ${FONT_SIZE.SIZE_16};
+`
+StyledLink.displayName = 'ShowDetails'
+
+export default class ActivityFeedFilters extends React.PureComponent {
+  static propTypes = {
+    onShowDetailsClick: PropTypes.func.isRequired,
+    showDetails: PropTypes.bool.isRequired,
+  }
+
   render() {
+    const { onShowDetailsClick, showDetails } = this.props
+
+    const onClick = (e) => {
+      e.preventDefault()
+      onShowDetailsClick()
+    }
+
     return (
-      <Details summary="Filter and sort activity" style={{ fontSize: '100%', marginBottom: 0 }}>
-        <form>
-          <Fieldset>
-            <Fieldset.Legend>Show me</Fieldset.Legend>
-            <GridRow>
-              <GridCol>
-                <FormGroup>
-                  <Checkbox>My activity</Checkbox>
-                  <Checkbox>My team&apos;s activity</Checkbox>
-                </FormGroup>
-              </GridCol>
-            </GridRow>
-          </Fieldset>
-        </form>
-      </Details>
+      <StyledActivityFeedFilters>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <StyledLink href="#" onClick={onClick}>{ showDetails ? 'Hide' : 'Show' } details for all activities</StyledLink>
+      </StyledActivityFeedFilters>
     )
   }
 }
