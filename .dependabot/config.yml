@@ -1,8 +1,10 @@
 version: 1
 update_configs:
-  - directory: "/"
+  - directory: /
     package_manager: javascript
     update_schedule: weekly
+    commit_message:
+      prefix: chore
     default_reviewers:
       - paulgain
       - rafenden
