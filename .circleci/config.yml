@@ -17,6 +17,13 @@ jobs:
             - node_modules
       - run: yarn lint
       - run: yarn test --verbose
+      - store_artifacts:
+          path: test-results
+      - store_test_results:
+          path: test-results
+      - run:
+          name: Publish coverage to Codecov
+          command: bash <(curl -s https://codecov.io/bash) -f test-results/coverage/coverage-final.json
       - run: yarn release # Will only release to NPM on master branch
 
 workflows:

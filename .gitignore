@@ -17,7 +17,10 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+coverage/
+
+# Test results
+test-results/
 
 # nyc test coverage
 .nyc_output
@@ -66,7 +69,7 @@ typings/
 .idea/
 
 # Production build
-dist
+dist/
 
 # Storybook build
 storybook-static/
