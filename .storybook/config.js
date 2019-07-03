@@ -1,14 +1,18 @@
 import React from 'react'
 import { addDecorator, addParameters, configure } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { FONT_SIZE, FONT_STACK } from '@govuk-react/constants'
+import { FONT_SIZE, FONT_STACK, MEDIA_QUERIES } from '@govuk-react/constants'
 import { createGlobalStyle } from "styled-components";
 
 const req = require.context('../src', true, /.*\.stories\.(js|jsx)$/)
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font: ${FONT_SIZE.SIZE_14} ${FONT_STACK};
+    font: ${FONT_SIZE.SIZE_16} ${FONT_STACK};
+    
+    ${MEDIA_QUERIES.TABLET} {
+      font: ${FONT_SIZE.SIZE_19} ${FONT_STACK};
+    }
   }
 `
 
