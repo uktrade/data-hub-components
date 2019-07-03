@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MEDIA_QUERIES, HEADING_SIZES } from '@govuk-react/constants'
+import { MEDIA_QUERIES, HEADING_SIZES, SPACING } from '@govuk-react/constants'
 import { H3, Link } from 'govuk-react'
 import PropTypes from 'prop-types'
 
@@ -22,6 +22,10 @@ const Heading = styled(H3)`
   
   & > a:link, a:visited, a:hover, a:active {
     text-decoration: none;
+  }
+  
+  ${MEDIA_QUERIES.TABLET} {
+    margin-bottom: ${SPACING.SCALE_5};
   }
 `
 

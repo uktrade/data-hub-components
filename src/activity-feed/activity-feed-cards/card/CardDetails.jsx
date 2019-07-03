@@ -5,7 +5,7 @@ import { SPACING, MEDIA_QUERIES } from '@govuk-react/constants'
 import PropTypes from 'prop-types'
 
 const GovUkDetails = styled(Details)`
-  font-size: 100%;
+  font-size: 16px;
   margin: ${SPACING.SCALE_2} 0 0;
   
   & > div {
@@ -19,7 +19,7 @@ const GovUkDetails = styled(Details)`
   }
   
   ${MEDIA_QUERIES.TABLET} {
-    margin-top: -${SPACING.SCALE_2};
+    margin-top: -${SPACING.SCALE_3};
   }
 `
 
