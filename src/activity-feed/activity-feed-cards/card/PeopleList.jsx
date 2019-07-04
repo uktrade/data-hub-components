@@ -17,10 +17,11 @@ const ListItem = styled('li')`
 const PersonListItem = ({ person }) => {
   const name = person.type === 'Contact' ? <Link href={person.url}>{person.name}</Link> : <span>{person.name}</span>
   const jobTitle = person.jobTitle ? <span>({person.jobTitle})</span> : null
+  const teamName = person.teamName ? <span>{person.teamName}</span> : null
 
   const formattedListItem = []
 
-  const listItem = compact([name, jobTitle])
+  const listItem = compact([name, jobTitle, teamName])
   listItem.forEach((item, index) => {
     formattedListItem.push(item)
     if (index < listItem.length - 1) {

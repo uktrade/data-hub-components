@@ -1152,6 +1152,10 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                   <span>
                     Mario Bros
                   </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
+                  </span>
                 </li>
                 <li
                   className="sc-gojNiO ikNDmz"
@@ -1159,12 +1163,20 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                   <span>
                     John Hammond
                   </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
+                  </span>
                 </li>
                 <li
                   className="sc-gojNiO ikNDmz"
                 >
                   <span>
                     Luke Moon
+                  </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
                   </span>
                 </li>
               </ul>
@@ -1361,6 +1373,10 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                   <span>
                     Mario Bros
                   </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
+                  </span>
                 </li>
                 <li
                   className="sc-gojNiO ikNDmz"
@@ -1368,12 +1384,20 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                   <span>
                     John Hammond
                   </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
+                  </span>
                 </li>
                 <li
                   className="sc-gojNiO ikNDmz"
                 >
                   <span>
                     Luke Moon
+                  </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
                   </span>
                 </li>
               </ul>
@@ -1570,6 +1594,10 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                   <span>
                     Mario Bros
                   </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
+                  </span>
                 </li>
                 <li
                   className="sc-gojNiO ikNDmz"
@@ -1577,12 +1605,20 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                   <span>
                     John Hammond
                   </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
+                  </span>
                 </li>
                 <li
                   className="sc-gojNiO ikNDmz"
                 >
                   <span>
                     Luke Moon
+                  </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
                   </span>
                 </li>
               </ul>
@@ -1779,6 +1815,10 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                   <span>
                     Mario Bros
                   </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
+                  </span>
                 </li>
                 <li
                   className="sc-gojNiO ikNDmz"
@@ -1786,12 +1826,20 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                   <span>
                     John Hammond
                   </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
+                  </span>
                 </li>
                 <li
                   className="sc-gojNiO ikNDmz"
                 >
                   <span>
                     Luke Moon
+                  </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
                   </span>
                 </li>
               </ul>
@@ -1965,6 +2013,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
                 >
                   <span>
                     Mario Bros
+                  </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
                   </span>
                 </li>
               </ul>
@@ -2163,6 +2215,10 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                   <span>
                     Mario Bros
                   </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
+                  </span>
                 </li>
                 <li
                   className="sc-gojNiO ikNDmz"
@@ -2170,12 +2226,20 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                   <span>
                     John Hammond
                   </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
+                  </span>
                 </li>
                 <li
                   className="sc-gojNiO ikNDmz"
                 >
                   <span>
                     Luke Moon
+                  </span>
+                  , 
+                  <span>
+                    Digital Data Hub - Live Service
                   </span>
                 </li>
               </ul>
