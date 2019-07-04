@@ -20,32 +20,18 @@ const createEmailAddressMarkup = ({ id, name, emailAddress, teamName }) => {
   )
 }
 
-const createJobTitleMarkup = ({ id, url, name, jobTitle }) => {
-  if (!name) {
-    return null
-  }
-
-  const contactJobTitle = jobTitle ? `(${jobTitle})` : null
-
-  return (
-    <span key={id}>
-      <Link href={url}>{name}</Link> {contactJobTitle}
-    </span>
-  )
-}
-
 const getPeople = (activity, personSubType) => {
   const { attributedTo } = activity.object
   return map(filter(attributedTo, ({ type }) => {
     return includes(type, `dit:${personSubType}`)
-  }), ({ id, url, name, 'dit:jobTitle': jobTitle, 'dit:emailAddress': emailAddress, 'dit:team': team }) => {
+  }), ({ id, url, name, 'dit:jobTitle': jobTitle, 'dit:team': team }) => {
     return {
       id,
       url,
       name,
       teamName: team ? team.name : null,
       jobTitle,
-      emailAddress,
+      type: personSubType,
     }
   })
 }
@@ -66,14 +52,12 @@ export default class CardUtils {
     }
   }
 
-  static getPeopleAsList(activity, personSubType) {
-    const people = getPeople(activity, personSubType)
-    return people.map(obj => createEmailAddressMarkup(obj))
+  static getAdvisers(activity) {
+    return getPeople(activity, 'Adviser')
   }
 
-  static getContactsWithJobTitle(activity) {
-    const people = getPeople(activity, 'Contact')
-    return people.map(obj => createJobTitleMarkup(obj))
+  static getContacts(activity) {
+    return getPeople(activity, 'Contact')
   }
 
   static getAddedBy = (activity) => {

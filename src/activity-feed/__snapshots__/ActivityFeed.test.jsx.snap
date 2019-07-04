@@ -2,13 +2,13 @@
 
 exports[`ActivityFeed when activities are being loaded should display a loader 1`] = `
 <div
-  className="sc-eLExRp dieyYx"
+  className="sc-krvtoX GMxoX"
 >
   <div
-    className="sc-cQFLBn gXpeAH"
+    className="sc-daURTG eJQOjz"
   >
     <div
-      className="sc-gojNiO jgMPgU"
+      className="sc-bXGyLb cxxgRI"
     >
       <h2
         className="sc-jAaTju gvcKNJ"
@@ -18,14 +18,14 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
       </h2>
     </div>
     <div
-      className="sc-daURTG joGgTH"
+      className="sc-lkqHmb kQpfdC"
     />
   </div>
   <ol
-    className="sc-cbkKFq cOJAMG"
+    className="sc-fYiAbW bohJMF"
   />
   <div
-    className="sc-lkqHmb gJqCYV"
+    className="sc-cbkKFq buSHMW"
   >
     <div
       className="sc-fAjcbJ jVWwyG"
@@ -249,13 +249,13 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
 
 exports[`ActivityFeed when the activity feed has child elements should render the children 1`] = `
 <div
-  className="sc-eLExRp dieyYx"
+  className="sc-krvtoX GMxoX"
 >
   <div
-    className="sc-cQFLBn gXpeAH"
+    className="sc-daURTG eJQOjz"
   >
     <div
-      className="sc-gojNiO jgMPgU"
+      className="sc-bXGyLb cxxgRI"
     >
       <h2
         className="sc-jAaTju gvcKNJ"
@@ -265,11 +265,11 @@ exports[`ActivityFeed when the activity feed has child elements should render th
       </h2>
     </div>
     <div
-      className="sc-daURTG joGgTH"
+      className="sc-lkqHmb kQpfdC"
     />
   </div>
   <ol
-    className="sc-cbkKFq cOJAMG"
+    className="sc-fYiAbW bohJMF"
   />
   <div>
     Child element to test
@@ -279,13 +279,13 @@ exports[`ActivityFeed when the activity feed has child elements should render th
 
 exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
 <div
-  className="sc-eLExRp dieyYx"
+  className="sc-krvtoX GMxoX"
 >
   <div
-    className="sc-cQFLBn gXpeAH"
+    className="sc-daURTG eJQOjz"
   >
     <div
-      className="sc-gojNiO jgMPgU"
+      className="sc-bXGyLb cxxgRI"
     >
       <h2
         className="sc-jAaTju gvcKNJ"
@@ -295,24 +295,24 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
       </h2>
     </div>
     <div
-      className="sc-daURTG joGgTH"
+      className="sc-lkqHmb kQpfdC"
     />
   </div>
   <ol
-    className="sc-cbkKFq cOJAMG"
+    className="sc-fYiAbW bohJMF"
   />
 </div>
 `;
 
 exports[`ActivityFeed when there are more activities to load should render with "Load more" link 1`] = `
 <div
-  className="sc-eLExRp dieyYx"
+  className="sc-krvtoX GMxoX"
 >
   <div
-    className="sc-cQFLBn gXpeAH"
+    className="sc-daURTG eJQOjz"
   >
     <div
-      className="sc-gojNiO jgMPgU"
+      className="sc-bXGyLb cxxgRI"
     >
       <h2
         className="sc-jAaTju gvcKNJ"
@@ -322,11 +322,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
       </h2>
     </div>
     <div
-      className="sc-daURTG joGgTH"
+      className="sc-lkqHmb kQpfdC"
     />
   </div>
   <ol
-    className="sc-cbkKFq cOJAMG"
+    className="sc-fYiAbW bohJMF"
   >
     <li>
       <div
@@ -383,7 +383,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -410,18 +410,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -446,19 +471,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -554,7 +591,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -581,18 +618,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -617,19 +679,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -725,7 +799,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -752,18 +826,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -788,19 +887,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -896,7 +1007,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -923,18 +1034,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -959,19 +1095,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1067,7 +1215,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -1094,18 +1242,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1130,19 +1303,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1238,7 +1423,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -1265,18 +1450,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1301,19 +1511,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1409,7 +1631,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -1436,18 +1658,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1472,19 +1719,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1580,7 +1839,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -1607,18 +1866,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1643,19 +1927,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1751,7 +2047,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -1778,18 +2074,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1814,19 +2135,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1922,7 +2255,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -1949,18 +2282,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -1985,19 +2343,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -2093,7 +2463,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -2120,18 +2490,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -2156,19 +2551,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -2264,7 +2671,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -2291,18 +2698,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -2327,19 +2759,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -2435,7 +2879,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -2462,18 +2906,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -2498,19 +2967,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -2606,7 +3087,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -2633,18 +3114,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -2669,19 +3175,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -2777,7 +3295,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -2804,18 +3322,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -2840,19 +3383,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -2948,7 +3503,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -2975,18 +3530,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -3011,19 +3591,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -3119,7 +3711,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -3146,18 +3738,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -3182,19 +3799,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -3290,7 +3919,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -3317,18 +3946,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -3353,19 +4007,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -3461,7 +4127,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -3488,18 +4154,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -3524,19 +4215,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -3632,7 +4335,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -3659,18 +4362,43 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -3695,19 +4423,31 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -3750,7 +4490,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
   </ol>
   <div
-    className="sc-lkqHmb gJqCYV"
+    className="sc-cbkKFq buSHMW"
   >
     <div
       className="sc-fAjcbJ jVWwyG"
@@ -3974,13 +4714,13 @@ exports[`ActivityFeed when there are more activities to load should render with 
 
 exports[`ActivityFeed when there is a single activity should render single activity with appropriate header 1`] = `
 <div
-  className="sc-eLExRp dieyYx"
+  className="sc-krvtoX GMxoX"
 >
   <div
-    className="sc-cQFLBn gXpeAH"
+    className="sc-daURTG eJQOjz"
   >
     <div
-      className="sc-gojNiO jgMPgU"
+      className="sc-bXGyLb cxxgRI"
     >
       <h2
         className="sc-jAaTju gvcKNJ"
@@ -3990,11 +4730,11 @@ exports[`ActivityFeed when there is a single activity should render single activ
       </h2>
     </div>
     <div
-      className="sc-daURTG joGgTH"
+      className="sc-lkqHmb kQpfdC"
     />
   </div>
   <ol
-    className="sc-cbkKFq cOJAMG"
+    className="sc-fYiAbW bohJMF"
   >
     <li>
       <div
@@ -4051,7 +4791,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
             className="sc-eHgmQL jEgifR"
           >
             <table
-              className="sc-exAgwC VHNOr sc-hrWEMg duUoFv"
+              className="sc-exAgwC bGWIuy sc-hrWEMg duUoFv"
             >
               <tbody
                 className="sc-ibxdXY clQDsv"
@@ -4078,18 +4818,43 @@ exports[`ActivityFeed when there is a single activity should render single activ
                       }
                     }
                   >
-                    <span>
-                      John Doe
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:john@example.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        john@example.com
-                      </a>
-                       
-                    </span>
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+                          muted={false}
+                        >
+                          John Doe
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+                          muted={false}
+                        >
+                          John Smith
+                        </a>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <a
+                          className="sc-htpNat jdOrDl"
+                          href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
+                          muted={false}
+                        >
+                          Lucy Bryant
+                        </a>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr
@@ -4114,19 +4879,31 @@ exports[`ActivityFeed when there is a single activity should render single activ
                       }
                     }
                   >
-                    <span>
-                      Mario Bros
-                      , 
-                      <a
-                        className="sc-htpNat jdOrDl"
-                        href="mailto:mariobros@dit.com"
-                        muted={false}
+                    <ul
+                      className="sc-cQFLBn fGjxWG"
+                    >
+                      <li
+                        className="sc-gojNiO ikNDmz"
                       >
-                        mariobros@dit.com,
-                      </a>
-                       
-                      Digital Data Hub - Live Service
-                    </span>
+                        <span>
+                          Mario Bros
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          John Hammond
+                        </span>
+                      </li>
+                      <li
+                        className="sc-gojNiO ikNDmz"
+                      >
+                        <span>
+                          Luke Moon
+                        </span>
+                      </li>
+                    </ul>
                   </td>
                 </tr>
                 <tr

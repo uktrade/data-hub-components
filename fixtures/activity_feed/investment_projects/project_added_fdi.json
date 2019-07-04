@@ -18,8 +18,30 @@
         "dit:jobTitle": "Some job title",
         "dit:emailAddress": "dean@cox.com",
         "id": "dit:DataHubContact:952232d2-1d25-4c3a-bcac-2f3a30a94da9",
-        "url": "https://www.datahub.dev.uktrade.io/contacts/952232d2-1d25-4c3a-bcac-2f3a30a94da9/details",
+        "url": "https://www.datahub.dev.uktrade.io/contacts/952232d2-1d25-4c3a-bcac-2f3a30a94da9",
         "name": "Dean Cox",
+        "type": [
+          "Person",
+          "dit:Contact"
+        ]
+      },
+      {
+        "dit:jobTitle": "Director",
+        "dit:emailAddress": "john@doe.com",
+        "id": "dit:DataHubContact:952232d2-1d25-4c3a-bcac-2f3a30a94da9",
+        "url": "https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba",
+        "name": "John Doe",
+        "type": [
+          "Person",
+          "dit:Contact"
+        ]
+      },
+      {
+        "dit:jobTitle": "Chief Executive",
+        "dit:emailAddress": "marriottuk@aol.com",
+        "id": "dit:DataHubContact:952232d2-1d25-4c3a-bcac-2f3a30a94da9",
+        "url": "https://www.datahub.dev.uktrade.io/contacts/28f75a93-3c27-e611-9bdc-e4115bead28a/details",
+        "name": "Mary Marriott",
         "type": [
           "Person",
           "dit:Contact"

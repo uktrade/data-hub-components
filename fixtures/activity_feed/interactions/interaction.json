@@ -44,7 +44,28 @@
           "dit:Contact"
         ],
         "dit:emailAddress": "john@example.com",
-        "name": "John Doe"
+        "name": "John Doe",
+        "url": "https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+      },
+      {
+        "id": "dit:DataHubContact:c7327882-86f2-40e9-b1bd-81daa28f1603",
+        "type": [
+          "Person",
+          "dit:Contact"
+        ],
+        "dit:emailAddress": "john.smith@dit.com",
+        "name": "John Smith",
+        "url": "https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
+      },
+      {
+        "id": "dit:DataHubContact:04cadecd-2de4-4cda-9fda-59db73495dbc",
+        "type": [
+          "Person",
+          "dit:Contact"
+        ],
+        "dit:emailAddress": "lucy.bryant@dit.com",
+        "name": "Lucy Bryant",
+        "url": "https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
       },
       {
         "id": "dit:DataHubAdviser:2dc3c098-2f51-43c5-8767-752e8e5065b5",
@@ -54,6 +75,40 @@
         ],
         "dit:emailAddress": "mariobros@dit.com",
         "name": "Mario Bros",
+        "dit:team": {
+          "id": "dit:DataHubTeam:3a48318c-9698-e211-a939-e4115bead28a",
+          "type": [
+            "Group",
+            "dit:Team"
+          ],
+          "name": "Digital Data Hub - Live Service"
+        }
+      },
+      {
+        "id": "dit:DataHubAdviser:2dc3c098-2f51-43c5-8767-752e8e5065b6",
+        "type": [
+          "Person",
+          "dit:Adviser"
+        ],
+        "dit:emailAddress": "john.hammond@dit.com",
+        "name": "John Hammond",
+        "dit:team": {
+          "id": "dit:DataHubTeam:3a48318c-9698-e211-a939-e4115bead28a",
+          "type": [
+            "Group",
+            "dit:Team"
+          ],
+          "name": "Digital Data Hub - Live Service"
+        }
+      },
+      {
+        "id": "dit:DataHubAdviser:2dc3c098-2f51-43c5-8767-752e8e5065b7",
+        "type": [
+          "Person",
+          "dit:Adviser"
+        ],
+        "dit:emailAddress": "luke.moon@dit.com",
+        "name": "Luke Moon",
         "dit:team": {
           "id": "dit:DataHubTeam:3a48318c-9698-e211-a939-e4115bead28a",
           "type": [

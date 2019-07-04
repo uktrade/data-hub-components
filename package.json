@@ -44,6 +44,7 @@
     "pluralise": "^1.0.1",
     "prop-types": "^15.7.2",
     "react-markdown": "^4.0.8",
+    "shortid": "^2.2.14",
     "styled-components": "^4.2.0"
   },
   "peerDependencies": {
