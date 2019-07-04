@@ -6,42 +6,33 @@ import {
 import { Link } from 'govuk-react'
 import React from 'react'
 
-const createEmailAddressMarkup = ({ id, name, emailAddress }) => {
+const createEmailAddressMarkup = ({ id, name, emailAddress, teamName }) => {
   if (!name || !emailAddress) {
     return null
   }
 
-  return (
-    <span key={id}>
-      {name}, <Link href={`mailto:${emailAddress}`}>{emailAddress}</Link>
-    </span>
-  )
-}
-
-const createJobTitleMarkup = ({ id, url, name, jobTitle }) => {
-  if (!name) {
-    return null
-  }
-
-  const contactJobTitle = jobTitle ? `(${jobTitle})` : null
+  const formattedEmailAddress = teamName ? `${emailAddress},` : emailAddress
 
   return (
     <span key={id}>
-      <Link href={url}>{name}</Link> {contactJobTitle}
+      {name}, <Link href={`mailto:${emailAddress}`}>{formattedEmailAddress}</Link> {teamName}
     </span>
   )
 }
 
 const getPeople = (activity, personSubType) => {
-  return map(filter(activity.object.attributedTo, ({ type }) => {
+  const { attributedTo } = activity.object
+  return map(filter(attributedTo, ({ type }) => {
     return includes(type, `dit:${personSubType}`)
-  }), ({ id, url, name, 'dit:jobTitle': jobTitle, 'dit:emailAddress': emailAddress }) => {
+  }), ({ id, url, name, 'dit:jobTitle': jobTitle, 'dit:emailAddress': emailAddress, 'dit:team': team }) => {
     return {
       id,
       url,
       name,
       jobTitle,
       emailAddress,
+      team: team ? team.name : null,
+      type: personSubType,
     }
   })
 }
@@ -62,14 +53,12 @@ export default class CardUtils {
     }
   }
 
-  static getPeopleAsList(activity, personSubType) {
-    const people = getPeople(activity, personSubType)
-    return people.map(obj => createEmailAddressMarkup(obj))
+  static getAdvisers(activity) {
+    return getPeople(activity, 'Adviser')
   }
 
-  static getContactsWithJobTitle(activity) {
-    const people = getPeople(activity, 'Contact')
-    return people.map(obj => createJobTitleMarkup(obj))
+  static getContacts(activity) {
+    return getPeople(activity, 'Contact')
   }
 
   static getAddedBy = (activity) => {

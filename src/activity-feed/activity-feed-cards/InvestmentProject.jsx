@@ -9,6 +9,7 @@ import {
   CardHeading,
   CardMeta,
   CardTable,
+  PeopleList,
 } from './card'
 
 import CardUtils from './card/CardUtils'
@@ -41,7 +42,7 @@ export default class InvestmentProject extends React.PureComponent {
     const investmentType = get(activity, 'object.dit:investmentType.name')
     const addedBy = CardUtils.getAddedBy(activity)
     const estimatedLandDate = DateUtils.format(get(activity, 'object.dit:estimatedLandDate'))
-    const contacts = CardUtils.getContactsWithJobTitle(activity)
+    const contacts = CardUtils.getContacts(activity)
 
     // Specific to Foreign direct investment (FDI) only
     const totalInvestment = NumberUtils.currency(get(activity, 'object.dit:totalInvestment'))
@@ -67,7 +68,7 @@ export default class InvestmentProject extends React.PureComponent {
               { header: 'Investment Type', content: investmentType },
               { header: 'Added by', content: addedBy },
               { header: 'Estimated land date', content: estimatedLandDate },
-              { header: 'Company contact(s)', content: contacts },
+              { header: 'Company contact(s)', content: <PeopleList people={contacts} /> },
               { header: 'Total Investment', content: totalInvestment },
               { header: 'Capital expenditure value', content: foreignEquityInvestment },
               { header: 'Gross value added (GVA)', content: grossValueAdded },

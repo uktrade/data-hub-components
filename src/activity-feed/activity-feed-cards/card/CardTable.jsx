@@ -13,6 +13,7 @@ const GovUkTable = styled(Table)`
     border: 0;
     padding: ${SPACING.SCALE_2};
     font-size: 16px;
+    vertical-align: top;
   }
 `
 

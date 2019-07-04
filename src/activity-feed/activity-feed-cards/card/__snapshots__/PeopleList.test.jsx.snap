@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PeopleList.js when the list of people is empty should not render an empty list 1`] = `
+<ul
+  className="sc-cmthru hkmdGA"
+/>
+`;

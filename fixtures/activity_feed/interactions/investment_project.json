@@ -44,7 +44,8 @@
           "dit:Contact"
         ],
         "dit:emailAddress": "john@example.com",
-        "name": "John Doe"
+        "name": "John Doe",
+        "url": "https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
       },
       {
         "id": "dit:DataHubAdviser:2dc3c098-2f51-43c5-8767-752e8e5065b5",
