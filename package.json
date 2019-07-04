@@ -30,7 +30,7 @@
     "storybook:release": "yarn storybook:build && git-directory-deploy --directory storybook-static --branch gh-pages",
     "prepack": "yarn build",
     "release": "semantic-release",
-    "postpublish": "[ \"${npm_config_tag:-latest}\" != latest ] || yarn release:storybook"
+    "postpublish": "[ \"${npm_config_tag:-latest}\" != latest ] || yarn storybook:release"
   },
   "pre-commit": "lint",
   "dependencies": {
