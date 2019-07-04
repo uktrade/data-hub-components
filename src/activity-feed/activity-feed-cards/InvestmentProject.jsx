@@ -9,6 +9,7 @@ import {
   CardHeading,
   CardMeta,
   CardTable,
+  AddedBy,
   PeopleList,
 } from './card'
 
@@ -39,7 +40,10 @@ export default class InvestmentProject extends React.PureComponent {
     const url = get(activity, 'object.url')
     const name = get(activity, 'object.name')
     const investmentType = get(activity, 'object.dit:investmentType.name')
-    const addedBy = CardUtils.getAddedBy(activity)
+
+    let adviser = CardUtils.getAddedBy(activity)
+    adviser = adviser ? <AddedBy adviser={adviser} /> : null
+
     const estimatedLandDate = DateUtils.format(get(activity, 'object.dit:estimatedLandDate'))
     const contacts = CardUtils.getContacts(activity)
 
@@ -64,7 +68,7 @@ export default class InvestmentProject extends React.PureComponent {
           <CardTable rows={
             [
               { header: 'Investment Type', content: investmentType },
-              { header: 'Added by', content: addedBy },
+              { header: 'Added by', content: adviser },
               { header: 'Estimated land date', content: estimatedLandDate },
               { header: 'Company contact(s)', content: <PeopleList people={contacts} /> },
               { header: 'Total Investment', content: totalInvestment },

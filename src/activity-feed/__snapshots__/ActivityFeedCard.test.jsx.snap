@@ -129,18 +129,19 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                 }
               }
             >
-              <span>
-                Test CMU 1
-                , 
+              <div>
+                <span>
+                  Test CMU 1
+                </span>
                 <a
                   className="sc-htpNat jdOrDl"
                   href="mailto:cmuuser1test@mobile.ukti.gov.uk"
                   muted={false}
                 >
+                   
                   cmuuser1test@mobile.ukti.gov.uk
                 </a>
-                 
-              </span>
+              </div>
             </td>
           </tr>
           <tr
@@ -772,18 +773,19 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
                 }
               }
             >
-              <span>
-                Test CMU 1
-                , 
+              <div>
+                <span>
+                  Test CMU 1
+                </span>
                 <a
                   className="sc-htpNat jdOrDl"
                   href="mailto:cmuuser1test@mobile.ukti.gov.uk"
                   muted={false}
                 >
+                   
                   cmuuser1test@mobile.ukti.gov.uk
                 </a>
-                 
-              </span>
+              </div>
             </td>
           </tr>
           <tr
@@ -942,7 +944,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
                 }
               }
             >
-              Contact(s)
+              Company contact(s)
             </th>
             <td
               className="sc-iQKALj ldWFKA"
@@ -1070,7 +1072,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                 }
               }
             >
-              Contact(s)
+              Company contact(s)
             </th>
             <td
               className="sc-iQKALj ldWFKA"
@@ -1279,7 +1281,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                 }
               }
             >
-              Contact(s)
+              Company contact(s)
             </th>
             <td
               className="sc-iQKALj ldWFKA"
@@ -1488,7 +1490,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                 }
               }
             >
-              Contact(s)
+              Company contact(s)
             </th>
             <td
               className="sc-iQKALj ldWFKA"
@@ -1697,7 +1699,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                 }
               }
             >
-              Contact(s)
+              Company contact(s)
             </th>
             <td
               className="sc-iQKALj ldWFKA"
@@ -1906,7 +1908,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
                 }
               }
             >
-              Contact(s)
+              Company contact(s)
             </th>
             <td
               className="sc-iQKALj ldWFKA"
@@ -2081,7 +2083,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                 }
               }
             >
-              Contact(s)
+              Company contact(s)
             </th>
             <td
               className="sc-iQKALj ldWFKA"
@@ -2290,7 +2292,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
                 }
               }
             >
-              Contact(s)
+              Company contact(s)
             </th>
             <td
               className="sc-iQKALj ldWFKA"

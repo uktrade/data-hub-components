@@ -400,7 +400,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -608,7 +608,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -816,7 +816,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -1024,7 +1024,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -1232,7 +1232,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -1440,7 +1440,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -1648,7 +1648,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -1856,7 +1856,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -2064,7 +2064,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -2272,7 +2272,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -2480,7 +2480,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -2688,7 +2688,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -2896,7 +2896,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -3104,7 +3104,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -3312,7 +3312,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -3520,7 +3520,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -3728,7 +3728,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -3936,7 +3936,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -4144,7 +4144,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -4352,7 +4352,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"
@@ -4808,7 +4808,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                       }
                     }
                   >
-                    Contact(s)
+                    Company contact(s)
                   </th>
                   <td
                     className="sc-iQKALj ldWFKA"

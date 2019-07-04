@@ -1,24 +1,6 @@
-/* eslint-disable react/prop-types */
-
 import {
   filter, get, includes, map, some,
 } from 'lodash'
-import { Link } from 'govuk-react'
-import React from 'react'
-
-const createEmailAddressMarkup = ({ id, name, emailAddress, teamName }) => {
-  if (!name || !emailAddress) {
-    return null
-  }
-
-  const formattedEmailAddress = teamName ? `${emailAddress},` : emailAddress
-
-  return (
-    <span key={id}>
-      {name}, <Link href={`mailto:${emailAddress}`}>{formattedEmailAddress}</Link> {teamName}
-    </span>
-  )
-}
 
 const getPeople = (activity, personSubType) => {
   const { attributedTo } = activity.object
@@ -61,8 +43,15 @@ export default class CardUtils {
   }
 
   static getAddedBy = (activity) => {
-    const name = get(activity, 'actor.name')
-    const emailAddress = get(activity, 'actor.dit:emailAddress')
-    return createEmailAddressMarkup({ name, emailAddress })
+    const addedBy = {
+      name: get(activity, 'actor.name'),
+      emailAddress: get(activity, 'actor.dit:emailAddress'),
+    }
+
+    if (!addedBy.name || !addedBy.emailAddress) {
+      return null
+    }
+
+    return addedBy
   }
 }
