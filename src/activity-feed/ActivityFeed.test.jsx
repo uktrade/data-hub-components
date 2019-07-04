@@ -3,6 +3,8 @@ import renderer from 'react-test-renderer'
 import MockDate from 'mockdate'
 import { uniqueId } from 'lodash'
 import { mount } from 'enzyme'
+import { Details } from 'govuk-react'
+
 import ActivityFeed from './ActivityFeed'
 import interactionActivityFixture from '../../fixtures/activity_feed/interactions/interaction'
 
@@ -126,6 +128,30 @@ describe('ActivityFeed', () => {
       const totalTimeElapsed = parseFloat(`${seconds}.${nanoseconds}`)
 
       expect(totalTimeElapsed).toBeLessThanOrEqual(FEED_MAX_RENDER_TIME_SECONDS)
+    })
+  })
+
+  describe('when the "Show details for all activities" link is clicked', () => {
+    let wrapper
+
+    beforeEach(() => {
+      wrapper = mount((<ActivityFeed
+        totalActivities={1}
+        activities={[interactionActivityFixture]}
+      />))
+
+      wrapper.find('ShowDetails').at(0).simulate('click')
+    })
+
+    test('should change the link text', () => {
+      expect(wrapper.find('ShowDetails').at(0).prop('children')).toEqual([
+        'Hide',
+        ' details for all activities',
+      ])
+    })
+
+    test('should open all cards', () => {
+      expect(wrapper.find(Details).at(0).prop('open')).toEqual(true)
     })
   })
 })

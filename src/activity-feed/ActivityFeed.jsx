@@ -5,6 +5,7 @@ import { SPACING } from '@govuk-react/constants'
 
 import ActivityFeedCard from './ActivityFeedCard'
 import ActivityFeedHeader from './ActivityFeedHeader'
+import ActivityFeedFilters from './ActivityFeedFilters'
 import ActivityFeedPagination from './ActivityFeedPagination'
 
 const ActivityFeedContainer = styled('div')`
@@ -14,6 +15,7 @@ const ActivityFeedContainer = styled('div')`
 const ActivityFeedCardList = styled('ol')`
   list-style-type: none;
   padding: 0;
+  margin-top: ${SPACING.SCALE_2};
   
   & > li {
     margin-bottom: ${SPACING.SCALE_2};
@@ -43,6 +45,23 @@ export default class ActivityFeed extends React.Component {
     totalActivities: 0,
   }
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      showDetails: false,
+    }
+
+    this.onShowDetailsClick = this.onShowDetailsClick.bind(this)
+  }
+
+  onShowDetailsClick() {
+    const { showDetails } = this.state
+
+    this.setState({
+      showDetails: !showDetails,
+    })
+  }
+
   render() {
     const {
       activities,
@@ -54,6 +73,7 @@ export default class ActivityFeed extends React.Component {
       totalActivities,
       children,
     } = this.props
+    const { showDetails } = this.state
 
     return (
       <ActivityFeedContainer>
@@ -62,11 +82,14 @@ export default class ActivityFeed extends React.Component {
           addContentText={addContentText}
           addContentLink={addContentLink}
         />
-
+        <ActivityFeedFilters
+          onShowDetailsClick={this.onShowDetailsClick}
+          showDetails={showDetails}
+        />
         <ActivityFeedCardList>
           {activities.map(activity => (
             <li key={activity.id}>
-              <ActivityFeedCard activity={activity} />
+              <ActivityFeedCard activity={activity} showDetails={showDetails} />
             </li>
           ))}
         </ActivityFeedCardList>

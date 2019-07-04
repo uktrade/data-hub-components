@@ -1,77 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ActivityFeedFilters renders filters 1`] = `
-<details
-  className="sc-kEYyzF ihcnje"
-  open={false}
-  style={
-    Object {
-      "fontSize": "100%",
-      "marginBottom": 0,
-    }
-  }
+exports[`ActivityFeedFilters when the details for all activities are hidden renders filters 1`] = `
+<div
+  className="sc-cmthru ifjRZS"
 >
-  <summary
-    className="sc-kkGfuU cCdZFh"
+  <a
+    className="sc-bwzfXH sc-hMFtBS dEpEZN"
+    href="#"
+    muted={false}
+    onClick={[Function]}
   >
-    <span
-      className="sc-iAyFgw jRkIxn"
-    >
-      Filter and sort activity
-    </span>
-  </summary>
-  <div
-    className="sc-hSdWYo dfimje"
+    Show
+     details for all activities
+  </a>
+</div>
+`;
+
+exports[`ActivityFeedFilters when the details for all activities are shown renders filters 1`] = `
+<div
+  className="sc-cmthru ifjRZS"
+>
+  <a
+    className="sc-bwzfXH sc-hMFtBS dEpEZN"
+    href="#"
+    muted={false}
+    onClick={[Function]}
   >
-    <form>
-      <fieldset
-        className="sc-gipzik eBgapt"
-      >
-        <legend
-          className="sc-iRbamj eOWqGG"
-        >
-          Show me
-        </legend>
-        <div
-          className="sc-hzDkRC hNOsPM"
-        >
-          <div
-            className="sc-bRBYWo cfvpGy"
-          >
-            <div
-              className="sc-Rmtcm fMfOqA"
-            >
-              <label
-                className="sc-cSHVUG jqlwpQ"
-              >
-                <input
-                  className="sc-kAzzGY gsGxQW"
-                  type="checkbox"
-                />
-                <span
-                  className="sc-chPdSV hLZCFS"
-                >
-                  My activity
-                </span>
-              </label>
-              <label
-                className="sc-cSHVUG jqlwpQ"
-              >
-                <input
-                  className="sc-kAzzGY gsGxQW"
-                  type="checkbox"
-                />
-                <span
-                  className="sc-chPdSV hLZCFS"
-                >
-                  My team's activity
-                </span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </fieldset>
-    </form>
-  </div>
-</details>
+    Hide
+     details for all activities
+  </a>
+</div>
 `;

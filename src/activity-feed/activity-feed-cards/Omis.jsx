@@ -16,6 +16,7 @@ import CardUtils from './card/CardUtils'
 export default class Omis extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
+    showDetails: PropTypes.bool.isRequired,
   }
 
   static canRender(activity) {
@@ -25,7 +26,7 @@ export default class Omis extends React.PureComponent {
   }
 
   render() {
-    const { activity } = this.props
+    const { activity, showDetails } = this.props
 
     const published = get(activity, 'published')
     const reference = get(activity, 'object.name')
@@ -42,6 +43,7 @@ export default class Omis extends React.PureComponent {
         <CardDetails
           summary="View key details and people for this order"
           link={{ url, text: 'Go to the order detail page' }}
+          showDetails={showDetails}
         >
           <CardTable rows={
             [
