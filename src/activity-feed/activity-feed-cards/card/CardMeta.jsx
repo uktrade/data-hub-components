@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { SPACING, MEDIA_QUERIES } from '@govuk-react/constants'
+import { SPACING, MEDIA_QUERIES, FONT_SIZE } from '@govuk-react/constants'
 import { GREY_2 } from 'govuk-colours'
 import PropTypes from 'prop-types'
 
@@ -9,6 +9,7 @@ import DateUtils from '../../../utils/DateUtils'
 const CardMetaContainer = styled('div')`
   width: 100%;
   margin-bottom: ${SPACING.SCALE_1};
+  font-size: ${FONT_SIZE.SIZE_16};
   
   ${MEDIA_QUERIES.TABLET} {
     width: 200px;
@@ -30,6 +31,7 @@ const Badge = styled('span')`
   border: ${({ borderColour }) => `2px solid ${borderColour || GREY_2}`};
   border-radius: 4px;
   padding: 2px 4px;
+  font-size: ${FONT_SIZE.SIZE_14};
 `
 
 export default class CardMeta extends React.PureComponent {
