@@ -6,6 +6,7 @@
 [![Build Status][circleci-image]][circleci-url]
 [![LGTM Alerts][lgtm-alerts-image]][lgtm-alerts-url]
 [![LGTM Grade][lgtm-grade-image]][lgtm-grade-url]
+[![Coverage][codecov-image]][codecov-url]
 
 [npm-url]: https://npmjs.org/package/data-hub-components
 [npm-downloads-image]: https://badgen.net/npm/dm/data-hub-components
@@ -16,6 +17,8 @@
 [lgtm-alerts-url]: https://lgtm.com/projects/g/uktrade/data-hub-components/alerts/
 [lgtm-grade-image]: https://img.shields.io/lgtm/grade/javascript/g/uktrade/data-hub-components.svg?logo=lgtm&logoWidth=18
 [lgtm-grade-url]: https://lgtm.com/projects/g/uktrade/data-hub-components/context:javascript
+[codecov-image]: https://codecov.io/gh/uktrade/data-hub-components/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/uktrade/data-hub-components
 
 Collection of React Components used by the Data Hub platform.
 
