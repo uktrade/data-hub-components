@@ -8,6 +8,8 @@ import {
   CardHeading,
   CardMeta,
   CardTable,
+  ContactsList,
+  AdvisersList,
 } from './card'
 import CardUtils from './card/CardUtils'
 import InteractionUtils from './InteractionUtils'
@@ -32,6 +34,9 @@ export default class Interaction extends React.PureComponent {
       ...InteractionUtils.transform(activity),
     }
 
+    const contacts = CardUtils.getContacts(activity)
+    const advisers = CardUtils.getAdvisers(activity)
+
     return (
       <Card isUpcoming={transformed.isUpcoming}>
         <CardHeader>
@@ -45,8 +50,8 @@ export default class Interaction extends React.PureComponent {
         >
           <CardTable rows={
             [
-              { header: 'Contact(s)', content: CardUtils.getPeopleAsList(activity, 'Contact') },
-              { header: 'Adviser(s)', content: CardUtils.getPeopleAsList(activity, 'Adviser') },
+              { header: 'Company contact(s)', content: <ContactsList contacts={contacts} /> },
+              { header: 'Adviser(s)', content: <AdvisersList advisers={advisers} /> },
               { header: 'Services', content: transformed.service },
             ]
           }
