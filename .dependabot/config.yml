@@ -1,10 +1,13 @@
+# Documentation: https://dependabot.com/docs/config-file
+
 version: 1
 update_configs:
-  - directory: /
+  - directory: "/"
     package_manager: javascript
-    update_schedule: weekly
-    commit_message:
-      prefix: chore
+    update_schedule: live
+    allowed_updates:
+      - match:
+          update_type: "security"
     default_reviewers:
       - paulgain
       - rafenden
