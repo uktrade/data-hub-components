@@ -500,6 +500,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -544,8 +549,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -562,8 +566,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -580,8 +583,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -744,6 +746,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -788,8 +795,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -806,8 +812,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -824,8 +829,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -988,6 +992,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -1032,8 +1041,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -1050,8 +1058,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -1068,8 +1075,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -1232,6 +1238,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -1276,8 +1287,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -1294,8 +1304,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -1312,8 +1321,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -1476,6 +1484,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -1520,8 +1533,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -1538,8 +1550,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -1556,8 +1567,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -1720,6 +1730,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -1764,8 +1779,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -1782,8 +1796,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -1800,8 +1813,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -1964,6 +1976,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -2008,8 +2025,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -2026,8 +2042,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -2044,8 +2059,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -2208,6 +2222,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -2252,8 +2271,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -2270,8 +2288,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -2288,8 +2305,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -2452,6 +2468,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -2496,8 +2517,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -2514,8 +2534,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -2532,8 +2551,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -2696,6 +2714,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -2740,8 +2763,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -2758,8 +2780,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -2776,8 +2797,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -2940,6 +2960,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -2984,8 +3009,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -3002,8 +3026,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -3020,8 +3043,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -3184,6 +3206,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -3228,8 +3255,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -3246,8 +3272,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -3264,8 +3289,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -3428,6 +3452,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -3472,8 +3501,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -3490,8 +3518,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -3508,8 +3535,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -3672,6 +3698,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -3716,8 +3747,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -3734,8 +3764,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -3752,8 +3781,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -3916,6 +3944,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -3960,8 +3993,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -3978,8 +4010,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -3996,8 +4027,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -4160,6 +4190,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -4204,8 +4239,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -4222,8 +4256,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -4240,8 +4273,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -4404,6 +4436,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -4448,8 +4485,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -4466,8 +4502,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -4484,8 +4519,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -4648,6 +4682,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -4692,8 +4731,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -4710,8 +4748,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -4728,8 +4765,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -4892,6 +4928,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -4936,8 +4977,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -4954,8 +4994,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -4972,8 +5011,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -5136,6 +5174,11 @@ exports[`ActivityFeed when there are more activities to load should render with 
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -5180,8 +5223,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -5198,8 +5240,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -5216,8 +5257,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
@@ -5641,6 +5681,11 @@ exports[`ActivityFeed when there is a single activity should render single activ
                           Lucy Bryant
                         </a>
                          
+                        <span>
+                          (
+                          Director
+                          )
+                        </span>
                       </li>
                     </ul>
                   </td>
@@ -5685,8 +5730,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                            
                           mariobros@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -5703,8 +5747,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                            
                           john.hammond@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                       <li
                         className="sc-bXGyLb koOVeU"
@@ -5721,8 +5764,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                            
                           luke.moon@dit.com
                         </a>
-                        , 
-                        (Digital Data Hub - Live Service)
+                        , (Digital Data Hub - Live Service)
                       </li>
                     </ul>
                   </td>
