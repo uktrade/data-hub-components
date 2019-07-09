@@ -29,7 +29,7 @@ const getContacts = (activity) => {
       id,
       url,
       name,
-      jobTitle,
+      jobTitle, // Optional field
     }
   })
 }
@@ -43,7 +43,7 @@ const getAdvisers = (activity) => {
       id,
       name,
       emailAddress,
-      team: team ? team.name : null,
+      team: get(team, 'name'), // Only available for Interactions
     }
   })
 }

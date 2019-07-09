@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import { Link } from 'govuk-react'
 import styled from 'styled-components'
 
-const UList = styled('ul')`
+const StyledUList = styled('ul')`
   margin: 0;
   padding-left: 0
 `
 
-const ListItem = styled('li')`
+const StyledListItem = styled('li')`
   list-style-type: none;
 `
 
@@ -16,9 +16,9 @@ const ListItem = styled('li')`
 const AdviserListItem = ({ adviser }) => {
   const name = <span>{adviser.name}</span>
   const emailAddress = <Link href={`mailto:${adviser.emailAddress}`}> {adviser.emailAddress}</Link>
-  const team = adviser.team ? `(${adviser.team})` : null
+  const team = adviser.team ? `, (${adviser.team})` : null
 
-  return <ListItem>{name}, {emailAddress}, {team}</ListItem>
+  return <StyledListItem>{name}, {emailAddress}{team}</StyledListItem>
 }
 
 export default class AdvisersList extends React.PureComponent {
@@ -27,6 +27,7 @@ export default class AdvisersList extends React.PureComponent {
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       emailAddress: PropTypes.string.isRequired,
+      team: PropTypes.string,
     })).isRequired,
   }
 
@@ -34,11 +35,11 @@ export default class AdvisersList extends React.PureComponent {
     const { advisers } = this.props
 
     return (
-      <UList>
+      <StyledUList>
         {
           advisers.map(adviser => <AdviserListItem key={adviser.id} adviser={adviser} />)
         }
-      </UList>
+      </StyledUList>
     )
   }
 }
