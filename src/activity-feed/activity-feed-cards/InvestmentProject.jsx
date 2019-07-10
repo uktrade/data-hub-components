@@ -1,6 +1,7 @@
 import React from 'react'
 import { get } from 'lodash'
 import PropTypes from 'prop-types'
+import Adviser from './card/list/adviser/Adviser'
 
 import {
   Card,
@@ -40,7 +41,8 @@ export default class InvestmentProject extends React.PureComponent {
     const url = get(activity, 'object.url')
     const name = get(activity, 'object.name')
     const investmentType = get(activity, 'object.dit:investmentType.name')
-    const addedBy = CardUtils.getAddedBy(activity)
+    const adviser = CardUtils.getAddedBy(activity)
+    const adviserComponent = adviser ? <Adviser adviser={adviser} /> : null
     const estimatedLandDate = DateUtils.format(get(activity, 'object.dit:estimatedLandDate'))
     const contacts = CardUtils.getContacts(activity)
 
@@ -66,7 +68,7 @@ export default class InvestmentProject extends React.PureComponent {
           <CardTable rows={
             [
               { header: 'Investment Type', content: investmentType },
-              { header: 'Added by', content: addedBy },
+              { header: 'Added by', content: adviserComponent },
               { header: 'Estimated land date', content: estimatedLandDate },
               { header: 'Company contact(s)', content: <ContactsList contacts={contacts} /> },
               { header: 'Total Investment', content: totalInvestment },
