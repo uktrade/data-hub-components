@@ -8,8 +8,7 @@ import {
   CardHeading,
   CardMeta,
   CardTable,
-  ContactsList,
-  AdvisersList,
+  CardDetailsList,
 } from './card'
 import CardUtils from './card/CardUtils'
 import InteractionUtils from './InteractionUtils'
@@ -50,8 +49,8 @@ export default class Interaction extends React.PureComponent {
         >
           <CardTable rows={
             [
-              { header: 'Company contact(s)', content: <ContactsList contacts={contacts} /> },
-              { header: 'Adviser(s)', content: <AdvisersList advisers={advisers} /> },
+              { header: 'Company contact(s)', content: <CardDetailsList people={contacts} /> },
+              { header: 'Adviser(s)', content: <CardDetailsList people={advisers} /> },
               { header: 'Services', content: transformed.service },
             ]
           }

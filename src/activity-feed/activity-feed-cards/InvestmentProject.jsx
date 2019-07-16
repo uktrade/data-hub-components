@@ -9,7 +9,8 @@ import {
   CardHeading,
   CardMeta,
   CardTable,
-  ContactsList,
+  CardDetailsList,
+  CardAdviser,
 } from './card'
 
 import CardUtils from './card/CardUtils'
@@ -40,7 +41,7 @@ export default class InvestmentProject extends React.PureComponent {
     const url = get(activity, 'object.url')
     const name = get(activity, 'object.name')
     const investmentType = get(activity, 'object.dit:investmentType.name')
-    const addedBy = CardUtils.getAddedBy(activity)
+    const adviser = CardUtils.getAdviser(activity)
     const estimatedLandDate = DateUtils.format(get(activity, 'object.dit:estimatedLandDate'))
     const contacts = CardUtils.getContacts(activity)
 
@@ -66,9 +67,9 @@ export default class InvestmentProject extends React.PureComponent {
           <CardTable rows={
             [
               { header: 'Investment Type', content: investmentType },
-              { header: 'Added by', content: addedBy },
+              { header: 'Added by', content: adviser ? <CardAdviser adviser={adviser} /> : null },
               { header: 'Estimated land date', content: estimatedLandDate },
-              { header: 'Company contact(s)', content: <ContactsList contacts={contacts} /> },
+              { header: 'Company contact(s)', content: <CardDetailsList people={contacts} /> },
               { header: 'Total Investment', content: totalInvestment },
               { header: 'Capital expenditure value', content: foreignEquityInvestment },
               { header: 'Gross value added (GVA)', content: grossValueAdded },
