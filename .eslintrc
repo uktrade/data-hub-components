@@ -15,8 +15,13 @@
     },
     "sourceType": "module"
   },
+  "plugins": [
+    "react-hooks"
+  ],
   "rules": {
     "no-underscore-dangle": ["error", {"allow": ["_source"]}],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "react/prefer-stateless-function": "off",
     "react/no-multi-comp": "off",
     "react/forbid-prop-types": "off",
