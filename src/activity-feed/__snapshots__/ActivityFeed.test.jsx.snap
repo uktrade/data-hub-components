@@ -2,13 +2,13 @@
 
 exports[`ActivityFeed when activities are being loaded should display a loader 1`] = `
 <div
-  className="sc-gHboQg jEDEmH"
+  className="sc-fOKMvo kPvCWE"
 >
   <div
-    className="sc-lkqHmb lbgEtc"
+    className="sc-daURTG eJQOjz"
   >
     <div
-      className="sc-eLExRp evODKv"
+      className="sc-bXGyLb cxxgRI"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -18,14 +18,14 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
       </h2>
     </div>
     <div
-      className="sc-cbkKFq auKaH"
+      className="sc-lkqHmb kQpfdC"
     />
   </div>
   <div
-    className="sc-fYiAbW kCfdbA"
+    className="sc-cbkKFq dyUdlj"
   >
     <a
-      className="sc-bwzfXH sc-fOKMvo dVfSJJ"
+      className="sc-bwzfXH sc-krvtoX iEnPFA"
       href="#"
       muted={false}
       onClick={[Function]}
@@ -35,10 +35,10 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
     </a>
   </div>
   <ol
-    className="sc-eilVRo isYkKg"
+    className="sc-dUjcNx bnWbPd"
   />
   <div
-    className="sc-dUjcNx gCpESU"
+    className="sc-fYiAbW bWBaJM"
   >
     <div
       className="sc-eqIVtm fxHPMe"
@@ -262,13 +262,13 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
 
 exports[`ActivityFeed when the activity feed has child elements should render the children 1`] = `
 <div
-  className="sc-gHboQg jEDEmH"
+  className="sc-fOKMvo kPvCWE"
 >
   <div
-    className="sc-lkqHmb lbgEtc"
+    className="sc-daURTG eJQOjz"
   >
     <div
-      className="sc-eLExRp evODKv"
+      className="sc-bXGyLb cxxgRI"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -278,14 +278,14 @@ exports[`ActivityFeed when the activity feed has child elements should render th
       </h2>
     </div>
     <div
-      className="sc-cbkKFq auKaH"
+      className="sc-lkqHmb kQpfdC"
     />
   </div>
   <div
-    className="sc-fYiAbW kCfdbA"
+    className="sc-cbkKFq dyUdlj"
   >
     <a
-      className="sc-bwzfXH sc-fOKMvo dVfSJJ"
+      className="sc-bwzfXH sc-krvtoX iEnPFA"
       href="#"
       muted={false}
       onClick={[Function]}
@@ -295,7 +295,7 @@ exports[`ActivityFeed when the activity feed has child elements should render th
     </a>
   </div>
   <ol
-    className="sc-eilVRo isYkKg"
+    className="sc-dUjcNx bnWbPd"
   />
   <div>
     Child element to test
@@ -305,13 +305,13 @@ exports[`ActivityFeed when the activity feed has child elements should render th
 
 exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
 <div
-  className="sc-gHboQg jEDEmH"
+  className="sc-fOKMvo kPvCWE"
 >
   <div
-    className="sc-lkqHmb lbgEtc"
+    className="sc-daURTG eJQOjz"
   >
     <div
-      className="sc-eLExRp evODKv"
+      className="sc-bXGyLb cxxgRI"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -321,14 +321,14 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
       </h2>
     </div>
     <div
-      className="sc-cbkKFq auKaH"
+      className="sc-lkqHmb kQpfdC"
     />
   </div>
   <div
-    className="sc-fYiAbW kCfdbA"
+    className="sc-cbkKFq dyUdlj"
   >
     <a
-      className="sc-bwzfXH sc-fOKMvo dVfSJJ"
+      className="sc-bwzfXH sc-krvtoX iEnPFA"
       href="#"
       muted={false}
       onClick={[Function]}
@@ -338,20 +338,20 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
     </a>
   </div>
   <ol
-    className="sc-eilVRo isYkKg"
+    className="sc-dUjcNx bnWbPd"
   />
 </div>
 `;
 
 exports[`ActivityFeed when there are more activities to load should render with "Load more" link 1`] = `
 <div
-  className="sc-gHboQg jEDEmH"
+  className="sc-fOKMvo kPvCWE"
 >
   <div
-    className="sc-lkqHmb lbgEtc"
+    className="sc-daURTG eJQOjz"
   >
     <div
-      className="sc-eLExRp evODKv"
+      className="sc-bXGyLb cxxgRI"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -361,14 +361,14 @@ exports[`ActivityFeed when there are more activities to load should render with 
       </h2>
     </div>
     <div
-      className="sc-cbkKFq auKaH"
+      className="sc-lkqHmb kQpfdC"
     />
   </div>
   <div
-    className="sc-fYiAbW kCfdbA"
+    className="sc-cbkKFq dyUdlj"
   >
     <a
-      className="sc-bwzfXH sc-fOKMvo dVfSJJ"
+      className="sc-bwzfXH sc-krvtoX iEnPFA"
       href="#"
       muted={false}
       onClick={[Function]}
@@ -378,7 +378,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </a>
   </div>
   <ol
-    className="sc-eilVRo isYkKg"
+    className="sc-dUjcNx bnWbPd"
   >
     <li>
       <div
@@ -463,10 +463,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -478,7 +478,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -490,7 +490,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -532,10 +532,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -552,7 +552,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -569,7 +569,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -709,10 +709,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -724,7 +724,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -736,7 +736,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -778,10 +778,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -798,7 +798,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -815,7 +815,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -955,10 +955,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -970,7 +970,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -982,7 +982,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1024,10 +1024,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -1044,7 +1044,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -1061,7 +1061,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -1201,10 +1201,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1216,7 +1216,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1228,7 +1228,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1270,10 +1270,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -1290,7 +1290,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -1307,7 +1307,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -1447,10 +1447,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1462,7 +1462,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1474,7 +1474,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1516,10 +1516,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -1536,7 +1536,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -1553,7 +1553,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -1693,10 +1693,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1708,7 +1708,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1720,7 +1720,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1762,10 +1762,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -1782,7 +1782,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -1799,7 +1799,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -1939,10 +1939,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1954,7 +1954,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -1966,7 +1966,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2008,10 +2008,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -2028,7 +2028,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -2045,7 +2045,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -2185,10 +2185,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2200,7 +2200,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2212,7 +2212,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2254,10 +2254,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -2274,7 +2274,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -2291,7 +2291,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -2431,10 +2431,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2446,7 +2446,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2458,7 +2458,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2500,10 +2500,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -2520,7 +2520,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -2537,7 +2537,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -2677,10 +2677,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2692,7 +2692,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2704,7 +2704,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2746,10 +2746,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -2766,7 +2766,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -2783,7 +2783,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -2923,10 +2923,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2938,7 +2938,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2950,7 +2950,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -2992,10 +2992,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -3012,7 +3012,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -3029,7 +3029,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -3169,10 +3169,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3184,7 +3184,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3196,7 +3196,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3238,10 +3238,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -3258,7 +3258,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -3275,7 +3275,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -3415,10 +3415,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3430,7 +3430,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3442,7 +3442,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3484,10 +3484,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -3504,7 +3504,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -3521,7 +3521,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -3661,10 +3661,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3676,7 +3676,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3688,7 +3688,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3730,10 +3730,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -3750,7 +3750,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -3767,7 +3767,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -3907,10 +3907,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3922,7 +3922,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3934,7 +3934,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -3976,10 +3976,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -3996,7 +3996,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -4013,7 +4013,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -4153,10 +4153,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4168,7 +4168,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4180,7 +4180,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4222,10 +4222,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -4242,7 +4242,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -4259,7 +4259,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -4399,10 +4399,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4414,7 +4414,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4426,7 +4426,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4468,10 +4468,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -4488,7 +4488,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -4505,7 +4505,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -4645,10 +4645,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4660,7 +4660,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4672,7 +4672,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4714,10 +4714,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -4734,7 +4734,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -4751,7 +4751,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -4891,10 +4891,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4906,7 +4906,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4918,7 +4918,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -4960,10 +4960,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -4980,7 +4980,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -4997,7 +4997,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -5137,10 +5137,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -5152,7 +5152,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -5164,7 +5164,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -5206,10 +5206,10 @@ exports[`ActivityFeed when there are more activities to load should render with 
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -5226,7 +5226,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -5243,7 +5243,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon
@@ -5302,7 +5302,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
     </li>
   </ol>
   <div
-    className="sc-dUjcNx gCpESU"
+    className="sc-fYiAbW bWBaJM"
   >
     <div
       className="sc-eqIVtm fxHPMe"
@@ -5526,13 +5526,13 @@ exports[`ActivityFeed when there are more activities to load should render with 
 
 exports[`ActivityFeed when there is a single activity should render single activity with appropriate header 1`] = `
 <div
-  className="sc-gHboQg jEDEmH"
+  className="sc-fOKMvo kPvCWE"
 >
   <div
-    className="sc-lkqHmb lbgEtc"
+    className="sc-daURTG eJQOjz"
   >
     <div
-      className="sc-eLExRp evODKv"
+      className="sc-bXGyLb cxxgRI"
     >
       <h2
         className="sc-cMljjf leOqMw"
@@ -5542,14 +5542,14 @@ exports[`ActivityFeed when there is a single activity should render single activ
       </h2>
     </div>
     <div
-      className="sc-cbkKFq auKaH"
+      className="sc-lkqHmb kQpfdC"
     />
   </div>
   <div
-    className="sc-fYiAbW kCfdbA"
+    className="sc-cbkKFq dyUdlj"
   >
     <a
-      className="sc-bwzfXH sc-fOKMvo dVfSJJ"
+      className="sc-bwzfXH sc-krvtoX iEnPFA"
       href="#"
       muted={false}
       onClick={[Function]}
@@ -5559,7 +5559,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
     </a>
   </div>
   <ol
-    className="sc-eilVRo isYkKg"
+    className="sc-dUjcNx bnWbPd"
   >
     <li>
       <div
@@ -5644,10 +5644,10 @@ exports[`ActivityFeed when there is a single activity should render single activ
                     }
                   >
                     <ul
-                      className="sc-cQFLBn fGjxWG"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -5659,7 +5659,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -5671,7 +5671,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                          
                       </li>
                       <li
-                        className="sc-gojNiO ikNDmz"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <a
                           className="sc-bwzfXH VXMCV"
@@ -5713,10 +5713,10 @@ exports[`ActivityFeed when there is a single activity should render single activ
                     }
                   >
                     <ul
-                      className="sc-daURTG dvfLox"
+                      className="sc-gojNiO qHzYu"
                     >
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Mario Bros
@@ -5733,7 +5733,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           John Hammond
@@ -5750,7 +5750,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
                         , (Digital Data Hub - Live Service)
                       </li>
                       <li
-                        className="sc-bXGyLb koOVeU"
+                        className="sc-cQFLBn erMDhO"
                       >
                         <span>
                           Luke Moon

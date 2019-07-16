@@ -9,7 +9,8 @@ import {
   CardHeading,
   CardMeta,
   CardTable,
-  ContactsList,
+  CardDetailsList,
+  CardAdviser,
 } from './card'
 
 import CardUtils from './card/CardUtils'
@@ -34,6 +35,7 @@ export default class Omis extends React.PureComponent {
     const country = get(activity, 'object.dit:country.name')
     const ukRegion = get(activity, 'object.dit:ukRegion.name')
     const url = get(activity, 'object.url')
+    const adviser = CardUtils.getAdviser(activity)
     const contacts = CardUtils.getContacts(activity)
 
     return (
@@ -51,8 +53,8 @@ export default class Omis extends React.PureComponent {
             [
               { header: 'Country', content: country },
               { header: 'UK region', content: ukRegion },
-              { header: 'Added by', content: CardUtils.getAddedBy(activity) },
-              { header: 'Company contact(s)', content: <ContactsList contacts={contacts} /> },
+              { header: 'Added by', content: adviser ? <CardAdviser adviser={adviser} /> : null },
+              { header: 'Company contact(s)', content: <CardDetailsList people={contacts} /> },
             ]}
           />
         </CardDetails>

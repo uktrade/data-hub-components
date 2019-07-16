@@ -1,50 +1,44 @@
 /* eslint-disable react/prop-types */
-
 import {
-  filter, get, includes, map, some,
+  filter, get, includes, map, some, pickBy,
 } from 'lodash'
-import { Link } from 'govuk-react'
-import React from 'react'
 
-const createEmailAddressMarkup = ({ id, name, emailAddress, teamName }) => {
-  if (!name || !emailAddress) {
-    return null
-  }
-
-  const formattedEmailAddress = teamName ? `${emailAddress},` : emailAddress
-
-  return (
-    <span key={id}>
-      {name}, <Link href={`mailto:${emailAddress}`}>{formattedEmailAddress}</Link> {teamName}
-    </span>
-  )
+const mapPeople = (activity, personType, mapper) => {
+  const { attributedTo } = activity.object
+  return map(filter(attributedTo, ({ type }) => {
+    return includes(type, personType)
+  }), mapper)
 }
 
 const getContacts = (activity) => {
-  const { attributedTo } = activity.object
-  return map(filter(attributedTo, ({ type }) => {
-    return includes(type, 'dit:Contact')
-  }), ({ id, url, name, 'dit:jobTitle': jobTitle }) => {
-    return {
+  return mapPeople(activity, 'dit:Contact', ({
+    id,
+    url,
+    name,
+    'dit:jobTitle': jobTitle }) => {
+    return pickBy({
       id,
       url,
       name,
-      jobTitle, // Optional field
-    }
+      jobTitle, // Optional field,
+      type: 'Contact',
+    })
   })
 }
 
 const getAdvisers = (activity) => {
-  const { attributedTo } = activity.object
-  return map(filter(attributedTo, ({ type }) => {
-    return includes(type, 'dit:Adviser')
-  }), ({ id, name, 'dit:emailAddress': emailAddress, 'dit:team': team }) => {
-    return {
+  return mapPeople(activity, 'dit:Adviser', ({
+    id,
+    name,
+    'dit:emailAddress': emailAddress,
+    'dit:team': team }) => {
+    return pickBy({
       id,
       name,
       emailAddress,
       team: get(team, 'name'), // Only available for Interactions
-    }
+      type: 'Adviser',
+    })
   })
 }
 
@@ -72,9 +66,12 @@ export default class CardUtils {
     return getContacts(activity)
   }
 
-  static getAddedBy = (activity) => {
-    const name = get(activity, 'actor.name')
-    const emailAddress = get(activity, 'actor.dit:emailAddress')
-    return createEmailAddressMarkup({ name, emailAddress })
+  static getAdviser = (activity) => {
+    const adviser = {
+      name: get(activity, 'actor.name'),
+      emailAddress: get(activity, 'actor.dit:emailAddress'),
+    }
+
+    return adviser.name && adviser.emailAddress ? adviser : null
   }
 }
