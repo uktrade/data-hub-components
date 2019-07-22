@@ -1,11 +1,11 @@
 import React from 'react'
 import { Details, Link } from 'govuk-react'
 import styled from 'styled-components'
-import { SPACING, MEDIA_QUERIES } from '@govuk-react/constants'
+import { SPACING, MEDIA_QUERIES, FONT_SIZE } from '@govuk-react/constants'
 import PropTypes from 'prop-types'
 
 const GovUkDetails = styled(Details)`
-  font-size: 16px;
+  font-size: ${FONT_SIZE.SIZE_16};
   margin: ${SPACING.SCALE_2} 0 0;
   
   & > div {
