@@ -26,7 +26,7 @@
     "lint": "eslint './src/**/*.{js,jsx}'",
     "lint:fix": "yarn lint --fix",
     "storybook": "start-storybook",
-    "storybook:build": "rimraf storybook-static && build-storybook",
+    "storybook:build": "rimraf storybook-static && build-storybook --quiet",
     "storybook:release": "yarn storybook:build && git-directory-deploy --directory storybook-static --branch gh-pages",
     "prepack": "yarn build",
     "release": "semantic-release --debug",
