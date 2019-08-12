@@ -10,6 +10,12 @@ import {
   CardTable,
   CardDetailsList,
 } from './card'
+
+import {
+  ContactItemRenderer,
+  AdviserItemRenderer,
+} from './card/item-renderers'
+
 import CardUtils from './card/CardUtils'
 import InteractionUtils from './InteractionUtils'
 
@@ -49,8 +55,8 @@ export default class Interaction extends React.PureComponent {
         >
           <CardTable rows={
             [
-              { header: 'Company contact(s)', content: <CardDetailsList people={contacts} /> },
-              { header: 'Adviser(s)', content: <CardDetailsList people={advisers} /> },
+              { header: 'Company contact(s)', content: <CardDetailsList itemRenderer={ContactItemRenderer} items={contacts} /> },
+              { header: 'Adviser(s)', content: <CardDetailsList itemRenderer={AdviserItemRenderer} items={advisers} /> },
               { header: 'Services', content: transformed.service },
             ]
           }

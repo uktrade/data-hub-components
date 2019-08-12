@@ -10,8 +10,12 @@ import {
   CardMeta,
   CardTable,
   CardDetailsList,
-  CardAdviser,
 } from './card'
+
+import {
+  ContactItemRenderer,
+  AdviserItemRenderer,
+} from './card/item-renderers'
 
 import CardUtils from './card/CardUtils'
 import DateUtils from '../../utils/DateUtils'
@@ -67,9 +71,9 @@ export default class InvestmentProject extends React.PureComponent {
           <CardTable rows={
             [
               { header: 'Investment Type', content: investmentType },
-              { header: 'Added by', content: adviser ? <CardAdviser adviser={adviser} /> : null },
+              { header: 'Added by', content: adviser ? <CardDetailsList itemRenderer={AdviserItemRenderer} items={[adviser]} /> : null },
               { header: 'Estimated land date', content: estimatedLandDate },
-              { header: 'Company contact(s)', content: <CardDetailsList people={contacts} /> },
+              { header: 'Company contact(s)', content: <CardDetailsList itemRenderer={ContactItemRenderer} items={contacts} /> },
               { header: 'Total Investment', content: totalInvestment },
               { header: 'Capital expenditure value', content: foreignEquityInvestment },
               { header: 'Gross value added (GVA)', content: grossValueAdded },
