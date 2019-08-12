@@ -68,6 +68,7 @@ export default class CardUtils {
 
   static getAdviser = (activity) => {
     const adviser = {
+      id: get(activity, 'actor.id'),
       name: get(activity, 'actor.name'),
       emailAddress: get(activity, 'actor.dit:emailAddress'),
     }

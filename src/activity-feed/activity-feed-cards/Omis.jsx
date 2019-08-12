@@ -10,8 +10,12 @@ import {
   CardMeta,
   CardTable,
   CardDetailsList,
-  CardAdviser,
 } from './card'
+
+import {
+  AdviserItemRenderer,
+  ContactItemRenderer,
+} from './card/item-renderers'
 
 import CardUtils from './card/CardUtils'
 
@@ -53,8 +57,8 @@ export default class Omis extends React.PureComponent {
             [
               { header: 'Country', content: country },
               { header: 'UK region', content: ukRegion },
-              { header: 'Added by', content: adviser ? <CardAdviser adviser={adviser} /> : null },
-              { header: 'Company contact(s)', content: <CardDetailsList people={contacts} /> },
+              { header: 'Added by', content: adviser ? <CardDetailsList itemRenderer={AdviserItemRenderer} items={[adviser]} /> : null },
+              { header: 'Company contact(s)', content: <CardDetailsList itemRenderer={ContactItemRenderer} items={contacts} /> },
             ]}
           />
         </CardDetails>

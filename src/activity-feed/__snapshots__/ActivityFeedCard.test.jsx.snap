@@ -129,18 +129,26 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
                 }
               }
             >
-              <span>
-                Test CMU 1
-              </span>
-              , 
-              <a
-                className="sc-htpNat jdOrDl"
-                href="mailto:cmuuser1test@mobile.ukti.gov.uk"
-                muted={false}
+              <ul
+                className="sc-gojNiO qHzYu"
               >
-                 
-                cmuuser1test@mobile.ukti.gov.uk
-              </a>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  <span>
+                    Test CMU 1
+                  </span>
+                  , 
+                  <a
+                    className="sc-htpNat jdOrDl"
+                    href="mailto:cmuuser1test@mobile.ukti.gov.uk"
+                    muted={false}
+                  >
+                     
+                    cmuuser1test@mobile.ukti.gov.uk
+                  </a>
+                </li>
+              </ul>
             </td>
           </tr>
           <tr
@@ -772,18 +780,26 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
                 }
               }
             >
-              <span>
-                Test CMU 1
-              </span>
-              , 
-              <a
-                className="sc-htpNat jdOrDl"
-                href="mailto:cmuuser1test@mobile.ukti.gov.uk"
-                muted={false}
+              <ul
+                className="sc-gojNiO qHzYu"
               >
-                 
-                cmuuser1test@mobile.ukti.gov.uk
-              </a>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  <span>
+                    Test CMU 1
+                  </span>
+                  , 
+                  <a
+                    className="sc-htpNat jdOrDl"
+                    href="mailto:cmuuser1test@mobile.ukti.gov.uk"
+                    muted={false}
+                  >
+                     
+                    cmuuser1test@mobile.ukti.gov.uk
+                  </a>
+                </li>
+              </ul>
             </td>
           </tr>
           <tr
