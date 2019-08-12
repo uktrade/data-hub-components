@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardHeading when link is missing should render the heading without a link 1`] = `
+<div
+  className="sc-hMFtBS gMhVDn"
+>
+  <h3
+    className="sc-cmthru dGQebl sc-cMljjf kCLKvB"
+    size="MEDIUM"
+  >
+    View block card heading
+  </h3>
+   
+  <h3
+    className="sc-cLQEGU cKmpep sc-cMljjf kCLKvB"
+    size="MEDIUM"
+  >
+    <a
+      className="sc-bwzfXH VXMCV"
+      href="#"
+      muted={false}
+    >
+      Go to the detail page
+    </a>
+  </h3>
+</div>
+`;
+
+exports[`CardHeading when sourceType is missing should render the default card heading 1`] = `
+<div
+  className="sc-hMFtBS gMhVDn"
+>
+  <h3
+    className="sc-cmthru dGQebl sc-cMljjf kCLKvB"
+    size="MEDIUM"
+  >
+    View block card heading
+  </h3>
+   
+  <h3
+    className="sc-cLQEGU cKmpep sc-cMljjf kCLKvB"
+    size="MEDIUM"
+  >
+    <a
+      className="sc-bwzfXH VXMCV"
+      href="#"
+      muted={false}
+    >
+      Go to the detail page
+    </a>
+  </h3>
+</div>
+`;
+
+exports[`CardHeading when the all data items are passed should render the card heading 1`] = `
+<div
+  className="sc-hMFtBS gMhVDn"
+>
+  <h3
+    className="sc-cmthru dGQebl sc-cMljjf kCLKvB"
+    size="MEDIUM"
+  >
+    View block card heading
+  </h3>
+   
+  <span
+    className="sc-hORach dVCIoH"
+  >
+    View sub heading
+  </span>
+  <h3
+    className="sc-gqPbQI yCXxr sc-cMljjf kCLKvB"
+    size="MEDIUM"
+  >
+    view summary
+  </h3>
+  <h3
+    className="sc-cLQEGU cKmpep sc-cMljjf kCLKvB"
+    size="MEDIUM"
+  >
+    <a
+      className="sc-bwzfXH VXMCV"
+      href="#"
+      muted={false}
+    >
+      Go to the detail page
+    </a>
+  </h3>
+</div>
+`;

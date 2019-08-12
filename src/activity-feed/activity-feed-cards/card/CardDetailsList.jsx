@@ -12,14 +12,14 @@ const StyledUList = styled('ul')`
 `
 
 export default class CardDetailsList extends React.PureComponent {
-  static defaultProps = {
-    people: null,
+  static propTypes = {
+    items: PropTypes.arrayOf(PropTypes.object).isRequired,
+    itemRenderer: PropTypes.any.isRequired,
   }
 
-  renderPeopleList = (people) => {
-    if (!people) {
-      return null
-    }
+  render() {
+    const { items, itemRenderer } = this.props
+
     return (
       <StyledUList>
         {

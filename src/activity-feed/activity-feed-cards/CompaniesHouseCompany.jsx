@@ -42,6 +42,13 @@ export default class CompaniesHouseCompany extends React.PureComponent {
     const returnsLastMadeUpDate = DateUtils.format(get(activity, 'object.dit:returnsLastMadeUpDate'))
     const returnsNextDueDate = DateUtils.format(get(activity, 'object.dit:returnsNextDueDate'))
     const sicCodes = get(activity, 'object.dit:sicCodes')
+    const sicCodesCollection = sicCodes.map((value, index) => {
+      const id = uniqueId(`id-${index}`)
+      return {
+        id,
+        value,
+      }
+    })
 
     return (
       <Card>
@@ -70,7 +77,7 @@ export default class CompaniesHouseCompany extends React.PureComponent {
               { header: 'Next due date', content: nextDueDate },
               { header: 'Returns last made up date', content: returnsLastMadeUpDate },
               { header: 'Returns next due date', content: returnsNextDueDate },
-              { header: 'SIC code(s)', content: <CardDetailsList list={sicCodes} /> },
+              { header: 'SIC code(s)', content: <CardDetailsList items={sicCodesCollection} itemRenderer={GenericItemRenderer} /> },
             ]}
           />
         </CardDetails>

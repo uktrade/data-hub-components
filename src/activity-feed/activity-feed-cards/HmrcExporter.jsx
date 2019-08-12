@@ -1,5 +1,5 @@
 import React from 'react'
-import { get } from 'lodash'
+import { get, uniqueId } from 'lodash'
 
 import PropTypes from 'prop-types'
 import {
@@ -33,6 +33,13 @@ export default class HmrcExporter extends React.PureComponent {
     const reference = get(activity, 'object.attributedTo.name')
     const summary = get(activity, 'summary')
     const exportItemCodes = get(activity, 'object.dit:exportItemCodes')
+    const exportItemCodesCollection = exportItemCodes.map((value, index) => {
+      const id = uniqueId(`id-${index}`)
+      return {
+        id,
+        value,
+      }
+    })
 
     return (
       <Card>
@@ -54,7 +61,13 @@ export default class HmrcExporter extends React.PureComponent {
             [
               { header: 'Company name', content: reference },
 
-              { header: 'Export Item code(s)', content: <CardDetailsList list={exportItemCodes} /> },
+              {
+                header: 'Export Item code(s)',
+                content: <CardDetailsList
+                  itemRenderer={GenericItemRenderer}
+                  items={exportItemCodesCollection}
+                />,
+              },
             ]}
           />
         </CardDetails>
