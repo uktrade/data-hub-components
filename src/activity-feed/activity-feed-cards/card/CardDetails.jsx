@@ -28,10 +28,24 @@ export default class CardDetails extends React.PureComponent {
     summary: PropTypes.string.isRequired,
     showDetails: PropTypes.bool.isRequired,
     link: PropTypes.shape({
-      url: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
-    }).isRequired,
+      url: PropTypes.string,
+      text: PropTypes.string,
+    }),
     children: PropTypes.node.isRequired,
+  }
+
+  static defaultProps = {
+    link: null,
+  }
+
+  renderLink = (link) => {
+    if (!link) {
+      return null
+    }
+
+    return (
+      <Link href={link.url}>{link.text}</Link>
+    )
   }
 
   render() {
@@ -40,7 +54,7 @@ export default class CardDetails extends React.PureComponent {
     return (
       <GovUkDetails summary={summary} open={showDetails}>
         {children}
-        <Link href={link.url}>{link.text}</Link>
+        {this.renderLink(link)}
       </GovUkDetails>
     )
   }

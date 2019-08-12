@@ -1,26 +1,51 @@
 {
-  "id": "dit:companiesHouse:2:Announce",
-  "type": "Announce",
-  "published": "2019-01-18T08:43:40.904649+00:00",
-
+  "dit:dataSource": {
+    "id": "companies_house.companies",
+    "name": "Companies House (Companies)"
+  },
   "generator": {
-    "name": "dit:companiesHouse",
+    "name": "dit:dataScienceLab",
     "type": "Application"
   },
-
+  "id": "dit:DataScienceExport:7:Announce",
   "object": {
-    "id": "dit:companiesHouse:1",
-    "name": "Company officially incorporated in Companies House"
-  },
-
-  "context": {
-    "id": "dit:DataHubCompany:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
-    "dit:dunsNumber": "123456789",
-    "dit:companiesHouseNumber": "987654321",
+    "attributedTo": [
+      {
+        "dit:companiesHouseNumber": 9061,
+        "id": "dit:DataScienceCompany:7",
+        "location": {
+          "dit:address": "757 Williamsburg Street, Vandiver",
+          "dit:postcode": 444101
+        },
+        "name": "SULTRAX",
+        "type": [
+          "Organization",
+          "dit:Company"
+        ]
+      }
+    ],
+    "dit:accountRefDay": 21,
+    "dit:accountRefMonth": 6,
+    "dit:companiesHouseId": 9061,
+    "dit:confStmtLastMadeUpDate": "2019-06-17T12:25:14",
+    "dit:confStmtNextDueDate": "2019-08-05T06:39:45",
+    "dit:incorporationDate": "1970-10-03T02:18:21",
+    "dit:lastMadeUpDate": "2019-04-18T06:56:31",
+    "dit:nextDueDate": "2019-08-10T10:42:00",
+    "dit:returnsLastMadeUpDate": "2019-06-28T03:10:12",
+    "dit:returnsNextDueDate": "2017-09-20T02:37:45",
+    "dit:sicCodes": [
+      "74990 - Non-trading company",
+      "03110 - Marine fishing",
+      "99000 - Activities of extraterritorial organisations and bodies"
+    ],
+    "id": "dit:externalSources:companies_house.companies:7",
     "type": [
       "Organization",
       "dit:Company"
-    ],
-    "name": "Marco Test"
-  }
+    ]
+  },
+  "published": "1970-10-03T02:18:21",
+  "summary": "SULTRAX officially did action number 10.",
+  "type": "Announce"
 }
