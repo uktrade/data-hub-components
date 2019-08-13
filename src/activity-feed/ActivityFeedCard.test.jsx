@@ -5,9 +5,9 @@ import { set } from 'lodash'
 
 import MockDate from 'mockdate'
 import ActivityFeedCard from './ActivityFeedCard'
-import companiesHouseAccounts from '../../fixtures/activity_feed/companies_house/accounts_are_due'
-import companiesHouseCompanies from '../../fixtures/activity_feed/companies_house/incorporated'
-import hmrcExporters from '../../fixtures/activity_feed/hmrc/export_of_goods'
+import companiesHouseAccountsDueFixture from '../../fixtures/activity_feed/companies_house/accounts_are_due'
+import companiesHouseCompaniesFixture from '../../fixtures/activity_feed/companies_house/incorporated'
+import hmrcExportersFixture from '../../fixtures/activity_feed/hmrc/export_of_goods'
 import interactionActivityFixture from '../../fixtures/activity_feed/interactions/interaction'
 import serviceDeliveryActivityFixture from '../../fixtures/activity_feed/interactions/service_delivery'
 import investmentProjectsCTIFixture from '../../fixtures/activity_feed/investment_projects/project_added_cti'
@@ -176,7 +176,7 @@ describe('ActivityFeedCard', () => {
 
   describe('when there is a Companies House Accounts record', () => {
     test('should render an activity card', () => {
-      const companiesHouseAccountsDue = { ...companiesHouseAccounts }
+      const companiesHouseAccountsDue = { ...companiesHouseAccountsDueFixture }
       const tree = renderer
         .create(<ActivityFeedCard activity={companiesHouseAccountsDue} showDetails={false} />)
         .toJSON()
@@ -186,7 +186,7 @@ describe('ActivityFeedCard', () => {
 
   describe('when there is a Companies House Company incorporation record', () => {
     test('should render an activity card', () => {
-      const companiesHouseCompanyIncorporated = { ...companiesHouseCompanies }
+      const companiesHouseCompanyIncorporated = { ...companiesHouseCompaniesFixture }
       const tree = renderer
         .create(<ActivityFeedCard
           activity={companiesHouseCompanyIncorporated}
@@ -199,9 +199,8 @@ describe('ActivityFeedCard', () => {
 
   describe('when there is a HMRC Exporter record', () => {
     test('should render an activity card', () => {
-      const HmrcExporter = { ...hmrcExporters }
       const tree = renderer
-        .create(<ActivityFeedCard activity={HmrcExporter} showDetails={false} />)
+        .create(<ActivityFeedCard activity={hmrcExportersFixture} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
