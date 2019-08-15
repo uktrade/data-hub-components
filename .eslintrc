@@ -21,7 +21,7 @@
   "rules": {
     "no-underscore-dangle": ["error", {"allow": ["_source"]}],
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/exhaustive-deps": "off",
     "react/prefer-stateless-function": "off",
     "react/no-multi-comp": "off",
     "react/forbid-prop-types": "off",
@@ -35,7 +35,14 @@
     "semi": ["error", "never"],
     "object-curly-newline": "off",
     "no-else-return": "off",
-    "arrow-body-style": "off"
+    "arrow-body-style": "off",
+    "jsx-a11y/label-has-for": [ 2, {
+      "components": [ "Label" ],
+      "required": {
+        "any": [ "nesting", "id" ]
+      },
+      "allowChildren": false
+    }]
   },
   "overrides": [
     {
