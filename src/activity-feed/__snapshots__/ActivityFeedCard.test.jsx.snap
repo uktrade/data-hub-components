@@ -362,6 +362,128 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
               </ul>
             </td>
           </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              DefaultItemRenderer
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <ul
+                className="sc-gojNiO qHzYu"
+              >
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  a
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  b
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  c
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              DefaultItemRenderer
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <ul
+                className="sc-gojNiO qHzYu"
+              >
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  1
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  2
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                />
+              </ul>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              BooleanItemRenderer
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <ul
+                className="sc-gojNiO qHzYu"
+              >
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  true
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  false
+                </li>
+              </ul>
+            </td>
+          </tr>
         </tbody>
       </table>
       <a
@@ -662,6 +784,128 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               15,400
             </td>
           </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              DefaultItemRenderer
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <ul
+                className="sc-gojNiO qHzYu"
+              >
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  a
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  b
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  c
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              DefaultItemRenderer
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <ul
+                className="sc-gojNiO qHzYu"
+              >
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  1
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  2
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                />
+              </ul>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              BooleanItemRenderer
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <ul
+                className="sc-gojNiO qHzYu"
+              >
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  true
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  false
+                </li>
+              </ul>
+            </td>
+          </tr>
         </tbody>
       </table>
       <a
@@ -868,6 +1112,128 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
                     Some job title
                     )
                   </span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              DefaultItemRenderer
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <ul
+                className="sc-gojNiO qHzYu"
+              >
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  a
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  b
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  c
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              DefaultItemRenderer
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <ul
+                className="sc-gojNiO qHzYu"
+              >
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  1
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  2
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                />
+              </ul>
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              BooleanItemRenderer
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <ul
+                className="sc-gojNiO qHzYu"
+              >
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  true
+                </li>
+                <li
+                  className="sc-cQFLBn erMDhO"
+                >
+                  false
                 </li>
               </ul>
             </td>
