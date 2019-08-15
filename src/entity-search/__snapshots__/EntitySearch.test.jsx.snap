@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntitySearch when initially loading the entity search component should render the component without entities 1`] = `
+<button
+  className="sc-bMVAic iYQPoE sc-VigVT krXvSZ"
+  disabled={false}
+  onClick={[Function]}
+>
+  Search
+</button>
+`;
+
+exports[`EntitySearch when the "Search" button has been clicked should render the component with entities 1`] = `
+"<EntitySearchWithDataProvider getEntities={[Function]}>
+  <EntitySearch entities={{...}} onEntitySearch={[Function: onEntitySearch]} getEntities={[Function]}>
+    <EntityList entities={{...}}>
+      <styled.ol>
+        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+          <ol className=\\"sc-cmthru byZYSx\\">
+            <styled.li>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <li className=\\"sc-hMFtBS hNLTdh\\">
+                  <styled.div>
+                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cLQEGU kGDauh\\">
+                        <Styled(H3)>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <H3 className=\\"sc-gqPbQI gHietI\\">
+                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\" level={[undefined]}>
+                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\">
+                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                    <h3 size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI sc-cMljjf kCLKvB\\">
+                                      Some company name
+                                    </h3>
+                                  </StyledComponent>
+                                </styled.h1>
+                              </Heading>
+                            </H3>
+                          </StyledComponent>
+                        </Styled(H3)>
+                        <styled.div>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <div className=\\"sc-hORach kZtTta\\">
+                              <span>
+                                Address
+                                : 
+                              </span>
+                              <span>
+                                123 Fake Street, Brighton, BN1 4SE
+                              </span>
+                            </div>
+                          </StyledComponent>
+                        </styled.div>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </li>
+              </StyledComponent>
+            </styled.li>
+            <styled.li>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <li className=\\"sc-hMFtBS hNLTdh\\">
+                  <styled.div>
+                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cLQEGU kGDauh\\">
+                        <Styled(H3)>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <H3 className=\\"sc-gqPbQI gHietI\\">
+                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\" level={[undefined]}>
+                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\">
+                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                    <h3 size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI sc-cMljjf kCLKvB\\">
+                                      Some other company
+                                    </h3>
+                                  </StyledComponent>
+                                </styled.h1>
+                              </Heading>
+                            </H3>
+                          </StyledComponent>
+                        </Styled(H3)>
+                        <styled.div>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <div className=\\"sc-hORach kZtTta\\">
+                              <span>
+                                Address
+                                : 
+                              </span>
+                              <span>
+                                123 ABC Road, Brighton, BN2 9QB
+                              </span>
+                            </div>
+                          </StyledComponent>
+                        </styled.div>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </li>
+              </StyledComponent>
+            </styled.li>
+          </ol>
+        </StyledComponent>
+      </styled.ol>
+    </EntityList>
+    <Search onClick={[Function: onEntitySearch]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
+      <StyledComponent onClick={[Function: onEntitySearch]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+        <ForwardRef onClick={[Function: onEntitySearch]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-bMVAic iYQPoE\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onEntitySearch]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-bMVAic iYQPoE\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onEntitySearch]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-bMVAic iYQPoE\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onEntitySearch]} disabled={false} className=\\"sc-bMVAic iYQPoE sc-VigVT krXvSZ\\">
+                Search
+              </button>
+            </StyledComponent>
+          </styled.button>
+        </ForwardRef>
+      </StyledComponent>
+    </Search>
+  </EntitySearch>
+</EntitySearchWithDataProvider>"
+`;
