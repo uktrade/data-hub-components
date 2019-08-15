@@ -81,7 +81,7 @@ export default class InvestmentProject extends React.PureComponent {
               { header: 'Gross value added (GVA)', content: grossValueAdded },
               { header: 'Number of new jobs', content: numberNewJobs },
 
-              // Examples of GenericItemRenderer
+              // Examples of DefaultItemRenderer (string and number) and a BooleanItemRenderer
               { header: 'Generic Item Renderer - string', content: <CardDetailsList itemPropName="name" itemRenderer={DefaultItemRenderer} items={[{ name: 'a' }, { name: 'b' }, { name: 'c' }]} /> },
               { header: 'Generic Item Renderer - number', content: <CardDetailsList itemPropName="value" itemRenderer={DefaultItemRenderer} items={[{ value: 1 }, { value: 2 }, { name: 3 }]} /> },
               { header: 'Generic Item Renderer - boolean', content: <CardDetailsList itemPropName="bool" itemRenderer={BooleanItemRenderer} items={[{ bool: true }, { bool: false }]} /> },
