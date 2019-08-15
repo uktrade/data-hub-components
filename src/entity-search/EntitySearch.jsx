@@ -5,20 +5,26 @@ import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
 
 import EntityList from './EntityList'
+import EntityFilters from './EntityFilters'
+import useFilter from './useFilter'
 
 const StyledButton = styled(Button)`
   margin-top: ${SPACING.SCALE_2};
 `
 StyledButton.displayName = 'Search'
 
-const EntitySearch = ({ onEntitySearch, entities }) => {
+const EntitySearch = ({ onEntitySearch, entities, entityFilters }) => {
+  const { filters, setFilter } = useFilter()
+
   return (
     <>
+      <EntityFilters entityFilters={entityFilters} setFilter={setFilter} />
+
       {entities && entities.length ? (
         <EntityList entities={entities} />
       ) : null}
 
-      <StyledButton onClick={onEntitySearch}>Search</StyledButton>
+      <StyledButton onClick={() => onEntitySearch(filters)}>Search</StyledButton>
     </>
   )
 }
@@ -29,6 +35,7 @@ EntitySearch.propTypes = {
     meta: PropTypes.object.isRequired,
   })).isRequired,
   onEntitySearch: PropTypes.func.isRequired,
+  entityFilters: PropTypes.array.isRequired,
 }
 
 export default EntitySearch

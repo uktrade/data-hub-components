@@ -14,7 +14,9 @@ storiesOf('EntitySearch', module)
   .add('Data Hub company search', () => {
     const mock = new MockAdapter(axios)
     const apiEndpoint = 'http://localhost:3010/v4/dnb/company-search'
+    const apiEndpointWithParameters = new RegExp(`${apiEndpoint}.+`)
     mock.onPost(apiEndpoint).reply(200, companySearchFixture)
+    mock.onPost(apiEndpointWithParameters).reply(200, companySearchFixture)
 
     return (
       <Main>
@@ -28,6 +30,14 @@ storiesOf('EntitySearch', module)
             <H2 style={{ fontSize: '24px' }}>Find the company</H2>
             <EntitySearchWithDataProvider
               getEntities={dnbCompanySearchDataProvider(apiEndpoint)}
+              entityFilters={[
+                [
+                  { label: 'Company name', key: 'search_term' },
+                ],
+                [
+                  { label: 'Company postcode', key: 'address_postcode', width: 'one-half' },
+                ],
+              ]}
             />
           </GridCol>
         </GridRow>
