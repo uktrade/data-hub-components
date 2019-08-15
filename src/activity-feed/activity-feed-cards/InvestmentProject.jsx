@@ -83,7 +83,7 @@ export default class InvestmentProject extends React.PureComponent {
 
               // Examples of DefaultItemRenderer (string and number) and a BooleanItemRenderer
               { header: 'DefaultItemRenderer', content: <CardDetailsList itemPropName="name" itemRenderer={DefaultItemRenderer} items={[{ name: 'a', id: '1' }, { name: 'b', id: '2' }, { name: 'c', id: '3' }]} /> },
-              { header: 'DefaultItemRenderer', content: <CardDetailsList itemPropName="value" itemRenderer={DefaultItemRenderer} items={[{ value: 1, id: '1' }, { value: 2, id: '2' }, { name: 3, id: '3' }]} /> },
+              { header: 'DefaultItemRenderer', content: <CardDetailsList itemPropName="value" itemRenderer={DefaultItemRenderer} items={[{ value: 1, id: '1' }, { value: 2, id: '2' }, { value: 3, id: '3' }]} /> },
               { header: 'BooleanItemRenderer', content: <CardDetailsList itemPropName="bool" itemRenderer={BooleanItemRenderer} items={[{ bool: true, id: '1' }, { bool: false, id: '2' }]} /> },
             ]}
           />

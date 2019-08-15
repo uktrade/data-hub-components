@@ -442,7 +442,9 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
                 </li>
                 <li
                   className="sc-cQFLBn erMDhO"
-                />
+                >
+                  3
+                </li>
               </ul>
             </td>
           </tr>
@@ -864,7 +866,9 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
                 </li>
                 <li
                   className="sc-cQFLBn erMDhO"
-                />
+                >
+                  3
+                </li>
               </ul>
             </td>
           </tr>
@@ -1196,7 +1200,9 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
                 </li>
                 <li
                   className="sc-cQFLBn erMDhO"
-                />
+                >
+                  3
+                </li>
               </ul>
             </td>
           </tr>
