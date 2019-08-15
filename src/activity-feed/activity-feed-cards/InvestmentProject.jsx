@@ -15,7 +15,8 @@ import {
 import {
   ContactItemRenderer,
   AdviserItemRenderer,
-  GenericItemRenderer,
+  DefaultItemRenderer,
+  BooleanItemRenderer,
 } from './card/item-renderers'
 
 import CardUtils from './card/CardUtils'
@@ -81,9 +82,9 @@ export default class InvestmentProject extends React.PureComponent {
               { header: 'Number of new jobs', content: numberNewJobs },
 
               // Examples of GenericItemRenderer
-              { header: 'Generic Item Renderer - string', content: <CardDetailsList itemPropName="name" itemRenderer={GenericItemRenderer} items={[{ name: 'a' }, { name: 'b' }, { name: 'c' }]} /> },
-              { header: 'Generic Item Renderer - number', content: <CardDetailsList itemPropName="value" itemRenderer={GenericItemRenderer} items={[{ value: 1 }, { value: 2 }, { name: 3 }]} /> },
-              { header: 'Generic Item Renderer - boolean', content: <CardDetailsList itemPropName="bool" itemRenderer={GenericItemRenderer} items={[{ bool: true }, { bool: false }]} /> },
+              { header: 'Generic Item Renderer - string', content: <CardDetailsList itemPropName="name" itemRenderer={DefaultItemRenderer} items={[{ name: 'a' }, { name: 'b' }, { name: 'c' }]} /> },
+              { header: 'Generic Item Renderer - number', content: <CardDetailsList itemPropName="value" itemRenderer={DefaultItemRenderer} items={[{ value: 1 }, { value: 2 }, { name: 3 }]} /> },
+              { header: 'Generic Item Renderer - boolean', content: <CardDetailsList itemPropName="bool" itemRenderer={BooleanItemRenderer} items={[{ bool: true }, { bool: false }]} /> },
             ]}
           />
         </CardDetails>
