@@ -131,10 +131,10 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Test CMU 1
@@ -785,10 +785,10 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Test CMU 1

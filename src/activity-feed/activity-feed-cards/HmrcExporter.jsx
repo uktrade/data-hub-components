@@ -11,8 +11,13 @@ import {
   CardTable,
 } from './card'
 
+import {
+  DefaultItemRenderer,
+} from './card/item-renderers'
+
 import CardUtils from './card/CardUtils'
 import DateUtils from '../../utils/DateUtils'
+import { SOURCE_TYPES } from '../constants'
 
 export default class HmrcExporter extends React.PureComponent {
   static propTypes = {
@@ -41,12 +46,13 @@ export default class HmrcExporter extends React.PureComponent {
       }
     })
 
+
     return (
       <Card>
         <CardHeader>
           <CardHeading
             blockText="HMRC"
-            sourceType="externalDataSource"
+            sourceType={SOURCE_TYPES.external}
             subHeading="Exporters records show that"
             summary={summary}
           />
@@ -60,11 +66,11 @@ export default class HmrcExporter extends React.PureComponent {
           <CardTable rows={
             [
               { header: 'Company name', content: reference },
-
               {
                 header: 'Export Item code(s)',
                 content: <CardDetailsList
-                  itemRenderer={GenericItemRenderer}
+                  itemPropName="value"
+                  itemRenderer={DefaultItemRenderer}
                   items={exportItemCodesCollection}
                 />,
               },

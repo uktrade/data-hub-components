@@ -1,6 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { uniqueId } from 'lodash'
 
 const StyledListItem = styled('li')`
   list-style-type: none;
@@ -15,10 +15,15 @@ export default class CardDetailsList extends React.PureComponent {
   static propTypes = {
     items: PropTypes.arrayOf(PropTypes.object).isRequired,
     itemRenderer: PropTypes.any.isRequired,
+    itemPropName: PropTypes.string,
+  }
+
+  static defaultProps = {
+    itemPropName: null,
   }
 
   render() {
-    const { items, itemRenderer } = this.props
+    const { items, itemRenderer, itemPropName } = this.props
 
     return (
       <StyledUList>
@@ -26,42 +31,12 @@ export default class CardDetailsList extends React.PureComponent {
           items.map((item, index) => (
             <StyledListItem key={item.id}>
               {
-                itemRenderer(item, index)
+                itemRenderer(item, index, itemPropName)
               }
             </StyledListItem>
           ))
         }
       </StyledUList>
-    )
-  }
-
-  renderGenericList = (list) => {
-    return (
-      <StyledUList>
-        {
-          list.map((item, index) => (
-            <StyledListItem key={uniqueId(`key-${index}`)}>
-              {item}
-            </StyledListItem>
-          ))
-        }
-      </StyledUList>
-    )
-  }
-
-  renderList = ({ people, list }) => {
-    if (people) {
-      return this.renderPeopleList(people)
-    } else {
-      return this.renderGenericList(list)
-    }
-  }
-
-  render() {
-    return (
-      <>
-        {this.renderList(this.props)}
-      </>
     )
   }
 }

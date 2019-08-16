@@ -1,5 +1,5 @@
 import React from 'react'
-import { get } from 'lodash'
+import { get, uniqueId } from 'lodash'
 
 import PropTypes from 'prop-types'
 import {
@@ -11,8 +11,13 @@ import {
   CardTable,
 } from './card'
 
+import {
+  DefaultItemRenderer,
+} from './card/item-renderers'
+
 import CardUtils from './card/CardUtils'
 import DateUtils from '../../utils/DateUtils'
+import { SOURCE_TYPES } from '../constants'
 
 export default class CompaniesHouseCompany extends React.PureComponent {
   static propTypes = {
@@ -55,7 +60,7 @@ export default class CompaniesHouseCompany extends React.PureComponent {
         <CardHeader>
           <CardHeading
             blockText="Companies House"
-            sourceType="externalDataSource"
+            sourceType={SOURCE_TYPES.external}
             subHeading="Company records show that"
             summary={summary}
           />
@@ -77,7 +82,14 @@ export default class CompaniesHouseCompany extends React.PureComponent {
               { header: 'Next due date', content: nextDueDate },
               { header: 'Returns last made up date', content: returnsLastMadeUpDate },
               { header: 'Returns next due date', content: returnsNextDueDate },
-              { header: 'SIC code(s)', content: <CardDetailsList items={sicCodesCollection} itemRenderer={GenericItemRenderer} /> },
+              {
+                header: 'SIC code(s)',
+                content: <CardDetailsList
+                  itemPropName="value"
+                  itemRenderer={DefaultItemRenderer}
+                  items={sicCodesCollection}
+                />,
+              },
             ]}
           />
         </CardDetails>

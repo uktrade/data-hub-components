@@ -4,6 +4,7 @@ import { SPACING } from '@govuk-react/constants'
 import { BLUE, GREY_1 } from 'govuk-colours'
 import { H3 } from 'govuk-react'
 import PropTypes from 'prop-types'
+import { SOURCE_TYPES } from '../../constants'
 
 const BlockHeading = styled(H3)`
   display: inline-block;
@@ -11,11 +12,7 @@ const BlockHeading = styled(H3)`
   color: white;
   padding: 2px 5px;
   background-color: ${({ sourceType }) => {
-    if (sourceType && sourceType === 'externalDataSource') {
-      return GREY_1
-    } else {
-      return BLUE
-    }
+    return sourceType === SOURCE_TYPES.external ? GREY_1 : BLUE
   }};
   margin-bottom: ${SPACING.SCALE_2};
 `
