@@ -11,7 +11,7 @@ function MyCompaniesTile({ data }) {
 
   return (
     <>
-      <MyCompaniesFilters companies={companies} onFilterUpdate={onFilterUpdate} />
+      <MyCompaniesFilters initialCompanies={data} companies={companies} onFilterUpdate={onFilterUpdate} />
       <pre>{JSON.stringify(companies)}</pre>
     </>
   )
