@@ -16,7 +16,6 @@ import {
 } from './card/item-renderers'
 
 import CardUtils from './card/CardUtils'
-import DateUtils from '../../utils/DateUtils'
 import { SOURCE_TYPES } from '../constants'
 
 export default class HmrcExporter extends React.PureComponent {
@@ -34,7 +33,7 @@ export default class HmrcExporter extends React.PureComponent {
   render() {
     const { activity, showDetails } = this.props
 
-    const published = DateUtils.format(get(activity, 'published'))
+    const published = get(activity, 'published')
     const reference = get(activity, 'object.attributedTo.name')
     const summary = get(activity, 'summary')
     const exportItemCodes = get(activity, 'object.dit:exportItemCodes')
