@@ -34,7 +34,6 @@ Form.defaultProps = {
 function FormWrapper(props) {
   const { children, ...rest } = props
   const formContextProps = useFormContext(rest)
-  const { submitForm } = formContextProps
 
   const renderChildren = () => {
     if (typeof children === 'function') {
@@ -47,7 +46,7 @@ function FormWrapper(props) {
     <form
       onSubmit={(e) => {
         e.preventDefault()
-        submitForm()
+        formContextProps.goForward()
       }}
     >
       {renderChildren()}
@@ -56,7 +55,10 @@ function FormWrapper(props) {
 }
 
 FormWrapper.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.node,
+  ]),
 }
 
 FormWrapper.defaultProps = {

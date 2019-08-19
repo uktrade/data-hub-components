@@ -115,21 +115,6 @@ function useForm({ initialValues = {}, initialStep = 0, onSubmit = null } = {}) 
   }
   const deregisterStep = name => setSteps(prevSteps => prevSteps.filter(s => s !== name))
 
-  const goToNextStep = () => {
-    const validationErrors = validateForm()
-    if (isEmpty(validationErrors)) {
-      setCurrentStep(currentStep + 1)
-    }
-  }
-  const goToPreviousStep = () => setCurrentStep(currentStep - 1)
-  const goToStepByName = stepName => setCurrentStep(steps.indexOf(stepName))
-  const submitForm = () => {
-    const validationErrors = validateForm()
-    if (isEmpty(validationErrors)) {
-      onSubmit(values)
-    }
-  }
-
   const isFirstStep = () => currentStep === 0
   const isLastStep = () => currentStep === steps.length - 1 || steps.length === 0
 
@@ -137,6 +122,19 @@ function useForm({ initialValues = {}, initialStep = 0, onSubmit = null } = {}) 
     const index = steps.indexOf(stepName)
     return index !== -1 ? index : null
   }
+
+  const goForward = () => {
+    const validationErrors = validateForm()
+    if (isEmpty(validationErrors)) {
+      if (isLastStep()) {
+        onSubmit(values)
+      } else {
+        setCurrentStep(currentStep + 1)
+      }
+    }
+  }
+  const goBack = () => setCurrentStep(currentStep - 1)
+  const goToStepByName = stepName => setCurrentStep(steps.indexOf(stepName))
 
   return {
     fields,
@@ -156,13 +154,12 @@ function useForm({ initialValues = {}, initialStep = 0, onSubmit = null } = {}) 
     registerStep,
     deregisterStep,
     setCurrentStep,
-    goToNextStep,
-    goToPreviousStep,
+    goForward,
+    goBack,
     goToStepByName,
     getStepIndex,
     isLastStep,
     isFirstStep,
-    submitForm,
   }
 }
 

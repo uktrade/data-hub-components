@@ -199,8 +199,7 @@ describe('Step', () => {
 
       describe('when the required field is not filled and the "Next" button is clicked', () => {
         beforeAll(() => {
-          const nextButton = wrapper.find('button')
-          nextButton.simulate('click')
+          wrapper.find('button').simulate('submit')
           formState = JSON.parse(wrapper.find('.form-state').text())
         })
 
@@ -228,7 +227,7 @@ describe('Step', () => {
       describe('when the required field is filled and the "Next" button is clicked', () => {
         beforeAll(() => {
           wrapper.find('#testField1').simulate('change', { target: { value: 'hello' } })
-          wrapper.find('button').simulate('click')
+          wrapper.find('button').simulate('submit')
           formState = JSON.parse(wrapper.find('.form-state').text())
         })
 
@@ -266,6 +265,66 @@ describe('Step', () => {
           })
         })
       })
+    })
+  })
+
+  describe('when the testForwardButtonText prop is passed', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          <Step name="testStep1" forwardButtonText="testForwardButtonText" />
+          <Step name="testStep2" />
+        </Form>,
+      )
+    })
+
+    test('should render a back button with modified step', () => {
+      expect(wrapper.find('button').at(0).text()).toEqual('testForwardButtonText')
+    })
+  })
+
+  describe('when the backButtonText prop is passed', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form initialStep={1}>
+          <Step name="testStep1" />
+          <Step name="testStep2" backButtonText="testBackButtonText" />
+        </Form>,
+      )
+    })
+
+    test('should render a back button with modified step', () => {
+      expect(wrapper.find('button').at(0).text()).toEqual('testBackButtonText')
+    })
+  })
+
+  describe('when the hideForwardButton prop is set to true', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          <Step name="testStep1" hideForwardButton={true} />
+          <Step name="testStep2" />
+        </Form>,
+      )
+    })
+
+    test('should hide the forward button', () => {
+      expect(wrapper.find('button').exists()).toBeFalsy()
+    })
+  })
+
+  describe('when the hideBackButton prop is set to true', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form initialStep={1}>
+          <Step name="testStep1" />
+          <Step name="testStep2" hideBackButton={true} />
+        </Form>,
+      )
+    })
+
+    test('should hide the back button', () => {
+      expect(wrapper.find('button').text().includes('Back')).toBeFalsy()
     })
   })
 })
