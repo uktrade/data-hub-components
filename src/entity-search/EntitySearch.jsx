@@ -7,6 +7,7 @@ import { SPACING } from '@govuk-react/constants'
 import CannotFindDetails from './CannotFindDetails'
 import EntityList from './EntityList'
 import EntityFilters from './EntityFilters'
+import PreviouslySelected from './PreviouslySelected'
 import useFilter from './useFilter'
 
 const StyledButton = styled(Button)`
@@ -14,10 +15,18 @@ const StyledButton = styled(Button)`
 `
 StyledButton.displayName = 'Search'
 
-const EntitySearch = ({ onEntitySearch, entities, entityFilters, cannotFind }) => {
+const EntitySearch = ({
+  previouslySelected,
+  entityFilters,
+  onEntitySearch,
+  entities,
+  cannotFind,
+}) => {
   const { filters, setFilter } = useFilter()
   return (
     <>
+      {previouslySelected && <PreviouslySelected {...previouslySelected} />}
+
       <EntityFilters entityFilters={entityFilters} setFilter={setFilter} />
 
       {entities && entities.length ? (
@@ -48,6 +57,14 @@ EntitySearch.propTypes = {
       onClick: PropTypes.func,
     }).isRequired,
   }).isRequired,
+  previouslySelected: PropTypes.shape({
+    text: PropTypes.string.isRequired,
+    onChangeClick: PropTypes.func.isRequired,
+  }),
+}
+
+EntitySearch.defaultProps = {
+  previouslySelected: null,
 }
 
 export default EntitySearch

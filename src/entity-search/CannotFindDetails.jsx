@@ -17,7 +17,7 @@ const CannotFindDetails = ({ summary, actions, link }) => {
           {actions.map(text => <li key={uniqueId()}>{text}</li>)}
         </ul>
         <Link
-          href={link.url ? link.url : '#'}
+          href={link.url ? link.url : '#cannot-find'}
           onClick={link.onClick ? onLinkClick : null}
         >
           {link.text}
