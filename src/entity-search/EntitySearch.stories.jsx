@@ -44,6 +44,7 @@ const EntitySearchForStorybook = ({ previouslySelected, cannotFindLink }) => {
         ],
         link: cannotFindLink,
       }}
+      onEntityClick={entity => alert(`Selected ${JSON.stringify(entity)}`)}
     />
   )
 }

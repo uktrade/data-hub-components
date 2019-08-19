@@ -21,6 +21,7 @@ const EntitySearch = ({
   onEntitySearch,
   entities,
   cannotFind,
+  onEntityClick,
 }) => {
   const { filters, setFilter } = useFilter()
   return (
@@ -31,7 +32,7 @@ const EntitySearch = ({
 
       {entities && entities.length ? (
         <>
-          <EntityList entities={entities} />
+          <EntityList entities={entities} onEntityClick={onEntityClick} />
           <CannotFindDetails {...cannotFind} />
         </>
       ) : null}
@@ -61,6 +62,7 @@ EntitySearch.propTypes = {
     text: PropTypes.string.isRequired,
     onChangeClick: PropTypes.func.isRequired,
   }),
+  onEntityClick: PropTypes.func.isRequired,
 }
 
 EntitySearch.defaultProps = {
