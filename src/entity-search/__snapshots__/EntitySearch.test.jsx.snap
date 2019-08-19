@@ -1,47 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EntitySearch when initially loading the entity search component should render the component without entities 1`] = `
-Array [
-  <div
-    className="sc-bAeIUo fWSbPZ"
-  >
-    <div
-      className="sc-bMVAic AOkMI sc-hzDkRC hNOsPM"
-    >
-      <div
-        className="sc-bRBYWo cfvpGy"
-      >
-        <label
-          className="sc-ckVGcZ jNBPWj"
-          onChange={[Function]}
-        >
-          <span
-            className="sc-kGXeez fmtdbL"
-          >
-            Company name
-          </span>
-          <input
-            className="sc-dxgOiQ KJcFQ"
-            name="search_term"
-            type="text"
-          />
-        </label>
-      </div>
-    </div>
-  </div>,
-  <button
-    className="sc-iujRgT bnRApC sc-VigVT krXvSZ"
-    disabled={false}
-    onClick={[Function]}
-  >
-    Search
-  </button>,
-]
-`;
-
-exports[`EntitySearch when the "Search" button has been clicked should render the component with entities 1`] = `
-"<EntitySearchWithDataProvider getEntities={[Function]} entityFilters={{...}}>
-  <EntitySearch entities={{...}} onEntitySearch={[Function: onEntitySearch]} getEntities={[Function]} entityFilters={{...}}>
+"<EntitySearchWithDataProvider getEntities={[Function]} entityFilters={{...}} cannotFind={{...}}>
+  <EntitySearch entities={{...}} onEntitySearch={[Function: onEntitySearch]} getEntities={[Function]} entityFilters={{...}} cannotFind={{...}}>
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
@@ -76,6 +37,184 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                                 <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
                                                   <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
                                                     <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                  </StyledComponent>
+                                                </styled.input>
+                                              </Input>
+                                            </label>
+                                          </StyledComponent>
+                                        </styled.label>
+                                      </Label>
+                                    </InputField>
+                                  </EntityFilter>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </GridCol>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </GridRow>
+                </StyledComponent>
+              </Styled(GridRow)>
+            </EntityFilterRow>
+            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
+              <Styled(GridRow)>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <GridRow className=\\"sc-bMVAic AOkMI\\">
+                    <styled.div className=\\"sc-bMVAic AOkMI\\">
+                      <StyledComponent className=\\"sc-bMVAic AOkMI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-bMVAic AOkMI sc-hzDkRC hNOsPM\\">
+                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-bRBYWo cROHUG\\">
+                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                      <Label onChange={[Function: onChange]} error={false}>
+                                        <styled.label onChange={[Function: onChange]} error={false}>
+                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                              <LabelText>
+                                                <styled.span>
+                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <span className=\\"sc-kGXeez fmtdbL\\">
+                                                      Company postcode
+                                                    </span>
+                                                  </StyledComponent>
+                                                </styled.span>
+                                              </LabelText>
+                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                  </StyledComponent>
+                                                </styled.input>
+                                              </Input>
+                                            </label>
+                                          </StyledComponent>
+                                        </styled.label>
+                                      </Label>
+                                    </InputField>
+                                  </EntityFilter>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </GridCol>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </GridRow>
+                </StyledComponent>
+              </Styled(GridRow)>
+            </EntityFilterRow>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </EntityFilters>
+    <Search onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
+      <StyledComponent onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+        <ForwardRef onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-iujRgT bnRApC\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-iujRgT bnRApC\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-iujRgT bnRApC\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onClick]} disabled={false} className=\\"sc-iujRgT bnRApC sc-VigVT krXvSZ\\">
+                Search
+              </button>
+            </StyledComponent>
+          </styled.button>
+        </ForwardRef>
+      </StyledComponent>
+    </Search>
+  </EntitySearch>
+</EntitySearchWithDataProvider>"
+`;
+
+exports[`EntitySearch when the "Search" button has been clicked should render the component with entities 1`] = `
+"<EntitySearchWithDataProvider getEntities={[Function]} entityFilters={{...}} cannotFind={{...}}>
+  <EntitySearch entities={{...}} onEntitySearch={[Function: onEntitySearch]} getEntities={[Function]} entityFilters={{...}} cannotFind={{...}}>
+    <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
+      <styled.div>
+        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+          <div className=\\"sc-bAeIUo fWSbPZ\\">
+            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
+              <Styled(GridRow)>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <GridRow className=\\"sc-bMVAic AOkMI\\">
+                    <styled.div className=\\"sc-bMVAic AOkMI\\">
+                      <StyledComponent className=\\"sc-bMVAic AOkMI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-bMVAic AOkMI sc-hzDkRC hNOsPM\\">
+                          <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                              <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-bRBYWo cfvpGy\\">
+                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                      <Label onChange={[Function: onChange]} error={false}>
+                                        <styled.label onChange={[Function: onChange]} error={false}>
+                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                              <LabelText>
+                                                <styled.span>
+                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <span className=\\"sc-kGXeez fmtdbL\\">
+                                                      Company name
+                                                    </span>
+                                                  </StyledComponent>
+                                                </styled.span>
+                                              </LabelText>
+                                              <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
+                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
+                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                  </StyledComponent>
+                                                </styled.input>
+                                              </Input>
+                                            </label>
+                                          </StyledComponent>
+                                        </styled.label>
+                                      </Label>
+                                    </InputField>
+                                  </EntityFilter>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </GridCol>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </GridRow>
+                </StyledComponent>
+              </Styled(GridRow)>
+            </EntityFilterRow>
+            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
+              <Styled(GridRow)>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <GridRow className=\\"sc-bMVAic AOkMI\\">
+                    <styled.div className=\\"sc-bMVAic AOkMI\\">
+                      <StyledComponent className=\\"sc-bMVAic AOkMI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-bMVAic AOkMI sc-hzDkRC hNOsPM\\">
+                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-bRBYWo cROHUG\\">
+                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                      <Label onChange={[Function: onChange]} error={false}>
+                                        <styled.label onChange={[Function: onChange]} error={false}>
+                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                              <LabelText>
+                                                <styled.span>
+                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <span className=\\"sc-kGXeez fmtdbL\\">
+                                                      Company postcode
+                                                    </span>
+                                                  </StyledComponent>
+                                                </styled.span>
+                                              </LabelText>
+                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
                                                   </StyledComponent>
                                                 </styled.input>
                                               </Input>
@@ -188,6 +327,69 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
         </StyledComponent>
       </styled.ol>
     </EntityList>
+    <CannotFindDetails summary=\\"cannot find summary\\" actions={{...}} link={{...}}>
+      <Details summary=\\"cannot find summary\\" open={false}>
+        <styled.details open={false}>
+          <StyledComponent open={false} forwardedComponent={{...}} forwardedRef={{...}}>
+            <details open={false} className=\\"sc-kEYyzF ihcnje\\">
+              <styled.summary>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <summary className=\\"sc-kkGfuU cCdZFh\\">
+                    <styled.span>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <span className=\\"sc-iAyFgw jRkIxn\\">
+                          cannot find summary
+                        </span>
+                      </StyledComponent>
+                    </styled.span>
+                  </summary>
+                </StyledComponent>
+              </styled.summary>
+              <styled.div>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <div className=\\"sc-hSdWYo dfimje\\">
+                    <div>
+                      <Paragraph supportingText={false} linkRenderer={[Function: linkRenderer]}>
+                        <Styled(ReactMarkdown) source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]}>
+                          <StyledComponent source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]} forwardedComponent={{...}} forwardedRef={{...}}>
+                            <ReactMarkdown source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]} className=\\"sc-jAaTju fBEFVB\\" sourcePos={false} rawSourcePos={false} transformLinkUri={[Function: uriTransformer]} astPlugins={{...}} plugins={{...}} parserOptions={{...}}>
+                              <Root className=\\"sc-jAaTju fBEFVB\\">
+                                <div className=\\"sc-jAaTju fBEFVB\\">
+                                  <p>
+                                    <TextRenderer nodeKey=\\"text-1-1\\" value=\\"Try refining your search by taking the following actions:\\">
+                                      Try refining your search by taking the following actions:
+                                    </TextRenderer>
+                                  </p>
+                                </div>
+                              </Root>
+                            </ReactMarkdown>
+                          </StyledComponent>
+                        </Styled(ReactMarkdown)>
+                      </Paragraph>
+                      <ul>
+                        <li>
+                          action 1
+                        </li>
+                        <li>
+                          action 2
+                        </li>
+                      </ul>
+                      <styled.a href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} textColour={false} noVisitedState={false}>
+                        <StyledComponent href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} textColour={false} noVisitedState={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                          <a href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} className=\\"sc-bwzfXH VXMCV\\">
+                            still cannot find
+                          </a>
+                        </StyledComponent>
+                      </styled.a>
+                    </div>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </details>
+          </StyledComponent>
+        </styled.details>
+      </Details>
+    </CannotFindDetails>
     <Search onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
       <StyledComponent onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
         <ForwardRef onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-iujRgT bnRApC\\">
@@ -206,8 +408,8 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
 `;
 
 exports[`EntitySearch when the company name filter is applied should render the component with filtered entities 1`] = `
-"<EntitySearchWithDataProvider getEntities={[Function]} entityFilters={{...}}>
-  <EntitySearch entities={{...}} onEntitySearch={[Function: onEntitySearch]} getEntities={[Function]} entityFilters={{...}}>
+"<EntitySearchWithDataProvider getEntities={[Function]} entityFilters={{...}} cannotFind={{...}}>
+  <EntitySearch entities={{...}} onEntitySearch={[Function: onEntitySearch]} getEntities={[Function]} entityFilters={{...}} cannotFind={{...}}>
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
@@ -242,6 +444,56 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                                 <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
                                                   <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
                                                     <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                  </StyledComponent>
+                                                </styled.input>
+                                              </Input>
+                                            </label>
+                                          </StyledComponent>
+                                        </styled.label>
+                                      </Label>
+                                    </InputField>
+                                  </EntityFilter>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </GridCol>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </GridRow>
+                </StyledComponent>
+              </Styled(GridRow)>
+            </EntityFilterRow>
+            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
+              <Styled(GridRow)>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <GridRow className=\\"sc-bMVAic AOkMI\\">
+                    <styled.div className=\\"sc-bMVAic AOkMI\\">
+                      <StyledComponent className=\\"sc-bMVAic AOkMI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-bMVAic AOkMI sc-hzDkRC hNOsPM\\">
+                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-bRBYWo cROHUG\\">
+                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                      <Label onChange={[Function: onChange]} error={false}>
+                                        <styled.label onChange={[Function: onChange]} error={false}>
+                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                              <LabelText>
+                                                <styled.span>
+                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <span className=\\"sc-kGXeez fmtdbL\\">
+                                                      Company postcode
+                                                    </span>
+                                                  </StyledComponent>
+                                                </styled.span>
+                                              </LabelText>
+                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
                                                   </StyledComponent>
                                                 </styled.input>
                                               </Input>
@@ -314,6 +566,69 @@ exports[`EntitySearch when the company name filter is applied should render the 
         </StyledComponent>
       </styled.ol>
     </EntityList>
+    <CannotFindDetails summary=\\"cannot find summary\\" actions={{...}} link={{...}}>
+      <Details summary=\\"cannot find summary\\" open={false}>
+        <styled.details open={false}>
+          <StyledComponent open={false} forwardedComponent={{...}} forwardedRef={{...}}>
+            <details open={false} className=\\"sc-kEYyzF ihcnje\\">
+              <styled.summary>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <summary className=\\"sc-kkGfuU cCdZFh\\">
+                    <styled.span>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <span className=\\"sc-iAyFgw jRkIxn\\">
+                          cannot find summary
+                        </span>
+                      </StyledComponent>
+                    </styled.span>
+                  </summary>
+                </StyledComponent>
+              </styled.summary>
+              <styled.div>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <div className=\\"sc-hSdWYo dfimje\\">
+                    <div>
+                      <Paragraph supportingText={false} linkRenderer={[Function: linkRenderer]}>
+                        <Styled(ReactMarkdown) source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]}>
+                          <StyledComponent source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]} forwardedComponent={{...}} forwardedRef={{...}}>
+                            <ReactMarkdown source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]} className=\\"sc-jAaTju fBEFVB\\" sourcePos={false} rawSourcePos={false} transformLinkUri={[Function: uriTransformer]} astPlugins={{...}} plugins={{...}} parserOptions={{...}}>
+                              <Root className=\\"sc-jAaTju fBEFVB\\">
+                                <div className=\\"sc-jAaTju fBEFVB\\">
+                                  <p>
+                                    <TextRenderer nodeKey=\\"text-1-1\\" value=\\"Try refining your search by taking the following actions:\\">
+                                      Try refining your search by taking the following actions:
+                                    </TextRenderer>
+                                  </p>
+                                </div>
+                              </Root>
+                            </ReactMarkdown>
+                          </StyledComponent>
+                        </Styled(ReactMarkdown)>
+                      </Paragraph>
+                      <ul>
+                        <li>
+                          action 1
+                        </li>
+                        <li>
+                          action 2
+                        </li>
+                      </ul>
+                      <styled.a href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} textColour={false} noVisitedState={false}>
+                        <StyledComponent href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} textColour={false} noVisitedState={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                          <a href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} className=\\"sc-bwzfXH VXMCV\\">
+                            still cannot find
+                          </a>
+                        </StyledComponent>
+                      </styled.a>
+                    </div>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </details>
+          </StyledComponent>
+        </styled.details>
+      </Details>
+    </CannotFindDetails>
     <Search onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
       <StyledComponent onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
         <ForwardRef onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-iujRgT bnRApC\\">
@@ -332,8 +647,8 @@ exports[`EntitySearch when the company name filter is applied should render the 
 `;
 
 exports[`EntitySearch when the company postcode filter is applied should render the component with filtered entities 1`] = `
-"<EntitySearchWithDataProvider getEntities={[Function]} entityFilters={{...}}>
-  <EntitySearch entities={{...}} onEntitySearch={[Function: onEntitySearch]} getEntities={[Function]} entityFilters={{...}}>
+"<EntitySearchWithDataProvider getEntities={[Function]} entityFilters={{...}} cannotFind={{...}}>
+  <EntitySearch entities={{...}} onEntitySearch={[Function: onEntitySearch]} getEntities={[Function]} entityFilters={{...}} cannotFind={{...}}>
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
@@ -490,6 +805,348 @@ exports[`EntitySearch when the company postcode filter is applied should render 
         </StyledComponent>
       </styled.ol>
     </EntityList>
+    <CannotFindDetails summary=\\"cannot find summary\\" actions={{...}} link={{...}}>
+      <Details summary=\\"cannot find summary\\" open={false}>
+        <styled.details open={false}>
+          <StyledComponent open={false} forwardedComponent={{...}} forwardedRef={{...}}>
+            <details open={false} className=\\"sc-kEYyzF ihcnje\\">
+              <styled.summary>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <summary className=\\"sc-kkGfuU cCdZFh\\">
+                    <styled.span>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <span className=\\"sc-iAyFgw jRkIxn\\">
+                          cannot find summary
+                        </span>
+                      </StyledComponent>
+                    </styled.span>
+                  </summary>
+                </StyledComponent>
+              </styled.summary>
+              <styled.div>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <div className=\\"sc-hSdWYo dfimje\\">
+                    <div>
+                      <Paragraph supportingText={false} linkRenderer={[Function: linkRenderer]}>
+                        <Styled(ReactMarkdown) source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]}>
+                          <StyledComponent source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]} forwardedComponent={{...}} forwardedRef={{...}}>
+                            <ReactMarkdown source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]} className=\\"sc-jAaTju fBEFVB\\" sourcePos={false} rawSourcePos={false} transformLinkUri={[Function: uriTransformer]} astPlugins={{...}} plugins={{...}} parserOptions={{...}}>
+                              <Root className=\\"sc-jAaTju fBEFVB\\">
+                                <div className=\\"sc-jAaTju fBEFVB\\">
+                                  <p>
+                                    <TextRenderer nodeKey=\\"text-1-1\\" value=\\"Try refining your search by taking the following actions:\\">
+                                      Try refining your search by taking the following actions:
+                                    </TextRenderer>
+                                  </p>
+                                </div>
+                              </Root>
+                            </ReactMarkdown>
+                          </StyledComponent>
+                        </Styled(ReactMarkdown)>
+                      </Paragraph>
+                      <ul>
+                        <li>
+                          action 1
+                        </li>
+                        <li>
+                          action 2
+                        </li>
+                      </ul>
+                      <styled.a href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} textColour={false} noVisitedState={false}>
+                        <StyledComponent href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} textColour={false} noVisitedState={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                          <a href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} className=\\"sc-bwzfXH VXMCV\\">
+                            still cannot find
+                          </a>
+                        </StyledComponent>
+                      </styled.a>
+                    </div>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </details>
+          </StyledComponent>
+        </styled.details>
+      </Details>
+    </CannotFindDetails>
+    <Search onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
+      <StyledComponent onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+        <ForwardRef onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-iujRgT bnRApC\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-iujRgT bnRApC\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-iujRgT bnRApC\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onClick]} disabled={false} className=\\"sc-iujRgT bnRApC sc-VigVT krXvSZ\\">
+                Search
+              </button>
+            </StyledComponent>
+          </styled.button>
+        </ForwardRef>
+      </StyledComponent>
+    </Search>
+  </EntitySearch>
+</EntitySearchWithDataProvider>"
+`;
+
+exports[`EntitySearch when the the cannot find link has a callback should render the component 1`] = `
+"<EntitySearchWithDataProvider getEntities={[Function]} entityFilters={{...}} cannotFind={{...}}>
+  <EntitySearch entities={{...}} onEntitySearch={[Function: onEntitySearch]} getEntities={[Function]} entityFilters={{...}} cannotFind={{...}}>
+    <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
+      <styled.div>
+        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+          <div className=\\"sc-bAeIUo fWSbPZ\\">
+            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
+              <Styled(GridRow)>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <GridRow className=\\"sc-bMVAic AOkMI\\">
+                    <styled.div className=\\"sc-bMVAic AOkMI\\">
+                      <StyledComponent className=\\"sc-bMVAic AOkMI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-bMVAic AOkMI sc-hzDkRC hNOsPM\\">
+                          <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                              <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-bRBYWo cfvpGy\\">
+                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                      <Label onChange={[Function: onChange]} error={false}>
+                                        <styled.label onChange={[Function: onChange]} error={false}>
+                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                              <LabelText>
+                                                <styled.span>
+                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <span className=\\"sc-kGXeez fmtdbL\\">
+                                                      Company name
+                                                    </span>
+                                                  </StyledComponent>
+                                                </styled.span>
+                                              </LabelText>
+                                              <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
+                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
+                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                  </StyledComponent>
+                                                </styled.input>
+                                              </Input>
+                                            </label>
+                                          </StyledComponent>
+                                        </styled.label>
+                                      </Label>
+                                    </InputField>
+                                  </EntityFilter>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </GridCol>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </GridRow>
+                </StyledComponent>
+              </Styled(GridRow)>
+            </EntityFilterRow>
+            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
+              <Styled(GridRow)>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <GridRow className=\\"sc-bMVAic AOkMI\\">
+                    <styled.div className=\\"sc-bMVAic AOkMI\\">
+                      <StyledComponent className=\\"sc-bMVAic AOkMI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-bMVAic AOkMI sc-hzDkRC hNOsPM\\">
+                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-bRBYWo cROHUG\\">
+                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                      <Label onChange={[Function: onChange]} error={false}>
+                                        <styled.label onChange={[Function: onChange]} error={false}>
+                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                              <LabelText>
+                                                <styled.span>
+                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <span className=\\"sc-kGXeez fmtdbL\\">
+                                                      Company postcode
+                                                    </span>
+                                                  </StyledComponent>
+                                                </styled.span>
+                                              </LabelText>
+                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                  </StyledComponent>
+                                                </styled.input>
+                                              </Input>
+                                            </label>
+                                          </StyledComponent>
+                                        </styled.label>
+                                      </Label>
+                                    </InputField>
+                                  </EntityFilter>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </GridCol>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </GridRow>
+                </StyledComponent>
+              </Styled(GridRow)>
+            </EntityFilterRow>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </EntityFilters>
+    <EntityList entities={{...}}>
+      <styled.ol>
+        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+          <ol className=\\"sc-cmthru byZYSx\\">
+            <styled.li>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <li className=\\"sc-hMFtBS hNLTdh\\">
+                  <styled.div>
+                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cLQEGU kGDauh\\">
+                        <Styled(H3)>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <H3 className=\\"sc-gqPbQI gHietI\\">
+                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\" level={[undefined]}>
+                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\">
+                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                    <h3 size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI sc-cMljjf kCLKvB\\">
+                                      Some company name
+                                    </h3>
+                                  </StyledComponent>
+                                </styled.h1>
+                              </Heading>
+                            </H3>
+                          </StyledComponent>
+                        </Styled(H3)>
+                        <styled.div>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <div className=\\"sc-hORach kZtTta\\">
+                              <span>
+                                Address
+                                : 
+                              </span>
+                              <span>
+                                123 Fake Street, Brighton, BN1 4SE
+                              </span>
+                            </div>
+                          </StyledComponent>
+                        </styled.div>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </li>
+              </StyledComponent>
+            </styled.li>
+            <styled.li>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <li className=\\"sc-hMFtBS hNLTdh\\">
+                  <styled.div>
+                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cLQEGU kGDauh\\">
+                        <Styled(H3)>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <H3 className=\\"sc-gqPbQI gHietI\\">
+                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\" level={[undefined]}>
+                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\">
+                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                    <h3 size=\\"MEDIUM\\" className=\\"sc-gqPbQI gHietI sc-cMljjf kCLKvB\\">
+                                      Some other company
+                                    </h3>
+                                  </StyledComponent>
+                                </styled.h1>
+                              </Heading>
+                            </H3>
+                          </StyledComponent>
+                        </Styled(H3)>
+                        <styled.div>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <div className=\\"sc-hORach kZtTta\\">
+                              <span>
+                                Address
+                                : 
+                              </span>
+                              <span>
+                                123 ABC Road, Brighton, BN2 9QB
+                              </span>
+                            </div>
+                          </StyledComponent>
+                        </styled.div>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </li>
+              </StyledComponent>
+            </styled.li>
+          </ol>
+        </StyledComponent>
+      </styled.ol>
+    </EntityList>
+    <CannotFindDetails summary=\\"cannot find summary\\" actions={{...}} link={{...}}>
+      <Details summary=\\"cannot find summary\\" open={false}>
+        <styled.details open={false}>
+          <StyledComponent open={false} forwardedComponent={{...}} forwardedRef={{...}}>
+            <details open={false} className=\\"sc-kEYyzF ihcnje\\">
+              <styled.summary>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <summary className=\\"sc-kkGfuU cCdZFh\\">
+                    <styled.span>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <span className=\\"sc-iAyFgw jRkIxn\\">
+                          cannot find summary
+                        </span>
+                      </StyledComponent>
+                    </styled.span>
+                  </summary>
+                </StyledComponent>
+              </styled.summary>
+              <styled.div>
+                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                  <div className=\\"sc-hSdWYo dfimje\\">
+                    <div>
+                      <Paragraph supportingText={false} linkRenderer={[Function: linkRenderer]}>
+                        <Styled(ReactMarkdown) source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]}>
+                          <StyledComponent source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]} forwardedComponent={{...}} forwardedRef={{...}}>
+                            <ReactMarkdown source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]} className=\\"sc-jAaTju fBEFVB\\" sourcePos={false} rawSourcePos={false} transformLinkUri={[Function: uriTransformer]} astPlugins={{...}} plugins={{...}} parserOptions={{...}}>
+                              <Root className=\\"sc-jAaTju fBEFVB\\">
+                                <div className=\\"sc-jAaTju fBEFVB\\">
+                                  <p>
+                                    <TextRenderer nodeKey=\\"text-1-1\\" value=\\"Try refining your search by taking the following actions:\\">
+                                      Try refining your search by taking the following actions:
+                                    </TextRenderer>
+                                  </p>
+                                </div>
+                              </Root>
+                            </ReactMarkdown>
+                          </StyledComponent>
+                        </Styled(ReactMarkdown)>
+                      </Paragraph>
+                      <ul>
+                        <li>
+                          action 1
+                        </li>
+                        <li>
+                          action 2
+                        </li>
+                      </ul>
+                      <styled.a href=\\"#\\" onClick={[Function: onLinkClick]} muted={false} textColour={false} noVisitedState={false}>
+                        <StyledComponent href=\\"#\\" onClick={[Function: onLinkClick]} muted={false} textColour={false} noVisitedState={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                          <a href=\\"#\\" onClick={[Function: onLinkClick]} muted={false} className=\\"sc-bwzfXH VXMCV\\">
+                            still cannot find
+                          </a>
+                        </StyledComponent>
+                      </styled.a>
+                    </div>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </details>
+          </StyledComponent>
+        </styled.details>
+      </Details>
+    </CannotFindDetails>
     <Search onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
       <StyledComponent onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
         <ForwardRef onClick={[Function: onClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-iujRgT bnRApC\\">
