@@ -9,7 +9,7 @@ import EntityFilter from './EntityFilter'
 
 const StyledGridRow = styled(GridRow)`
   & + & {
-    margin-top: ${SPACING.SCALE_2};
+    margin-top: ${SPACING.SCALE_3};
   }
 `
 
