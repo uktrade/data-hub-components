@@ -1,9 +1,11 @@
 import axios from 'axios'
 import { compact, join } from 'lodash'
+import queryString from 'query-string'
 
 export default (apiEndpoint) => {
-  return async () => {
-    const { data } = await axios.post(apiEndpoint)
+  return async (filters) => {
+    const transformed = queryString.stringify(filters)
+    const { data } = await axios.post(`${apiEndpoint + (transformed ? `?${transformed}` : '')}`)
 
     // eslint-disable-next-line camelcase
     return data.results.map(({ dnb_company }) => {

@@ -6,8 +6,8 @@ import EntitySearch from './EntitySearch'
 const EntitySearchWithDataProvider = (props) => {
   const { getEntities } = props
   const [entities, setEntities] = useState([])
-  const onEntitySearch = async () => {
-    setEntities(await getEntities())
+  const onEntitySearch = async (filters) => {
+    setEntities(await getEntities(filters))
   }
 
   return <EntitySearch entities={entities} onEntitySearch={onEntitySearch} {...props} />
