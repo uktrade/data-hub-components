@@ -38,4 +38,39 @@ describe('CardDetails', () => {
       expect(tree).toMatchSnapshot()
     })
   })
+
+  describe('when link provided', () => {
+    test('should render the card', () => {
+      const tree = renderer
+        .create(
+          <CardDetails
+            summary="View interaction details"
+            showDetails={false}
+            link={{ text: 'Go to the interaction detail page', url: '#' }}
+          >
+            <p>children</p>
+          </CardDetails>,
+        )
+        .toJSON()
+
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('when no link provided', () => {
+    test('should still render the card', () => {
+      const tree = renderer
+        .create(
+          <CardDetails
+            summary="View interaction details"
+            showDetails={false}
+          >
+            <p>children</p>
+          </CardDetails>,
+        )
+        .toJSON()
+
+      expect(tree).toMatchSnapshot()
+    })
+  })
 })

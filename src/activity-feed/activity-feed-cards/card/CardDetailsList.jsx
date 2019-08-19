@@ -15,10 +15,15 @@ export default class CardDetailsList extends React.PureComponent {
   static propTypes = {
     items: PropTypes.arrayOf(PropTypes.object).isRequired,
     itemRenderer: PropTypes.any.isRequired,
+    itemPropName: PropTypes.string,
+  }
+
+  static defaultProps = {
+    itemPropName: null,
   }
 
   render() {
-    const { items, itemRenderer } = this.props
+    const { items, itemRenderer, itemPropName } = this.props
 
     return (
       <StyledUList>
@@ -26,7 +31,7 @@ export default class CardDetailsList extends React.PureComponent {
           items.map((item, index) => (
             <StyledListItem key={item.id}>
               {
-                itemRenderer(item, index)
+                itemRenderer(item, index, itemPropName)
               }
             </StyledListItem>
           ))

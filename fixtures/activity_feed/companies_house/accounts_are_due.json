@@ -1,26 +1,30 @@
 {
-  "id": "dit:companiesHouse:1:Announce",
-  "type": "Announce",
-  "published": "2019-01-18T08:43:40.904649+00:00",
-
+  "dit:dataSource": {
+    "id": "companies_house.accounts",
+    "name": "Companies House (Accounts)"
+  },
   "generator": {
-    "name": "dit:companiesHouse",
+    "name": "dit:dataScienceLab",
     "type": "Application"
   },
-
+  "id": "dit:DataScienceExport:5d39ab9ac0d4899610cd65e4:Announce",
   "object": {
-    "id": "dit:companiesHouse:1",
-    "name": "Accounts due date"
-  },
-
-  "context": {
-    "id": "dit:DataHubCompany:a4ead59f-dfc8-e511-a5e6-e4115bead28a",
-    "dit:dunsNumber": "123456789",
-    "dit:companiesHouseNumber": "987654321",
+    "dit:balanceSheetDate": "2019-07-27",
+    "dit:companiesHouseRegisteredNumber": 5603,
+    "dit:companyStatus": "Dormant",
+    "dit:entityCurrentLegalName": "ENJOLA",
+    "dit:netAssetsLiabilitiesIncludingPensionAssetLiability": 1,
+    "dit:periodEnd": "2019-07-27",
+    "dit:periodStart": "2019-07-27",
+    "dit:shareholderFunds": 1,
+    "dit:taxonomy": "http://some.url/with/stuff/2019-07-27",
+    "id": "dit:externalSources:companies_house.accounts:5d39ab9ac0d4899610cd65e4",
     "type": [
-      "Organization",
-      "dit:Company"
-    ],
-    "name": "Marco Test"
-  }
+      "Event",
+      "dit:Accounts"
+    ]
+  },
+  "published": "2020-12-13T01:11:18",
+  "summary": "Company officially incorporated in Companies House.",
+  "type": "Announce"
 }

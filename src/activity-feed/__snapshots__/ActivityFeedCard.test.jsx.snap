@@ -16,6 +16,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
       >
         New Order (OMIS) added
       </h3>
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -30,7 +31,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       20 Jul 2017
     </div>
@@ -52,7 +53,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -130,10 +131,10 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Test CMU 1
@@ -174,10 +175,10 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -226,6 +227,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
       >
         New investment project added - Commitment to invest
       </h3>
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -240,7 +242,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       23 May 2017
     </div>
@@ -262,7 +264,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -340,10 +342,10 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -392,6 +394,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
       >
         New investment project added - FDI
       </h3>
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -406,7 +409,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       05 Mar 2017
     </div>
@@ -428,7 +431,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -506,10 +509,10 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -526,7 +529,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
                   </span>
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -543,7 +546,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
                   </span>
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -692,6 +695,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
       >
         New investment project added - Non-FDI
       </h3>
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -706,7 +710,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       03 Oct 2017
     </div>
@@ -728,7 +732,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -781,10 +785,10 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Test CMU 1
@@ -850,10 +854,10 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -896,6 +900,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
     <div
       className="sc-hORach hWIXLH"
     >
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -910,14 +915,14 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       06 Jun 2019
       <div
-        className="sc-iujRgT bQDONv"
+        className="sc-exAgwC dRHkiS"
       >
         <span
-          className="sc-GMQeP iiTtvy"
+          className="sc-cQFLBn cCRuKo"
         >
           Interaction
         </span>
@@ -941,7 +946,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -969,7 +974,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               />
             </td>
           </tr>
@@ -996,7 +1001,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               />
             </td>
           </tr>
@@ -1024,6 +1029,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
     <div
       className="sc-hORach hWIXLH"
     >
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -1038,14 +1044,14 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       06 Jun 2019
       <div
-        className="sc-iujRgT bQDONv"
+        className="sc-exAgwC dRHkiS"
       >
         <span
-          className="sc-GMQeP ilgLOB"
+          className="sc-cQFLBn bhctVb"
         >
           Cancelled interaction
         </span>
@@ -1069,7 +1075,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -1097,10 +1103,10 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1112,7 +1118,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                    
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1124,7 +1130,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                    
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1166,10 +1172,10 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Mario Bros
@@ -1186,7 +1192,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     John Hammond
@@ -1203,7 +1209,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Luke Moon
@@ -1271,6 +1277,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
     <div
       className="sc-hORach hWIXLH"
     >
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -1285,14 +1292,14 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       06 Jun 2019
       <div
-        className="sc-iujRgT bQDONv"
+        className="sc-exAgwC dRHkiS"
       >
         <span
-          className="sc-GMQeP jjxxKP"
+          className="sc-cQFLBn eVvxfe"
         >
           Upcoming interaction
         </span>
@@ -1316,7 +1323,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -1344,10 +1351,10 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1359,7 +1366,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                    
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1371,7 +1378,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                    
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1413,10 +1420,10 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Mario Bros
@@ -1433,7 +1440,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     John Hammond
@@ -1450,7 +1457,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Luke Moon
@@ -1518,6 +1525,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
     <div
       className="sc-hORach hWIXLH"
     >
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -1532,14 +1540,14 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       05 Jun 2018
       <div
-        className="sc-iujRgT bQDONv"
+        className="sc-exAgwC dRHkiS"
       >
         <span
-          className="sc-GMQeP jjxxKP"
+          className="sc-cQFLBn eVvxfe"
         >
           Incomplete interaction
         </span>
@@ -1563,7 +1571,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -1591,10 +1599,10 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1606,7 +1614,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                    
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1618,7 +1626,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                    
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1660,10 +1668,10 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Mario Bros
@@ -1680,7 +1688,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     John Hammond
@@ -1697,7 +1705,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Luke Moon
@@ -1765,6 +1773,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
     <div
       className="sc-hORach hWIXLH"
     >
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -1779,14 +1788,14 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       06 Jun 2019
       <div
-        className="sc-iujRgT bQDONv"
+        className="sc-exAgwC dRHkiS"
       >
         <span
-          className="sc-GMQeP iiTtvy"
+          className="sc-cQFLBn cCRuKo"
         >
           Interaction
         </span>
@@ -1810,7 +1819,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -1838,10 +1847,10 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1853,7 +1862,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                    
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1865,7 +1874,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                    
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -1907,10 +1916,10 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Mario Bros
@@ -1927,7 +1936,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     John Hammond
@@ -1944,7 +1953,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Luke Moon
@@ -2002,6 +2011,594 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
 </div>
 `;
 
+exports[`ActivityFeedCard when there is a Companies House Accounts record should render an activity card 1`] = `
+<div
+  className="sc-bdVaJa bitMfj"
+>
+  <div
+    className="sc-cLQEGU kmbhXR"
+  >
+    <div
+      className="sc-hORach hWIXLH"
+    >
+      <h3
+        className="sc-gqPbQI fPOIBE sc-jAaTju jwklkP"
+        size="MEDIUM"
+      >
+        Companies House
+      </h3>
+       
+      <span
+        className="sc-iujRgT bLOVRC"
+      >
+        Accounts records show that
+      </span>
+      <h3
+        className="sc-bAeIUo iMjTBc sc-jAaTju jwklkP"
+        size="MEDIUM"
+      >
+        Company officially incorporated in Companies House.
+      </h3>
+      <h3
+        className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
+        size="MEDIUM"
+      >
+        <a
+          className="sc-htpNat jdOrDl"
+          muted={false}
+        />
+      </h3>
+    </div>
+    <div
+      className="sc-GMQeP kXEIxn"
+    >
+      13 Dec 2020
+    </div>
+  </div>
+  <details
+    className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+    open={false}
+  >
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View key details for this account
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Balance sheet date
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              27 Jul 2019
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Net assets liabilities including pension asset liability
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £1
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Period start
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              27 Jul 2019
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Period end
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              27 Jul 2019
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Shareholder funds
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              £1
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a
+        className="sc-htpNat jdOrDl"
+        muted={false}
+      >
+        Go to the Companies House accounts page
+      </a>
+    </div>
+  </details>
+</div>
+`;
+
+exports[`ActivityFeedCard when there is a Companies House Company incorporation record should render an activity card 1`] = `
+<div
+  className="sc-bdVaJa bitMfj"
+>
+  <div
+    className="sc-cLQEGU kmbhXR"
+  >
+    <div
+      className="sc-hORach hWIXLH"
+    >
+      <h3
+        className="sc-gqPbQI fPOIBE sc-jAaTju jwklkP"
+        size="MEDIUM"
+      >
+        Companies House
+      </h3>
+       
+      <span
+        className="sc-iujRgT bLOVRC"
+      >
+        Company records show that
+      </span>
+      <h3
+        className="sc-bAeIUo iMjTBc sc-jAaTju jwklkP"
+        size="MEDIUM"
+      >
+        SULTRAX officially did action number 10.
+      </h3>
+    </div>
+    <div
+      className="sc-GMQeP kXEIxn"
+    >
+      03 Oct 1970
+    </div>
+  </div>
+  <details
+    className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+    open={false}
+  >
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View key details for this company
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Confirmation Statement last made up date
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              17 Jun 2019
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Confirmation Statement next due date
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              05 Aug 2019
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Incorporation date
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              03 Oct 1970
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Next due date
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              10 Aug 2019
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Returns last made up date
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              28 Jun 2019
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Returns next due date
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              20 Sep 2017
+            </td>
+          </tr>
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              SIC code(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <ul
+                className="sc-bXGyLb gqHpzF"
+              >
+                <li
+                  className="sc-daURTG SVUCG"
+                >
+                  74990 - Non-trading company
+                </li>
+                <li
+                  className="sc-daURTG SVUCG"
+                >
+                  03110 - Marine fishing
+                </li>
+                <li
+                  className="sc-daURTG SVUCG"
+                >
+                  99000 - Activities of extraterritorial organisations and bodies
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+</div>
+`;
+
+exports[`ActivityFeedCard when there is a HMRC Exporter record should render an activity card 1`] = `
+<div
+  className="sc-bdVaJa bitMfj"
+>
+  <div
+    className="sc-cLQEGU kmbhXR"
+  >
+    <div
+      className="sc-hORach hWIXLH"
+    >
+      <h3
+        className="sc-gqPbQI fPOIBE sc-jAaTju jwklkP"
+        size="MEDIUM"
+      >
+        HMRC
+      </h3>
+       
+      <span
+        className="sc-iujRgT bLOVRC"
+      >
+        Exporters records show that
+      </span>
+      <h3
+        className="sc-bAeIUo iMjTBc sc-jAaTju jwklkP"
+        size="MEDIUM"
+      >
+        The Water Company officially did action number 5.
+      </h3>
+    </div>
+    <div
+      className="sc-GMQeP kXEIxn"
+    >
+      05 Jan 1879
+    </div>
+  </div>
+  <details
+    className="sc-hMFtBS gUaJXr sc-kkGfuU bEQKnh"
+    open={false}
+  >
+    <summary
+      className="sc-iAyFgw dcdfbw"
+    >
+      <span
+        className="sc-hSdWYo ctAAoI"
+      >
+        View key export details
+      </span>
+    </summary>
+    <div
+      className="sc-eHgmQL jEgifR"
+    >
+      <table
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
+      >
+        <tbody
+          className="sc-ibxdXY clQDsv"
+        >
+          <tr
+            className="sc-bwCtUz kLbHbK"
+          >
+            <th
+              className="sc-iQKALj hLpCNL"
+              style={
+                Object {
+                  "border": 0,
+                  "fontWeight": "normal",
+                }
+              }
+            >
+              Export Item code(s)
+            </th>
+            <td
+              className="sc-iQKALj ldWFKA"
+              style={
+                Object {
+                  "border": 0,
+                }
+              }
+            >
+              <ul
+                className="sc-bXGyLb gqHpzF"
+              >
+                <li
+                  className="sc-daURTG SVUCG"
+                >
+                  2803406
+                </li>
+                <li
+                  className="sc-daURTG SVUCG"
+                >
+                  7252793
+                </li>
+                <li
+                  className="sc-daURTG SVUCG"
+                >
+                  5163497
+                </li>
+                <li
+                  className="sc-daURTG SVUCG"
+                >
+                  6477617
+                </li>
+                <li
+                  className="sc-daURTG SVUCG"
+                >
+                  3158924
+                </li>
+                <li
+                  className="sc-daURTG SVUCG"
+                >
+                  5735446
+                </li>
+                <li
+                  className="sc-daURTG SVUCG"
+                >
+                  4517493
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+</div>
+`;
+
 exports[`ActivityFeedCard when there is a service delivery should render service delivery activity 1`] = `
 <div
   className="sc-bdVaJa bitMfj"
@@ -2012,6 +2609,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
     <div
       className="sc-hORach hWIXLH"
     >
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -2026,14 +2624,14 @@ exports[`ActivityFeedCard when there is a service delivery should render service
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       29 Apr 2019
       <div
-        className="sc-iujRgT bQDONv"
+        className="sc-exAgwC dRHkiS"
       >
         <span
-          className="sc-GMQeP iiTtvy"
+          className="sc-cQFLBn cCRuKo"
         >
           Service delivery
         </span>
@@ -2057,7 +2655,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -2085,10 +2683,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -2125,10 +2723,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Mario Bros
@@ -2198,6 +2796,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
     <div
       className="sc-hORach hWIXLH"
     >
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -2212,14 +2811,14 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       02 May 2019
       <div
-        className="sc-iujRgT bQDONv"
+        className="sc-exAgwC dRHkiS"
       >
         <span
-          className="sc-GMQeP iiTtvy"
+          className="sc-cQFLBn cCRuKo"
         >
           Interaction
         </span>
@@ -2243,7 +2842,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -2271,10 +2870,10 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -2286,7 +2885,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                    
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -2298,7 +2897,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                    
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <a
                     className="sc-htpNat jdOrDl"
@@ -2340,10 +2939,10 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               >
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Mario Bros
@@ -2360,7 +2959,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     John Hammond
@@ -2377,7 +2976,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-cQFLBn erMDhO"
+                  className="sc-daURTG SVUCG"
                 >
                   <span>
                     Luke Moon
@@ -2445,6 +3044,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
     <div
       className="sc-hORach hWIXLH"
     >
+       
       <h3
         className="sc-bMVAic dEbRoq sc-jAaTju jwklkP"
         size="MEDIUM"
@@ -2459,14 +3059,14 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
       </h3>
     </div>
     <div
-      className="sc-bAeIUo fiPrMl"
+      className="sc-GMQeP kXEIxn"
     >
       06 Jun 2019
       <div
-        className="sc-iujRgT bQDONv"
+        className="sc-exAgwC dRHkiS"
       >
         <span
-          className="sc-GMQeP iiTtvy"
+          className="sc-cQFLBn cCRuKo"
         >
           Interaction
         </span>
@@ -2490,7 +3090,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
       className="sc-eHgmQL jEgifR"
     >
       <table
-        className="sc-exAgwC bVpclo sc-hrWEMg duUoFv"
+        className="sc-gojNiO hKXlbl sc-hrWEMg duUoFv"
       >
         <tbody
           className="sc-ibxdXY clQDsv"
@@ -2518,7 +3118,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               />
             </td>
           </tr>
@@ -2545,7 +3145,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
               }
             >
               <ul
-                className="sc-gojNiO qHzYu"
+                className="sc-bXGyLb gqHpzF"
               />
             </td>
           </tr>
