@@ -22,6 +22,7 @@ const EntitySearch = ({
   entities,
   cannotFind,
   onEntityClick,
+  error,
 }) => {
   const { filters, setFilter } = useFilter()
   return (
@@ -36,6 +37,8 @@ const EntitySearch = ({
           <CannotFindDetails {...cannotFind} />
         </>
       ) : null}
+
+      {error && <p>{error}</p>}
 
       <StyledButton onClick={() => onEntitySearch(filters)}>Search</StyledButton>
     </>
@@ -63,10 +66,12 @@ EntitySearch.propTypes = {
     onChangeClick: PropTypes.func.isRequired,
   }),
   onEntityClick: PropTypes.func.isRequired,
+  error: PropTypes.string,
 }
 
 EntitySearch.defaultProps = {
   previouslySelected: null,
+  error: null,
 }
 
 export default EntitySearch

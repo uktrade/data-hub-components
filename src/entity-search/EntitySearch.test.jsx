@@ -240,4 +240,22 @@ describe('EntitySearch', () => {
       })
     })
   })
+
+  describe('when the API returns a server error', () => {
+    beforeAll(() => {
+      mock.onPost(API_ENDPOINT).reply(500)
+    })
+
+    test('should render the component with an error message', async () => {
+      const wrappedEntitySearch = wrapEntitySearch()
+
+      wrappedEntitySearch.find('Search').simulate('click')
+
+      await act(flushPromises)
+
+      wrappedEntitySearch.update()
+
+      expect(wrappedEntitySearch.debug()).toMatchSnapshot()
+    })
+  })
 })
