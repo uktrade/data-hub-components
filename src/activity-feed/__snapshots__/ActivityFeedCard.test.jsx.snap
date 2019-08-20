@@ -2,7 +2,7 @@
 
 exports[`ActivityFeedCard when a New OMIS order is added should render an activity card 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -213,7 +213,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
 
 exports[`ActivityFeedCard when an investment project is CTI should render the CTI investment project activity card 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -380,7 +380,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
 
 exports[`ActivityFeedCard when an investment project is FDI should render the FDI investment project activity card 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -681,7 +681,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
 
 exports[`ActivityFeedCard when an investment project is Non-FDI should render the Non-FDI investment project activity card 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -892,7 +892,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
 
 exports[`ActivityFeedCard when the interaction does not have a service should render interaction activity without services 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -1021,7 +1021,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
 
 exports[`ActivityFeedCard when the interaction is a draft and archived should render interaction activity with "Cancelled interaction" badge 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -1269,7 +1269,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
 
 exports[`ActivityFeedCard when the interaction is a draft and upcoming should render interaction activity with "Upcoming interaction" badge 1`] = `
 <div
-  className="sc-bdVaJa cIbqez"
+  className="sc-bdVaJa jdEOnP"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -1517,7 +1517,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
 
 exports[`ActivityFeedCard when the interaction is a draft in the past should render interaction activity with "Incomplete interaction" badge 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -1765,7 +1765,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
 
 exports[`ActivityFeedCard when the interaction is complete should render interaction activity with "Completed interaction" badge 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -2013,7 +2013,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
 
 exports[`ActivityFeedCard when there is a Companies House Accounts record should render an activity card 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -2217,7 +2217,7 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
 
 exports[`ActivityFeedCard when there is a Companies House Company incorporation record should render an activity card 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -2474,7 +2474,7 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
 
 exports[`ActivityFeedCard when there is a HMRC Exporter record should render an activity card 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -2601,7 +2601,7 @@ exports[`ActivityFeedCard when there is a HMRC Exporter record should render an 
 
 exports[`ActivityFeedCard when there is a service delivery should render service delivery activity 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -2788,7 +2788,7 @@ exports[`ActivityFeedCard when there is an activity item of unknown type should 
 
 exports[`ActivityFeedCard when there is an interaction should render interaction activity 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
@@ -3036,7 +3036,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
 
 exports[`ActivityFeedCard when there is an interaction without any people involved should render interaction activity without advisers nor contacts 1`] = `
 <div
-  className="sc-bdVaJa bitMfj"
+  className="sc-bdVaJa effyms"
 >
   <div
     className="sc-cLQEGU kmbhXR"
