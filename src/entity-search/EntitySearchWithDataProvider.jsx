@@ -5,7 +5,7 @@ import EntitySearch from './EntitySearch'
 
 const EntitySearchWithDataProvider = (props) => {
   const { getEntities } = props
-  const [entities, setEntities] = useState([])
+  const [entities, setEntities] = useState(null)
   const [error, setError] = useState(null)
   const onEntitySearch = async (filters) => {
     try {
