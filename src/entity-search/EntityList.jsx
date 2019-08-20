@@ -61,7 +61,10 @@ const EntityList = ({ entities }) => {
 }
 
 EntityList.propTypes = {
-  entities: PropTypes.array.isRequired,
+  entities: PropTypes.arrayOf(PropTypes.shape({
+    heading: PropTypes.string.isRequired,
+    meta: PropTypes.object.isRequired,
+  })).isRequired,
 }
 
 export default EntityList
