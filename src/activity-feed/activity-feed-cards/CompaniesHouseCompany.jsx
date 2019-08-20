@@ -34,7 +34,7 @@ export default class CompaniesHouseCompany extends React.PureComponent {
   render() {
     const { activity, showDetails } = this.props
 
-    const published = DateUtils.format(get(activity, 'published'))
+    const published = get(activity, 'published')
     const reference = get(activity, 'object.name')
 
     const summary = get(activity, 'summary')
