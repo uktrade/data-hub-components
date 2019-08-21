@@ -2,6 +2,14 @@ import { Details, Link, Paragraph } from 'govuk-react'
 import React from 'react'
 import PropTypes from 'prop-types'
 import { uniqueId } from 'lodash'
+import styled from 'styled-components'
+import { SPACING } from '@govuk-react/constants'
+
+const StyledDetails = styled(Details)`
+  & > div {
+    margin: ${SPACING.SCALE_1} 0 ${SPACING.SCALE_1} 4px;
+  }
+`
 
 const CannotFindDetails = ({ summary, actions, link }) => {
   const onLinkClick = (e) => {
@@ -10,7 +18,7 @@ const CannotFindDetails = ({ summary, actions, link }) => {
   }
 
   return (
-    <Details summary={summary}>
+    <StyledDetails summary={summary}>
       <div>
         <Paragraph>Try refining your search by taking the following actions:</Paragraph>
         <ul>
@@ -23,7 +31,7 @@ const CannotFindDetails = ({ summary, actions, link }) => {
           {link.text}
         </Link>
       </div>
-    </Details>
+    </StyledDetails>
   )
 }
 

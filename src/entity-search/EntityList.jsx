@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { SPACING } from '@govuk-react/constants'
-import { GREY_3, LINK_COLOUR, SECONDARY_TEXT_COLOUR } from 'govuk-colours'
+import { SPACING, FONT_SIZE, MEDIA_QUERIES } from '@govuk-react/constants'
+import { GREY_2, GREY_4, LINK_COLOUR, LINK_HOVER_COLOUR, SECONDARY_TEXT_COLOUR } from 'govuk-colours'
 import { uniqueId } from 'lodash'
 import { H3 } from 'govuk-react'
 
@@ -16,23 +16,38 @@ const StyledEntityListItem = styled('li')`
 `
 
 const StyledEntity = styled('div')`
-  margin-bottom: ${SPACING.SCALE_1};
+  margin-bottom: ${SPACING.SCALE_2};
   padding: ${SPACING.SCALE_2};
-  border: 1px solid ${GREY_3};  
+  border: 1px solid ${GREY_2};  
   cursor: pointer;
+  
+  &:hover {
+    border: 1px solid ${LINK_HOVER_COLOUR};
+    background-color: ${GREY_4};
+    
+    & > h3 {
+      color: ${LINK_HOVER_COLOUR};
+    }
+  }
 `
 
 const StyledHeading = styled(H3)`
   margin: 0;
   color: ${LINK_COLOUR};
+  font-size: ${FONT_SIZE.SIZE_16};
+  ${MEDIA_QUERIES.TABLET} {
+    font-size: ${FONT_SIZE.SIZE_19};
+  }
 `
 
 const StyledMetaItem = styled('div')`
   list-style-type: none;
   margin-top: ${SPACING.SCALE_2};
-  
+  font-size: ${FONT_SIZE.SIZE_16};
+    
   & > span:nth-child(1) {
     color: ${SECONDARY_TEXT_COLOUR};
+    margin-right: ${SPACING.SCALE_1}
   }
 `
 
@@ -47,7 +62,7 @@ const EntityList = ({ entities }) => {
               {Object.keys(meta).map((metaKey) => {
                 return (
                   <StyledMetaItem key={uniqueId()}>
-                    <span>{metaKey}:&nbsp;</span>
+                    <span>{metaKey}:</span>
                     <span>{meta[metaKey]}</span>
                   </StyledMetaItem>
                 )
