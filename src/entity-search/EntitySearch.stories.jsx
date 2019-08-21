@@ -17,10 +17,11 @@ const apiEndpointWithParameters = new RegExp(`${apiEndpoint}.+`)
 mock.onPost(apiEndpoint).reply(200, companySearchFixture)
 mock.onPost(apiEndpointWithParameters).reply(200, companySearchFixture)
 
-const EntitySearchForStorybook = ({ cannotFindLink }) => {
+const EntitySearchForStorybook = ({ previouslySelected, cannotFindLink }) => {
   return (
     <EntitySearchWithDataProvider
       getEntities={dnbCompanySearchDataProvider(apiEndpoint)}
+      previouslySelected={previouslySelected}
       entityFilters={[
         [
           { label: 'Company name', key: 'search_term' },
@@ -43,6 +44,10 @@ const EntitySearchForStorybook = ({ cannotFindLink }) => {
 }
 
 EntitySearchForStorybook.propTypes = {
+  previouslySelected: {
+    text: PropTypes.string.isRequired,
+    onChangeClick: PropTypes.func.isRequired,
+  },
   cannotFindLink: {
     text: PropTypes.string.isRequired,
     url: PropTypes.string,
@@ -51,6 +56,7 @@ EntitySearchForStorybook.propTypes = {
 }
 
 EntitySearchForStorybook.defaultProps = {
+  previouslySelected: null,
   cannotFindLink: {
     text: 'I still cannot find the company',
     url: 'http://stillcannotfind.com',
@@ -92,6 +98,28 @@ storiesOf('EntitySearch', module)
                 onClick: () => {
                   alert('Still cannot find :(')
                 },
+              }}
+            />
+          </GridCol>
+        </GridRow>
+      </Main>
+    )
+  })
+  .add('Data Hub company search with previously selected value and "Change" link', () => {
+    return (
+      <Main>
+        <GridRow>
+          <GridCol>
+            <img src={dataHubAddCompany} width="960" alt="Data Hub" />
+          </GridCol>
+        </GridRow>
+        <GridRow>
+          <GridCol style={{ margin: SPACING.SCALE_2 }}>
+            <H2 style={{ fontSize: '24px' }}>Find the company</H2>
+            <EntitySearchForStorybook
+              previouslySelected={{
+                text: 'Based in the UK',
+                onChangeClick: () => alert('Change previously selected'),
               }}
             />
           </GridCol>

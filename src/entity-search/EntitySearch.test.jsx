@@ -28,11 +28,15 @@ const flushPromises = () => {
   })
 }
 
-const wrapEntitySearch = (cannotFindLink = {
-  url: 'http://stillcannotfind.com',
-  text: 'still cannot find',
-}) => {
+const wrapEntitySearch = ({
+  previouslySelected,
+  cannotFindLink = {
+    url: 'http://stillcannotfind.com',
+    text: 'still cannot find',
+  },
+} = {}) => {
   return mount(<EntitySearchWithDataProvider
+    previouslySelected={previouslySelected}
     getEntities={getEntities(API_ENDPOINT)}
     entityFilters={[
       [
@@ -127,8 +131,10 @@ describe('EntitySearch', () => {
       preventDefaultMock = jest.fn()
 
       wrappedEntitySearch = wrapEntitySearch({
-        text: 'still cannot find',
-        onClick: onCannotFindLinkClick,
+        cannotFindLink: {
+          text: 'still cannot find',
+          onClick: onCannotFindLinkClick,
+        },
       })
 
       wrappedEntitySearch.find('Search').simulate('click')
@@ -138,7 +144,7 @@ describe('EntitySearch', () => {
       wrappedEntitySearch.update()
 
       wrappedEntitySearch
-        .find('[href="#"]')
+        .find('[href="#cannot-find"]')
         .at(1)
         .simulate('click', { preventDefault: preventDefaultMock })
     })
@@ -153,6 +159,47 @@ describe('EntitySearch', () => {
 
     test('should call the onCannotFindLinkClick event', async () => {
       expect(onCannotFindLinkClick.mock.calls.length).toEqual(1)
+    })
+  })
+
+  describe('when there is a previously selected "Change" link which is clicked', () => {
+    let wrappedEntitySearch
+    let onChangeClick
+    let preventDefaultMock
+
+    beforeAll(async () => {
+      onChangeClick = jest.fn()
+      preventDefaultMock = jest.fn()
+
+      wrappedEntitySearch = wrapEntitySearch({
+        previouslySelected: {
+          onChangeClick,
+          text: 'previously selected',
+        },
+      })
+
+      wrappedEntitySearch.find('Search').simulate('click')
+
+      await act(flushPromises)
+
+      wrappedEntitySearch.update()
+
+      wrappedEntitySearch
+        .find('[href="#previously-selected"]')
+        .at(1)
+        .simulate('click', { preventDefault: preventDefaultMock })
+    })
+
+    test('should render the component', async () => {
+      expect(wrappedEntitySearch.debug()).toMatchSnapshot()
+    })
+
+    test('should prevent the default link action', async () => {
+      expect(preventDefaultMock.mock.calls.length).toEqual(1)
+    })
+
+    test('should call the onChangeClick event', async () => {
+      expect(onChangeClick.mock.calls.length).toEqual(1)
     })
   })
 })
