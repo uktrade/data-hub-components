@@ -6,11 +6,23 @@ import EntitySearch from './EntitySearch'
 const EntitySearchWithDataProvider = (props) => {
   const { getEntities } = props
   const [entities, setEntities] = useState([])
+  const [error, setError] = useState(null)
   const onEntitySearch = async (filters) => {
-    setEntities(await getEntities(filters))
+    try {
+      setEntities(await getEntities(filters))
+    } catch (ex) {
+      setError('Error occurred while searching entities.')
+    }
   }
 
-  return <EntitySearch entities={entities} onEntitySearch={onEntitySearch} {...props} />
+  return (
+    <EntitySearch
+      entities={entities}
+      error={error}
+      onEntitySearch={onEntitySearch}
+      {...props}
+    />
+  )
 }
 
 EntitySearchWithDataProvider.propTypes = {
