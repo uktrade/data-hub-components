@@ -8,15 +8,15 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import dataHubAddCompany from '../../assets/images/data-hub-add-company.png'
-import companySearchFixture from './fixtures/company-search'
+import fixtures from './fixtures'
 import dnbCompanySearchDataProvider from './data-providers/DnbCompanySearch'
 import EntitySearchWithDataProvider from './EntitySearchWithDataProvider'
 
 const mock = new MockAdapter(axios)
 const apiEndpoint = 'http://localhost:3010/v4/dnb/company-search'
 const apiEndpointWithParameters = new RegExp(`${apiEndpoint}.+`)
-mock.onPost(apiEndpoint).reply(200, companySearchFixture)
-mock.onPost(apiEndpointWithParameters).reply(200, companySearchFixture)
+mock.onPost(apiEndpoint).reply(200, fixtures.companySearch)
+mock.onPost(apiEndpointWithParameters).reply(200, fixtures.companySearch)
 
 const StyledHeading = styled(H2)`
   font-size: 19px;
