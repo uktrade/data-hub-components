@@ -32,6 +32,7 @@ const wrapEntitySearch = ({
     url: 'http://stillcannotfind.com',
     text: 'still cannot find',
   },
+  onEntityClick = () => console.log('entity clicked'),
 } = {}) => {
   return mount(<EntitySearchWithDataProvider
     previouslySelected={previouslySelected}
@@ -52,6 +53,7 @@ const wrapEntitySearch = ({
       ],
       link: cannotFindLink,
     }}
+    onEntityClick={onEntityClick}
   />)
 }
 
@@ -198,6 +200,44 @@ describe('EntitySearch', () => {
 
     test('should call the onChangeClick event', async () => {
       expect(onChangeClick.mock.calls.length).toEqual(1)
+    })
+  })
+
+  describe('when the first entity search result is clicked', () => {
+    let wrappedEntitySearch
+    let onEntityClick
+
+    beforeAll(async () => {
+      onEntityClick = jest.fn()
+
+      wrappedEntitySearch = wrapEntitySearch({
+        onEntityClick,
+      })
+
+      wrappedEntitySearch.find('Search').simulate('click')
+
+      await act(flushPromises)
+
+      wrappedEntitySearch.update()
+
+      wrappedEntitySearch
+        .find('StyledEntity')
+        .at(0)
+        .simulate('click')
+    })
+
+    test('should render the component', async () => {
+      expect(wrappedEntitySearch.debug()).toMatchSnapshot()
+    })
+
+    test('should call the onEntityClick event', async () => {
+      expect(onEntityClick.mock.calls.length).toEqual(1)
+      expect(onEntityClick.mock.calls[0][0]).toEqual({
+        heading: 'Some company name',
+        meta: {
+          Address: '123 Fake Street, Brighton, BN1 4SE',
+        },
+      })
     })
   })
 })

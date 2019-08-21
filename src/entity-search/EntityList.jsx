@@ -30,6 +30,7 @@ const StyledEntity = styled('div')`
     }
   }
 `
+StyledEntity.displayName = 'StyledEntity'
 
 const StyledHeading = styled(H3)`
   margin: 0;
@@ -51,22 +52,20 @@ const StyledMetaItem = styled('div')`
   }
 `
 
-const EntityList = ({ entities }) => {
+const EntityList = ({ entities, onEntityClick }) => {
   return (
     <StyledEntityList>
-      {entities.map(({ heading, meta }) => {
+      {entities.map((entity) => {
         return (
           <StyledEntityListItem key={uniqueId()}>
-            <StyledEntity key={uniqueId()}>
-              <StyledHeading>{heading}</StyledHeading>
-              {Object.keys(meta).map((metaKey) => {
-                return (
-                  <StyledMetaItem key={uniqueId()}>
-                    <span>{metaKey}:</span>
-                    <span>{meta[metaKey]}</span>
-                  </StyledMetaItem>
-                )
-              })}
+            <StyledEntity key={uniqueId()} onClick={() => onEntityClick(entity)}>
+              <StyledHeading>{entity.heading}</StyledHeading>
+              {Object.keys(entity.meta).map(metaKey => (
+                <StyledMetaItem key={uniqueId()}>
+                  <span>{metaKey}:</span>
+                  <span>{entity.meta[metaKey]}</span>
+                </StyledMetaItem>
+              ))}
             </StyledEntity>
           </StyledEntityListItem>
         )
@@ -80,6 +79,7 @@ EntityList.propTypes = {
     heading: PropTypes.string.isRequired,
     meta: PropTypes.object.isRequired,
   })).isRequired,
+  onEntityClick: PropTypes.func.isRequired,
 }
 
 export default EntityList
