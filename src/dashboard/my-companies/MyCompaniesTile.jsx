@@ -18,7 +18,7 @@ function MyCompaniesTile() {
   const hasCompanies = !!state.companies.length
   const isFiltering = !!state.filterText.length
   const hasNoCompaniesInWatchList = !hasCompanies && !isFiltering
-  const hasNoResults = !!state.companiesInitial.length && !!state.filterText.length
+  const hasNoResults = !!state.companiesInitial.length && !state.companies.length
 
   const SubHeading = (
     <Fragment>
