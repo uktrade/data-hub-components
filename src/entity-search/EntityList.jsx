@@ -78,8 +78,12 @@ EntityList.propTypes = {
   entities: PropTypes.arrayOf(PropTypes.shape({
     heading: PropTypes.string.isRequired,
     meta: PropTypes.object.isRequired,
-  })).isRequired,
+  })),
   onEntityClick: PropTypes.func.isRequired,
+}
+
+EntityList.defaultProps = {
+  entities: null,
 }
 
 export default EntityList

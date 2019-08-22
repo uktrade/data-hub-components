@@ -38,6 +38,10 @@ const EntitySearch = ({
         </>
       ) : null}
 
+      {entities && entities.length === 0 ? (
+        <p>There are no entities to show.</p>
+      ) : null}
+
       {error && <p>{error}</p>}
 
       <StyledButton onClick={() => onEntitySearch(filters)}>Search</StyledButton>
@@ -49,7 +53,7 @@ EntitySearch.propTypes = {
   entities: PropTypes.arrayOf(PropTypes.shape({
     heading: PropTypes.string.isRequired,
     meta: PropTypes.object.isRequired,
-  })).isRequired,
+  })),
   onEntitySearch: PropTypes.func.isRequired,
   entityFilters: PropTypes.array.isRequired,
   cannotFind: PropTypes.shape({
@@ -70,6 +74,7 @@ EntitySearch.propTypes = {
 }
 
 EntitySearch.defaultProps = {
+  entities: null,
   previouslySelected: null,
   error: null,
 }

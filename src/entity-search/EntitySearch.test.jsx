@@ -258,4 +258,22 @@ describe('EntitySearch', () => {
       expect(wrappedEntitySearch.debug()).toMatchSnapshot()
     })
   })
+
+  describe('when the API returns 0 results', () => {
+    beforeAll(() => {
+      mock.onPost(API_ENDPOINT).reply(200, fixtures.companySearchNoResults)
+    })
+
+    test('should render the component with a "no entities" message', async () => {
+      const wrappedEntitySearch = wrapEntitySearch()
+
+      wrappedEntitySearch.find('Search').simulate('click')
+
+      await act(flushPromises)
+
+      wrappedEntitySearch.update()
+
+      expect(wrappedEntitySearch.debug()).toMatchSnapshot()
+    })
+  })
 })

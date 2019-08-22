@@ -15,9 +15,9 @@ const mock = new MockAdapter(axios)
 const apiEndpoint = 'http://localhost:3010/v4/dnb/company-search'
 const apiEndpointWithParameters = new RegExp(`${apiEndpoint}.+`)
 
-const setupSuccessMocks = () => {
-  mock.onPost(apiEndpoint).reply(200, fixtures.companySearch)
-  mock.onPost(apiEndpointWithParameters).reply(200, fixtures.companySearch)
+const setupSuccessMocks = (response = fixtures.companySearch) => {
+  mock.onPost(apiEndpoint).reply(200, response)
+  mock.onPost(apiEndpointWithParameters).reply(200, response)
 }
 
 const setupErrorMocks = () => {
@@ -120,6 +120,13 @@ storiesOf('EntitySearch', module)
   })
   .add('Data Hub company search with server error', () => {
     setupErrorMocks()
+
+    return (
+      <EntitySearchForStorybook />
+    )
+  })
+  .add('Data Hub company search with no results', () => {
+    setupSuccessMocks(fixtures.companySearchNoResults)
 
     return (
       <EntitySearchForStorybook />
