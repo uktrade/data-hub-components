@@ -242,95 +242,103 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
     <EntityList entities={{...}} onEntityClick={[Function]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-exAgwC jYyWiV\\">
+          <ol className=\\"sc-bXGyLb haBriy\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-cQFLBn erMDhO\\">
-                  <StyledEntity onClick={[Function: onClick]} canHandleClick={false}>
-                    <StyledComponent onClick={[Function: onClick]} canHandleClick={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div onClick={[Function: onClick]} className=\\"sc-gojNiO igJVfx\\">
-                        <Styled(H3)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <H3 className=\\"sc-daURTG jaGlRd\\">
-                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" level={[undefined]}>
-                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\">
-                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                    <h3 size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd sc-cMljjf kCLKvB\\">
-                                      Some company name
-                                    </h3>
-                                  </StyledComponent>
-                                </styled.h1>
-                              </Heading>
-                            </H3>
-                          </StyledComponent>
-                        </Styled(H3)>
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-bXGyLb boBdwp\\">
-                              <span>
-                                Address
-                                :
-                              </span>
-                              <span>
-                                123 Fake Street, Brighton, BN1 4SE
-                              </span>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                        <Styled(styled.div)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-fAjcbJ sc-lkqHmb cDHXRT\\">
-                              This company is already on Data Hub. 
-                              <a href=\\"/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa\\">
-                                Go to the company page
-                              </a>
-                                to record activity.
-                            </div>
-                          </StyledComponent>
-                        </Styled(styled.div)>
-                      </div>
-                    </StyledComponent>
-                  </StyledEntity>
+                <li className=\\"sc-lkqHmb jBjITi\\">
+                  <EntityListItem onEntityClick={[Function]} heading=\\"Some company name\\" meta={{...}} text={{...}} canHandleClick={false} data={{...}}>
+                    <StyledEntity onClick={[Function: onClick]} canHandleClick={false}>
+                      <StyledComponent onClick={[Function: onClick]} canHandleClick={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div onClick={[Function: onClick]} className=\\"sc-cQFLBn eADRNi\\">
+                          <Styled(H3)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <H3 className=\\"sc-gojNiO byNnwj\\">
+                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" level={[undefined]}>
+                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\">
+                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                      <h3 size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj sc-cMljjf kCLKvB\\">
+                                        Some company name
+                                      </h3>
+                                    </StyledComponent>
+                                  </styled.h1>
+                                </Heading>
+                              </H3>
+                            </StyledComponent>
+                          </Styled(H3)>
+                          <EntityListItemMetaList meta={{...}}>
+                            <styled.div>
+                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-exAgwC jaSAbg\\">
+                                  <span>
+                                    Address
+                                    :
+                                  </span>
+                                  <span>
+                                    123 Fake Street, Brighton, BN1 4SE
+                                  </span>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </EntityListItemMetaList>
+                          <Styled(styled.div)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fAjcbJ sc-daURTG bmxPEc\\">
+                                This company is already on Data Hub. 
+                                <a href=\\"/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa\\">
+                                  Go to the company page
+                                </a>
+                                  to record activity.
+                              </div>
+                            </StyledComponent>
+                          </Styled(styled.div)>
+                        </div>
+                      </StyledComponent>
+                    </StyledEntity>
+                  </EntityListItem>
                 </li>
               </StyledComponent>
             </styled.li>
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-cQFLBn erMDhO\\">
-                  <StyledEntity onClick={[Function: onClick]} canHandleClick={true}>
-                    <StyledComponent onClick={[Function: onClick]} canHandleClick={true} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div onClick={[Function: onClick]} className=\\"sc-gojNiO cSygrj\\">
-                        <Styled(H3)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <H3 className=\\"sc-daURTG jaGlRd\\">
-                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" level={[undefined]}>
-                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\">
-                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                    <h3 size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd sc-cMljjf kCLKvB\\">
-                                      Some other company
-                                    </h3>
-                                  </StyledComponent>
-                                </styled.h1>
-                              </Heading>
-                            </H3>
-                          </StyledComponent>
-                        </Styled(H3)>
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-bXGyLb boBdwp\\">
-                              <span>
-                                Address
-                                :
-                              </span>
-                              <span>
-                                123 ABC Road, Brighton, BN2 9QB
-                              </span>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </div>
-                    </StyledComponent>
-                  </StyledEntity>
+                <li className=\\"sc-lkqHmb jBjITi\\">
+                  <EntityListItem onEntityClick={[Function]} heading=\\"Some other company\\" meta={{...}} text={{...}} canHandleClick={true} data={{...}}>
+                    <StyledEntity onClick={[Function: onClick]} canHandleClick={true}>
+                      <StyledComponent onClick={[Function: onClick]} canHandleClick={true} forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div onClick={[Function: onClick]} className=\\"sc-cQFLBn iOmJns\\">
+                          <Styled(H3)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <H3 className=\\"sc-gojNiO byNnwj\\">
+                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" level={[undefined]}>
+                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\">
+                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                      <h3 size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj sc-cMljjf kCLKvB\\">
+                                        Some other company
+                                      </h3>
+                                    </StyledComponent>
+                                  </styled.h1>
+                                </Heading>
+                              </H3>
+                            </StyledComponent>
+                          </Styled(H3)>
+                          <EntityListItemMetaList meta={{...}}>
+                            <styled.div>
+                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-exAgwC jaSAbg\\">
+                                  <span>
+                                    Address
+                                    :
+                                  </span>
+                                  <span>
+                                    123 ABC Road, Brighton, BN2 9QB
+                                  </span>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </EntityListItemMetaList>
+                        </div>
+                      </StyledComponent>
+                    </StyledEntity>
+                  </EntityListItem>
                 </li>
               </StyledComponent>
             </styled.li>
@@ -798,44 +806,48 @@ exports[`EntitySearch when the company name filter is applied should render the 
     <EntityList entities={{...}} onEntityClick={[Function]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-exAgwC jYyWiV\\">
+          <ol className=\\"sc-bXGyLb haBriy\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-cQFLBn erMDhO\\">
-                  <StyledEntity onClick={[Function: onClick]} canHandleClick={true}>
-                    <StyledComponent onClick={[Function: onClick]} canHandleClick={true} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div onClick={[Function: onClick]} className=\\"sc-gojNiO cSygrj\\">
-                        <Styled(H3)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <H3 className=\\"sc-daURTG jaGlRd\\">
-                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" level={[undefined]}>
-                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\">
-                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                    <h3 size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd sc-cMljjf kCLKvB\\">
-                                      Some other company
-                                    </h3>
-                                  </StyledComponent>
-                                </styled.h1>
-                              </Heading>
-                            </H3>
-                          </StyledComponent>
-                        </Styled(H3)>
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-bXGyLb boBdwp\\">
-                              <span>
-                                Address
-                                :
-                              </span>
-                              <span>
-                                123 ABC Road, Brighton, BN2 9QB
-                              </span>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </div>
-                    </StyledComponent>
-                  </StyledEntity>
+                <li className=\\"sc-lkqHmb jBjITi\\">
+                  <EntityListItem onEntityClick={[Function]} heading=\\"Some other company\\" meta={{...}} text={{...}} canHandleClick={true} data={{...}}>
+                    <StyledEntity onClick={[Function: onClick]} canHandleClick={true}>
+                      <StyledComponent onClick={[Function: onClick]} canHandleClick={true} forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div onClick={[Function: onClick]} className=\\"sc-cQFLBn iOmJns\\">
+                          <Styled(H3)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <H3 className=\\"sc-gojNiO byNnwj\\">
+                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" level={[undefined]}>
+                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\">
+                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                      <h3 size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj sc-cMljjf kCLKvB\\">
+                                        Some other company
+                                      </h3>
+                                    </StyledComponent>
+                                  </styled.h1>
+                                </Heading>
+                              </H3>
+                            </StyledComponent>
+                          </Styled(H3)>
+                          <EntityListItemMetaList meta={{...}}>
+                            <styled.div>
+                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-exAgwC jaSAbg\\">
+                                  <span>
+                                    Address
+                                    :
+                                  </span>
+                                  <span>
+                                    123 ABC Road, Brighton, BN2 9QB
+                                  </span>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </EntityListItemMetaList>
+                        </div>
+                      </StyledComponent>
+                    </StyledEntity>
+                  </EntityListItem>
                 </li>
               </StyledComponent>
             </styled.li>
@@ -1041,55 +1053,59 @@ exports[`EntitySearch when the company postcode filter is applied should render 
     <EntityList entities={{...}} onEntityClick={[Function]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-exAgwC jYyWiV\\">
+          <ol className=\\"sc-bXGyLb haBriy\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-cQFLBn erMDhO\\">
-                  <StyledEntity onClick={[Function: onClick]} canHandleClick={false}>
-                    <StyledComponent onClick={[Function: onClick]} canHandleClick={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div onClick={[Function: onClick]} className=\\"sc-gojNiO igJVfx\\">
-                        <Styled(H3)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <H3 className=\\"sc-daURTG jaGlRd\\">
-                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" level={[undefined]}>
-                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\">
-                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                    <h3 size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd sc-cMljjf kCLKvB\\">
-                                      Some company name
-                                    </h3>
-                                  </StyledComponent>
-                                </styled.h1>
-                              </Heading>
-                            </H3>
-                          </StyledComponent>
-                        </Styled(H3)>
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-bXGyLb boBdwp\\">
-                              <span>
-                                Address
-                                :
-                              </span>
-                              <span>
-                                123 Fake Street, Brighton, BN1 4SE
-                              </span>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                        <Styled(styled.div)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-fAjcbJ sc-lkqHmb cDHXRT\\">
-                              This company is already on Data Hub. 
-                              <a href=\\"/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa\\">
-                                Go to the company page
-                              </a>
-                                to record activity.
-                            </div>
-                          </StyledComponent>
-                        </Styled(styled.div)>
-                      </div>
-                    </StyledComponent>
-                  </StyledEntity>
+                <li className=\\"sc-lkqHmb jBjITi\\">
+                  <EntityListItem onEntityClick={[Function]} heading=\\"Some company name\\" meta={{...}} text={{...}} canHandleClick={false} data={{...}}>
+                    <StyledEntity onClick={[Function: onClick]} canHandleClick={false}>
+                      <StyledComponent onClick={[Function: onClick]} canHandleClick={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div onClick={[Function: onClick]} className=\\"sc-cQFLBn eADRNi\\">
+                          <Styled(H3)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <H3 className=\\"sc-gojNiO byNnwj\\">
+                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" level={[undefined]}>
+                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\">
+                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                      <h3 size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj sc-cMljjf kCLKvB\\">
+                                        Some company name
+                                      </h3>
+                                    </StyledComponent>
+                                  </styled.h1>
+                                </Heading>
+                              </H3>
+                            </StyledComponent>
+                          </Styled(H3)>
+                          <EntityListItemMetaList meta={{...}}>
+                            <styled.div>
+                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-exAgwC jaSAbg\\">
+                                  <span>
+                                    Address
+                                    :
+                                  </span>
+                                  <span>
+                                    123 Fake Street, Brighton, BN1 4SE
+                                  </span>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </EntityListItemMetaList>
+                          <Styled(styled.div)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fAjcbJ sc-daURTG bmxPEc\\">
+                                This company is already on Data Hub. 
+                                <a href=\\"/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa\\">
+                                  Go to the company page
+                                </a>
+                                  to record activity.
+                              </div>
+                            </StyledComponent>
+                          </Styled(styled.div)>
+                        </div>
+                      </StyledComponent>
+                    </StyledEntity>
+                  </EntityListItem>
                 </li>
               </StyledComponent>
             </styled.li>
@@ -1295,95 +1311,103 @@ exports[`EntitySearch when the entity search results are clicked should render t
     <EntityList entities={{...}} onEntityClick={[Function: mockConstructor]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-exAgwC jYyWiV\\">
+          <ol className=\\"sc-bXGyLb haBriy\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-cQFLBn erMDhO\\">
-                  <StyledEntity onClick={[Function: onClick]} canHandleClick={false}>
-                    <StyledComponent onClick={[Function: onClick]} canHandleClick={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div onClick={[Function: onClick]} className=\\"sc-gojNiO igJVfx\\">
-                        <Styled(H3)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <H3 className=\\"sc-daURTG jaGlRd\\">
-                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" level={[undefined]}>
-                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\">
-                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                    <h3 size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd sc-cMljjf kCLKvB\\">
-                                      Some company name
-                                    </h3>
-                                  </StyledComponent>
-                                </styled.h1>
-                              </Heading>
-                            </H3>
-                          </StyledComponent>
-                        </Styled(H3)>
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-bXGyLb boBdwp\\">
-                              <span>
-                                Address
-                                :
-                              </span>
-                              <span>
-                                123 Fake Street, Brighton, BN1 4SE
-                              </span>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                        <Styled(styled.div)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-fAjcbJ sc-lkqHmb cDHXRT\\">
-                              This company is already on Data Hub. 
-                              <a href=\\"/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa\\">
-                                Go to the company page
-                              </a>
-                                to record activity.
-                            </div>
-                          </StyledComponent>
-                        </Styled(styled.div)>
-                      </div>
-                    </StyledComponent>
-                  </StyledEntity>
+                <li className=\\"sc-lkqHmb jBjITi\\">
+                  <EntityListItem onEntityClick={[Function: mockConstructor]} heading=\\"Some company name\\" meta={{...}} text={{...}} canHandleClick={false} data={{...}}>
+                    <StyledEntity onClick={[Function: onClick]} canHandleClick={false}>
+                      <StyledComponent onClick={[Function: onClick]} canHandleClick={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div onClick={[Function: onClick]} className=\\"sc-cQFLBn eADRNi\\">
+                          <Styled(H3)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <H3 className=\\"sc-gojNiO byNnwj\\">
+                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" level={[undefined]}>
+                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\">
+                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                      <h3 size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj sc-cMljjf kCLKvB\\">
+                                        Some company name
+                                      </h3>
+                                    </StyledComponent>
+                                  </styled.h1>
+                                </Heading>
+                              </H3>
+                            </StyledComponent>
+                          </Styled(H3)>
+                          <EntityListItemMetaList meta={{...}}>
+                            <styled.div>
+                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-exAgwC jaSAbg\\">
+                                  <span>
+                                    Address
+                                    :
+                                  </span>
+                                  <span>
+                                    123 Fake Street, Brighton, BN1 4SE
+                                  </span>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </EntityListItemMetaList>
+                          <Styled(styled.div)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fAjcbJ sc-daURTG bmxPEc\\">
+                                This company is already on Data Hub. 
+                                <a href=\\"/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa\\">
+                                  Go to the company page
+                                </a>
+                                  to record activity.
+                              </div>
+                            </StyledComponent>
+                          </Styled(styled.div)>
+                        </div>
+                      </StyledComponent>
+                    </StyledEntity>
+                  </EntityListItem>
                 </li>
               </StyledComponent>
             </styled.li>
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-cQFLBn erMDhO\\">
-                  <StyledEntity onClick={[Function: onClick]} canHandleClick={true}>
-                    <StyledComponent onClick={[Function: onClick]} canHandleClick={true} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div onClick={[Function: onClick]} className=\\"sc-gojNiO cSygrj\\">
-                        <Styled(H3)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <H3 className=\\"sc-daURTG jaGlRd\\">
-                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" level={[undefined]}>
-                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\">
-                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                    <h3 size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd sc-cMljjf kCLKvB\\">
-                                      Some other company
-                                    </h3>
-                                  </StyledComponent>
-                                </styled.h1>
-                              </Heading>
-                            </H3>
-                          </StyledComponent>
-                        </Styled(H3)>
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-bXGyLb boBdwp\\">
-                              <span>
-                                Address
-                                :
-                              </span>
-                              <span>
-                                123 ABC Road, Brighton, BN2 9QB
-                              </span>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </div>
-                    </StyledComponent>
-                  </StyledEntity>
+                <li className=\\"sc-lkqHmb jBjITi\\">
+                  <EntityListItem onEntityClick={[Function: mockConstructor]} heading=\\"Some other company\\" meta={{...}} text={{...}} canHandleClick={true} data={{...}}>
+                    <StyledEntity onClick={[Function: onClick]} canHandleClick={true}>
+                      <StyledComponent onClick={[Function: onClick]} canHandleClick={true} forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div onClick={[Function: onClick]} className=\\"sc-cQFLBn iOmJns\\">
+                          <Styled(H3)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <H3 className=\\"sc-gojNiO byNnwj\\">
+                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" level={[undefined]}>
+                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\">
+                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                      <h3 size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj sc-cMljjf kCLKvB\\">
+                                        Some other company
+                                      </h3>
+                                    </StyledComponent>
+                                  </styled.h1>
+                                </Heading>
+                              </H3>
+                            </StyledComponent>
+                          </Styled(H3)>
+                          <EntityListItemMetaList meta={{...}}>
+                            <styled.div>
+                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-exAgwC jaSAbg\\">
+                                  <span>
+                                    Address
+                                    :
+                                  </span>
+                                  <span>
+                                    123 ABC Road, Brighton, BN2 9QB
+                                  </span>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </EntityListItemMetaList>
+                        </div>
+                      </StyledComponent>
+                    </StyledEntity>
+                  </EntityListItem>
                 </li>
               </StyledComponent>
             </styled.li>
@@ -1589,95 +1613,103 @@ exports[`EntitySearch when the the cannot find link has a callback should render
     <EntityList entities={{...}} onEntityClick={[Function]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-exAgwC jYyWiV\\">
+          <ol className=\\"sc-bXGyLb haBriy\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-cQFLBn erMDhO\\">
-                  <StyledEntity onClick={[Function: onClick]} canHandleClick={false}>
-                    <StyledComponent onClick={[Function: onClick]} canHandleClick={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div onClick={[Function: onClick]} className=\\"sc-gojNiO igJVfx\\">
-                        <Styled(H3)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <H3 className=\\"sc-daURTG jaGlRd\\">
-                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" level={[undefined]}>
-                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\">
-                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                    <h3 size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd sc-cMljjf kCLKvB\\">
-                                      Some company name
-                                    </h3>
-                                  </StyledComponent>
-                                </styled.h1>
-                              </Heading>
-                            </H3>
-                          </StyledComponent>
-                        </Styled(H3)>
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-bXGyLb boBdwp\\">
-                              <span>
-                                Address
-                                :
-                              </span>
-                              <span>
-                                123 Fake Street, Brighton, BN1 4SE
-                              </span>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                        <Styled(styled.div)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-fAjcbJ sc-lkqHmb cDHXRT\\">
-                              This company is already on Data Hub. 
-                              <a href=\\"/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa\\">
-                                Go to the company page
-                              </a>
-                                to record activity.
-                            </div>
-                          </StyledComponent>
-                        </Styled(styled.div)>
-                      </div>
-                    </StyledComponent>
-                  </StyledEntity>
+                <li className=\\"sc-lkqHmb jBjITi\\">
+                  <EntityListItem onEntityClick={[Function]} heading=\\"Some company name\\" meta={{...}} text={{...}} canHandleClick={false} data={{...}}>
+                    <StyledEntity onClick={[Function: onClick]} canHandleClick={false}>
+                      <StyledComponent onClick={[Function: onClick]} canHandleClick={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div onClick={[Function: onClick]} className=\\"sc-cQFLBn eADRNi\\">
+                          <Styled(H3)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <H3 className=\\"sc-gojNiO byNnwj\\">
+                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" level={[undefined]}>
+                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\">
+                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                      <h3 size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj sc-cMljjf kCLKvB\\">
+                                        Some company name
+                                      </h3>
+                                    </StyledComponent>
+                                  </styled.h1>
+                                </Heading>
+                              </H3>
+                            </StyledComponent>
+                          </Styled(H3)>
+                          <EntityListItemMetaList meta={{...}}>
+                            <styled.div>
+                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-exAgwC jaSAbg\\">
+                                  <span>
+                                    Address
+                                    :
+                                  </span>
+                                  <span>
+                                    123 Fake Street, Brighton, BN1 4SE
+                                  </span>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </EntityListItemMetaList>
+                          <Styled(styled.div)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fAjcbJ sc-daURTG bmxPEc\\">
+                                This company is already on Data Hub. 
+                                <a href=\\"/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa\\">
+                                  Go to the company page
+                                </a>
+                                  to record activity.
+                              </div>
+                            </StyledComponent>
+                          </Styled(styled.div)>
+                        </div>
+                      </StyledComponent>
+                    </StyledEntity>
+                  </EntityListItem>
                 </li>
               </StyledComponent>
             </styled.li>
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-cQFLBn erMDhO\\">
-                  <StyledEntity onClick={[Function: onClick]} canHandleClick={true}>
-                    <StyledComponent onClick={[Function: onClick]} canHandleClick={true} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div onClick={[Function: onClick]} className=\\"sc-gojNiO cSygrj\\">
-                        <Styled(H3)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <H3 className=\\"sc-daURTG jaGlRd\\">
-                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" level={[undefined]}>
-                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\">
-                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                    <h3 size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd sc-cMljjf kCLKvB\\">
-                                      Some other company
-                                    </h3>
-                                  </StyledComponent>
-                                </styled.h1>
-                              </Heading>
-                            </H3>
-                          </StyledComponent>
-                        </Styled(H3)>
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-bXGyLb boBdwp\\">
-                              <span>
-                                Address
-                                :
-                              </span>
-                              <span>
-                                123 ABC Road, Brighton, BN2 9QB
-                              </span>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </div>
-                    </StyledComponent>
-                  </StyledEntity>
+                <li className=\\"sc-lkqHmb jBjITi\\">
+                  <EntityListItem onEntityClick={[Function]} heading=\\"Some other company\\" meta={{...}} text={{...}} canHandleClick={true} data={{...}}>
+                    <StyledEntity onClick={[Function: onClick]} canHandleClick={true}>
+                      <StyledComponent onClick={[Function: onClick]} canHandleClick={true} forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div onClick={[Function: onClick]} className=\\"sc-cQFLBn iOmJns\\">
+                          <Styled(H3)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <H3 className=\\"sc-gojNiO byNnwj\\">
+                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" level={[undefined]}>
+                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\">
+                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                      <h3 size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj sc-cMljjf kCLKvB\\">
+                                        Some other company
+                                      </h3>
+                                    </StyledComponent>
+                                  </styled.h1>
+                                </Heading>
+                              </H3>
+                            </StyledComponent>
+                          </Styled(H3)>
+                          <EntityListItemMetaList meta={{...}}>
+                            <styled.div>
+                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-exAgwC jaSAbg\\">
+                                  <span>
+                                    Address
+                                    :
+                                  </span>
+                                  <span>
+                                    123 ABC Road, Brighton, BN2 9QB
+                                  </span>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </EntityListItemMetaList>
+                        </div>
+                      </StyledComponent>
+                    </StyledEntity>
+                  </EntityListItem>
                 </li>
               </StyledComponent>
             </styled.li>
@@ -1895,95 +1927,103 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
     <EntityList entities={{...}} onEntityClick={[Function]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-exAgwC jYyWiV\\">
+          <ol className=\\"sc-bXGyLb haBriy\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-cQFLBn erMDhO\\">
-                  <StyledEntity onClick={[Function: onClick]} canHandleClick={false}>
-                    <StyledComponent onClick={[Function: onClick]} canHandleClick={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div onClick={[Function: onClick]} className=\\"sc-gojNiO igJVfx\\">
-                        <Styled(H3)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <H3 className=\\"sc-daURTG jaGlRd\\">
-                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" level={[undefined]}>
-                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\">
-                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                    <h3 size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd sc-cMljjf kCLKvB\\">
-                                      Some company name
-                                    </h3>
-                                  </StyledComponent>
-                                </styled.h1>
-                              </Heading>
-                            </H3>
-                          </StyledComponent>
-                        </Styled(H3)>
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-bXGyLb boBdwp\\">
-                              <span>
-                                Address
-                                :
-                              </span>
-                              <span>
-                                123 Fake Street, Brighton, BN1 4SE
-                              </span>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                        <Styled(styled.div)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-fAjcbJ sc-lkqHmb cDHXRT\\">
-                              This company is already on Data Hub. 
-                              <a href=\\"/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa\\">
-                                Go to the company page
-                              </a>
-                                to record activity.
-                            </div>
-                          </StyledComponent>
-                        </Styled(styled.div)>
-                      </div>
-                    </StyledComponent>
-                  </StyledEntity>
+                <li className=\\"sc-lkqHmb jBjITi\\">
+                  <EntityListItem onEntityClick={[Function]} heading=\\"Some company name\\" meta={{...}} text={{...}} canHandleClick={false} data={{...}}>
+                    <StyledEntity onClick={[Function: onClick]} canHandleClick={false}>
+                      <StyledComponent onClick={[Function: onClick]} canHandleClick={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div onClick={[Function: onClick]} className=\\"sc-cQFLBn eADRNi\\">
+                          <Styled(H3)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <H3 className=\\"sc-gojNiO byNnwj\\">
+                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" level={[undefined]}>
+                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\">
+                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                      <h3 size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj sc-cMljjf kCLKvB\\">
+                                        Some company name
+                                      </h3>
+                                    </StyledComponent>
+                                  </styled.h1>
+                                </Heading>
+                              </H3>
+                            </StyledComponent>
+                          </Styled(H3)>
+                          <EntityListItemMetaList meta={{...}}>
+                            <styled.div>
+                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-exAgwC jaSAbg\\">
+                                  <span>
+                                    Address
+                                    :
+                                  </span>
+                                  <span>
+                                    123 Fake Street, Brighton, BN1 4SE
+                                  </span>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </EntityListItemMetaList>
+                          <Styled(styled.div)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fAjcbJ sc-daURTG bmxPEc\\">
+                                This company is already on Data Hub. 
+                                <a href=\\"/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa\\">
+                                  Go to the company page
+                                </a>
+                                  to record activity.
+                              </div>
+                            </StyledComponent>
+                          </Styled(styled.div)>
+                        </div>
+                      </StyledComponent>
+                    </StyledEntity>
+                  </EntityListItem>
                 </li>
               </StyledComponent>
             </styled.li>
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-cQFLBn erMDhO\\">
-                  <StyledEntity onClick={[Function: onClick]} canHandleClick={true}>
-                    <StyledComponent onClick={[Function: onClick]} canHandleClick={true} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div onClick={[Function: onClick]} className=\\"sc-gojNiO cSygrj\\">
-                        <Styled(H3)>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <H3 className=\\"sc-daURTG jaGlRd\\">
-                              <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" level={[undefined]}>
-                                <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\">
-                                  <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                    <h3 size=\\"MEDIUM\\" className=\\"sc-daURTG jaGlRd sc-cMljjf kCLKvB\\">
-                                      Some other company
-                                    </h3>
-                                  </StyledComponent>
-                                </styled.h1>
-                              </Heading>
-                            </H3>
-                          </StyledComponent>
-                        </Styled(H3)>
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-bXGyLb boBdwp\\">
-                              <span>
-                                Address
-                                :
-                              </span>
-                              <span>
-                                123 ABC Road, Brighton, BN2 9QB
-                              </span>
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </div>
-                    </StyledComponent>
-                  </StyledEntity>
+                <li className=\\"sc-lkqHmb jBjITi\\">
+                  <EntityListItem onEntityClick={[Function]} heading=\\"Some other company\\" meta={{...}} text={{...}} canHandleClick={true} data={{...}}>
+                    <StyledEntity onClick={[Function: onClick]} canHandleClick={true}>
+                      <StyledComponent onClick={[Function: onClick]} canHandleClick={true} forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div onClick={[Function: onClick]} className=\\"sc-cQFLBn iOmJns\\">
+                          <Styled(H3)>
+                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                              <H3 className=\\"sc-gojNiO byNnwj\\">
+                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" level={[undefined]}>
+                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\">
+                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                      <h3 size=\\"MEDIUM\\" className=\\"sc-gojNiO byNnwj sc-cMljjf kCLKvB\\">
+                                        Some other company
+                                      </h3>
+                                    </StyledComponent>
+                                  </styled.h1>
+                                </Heading>
+                              </H3>
+                            </StyledComponent>
+                          </Styled(H3)>
+                          <EntityListItemMetaList meta={{...}}>
+                            <styled.div>
+                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                <div className=\\"sc-exAgwC jaSAbg\\">
+                                  <span>
+                                    Address
+                                    :
+                                  </span>
+                                  <span>
+                                    123 ABC Road, Brighton, BN2 9QB
+                                  </span>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </EntityListItemMetaList>
+                        </div>
+                      </StyledComponent>
+                    </StyledEntity>
+                  </EntityListItem>
                 </li>
               </StyledComponent>
             </styled.li>
