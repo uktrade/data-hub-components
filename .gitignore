@@ -67,6 +67,7 @@ typings/
 
 # IDE
 .idea/
+.history*
 
 # Production build
 dist/

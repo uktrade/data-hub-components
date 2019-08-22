@@ -11,7 +11,7 @@ import interactionActivityFixture from '../../fixtures/activity_feed/interaction
 // Lock the date so moment's relative date doesn't break our deterministic tests.
 MockDate.set(1559750582706)
 
-const FEED_MAX_RENDER_TIME_SECONDS = 3.0
+const FEED_MAX_RENDER_TIME_SECONDS = 7.0
 
 const generateActivities = total => Array.from({ length: total }, () => ({
   ...interactionActivityFixture,

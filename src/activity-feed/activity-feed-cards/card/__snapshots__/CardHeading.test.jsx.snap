@@ -2,21 +2,21 @@
 
 exports[`CardHeading when link is missing should render the heading without a link 1`] = `
 <div
-  className="sc-hMFtBS gMhVDn"
+  className="sc-exAgwC ggLfNF"
 >
   <h3
-    className="sc-cmthru dGQebl sc-cMljjf kCLKvB"
+    className="sc-GMQeP danEmM sc-cMljjf kCLKvB"
     size="MEDIUM"
   >
     View block card heading
   </h3>
    
   <h3
-    className="sc-cLQEGU cKmpep sc-cMljjf kCLKvB"
+    className="sc-cQFLBn gpmbYk sc-cMljjf kCLKvB"
     size="MEDIUM"
   >
     <a
-      className="sc-bwzfXH VXMCV"
+      className="sc-cHGsZl cMiKoM"
       href="#"
       muted={false}
     >
@@ -28,21 +28,21 @@ exports[`CardHeading when link is missing should render the heading without a li
 
 exports[`CardHeading when sourceType is missing should render the default card heading 1`] = `
 <div
-  className="sc-hMFtBS gMhVDn"
+  className="sc-exAgwC ggLfNF"
 >
   <h3
-    className="sc-cmthru dGQebl sc-cMljjf kCLKvB"
+    className="sc-GMQeP danEmM sc-cMljjf kCLKvB"
     size="MEDIUM"
   >
     View block card heading
   </h3>
    
   <h3
-    className="sc-cLQEGU cKmpep sc-cMljjf kCLKvB"
+    className="sc-cQFLBn gpmbYk sc-cMljjf kCLKvB"
     size="MEDIUM"
   >
     <a
-      className="sc-bwzfXH VXMCV"
+      className="sc-cHGsZl cMiKoM"
       href="#"
       muted={false}
     >
@@ -54,32 +54,32 @@ exports[`CardHeading when sourceType is missing should render the default card h
 
 exports[`CardHeading when the all data items are passed should render the card heading 1`] = `
 <div
-  className="sc-hMFtBS gMhVDn"
+  className="sc-exAgwC ggLfNF"
 >
   <h3
-    className="sc-cmthru dGQebl sc-cMljjf kCLKvB"
+    className="sc-GMQeP danEmM sc-cMljjf kCLKvB"
     size="MEDIUM"
   >
     View block card heading
   </h3>
    
   <span
-    className="sc-hORach dVCIoH"
+    className="sc-daURTG eRleaB"
   >
     View sub heading
   </span>
   <h3
-    className="sc-gqPbQI yCXxr sc-cMljjf kCLKvB"
+    className="sc-gojNiO gLeCHZ sc-cMljjf kCLKvB"
     size="MEDIUM"
   >
     view summary
   </h3>
   <h3
-    className="sc-cLQEGU cKmpep sc-cMljjf kCLKvB"
+    className="sc-cQFLBn gpmbYk sc-cMljjf kCLKvB"
     size="MEDIUM"
   >
     <a
-      className="sc-bwzfXH VXMCV"
+      className="sc-cHGsZl cMiKoM"
       href="#"
       muted={false}
     >
