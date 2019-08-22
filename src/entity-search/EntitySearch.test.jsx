@@ -203,11 +203,11 @@ describe('EntitySearch', () => {
     })
   })
 
-  describe('when the first entity search result is clicked', () => {
+  describe('when the entity search results are clicked', () => {
     let wrappedEntitySearch
     let onEntityClick
 
-    beforeAll(async () => {
+    beforeEach(async () => {
       onEntityClick = jest.fn()
 
       wrappedEntitySearch = wrapEntitySearch({
@@ -219,24 +219,32 @@ describe('EntitySearch', () => {
       await act(flushPromises)
 
       wrappedEntitySearch.update()
-
-      wrappedEntitySearch
-        .find('StyledEntity')
-        .at(0)
-        .simulate('click')
     })
 
     test('should render the component', async () => {
       expect(wrappedEntitySearch.debug()).toMatchSnapshot()
     })
 
-    test('should call the onEntityClick event', async () => {
-      expect(onEntityClick.mock.calls.length).toEqual(1)
-      expect(onEntityClick.mock.calls[0][0]).toEqual({
-        heading: 'Some company name',
-        meta: {
-          Address: '123 Fake Street, Brighton, BN1 4SE',
-        },
+    describe('when the first entity is clicked', () => {
+      test('should not call the onEntityClick event', async () => {
+        wrappedEntitySearch
+          .find('StyledEntity')
+          .at(0)
+          .simulate('click')
+
+        expect(onEntityClick.mock.calls.length).toEqual(0)
+      })
+    })
+
+    describe('when the second entity is clicked', () => {
+      test('should call the onEntityClick event', async () => {
+        wrappedEntitySearch
+          .find('StyledEntity')
+          .at(1)
+          .simulate('click')
+
+        expect(onEntityClick.mock.calls.length).toEqual(1)
+        expect(onEntityClick.mock.calls[0][0]).toEqual(fixtures.companySearch.results[1])
       })
     })
   })

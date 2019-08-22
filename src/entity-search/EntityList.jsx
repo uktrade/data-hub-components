@@ -2,9 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { SPACING, FONT_SIZE, MEDIA_QUERIES } from '@govuk-react/constants'
-import { GREY_2, GREY_4, LINK_COLOUR, LINK_HOVER_COLOUR, SECONDARY_TEXT_COLOUR } from 'govuk-colours'
+import {
+  GREY_2,
+  GREY_4,
+  LINK_COLOUR,
+  LINK_HOVER_COLOUR,
+  SECONDARY_TEXT_COLOUR,
+} from 'govuk-colours'
 import { uniqueId } from 'lodash'
-import { H3 } from 'govuk-react'
+import { H3, InsetText } from 'govuk-react'
 
 const StyledEntityList = styled('ol')`
   margin: ${SPACING.SCALE_2} 0 ${SPACING.SCALE_4} 0;
@@ -21,14 +27,16 @@ const StyledEntity = styled('div')`
   border: 1px solid ${GREY_2};  
   cursor: pointer;
   
-  &:hover {
-    border: 1px solid ${LINK_HOVER_COLOUR};
-    background-color: ${GREY_4};
-    
-    & > h3 {
-      color: ${LINK_HOVER_COLOUR};
+  ${({ canHandleClick }) => canHandleClick && `
+    &:hover {
+      border: 1px solid ${LINK_HOVER_COLOUR};
+      background-color: ${GREY_4};
+      
+      & > h3 {
+        color: ${LINK_HOVER_COLOUR};
+      }
     }
-  }
+  `}
 `
 StyledEntity.displayName = 'StyledEntity'
 
@@ -52,20 +60,31 @@ const StyledMetaItem = styled('div')`
   }
 `
 
+const StyledInsetText = styled(InsetText)`
+  & {
+    margin-top: ${SPACING.SCALE_2};
+  }
+`
+
 const EntityList = ({ entities, onEntityClick }) => {
   return (
     <StyledEntityList>
-      {entities.map((entity) => {
+      {entities.map(({ canHandleClick, data, heading, meta, text }) => {
         return (
           <StyledEntityListItem key={uniqueId()}>
-            <StyledEntity key={uniqueId()} onClick={() => onEntityClick(entity)}>
-              <StyledHeading>{entity.heading}</StyledHeading>
-              {Object.keys(entity.meta).map(metaKey => (
+            <StyledEntity
+              key={uniqueId()}
+              onClick={() => canHandleClick && onEntityClick(data)}
+              canHandleClick={canHandleClick}
+            >
+              <StyledHeading>{heading}</StyledHeading>
+              {Object.keys(meta).map(metaKey => (
                 <StyledMetaItem key={uniqueId()}>
                   <span>{metaKey}:</span>
-                  <span>{entity.meta[metaKey]}</span>
+                  <span>{meta[metaKey]}</span>
                 </StyledMetaItem>
               ))}
+              {text && <StyledInsetText>{text}</StyledInsetText>}
             </StyledEntity>
           </StyledEntityListItem>
         )
@@ -76,6 +95,9 @@ const EntityList = ({ entities, onEntityClick }) => {
 
 EntityList.propTypes = {
   entities: PropTypes.arrayOf(PropTypes.shape({
+    data: PropTypes.object.isRequired,
+    canHandleClick: PropTypes.bool.isRequired,
+    text: PropTypes.node,
     heading: PropTypes.string.isRequired,
     meta: PropTypes.object.isRequired,
   })),
