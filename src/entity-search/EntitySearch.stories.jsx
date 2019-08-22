@@ -5,7 +5,6 @@ import { SPACING } from '@govuk-react/constants'
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 
 import dataHubAddCompany from '../../assets/images/data-hub-add-company.png'
 import fixtures from './fixtures'
@@ -26,34 +25,42 @@ const setupErrorMocks = () => {
   mock.onPost(apiEndpointWithParameters).reply(500)
 }
 
-const StyledHeading = styled(H2)`
-  font-size: 19px;
-`
-
 const EntitySearchForStorybook = ({ previouslySelected, cannotFindLink }) => {
   return (
-    <EntitySearchWithDataProvider
-      getEntities={dnbCompanySearchDataProvider(apiEndpoint)}
-      previouslySelected={previouslySelected}
-      entityFilters={[
-        [
-          { label: 'Company name', key: 'search_term' },
-        ],
-        [
-          { label: 'Company postcode', key: 'address_postcode', width: 'one-half' },
-        ],
-      ]}
-      cannotFind={{
-        summary: 'I cannot find the company I am looking for',
-        actions: [
-          'Check the country selected is correct',
-          'Check for spelling errors in the company name',
-          'Remove or add Ltd or Limited to your search',
-        ],
-        link: cannotFindLink,
-      }}
-      onEntityClick={entity => alert(`Selected ${JSON.stringify(entity)}`)}
-    />
+    <Main>
+      <GridRow>
+        <GridCol>
+          <img src={dataHubAddCompany} width="960" alt="Data Hub" />
+        </GridCol>
+      </GridRow>
+      <GridRow>
+        <GridCol style={{ margin: SPACING.SCALE_2 }}>
+          <H2 style={{ fontSize: '24px' }}>Find the company</H2>
+          <EntitySearchWithDataProvider
+            getEntities={dnbCompanySearchDataProvider(apiEndpoint)}
+            previouslySelected={previouslySelected}
+            entityFilters={[
+              [
+                { label: 'Company name', key: 'search_term' },
+              ],
+              [
+                { label: 'Company postcode', key: 'address_postcode', width: 'one-half' },
+              ],
+            ]}
+            cannotFind={{
+              summary: 'I cannot find the company I am looking for',
+              actions: [
+                'Check the country selected is correct',
+                'Check for spelling errors in the company name',
+                'Remove or add Ltd or Limited to your search',
+              ],
+              link: cannotFindLink,
+            }}
+            onEntityClick={entity => alert(`Selected ${JSON.stringify(entity)}`)}
+          />
+        </GridCol>
+      </GridRow>
+    </Main>
   )
 }
 
@@ -82,92 +89,39 @@ storiesOf('EntitySearch', module)
     setupSuccessMocks()
 
     return (
-      <Main>
-        <GridRow>
-          <GridCol>
-            <img src={dataHubAddCompany} width="960" alt="Data Hub" />
-          </GridCol>
-        </GridRow>
-        <GridRow>
-          <GridCol style={{ margin: SPACING.SCALE_2 }}>
-            <StyledHeading>Find the company</StyledHeading>
-            <EntitySearchForStorybook />
-          </GridCol>
-        </GridRow>
-      </Main>
+      <EntitySearchForStorybook />
     )
   })
   .add('Data Hub company search with cannot find link callback', () => {
     setupSuccessMocks()
 
     return (
-      <Main>
-        <GridRow>
-          <GridCol>
-            <img src={dataHubAddCompany} width="960" alt="Data Hub" />
-          </GridCol>
-        </GridRow>
-        <GridRow>
-          <GridCol style={{ margin: SPACING.SCALE_2 }}>
-            <StyledHeading>Find the company</StyledHeading>
-            <EntitySearchForStorybook
-              cannotFindLink={{
-                text: 'I still cannot find the company',
-                onClick: () => {
-                  alert('Still cannot find :(')
-                },
-              }}
-            />
-          </GridCol>
-        </GridRow>
-      </Main>
+      <EntitySearchForStorybook
+        cannotFindLink={{
+          text: 'I still cannot find the company',
+          onClick: () => {
+            alert('Still cannot find :(')
+          },
+        }}
+      />
     )
   })
   .add('Data Hub company search with previously selected value and "Change" link', () => {
     setupSuccessMocks()
 
     return (
-      <Main>
-        <GridRow>
-          <GridCol>
-            <img src={dataHubAddCompany} width="960" alt="Data Hub" />
-          </GridCol>
-        </GridRow>
-        <GridRow>
-          <GridCol style={{ margin: SPACING.SCALE_2 }}>
-            <H2 style={{ fontSize: '24px' }}>Find the company</H2>
-            <EntitySearchForStorybook
-              previouslySelected={{
-                text: 'Based in the UK',
-                onChangeClick: () => alert('Change previously selected'),
-              }}
-            />
-          </GridCol>
-        </GridRow>
-      </Main>
+      <EntitySearchForStorybook
+        previouslySelected={{
+          text: 'Based in the UK',
+          onChangeClick: () => alert('Change previously selected'),
+        }}
+      />
     )
   })
   .add('Data Hub company search with server error', () => {
     setupErrorMocks()
 
     return (
-      <Main>
-        <GridRow>
-          <GridCol>
-            <img src={dataHubAddCompany} width="960" alt="Data Hub" />
-          </GridCol>
-        </GridRow>
-        <GridRow>
-          <GridCol style={{ margin: SPACING.SCALE_2 }}>
-            <H2 style={{ fontSize: '24px' }}>Find the company</H2>
-            <EntitySearchForStorybook
-              previouslySelected={{
-                text: 'Based in the UK',
-                onChangeClick: () => alert('Change previously selected'),
-              }}
-            />
-          </GridCol>
-        </GridRow>
-      </Main>
+      <EntitySearchForStorybook />
     )
   })
