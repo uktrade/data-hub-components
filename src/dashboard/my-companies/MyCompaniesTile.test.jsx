@@ -64,4 +64,30 @@ describe('My companies dashboard', () => {
       expect(wrapper.find('tbody')).toHaveLength(1)
     })
   })
+  describe('when text filter doesn\'nt match any companies', () => {
+
+    const companiesInitial = [
+      {
+        company: {
+          name: 'A1 BMW LTD!!!!!',
+        },
+        latestInteraction: {
+          id: '79d92719-7402-45b6-b3d7-eff559d6b282',
+          date: '2019-08-14',
+          displayDate: '14 Aug 19',
+          subject:
+            'Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished',
+        },
+      },
+    ]
+    const wrapper = mount(
+      <useMyCompaniesContext.Provider mockInitialState={{ companiesInitial, filterText: 'Z1', companies: [] }}>
+        <MyCompaniesTile />
+      </useMyCompaniesContext.Provider>,
+    )
+
+    test('should render the no companies message', () => {
+      expect(wrapper.find('p').text()).toContain('No companies match your search')
+    })
+  })
 })
