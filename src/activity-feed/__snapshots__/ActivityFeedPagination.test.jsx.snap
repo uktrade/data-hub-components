@@ -2,13 +2,13 @@
 
 exports[`ActivityFeedPagination renders default pagination 1`] = `
 <div
-  className="sc-cmthru dhFBXA"
+  className="sc-GMQeP jYMyvj"
 >
   <div
-    className="sc-eqIVtm fxHPMe"
+    className="sc-TOsTZ dvDiFK"
   >
     <div
-      className="sc-fAjcbJ fsjQAG"
+      className="sc-kgAjT gsrKLN"
     >
       <svg
         className="icon-loading"
@@ -209,7 +209,7 @@ exports[`ActivityFeedPagination renders default pagination 1`] = `
         />
       </svg>
       <div
-        className="overlay sc-caSCKo cQyEyL"
+        className="overlay sc-cJSrbW kjaCSJ"
       />
     </div>
     <button
@@ -225,13 +225,13 @@ exports[`ActivityFeedPagination renders default pagination 1`] = `
 
 exports[`ActivityFeedPagination renders pagination with loader 1`] = `
 <div
-  className="sc-cmthru dhFBXA"
+  className="sc-GMQeP jYMyvj"
 >
   <div
-    className="sc-eqIVtm fxHPMe"
+    className="sc-TOsTZ dvDiFK"
   >
     <div
-      className="sc-fAjcbJ fsjQAG"
+      className="sc-kgAjT gsrKLN"
     >
       <svg
         className="icon-loading"
@@ -432,7 +432,7 @@ exports[`ActivityFeedPagination renders pagination with loader 1`] = `
         />
       </svg>
       <div
-        className="overlay sc-caSCKo cQyEyL"
+        className="overlay sc-cJSrbW kjaCSJ"
       />
     </div>
     <button
@@ -448,13 +448,13 @@ exports[`ActivityFeedPagination renders pagination with loader 1`] = `
 
 exports[`ActivityFeedPagination renders pagination with loader 2`] = `
 <div
-  className="sc-cmthru dhFBXA"
+  className="sc-GMQeP jYMyvj"
 >
   <div
-    className="sc-eqIVtm fxHPMe"
+    className="sc-TOsTZ dvDiFK"
   >
     <div
-      className="sc-fAjcbJ fsjQAG"
+      className="sc-kgAjT gsrKLN"
     >
       <svg
         className="icon-loading"
@@ -655,7 +655,7 @@ exports[`ActivityFeedPagination renders pagination with loader 2`] = `
         />
       </svg>
       <div
-        className="overlay sc-caSCKo cQyEyL"
+        className="overlay sc-cJSrbW kjaCSJ"
       />
     </div>
     <button

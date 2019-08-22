@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyCompaniesTable should match the snapshot 1`] = `
+"<Provider data={{...}}>
+  <MyCompaniesTable>
+    <Table head={{...}} body={[undefined]} caption={[undefined]}>
+      <styled.table>
+        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+          <table className=\\"sc-EHOje kCMYgv\\">
+            <styled.thead>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <thead className=\\"sc-bdVaJa bDWFJH\\">
+                  <styled.tr>
+                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                      <tr className=\\"sc-ifAKCX cFlEyZ\\">
+                        <Styled(CellHeader)>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <CellHeader className=\\"sc-gzVnrw ldUTAI\\">
+                              <styled.td as=\\"th\\" bold={true} isHeader={true} className=\\"sc-gzVnrw ldUTAI\\">
+                                <StyledComponent as=\\"th\\" bold={true} isHeader={true} className=\\"sc-gzVnrw ldUTAI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                  <th className=\\"sc-gzVnrw ldUTAI sc-bxivhb kZbmwT\\">
+                                    Company name
+                                  </th>
+                                </StyledComponent>
+                              </styled.td>
+                            </CellHeader>
+                          </StyledComponent>
+                        </Styled(CellHeader)>
+                        <Styled(CellHeader)>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <CellHeader className=\\"sc-gzVnrw ldUTAI\\">
+                              <styled.td as=\\"th\\" bold={true} isHeader={true} className=\\"sc-gzVnrw ldUTAI\\">
+                                <StyledComponent as=\\"th\\" bold={true} isHeader={true} className=\\"sc-gzVnrw ldUTAI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                  <th className=\\"sc-gzVnrw ldUTAI sc-bxivhb kZbmwT\\">
+                                    Last interaction
+                                  </th>
+                                </StyledComponent>
+                              </styled.td>
+                            </CellHeader>
+                          </StyledComponent>
+                        </Styled(CellHeader)>
+                        <Styled(CellHeader)>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <CellHeader className=\\"sc-gzVnrw ldUTAI\\">
+                              <styled.td as=\\"th\\" bold={true} isHeader={true} className=\\"sc-gzVnrw ldUTAI\\">
+                                <StyledComponent as=\\"th\\" bold={true} isHeader={true} className=\\"sc-gzVnrw ldUTAI\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                  <th className=\\"sc-gzVnrw ldUTAI sc-bxivhb kZbmwT\\">
+                                     
+                                  </th>
+                                </StyledComponent>
+                              </styled.td>
+                            </CellHeader>
+                          </StyledComponent>
+                        </Styled(CellHeader)>
+                      </tr>
+                    </StyledComponent>
+                  </styled.tr>
+                </thead>
+              </StyledComponent>
+            </styled.thead>
+            <styled.tbody>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <tbody className=\\"sc-bwzfXH uTxCW\\" />
+              </StyledComponent>
+            </styled.tbody>
+          </table>
+        </StyledComponent>
+      </styled.table>
+    </Table>
+  </MyCompaniesTable>
+</Provider>"
+`;

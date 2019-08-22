@@ -1334,6 +1334,16 @@
     govuk-colours "^1.0.3"
     polished "^2.3.3"
 
+"@govuk-react/details@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/details/-/details-0.7.1.tgz#cfd414a3e99a103cfaf14c6546269f9977246329"
+  integrity sha512-dR1t3fEG9MVC4mtZzDdZos+gf7cOUGW/zp+RHpVaIfvHl8Bq/2TsReL6YtSrSosgU5tgKpnfj+JcVxNeGDliaQ==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
+    govuk-colours "^1.0.3"
+    polished "^3.0.3"
+
 "@govuk-react/document-footer-metadata@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@govuk-react/document-footer-metadata/-/document-footer-metadata-0.7.0.tgz#f4af83860e914b13e4fd48324a5717d18a185e54"
@@ -1363,6 +1373,15 @@
   dependencies:
     "@govuk-react/constants" "^0.7.0"
     "@govuk-react/lib" "^0.7.0"
+    govuk-colours "^1.0.3"
+
+"@govuk-react/error-text@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/error-text/-/error-text-0.7.1.tgz#0c324cd35a0717a5abf2c335347c44f25331e010"
+  integrity sha512-o6957Kr1H4F6lyIzg1y9rYgjEeARJXAjMDWe7u6XOybJjHCOViaVCTUPA5M+XC1dABBXk+D7A4/kR28338SapQ==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
     govuk-colours "^1.0.3"
 
 "@govuk-react/fieldset@^0.7.0":
@@ -1428,6 +1447,15 @@
     "@govuk-react/lib" "^0.7.0"
     govuk-colours "^1.0.3"
 
+"@govuk-react/hint-text@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/hint-text/-/hint-text-0.7.1.tgz#5b0a920b7fb72638ecf5b2c0cb518a302b62a782"
+  integrity sha512-VMjXUTLzvXGUwVaH8rA8oIZbBpBUoGU3FUmMudpfwrmb2NGk1faAm5i4+b1A3X8g3vnrGuw2RTTWmOKVxujwTQ==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
+    govuk-colours "^1.0.3"
+
 "@govuk-react/hoc@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@govuk-react/hoc/-/hoc-0.7.0.tgz#fed9d211d9e403005d4a294015bfc845da982320"
@@ -1483,12 +1511,28 @@
   dependencies:
     "@govuk-react/lib" "^0.7.0"
 
+"@govuk-react/label-text@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/label-text/-/label-text-0.7.1.tgz#709152f632275679577fb69fa561392e8be91de6"
+  integrity sha512-ZEb2zo7GjYAZ4Rw8/ugW8zX6YhWB+viWwroSvlPNpHFZOB3XrnlV47p8IiI8fsINbofmc/FRn1gniZU+xH22Qg==
+  dependencies:
+    "@govuk-react/lib" "^0.7.1"
+
 "@govuk-react/label@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@govuk-react/label/-/label-0.7.0.tgz#3132a3ba19ae6fbd07f0eefa43635398121cd134"
   dependencies:
     "@govuk-react/constants" "^0.7.0"
     "@govuk-react/lib" "^0.7.0"
+    govuk-colours "^1.0.3"
+
+"@govuk-react/label@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/label/-/label-0.7.1.tgz#772a72ad75ca781bad58ca9e4f9fa7e2ffd5a078"
+  integrity sha512-6GEgBqvA18SuMNAOHnSUOxxaTMQC0w8o2dpyfMmOx/LQ9dOVDY9LIycFbDcbUDo1h3dtVOCZNOnqMB2UWfUxvA==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
     govuk-colours "^1.0.3"
 
 "@govuk-react/layout@^0.7.0":
@@ -1510,11 +1554,27 @@
     "@govuk-react/constants" "^0.7.0"
     govuk-colours "^1.0.3"
 
+"@govuk-react/lib@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/lib/-/lib-0.7.1.tgz#eea86ef858a1cbf2777f34b23948a460478435fa"
+  integrity sha512-JbfzTeLblTEFcA7vIisAuHFvJRaQ8VD8rHI6qkV0IFu/pTwCe/x/EtXE7SYSBS8fEgHrki6QJ83q/5sF4vTEoQ==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    govuk-colours "^1.0.3"
+
 "@govuk-react/link@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@govuk-react/link/-/link-0.7.0.tgz#f38823e9756946f94f2426e4f2dc7dc17ab4e5b6"
   dependencies:
     "@govuk-react/lib" "^0.7.0"
+    govuk-colours "^1.0.3"
+
+"@govuk-react/link@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/link/-/link-0.7.1.tgz#071e87123e4de63f72ee1e9ef5844d9ac5bc7523"
+  integrity sha512-OkcAvygOXZnvFSN/o9e4TzZ7l2atpSjWloxsoI5kdQb9GGTgrF21boNyZNo8Ja0Dv2jhuFQZWMJFPv/TCN8oJg==
+  dependencies:
+    "@govuk-react/lib" "^0.7.1"
     govuk-colours "^1.0.3"
 
 "@govuk-react/list-item@^0.7.0":
@@ -1652,6 +1712,19 @@
     "@govuk-react/lib" "^0.7.0"
     govuk-colours "^1.0.3"
 
+"@govuk-react/select@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/select/-/select-0.7.1.tgz#e0c2c5579f312fedd54440f4b2a886e56c21107b"
+  integrity sha512-QY38NSB6pUYPPqXC58+oTzWy38PHfKnsWqDBtVjNLRmSHkKnw169PLUPnIf6N1rIgf63gozWrXr70RK7BhxaNQ==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/error-text" "^0.7.1"
+    "@govuk-react/hint-text" "^0.7.1"
+    "@govuk-react/label" "^0.7.1"
+    "@govuk-react/label-text" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
+    govuk-colours "^1.0.3"
+
 "@govuk-react/skip-link@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@govuk-react/skip-link/-/skip-link-0.7.0.tgz#7a7931aa49005bd0d284fa4dd42b2d5655d71aa7"
@@ -1675,6 +1748,15 @@
   dependencies:
     "@govuk-react/constants" "^0.7.0"
     "@govuk-react/lib" "^0.7.0"
+    govuk-colours "^1.0.3"
+
+"@govuk-react/table@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/table/-/table-0.7.1.tgz#a64fdac2611a55fc106a3301e9468b95fdb79921"
+  integrity sha512-y4OsUdbs/FPo8CdX84eiAudtgT3xeSHtRAQkBXDzsWc3LZ/knkJ7RWte8Bf/NCFpU3cFUlXhCfsHTyHatUnrhA==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
     govuk-colours "^1.0.3"
 
 "@govuk-react/tabs@^0.7.0":
@@ -10128,7 +10210,7 @@ polished@^2.3.3:
   dependencies:
     "@babel/runtime" "^7.2.0"
 
-polished@^3.3.1:
+polished@^3.0.3, polished@^3.3.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/polished/-/polished-3.4.1.tgz#1eb5597ec1792206365635811d465751f5cbf71c"
   integrity sha512-GflTnlP5rrpDoigjczEkS6Ye7NDA4sFvAnlr5hSDrEvjiVj97Xzev3hZlLi3UB27fpxyTS9rWU64VzVLWkG+mg==
@@ -10735,6 +10817,11 @@ react-is@^16.9.0:
 react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+
+react-lines-ellipsis@^0.14.1:
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/react-lines-ellipsis/-/react-lines-ellipsis-0.14.1.tgz#dbc045b9c3bd0c46d2c1dee893d46e9260d53969"
+  integrity sha512-4nEDEzzfXy2bqRhLc00DWYb39FKIpGqaIIh/YT3KdHyM9pqD8cSfDSCdGy657sB12alCdT7cKK48Uk0OsRMvHQ==
 
 react-markdown@^4.0.8:
   version "4.1.0"

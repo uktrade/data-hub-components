@@ -4,6 +4,8 @@ export { default as ActivityFeedCard } from './activity-feed/ActivityFeedCard'
 export { default as ActivityFeedFilters } from './activity-feed/ActivityFeedFilters'
 export { default as ActivityFeedHeader } from './activity-feed/ActivityFeedHeader'
 export { default as ActivityFeedPagination } from './activity-feed/ActivityFeedPagination'
+export { default as MyCompaniesTile } from './dashboard/my-companies/MyCompaniesTile'
+export { default as useMyCompaniesContext } from './dashboard/my-companies/useMyCompaniesContext'
 
 export { default as Form } from './forms/core/Form'
 export { default as Step } from './forms/core/Step'
