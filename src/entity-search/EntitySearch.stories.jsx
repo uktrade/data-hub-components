@@ -56,7 +56,11 @@ const EntitySearchForStorybook = ({ previouslySelected, cannotFindLink }) => {
               ],
               link: cannotFindLink,
             }}
-            onEntityClick={entity => alert(`Selected ${JSON.stringify(entity)}`)}
+            onEntityClick={(entity) => {
+              if (!entity.datahub_company) {
+                alert(`Selected ${JSON.stringify(entity)}`)
+              }
+            }}
           />
         </GridCol>
       </GridRow>

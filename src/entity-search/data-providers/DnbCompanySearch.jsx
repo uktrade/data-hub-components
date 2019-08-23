@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+import React from 'react'
 import axios from 'axios'
 import { compact, join } from 'lodash'
 import queryString from 'query-string'
@@ -7,8 +9,9 @@ export default (apiEndpoint) => {
     const transformed = queryString.stringify(filters)
     const { data } = await axios.post(`${apiEndpoint + (transformed ? `?${transformed}` : '')}`)
 
-    // eslint-disable-next-line camelcase
-    return data.results.map(({ dnb_company }) => {
+    return data.results.map((result) => {
+      const { dnb_company, datahub_company } = result
+
       return {
         heading: dnb_company.primary_name,
         meta: {
@@ -20,6 +23,15 @@ export default (apiEndpoint) => {
             dnb_company.address_postcode,
           ]), ', '),
         },
+        text: datahub_company ? (
+          <>
+            This company is already on Data Hub.&nbsp;
+            <a href={`/companies/${datahub_company.id}`}>Go to the company page</a>&nbsp;
+            to record activity.
+          </>
+        ) : null,
+        canHandleClick: !datahub_company,
+        data: result,
       }
     })
   }
