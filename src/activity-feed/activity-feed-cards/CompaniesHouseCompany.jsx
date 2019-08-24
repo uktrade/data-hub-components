@@ -34,7 +34,7 @@ export default class CompaniesHouseCompany extends React.PureComponent {
   render() {
     const { activity, showDetails } = this.props
 
-    const published = get(activity, 'published')
+    const startTime = get(activity, 'object.startTime')
     const reference = get(activity, 'object.name')
 
     const summary = get(activity, 'summary')
@@ -64,7 +64,7 @@ export default class CompaniesHouseCompany extends React.PureComponent {
             subHeading="Company records show that"
             summary={summary}
           />
-          <CardMeta startTime={published} />
+          <CardMeta startTime={startTime} />
         </CardHeader>
 
         <CardDetails
