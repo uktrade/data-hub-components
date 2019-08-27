@@ -1,16 +1,16 @@
 import { InputField } from 'govuk-react'
-import { uniqueId } from 'lodash'
 import React from 'react'
 import PropTypes from 'prop-types'
 
 const EntityFilter = ({ filter, setFilter }) => {
+  const { key, label } = filter
   return (
     <InputField
-      onChange={e => setFilter(filter.key, e.target.value)}
-      key={uniqueId()}
-      input={{ name: filter.key }}
+      onChange={e => setFilter(key, e.target.value)}
+      key={key}
+      input={{ name: key }}
     >
-      {filter.label}
+      {label}
     </InputField>
   )
 }
