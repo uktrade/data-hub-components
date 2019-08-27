@@ -6,107 +6,103 @@ exports[`EntitySearch when initially loading the entity search component should 
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-cbkKFq dyUdlj\\">
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC deEfgd\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company name
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC cnQyDs\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company postcode
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
+          <div className=\\"sc-eLExRp jnbiWj\\">
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC deEfgd\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company name
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC cnQyDs\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company postcode
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
           </div>
         </StyledComponent>
       </styled.div>
@@ -134,107 +130,103 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-cbkKFq dyUdlj\\">
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC deEfgd\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company name
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC cnQyDs\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company postcode
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
+          <div className=\\"sc-eLExRp jnbiWj\\">
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC deEfgd\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company name
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC cnQyDs\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company postcode
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
           </div>
         </StyledComponent>
       </styled.div>
@@ -436,107 +428,103 @@ exports[`EntitySearch when the API returns 0 results should render the component
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-cbkKFq dyUdlj\\">
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC deEfgd\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company name
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC cnQyDs\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company postcode
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
+          <div className=\\"sc-eLExRp jnbiWj\\">
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC deEfgd\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company name
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC cnQyDs\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company postcode
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
           </div>
         </StyledComponent>
       </styled.div>
@@ -567,107 +555,103 @@ exports[`EntitySearch when the API returns a server error should render the comp
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-cbkKFq dyUdlj\\">
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC deEfgd\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company name
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC cnQyDs\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company postcode
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
+          <div className=\\"sc-eLExRp jnbiWj\\">
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC deEfgd\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company name
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC cnQyDs\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company postcode
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
           </div>
         </StyledComponent>
       </styled.div>
@@ -698,107 +682,103 @@ exports[`EntitySearch when the company name filter is applied should render the 
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-cbkKFq dyUdlj\\">
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC deEfgd\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company name
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC cnQyDs\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company postcode
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
+          <div className=\\"sc-eLExRp jnbiWj\\">
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC deEfgd\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company name
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC cnQyDs\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company postcode
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
           </div>
         </StyledComponent>
       </styled.div>
@@ -945,107 +925,103 @@ exports[`EntitySearch when the company postcode filter is applied should render 
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-cbkKFq dyUdlj\\">
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC deEfgd\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company name
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC cnQyDs\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company postcode
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
+          <div className=\\"sc-eLExRp jnbiWj\\">
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC deEfgd\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company name
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC cnQyDs\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company postcode
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
           </div>
         </StyledComponent>
       </styled.div>
@@ -1203,107 +1179,103 @@ exports[`EntitySearch when the entity search results are clicked should render t
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-cbkKFq dyUdlj\\">
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC deEfgd\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company name
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC cnQyDs\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company postcode
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
+          <div className=\\"sc-eLExRp jnbiWj\\">
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC deEfgd\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company name
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC cnQyDs\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company postcode
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
           </div>
         </StyledComponent>
       </styled.div>
@@ -1505,107 +1477,103 @@ exports[`EntitySearch when the the cannot find link has a callback should render
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-cbkKFq dyUdlj\\">
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC deEfgd\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company name
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC cnQyDs\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company postcode
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
+          <div className=\\"sc-eLExRp jnbiWj\\">
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC deEfgd\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company name
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC cnQyDs\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company postcode
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
           </div>
         </StyledComponent>
       </styled.div>
@@ -1819,107 +1787,103 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
     <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
       <styled.div>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-cbkKFq dyUdlj\\">
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC deEfgd\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company name
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
-            <EntityFilterRow filterRow={{...}} setFilter={[Function: setFilter]}>
-              <Styled(GridRow)>
-                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                  <GridRow className=\\"sc-eLExRp igxVGH\\">
-                    <styled.div className=\\"sc-eLExRp igxVGH\\">
-                      <StyledComponent className=\\"sc-eLExRp igxVGH\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div className=\\"sc-eLExRp igxVGH sc-fMiknA gIEufr\\">
-                          <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                              <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-fBuWsC cnQyDs\\">
-                                  <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                    <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                      <Label onChange={[Function: onChange]} error={false}>
-                                        <styled.label onChange={[Function: onChange]} error={false}>
-                                          <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
-                                              <LabelText>
-                                                <styled.span>
-                                                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <span className=\\"sc-eqIVtm jTUWD\\">
-                                                      Company postcode
-                                                    </span>
-                                                  </StyledComponent>
-                                                </styled.span>
-                                              </LabelText>
-                                              <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
-                                                <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
-                                                  <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                    <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
-                                                  </StyledComponent>
-                                                </styled.input>
-                                              </Input>
-                                            </label>
-                                          </StyledComponent>
-                                        </styled.label>
-                                      </Label>
-                                    </InputField>
-                                  </EntityFilter>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </GridCol>
-                        </div>
-                      </StyledComponent>
-                    </styled.div>
-                  </GridRow>
-                </StyledComponent>
-              </Styled(GridRow)>
-            </EntityFilterRow>
+          <div className=\\"sc-eLExRp jnbiWj\\">
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC deEfgd\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company name
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
+            <Styled(GridRow)>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <GridRow className=\\"sc-cbkKFq sEgnj\\">
+                  <styled.div className=\\"sc-cbkKFq sEgnj\\">
+                    <StyledComponent className=\\"sc-cbkKFq sEgnj\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                      <div className=\\"sc-cbkKFq sEgnj sc-fMiknA gIEufr\\">
+                        <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                          <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
+                            <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+                              <div className=\\"sc-fBuWsC cnQyDs\\">
+                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
+                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
+                                    <Label onChange={[Function: onChange]} error={false}>
+                                      <styled.label onChange={[Function: onChange]} error={false}>
+                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+                                            <LabelText>
+                                              <styled.span>
+                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <span className=\\"sc-eqIVtm jTUWD\\">
+                                                    Company postcode
+                                                  </span>
+                                                </StyledComponent>
+                                              </styled.span>
+                                            </LabelText>
+                                            <Input error={[undefined]} name=\\"address_postcode\\" type=\\"text\\">
+                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"address_postcode\\">
+                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"address_postcode\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                                                  <input type=\\"text\\" name=\\"address_postcode\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                                </StyledComponent>
+                                              </styled.input>
+                                            </Input>
+                                          </label>
+                                        </StyledComponent>
+                                      </styled.label>
+                                    </Label>
+                                  </InputField>
+                                </EntityFilter>
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </GridCol>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </GridRow>
+              </StyledComponent>
+            </Styled(GridRow)>
           </div>
         </StyledComponent>
       </styled.div>

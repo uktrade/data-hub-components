@@ -3,20 +3,40 @@ import styled from 'styled-components'
 import { GREY_3 } from 'govuk-colours'
 import { SPACING } from '@govuk-react/constants'
 import PropTypes from 'prop-types'
-import { uniqueId } from 'lodash'
+import { GridCol, GridRow } from 'govuk-react'
 
-import EntityFilterRow from './EntityFilterRow'
+import EntityFilter from './EntityFilter'
 
 const StyledFilters = styled('div')`
   background-color: ${GREY_3};
   padding: ${SPACING.SCALE_2};
 `
 
+const StyledGridRow = styled(GridRow)`
+  & + & {
+    margin-top: ${SPACING.SCALE_3};
+  }
+`
+
+const getKey = (prefix, key) => {
+  return `${prefix}-${key}`
+}
+
 const EntityFilters = ({ entityFilters, setFilter }) => {
   return (
     <StyledFilters>
-      {entityFilters.map(filterRow => (
-        <EntityFilterRow filterRow={filterRow} setFilter={setFilter} key={uniqueId()} />
+      {entityFilters.map((filterRow, id) => (
+        <StyledGridRow key={getKey('grid_row', id)}>
+          {filterRow.map(filter => (
+            <GridCol setWidth={filter.width} key={getKey('grid_col', filter.key)}>
+              <EntityFilter
+                filter={filter}
+                setFilter={setFilter}
+                key={getKey('entity_filter', filter.key)}
+              />
+            </GridCol>
+          ))}
+        </StyledGridRow>
       ))}
     </StyledFilters>
   )
