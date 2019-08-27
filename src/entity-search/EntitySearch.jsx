@@ -25,6 +25,11 @@ const EntitySearch = ({
   error,
 }) => {
   const { filters, setFilter } = useFilter()
+  const onSearchClick = (e) => {
+    e.preventDefault()
+    onEntitySearch(filters)
+  }
+
   return (
     <>
       {previouslySelected && <PreviouslySelected {...previouslySelected} />}
@@ -44,7 +49,7 @@ const EntitySearch = ({
 
       {error && <p>{error}</p>}
 
-      <StyledButton onClick={() => onEntitySearch(filters)}>Search</StyledButton>
+      <StyledButton onClick={onSearchClick}>Search</StyledButton>
     </>
   )
 }
