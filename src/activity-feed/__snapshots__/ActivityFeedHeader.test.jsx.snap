@@ -2,10 +2,10 @@
 
 exports[`ActivityFeedHeader renders header with all props defined 1`] = `
 <div
-  className="sc-GMQeP gGgfMe"
+  className="sc-gojNiO isXFqA"
 >
   <div
-    className="sc-exAgwC fLpXJZ"
+    className="sc-daURTG kbeZhw"
   >
     <h2
       className="sc-cMljjf leOqMw"
@@ -15,10 +15,10 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
     </h2>
   </div>
   <div
-    className="sc-cQFLBn kDfOqc"
+    className="sc-bXGyLb ekZIXG"
   >
     <a
-      className="sc-VigVT kJjasd sc-gojNiO cfHwny"
+      className="sc-VigVT kJjasd sc-lkqHmb TJJcN"
       disabled={false}
       href="http://testing.example.com"
     >
@@ -30,10 +30,10 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
 
 exports[`ActivityFeedHeader renders header with one activity 1`] = `
 <div
-  className="sc-GMQeP gGgfMe"
+  className="sc-gojNiO isXFqA"
 >
   <div
-    className="sc-exAgwC fLpXJZ"
+    className="sc-daURTG kbeZhw"
   >
     <h2
       className="sc-cMljjf leOqMw"
@@ -43,17 +43,17 @@ exports[`ActivityFeedHeader renders header with one activity 1`] = `
     </h2>
   </div>
   <div
-    className="sc-cQFLBn kDfOqc"
+    className="sc-bXGyLb ekZIXG"
   />
 </div>
 `;
 
 exports[`ActivityFeedHeader renders header without props 1`] = `
 <div
-  className="sc-GMQeP gGgfMe"
+  className="sc-gojNiO isXFqA"
 >
   <div
-    className="sc-exAgwC fLpXJZ"
+    className="sc-daURTG kbeZhw"
   >
     <h2
       className="sc-cMljjf leOqMw"
@@ -63,7 +63,7 @@ exports[`ActivityFeedHeader renders header without props 1`] = `
     </h2>
   </div>
   <div
-    className="sc-cQFLBn kDfOqc"
+    className="sc-bXGyLb ekZIXG"
   />
 </div>
 `;

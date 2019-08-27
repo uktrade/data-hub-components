@@ -1619,6 +1619,18 @@
     "@govuk-react/lib" "^0.7.0"
     govuk-colours "^1.0.3"
 
+"@govuk-react/multi-choice@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/multi-choice/-/multi-choice-0.7.1.tgz#08522a64b4a2e1adb17a4d8b0206f80caed342a3"
+  integrity sha512-rHgaGsCdbgBYV8v0u1/2BVfjXnNxtIoC7BqcxxaOxXvl7ImnqbLrWUSgQ+tbBr34yyZkoGmytFCjOiEsQey0GA==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/error-text" "^0.7.1"
+    "@govuk-react/hint-text" "^0.7.1"
+    "@govuk-react/label-text" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
+    govuk-colours "^1.0.3"
+
 "@govuk-react/ordered-list@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@govuk-react/ordered-list/-/ordered-list-0.7.0.tgz#56e8d83fdba36663ac884505471fb585816c8dcb"
@@ -1674,6 +1686,16 @@
     "@govuk-react/constants" "^0.7.0"
     "@govuk-react/hint-text" "^0.7.0"
     "@govuk-react/lib" "^0.7.0"
+    govuk-colours "^1.0.3"
+
+"@govuk-react/radio@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/radio/-/radio-0.7.1.tgz#5f9282ddaf3557a53b6088a58532c7c8cd5c7998"
+  integrity sha512-65aLUm9lli1jAT/DpGkEKNdnRGhen1HRcilFMMsOSNIcJY6AZ8UnTB11/7MEQWjcSeXT7zZyO6xc/q7Q7uylpA==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/hint-text" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
     govuk-colours "^1.0.3"
 
 "@govuk-react/related-items@^0.7.0":
