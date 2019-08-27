@@ -17,7 +17,7 @@ describe('FieldError', () => {
       )
     })
 
-    test('should render with the error', () => {
+    test('should render without an error', () => {
       expect(wrapper.find(FieldError).text()).toEqual('')
     })
   })
@@ -26,15 +26,14 @@ describe('FieldError', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldError name="testField" />
           <FieldInput type="text" name="testField" validate={() => 'testError'} />
         </Form>,
       )
       wrapper.find('form').simulate('submit')
     })
 
-    test('should render with the error', () => {
-      expect(wrapper.find(FieldError).at(0).text()).toEqual('testError')
+    test('should render with an error', () => {
+      expect(wrapper.find(FieldError).text()).toEqual('testError')
     })
   })
 })

@@ -9,22 +9,33 @@ function useForm({ initialValues = {}, initialStep = 0, onSubmit = null } = {}) 
   const [steps, setSteps] = useState([])
   const [currentStep, setCurrentStep] = useState(initialStep)
 
-  const getFieldState = name => ({
-    value: values[name] || '',
-    touched: touched[name],
-    error: errors[name],
-  })
+  const getFieldState = (name) => {
+    return {
+      value: values[name] || '',
+      touched: touched[name] || false,
+      error: errors[name] || null,
+    }
+  }
 
   const validateField = (name) => {
     const field = fields[name]
     const value = values[name]
 
     if (!field) {
-      return 'Field does not exists'
+      throw new Error(`Field ${name} does not exist`)
     }
 
-    if (field && 'validate' in field && typeof field.validate === 'function') {
-      return field.validate(value, name)
+    if (field && 'validate' in field) {
+      if (field.validate instanceof Function) {
+        return field.validate(value, name)
+      }
+
+      if (field.validate instanceof Array) {
+        const validationErrors = field.validate
+          .map(validator => validator(value, field))
+          .filter(e => e)
+        return validationErrors.length > 0 ? validationErrors[0] : null
+      }
     }
 
     return null
