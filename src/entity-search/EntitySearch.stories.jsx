@@ -13,16 +13,35 @@ import EntitySearchWithDataProvider from './EntitySearchWithDataProvider'
 
 const mock = new MockAdapter(axios)
 const apiEndpoint = 'http://localhost:3010/v4/dnb/company-search'
-const apiEndpointWithParameters = new RegExp(`${apiEndpoint}.+`)
 
-const setupSuccessMocks = (response = fixtures.companySearch) => {
-  mock.onPost(apiEndpoint).reply(200, response)
-  mock.onPost(apiEndpointWithParameters).reply(200, response)
+const setupSuccessMocks = () => {
+  mock
+    .onPost(apiEndpoint, {})
+    .reply(200, fixtures.companySearch)
+  mock
+    .onPost(apiEndpoint, { search_term: 'some other company' })
+    .reply(200, fixtures.companySearchFilteredByCompanyName)
+  mock
+    .onPost(apiEndpoint, { address_postcode: 'BN1 4SE' })
+    .reply(200, fixtures.companySearchFilteredByPostcode)
 }
 
 const setupErrorMocks = () => {
-  mock.onPost(apiEndpoint).reply(500)
-  mock.onPost(apiEndpointWithParameters).reply(500)
+  mock.onPost(apiEndpoint, {}).reply(500)
+  mock.onPost(apiEndpoint, { search_term: 'some other company' }).reply(500)
+  mock.onPost(apiEndpoint, { address_postcode: 'BN1 4SE' }).reply(500)
+}
+
+const setupNoResultsMocks = () => {
+  mock
+    .onPost(apiEndpoint, {})
+    .reply(200, fixtures.companySearchNoResults)
+  mock
+    .onPost(apiEndpoint, { search_term: 'some other company' })
+    .reply(200, fixtures.companySearchNoResults)
+  mock
+    .onPost(apiEndpoint, { address_postcode: 'BN1 4SE' })
+    .reply(200, fixtures.companySearchNoResults)
 }
 
 const EntitySearchForStorybook = ({ previouslySelected, cannotFindLink }) => {
@@ -130,7 +149,7 @@ storiesOf('EntitySearch', module)
     )
   })
   .add('Data Hub company search with no results', () => {
-    setupSuccessMocks(fixtures.companySearchNoResults)
+    setupNoResultsMocks()
 
     return (
       <EntitySearchForStorybook />
