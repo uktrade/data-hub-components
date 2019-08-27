@@ -19,6 +19,7 @@
     "dit:shareholderFunds": 1,
     "dit:taxonomy": "http://some.url/with/stuff/2019-07-27",
     "id": "dit:externalSources:companies_house.accounts:5d39ab9ac0d4899610cd65e4",
+    "startTime": "2020-12-13T01:11:18",
     "type": [
       "Event",
       "dit:Accounts"

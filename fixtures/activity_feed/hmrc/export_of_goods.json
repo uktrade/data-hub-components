@@ -13,6 +13,7 @@
   "type": "Announce",
   "object": {
     "id": "dit:externalSources:hmrc.exporters:5d39b0c9a2b09a36f9f243bf",
+    "startTime": "1879-01-05T06:53:47",
     "type": [
       "Event",
       "dit:Export"

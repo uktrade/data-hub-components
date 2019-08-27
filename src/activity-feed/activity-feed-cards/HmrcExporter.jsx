@@ -32,8 +32,7 @@ export default class HmrcExporter extends React.PureComponent {
 
   render() {
     const { activity, showDetails } = this.props
-
-    const published = get(activity, 'published')
+    const startTime = get(activity, 'object.startTime')
     const reference = get(activity, 'object.attributedTo.name')
     const summary = get(activity, 'summary')
     const exportItemCodes = get(activity, 'object.dit:exportItemCodes')
@@ -55,7 +54,7 @@ export default class HmrcExporter extends React.PureComponent {
             subHeading="Exporters records show that"
             summary={summary}
           />
-          <CardMeta startTime={published} />
+          <CardMeta startTime={startTime} />
         </CardHeader>
 
         <CardDetails
