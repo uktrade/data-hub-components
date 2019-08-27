@@ -66,15 +66,27 @@ describe('EntitySearch', () => {
   })
 
   describe('when the "Search" button has been clicked', () => {
-    test('should render the component with entities', async () => {
-      const wrappedEntitySearch = wrapEntitySearch()
+    let wrappedEntitySearch
+    let preventDefaultMock
 
-      wrappedEntitySearch.find('Search').simulate('click')
+    beforeAll(async () => {
+      wrappedEntitySearch = wrapEntitySearch()
+      preventDefaultMock = jest.fn()
+
+      wrappedEntitySearch
+        .find('Search')
+        .simulate('click', { preventDefault: preventDefaultMock })
 
       await act(flushPromises)
 
       wrappedEntitySearch.update()
+    })
 
+    test('should prevent the default button action', () => {
+      expect(preventDefaultMock.mock.calls.length).toEqual(1)
+    })
+
+    test('should render the component with entities', () => {
       expect(wrappedEntitySearch.debug()).toMatchSnapshot()
     })
   })
