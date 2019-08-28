@@ -27,7 +27,7 @@
     "lint:fix": "yarn lint --fix",
     "storybook": "start-storybook",
     "storybook:build": "rimraf storybook-static && build-storybook --quiet",
-    "storybook:release": "yarn storybook:build && git-directory-deploy --directory storybook-static --branch gh-pages",
+    "storybook:release": "yarn storybook:build && cp -R ./.circleci ./storybook-static/.circleci && git-directory-deploy --directory storybook-static --branch gh-pages",
     "prepack": "yarn build",
     "release": "semantic-release --debug",
     "postpublish": "[ \"${npm_config_tag:-latest}\" != latest ] || yarn storybook:release"
