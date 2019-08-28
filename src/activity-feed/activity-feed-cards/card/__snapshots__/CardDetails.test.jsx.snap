@@ -2,7 +2,7 @@
 
 exports[`CardDetails when link provided should render the card 1`] = `
 <details
-  className="sc-GMQeP YMOex sc-kEYyzF ihcnje"
+  className="sc-gojNiO bhwelR sc-kEYyzF ihcnje"
   open={false}
 >
   <summary
@@ -21,7 +21,7 @@ exports[`CardDetails when link provided should render the card 1`] = `
       children
     </p>
     <a
-      className="sc-cHGsZl cMiKoM"
+      className="sc-cJSrbW gKuUWc"
       href="#"
       muted={false}
     >
@@ -33,7 +33,7 @@ exports[`CardDetails when link provided should render the card 1`] = `
 
 exports[`CardDetails when no link provided should still render the card 1`] = `
 <details
-  className="sc-GMQeP YMOex sc-kEYyzF ihcnje"
+  className="sc-gojNiO bhwelR sc-kEYyzF ihcnje"
   open={false}
 >
   <summary
@@ -57,7 +57,7 @@ exports[`CardDetails when no link provided should still render the card 1`] = `
 
 exports[`CardDetails when the details for all activities are hidden should open the card details 1`] = `
 <details
-  className="sc-GMQeP YMOex sc-kEYyzF ihcnje"
+  className="sc-gojNiO bhwelR sc-kEYyzF ihcnje"
   open={false}
 >
   <summary
@@ -76,7 +76,7 @@ exports[`CardDetails when the details for all activities are hidden should open 
       children
     </p>
     <a
-      className="sc-cHGsZl cMiKoM"
+      className="sc-cJSrbW gKuUWc"
       href="#"
       muted={false}
     >
@@ -88,7 +88,7 @@ exports[`CardDetails when the details for all activities are hidden should open 
 
 exports[`CardDetails when the details for all activities are shown should open the card details 1`] = `
 <details
-  className="sc-GMQeP YMOex sc-kEYyzF ihcnje"
+  className="sc-gojNiO bhwelR sc-kEYyzF ihcnje"
   open={true}
 >
   <summary
@@ -107,7 +107,7 @@ exports[`CardDetails when the details for all activities are shown should open t
       children
     </p>
     <a
-      className="sc-cHGsZl cMiKoM"
+      className="sc-cJSrbW gKuUWc"
       href="#"
       muted={false}
     >

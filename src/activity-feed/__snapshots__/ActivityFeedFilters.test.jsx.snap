@@ -2,10 +2,10 @@
 
 exports[`ActivityFeedFilters when the details for all activities are hidden renders filters 1`] = `
 <div
-  className="sc-GMQeP bVJFSF"
+  className="sc-gojNiO iIStIR"
 >
   <a
-    className="sc-cHGsZl sc-exAgwC NNBfF"
+    className="sc-cJSrbW sc-daURTG cwrjxw"
     href="#"
     muted={false}
     onClick={[Function]}
@@ -18,10 +18,10 @@ exports[`ActivityFeedFilters when the details for all activities are hidden rend
 
 exports[`ActivityFeedFilters when the details for all activities are shown renders filters 1`] = `
 <div
-  className="sc-GMQeP bVJFSF"
+  className="sc-gojNiO iIStIR"
 >
   <a
-    className="sc-cHGsZl sc-exAgwC NNBfF"
+    className="sc-cJSrbW sc-daURTG cwrjxw"
     href="#"
     muted={false}
     onClick={[Function]}

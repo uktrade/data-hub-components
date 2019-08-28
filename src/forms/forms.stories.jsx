@@ -2,6 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import { useFormContext, Form, Step, FieldInput } from '..'
+import FieldRadios from './elements/FieldRadios'
 
 function Values() {
   const form = useFormContext()
@@ -37,6 +38,22 @@ storiesOf('Forms', module)
             <Step name="first">
               <FieldInput type="number" name="age" label="Age" validate={value => (!value ? 'Age is required' : null)} />
               <FieldInput type="number" name="height" label="Height" validate={value => (!value ? 'Height is required' : null)} />
+
+              <FieldRadios
+                name="companyLocation"
+                label="Where is the company based?"
+                validate={value => (!value ? 'Please specify where the company is based' : null)}
+                options={[
+                  { label: 'UK', value: 'uk' },
+                  {
+                    label: 'Overseas',
+                    value: 'overseas',
+                    children: (
+                      <FieldInput type="text" name="overseasCountryName" />
+                    ),
+                  },
+                ]}
+              />
             </Step>
 
             {values.age === '1' && (
