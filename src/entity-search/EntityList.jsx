@@ -7,7 +7,7 @@ import { uniqueId } from 'lodash'
 import EntityListItem from './EntityListItem'
 
 const StyledEntityList = styled('ol')`
-  margin: ${SPACING.SCALE_2} 0 ${SPACING.SCALE_4} 0;
+  margin-bottom: ${SPACING.SCALE_4};
   padding-left: 0;
 `
 

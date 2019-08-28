@@ -109,10 +109,10 @@ exports[`EntitySearch when initially loading the entity search component should 
     </EntityFilters>
     <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
       <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\" forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg cGQXmx sc-VigVT krXvSZ\\">
+        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg jEDEmH sc-VigVT krXvSZ\\">
                 Search
               </button>
             </StyledComponent>
@@ -231,10 +231,23 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
         </StyledComponent>
       </styled.div>
     </EntityFilters>
+    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
+      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg jEDEmH sc-VigVT krXvSZ\\">
+                Search
+              </button>
+            </StyledComponent>
+          </styled.button>
+        </ForwardRef>
+      </StyledComponent>
+    </Search>
     <EntityList entities={{...}} onEntityClick={[Function]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-cbkKFq keTrsS\\">
+          <ol className=\\"sc-cbkKFq hMTITK\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                 <li className=\\"sc-krvtoX ekGeeu\\">
@@ -405,19 +418,6 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
         </StyledComponent>
       </Styled(Details)>
     </CannotFindDetails>
-    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
-      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\" forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg cGQXmx sc-VigVT krXvSZ\\">
-                Search
-              </button>
-            </StyledComponent>
-          </styled.button>
-        </ForwardRef>
-      </StyledComponent>
-    </Search>
   </EntitySearch>
 </EntitySearchWithDataProvider>"
 `;
@@ -529,15 +529,12 @@ exports[`EntitySearch when the API returns 0 results should render the component
         </StyledComponent>
       </styled.div>
     </EntityFilters>
-    <p>
-      There are no entities to show.
-    </p>
     <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
       <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\" forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg cGQXmx sc-VigVT krXvSZ\\">
+        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg jEDEmH sc-VigVT krXvSZ\\">
                 Search
               </button>
             </StyledComponent>
@@ -545,6 +542,9 @@ exports[`EntitySearch when the API returns 0 results should render the component
         </ForwardRef>
       </StyledComponent>
     </Search>
+    <p>
+      There are no entities to show.
+    </p>
   </EntitySearch>
 </EntitySearchWithDataProvider>"
 `;
@@ -656,15 +656,12 @@ exports[`EntitySearch when the API returns a server error should render the comp
         </StyledComponent>
       </styled.div>
     </EntityFilters>
-    <p>
-      Error occurred while searching entities.
-    </p>
     <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
       <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\" forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg cGQXmx sc-VigVT krXvSZ\\">
+        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg jEDEmH sc-VigVT krXvSZ\\">
                 Search
               </button>
             </StyledComponent>
@@ -672,6 +669,9 @@ exports[`EntitySearch when the API returns a server error should render the comp
         </ForwardRef>
       </StyledComponent>
     </Search>
+    <p>
+      Error occurred while searching entities.
+    </p>
   </EntitySearch>
 </EntitySearchWithDataProvider>"
 `;
@@ -783,10 +783,23 @@ exports[`EntitySearch when the company name filter is applied should render the 
         </StyledComponent>
       </styled.div>
     </EntityFilters>
+    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
+      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg jEDEmH sc-VigVT krXvSZ\\">
+                Search
+              </button>
+            </StyledComponent>
+          </styled.button>
+        </ForwardRef>
+      </StyledComponent>
+    </Search>
     <EntityList entities={{...}} onEntityClick={[Function]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-cbkKFq keTrsS\\">
+          <ol className=\\"sc-cbkKFq hMTITK\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                 <li className=\\"sc-krvtoX ekGeeu\\">
@@ -902,19 +915,6 @@ exports[`EntitySearch when the company name filter is applied should render the 
         </StyledComponent>
       </Styled(Details)>
     </CannotFindDetails>
-    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
-      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\" forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg cGQXmx sc-VigVT krXvSZ\\">
-                Search
-              </button>
-            </StyledComponent>
-          </styled.button>
-        </ForwardRef>
-      </StyledComponent>
-    </Search>
   </EntitySearch>
 </EntitySearchWithDataProvider>"
 `;
@@ -1026,10 +1026,23 @@ exports[`EntitySearch when the company postcode filter is applied should render 
         </StyledComponent>
       </styled.div>
     </EntityFilters>
+    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
+      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg jEDEmH sc-VigVT krXvSZ\\">
+                Search
+              </button>
+            </StyledComponent>
+          </styled.button>
+        </ForwardRef>
+      </StyledComponent>
+    </Search>
     <EntityList entities={{...}} onEntityClick={[Function]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-cbkKFq keTrsS\\">
+          <ol className=\\"sc-cbkKFq hMTITK\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                 <li className=\\"sc-krvtoX ekGeeu\\">
@@ -1156,19 +1169,6 @@ exports[`EntitySearch when the company postcode filter is applied should render 
         </StyledComponent>
       </Styled(Details)>
     </CannotFindDetails>
-    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
-      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\" forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg cGQXmx sc-VigVT krXvSZ\\">
-                Search
-              </button>
-            </StyledComponent>
-          </styled.button>
-        </ForwardRef>
-      </StyledComponent>
-    </Search>
   </EntitySearch>
 </EntitySearchWithDataProvider>"
 `;
@@ -1280,10 +1280,23 @@ exports[`EntitySearch when the entity search results are clicked should render t
         </StyledComponent>
       </styled.div>
     </EntityFilters>
+    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
+      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg jEDEmH sc-VigVT krXvSZ\\">
+                Search
+              </button>
+            </StyledComponent>
+          </styled.button>
+        </ForwardRef>
+      </StyledComponent>
+    </Search>
     <EntityList entities={{...}} onEntityClick={[Function: mockConstructor]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-cbkKFq keTrsS\\">
+          <ol className=\\"sc-cbkKFq hMTITK\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                 <li className=\\"sc-krvtoX ekGeeu\\">
@@ -1454,19 +1467,6 @@ exports[`EntitySearch when the entity search results are clicked should render t
         </StyledComponent>
       </Styled(Details)>
     </CannotFindDetails>
-    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
-      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\" forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg cGQXmx sc-VigVT krXvSZ\\">
-                Search
-              </button>
-            </StyledComponent>
-          </styled.button>
-        </ForwardRef>
-      </StyledComponent>
-    </Search>
   </EntitySearch>
 </EntitySearchWithDataProvider>"
 `;
@@ -1578,10 +1578,23 @@ exports[`EntitySearch when the the cannot find link has a callback should render
         </StyledComponent>
       </styled.div>
     </EntityFilters>
+    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
+      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg jEDEmH sc-VigVT krXvSZ\\">
+                Search
+              </button>
+            </StyledComponent>
+          </styled.button>
+        </ForwardRef>
+      </StyledComponent>
+    </Search>
     <EntityList entities={{...}} onEntityClick={[Function]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-cbkKFq keTrsS\\">
+          <ol className=\\"sc-cbkKFq hMTITK\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                 <li className=\\"sc-krvtoX ekGeeu\\">
@@ -1752,19 +1765,6 @@ exports[`EntitySearch when the the cannot find link has a callback should render
         </StyledComponent>
       </Styled(Details)>
     </CannotFindDetails>
-    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
-      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\" forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg cGQXmx sc-VigVT krXvSZ\\">
-                Search
-              </button>
-            </StyledComponent>
-          </styled.button>
-        </ForwardRef>
-      </StyledComponent>
-    </Search>
   </EntitySearch>
 </EntitySearchWithDataProvider>"
 `;
@@ -1888,10 +1888,23 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
         </StyledComponent>
       </styled.div>
     </EntityFilters>
+    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
+      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
+        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\">
+            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg jEDEmH\\" forwardedComponent={{...}} forwardedRef={{...}}>
+              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg jEDEmH sc-VigVT krXvSZ\\">
+                Search
+              </button>
+            </StyledComponent>
+          </styled.button>
+        </ForwardRef>
+      </StyledComponent>
+    </Search>
     <EntityList entities={{...}} onEntityClick={[Function]}>
       <styled.ol>
         <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-cbkKFq keTrsS\\">
+          <ol className=\\"sc-cbkKFq hMTITK\\">
             <styled.li>
               <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                 <li className=\\"sc-krvtoX ekGeeu\\">
@@ -2062,19 +2075,6 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
         </StyledComponent>
       </Styled(Details)>
     </CannotFindDetails>
-    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
-      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\">
-            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-gHboQg cGQXmx\\" forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-gHboQg cGQXmx sc-VigVT krXvSZ\\">
-                Search
-              </button>
-            </StyledComponent>
-          </styled.button>
-        </ForwardRef>
-      </StyledComponent>
-    </Search>
   </EntitySearch>
 </EntitySearchWithDataProvider>"
 `;

@@ -11,7 +11,7 @@ import PreviouslySelected from './PreviouslySelected'
 import useFilter from './useFilter'
 
 const StyledButton = styled(Button)`
-  margin-top: ${SPACING.SCALE_2};
+  margin: ${SPACING.SCALE_2} 0;
 `
 StyledButton.displayName = 'Search'
 
@@ -36,6 +36,8 @@ const EntitySearch = ({
 
       <EntityFilters entityFilters={entityFilters} setFilter={setFilter} />
 
+      <StyledButton onClick={onSearchClick}>Search</StyledButton>
+
       {entities && entities.length ? (
         <>
           <EntityList entities={entities} onEntityClick={onEntityClick} />
@@ -48,8 +50,6 @@ const EntitySearch = ({
       ) : null}
 
       {error && <p>{error}</p>}
-
-      <StyledButton onClick={onSearchClick}>Search</StyledButton>
     </>
   )
 }
