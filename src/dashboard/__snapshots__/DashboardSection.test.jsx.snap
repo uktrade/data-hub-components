@@ -1,3 +1,252 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dashboard Header section should match the snapshot 1`] = `ReactWrapper {}`;
+exports[`Dashboard Header section should match the snapshot 1`] = `
+.c2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.c3 {
+  color: #6f777b;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-top: 4px solid #bfc1c3;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+@media print {
+  .c0 {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c0 {
+    font-size: 14px;
+    line-height: 1.4285714285714286;
+  }
+}
+
+<DashboardSection
+  heading="My Companies"
+  headingSlotComponent={
+    <div
+      className="slot"
+    >
+      Slot component
+    </div>
+  }
+  showSubHeading={true}
+  subHeading="Sub heading"
+>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-top: 4px solid ",
+              "#bfc1c3",
+              ";
+  ",
+              "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 12px; line-height: 1.2;
+} font-weight: 400; font-size: 12px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 14px; line-height: 1.4285714285714286;
+}",
+              "
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: ",
+                    "15px",
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              <Heading>
+                <styled.h2>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bdVaJa",
+                          "isStatic": true,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "
+  font-size: 20px;
+  font-weight: bold;
+",
+                          ],
+                        },
+                        "displayName": "styled.h2",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bdVaJa",
+                        "target": "h2",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <h2
+                      className="c2"
+                    >
+                      My Companies
+                    </h2>
+                  </StyledComponent>
+                </styled.h2>
+              </Heading>
+              <div>
+                <div
+                  className="slot"
+                >
+                  Slot component
+                </div>
+              </div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <SubHeading>
+          <styled.p>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": true,
+                    "lastClassName": "c3",
+                    "rules": Array [
+                      "
+  color: ",
+                      "#6f777b",
+                      ";
+  margin-top: ",
+                      "15px",
+                      ";
+  margin-bottom: ",
+                      "15px",
+                      ";
+  width: 100%;
+",
+                    ],
+                  },
+                  "displayName": "styled.p",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "p",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <p
+                className="c3"
+              >
+                Sub heading
+              </p>
+            </StyledComponent>
+          </styled.p>
+        </SubHeading>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</DashboardSection>
+`;
