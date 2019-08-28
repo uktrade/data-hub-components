@@ -2,47 +2,14 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { GridCol, GridRow, Main, H2 } from 'govuk-react'
 import { SPACING } from '@govuk-react/constants'
-import axios from 'axios'
-import MockAdapter from 'axios-mock-adapter'
 import PropTypes from 'prop-types'
 
+import { setupSuccessMocks, setupErrorMocks, setupNoResultsMocks } from './__mocks__/company-search'
 import dataHubAddCompany from '../../assets/images/data-hub-add-company.png'
-import fixtures from './fixtures'
 import dnbCompanySearchDataProvider from './data-providers/DnbCompanySearch'
 import EntitySearchWithDataProvider from './EntitySearchWithDataProvider'
 
-const mock = new MockAdapter(axios)
 const apiEndpoint = 'http://localhost:3010/v4/dnb/company-search'
-
-const setupSuccessMocks = () => {
-  mock
-    .onPost(apiEndpoint, {})
-    .reply(200, fixtures.companySearch)
-  mock
-    .onPost(apiEndpoint, { search_term: 'some other company' })
-    .reply(200, fixtures.companySearchFilteredByCompanyName)
-  mock
-    .onPost(apiEndpoint, { postal_code: 'BN1 4SE' })
-    .reply(200, fixtures.companySearchFilteredByPostcode)
-}
-
-const setupErrorMocks = () => {
-  mock.onPost(apiEndpoint, {}).reply(500)
-  mock.onPost(apiEndpoint, { search_term: 'some other company' }).reply(500)
-  mock.onPost(apiEndpoint, { postal_code: 'BN1 4SE' }).reply(500)
-}
-
-const setupNoResultsMocks = () => {
-  mock
-    .onPost(apiEndpoint, {})
-    .reply(200, fixtures.companySearchNoResults)
-  mock
-    .onPost(apiEndpoint, { search_term: 'some other company' })
-    .reply(200, fixtures.companySearchNoResults)
-  mock
-    .onPost(apiEndpoint, { postal_code: 'BN1 4SE' })
-    .reply(200, fixtures.companySearchNoResults)
-}
 
 const EntitySearchForStorybook = ({ previouslySelected, cannotFindLink }) => {
   return (

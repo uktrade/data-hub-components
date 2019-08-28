@@ -4,7 +4,7 @@ import MockAdapter from 'axios-mock-adapter'
 import axios from 'axios'
 import { act } from 'react-dom/test-utils'
 
-import fixtures from './fixtures'
+import fixtures from './__fixtures__'
 import getEntities from './data-providers/DnbCompanySearch'
 import EntitySearchWithDataProvider from './EntitySearchWithDataProvider'
 
