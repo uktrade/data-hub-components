@@ -22,14 +22,14 @@ const setupSuccessMocks = () => {
     .onPost(apiEndpoint, { search_term: 'some other company' })
     .reply(200, fixtures.companySearchFilteredByCompanyName)
   mock
-    .onPost(apiEndpoint, { address_postcode: 'BN1 4SE' })
+    .onPost(apiEndpoint, { postal_code: 'BN1 4SE' })
     .reply(200, fixtures.companySearchFilteredByPostcode)
 }
 
 const setupErrorMocks = () => {
   mock.onPost(apiEndpoint, {}).reply(500)
   mock.onPost(apiEndpoint, { search_term: 'some other company' }).reply(500)
-  mock.onPost(apiEndpoint, { address_postcode: 'BN1 4SE' }).reply(500)
+  mock.onPost(apiEndpoint, { postal_code: 'BN1 4SE' }).reply(500)
 }
 
 const setupNoResultsMocks = () => {
@@ -40,7 +40,7 @@ const setupNoResultsMocks = () => {
     .onPost(apiEndpoint, { search_term: 'some other company' })
     .reply(200, fixtures.companySearchNoResults)
   mock
-    .onPost(apiEndpoint, { address_postcode: 'BN1 4SE' })
+    .onPost(apiEndpoint, { postal_code: 'BN1 4SE' })
     .reply(200, fixtures.companySearchNoResults)
 }
 
@@ -68,7 +68,7 @@ const EntitySearchForStorybook = ({ previouslySelected, cannotFindLink }) => {
               [
                 {
                   label: 'Company postcode',
-                  key: 'address_postcode',
+                  key: 'postal_code',
                   width: 'one-half',
                   optional: true,
                 },

@@ -337,7 +337,7 @@ exports[`EntitySearch when initially loading the entity search component should 
       ],
       Array [
         Object {
-          "key": "address_postcode",
+          "key": "postal_code",
           "label": "Company postcode",
           "optional": true,
           "width": "one-half",
@@ -373,7 +373,7 @@ exports[`EntitySearch when initially loading the entity search component should 
         ],
         Array [
           Object {
-            "key": "address_postcode",
+            "key": "postal_code",
             "label": "Company postcode",
             "optional": true,
             "width": "one-half",
@@ -398,7 +398,7 @@ exports[`EntitySearch when initially loading the entity search component should 
           ],
           Array [
             Object {
-              "key": "address_postcode",
+              "key": "postal_code",
               "label": "Company postcode",
               "optional": true,
               "width": "one-half",
@@ -828,7 +828,7 @@ exports[`EntitySearch when initially loading the entity search component should 
                           columnOneThird={false}
                           columnThreeQuarters={false}
                           columnTwoThirds={false}
-                          key="grid_col-address_postcode"
+                          key="grid_col-postal_code"
                           setWidth="one-half"
                         >
                           <styled.div
@@ -879,22 +879,22 @@ exports[`EntitySearch when initially loading the entity search component should 
                                 <EntityFilter
                                   filter={
                                     Object {
-                                      "key": "address_postcode",
+                                      "key": "postal_code",
                                       "label": "Company postcode",
                                       "optional": true,
                                       "width": "one-half",
                                     }
                                   }
-                                  key="entity_filter-address_postcode"
+                                  key="entity_filter-postal_code"
                                   setFilter={[Function]}
                                 >
                                   <InputField
                                     input={
                                       Object {
-                                        "name": "address_postcode",
+                                        "name": "postal_code",
                                       }
                                     }
-                                    key="address_postcode"
+                                    key="postal_code"
                                     meta={Object {}}
                                     onChange={[Function]}
                                   >
@@ -990,11 +990,11 @@ exports[`EntitySearch when initially loading the entity search component should 
                                               </styled.span>
                                             </LabelText>
                                             <Input
-                                              name="address_postcode"
+                                              name="postal_code"
                                               type="text"
                                             >
                                               <styled.input
-                                                name="address_postcode"
+                                                name="postal_code"
                                                 type="text"
                                               >
                                                 <StyledComponent
@@ -1035,12 +1035,12 @@ exports[`EntitySearch when initially loading the entity search component should 
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  name="address_postcode"
+                                                  name="postal_code"
                                                   type="text"
                                                 >
                                                   <input
                                                     className="c7"
-                                                    name="address_postcode"
+                                                    name="postal_code"
                                                     type="text"
                                                   />
                                                 </StyledComponent>
@@ -1919,7 +1919,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
       ],
       Array [
         Object {
-          "key": "address_postcode",
+          "key": "postal_code",
           "label": "Company postcode",
           "optional": true,
           "width": "one-half",
@@ -2076,7 +2076,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
         ],
         Array [
           Object {
-            "key": "address_postcode",
+            "key": "postal_code",
             "label": "Company postcode",
             "optional": true,
             "width": "one-half",
@@ -2101,7 +2101,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
           ],
           Array [
             Object {
-              "key": "address_postcode",
+              "key": "postal_code",
               "label": "Company postcode",
               "optional": true,
               "width": "one-half",
@@ -2531,7 +2531,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                           columnOneThird={false}
                           columnThreeQuarters={false}
                           columnTwoThirds={false}
-                          key="grid_col-address_postcode"
+                          key="grid_col-postal_code"
                           setWidth="one-half"
                         >
                           <styled.div
@@ -2582,22 +2582,22 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                 <EntityFilter
                                   filter={
                                     Object {
-                                      "key": "address_postcode",
+                                      "key": "postal_code",
                                       "label": "Company postcode",
                                       "optional": true,
                                       "width": "one-half",
                                     }
                                   }
-                                  key="entity_filter-address_postcode"
+                                  key="entity_filter-postal_code"
                                   setFilter={[Function]}
                                 >
                                   <InputField
                                     input={
                                       Object {
-                                        "name": "address_postcode",
+                                        "name": "postal_code",
                                       }
                                     }
-                                    key="address_postcode"
+                                    key="postal_code"
                                     meta={Object {}}
                                     onChange={[Function]}
                                   >
@@ -2693,11 +2693,11 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                               </styled.span>
                                             </LabelText>
                                             <Input
-                                              name="address_postcode"
+                                              name="postal_code"
                                               type="text"
                                             >
                                               <styled.input
-                                                name="address_postcode"
+                                                name="postal_code"
                                                 type="text"
                                               >
                                                 <StyledComponent
@@ -2738,12 +2738,12 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  name="address_postcode"
+                                                  name="postal_code"
                                                   type="text"
                                                 >
                                                   <input
                                                     className="c7"
-                                                    name="address_postcode"
+                                                    name="postal_code"
                                                     type="text"
                                                   />
                                                 </StyledComponent>
@@ -4623,7 +4623,7 @@ exports[`EntitySearch when the API returns 0 results should render the component
       ],
       Array [
         Object {
-          "key": "address_postcode",
+          "key": "postal_code",
           "label": "Company postcode",
           "optional": true,
           "width": "one-half",
@@ -4659,7 +4659,7 @@ exports[`EntitySearch when the API returns 0 results should render the component
         ],
         Array [
           Object {
-            "key": "address_postcode",
+            "key": "postal_code",
             "label": "Company postcode",
             "optional": true,
             "width": "one-half",
@@ -4684,7 +4684,7 @@ exports[`EntitySearch when the API returns 0 results should render the component
           ],
           Array [
             Object {
-              "key": "address_postcode",
+              "key": "postal_code",
               "label": "Company postcode",
               "optional": true,
               "width": "one-half",
@@ -5114,7 +5114,7 @@ exports[`EntitySearch when the API returns 0 results should render the component
                           columnOneThird={false}
                           columnThreeQuarters={false}
                           columnTwoThirds={false}
-                          key="grid_col-address_postcode"
+                          key="grid_col-postal_code"
                           setWidth="one-half"
                         >
                           <styled.div
@@ -5165,22 +5165,22 @@ exports[`EntitySearch when the API returns 0 results should render the component
                                 <EntityFilter
                                   filter={
                                     Object {
-                                      "key": "address_postcode",
+                                      "key": "postal_code",
                                       "label": "Company postcode",
                                       "optional": true,
                                       "width": "one-half",
                                     }
                                   }
-                                  key="entity_filter-address_postcode"
+                                  key="entity_filter-postal_code"
                                   setFilter={[Function]}
                                 >
                                   <InputField
                                     input={
                                       Object {
-                                        "name": "address_postcode",
+                                        "name": "postal_code",
                                       }
                                     }
-                                    key="address_postcode"
+                                    key="postal_code"
                                     meta={Object {}}
                                     onChange={[Function]}
                                   >
@@ -5276,11 +5276,11 @@ exports[`EntitySearch when the API returns 0 results should render the component
                                               </styled.span>
                                             </LabelText>
                                             <Input
-                                              name="address_postcode"
+                                              name="postal_code"
                                               type="text"
                                             >
                                               <styled.input
-                                                name="address_postcode"
+                                                name="postal_code"
                                                 type="text"
                                               >
                                                 <StyledComponent
@@ -5321,12 +5321,12 @@ exports[`EntitySearch when the API returns 0 results should render the component
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  name="address_postcode"
+                                                  name="postal_code"
                                                   type="text"
                                                 >
                                                   <input
                                                     className="c7"
-                                                    name="address_postcode"
+                                                    name="postal_code"
                                                     type="text"
                                                   />
                                                 </StyledComponent>
@@ -5833,7 +5833,7 @@ exports[`EntitySearch when the API returns a server error should render the comp
       ],
       Array [
         Object {
-          "key": "address_postcode",
+          "key": "postal_code",
           "label": "Company postcode",
           "optional": true,
           "width": "one-half",
@@ -5869,7 +5869,7 @@ exports[`EntitySearch when the API returns a server error should render the comp
         ],
         Array [
           Object {
-            "key": "address_postcode",
+            "key": "postal_code",
             "label": "Company postcode",
             "optional": true,
             "width": "one-half",
@@ -5894,7 +5894,7 @@ exports[`EntitySearch when the API returns a server error should render the comp
           ],
           Array [
             Object {
-              "key": "address_postcode",
+              "key": "postal_code",
               "label": "Company postcode",
               "optional": true,
               "width": "one-half",
@@ -6324,7 +6324,7 @@ exports[`EntitySearch when the API returns a server error should render the comp
                           columnOneThird={false}
                           columnThreeQuarters={false}
                           columnTwoThirds={false}
-                          key="grid_col-address_postcode"
+                          key="grid_col-postal_code"
                           setWidth="one-half"
                         >
                           <styled.div
@@ -6375,22 +6375,22 @@ exports[`EntitySearch when the API returns a server error should render the comp
                                 <EntityFilter
                                   filter={
                                     Object {
-                                      "key": "address_postcode",
+                                      "key": "postal_code",
                                       "label": "Company postcode",
                                       "optional": true,
                                       "width": "one-half",
                                     }
                                   }
-                                  key="entity_filter-address_postcode"
+                                  key="entity_filter-postal_code"
                                   setFilter={[Function]}
                                 >
                                   <InputField
                                     input={
                                       Object {
-                                        "name": "address_postcode",
+                                        "name": "postal_code",
                                       }
                                     }
-                                    key="address_postcode"
+                                    key="postal_code"
                                     meta={Object {}}
                                     onChange={[Function]}
                                   >
@@ -6486,11 +6486,11 @@ exports[`EntitySearch when the API returns a server error should render the comp
                                               </styled.span>
                                             </LabelText>
                                             <Input
-                                              name="address_postcode"
+                                              name="postal_code"
                                               type="text"
                                             >
                                               <styled.input
-                                                name="address_postcode"
+                                                name="postal_code"
                                                 type="text"
                                               >
                                                 <StyledComponent
@@ -6531,12 +6531,12 @@ exports[`EntitySearch when the API returns a server error should render the comp
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  name="address_postcode"
+                                                  name="postal_code"
                                                   type="text"
                                                 >
                                                   <input
                                                     className="c7"
-                                                    name="address_postcode"
+                                                    name="postal_code"
                                                     type="text"
                                                   />
                                                 </StyledComponent>
@@ -7357,7 +7357,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
       ],
       Array [
         Object {
-          "key": "address_postcode",
+          "key": "postal_code",
           "label": "Company postcode",
           "optional": true,
           "width": "one-half",
@@ -7446,7 +7446,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
         ],
         Array [
           Object {
-            "key": "address_postcode",
+            "key": "postal_code",
             "label": "Company postcode",
             "optional": true,
             "width": "one-half",
@@ -7471,7 +7471,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
           ],
           Array [
             Object {
-              "key": "address_postcode",
+              "key": "postal_code",
               "label": "Company postcode",
               "optional": true,
               "width": "one-half",
@@ -7901,7 +7901,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                           columnOneThird={false}
                           columnThreeQuarters={false}
                           columnTwoThirds={false}
-                          key="grid_col-address_postcode"
+                          key="grid_col-postal_code"
                           setWidth="one-half"
                         >
                           <styled.div
@@ -7952,22 +7952,22 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                 <EntityFilter
                                   filter={
                                     Object {
-                                      "key": "address_postcode",
+                                      "key": "postal_code",
                                       "label": "Company postcode",
                                       "optional": true,
                                       "width": "one-half",
                                     }
                                   }
-                                  key="entity_filter-address_postcode"
+                                  key="entity_filter-postal_code"
                                   setFilter={[Function]}
                                 >
                                   <InputField
                                     input={
                                       Object {
-                                        "name": "address_postcode",
+                                        "name": "postal_code",
                                       }
                                     }
-                                    key="address_postcode"
+                                    key="postal_code"
                                     meta={Object {}}
                                     onChange={[Function]}
                                   >
@@ -8063,11 +8063,11 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                               </styled.span>
                                             </LabelText>
                                             <Input
-                                              name="address_postcode"
+                                              name="postal_code"
                                               type="text"
                                             >
                                               <styled.input
-                                                name="address_postcode"
+                                                name="postal_code"
                                                 type="text"
                                               >
                                                 <StyledComponent
@@ -8108,12 +8108,12 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  name="address_postcode"
+                                                  name="postal_code"
                                                   type="text"
                                                 >
                                                   <input
                                                     className="c7"
-                                                    name="address_postcode"
+                                                    name="postal_code"
                                                     type="text"
                                                   />
                                                 </StyledComponent>
@@ -9890,7 +9890,7 @@ exports[`EntitySearch when the company postcode filter is applied should render 
       ],
       Array [
         Object {
-          "key": "address_postcode",
+          "key": "postal_code",
           "label": "Company postcode",
           "optional": true,
           "width": "one-half",
@@ -9997,7 +9997,7 @@ exports[`EntitySearch when the company postcode filter is applied should render 
         ],
         Array [
           Object {
-            "key": "address_postcode",
+            "key": "postal_code",
             "label": "Company postcode",
             "optional": true,
             "width": "one-half",
@@ -10022,7 +10022,7 @@ exports[`EntitySearch when the company postcode filter is applied should render 
           ],
           Array [
             Object {
-              "key": "address_postcode",
+              "key": "postal_code",
               "label": "Company postcode",
               "optional": true,
               "width": "one-half",
@@ -10452,7 +10452,7 @@ exports[`EntitySearch when the company postcode filter is applied should render 
                           columnOneThird={false}
                           columnThreeQuarters={false}
                           columnTwoThirds={false}
-                          key="grid_col-address_postcode"
+                          key="grid_col-postal_code"
                           setWidth="one-half"
                         >
                           <styled.div
@@ -10503,22 +10503,22 @@ exports[`EntitySearch when the company postcode filter is applied should render 
                                 <EntityFilter
                                   filter={
                                     Object {
-                                      "key": "address_postcode",
+                                      "key": "postal_code",
                                       "label": "Company postcode",
                                       "optional": true,
                                       "width": "one-half",
                                     }
                                   }
-                                  key="entity_filter-address_postcode"
+                                  key="entity_filter-postal_code"
                                   setFilter={[Function]}
                                 >
                                   <InputField
                                     input={
                                       Object {
-                                        "name": "address_postcode",
+                                        "name": "postal_code",
                                       }
                                     }
-                                    key="address_postcode"
+                                    key="postal_code"
                                     meta={Object {}}
                                     onChange={[Function]}
                                   >
@@ -10614,11 +10614,11 @@ exports[`EntitySearch when the company postcode filter is applied should render 
                                               </styled.span>
                                             </LabelText>
                                             <Input
-                                              name="address_postcode"
+                                              name="postal_code"
                                               type="text"
                                             >
                                               <styled.input
-                                                name="address_postcode"
+                                                name="postal_code"
                                                 type="text"
                                               >
                                                 <StyledComponent
@@ -10659,12 +10659,12 @@ exports[`EntitySearch when the company postcode filter is applied should render 
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  name="address_postcode"
+                                                  name="postal_code"
                                                   type="text"
                                                 >
                                                   <input
                                                     className="c7"
-                                                    name="address_postcode"
+                                                    name="postal_code"
                                                     type="text"
                                                   />
                                                 </StyledComponent>
@@ -12558,7 +12558,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
       ],
       Array [
         Object {
-          "key": "address_postcode",
+          "key": "postal_code",
           "label": "Company postcode",
           "optional": true,
           "width": "one-half",
@@ -12715,7 +12715,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
         ],
         Array [
           Object {
-            "key": "address_postcode",
+            "key": "postal_code",
             "label": "Company postcode",
             "optional": true,
             "width": "one-half",
@@ -12740,7 +12740,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
           ],
           Array [
             Object {
-              "key": "address_postcode",
+              "key": "postal_code",
               "label": "Company postcode",
               "optional": true,
               "width": "one-half",
@@ -13170,7 +13170,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                           columnOneThird={false}
                           columnThreeQuarters={false}
                           columnTwoThirds={false}
-                          key="grid_col-address_postcode"
+                          key="grid_col-postal_code"
                           setWidth="one-half"
                         >
                           <styled.div
@@ -13221,22 +13221,22 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                 <EntityFilter
                                   filter={
                                     Object {
-                                      "key": "address_postcode",
+                                      "key": "postal_code",
                                       "label": "Company postcode",
                                       "optional": true,
                                       "width": "one-half",
                                     }
                                   }
-                                  key="entity_filter-address_postcode"
+                                  key="entity_filter-postal_code"
                                   setFilter={[Function]}
                                 >
                                   <InputField
                                     input={
                                       Object {
-                                        "name": "address_postcode",
+                                        "name": "postal_code",
                                       }
                                     }
-                                    key="address_postcode"
+                                    key="postal_code"
                                     meta={Object {}}
                                     onChange={[Function]}
                                   >
@@ -13332,11 +13332,11 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                               </styled.span>
                                             </LabelText>
                                             <Input
-                                              name="address_postcode"
+                                              name="postal_code"
                                               type="text"
                                             >
                                               <styled.input
-                                                name="address_postcode"
+                                                name="postal_code"
                                                 type="text"
                                               >
                                                 <StyledComponent
@@ -13377,12 +13377,12 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  name="address_postcode"
+                                                  name="postal_code"
                                                   type="text"
                                                 >
                                                   <input
                                                     className="c7"
-                                                    name="address_postcode"
+                                                    name="postal_code"
                                                     type="text"
                                                   />
                                                 </StyledComponent>
@@ -15647,7 +15647,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
       ],
       Array [
         Object {
-          "key": "address_postcode",
+          "key": "postal_code",
           "label": "Company postcode",
           "optional": true,
           "width": "one-half",
@@ -15814,7 +15814,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
         ],
         Array [
           Object {
-            "key": "address_postcode",
+            "key": "postal_code",
             "label": "Company postcode",
             "optional": true,
             "width": "one-half",
@@ -15839,7 +15839,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
           ],
           Array [
             Object {
-              "key": "address_postcode",
+              "key": "postal_code",
               "label": "Company postcode",
               "optional": true,
               "width": "one-half",
@@ -16269,7 +16269,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                           columnOneThird={false}
                           columnThreeQuarters={false}
                           columnTwoThirds={false}
-                          key="grid_col-address_postcode"
+                          key="grid_col-postal_code"
                           setWidth="one-half"
                         >
                           <styled.div
@@ -16320,22 +16320,22 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                 <EntityFilter
                                   filter={
                                     Object {
-                                      "key": "address_postcode",
+                                      "key": "postal_code",
                                       "label": "Company postcode",
                                       "optional": true,
                                       "width": "one-half",
                                     }
                                   }
-                                  key="entity_filter-address_postcode"
+                                  key="entity_filter-postal_code"
                                   setFilter={[Function]}
                                 >
                                   <InputField
                                     input={
                                       Object {
-                                        "name": "address_postcode",
+                                        "name": "postal_code",
                                       }
                                     }
-                                    key="address_postcode"
+                                    key="postal_code"
                                     meta={Object {}}
                                     onChange={[Function]}
                                   >
@@ -16431,11 +16431,11 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                               </styled.span>
                                             </LabelText>
                                             <Input
-                                              name="address_postcode"
+                                              name="postal_code"
                                               type="text"
                                             >
                                               <styled.input
-                                                name="address_postcode"
+                                                name="postal_code"
                                                 type="text"
                                               >
                                                 <StyledComponent
@@ -16476,12 +16476,12 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  name="address_postcode"
+                                                  name="postal_code"
                                                   type="text"
                                                 >
                                                   <input
                                                     className="c7"
-                                                    name="address_postcode"
+                                                    name="postal_code"
                                                     type="text"
                                                   />
                                                 </StyledComponent>
@@ -18795,7 +18795,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
       ],
       Array [
         Object {
-          "key": "address_postcode",
+          "key": "postal_code",
           "label": "Company postcode",
           "optional": true,
           "width": "one-half",
@@ -18968,7 +18968,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
         ],
         Array [
           Object {
-            "key": "address_postcode",
+            "key": "postal_code",
             "label": "Company postcode",
             "optional": true,
             "width": "one-half",
@@ -19114,7 +19114,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
           ],
           Array [
             Object {
-              "key": "address_postcode",
+              "key": "postal_code",
               "label": "Company postcode",
               "optional": true,
               "width": "one-half",
@@ -19544,7 +19544,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                           columnOneThird={false}
                           columnThreeQuarters={false}
                           columnTwoThirds={false}
-                          key="grid_col-address_postcode"
+                          key="grid_col-postal_code"
                           setWidth="one-half"
                         >
                           <styled.div
@@ -19595,22 +19595,22 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                 <EntityFilter
                                   filter={
                                     Object {
-                                      "key": "address_postcode",
+                                      "key": "postal_code",
                                       "label": "Company postcode",
                                       "optional": true,
                                       "width": "one-half",
                                     }
                                   }
-                                  key="entity_filter-address_postcode"
+                                  key="entity_filter-postal_code"
                                   setFilter={[Function]}
                                 >
                                   <InputField
                                     input={
                                       Object {
-                                        "name": "address_postcode",
+                                        "name": "postal_code",
                                       }
                                     }
-                                    key="address_postcode"
+                                    key="postal_code"
                                     meta={Object {}}
                                     onChange={[Function]}
                                   >
@@ -19706,11 +19706,11 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                               </styled.span>
                                             </LabelText>
                                             <Input
-                                              name="address_postcode"
+                                              name="postal_code"
                                               type="text"
                                             >
                                               <styled.input
-                                                name="address_postcode"
+                                                name="postal_code"
                                                 type="text"
                                               >
                                                 <StyledComponent
@@ -19751,12 +19751,12 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                                     }
                                                   }
                                                   forwardedRef={null}
-                                                  name="address_postcode"
+                                                  name="postal_code"
                                                   type="text"
                                                 >
                                                   <input
                                                     className="c8"
-                                                    name="address_postcode"
+                                                    name="postal_code"
                                                     type="text"
                                                   />
                                                 </StyledComponent>
