@@ -60,7 +60,16 @@ EntitySearch.propTypes = {
     meta: PropTypes.object.isRequired,
   })),
   onEntitySearch: PropTypes.func.isRequired,
-  entityFilters: PropTypes.array.isRequired,
+  entityFilters: PropTypes.arrayOf(
+    PropTypes.arrayOf(
+      PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        key: PropTypes.string.isRequired,
+        width: PropTypes.string,
+        optional: PropTypes.bool,
+      }),
+    ),
+  ).isRequired,
   cannotFind: PropTypes.shape({
     summary: PropTypes.string.isRequired,
     actions: PropTypes.arrayOf(PropTypes.string).isRequired,

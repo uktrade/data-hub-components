@@ -49,6 +49,7 @@ EntityFilters.propTypes = {
         label: PropTypes.string.isRequired,
         key: PropTypes.string.isRequired,
         width: PropTypes.string,
+        optional: PropTypes.bool,
       }),
     ),
   ).isRequired,
