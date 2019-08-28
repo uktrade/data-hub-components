@@ -11,6 +11,11 @@ const StyledDetails = styled(Details)`
   }
 `
 
+const StyledList = styled('ul')`
+  list-style-type: disc;
+  padding-left: ${SPACING.SCALE_5};
+`
+
 const CannotFindDetails = ({ summary, actions, link }) => {
   const onLinkClick = (e) => {
     e.preventDefault()
@@ -21,9 +26,9 @@ const CannotFindDetails = ({ summary, actions, link }) => {
     <StyledDetails summary={summary}>
       <div>
         <Paragraph>Try refining your search by taking the following actions:</Paragraph>
-        <ul>
+        <StyledList>
           {actions.map(text => <li key={uniqueId()}>{text}</li>)}
-        </ul>
+        </StyledList>
         <Link
           href={link.url ? link.url : '#cannot-find'}
           onClick={link.onClick ? onLinkClick : null}
