@@ -2,12 +2,10 @@
 import React from 'react'
 import axios from 'axios'
 import { compact, join } from 'lodash'
-import queryString from 'query-string'
 
 export default (apiEndpoint) => {
   return async (filters) => {
-    const transformed = queryString.stringify(filters)
-    const { data } = await axios.post(`${apiEndpoint + (transformed ? `?${transformed}` : '')}`)
+    const { data } = await axios.post(apiEndpoint, filters)
 
     return data.results.map((result) => {
       const { dnb_company, datahub_company } = result

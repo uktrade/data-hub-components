@@ -58,7 +58,6 @@
     "moment": "^2.24.0",
     "pluralise": "^1.0.1",
     "prop-types": "^15.7.2",
-    "query-string": "^6.8.2",
     "react-lines-ellipsis": "^0.14.1",
     "react-markdown": "^4.0.8",
     "styled-components": "^4.2.0"

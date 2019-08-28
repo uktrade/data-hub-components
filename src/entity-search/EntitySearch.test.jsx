@@ -11,13 +11,13 @@ import EntitySearchWithDataProvider from './EntitySearchWithDataProvider'
 const mock = new MockAdapter(axios)
 const API_ENDPOINT = 'http://localhost:8000/v4/dnb/company-search'
 mock
-  .onPost(API_ENDPOINT)
+  .onPost(API_ENDPOINT, {})
   .reply(200, fixtures.companySearch)
 mock
-  .onPost(`${API_ENDPOINT}?search_term=some%20other%20company`)
+  .onPost(API_ENDPOINT, { search_term: 'some other company' })
   .reply(200, fixtures.companySearchFilteredByCompanyName)
 mock
-  .onPost(`${API_ENDPOINT}?address_postcode=BN1%204SE`)
+  .onPost(API_ENDPOINT, { address_postcode: 'BN1 4SE' })
   .reply(200, fixtures.companySearchFilteredByPostcode)
 
 const flushPromises = () => {
@@ -263,7 +263,7 @@ describe('EntitySearch', () => {
 
   describe('when the API returns a server error', () => {
     beforeAll(() => {
-      mock.onPost(API_ENDPOINT).reply(500)
+      mock.onPost(API_ENDPOINT, {}).reply(500)
     })
 
     test('should render the component with an error message', async () => {
@@ -281,7 +281,7 @@ describe('EntitySearch', () => {
 
   describe('when the API returns 0 results', () => {
     beforeAll(() => {
-      mock.onPost(API_ENDPOINT).reply(200, fixtures.companySearchNoResults)
+      mock.onPost(API_ENDPOINT, {}).reply(200, fixtures.companySearchNoResults)
     })
 
     test('should render the component with a "no entities" message', async () => {
