@@ -60,10 +60,18 @@ const EntitySearchForStorybook = ({ previouslySelected, cannotFindLink }) => {
             previouslySelected={previouslySelected}
             entityFilters={[
               [
-                { label: 'Company name', key: 'search_term' },
+                {
+                  label: 'Company name',
+                  key: 'search_term',
+                },
               ],
               [
-                { label: 'Company postcode', key: 'address_postcode', width: 'one-half' },
+                {
+                  label: 'Company postcode',
+                  key: 'address_postcode',
+                  width: 'one-half',
+                  optional: true,
+                },
               ],
             ]}
             cannotFind={{

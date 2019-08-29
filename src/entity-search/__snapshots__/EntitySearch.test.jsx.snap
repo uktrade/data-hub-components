@@ -76,6 +76,9 @@ exports[`EntitySearch when initially loading the entity search component should 
                                                 <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                                                   <span className=\\"sc-caSCKo Fhhns\\">
                                                     Company postcode
+                                                    <span>
+                                                       (optional)
+                                                    </span>
                                                   </span>
                                                 </StyledComponent>
                                               </styled.span>
@@ -200,6 +203,9 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                                 <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                                                   <span className=\\"sc-caSCKo Fhhns\\">
                                                     Company postcode
+                                                    <span>
+                                                       (optional)
+                                                    </span>
                                                   </span>
                                                 </StyledComponent>
                                               </styled.span>
@@ -498,6 +504,9 @@ exports[`EntitySearch when the API returns 0 results should render the component
                                                 <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                                                   <span className=\\"sc-caSCKo Fhhns\\">
                                                     Company postcode
+                                                    <span>
+                                                       (optional)
+                                                    </span>
                                                   </span>
                                                 </StyledComponent>
                                               </styled.span>
@@ -625,6 +634,9 @@ exports[`EntitySearch when the API returns a server error should render the comp
                                                 <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                                                   <span className=\\"sc-caSCKo Fhhns\\">
                                                     Company postcode
+                                                    <span>
+                                                       (optional)
+                                                    </span>
                                                   </span>
                                                 </StyledComponent>
                                               </styled.span>
@@ -752,6 +764,9 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                                 <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                                                   <span className=\\"sc-caSCKo Fhhns\\">
                                                     Company postcode
+                                                    <span>
+                                                       (optional)
+                                                    </span>
                                                   </span>
                                                 </StyledComponent>
                                               </styled.span>
@@ -995,6 +1010,9 @@ exports[`EntitySearch when the company postcode filter is applied should render 
                                                 <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                                                   <span className=\\"sc-caSCKo Fhhns\\">
                                                     Company postcode
+                                                    <span>
+                                                       (optional)
+                                                    </span>
                                                   </span>
                                                 </StyledComponent>
                                               </styled.span>
@@ -1249,6 +1267,9 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                                 <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                                                   <span className=\\"sc-caSCKo Fhhns\\">
                                                     Company postcode
+                                                    <span>
+                                                       (optional)
+                                                    </span>
                                                   </span>
                                                 </StyledComponent>
                                               </styled.span>
@@ -1547,6 +1568,9 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                                 <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                                                   <span className=\\"sc-caSCKo Fhhns\\">
                                                     Company postcode
+                                                    <span>
+                                                       (optional)
+                                                    </span>
                                                   </span>
                                                 </StyledComponent>
                                               </styled.span>
@@ -1857,6 +1881,9 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                                 <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
                                                   <span className=\\"sc-caSCKo Fhhns\\">
                                                     Company postcode
+                                                    <span>
+                                                       (optional)
+                                                    </span>
                                                   </span>
                                                 </StyledComponent>
                                               </styled.span>
