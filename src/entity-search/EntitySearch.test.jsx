@@ -348,4 +348,36 @@ describe('EntitySearch', () => {
       expect(wrappedEntitySearch.debug()).toMatchSnapshot()
     })
   })
+
+  describe('when at first there is an error and then on second click there are results', () => {
+    let wrappedEntitySearch
+
+    beforeAll(async () => {
+      setupErrorMocks(API_ENDPOINT)
+
+      wrappedEntitySearch = wrapEntitySearch()
+
+      wrappedEntitySearch
+        .find('Search')
+        .simulate('click')
+
+      await act(flushPromises)
+
+      wrappedEntitySearch.update()
+
+      setupSuccessMocks(API_ENDPOINT)
+
+      wrappedEntitySearch
+        .find('Search')
+        .simulate('click')
+
+      await act(flushPromises)
+
+      wrappedEntitySearch.update()
+    })
+
+    test('should render the component with the results and without the error', () => {
+      expect(wrappedEntitySearch.debug()).toMatchSnapshot()
+    })
+  })
 })
