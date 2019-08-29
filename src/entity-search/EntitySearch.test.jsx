@@ -1,24 +1,13 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import MockAdapter from 'axios-mock-adapter'
-import axios from 'axios'
 import { act } from 'react-dom/test-utils'
 
+import { setupSuccessMocks, setupErrorMocks, setupNoResultsMocks } from './__mocks__/company-search'
 import fixtures from './__fixtures__'
 import getEntities from './data-providers/DnbCompanySearch'
 import EntitySearchWithDataProvider from './EntitySearchWithDataProvider'
 
-const mock = new MockAdapter(axios)
 const API_ENDPOINT = 'http://localhost:8000/v4/dnb/company-search'
-mock
-  .onPost(API_ENDPOINT, {})
-  .reply(200, fixtures.companySearch)
-mock
-  .onPost(API_ENDPOINT, { search_term: 'some other company' })
-  .reply(200, fixtures.companySearchFilteredByCompanyName)
-mock
-  .onPost(API_ENDPOINT, { postal_code: 'BN1 4SE' })
-  .reply(200, fixtures.companySearchFilteredByPostcode)
 
 const flushPromises = () => {
   return new Promise((resolve) => {
@@ -59,8 +48,15 @@ const wrapEntitySearch = ({
 
 describe('EntitySearch', () => {
   describe('when initially loading the entity search component', () => {
+    let wrappedEntitySearch
+
+    beforeAll(() => {
+      setupSuccessMocks(API_ENDPOINT)
+
+      wrappedEntitySearch = wrapEntitySearch()
+    })
+
     test('should render the component without entities', () => {
-      const wrappedEntitySearch = wrapEntitySearch()
       expect(wrappedEntitySearch).toMatchSnapshot()
     })
   })
@@ -70,6 +66,8 @@ describe('EntitySearch', () => {
     let preventDefaultMock
 
     beforeAll(async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
       wrappedEntitySearch = wrapEntitySearch()
       preventDefaultMock = jest.fn()
 
@@ -92,8 +90,12 @@ describe('EntitySearch', () => {
   })
 
   describe('when the company name filter is applied', () => {
-    test('should render the component with filtered entities', async () => {
-      const wrappedEntitySearch = wrapEntitySearch()
+    let wrappedEntitySearch
+
+    beforeAll(async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
+      wrappedEntitySearch = wrapEntitySearch()
 
       wrappedEntitySearch
         .find('[name="search_term"]')
@@ -107,14 +109,20 @@ describe('EntitySearch', () => {
       await act(flushPromises)
 
       wrappedEntitySearch.update()
+    })
 
+    test('should render the component with filtered entities', () => {
       expect(wrappedEntitySearch).toMatchSnapshot()
     })
   })
 
   describe('when the company postcode filter is applied', () => {
-    test('should render the component with filtered entities', async () => {
-      const wrappedEntitySearch = wrapEntitySearch()
+    let wrappedEntitySearch
+
+    beforeAll(async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
+      wrappedEntitySearch = wrapEntitySearch()
 
       wrappedEntitySearch
         .find('[name="postal_code"]')
@@ -128,7 +136,9 @@ describe('EntitySearch', () => {
       await act(flushPromises)
 
       wrappedEntitySearch.update()
+    })
 
+    test('should render the component with filtered entities', () => {
       expect(wrappedEntitySearch).toMatchSnapshot()
     })
   })
@@ -139,6 +149,8 @@ describe('EntitySearch', () => {
     let preventDefaultMock
 
     beforeAll(async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
       onCannotFindLinkClick = jest.fn()
       preventDefaultMock = jest.fn()
 
@@ -161,15 +173,15 @@ describe('EntitySearch', () => {
         .simulate('click', { preventDefault: preventDefaultMock })
     })
 
-    test('should render the component', async () => {
+    test('should render the component', () => {
       expect(wrappedEntitySearch).toMatchSnapshot()
     })
 
-    test('should prevent the default link action', async () => {
+    test('should prevent the default link action', () => {
       expect(preventDefaultMock.mock.calls.length).toEqual(1)
     })
 
-    test('should call the onCannotFindLinkClick event', async () => {
+    test('should call the onCannotFindLinkClick event', () => {
       expect(onCannotFindLinkClick.mock.calls.length).toEqual(1)
     })
   })
@@ -180,6 +192,8 @@ describe('EntitySearch', () => {
     let preventDefaultMock
 
     beforeAll(async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
       onChangeClick = jest.fn()
       preventDefaultMock = jest.fn()
 
@@ -202,15 +216,15 @@ describe('EntitySearch', () => {
         .simulate('click', { preventDefault: preventDefaultMock })
     })
 
-    test('should render the component', async () => {
+    test('should render the component', () => {
       expect(wrappedEntitySearch).toMatchSnapshot()
     })
 
-    test('should prevent the default link action', async () => {
+    test('should prevent the default link action', () => {
       expect(preventDefaultMock.mock.calls.length).toEqual(1)
     })
 
-    test('should call the onChangeClick event', async () => {
+    test('should call the onChangeClick event', () => {
       expect(onChangeClick.mock.calls.length).toEqual(1)
     })
   })
@@ -220,6 +234,8 @@ describe('EntitySearch', () => {
     let onEntityClick
 
     beforeEach(async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
       onEntityClick = jest.fn()
 
       wrappedEntitySearch = wrapEntitySearch({
@@ -233,12 +249,12 @@ describe('EntitySearch', () => {
       wrappedEntitySearch.update()
     })
 
-    test('should render the component', async () => {
+    test('should render the component', () => {
       expect(wrappedEntitySearch).toMatchSnapshot()
     })
 
     describe('when the first entity is clicked', () => {
-      test('should not call the onEntityClick event', async () => {
+      test('should not call the onEntityClick event', () => {
         wrappedEntitySearch
           .find('StyledEntity')
           .at(0)
@@ -249,7 +265,7 @@ describe('EntitySearch', () => {
     })
 
     describe('when the second entity is clicked', () => {
-      test('should call the onEntityClick event', async () => {
+      test('should call the onEntityClick event', () => {
         wrappedEntitySearch
           .find('StyledEntity')
           .at(1)
@@ -262,37 +278,41 @@ describe('EntitySearch', () => {
   })
 
   describe('when the API returns a server error', () => {
-    beforeAll(() => {
-      mock.onPost(API_ENDPOINT, {}).reply(500)
-    })
+    let wrappedEntitySearch
 
-    test('should render the component with an error message', async () => {
-      const wrappedEntitySearch = wrapEntitySearch()
+    beforeAll(async () => {
+      setupErrorMocks(API_ENDPOINT)
+
+      wrappedEntitySearch = wrapEntitySearch()
 
       wrappedEntitySearch.find('Search').simulate('click')
 
       await act(flushPromises)
 
       wrappedEntitySearch.update()
+    })
 
+    test('should render the component with an error message', () => {
       expect(wrappedEntitySearch).toMatchSnapshot()
     })
   })
 
   describe('when the API returns 0 results', () => {
-    beforeAll(() => {
-      mock.onPost(API_ENDPOINT, {}).reply(200, fixtures.companySearchNoResults)
-    })
+    let wrappedEntitySearch
 
-    test('should render the component with a "no entities" message', async () => {
-      const wrappedEntitySearch = wrapEntitySearch()
+    beforeAll(async () => {
+      setupNoResultsMocks(API_ENDPOINT)
+
+      wrappedEntitySearch = wrapEntitySearch()
 
       wrappedEntitySearch.find('Search').simulate('click')
 
       await act(flushPromises)
 
       wrappedEntitySearch.update()
+    })
 
+    test('should render the component with a "no entities" message', () => {
       expect(wrappedEntitySearch).toMatchSnapshot()
     })
   })

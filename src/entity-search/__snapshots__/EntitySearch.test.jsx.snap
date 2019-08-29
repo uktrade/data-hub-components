@@ -9420,148 +9420,6 @@ exports[`EntitySearch when the company postcode filter is applied should render 
   clear: both;
 }
 
-.c19 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  margin-bottom: 20px;
-  display: block;
-}
-
-.c20 {
-  display: inline-block;
-  position: relative;
-  margin-bottom: 5px;
-  padding-left: 25px;
-  color: #005ea5;
-  cursor: pointer;
-}
-
-.c20:hover {
-  color: #2b8cc4;
-}
-
-.c20:focus {
-  outline: 4px solid #ffbf47;
-  outline-offset: -1px;
-  color: #0b0c0c;
-  background: #ffbf47;
-}
-
-.c20::-webkit-details-marker {
-  display: none;
-}
-
-.c20:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-color: transparent;
-  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
-  clip-path: polygon(0% 0%,100% 50%,0% 100%);
-  border-width: 7px 0 7px 12.124px;
-  border-left-color: inherit;
-}
-
-[open] > .c20:before {
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-color: transparent;
-  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
-  clip-path: polygon(0% 0%,50% 100%,100% 0%);
-  border-width: 12.124px 7px 0 7px;
-  border-top-color: inherit;
-}
-
-.c21 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c22 {
-  padding: 15px;
-  padding-left: 20px;
-  border-left: 5px solid #bfc1c3;
-}
-
-.c22 p {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.c22 > :last-child,
-.c22 p:last-child {
-  margin-bottom: 0;
-}
-
-.c15 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-.c23 {
-  margin: 0;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  margin-bottom: 15px;
-}
-
-.c23 > p {
-  margin: 0;
-}
-
-.c23 > p > code {
-  padding: 0.2em 0.4em;
-  margin: 0;
-  font-size: 85%;
-  background-color: rgba(27,31,35,0.05);
-  border-radius: 3px;
-}
-
-.c23 > pre {
-  padding: 16px;
-  overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: #f6f8fa;
-  border-radius: 3px;
-}
-
-.c23 > pre > code {
-  display: inline;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  overflow: visible;
-  line-height: inherit;
-  word-wrap: normal;
-}
-
 .c4 {
   box-sizing: border-box;
   padding-right: 15px;
@@ -9597,107 +9455,6 @@ exports[`EntitySearch when the company postcode filter is applied should render 
   clear: none;
   padding-bottom: 2px;
   margin-bottom: 0;
-}
-
-.c25 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.c25:link {
-  color: #005ea5;
-}
-
-.c25:visited {
-  color: #4c2c92;
-}
-
-.c25:hover {
-  color: #2b8cc4;
-}
-
-.c25:active {
-  color: #2b8cc4;
-}
-
-.c25:focus {
-  color: #0b0c0c;
-}
-
-.c25:focus {
-  outline: 3px solid #ffbf47;
-  outline-offset: 0;
-  background-color: #ffbf47;
-}
-
-.c18 > div {
-  margin: 5px 0 5px 4px;
-}
-
-.c24 {
-  list-style-type: disc;
-  padding-left: 30px;
-}
-
-.c16 {
-  list-style-type: none;
-  margin-top: 10px;
-  font-size: 16px;
-}
-
-.c16 > span:nth-child(1) {
-  color: #6f777b;
-  margin-right: 5px;
-}
-
-.c13 {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #bfc1c3;
-}
-
-.c14 {
-  margin: 0;
-  color: #005ea5;
-  font-size: 16px;
-}
-
-.c17 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  padding: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  clear: both;
-  border-left: 10px solid #bfc1c3;
-}
-
-.c17:first-child {
-  margin-top: 0;
-}
-
-.c17:only-child,
-.c17:last-child {
-  margin-bottom: 0;
-}
-
-.c17 {
-  margin-top: 10px;
-}
-
-.c11 {
-  margin-bottom: 20px;
-  padding-left: 0;
-}
-
-.c12 {
-  list-style-type: none;
 }
 
 .c0 {
@@ -9771,78 +9528,6 @@ exports[`EntitySearch when the company postcode filter is applied should render 
   }
 }
 
-@media print {
-  .c19 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c19 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c19 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c19 {
-    margin-bottom: 30px;
-  }
-}
-
-@media print {
-  .c15 {
-    color: #000;
-  }
-}
-
-@media print {
-  .c15 {
-    font-size: 18px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    font-size: 24px;
-    line-height: 1.25;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    margin-bottom: 20px;
-  }
-}
-
-@media print {
-  .c23 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c23 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c23 {
-    margin-bottom: 20px;
-  }
-}
-
 @media only screen and (min-width:641px) {
   .c4 {
     -webkit-box-flex: 1;
@@ -9902,55 +9587,6 @@ exports[`EntitySearch when the company postcode filter is applied should render 
   }
 }
 
-@media print {
-  .c25 {
-    font-family: sans-serif;
-  }
-}
-
-@media print {
-  .c25[href^="/"]::after,
-  .c25[href^="http://"]::after,
-  .c25[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c14 {
-    font-size: 19px;
-  }
-}
-
-@media print {
-  .c17 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c17 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c17 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c17 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-}
-
 <EntitySearchWithDataProvider
   cannotFind={
     Object {
@@ -10000,78 +9636,7 @@ exports[`EntitySearch when the company postcode filter is applied should render 
         "summary": "cannot find summary",
       }
     }
-    entities={
-      Array [
-        Object {
-          "canHandleClick": false,
-          "data": Object {
-            "datahub_company": Object {
-              "id": "0fb3379c-341c-4da4-b825-bf8d47b26baa",
-              "latest_interaction": Object {
-                "created_on": "2019-08-01T18:10:00",
-                "date": "2019-08-01",
-                "id": "ec4a46ef-6e50-4a5c-bba0-e311f0471312",
-                "subject": "Meeting between DIT and Joe Bloggs",
-              },
-            },
-            "dnb_company": Object {
-              "address_country": "GB",
-              "address_county": "",
-              "address_line_1": "123 Fake Street",
-              "address_line_2": "",
-              "address_postcode": "BN1 4SE",
-              "address_town": "Brighton",
-              "annual_sales": 1860000000,
-              "annual_sales_currency": "USD",
-              "domain": "example.co.uk",
-              "duns_number": "12345678",
-              "employee_number": 2000,
-              "global_ultimate_duns_number": "123456789",
-              "global_ultimate_primary_name": "Some parent company name",
-              "industry_codes": Array [
-                Object {
-                  "usSicV4": "1623",
-                  "usSicV4Description": "Water/sewer/utility construction",
-                },
-              ],
-              "is_annual_sales_estimated": null,
-              "is_employees_number_estimated": true,
-              "is_out_of_business": false,
-              "legal_status": "corporation",
-              "primary_name": "Some company name",
-              "registered_address_country": "GB",
-              "registered_address_county": "",
-              "registered_address_line_1": "",
-              "registered_address_line_2": "",
-              "registered_address_postcode": "BN1 4SE",
-              "registered_address_town": "Brighton",
-              "registration_numbers": Array [
-                Object {
-                  "registration_number": "1234567",
-                  "registration_type": "uk_companies_house_number",
-                },
-              ],
-              "trading_names": Array [
-                "Some trading name",
-              ],
-            },
-          },
-          "heading": "Some company name",
-          "meta": Object {
-            "Address": "123 Fake Street, Brighton, BN1 4SE",
-          },
-          "text": <React.Fragment>
-            This company is already on Data Hub. 
-            <a
-              href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
-            >
-              Go to the company page
-            </a>
-              to record activity.
-          </React.Fragment>,
-        },
-      ]
-    }
+    entities={null}
     entityFilters={
       Array [
         Array [
@@ -10090,7 +9655,7 @@ exports[`EntitySearch when the company postcode filter is applied should render 
         ],
       ]
     }
-    error={null}
+    error="Error occurred while searching entities."
     getEntities={[Function]}
     onEntityClick={[Function]}
     onEntitySearch={[Function]}
@@ -10912,1056 +10477,9 @@ exports[`EntitySearch when the company postcode filter is applied should render 
         </ForwardRef>
       </StyledComponent>
     </Search>
-    <EntityList
-      entities={
-        Array [
-          Object {
-            "canHandleClick": false,
-            "data": Object {
-              "datahub_company": Object {
-                "id": "0fb3379c-341c-4da4-b825-bf8d47b26baa",
-                "latest_interaction": Object {
-                  "created_on": "2019-08-01T18:10:00",
-                  "date": "2019-08-01",
-                  "id": "ec4a46ef-6e50-4a5c-bba0-e311f0471312",
-                  "subject": "Meeting between DIT and Joe Bloggs",
-                },
-              },
-              "dnb_company": Object {
-                "address_country": "GB",
-                "address_county": "",
-                "address_line_1": "123 Fake Street",
-                "address_line_2": "",
-                "address_postcode": "BN1 4SE",
-                "address_town": "Brighton",
-                "annual_sales": 1860000000,
-                "annual_sales_currency": "USD",
-                "domain": "example.co.uk",
-                "duns_number": "12345678",
-                "employee_number": 2000,
-                "global_ultimate_duns_number": "123456789",
-                "global_ultimate_primary_name": "Some parent company name",
-                "industry_codes": Array [
-                  Object {
-                    "usSicV4": "1623",
-                    "usSicV4Description": "Water/sewer/utility construction",
-                  },
-                ],
-                "is_annual_sales_estimated": null,
-                "is_employees_number_estimated": true,
-                "is_out_of_business": false,
-                "legal_status": "corporation",
-                "primary_name": "Some company name",
-                "registered_address_country": "GB",
-                "registered_address_county": "",
-                "registered_address_line_1": "",
-                "registered_address_line_2": "",
-                "registered_address_postcode": "BN1 4SE",
-                "registered_address_town": "Brighton",
-                "registration_numbers": Array [
-                  Object {
-                    "registration_number": "1234567",
-                    "registration_type": "uk_companies_house_number",
-                  },
-                ],
-                "trading_names": Array [
-                  "Some trading name",
-                ],
-              },
-            },
-            "heading": "Some company name",
-            "meta": Object {
-              "Address": "123 Fake Street, Brighton, BN1 4SE",
-            },
-            "text": <React.Fragment>
-              This company is already on Data Hub. 
-              <a
-                href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
-              >
-                Go to the company page
-              </a>
-                to record activity.
-            </React.Fragment>,
-          },
-        ]
-      }
-      onEntityClick={[Function]}
-    >
-      <styled.ol>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-krvtoX",
-                "isStatic": true,
-                "lastClassName": "c11",
-                "rules": Array [
-                  "
-  margin-bottom: ",
-                  "20px",
-                  ";
-  padding-left: 0;
-",
-                ],
-              },
-              "displayName": "styled.ol",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-krvtoX",
-              "target": "ol",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
-        >
-          <ol
-            className="c11"
-          >
-            <styled.li
-              key="14"
-            >
-              <StyledComponent
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
-                      "isStatic": true,
-                      "lastClassName": "c12",
-                      "rules": Array [
-                        "
-  list-style-type: none;
-",
-                      ],
-                    },
-                    "displayName": "styled.li",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
-                    "target": "li",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-              >
-                <li
-                  className="c12"
-                >
-                  <EntityListItem
-                    canHandleClick={false}
-                    data={
-                      Object {
-                        "datahub_company": Object {
-                          "id": "0fb3379c-341c-4da4-b825-bf8d47b26baa",
-                          "latest_interaction": Object {
-                            "created_on": "2019-08-01T18:10:00",
-                            "date": "2019-08-01",
-                            "id": "ec4a46ef-6e50-4a5c-bba0-e311f0471312",
-                            "subject": "Meeting between DIT and Joe Bloggs",
-                          },
-                        },
-                        "dnb_company": Object {
-                          "address_country": "GB",
-                          "address_county": "",
-                          "address_line_1": "123 Fake Street",
-                          "address_line_2": "",
-                          "address_postcode": "BN1 4SE",
-                          "address_town": "Brighton",
-                          "annual_sales": 1860000000,
-                          "annual_sales_currency": "USD",
-                          "domain": "example.co.uk",
-                          "duns_number": "12345678",
-                          "employee_number": 2000,
-                          "global_ultimate_duns_number": "123456789",
-                          "global_ultimate_primary_name": "Some parent company name",
-                          "industry_codes": Array [
-                            Object {
-                              "usSicV4": "1623",
-                              "usSicV4Description": "Water/sewer/utility construction",
-                            },
-                          ],
-                          "is_annual_sales_estimated": null,
-                          "is_employees_number_estimated": true,
-                          "is_out_of_business": false,
-                          "legal_status": "corporation",
-                          "primary_name": "Some company name",
-                          "registered_address_country": "GB",
-                          "registered_address_county": "",
-                          "registered_address_line_1": "",
-                          "registered_address_line_2": "",
-                          "registered_address_postcode": "BN1 4SE",
-                          "registered_address_town": "Brighton",
-                          "registration_numbers": Array [
-                            Object {
-                              "registration_number": "1234567",
-                              "registration_type": "uk_companies_house_number",
-                            },
-                          ],
-                          "trading_names": Array [
-                            "Some trading name",
-                          ],
-                        },
-                      }
-                    }
-                    heading="Some company name"
-                    meta={
-                      Object {
-                        "Address": "123 Fake Street, Brighton, BN1 4SE",
-                      }
-                    }
-                    onEntityClick={[Function]}
-                    text={
-                      <React.Fragment>
-                        This company is already on Data Hub. 
-                        <a
-                          href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
-                        >
-                          Go to the company page
-                        </a>
-                          to record activity.
-                      </React.Fragment>
-                    }
-                  >
-                    <StyledEntity
-                      canHandleClick={false}
-                      key="15"
-                      onClick={[Function]}
-                    >
-                      <StyledComponent
-                        canHandleClick={false}
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
-                              "isStatic": false,
-                              "lastClassName": "c13",
-                              "rules": Array [
-                                "
-  margin-bottom: ",
-                                "10px",
-                                ";
-  padding: ",
-                                "10px",
-                                ";
-  border: 1px solid ",
-                                "#bfc1c3",
-                                ";  
-  
-  ",
-                                [Function],
-                                "
-",
-                              ],
-                            },
-                            "displayName": "StyledEntity",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
-                            "target": "div",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
-                          }
-                        }
-                        forwardedRef={null}
-                        onClick={[Function]}
-                      >
-                        <div
-                          className="c13"
-                          onClick={[Function]}
-                        >
-                          <Styled(H3)>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
-                                    "isStatic": true,
-                                    "lastClassName": "c14",
-                                    "rules": Array [
-                                      "
-  margin: 0;
-  color: ",
-                                      "#005ea5",
-                                      ";
-  font-size: ",
-                                      "16px",
-                                      ";
-  ",
-                                      "@media only screen and (min-width: 641px)",
-                                      " {
-    font-size: ",
-                                      "19px",
-                                      ";
-  }
-",
-                                    ],
-                                  },
-                                  "displayName": "Styled(H3)",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
-                                  "target": [Function],
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <H3
-                                className="c14"
-                              >
-                                <Heading
-                                  as="h3"
-                                  className="c14"
-                                  size="MEDIUM"
-                                >
-                                  <styled.h1
-                                    as="h3"
-                                    className="c14"
-                                    size="MEDIUM"
-                                  >
-                                    <StyledComponent
-                                      as="h3"
-                                      className="c14"
-                                      forwardedComponent={
-                                        Object {
-                                          "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
-                                          "componentStyle": ComponentStyle {
-                                            "componentId": "sc-cMljjf",
-                                            "isStatic": false,
-                                            "lastClassName": "c15",
-                                            "rules": Array [
-                                              "color: #0b0c0c; @media print {
-  color: #000;
-}",
-                                              [Function],
-                                              "display: block; margin-top: 0;",
-                                              [Function],
-                                              [Function],
-                                            ],
-                                          },
-                                          "displayName": "styled.h1",
-                                          "foldedComponentIds": Array [],
-                                          "render": [Function],
-                                          "styledComponentId": "sc-cMljjf",
-                                          "target": "h1",
-                                          "toString": [Function],
-                                          "warnTooManyClasses": [Function],
-                                          "withComponent": [Function],
-                                        }
-                                      }
-                                      forwardedRef={null}
-                                      size="MEDIUM"
-                                    >
-                                      <h3
-                                        className="c14 c15"
-                                        size="MEDIUM"
-                                      >
-                                        Some company name
-                                      </h3>
-                                    </StyledComponent>
-                                  </styled.h1>
-                                </Heading>
-                              </H3>
-                            </StyledComponent>
-                          </Styled(H3)>
-                          <EntityListItemMetaList
-                            meta={
-                              Object {
-                                "Address": "123 Fake Street, Brighton, BN1 4SE",
-                              }
-                            }
-                          >
-                            <styled.div
-                              key="16"
-                            >
-                              <StyledComponent
-                                forwardedComponent={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
-                                      "isStatic": true,
-                                      "lastClassName": "c16",
-                                      "rules": Array [
-                                        "
-  list-style-type: none;
-  margin-top: ",
-                                        "10px",
-                                        ";
-  font-size: ",
-                                        "16px",
-                                        ";
-    
-  & > span:nth-child(1) {
-    color: ",
-                                        "#6f777b",
-                                        ";
-    margin-right: ",
-                                        "5px",
-                                        ";
-  }
-",
-                                      ],
-                                    },
-                                    "displayName": "styled.div",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
-                                    "target": "div",
-                                    "toString": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                forwardedRef={null}
-                              >
-                                <div
-                                  className="c16"
-                                >
-                                  <span>
-                                    Address
-                                    :
-                                  </span>
-                                  <span>
-                                    123 Fake Street, Brighton, BN1 4SE
-                                  </span>
-                                </div>
-                              </StyledComponent>
-                            </styled.div>
-                          </EntityListItemMetaList>
-                          <Styled(styled.div)>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cbkKFq",
-                                    "isStatic": false,
-                                    "lastClassName": "c17",
-                                    "rules": Array [
-                                      "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
-  font-size: 14px; line-height: 1.15;
-} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
-  font-size: 19px; line-height: 1.3157894736842106;
-}",
-                                      "color: #0b0c0c; @media print {
-  color: #000;
-}",
-                                      "padding: 15px;",
-                                      [Function],
-                                      "clear: both; border-left: 10px solid #bfc1c3; :first-child {
-  margin-top: 0;
-} :only-child,:last-child {
-  margin-bottom: 0;
-}",
-                                      "
-  & {
-    margin-top: ",
-                                      "10px",
-                                      ";
-  }
-",
-                                    ],
-                                  },
-                                  "displayName": "Styled(styled.div)",
-                                  "foldedComponentIds": Array [
-                                    "sc-kjoXOD",
-                                  ],
-                                  "propTypes": undefined,
-                                  "render": [Function],
-                                  "styledComponentId": "sc-cbkKFq",
-                                  "target": "div",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <div
-                                className="c17"
-                              >
-                                This company is already on Data Hub. 
-                                <a
-                                  href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
-                                >
-                                  Go to the company page
-                                </a>
-                                  to record activity.
-                              </div>
-                            </StyledComponent>
-                          </Styled(styled.div)>
-                        </div>
-                      </StyledComponent>
-                    </StyledEntity>
-                  </EntityListItem>
-                </li>
-              </StyledComponent>
-            </styled.li>
-          </ol>
-        </StyledComponent>
-      </styled.ol>
-    </EntityList>
-    <CannotFindDetails
-      actions={
-        Array [
-          "action 1",
-          "action 2",
-        ]
-      }
-      link={
-        Object {
-          "text": "still cannot find",
-          "url": "http://stillcannotfind.com",
-        }
-      }
-      summary="cannot find summary"
-    >
-      <Styled(Details)
-        summary="cannot find summary"
-      >
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-gojNiO",
-                "isStatic": true,
-                "lastClassName": "c18",
-                "rules": Array [
-                  "
-  & > div {
-    margin: ",
-                  "5px",
-                  " 0 ",
-                  "5px",
-                  " 4px;
-  }
-",
-                ],
-              },
-              "displayName": "Styled(Details)",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-gojNiO",
-              "target": [Function],
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
-          }
-          forwardedRef={null}
-          summary="cannot find summary"
-        >
-          <Details
-            className="c18"
-            open={false}
-            summary="cannot find summary"
-          >
-            <styled.details
-              className="c18"
-              open={false}
-            >
-              <StyledComponent
-                className="c18"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-kEYyzF",
-                      "isStatic": false,
-                      "lastClassName": "c19",
-                      "rules": Array [
-                        "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
-  font-size: 14px; line-height: 1.15;
-} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
-  font-size: 19px; line-height: 1.3157894736842106;
-}",
-                        "color: #0b0c0c; @media print {
-  color: #000;
-}",
-                        [Function],
-                        "display: block;",
-                      ],
-                    },
-                    "displayName": "styled.details",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-kEYyzF",
-                    "target": "details",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  }
-                }
-                forwardedRef={null}
-                open={false}
-              >
-                <details
-                  className="c18 c19"
-                  open={false}
-                >
-                  <styled.summary>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-kkGfuU",
-                            "isStatic": true,
-                            "lastClassName": "c20",
-                            "rules": Array [
-                              "display: inline-block; position: relative; margin-bottom: 5px; padding-left: 25px; color: #005ea5; cursor: pointer; :hover {
-  color: #2b8cc4;
-} :focus {
-  outline: 4px solid #ffbf47; outline-offset: -1px; color: #0b0c0c; background: #ffbf47;
-} ::-webkit-details-marker {
-  display: none;
-} :before {
-  content: \\"\\"; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; display: block; width: 0; height: 0; border-style: solid; border-color: transparent; clip-path: polygon(0% 0%, 100% 50%, 0% 100%); border-width: 7px 0 7px 12.124px; border-left-color: inherit; [open] > & {
-  display: block; width: 0; height: 0; border-style: solid; border-color: transparent; clip-path: polygon(0% 0%, 50% 100%, 100% 0%); border-width: 12.124px 7px 0 7px; border-top-color: inherit;
-}
-}",
-                            ],
-                          },
-                          "displayName": "styled.summary",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-kkGfuU",
-                          "target": "summary",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
-                      <summary
-                        className="c20"
-                      >
-                        <styled.span>
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-iAyFgw",
-                                  "isStatic": true,
-                                  "lastClassName": "c21",
-                                  "rules": Array [
-                                    "text-decoration: underline;",
-                                  ],
-                                },
-                                "displayName": "styled.span",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-iAyFgw",
-                                "target": "span",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                          >
-                            <span
-                              className="c21"
-                            >
-                              cannot find summary
-                            </span>
-                          </StyledComponent>
-                        </styled.span>
-                      </summary>
-                    </StyledComponent>
-                  </styled.summary>
-                  <styled.div>
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-hSdWYo",
-                            "isStatic": true,
-                            "lastClassName": "c22",
-                            "rules": Array [
-                              "padding: 15px; padding-left: 20px; border-left: 5px solid #bfc1c3; p {
-  margin-top: 0; margin-bottom: 20px;
-} > :last-child, p:last-child {
-  margin-bottom: 0;
-}",
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-hSdWYo",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                    >
-                      <div
-                        className="c22"
-                      >
-                        <div>
-                          <Paragraph
-                            linkRenderer={[Function]}
-                            supportingText={false}
-                          >
-                            <Styled(ReactMarkdown)
-                              allowedTypes={
-                                Array [
-                                  "paragraph",
-                                  "emphasis",
-                                  "strong",
-                                  "link",
-                                  "inlineCode",
-                                  "code",
-                                  "text",
-                                ]
-                              }
-                              escapeHtml={false}
-                              linkRenderer={[Function]}
-                              renderers={
-                                Object {
-                                  "link": [Function],
-                                }
-                              }
-                              skipHtml={true}
-                              source="Try refining your search by taking the following actions:"
-                              supportingText={false}
-                            >
-                              <StyledComponent
-                                allowedTypes={
-                                  Array [
-                                    "paragraph",
-                                    "emphasis",
-                                    "strong",
-                                    "link",
-                                    "inlineCode",
-                                    "code",
-                                    "text",
-                                  ]
-                                }
-                                escapeHtml={false}
-                                forwardedComponent={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [],
-                                    "componentStyle": ComponentStyle {
-                                      "componentId": "sc-jDwBTQ",
-                                      "isStatic": false,
-                                      "lastClassName": "c23",
-                                      "rules": Array [
-                                        "margin: 0; > p {
-  margin: 0;
-} > p > code {
-  padding: 0.2em 0.4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,0.05); border-radius: 3px;
-} > pre {
-  padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: #f6f8fa; border-radius: 3px;
-} > pre > code {
-  display: inline; padding: 0; margin: 0; border: 0; overflow: visible; line-height: inherit; word-wrap: normal;
-}",
-                                        [Function],
-                                        [Function],
-                                      ],
-                                    },
-                                    "displayName": "Styled(ReactMarkdown)",
-                                    "foldedComponentIds": Array [],
-                                    "render": [Function],
-                                    "renderers": Object {
-                                      "blockquote": "blockquote",
-                                      "break": "br",
-                                      "code": [Function],
-                                      "definition": [Function],
-                                      "delete": "del",
-                                      "emphasis": "em",
-                                      "heading": [Function],
-                                      "html": [Function],
-                                      "image": "img",
-                                      "imageReference": "img",
-                                      "inlineCode": [Function],
-                                      "link": "a",
-                                      "linkReference": "a",
-                                      "list": [Function],
-                                      "listItem": [Function],
-                                      "paragraph": "p",
-                                      "parsedHtml": [Function],
-                                      "root": [Function],
-                                      "strong": "strong",
-                                      "table": [Function],
-                                      "tableBody": [Function],
-                                      "tableCell": [Function],
-                                      "tableHead": [Function],
-                                      "tableRow": [Function],
-                                      "text": [Function],
-                                      "thematicBreak": "hr",
-                                      "virtualHtml": [Function],
-                                    },
-                                    "styledComponentId": "sc-jDwBTQ",
-                                    "target": [Function],
-                                    "toString": [Function],
-                                    "types": Array [
-                                      "break",
-                                      "paragraph",
-                                      "emphasis",
-                                      "strong",
-                                      "thematicBreak",
-                                      "blockquote",
-                                      "delete",
-                                      "link",
-                                      "image",
-                                      "linkReference",
-                                      "imageReference",
-                                      "table",
-                                      "tableHead",
-                                      "tableBody",
-                                      "tableRow",
-                                      "tableCell",
-                                      "root",
-                                      "text",
-                                      "list",
-                                      "listItem",
-                                      "definition",
-                                      "heading",
-                                      "inlineCode",
-                                      "code",
-                                      "html",
-                                      "virtualHtml",
-                                      "parsedHtml",
-                                    ],
-                                    "uriTransformer": [Function],
-                                    "warnTooManyClasses": [Function],
-                                    "withComponent": [Function],
-                                  }
-                                }
-                                forwardedRef={null}
-                                linkRenderer={[Function]}
-                                renderers={
-                                  Object {
-                                    "link": [Function],
-                                  }
-                                }
-                                skipHtml={true}
-                                source="Try refining your search by taking the following actions:"
-                                supportingText={false}
-                              >
-                                <ReactMarkdown
-                                  allowedTypes={
-                                    Array [
-                                      "paragraph",
-                                      "emphasis",
-                                      "strong",
-                                      "link",
-                                      "inlineCode",
-                                      "code",
-                                      "text",
-                                    ]
-                                  }
-                                  astPlugins={Array []}
-                                  className="c23"
-                                  escapeHtml={false}
-                                  linkRenderer={[Function]}
-                                  parserOptions={Object {}}
-                                  plugins={Array []}
-                                  rawSourcePos={false}
-                                  renderers={
-                                    Object {
-                                      "link": [Function],
-                                    }
-                                  }
-                                  skipHtml={true}
-                                  source="Try refining your search by taking the following actions:"
-                                  sourcePos={false}
-                                  supportingText={false}
-                                  transformLinkUri={[Function]}
-                                >
-                                  <Root
-                                    className="c23"
-                                    key="root-1-1"
-                                  >
-                                    <div
-                                      className="c23"
-                                    >
-                                      <p
-                                        key="paragraph-1-1"
-                                      >
-                                        <TextRenderer
-                                          key="text-1-1"
-                                          nodeKey="text-1-1"
-                                          value="Try refining your search by taking the following actions:"
-                                        >
-                                          Try refining your search by taking the following actions:
-                                        </TextRenderer>
-                                      </p>
-                                    </div>
-                                  </Root>
-                                </ReactMarkdown>
-                              </StyledComponent>
-                            </Styled(ReactMarkdown)>
-                          </Paragraph>
-                          <styled.ul>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-daURTG",
-                                    "isStatic": true,
-                                    "lastClassName": "c24",
-                                    "rules": Array [
-                                      "
-  list-style-type: disc;
-  padding-left: ",
-                                      "30px",
-                                      ";
-",
-                                    ],
-                                  },
-                                  "displayName": "styled.ul",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-daURTG",
-                                  "target": "ul",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <ul
-                                className="c24"
-                              >
-                                <li
-                                  key="17"
-                                >
-                                  action 1
-                                </li>
-                                <li
-                                  key="18"
-                                >
-                                  action 2
-                                </li>
-                              </ul>
-                            </StyledComponent>
-                          </styled.ul>
-                          <styled.a
-                            href="http://stillcannotfind.com"
-                            muted={false}
-                            noVisitedState={false}
-                            onClick={null}
-                            textColour={false}
-                          >
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cJSrbW",
-                                    "isStatic": false,
-                                    "lastClassName": "c25",
-                                    "rules": Array [
-                                      "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
-  font-family: sans-serif;
-}",
-                                      ":link {
-  color: #005ea5;
-} :visited {
-  color: #4c2c92;
-} :hover {
-  color: #2b8cc4;
-} :active {
-  color: #2b8cc4;
-} :focus {
-  color: #0b0c0c;
-}",
-                                      "&:focus {
-  outline: 3px solid #ffbf47; outline-offset: 0; background-color: #ffbf47;
-}",
-                                      "@media print {
-  &[href^=\\"/\\"], &[href^=\\"http://\\"], &[href^=\\"https://\\"] {
-  &::after {
-  content: \\" (\\" attr(href) \\")\\"; font-size: 90%; word-wrap: break-word;
-}
-}
-}",
-                                      [Function],
-                                      [Function],
-                                      [Function],
-                                    ],
-                                  },
-                                  "defaultProps": Object {
-                                    "muted": false,
-                                    "noVisitedState": false,
-                                    "textColour": false,
-                                  },
-                                  "displayName": "styled.a",
-                                  "foldedComponentIds": Array [],
-                                  "propTypes": undefined,
-                                  "render": [Function],
-                                  "styledComponentId": "sc-cJSrbW",
-                                  "target": "a",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                              href="http://stillcannotfind.com"
-                              muted={false}
-                              noVisitedState={false}
-                              onClick={null}
-                              textColour={false}
-                            >
-                              <a
-                                className="c25"
-                                href="http://stillcannotfind.com"
-                                muted={false}
-                                onClick={null}
-                              >
-                                still cannot find
-                              </a>
-                            </StyledComponent>
-                          </styled.a>
-                        </div>
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </details>
-              </StyledComponent>
-            </styled.details>
-          </Details>
-        </StyledComponent>
-      </Styled(Details)>
-    </CannotFindDetails>
+    <p>
+      Error occurred while searching entities.
+    </p>
   </EntitySearch>
 </EntitySearchWithDataProvider>
 `;
@@ -13830,7 +12348,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
             className="c11"
           >
             <styled.li
-              key="35"
+              key="30"
             >
               <StyledComponent
                 forwardedComponent={
@@ -13939,7 +12457,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                   >
                     <StyledEntity
                       canHandleClick={false}
-                      key="37"
+                      key="32"
                       onClick={[Function]}
                     >
                       <StyledComponent
@@ -14095,7 +12613,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                             }
                           >
                             <styled.div
-                              key="38"
+                              key="33"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -14224,7 +12742,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
               </StyledComponent>
             </styled.li>
             <styled.li
-              key="36"
+              key="31"
             >
               <StyledComponent
                 forwardedComponent={
@@ -14313,7 +12831,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                   >
                     <StyledEntity
                       canHandleClick={true}
-                      key="39"
+                      key="34"
                       onClick={[Function]}
                     >
                       <StyledComponent
@@ -14469,7 +12987,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                             }
                           >
                             <styled.div
-                              key="40"
+                              key="35"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -14979,12 +13497,12 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                 className="c25"
                               >
                                 <li
-                                  key="41"
+                                  key="36"
                                 >
                                   action 1
                                 </li>
                                 <li
-                                  key="42"
+                                  key="37"
                                 >
                                   action 2
                                 </li>
@@ -16969,7 +15487,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
             className="c11"
           >
             <styled.li
-              key="19"
+              key="14"
             >
               <StyledComponent
                 forwardedComponent={
@@ -17078,7 +15596,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                   >
                     <StyledEntity
                       canHandleClick={false}
-                      key="21"
+                      key="16"
                       onClick={[Function]}
                     >
                       <StyledComponent
@@ -17234,7 +15752,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                             }
                           >
                             <styled.div
-                              key="22"
+                              key="17"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -17363,7 +15881,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
               </StyledComponent>
             </styled.li>
             <styled.li
-              key="20"
+              key="15"
             >
               <StyledComponent
                 forwardedComponent={
@@ -17452,7 +15970,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                   >
                     <StyledEntity
                       canHandleClick={true}
-                      key="23"
+                      key="18"
                       onClick={[Function]}
                     >
                       <StyledComponent
@@ -17608,7 +16126,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                             }
                           >
                             <styled.div
-                              key="24"
+                              key="19"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -18128,12 +16646,12 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                 className="c25"
                               >
                                 <li
-                                  key="25"
+                                  key="20"
                                 >
                                   action 1
                                 </li>
                                 <li
-                                  key="26"
+                                  key="21"
                                 >
                                   action 2
                                 </li>
@@ -20284,7 +18802,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
             className="c12"
           >
             <styled.li
-              key="27"
+              key="22"
             >
               <StyledComponent
                 forwardedComponent={
@@ -20393,7 +18911,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                   >
                     <StyledEntity
                       canHandleClick={false}
-                      key="29"
+                      key="24"
                       onClick={[Function]}
                     >
                       <StyledComponent
@@ -20549,7 +19067,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                             }
                           >
                             <styled.div
-                              key="30"
+                              key="25"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -20678,7 +19196,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
               </StyledComponent>
             </styled.li>
             <styled.li
-              key="28"
+              key="23"
             >
               <StyledComponent
                 forwardedComponent={
@@ -20767,7 +19285,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                   >
                     <StyledEntity
                       canHandleClick={true}
-                      key="31"
+                      key="26"
                       onClick={[Function]}
                     >
                       <StyledComponent
@@ -20923,7 +19441,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                             }
                           >
                             <styled.div
-                              key="32"
+                              key="27"
                             >
                               <StyledComponent
                                 forwardedComponent={
@@ -21433,12 +19951,12 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                 className="c26"
                               >
                                 <li
-                                  key="33"
+                                  key="28"
                                 >
                                   action 1
                                 </li>
                                 <li
-                                  key="34"
+                                  key="29"
                                 >
                                   action 2
                                 </li>
