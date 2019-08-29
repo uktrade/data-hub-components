@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import Form from '../../core/Form'
+import Form from '../Form'
 import FieldInput from '../FieldInput'
 import FieldError from '../FieldError'
 
@@ -49,7 +49,7 @@ describe('FieldInput', () => {
       )
       const testField1 = wrapper.find('#testField')
       testField1.simulate('change', { target: { value: 'testValue' } })
-      testField1.simulate('blur')
+      wrapper.simulate('submit')
     })
 
     test('should render with an error', () => {

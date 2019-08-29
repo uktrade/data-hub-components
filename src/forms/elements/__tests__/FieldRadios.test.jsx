@@ -2,7 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import Radio from '@govuk-react/radio'
 
-import Form from '../../core/Form'
+import Form from '../Form'
 import FieldRadios from '../FieldRadios'
 
 describe('FieldRadios', () => {

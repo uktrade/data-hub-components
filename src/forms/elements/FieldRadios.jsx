@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Radio from '@govuk-react/radio'
 import MultiChoice from '@govuk-react/multi-choice'
 
-import useField from '../core/useField'
+import useField from '../hooks/useField'
 
 const FieldRadios = ({ name, validate, label, options, ...rest }) => {
   const { value, error, touched, onChange, onBlur } = useField({ name, label, validate })

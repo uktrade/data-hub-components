@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import useFormContext from '../core/useFormContext'
+import useFormContext from '../hooks/useFormContext'
 
 const FieldError = ({ name }) => {
   const { getFieldState } = useFormContext()

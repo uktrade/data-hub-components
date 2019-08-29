@@ -204,6 +204,31 @@ describe('useForm', () => {
     })
   })
 
+  describe('when validateForm() is called with provided fields', () => {
+    const { result } = renderHook(() => useForm())
+
+    beforeAll(async () => {
+      await act(async () => {
+        result.current.registerField({ name: 'testField1', validate: () => 'testError1' })
+        result.current.registerField({ name: 'testField2', validate: () => 'testError2' })
+        result.current.registerField({ name: 'testField3', validate: () => 'testError3' })
+
+        // Wait for fields to register.
+        await Promise.resolve()
+
+        result.current.validateForm()
+      })
+    })
+
+    test('should validate all the fields', () => {
+      expect(result.current.errors).toEqual({
+        testField1: 'testError1',
+        testField2: 'testError2',
+        testField3: 'testError3',
+      })
+    })
+  })
+
   describe('when validateForm() is called on nonexistent field', () => {
     const { result } = renderHook(() => useForm())
     const callback = () => result.current.validateForm(['madeUpField'])
@@ -401,6 +426,23 @@ describe('useForm', () => {
 
     test('should update the current step', () => {
       expect(result.current.currentStep).toEqual(2)
+    })
+  })
+
+  describe('when goForward() is called without onSubmit() callback', () => {
+    const { result } = renderHook(() => useForm())
+    let error
+
+    act(() => {
+      try {
+        result.current.goForward()
+      } catch (e) {
+        error = e
+      }
+    })
+
+    test('should not throw an error', () => {
+      expect(error).toBeUndefined()
     })
   })
 })
