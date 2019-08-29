@@ -1,28 +1,403 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActivityFeedCard when a New OMIS order is added should render an activity card 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c9 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c10 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c10:hover {
+  color: #2b8cc4;
+}
+
+.c10:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c10::-webkit-details-marker {
+  display: none;
+}
+
+.c10:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c10:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c11 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c12 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c12 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c12 > :last-child,
+.c12 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c6:link {
+  color: #005ea5;
+}
+
+.c6:visited {
+  color: #4c2c92;
+}
+
+.c6:hover {
+  color: #2b8cc4;
+}
+
+.c6:active {
+  color: #2b8cc4;
+}
+
+.c6:focus {
+  color: #0b0c0c;
+}
+
+.c6:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c15 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c15:last-child {
+  padding-right: 0;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c14 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #005ea5;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c5 > a:link,
+.c5 a:visited,
+.c5 a:hover,
+.c5 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c13 {
+  margin-bottom: 10px;
+}
+
+.c13 > tbody > tr > th,
+.c13 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c18 {
+  list-style-type: none;
+}
+
+.c17 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c9 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c9 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c6 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c6[href^="/"]::after,
+  .c6[href^="http://"]::after,
+  .c6[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c14 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c14 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c5 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
       <h3
-        className="sc-lkqHmb iDVUrg sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         New Order (OMIS) added
       </h3>
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c5 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c6"
           href="https://www.datahub.dev.uktrade.io/omis/504b7a34-c083-4e7a-998b-61cbe7b6b269"
           muted={false}
         >
@@ -31,38 +406,38 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c7"
     >
       20 Jul 2017
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c8 c9"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c10"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c11"
       >
         View key details and people for this order
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c12"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c13 c14"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -73,7 +448,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               Country
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -84,10 +459,10 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -98,7 +473,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               UK region
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -109,10 +484,10 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -123,7 +498,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               Added by
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -131,17 +506,17 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c17"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   <span>
                     Test CMU 1
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c6"
                     href="mailto:cmuuser1test@mobile.ukti.gov.uk"
                     muted={false}
                   >
@@ -153,10 +528,10 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -167,7 +542,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -175,13 +550,13 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c17"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c6"
                     href="https://www.datahub.dev.uktrade.io/contacts/ec1be329-ae82-47a9-9d65-c289f91c39ed/details"
                     muted={false}
                   >
@@ -200,7 +575,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c6"
         href="https://www.datahub.dev.uktrade.io/omis/504b7a34-c083-4e7a-998b-61cbe7b6b269"
         muted={false}
       >
@@ -212,28 +587,403 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
 `;
 
 exports[`ActivityFeedCard when an investment project is CTI should render the CTI investment project activity card 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c9 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c10 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c10:hover {
+  color: #2b8cc4;
+}
+
+.c10:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c10::-webkit-details-marker {
+  display: none;
+}
+
+.c10:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c10:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c11 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c12 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c12 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c12 > :last-child,
+.c12 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c6:link {
+  color: #005ea5;
+}
+
+.c6:visited {
+  color: #4c2c92;
+}
+
+.c6:hover {
+  color: #2b8cc4;
+}
+
+.c6:active {
+  color: #2b8cc4;
+}
+
+.c6:focus {
+  color: #0b0c0c;
+}
+
+.c6:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c15 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c15:last-child {
+  padding-right: 0;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c14 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #005ea5;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c5 > a:link,
+.c5 a:visited,
+.c5 a:hover,
+.c5 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c13 {
+  margin-bottom: 10px;
+}
+
+.c13 > tbody > tr > th,
+.c13 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c18 {
+  list-style-type: none;
+}
+
+.c17 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c9 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c9 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c6 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c6[href^="/"]::after,
+  .c6[href^="http://"]::after,
+  .c6[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c14 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c14 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c5 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
       <h3
-        className="sc-lkqHmb iDVUrg sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         New investment project added - Commitment to invest
       </h3>
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c5 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c6"
           href="https://www.datahub.dev.uktrade.io/investments/projects/8f2662e9-0691-435f-8edd-7fb9df9d8936"
           muted={false}
         >
@@ -242,38 +992,38 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c7"
     >
       23 May 2017
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c8 c9"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c10"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c11"
       >
         Key details and people for this project
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c12"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c13 c14"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -284,7 +1034,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
               Investment Type
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -295,10 +1045,10 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -309,7 +1059,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
               Estimated land date
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -320,10 +1070,10 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -334,7 +1084,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -342,13 +1092,13 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c17"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c6"
                     href="https://www.datahub.dev.uktrade.io/contacts/82e24a82-0688-424d-911f-2666d3ddcf9b/details"
                     muted={false}
                   >
@@ -367,7 +1117,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c6"
         href="https://www.datahub.dev.uktrade.io/investments/projects/8f2662e9-0691-435f-8edd-7fb9df9d8936"
         muted={false}
       >
@@ -379,28 +1129,403 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
 `;
 
 exports[`ActivityFeedCard when an investment project is FDI should render the FDI investment project activity card 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c9 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c10 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c10:hover {
+  color: #2b8cc4;
+}
+
+.c10:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c10::-webkit-details-marker {
+  display: none;
+}
+
+.c10:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c10:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c11 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c12 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c12 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c12 > :last-child,
+.c12 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c6:link {
+  color: #005ea5;
+}
+
+.c6:visited {
+  color: #4c2c92;
+}
+
+.c6:hover {
+  color: #2b8cc4;
+}
+
+.c6:active {
+  color: #2b8cc4;
+}
+
+.c6:focus {
+  color: #0b0c0c;
+}
+
+.c6:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c15 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c15:last-child {
+  padding-right: 0;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c14 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #005ea5;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c5 > a:link,
+.c5 a:visited,
+.c5 a:hover,
+.c5 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c13 {
+  margin-bottom: 10px;
+}
+
+.c13 > tbody > tr > th,
+.c13 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c18 {
+  list-style-type: none;
+}
+
+.c17 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c9 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c9 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c6 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c6[href^="/"]::after,
+  .c6[href^="http://"]::after,
+  .c6[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c14 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c14 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c5 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
       <h3
-        className="sc-lkqHmb iDVUrg sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         New investment project added - FDI
       </h3>
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c5 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c6"
           href="https://www.datahub.dev.uktrade.io/investments/projects/3520b973-0e77-46cf-be75-3585f2f6691e"
           muted={false}
         >
@@ -409,38 +1534,38 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c7"
     >
       05 Mar 2017
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c8 c9"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c10"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c11"
       >
         Key details and people for this project
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c12"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c13 c14"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -451,7 +1576,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               Investment Type
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -462,10 +1587,10 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -476,7 +1601,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               Estimated land date
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -487,10 +1612,10 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -501,7 +1626,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -509,13 +1634,13 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c17"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c6"
                     href="https://www.datahub.dev.uktrade.io/contacts/952232d2-1d25-4c3a-bcac-2f3a30a94da9"
                     muted={false}
                   >
@@ -529,10 +1654,10 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
                   </span>
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c6"
                     href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
                     muted={false}
                   >
@@ -546,10 +1671,10 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
                   </span>
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c6"
                     href="https://www.datahub.dev.uktrade.io/contacts/28f75a93-3c27-e611-9bdc-e4115bead28a/details"
                     muted={false}
                   >
@@ -566,10 +1691,10 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -580,7 +1705,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               Total Investment
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -591,10 +1716,10 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -605,7 +1730,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               Capital expenditure value
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -616,10 +1741,10 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -630,7 +1755,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               Gross value added (GVA)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -641,10 +1766,10 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -655,7 +1780,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
               Number of new jobs
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -668,7 +1793,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c6"
         href="https://www.datahub.dev.uktrade.io/investments/projects/3520b973-0e77-46cf-be75-3585f2f6691e"
         muted={false}
       >
@@ -680,28 +1805,403 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
 `;
 
 exports[`ActivityFeedCard when an investment project is Non-FDI should render the Non-FDI investment project activity card 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c9 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c10 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c10:hover {
+  color: #2b8cc4;
+}
+
+.c10:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c10::-webkit-details-marker {
+  display: none;
+}
+
+.c10:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c10:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c11 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c12 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c12 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c12 > :last-child,
+.c12 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c6:link {
+  color: #005ea5;
+}
+
+.c6:visited {
+  color: #4c2c92;
+}
+
+.c6:hover {
+  color: #2b8cc4;
+}
+
+.c6:active {
+  color: #2b8cc4;
+}
+
+.c6:focus {
+  color: #0b0c0c;
+}
+
+.c6:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c15 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c15:last-child {
+  padding-right: 0;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c14 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #005ea5;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c5 > a:link,
+.c5 a:visited,
+.c5 a:hover,
+.c5 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c13 {
+  margin-bottom: 10px;
+}
+
+.c13 > tbody > tr > th,
+.c13 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c18 {
+  list-style-type: none;
+}
+
+.c17 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c9 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c9 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c6 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c6[href^="/"]::after,
+  .c6[href^="http://"]::after,
+  .c6[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c14 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c14 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c5 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
       <h3
-        className="sc-lkqHmb iDVUrg sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         New investment project added - Non-FDI
       </h3>
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c5 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c6"
           href="https://www.datahub.dev.uktrade.io/investments/projects/ff4005e5-f769-43cb-a46f-a483ec20eda7"
           muted={false}
         >
@@ -710,38 +2210,38 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c7"
     >
       03 Oct 2017
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c8 c9"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c10"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c11"
       >
         Key details and people for this project
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c12"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c13 c14"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -752,7 +2252,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
               Investment Type
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -763,10 +2263,10 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -777,7 +2277,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
               Added by
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -785,17 +2285,17 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c17"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   <span>
                     Test CMU 1
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c6"
                     href="mailto:cmuuser1test@mobile.ukti.gov.uk"
                     muted={false}
                   >
@@ -807,10 +2307,10 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -821,7 +2321,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
               Estimated land date
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -832,10 +2332,10 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -846,7 +2346,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -854,13 +2354,13 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c17"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c6"
                     href="https://www.datahub.dev.uktrade.io/contacts/889dc0e6-a60c-4368-822c-e6b644bfcbf7/details"
                     muted={false}
                   >
@@ -879,7 +2379,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c6"
         href="https://www.datahub.dev.uktrade.io/investments/projects/ff4005e5-f769-43cb-a46f-a483ec20eda7"
         muted={false}
       >
@@ -891,22 +2391,403 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
 `;
 
 exports[`ActivityFeedCard when the interaction does not have a service should render interaction activity without services 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c11 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c11:hover {
+  color: #2b8cc4;
+}
+
+.c11:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c11::-webkit-details-marker {
+  display: none;
+}
+
+.c11:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c11:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c12 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c13 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c13 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c13 > :last-child,
+.c13 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c5 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c5:link {
+  color: #005ea5;
+}
+
+.c5:visited {
+  color: #4c2c92;
+}
+
+.c5:hover {
+  color: #2b8cc4;
+}
+
+.c5:active {
+  color: #2b8cc4;
+}
+
+.c5:focus {
+  color: #0b0c0c;
+}
+
+.c5:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c9 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c9 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c3 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c3 > a:link,
+.c3 a:visited,
+.c3 a:hover,
+.c3 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c7 {
+  padding: 10px 0 10px;
+  display: inline;
+  margin-left: 5px;
+}
+
+.c8 {
+  border: 2px solid #006435;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+.c14 {
+  margin-bottom: 10px;
+}
+
+.c14 > tbody > tr > th,
+.c14 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c18 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    display: block;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c5"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -915,14 +2796,14 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c6"
     >
       06 Jun 2019
       <div
-        className="sc-dUjcNx djmhbf"
+        className="c7"
       >
         <span
-          className="sc-gHboQg jOpCeb"
+          className="c8"
         >
           Interaction
         </span>
@@ -930,32 +2811,32 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c9 c10"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c11"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c12"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c13"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c14 c15"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -966,7 +2847,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -974,15 +2855,15 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               />
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -993,7 +2874,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
               Adviser(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1001,14 +2882,14 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               />
             </td>
           </tr>
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c5"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -1020,22 +2901,407 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
 `;
 
 exports[`ActivityFeedCard when the interaction is a draft and archived should render interaction activity with "Cancelled interaction" badge 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c11 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c11:hover {
+  color: #2b8cc4;
+}
+
+.c11:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c11::-webkit-details-marker {
+  display: none;
+}
+
+.c11:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c11:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c12 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c13 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c13 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c13 > :last-child,
+.c13 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c5 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c5:link {
+  color: #005ea5;
+}
+
+.c5:visited {
+  color: #4c2c92;
+}
+
+.c5:hover {
+  color: #2b8cc4;
+}
+
+.c5:active {
+  color: #2b8cc4;
+}
+
+.c5:focus {
+  color: #0b0c0c;
+}
+
+.c5:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c9 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c9 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c3 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c3 > a:link,
+.c3 a:visited,
+.c3 a:hover,
+.c3 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c7 {
+  padding: 10px 0 10px;
+  display: inline;
+  margin-left: 5px;
+}
+
+.c8 {
+  border: 2px solid #b10e1e;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+.c14 {
+  margin-bottom: 10px;
+}
+
+.c14 > tbody > tr > th,
+.c14 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c19 {
+  list-style-type: none;
+}
+
+.c18 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    display: block;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c5"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -1044,14 +3310,14 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c6"
     >
       06 Jun 2019
       <div
-        className="sc-dUjcNx djmhbf"
+        className="c7"
       >
         <span
-          className="sc-gHboQg ibhWcf"
+          className="c8"
         >
           Cancelled interaction
         </span>
@@ -1059,32 +3325,32 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c9 c10"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c11"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c12"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c13"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c14 c15"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1095,7 +3361,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1103,13 +3369,13 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
                     muted={false}
                   >
@@ -1118,10 +3384,10 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                    
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
                     muted={false}
                   >
@@ -1130,10 +3396,10 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                    
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
                     muted={false}
                   >
@@ -1150,10 +3416,10 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1164,7 +3430,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
               Adviser(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1172,17 +3438,17 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     Mario Bros
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -1192,14 +3458,14 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     John Hammond
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:john.hammond@dit.com"
                     muted={false}
                   >
@@ -1209,14 +3475,14 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     Luke Moon
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:luke.moon@dit.com"
                     muted={false}
                   >
@@ -1229,10 +3495,10 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1243,7 +3509,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
               Services
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1256,7 +3522,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c5"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -1268,22 +3534,407 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
 `;
 
 exports[`ActivityFeedCard when the interaction is a draft and upcoming should render interaction activity with "Upcoming interaction" badge 1`] = `
+.c0 {
+  border: 1px dashed #bfc1c3;
+  padding: 15px;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c11 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c11:hover {
+  color: #2b8cc4;
+}
+
+.c11:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c11::-webkit-details-marker {
+  display: none;
+}
+
+.c11:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c11:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c12 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c13 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c13 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c13 > :last-child,
+.c13 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c5 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c5:link {
+  color: #005ea5;
+}
+
+.c5:visited {
+  color: #4c2c92;
+}
+
+.c5:hover {
+  color: #2b8cc4;
+}
+
+.c5:active {
+  color: #2b8cc4;
+}
+
+.c5:focus {
+  color: #0b0c0c;
+}
+
+.c5:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c9 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c9 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c3 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c3 > a:link,
+.c3 a:visited,
+.c3 a:hover,
+.c3 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c7 {
+  padding: 10px 0 10px;
+  display: inline;
+  margin-left: 5px;
+}
+
+.c8 {
+  border: 2px solid #005ea5;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+.c14 {
+  margin-bottom: 10px;
+}
+
+.c14 > tbody > tr > th,
+.c14 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c19 {
+  list-style-type: none;
+}
+
+.c18 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    display: block;
+  }
+}
+
 <div
-  className="sc-bdVaJa jdEOnP"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c5"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -1292,14 +3943,14 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c6"
     >
       06 Jun 2019
       <div
-        className="sc-dUjcNx djmhbf"
+        className="c7"
       >
         <span
-          className="sc-gHboQg fxLsyn"
+          className="c8"
         >
           Upcoming interaction
         </span>
@@ -1307,32 +3958,32 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c9 c10"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c11"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c12"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c13"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c14 c15"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1343,7 +3994,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1351,13 +4002,13 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
                     muted={false}
                   >
@@ -1366,10 +4017,10 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                    
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
                     muted={false}
                   >
@@ -1378,10 +4029,10 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                    
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
                     muted={false}
                   >
@@ -1398,10 +4049,10 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1412,7 +4063,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
               Adviser(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1420,17 +4071,17 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     Mario Bros
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -1440,14 +4091,14 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     John Hammond
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:john.hammond@dit.com"
                     muted={false}
                   >
@@ -1457,14 +4108,14 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     Luke Moon
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:luke.moon@dit.com"
                     muted={false}
                   >
@@ -1477,10 +4128,10 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1491,7 +4142,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
               Services
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1504,7 +4155,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c5"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -1516,22 +4167,407 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
 `;
 
 exports[`ActivityFeedCard when the interaction is a draft in the past should render interaction activity with "Incomplete interaction" badge 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c11 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c11:hover {
+  color: #2b8cc4;
+}
+
+.c11:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c11::-webkit-details-marker {
+  display: none;
+}
+
+.c11:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c11:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c12 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c13 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c13 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c13 > :last-child,
+.c13 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c5 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c5:link {
+  color: #005ea5;
+}
+
+.c5:visited {
+  color: #4c2c92;
+}
+
+.c5:hover {
+  color: #2b8cc4;
+}
+
+.c5:active {
+  color: #2b8cc4;
+}
+
+.c5:focus {
+  color: #0b0c0c;
+}
+
+.c5:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c9 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c9 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c3 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c3 > a:link,
+.c3 a:visited,
+.c3 a:hover,
+.c3 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c7 {
+  padding: 10px 0 10px;
+  display: inline;
+  margin-left: 5px;
+}
+
+.c8 {
+  border: 2px solid #005ea5;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+.c14 {
+  margin-bottom: 10px;
+}
+
+.c14 > tbody > tr > th,
+.c14 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c19 {
+  list-style-type: none;
+}
+
+.c18 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    display: block;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c5"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -1540,14 +4576,14 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c6"
     >
       05 Jun 2018
       <div
-        className="sc-dUjcNx djmhbf"
+        className="c7"
       >
         <span
-          className="sc-gHboQg fxLsyn"
+          className="c8"
         >
           Incomplete interaction
         </span>
@@ -1555,32 +4591,32 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c9 c10"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c11"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c12"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c13"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c14 c15"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1591,7 +4627,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1599,13 +4635,13 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
                     muted={false}
                   >
@@ -1614,10 +4650,10 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                    
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
                     muted={false}
                   >
@@ -1626,10 +4662,10 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                    
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
                     muted={false}
                   >
@@ -1646,10 +4682,10 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1660,7 +4696,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
               Adviser(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1668,17 +4704,17 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     Mario Bros
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -1688,14 +4724,14 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     John Hammond
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:john.hammond@dit.com"
                     muted={false}
                   >
@@ -1705,14 +4741,14 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     Luke Moon
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:luke.moon@dit.com"
                     muted={false}
                   >
@@ -1725,10 +4761,10 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1739,7 +4775,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
               Services
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1752,7 +4788,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c5"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -1764,22 +4800,407 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
 `;
 
 exports[`ActivityFeedCard when the interaction is complete should render interaction activity with "Completed interaction" badge 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c11 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c11:hover {
+  color: #2b8cc4;
+}
+
+.c11:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c11::-webkit-details-marker {
+  display: none;
+}
+
+.c11:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c11:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c12 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c13 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c13 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c13 > :last-child,
+.c13 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c5 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c5:link {
+  color: #005ea5;
+}
+
+.c5:visited {
+  color: #4c2c92;
+}
+
+.c5:hover {
+  color: #2b8cc4;
+}
+
+.c5:active {
+  color: #2b8cc4;
+}
+
+.c5:focus {
+  color: #0b0c0c;
+}
+
+.c5:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c9 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c9 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c3 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c3 > a:link,
+.c3 a:visited,
+.c3 a:hover,
+.c3 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c7 {
+  padding: 10px 0 10px;
+  display: inline;
+  margin-left: 5px;
+}
+
+.c8 {
+  border: 2px solid #006435;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+.c14 {
+  margin-bottom: 10px;
+}
+
+.c14 > tbody > tr > th,
+.c14 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c19 {
+  list-style-type: none;
+}
+
+.c18 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    display: block;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c5"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -1788,14 +5209,14 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c6"
     >
       06 Jun 2019
       <div
-        className="sc-dUjcNx djmhbf"
+        className="c7"
       >
         <span
-          className="sc-gHboQg jOpCeb"
+          className="c8"
         >
           Interaction
         </span>
@@ -1803,32 +5224,32 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c9 c10"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c11"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c12"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c13"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c14 c15"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1839,7 +5260,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1847,13 +5268,13 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
                     muted={false}
                   >
@@ -1862,10 +5283,10 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                    
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
                     muted={false}
                   >
@@ -1874,10 +5295,10 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                    
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
                     muted={false}
                   >
@@ -1894,10 +5315,10 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1908,7 +5329,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
               Adviser(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1916,17 +5337,17 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     Mario Bros
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -1936,14 +5357,14 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     John Hammond
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:john.hammond@dit.com"
                     muted={false}
                   >
@@ -1953,14 +5374,14 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     Luke Moon
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:luke.moon@dit.com"
                     muted={false}
                   >
@@ -1973,10 +5394,10 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -1987,7 +5408,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
               Services
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2000,7 +5421,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c5"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -2012,76 +5433,461 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
 `;
 
 exports[`ActivityFeedCard when there is a Companies House Accounts record should render an activity card 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c11 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c12 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c12:hover {
+  color: #2b8cc4;
+}
+
+.c12:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c12::-webkit-details-marker {
+  display: none;
+}
+
+.c12:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c12:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c13 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c14 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c14 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c14 > :last-child,
+.c14 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c8 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c8:link {
+  color: #005ea5;
+}
+
+.c8:visited {
+  color: #4c2c92;
+}
+
+.c8:hover {
+  color: #2b8cc4;
+}
+
+.c8:active {
+  color: #2b8cc4;
+}
+
+.c8:focus {
+  color: #0b0c0c;
+}
+
+.c8:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c18 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c18:last-child {
+  padding-right: 0;
+}
+
+.c16 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c10 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c10 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c10 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #6f777b;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c7 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c7 > a:link,
+.c7 a:visited,
+.c7 a:hover,
+.c7 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #393939;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 19px;
+  margin-left: 5px;
+  color: #6f777b;
+}
+
+.c9 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c15 {
+  margin-bottom: 10px;
+}
+
+.c15 > tbody > tr > th,
+.c15 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+@media print {
+  .c11 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c11 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c11 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c11 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c8 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c8[href^="/"]::after,
+  .c8[href^="http://"]::after,
+  .c8[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c16 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c16 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c16 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c16 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
       <h3
-        className="sc-lkqHmb klrkLJ sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         Companies House
       </h3>
        
       <span
-        className="sc-fYiAbW NHSmd"
+        className="c5"
       >
         Accounts records show that
       </span>
       <h3
-        className="sc-krvtoX fpSCCl sc-jAaTju jwklkP"
+        className="c6 c4"
         size="MEDIUM"
       >
         Company officially incorporated in Companies House.
       </h3>
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c7 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c8"
           muted={false}
         />
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c9"
     >
       13 Dec 2020
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c12"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c13"
       >
         View key details for this account
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c14"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c15 c16"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2092,7 +5898,7 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
               Balance sheet date
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -2103,10 +5909,10 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2117,7 +5923,7 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
               Net assets liabilities including pension asset liability
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -2128,10 +5934,10 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2142,7 +5948,7 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
               Period start
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -2153,10 +5959,10 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2167,7 +5973,7 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
               Period end
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -2178,10 +5984,10 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2192,7 +5998,7 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
               Shareholder funds
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -2205,7 +6011,7 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c8"
         muted={false}
       >
         Go to the Companies House accounts page
@@ -2216,67 +6022,393 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
 `;
 
 exports[`ActivityFeedCard when there is a Companies House Company incorporation record should render an activity card 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c9 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c10 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c10:hover {
+  color: #2b8cc4;
+}
+
+.c10:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c10::-webkit-details-marker {
+  display: none;
+}
+
+.c10:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c10:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c11 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c12 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c12 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c12 > :last-child,
+.c12 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c15 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c15:last-child {
+  padding-right: 0;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c14 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #6f777b;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c6 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #393939;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 19px;
+  margin-left: 5px;
+  color: #6f777b;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c13 {
+  margin-bottom: 10px;
+}
+
+.c13 > tbody > tr > th,
+.c13 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c18 {
+  list-style-type: none;
+}
+
+.c17 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c9 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c9 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c14 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c14 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
       <h3
-        className="sc-lkqHmb klrkLJ sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         Companies House
       </h3>
        
       <span
-        className="sc-fYiAbW NHSmd"
+        className="c5"
       >
         Company records show that
       </span>
       <h3
-        className="sc-krvtoX fpSCCl sc-jAaTju jwklkP"
+        className="c6 c4"
         size="MEDIUM"
       >
         SULTRAX officially did action number 10.
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c7"
     >
       03 Oct 1970
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c8 c9"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c10"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c11"
       >
         View key details for this company
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c12"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c13 c14"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -2287,7 +6419,7 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
               Confirmation Statement last made up date
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2298,10 +6430,10 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -2312,7 +6444,7 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
               Confirmation Statement next due date
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2323,10 +6455,10 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -2337,7 +6469,7 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
               Incorporation date
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2348,10 +6480,10 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -2362,7 +6494,7 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
               Next due date
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2373,10 +6505,10 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -2387,7 +6519,7 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
               Returns last made up date
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2398,10 +6530,10 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -2412,7 +6544,7 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
               Returns next due date
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2423,10 +6555,10 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -2437,7 +6569,7 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
               SIC code(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2445,20 +6577,20 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c17"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   74990 - Non-trading company
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   03110 - Marine fishing
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   99000 - Activities of extraterritorial organisations and bodies
                 </li>
@@ -2473,67 +6605,393 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
 `;
 
 exports[`ActivityFeedCard when there is a HMRC Exporter record should render an activity card 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c9 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c10 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c10:hover {
+  color: #2b8cc4;
+}
+
+.c10:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c10::-webkit-details-marker {
+  display: none;
+}
+
+.c10:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c10:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c11 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c12 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c12 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c12 > :last-child,
+.c12 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c15 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c15:last-child {
+  padding-right: 0;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c14 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #6f777b;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c6 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #393939;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 19px;
+  margin-left: 5px;
+  color: #6f777b;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c13 {
+  margin-bottom: 10px;
+}
+
+.c13 > tbody > tr > th,
+.c13 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c18 {
+  list-style-type: none;
+}
+
+.c17 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c9 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c9 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c14 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c14 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
       <h3
-        className="sc-lkqHmb klrkLJ sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         HMRC
       </h3>
        
       <span
-        className="sc-fYiAbW NHSmd"
+        className="c5"
       >
         Exporters records show that
       </span>
       <h3
-        className="sc-krvtoX fpSCCl sc-jAaTju jwklkP"
+        className="c6 c4"
         size="MEDIUM"
       >
         The Water Company officially did action number 5.
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c7"
     >
       05 Jan 1879
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c8 c9"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c10"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c11"
       >
         View key export details
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c12"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c13 c14"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c15"
               style={
                 Object {
                   "border": 0,
@@ -2544,7 +7002,7 @@ exports[`ActivityFeedCard when there is a HMRC Exporter record should render an 
               Export Item code(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2552,40 +7010,40 @@ exports[`ActivityFeedCard when there is a HMRC Exporter record should render an 
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c17"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   2803406
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   7252793
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   5163497
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   6477617
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   3158924
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   5735446
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c18"
                 >
                   4517493
                 </li>
@@ -2600,22 +7058,407 @@ exports[`ActivityFeedCard when there is a HMRC Exporter record should render an 
 `;
 
 exports[`ActivityFeedCard when there is a service delivery should render service delivery activity 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c11 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c11:hover {
+  color: #2b8cc4;
+}
+
+.c11:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c11::-webkit-details-marker {
+  display: none;
+}
+
+.c11:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c11:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c12 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c13 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c13 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c13 > :last-child,
+.c13 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c5 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c5:link {
+  color: #005ea5;
+}
+
+.c5:visited {
+  color: #4c2c92;
+}
+
+.c5:hover {
+  color: #2b8cc4;
+}
+
+.c5:active {
+  color: #2b8cc4;
+}
+
+.c5:focus {
+  color: #0b0c0c;
+}
+
+.c5:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c9 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c9 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c3 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c3 > a:link,
+.c3 a:visited,
+.c3 a:hover,
+.c3 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c7 {
+  padding: 10px 0 10px;
+  display: inline;
+  margin-left: 5px;
+}
+
+.c8 {
+  border: 2px solid #006435;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+.c14 {
+  margin-bottom: 10px;
+}
+
+.c14 > tbody > tr > th,
+.c14 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c19 {
+  list-style-type: none;
+}
+
+.c18 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    display: block;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c5"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/854d8d31-7405-4625-a957-0ed2c3092caa"
           muted={false}
         >
@@ -2624,14 +7467,14 @@ exports[`ActivityFeedCard when there is a service delivery should render service
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c6"
     >
       29 Apr 2019
       <div
-        className="sc-dUjcNx djmhbf"
+        className="c7"
       >
         <span
-          className="sc-gHboQg jOpCeb"
+          className="c8"
         >
           Service delivery
         </span>
@@ -2639,32 +7482,32 @@ exports[`ActivityFeedCard when there is a service delivery should render service
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c9 c10"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c11"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c12"
       >
         View service delivery details
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c13"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c14 c15"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2675,7 +7518,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2683,13 +7526,13 @@ exports[`ActivityFeedCard when there is a service delivery should render service
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
                     muted={false}
                   >
@@ -2701,10 +7544,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2715,7 +7558,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
               Adviser(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2723,17 +7566,17 @@ exports[`ActivityFeedCard when there is a service delivery should render service
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     Mario Bros
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -2746,10 +7589,10 @@ exports[`ActivityFeedCard when there is a service delivery should render service
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2760,7 +7603,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
               Services
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2773,7 +7616,7 @@ exports[`ActivityFeedCard when there is a service delivery should render service
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c5"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/854d8d31-7405-4625-a957-0ed2c3092caa"
         muted={false}
       >
@@ -2787,22 +7630,407 @@ exports[`ActivityFeedCard when there is a service delivery should render service
 exports[`ActivityFeedCard when there is an activity item of unknown type should not render an activity card 1`] = `null`;
 
 exports[`ActivityFeedCard when there is an interaction should render interaction activity 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c11 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c11:hover {
+  color: #2b8cc4;
+}
+
+.c11:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c11::-webkit-details-marker {
+  display: none;
+}
+
+.c11:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c11:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c12 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c13 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c13 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c13 > :last-child,
+.c13 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c5 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c5:link {
+  color: #005ea5;
+}
+
+.c5:visited {
+  color: #4c2c92;
+}
+
+.c5:hover {
+  color: #2b8cc4;
+}
+
+.c5:active {
+  color: #2b8cc4;
+}
+
+.c5:focus {
+  color: #0b0c0c;
+}
+
+.c5:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c9 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c9 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c3 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c3 > a:link,
+.c3 a:visited,
+.c3 a:hover,
+.c3 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c7 {
+  padding: 10px 0 10px;
+  display: inline;
+  margin-left: 5px;
+}
+
+.c8 {
+  border: 2px solid #006435;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+.c14 {
+  margin-bottom: 10px;
+}
+
+.c14 > tbody > tr > th,
+.c14 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c19 {
+  list-style-type: none;
+}
+
+.c18 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    display: block;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c5"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -2811,14 +8039,14 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c6"
     >
       02 May 2019
       <div
-        className="sc-dUjcNx djmhbf"
+        className="c7"
       >
         <span
-          className="sc-gHboQg jOpCeb"
+          className="c8"
         >
           Interaction
         </span>
@@ -2826,32 +8054,32 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c9 c10"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c11"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c12"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c13"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c14 c15"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2862,7 +8090,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2870,13 +8098,13 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
                     muted={false}
                   >
@@ -2885,10 +8113,10 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                    
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/c7327882-86f2-40e9-b1bd-81daa28f1603/details"
                     muted={false}
                   >
@@ -2897,10 +8125,10 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                    
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="https://www.datahub.dev.uktrade.io/contacts/8733fec0-531b-e611-9bdc-e4115bead28a/details"
                     muted={false}
                   >
@@ -2917,10 +8145,10 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -2931,7 +8159,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
               Adviser(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2939,17 +8167,17 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               >
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     Mario Bros
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:mariobros@dit.com"
                     muted={false}
                   >
@@ -2959,14 +8187,14 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     John Hammond
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:john.hammond@dit.com"
                     muted={false}
                   >
@@ -2976,14 +8204,14 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="sc-eerKOB kOckOk"
+                  className="c19"
                 >
                   <span>
                     Luke Moon
                   </span>
                   , 
                   <a
-                    className="sc-ksYbfQ xCEvz"
+                    className="c5"
                     href="mailto:luke.moon@dit.com"
                     muted={false}
                   >
@@ -2996,10 +8224,10 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -3010,7 +8238,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
               Services
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -3023,7 +8251,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c5"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
@@ -3035,22 +8263,403 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
 `;
 
 exports[`ActivityFeedCard when there is an interaction without any people involved should render interaction activity without advisers nor contacts 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c11 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c11:hover {
+  color: #2b8cc4;
+}
+
+.c11:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c11::-webkit-details-marker {
+  display: none;
+}
+
+.c11:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c11:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c12 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c13 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c13 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c13 > :last-child,
+.c13 p:last-child {
+  margin-bottom: 0;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c5 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c5:link {
+  color: #005ea5;
+}
+
+.c5:visited {
+  color: #4c2c92;
+}
+
+.c5:hover {
+  color: #2b8cc4;
+}
+
+.c5:active {
+  color: #2b8cc4;
+}
+
+.c5:focus {
+  color: #0b0c0c;
+}
+
+.c5:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c9 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c9 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c3 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c3 > a:link,
+.c3 a:visited,
+.c3 a:hover,
+.c3 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.c7 {
+  padding: 10px 0 10px;
+  display: inline;
+  margin-left: 5px;
+}
+
+.c8 {
+  border: 2px solid #006435;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+.c14 {
+  margin-bottom: 10px;
+}
+
+.c14 > tbody > tr > th,
+.c14 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.c18 {
+  margin: 0;
+  padding-left: 0;
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    display: block;
+  }
+}
+
 <div
-  className="sc-bdVaJa effyms"
+  className="c0"
 >
   <div
-    className="sc-bXGyLb gSvjox"
+    className="c1"
   >
     <div
-      className="sc-eLExRp cJTjbc"
+      className="c2"
     >
        
       <h3
-        className="sc-cbkKFq kOPhmX sc-jAaTju jwklkP"
+        className="c3 c4"
         size="MEDIUM"
       >
         <a
-          className="sc-ksYbfQ xCEvz"
+          className="c5"
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
@@ -3059,14 +8668,14 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
       </h3>
     </div>
     <div
-      className="sc-fOKMvo gAtgFC"
+      className="c6"
     >
       06 Jun 2019
       <div
-        className="sc-dUjcNx djmhbf"
+        className="c7"
       >
         <span
-          className="sc-gHboQg jOpCeb"
+          className="c8"
         >
           Interaction
         </span>
@@ -3074,32 +8683,32 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
     </div>
   </div>
   <details
-    className="sc-daURTG bjBSsI sc-kkGfuU bEQKnh"
+    className="c9 c10"
     open={false}
   >
     <summary
-      className="sc-iAyFgw dcdfbw"
+      className="c11"
     >
       <span
-        className="sc-hSdWYo ctAAoI"
+        className="c12"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="sc-eHgmQL jEgifR"
+      className="c13"
     >
       <table
-        className="sc-eilVRo ednMJT sc-iuJeZd izDwww"
+        className="c14 c15"
       >
         <tbody
-          className="sc-iQNlJl jxLqkS"
+          className=""
         >
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -3110,7 +8719,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
               Company contact(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -3118,15 +8727,15 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               />
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -3137,7 +8746,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
               Adviser(s)
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -3145,15 +8754,15 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
               }
             >
               <ul
-                className="sc-emmjRN fsDZOO"
+                className="c18"
               />
             </td>
           </tr>
           <tr
-            className="sc-cMhqgX dwYjBs"
+            className=""
           >
             <th
-              className="sc-hZSUBg cPYlxs"
+              className="c16"
               style={
                 Object {
                   "border": 0,
@@ -3164,7 +8773,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
               Services
             </th>
             <td
-              className="sc-hZSUBg guCcEo"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -3177,7 +8786,7 @@ exports[`ActivityFeedCard when there is an interaction without any people involv
         </tbody>
       </table>
       <a
-        className="sc-ksYbfQ xCEvz"
+        className="c5"
         href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
         muted={false}
       >
