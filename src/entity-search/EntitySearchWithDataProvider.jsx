@@ -8,6 +8,7 @@ const EntitySearchWithDataProvider = (props) => {
   const [entities, setEntities] = useState(null)
   const [error, setError] = useState(null)
   const onEntitySearch = async (filters) => {
+    setEntities(null)
     try {
       setEntities(await getEntities(filters))
     } catch (ex) {
