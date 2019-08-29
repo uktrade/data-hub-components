@@ -17,7 +17,7 @@ mock
   .onPost(API_ENDPOINT, { search_term: 'some other company' })
   .reply(200, fixtures.companySearchFilteredByCompanyName)
 mock
-  .onPost(API_ENDPOINT, { address_postcode: 'BN1 4SE' })
+  .onPost(API_ENDPOINT, { postal_code: 'BN1 4SE' })
   .reply(200, fixtures.companySearchFilteredByPostcode)
 
 const flushPromises = () => {
@@ -42,7 +42,7 @@ const wrapEntitySearch = ({
         { label: 'Company name', key: 'search_term' },
       ],
       [
-        { label: 'Company postcode', key: 'address_postcode', width: 'one-half', optional: true },
+        { label: 'Company postcode', key: 'postal_code', width: 'one-half', optional: true },
       ],
     ]}
     cannotFind={{
@@ -117,7 +117,7 @@ describe('EntitySearch', () => {
       const wrappedEntitySearch = wrapEntitySearch()
 
       wrappedEntitySearch
-        .find('[name="address_postcode"]')
+        .find('[name="postal_code"]')
         .at(1)
         .simulate('change', { target: { value: 'BN1 4SE' } })
 
