@@ -2,12 +2,16 @@ import React from 'react'
 import { find } from 'lodash'
 
 import PropTypes from 'prop-types'
-import Cards from './activity-feed-cards'
+import Cards from './cards'
 
 export default class ActivityFeedCard extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
-    showDetails: PropTypes.bool.isRequired,
+    showDetails: PropTypes.bool,
+  }
+
+  static defaultProps = {
+    showDetails: false,
   }
 
   constructor(props) {
