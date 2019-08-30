@@ -2,7 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 
 import Form from '../Form'
-import FieldInput from '../../elements/FieldInput'
+import FieldInput from '../FieldInput'
 
 describe('Form', () => {
   describe('when form has many fields', () => {

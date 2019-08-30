@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { RED } from 'govuk-colours'
 
-import useField from '../core/useField'
+import useField from '../hooks/useField'
 import FieldError from './FieldError'
 
 const FieldInput = ({ name, type, validate, label, ...rest }) => {

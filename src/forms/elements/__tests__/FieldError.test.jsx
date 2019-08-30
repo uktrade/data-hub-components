@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import Form from '../../core/Form'
+import Form from '../Form'
 import FieldInput from '../FieldInput'
 import FieldError from '../FieldError'
 

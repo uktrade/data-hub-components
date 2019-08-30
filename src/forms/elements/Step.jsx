@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Button } from 'govuk-react'
 import { BLACK, GREY_2 } from 'govuk-colours'
 
-import useFormContext from './useFormContext'
+import useFormContext from '../hooks/useFormContext'
 
 function Step({
   name, backButtonText, forwardButtonText,

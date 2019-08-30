@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import useFormContext from './useFormContext'
+import useFormContext from '../hooks/useFormContext'
 
 function Form(props) {
   const { initialValues, initialStep, onSubmit } = props
@@ -21,7 +21,10 @@ Form.propTypes = {
   initialValues: PropTypes.shape({}),
   initialStep: PropTypes.number,
   onSubmit: PropTypes.func,
-  children: PropTypes.any,
+  children: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.node,
+  ]),
 }
 
 Form.defaultProps = {

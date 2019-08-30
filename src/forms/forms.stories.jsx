@@ -1,5 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
 
 import { useFormContext, Form, Step, FieldInput } from '..'
 import FieldRadios from './elements/FieldRadios'
@@ -13,11 +14,6 @@ function Values() {
   )
 }
 
-function onSubmit(values) {
-  // eslint-disable-next-line no-alert
-  alert(JSON.stringify(values))
-}
-
 function StepHeader() {
   const { currentStep, steps } = useFormContext()
   return (
@@ -28,9 +24,7 @@ function StepHeader() {
 storiesOf('Forms', module)
   .add('Multistep Example Form', () => {
     return (
-      <Form
-        onSubmit={onSubmit}
-      >
+      <Form onSubmit={action('onSubmit')}>
         {({ values }) => (
           <>
             <StepHeader />

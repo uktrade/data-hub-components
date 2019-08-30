@@ -1,7 +1,11 @@
 import { useState } from 'react'
 import { isEmpty } from 'lodash'
 
-function useForm({ initialValues = {}, initialStep = 0, onSubmit = null } = {}) {
+function useForm({
+  initialValues = {},
+  initialStep = 0,
+  onSubmit = null,
+} = {}) {
   const [values, setValues] = useState(initialValues)
   const [touched, setTouched] = useState({})
   const [errors, setErrors] = useState({})
@@ -26,11 +30,11 @@ function useForm({ initialValues = {}, initialStep = 0, onSubmit = null } = {}) 
     }
 
     if (field && 'validate' in field) {
-      if (field.validate instanceof Function) {
+      if (typeof field.validate === 'function') {
         return field.validate(value, name)
       }
 
-      if (field.validate instanceof Array) {
+      if (Array.isArray(field.validate)) {
         const validationErrors = field.validate
           .map(validator => validator(value, field))
           .filter(e => e)
@@ -63,18 +67,8 @@ function useForm({ initialValues = {}, initialStep = 0, onSubmit = null } = {}) 
   const setFieldValue = (name, fieldValue) => setValues((prevValues) => {
     return { ...prevValues, [name]: fieldValue }
   })
-  const setFieldTouched = (name, fieldTouched, performValidation = true) => {
+  const setFieldTouched = (name, fieldTouched) => {
     setTouched(prevTouched => ({ ...prevTouched, [name]: fieldTouched }))
-
-    if (performValidation) {
-      const error = validateField(name)
-      setErrors((prevErrors) => {
-        return {
-          ...prevErrors,
-          [name]: error,
-        }
-      })
-    }
   }
   const setFieldError = (name, error) => setErrors(prevErrors => ({ ...prevErrors, [name]: error }))
 
@@ -85,7 +79,7 @@ function useForm({ initialValues = {}, initialStep = 0, onSubmit = null } = {}) 
       setFieldValue(name, initialValue)
     }
 
-    setFieldTouched(name, false, false)
+    setFieldTouched(name, false)
 
     if (!(name in prevFields)) {
       return {
@@ -136,12 +130,18 @@ function useForm({ initialValues = {}, initialStep = 0, onSubmit = null } = {}) 
 
   const goForward = () => {
     const validationErrors = validateForm()
-    if (isEmpty(validationErrors)) {
-      if (isLastStep()) {
-        onSubmit(values)
-      } else {
-        setCurrentStep(currentStep + 1)
-      }
+
+    if (!isEmpty(validationErrors)) {
+      return
+    }
+
+    if (!isLastStep()) {
+      setCurrentStep(currentStep + 1)
+      return
+    }
+
+    if (typeof onSubmit === 'function') {
+      onSubmit(values)
     }
   }
   const goBack = () => setCurrentStep(currentStep - 1)

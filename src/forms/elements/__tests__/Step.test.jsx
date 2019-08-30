@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 
 import Form from '../Form'
 import Step from '../Step'
-import FieldInput from '../../elements/FieldInput'
+import FieldInput from '../FieldInput'
 
 describe('Step', () => {
   let formState
