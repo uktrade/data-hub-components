@@ -21,7 +21,7 @@ const wrapEntitySearch = ({
     url: 'http://stillcannotfind.com',
     text: 'still cannot find',
   },
-  onEntityClick = () => console.log('entity clicked'),
+  onEntityClick = () => {},
 } = {}) => {
   return mount(<EntitySearchWithDataProvider
     previouslySelected={previouslySelected}

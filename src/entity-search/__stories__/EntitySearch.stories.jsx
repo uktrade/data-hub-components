@@ -1,5 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
 import { GridCol, GridRow, Main, H2 } from 'govuk-react'
 import { SPACING } from '@govuk-react/constants'
 import PropTypes from 'prop-types'
@@ -52,7 +53,7 @@ const EntitySearchForStorybook = ({ previouslySelected, cannotFindLink }) => {
             }}
             onEntityClick={(entity) => {
               if (!entity.datahub_company) {
-                alert(`Selected ${JSON.stringify(entity)}`)
+                action('EntitySearchWithDataProvider.onEntityClick')(entity)
               }
             }}
           />
@@ -97,9 +98,7 @@ storiesOf('EntitySearch', module)
       <EntitySearchForStorybook
         cannotFindLink={{
           text: 'I still cannot find the company',
-          onClick: () => {
-            alert('Still cannot find :(')
-          },
+          onClick: action('EntitySearchForStorybook.onClick'),
         }}
       />
     )
@@ -111,7 +110,7 @@ storiesOf('EntitySearch', module)
       <EntitySearchForStorybook
         previouslySelected={{
           text: 'Based in the UK',
-          onChangeClick: () => alert('Change previously selected'),
+          onChangeClick: action('EntitySearchForStorybook.onChangeClick'),
         }}
       />
     )
