@@ -1280,6 +1280,17 @@
     govuk-colours "^1.0.3"
     polished "^2.3.3"
 
+"@govuk-react/button@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/button/-/button-0.7.1.tgz#182e136dab95cf8127c2641bb367150b0c354900"
+  integrity sha512-aVVfS88xFjbCY5J9KQjPY3mBLobBRwnuRFoqz+VcMnDHp/ZAec2nms7HH1Zs6lUpsAqwuYElpeQlblfP+hheWA==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/icons" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
+    govuk-colours "^1.0.3"
+    polished "^3.0.3"
+
 "@govuk-react/caption@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@govuk-react/caption/-/caption-0.7.0.tgz#99b75dd0ba6f98f308fdcf291b7d3991e310895f"
@@ -1475,6 +1486,14 @@
   resolved "https://registry.yarnpkg.com/@govuk-react/icons/-/icons-0.7.0.tgz#cd0f27979d39faa948415642250e1719b82a1e03"
   dependencies:
     "@govuk-react/constants" "^0.7.0"
+    govuk-colours "^1.0.3"
+
+"@govuk-react/icons@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/icons/-/icons-0.7.1.tgz#35642ec39703662a18efd4edd6b4a4f05a9a85b2"
+  integrity sha512-RAEHM+o7oiMjElU1z/hzm9d6RplCXCFyputKn5tE3ZLDgPiNyn7Vhd60bUP+kfCbGeMprcxsTN/wYw020jyYqg==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
     govuk-colours "^1.0.3"
 
 "@govuk-react/input-field@^0.7.0":

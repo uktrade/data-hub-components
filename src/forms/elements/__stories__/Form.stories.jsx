@@ -4,6 +4,7 @@ import { action } from '@storybook/addon-actions'
 
 import { useFormContext, Form, Step, FieldInput } from '../../../index'
 import FieldRadios from '../FieldRadios'
+import FieldSelect from '../FieldSelect'
 
 function Values() {
   const form = useFormContext()
@@ -46,6 +47,17 @@ storiesOf('Forms', module)
                       <FieldInput type="text" name="overseasCountryName" />
                     ),
                   },
+                ]}
+              />
+
+              <FieldSelect
+                name="country"
+                label="Country"
+                validate={value => (!value ? 'Please specify where the company is based' : null)}
+                options={[
+                  { label: 'Germany', value: 'de' },
+                  { label: 'France', value: 'fr' },
+                  { label: 'Italy', value: 'it' },
                 ]}
               />
             </Step>
