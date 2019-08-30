@@ -11,7 +11,7 @@ describe('My companies dashboard', () => {
         <MyCompaniesTile />
       </useMyCompaniesContext.Provider>,
     )
-    expect(wrapper.debug()).toMatchSnapshot()
+    expect(wrapper).toMatchSnapshot()
   })
   describe('when there are a list of companies', () => {
     const wrapper = mount(

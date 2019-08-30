@@ -1,19 +1,699 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`My companies dashboard should match the snapshot 1`] = `
-"<Provider mockInitialState={{...}}>
+.c14 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c15 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c15:hover {
+  color: #2b8cc4;
+}
+
+.c15:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c15::-webkit-details-marker {
+  display: none;
+}
+
+.c15:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c15:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c16 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c17 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c17 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c17 > :last-child,
+.c17 p:last-child {
+  margin-bottom: 0;
+}
+
+.c2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-top: 4px solid #bfc1c3;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  display: block;
+  clear: none;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+}
+
+.c7 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  box-sizing: border-box;
+  width: 100%;
+  height: 33px;
+  padding: 5px 4px 4px;
+  border: 2px solid #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.c7:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+}
+
+.c5 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  margin-right: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.c10 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c10:last-child {
+  padding-right: 0;
+}
+
+.c11 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c11:last-child {
+  padding-right: 0;
+}
+
+.c8 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c12 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c12:link {
+  color: #005ea5;
+}
+
+.c12:visited {
+  color: #4c2c92;
+}
+
+.c12:hover {
+  color: #2b8cc4;
+}
+
+.c12:active {
+  color: #2b8cc4;
+}
+
+.c12:focus {
+  color: #0b0c0c;
+}
+
+.c12:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c9 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.c13 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #6f777b;
+  text-align: center;
+}
+
+.c13:last-child {
+  padding-right: 0;
+}
+
+@media print {
+  .c14 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c14 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c0 {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c0 {
+    font-size: 14px;
+    line-height: 1.4285714285714286;
+  }
+}
+
+@media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c6 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  .c7 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 50%;
+    height: 38px;
+  }
+}
+
+@media print {
+  .c7 {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    font-size: 14px;
+    line-height: 1.4285714285714286;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: auto;
+  }
+}
+
+@media print {
+  .c5 {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c5 {
+    font-size: 14px;
+    line-height: 1.4285714285714286;
+  }
+}
+
+@media print {
+  .c8 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c8 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c12 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c12[href^="/"]::after,
+  .c12[href^="http://"]::after,
+  .c12[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c9 {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    font-size: 14px;
+    line-height: 1.4285714285714286;
+  }
+}
+
+@media only screen and (min-width:769px) {
+  .c9 {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+@media print {
+  .c13 {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c13 {
+    font-size: 14px;
+    line-height: 1.4285714285714286;
+  }
+}
+
+<Provider
+  mockInitialState={
+    Object {
+      "companies": Array [
+        Object {
+          "company": Object {
+            "id": "a1138c1c-d449-4846-aa58-18fae7e1cb92",
+            "isArchived": false,
+            "name": "A1 BMW LTD!!!!!",
+          },
+          "latestInteraction": Object {
+            "date": "2019-08-14",
+            "displayDate": "14 Aug 19",
+            "id": "79d92719-7402-45b6-b3d7-eff559d6b282",
+            "subject": "Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished",
+          },
+        },
+        Object {
+          "company": Object {
+            "id": "a30b1db3-7140-44ca-ad7a-9824c3c2ed56",
+            "isArchived": false,
+            "name": "Portable Potatoes",
+          },
+          "latestInteraction": Object {
+            "date": null,
+            "displayDate": "-",
+            "subject": "No interactions have been recorded",
+          },
+        },
+        Object {
+          "company": Object {
+            "id": "b89b1db3-7140-44ca-ad7a-9824c3c2gh74",
+            "isArchived": false,
+            "name": "Zebra clothing",
+          },
+          "latestInteraction": Object {
+            "date": "2019-02-21",
+            "displayDate": "21 Feb 2019",
+            "id": "86f92719-7402-45b6-b3d7-eff559d6b678",
+            "subject": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          },
+        },
+      ],
+      "companiesInitial": Array [
+        Object {
+          "company": Object {
+            "id": "a1138c1c-d449-4846-aa58-18fae7e1cb92",
+            "isArchived": false,
+            "name": "A1 BMW LTD!!!!!",
+          },
+          "latestInteraction": Object {
+            "date": "2019-08-14",
+            "displayDate": "14 Aug 19",
+            "id": "79d92719-7402-45b6-b3d7-eff559d6b282",
+            "subject": "Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished",
+          },
+        },
+        Object {
+          "company": Object {
+            "id": "a30b1db3-7140-44ca-ad7a-9824c3c2ed56",
+            "isArchived": false,
+            "name": "Portable Potatoes",
+          },
+          "latestInteraction": Object {
+            "date": null,
+            "displayDate": "-",
+            "subject": "No interactions have been recorded",
+          },
+        },
+        Object {
+          "company": Object {
+            "id": "b89b1db3-7140-44ca-ad7a-9824c3c2gh74",
+            "isArchived": false,
+            "name": "Zebra clothing",
+          },
+          "latestInteraction": Object {
+            "date": "2019-02-21",
+            "displayDate": "21 Feb 2019",
+            "id": "86f92719-7402-45b6-b3d7-eff559d6b678",
+            "subject": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          },
+        },
+      ],
+    }
+  }
+>
   <MyCompaniesTile>
-    <DashboardSection heading=\\"My Companies\\" headingSlotComponent={{...}} subHeading={{...}} showSubHeading={false}>
+    <DashboardSection
+      heading="My Companies"
+      headingSlotComponent={<MyCompaniesFilters />}
+      showSubHeading={false}
+      subHeading={
+        <React.Fragment>
+          You have not added any companies to your list. 
+          <br />
+          You can add companies to this list from a company page, and only you can see this list.
+        </React.Fragment>
+      }
+    >
       <styled.div>
-        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-bZQynM jWAMqS\\">
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bZQynM",
+                "isStatic": true,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-top: 4px solid ",
+                  "#bfc1c3",
+                  ";
+  ",
+                  "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 12px; line-height: 1.2;
+} font-weight: 400; font-size: 12px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 14px; line-height: 1.4285714285714286;
+}",
+                  "
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bZQynM",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c0"
+          >
             <styled.div>
-              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <div className=\\"sc-gzVnrw bgOKEQ\\">
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-gzVnrw",
+                      "isStatic": true,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: ",
+                        "15px",
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-gzVnrw",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="c1"
+                >
                   <Heading>
                     <styled.h2>
-                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                        <h2 className=\\"sc-ifAKCX exySjG\\">
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-ifAKCX",
+                              "isStatic": true,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  font-size: 20px;
+  font-weight: bold;
+",
+                              ],
+                            },
+                            "displayName": "styled.h2",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-ifAKCX",
+                            "target": "h2",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <h2
+                          className="c2"
+                        >
                           My Companies
                         </h2>
                       </StyledComponent>
@@ -22,31 +702,252 @@ exports[`My companies dashboard should match the snapshot 1`] = `
                   <div>
                     <MyCompaniesFilters>
                       <styled.div>
-                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                          <div className=\\"sc-fjdhpX gddroE\\">
-                            <styled.input type=\\"text\\" placeholder=\\"Search list\\" onChange={[Function: handleInputChange]} value=\\"\\">
-                              <StyledComponent type=\\"text\\" placeholder=\\"Search list\\" onChange={[Function: handleInputChange]} value=\\"\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                <input type=\\"text\\" placeholder=\\"Search list\\" onChange={[Function: handleInputChange]} value=\\"\\" className=\\"sc-jzJRlG gcHaUj\\" />
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-fjdhpX",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  display: flex;
+  justify-content: space-between;
+",
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-fjdhpX",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="c3"
+                          >
+                            <styled.input
+                              onChange={[Function]}
+                              placeholder="Search list"
+                              type="text"
+                              value=""
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-jzJRlG",
+                                      "isStatic": true,
+                                      "lastClassName": "c4",
+                                      "rules": Array [
+                                        "
+  margin-right: ",
+                                        "10px",
+                                        ";
+  padding-right: ",
+                                        "5px",
+                                        ";
+  padding-left: ",
+                                        "5px",
+                                        ";
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.input",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-jzJRlG",
+                                    "target": "input",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={
+                                  Object {
+                                    "current": .c0 {
+  margin-right: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+<input
+                                      class="c0"
+                                      placeholder="Search list"
+                                      type="text"
+                                      value=""
+                                    />,
+                                  }
+                                }
+                                onChange={[Function]}
+                                placeholder="Search list"
+                                type="text"
+                                value=""
+                              >
+                                <input
+                                  className="c4"
+                                  onChange={[Function]}
+                                  placeholder="Search list"
+                                  type="text"
+                                  value=""
+                                />
                               </StyledComponent>
                             </styled.input>
                             <Styled(LabelText)>
-                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                <LabelText className=\\"sc-jTzLTM fpHQWJ\\">
-                                  <styled.span className=\\"sc-jTzLTM fpHQWJ\\">
-                                    <StyledComponent className=\\"sc-jTzLTM fpHQWJ\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <span className=\\"sc-jTzLTM fpHQWJ sc-dnqmqq ePgwDj\\">
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-jTzLTM",
+                                      "isStatic": true,
+                                      "lastClassName": "c5",
+                                      "rules": Array [
+                                        "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 12px; line-height: 1.2;
+} font-weight: 400; font-size: 12px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 14px; line-height: 1.4285714285714286;
+}",
+                                      ],
+                                    },
+                                    "displayName": "Styled(LabelText)",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-jTzLTM",
+                                    "target": [Function],
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <LabelText
+                                  className="c5"
+                                >
+                                  <styled.span
+                                    className="c5"
+                                  >
+                                    <StyledComponent
+                                      className="c5"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-dnqmqq",
+                                            "isStatic": false,
+                                            "lastClassName": "c6",
+                                            "rules": Array [
+                                              "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                                              "color: #0b0c0c; @media print {
+  color: #000;
+}",
+                                              "display: block; clear: none; padding-bottom: 2px;",
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-dnqmqq",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="c5 c6"
+                                      >
                                         Sort By:
                                          
-                                        <Styled(styled.select) onChange={[Function: handleSelectChange]} value=\\"recent\\">
-                                          <StyledComponent onChange={[Function: handleSelectChange]} value=\\"recent\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <select onChange={[Function: handleSelectChange]} value=\\"recent\\" className=\\"sc-gqjmRU sc-VigVT hsuviU\\">
-                                              <option value=\\"recent\\">
+                                        <Styled(styled.select)
+                                          onChange={[Function]}
+                                          value="recent"
+                                        >
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-VigVT",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c7",
+                                                  "rules": Array [
+                                                    "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                                                    "box-sizing: border-box; width: 100%; height: 33px; padding: 5px 4px 4px; border: 2px solid #0b0c0c; @media only screen and (min-width: 641px) {
+  width: 50%; height: 38px;
+} :focus {
+  outline: 3px solid #ffbf47; outline-offset: 0;
+}",
+                                                    [Function],
+                                                    "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 12px; line-height: 1.2;
+} font-weight: 400; font-size: 12px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 14px; line-height: 1.4285714285714286;
+}",
+                                                    "@media only screen and (min-width: 641px) {
+  width: auto;
+}",
+                                                  ],
+                                                },
+                                                "displayName": "Styled(styled.select)",
+                                                "foldedComponentIds": Array [
+                                                  "sc-gqjmRU",
+                                                ],
+                                                "render": [Function],
+                                                "styledComponentId": "sc-VigVT",
+                                                "target": "select",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            onChange={[Function]}
+                                            value="recent"
+                                          >
+                                            <select
+                                              className="c7"
+                                              onChange={[Function]}
+                                              value="recent"
+                                            >
+                                              <option
+                                                value="recent"
+                                              >
                                                 Recent interaction
                                               </option>
-                                              <option value=\\"least-recent\\">
+                                              <option
+                                                value="least-recent"
+                                              >
                                                 Least recent interaction
                                               </option>
-                                              <option value=\\"alphabetical\\">
+                                              <option
+                                                value="alphabetical"
+                                              >
                                                 Company name A-Z
                                               </option>
                                             </select>
@@ -67,22 +968,199 @@ exports[`My companies dashboard should match the snapshot 1`] = `
               </StyledComponent>
             </styled.div>
             <MyCompaniesTable>
-              <Table head={{...}} body={[undefined]} caption={[undefined]}>
+              <Table
+                head={
+                  <ForwardRef>
+                    <ForwardRef>
+                      Company name
+                    </ForwardRef>
+                    <ForwardRef>
+                      Last interaction
+                    </ForwardRef>
+                    <ForwardRef>
+                       
+                    </ForwardRef>
+                  </ForwardRef>
+                }
+              >
                 <styled.table>
-                  <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                    <table className=\\"sc-kpOJdX cVTche\\">
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-kpOJdX",
+                          "isStatic": false,
+                          "lastClassName": "c8",
+                          "rules": Array [
+                            "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                            "color: #0b0c0c; @media print {
+  color: #000;
+}",
+                            "width: 100%; border-spacing: 0; border-collapse: collapse;",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "styled.table",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-kpOJdX",
+                        "target": "table",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <table
+                      className="c8"
+                    >
                       <styled.thead>
-                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                          <thead className=\\"sc-cSHVUG CAuLq\\">
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-cSHVUG",
+                                "isStatic": true,
+                                "lastClassName": "CAuLq",
+                                "rules": Array [
+                                  "",
+                                ],
+                              },
+                              "displayName": "styled.thead",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-cSHVUG",
+                              "target": "thead",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <thead
+                            className=""
+                          >
                             <styled.tr>
-                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                <tr className=\\"sc-kGXeez eIIwaK\\">
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-kGXeez",
+                                      "isStatic": true,
+                                      "lastClassName": "eIIwaK",
+                                      "rules": Array [
+                                        "",
+                                      ],
+                                    },
+                                    "displayName": "styled.tr",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-kGXeez",
+                                    "target": "tr",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <tr
+                                  className=""
+                                >
                                   <Styled(CellHeader)>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <CellHeader className=\\"sc-ckVGcZ dMdyDD\\">
-                                        <styled.td as=\\"th\\" bold={true} isHeader={true} className=\\"sc-ckVGcZ dMdyDD\\">
-                                          <StyledComponent as=\\"th\\" bold={true} isHeader={true} className=\\"sc-ckVGcZ dMdyDD\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <th className=\\"sc-ckVGcZ dMdyDD sc-kgoBCf keavxo\\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-ckVGcZ",
+                                            "isStatic": true,
+                                            "lastClassName": "c9",
+                                            "rules": Array [
+                                              "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 12px; line-height: 1.2;
+} font-weight: 700; font-size: 12px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 14px; line-height: 1.4285714285714286;
+}",
+                                              "@media only screen and (min-width: 769px) {
+  overflow: hidden; white-space: nowrap;
+}",
+                                            ],
+                                          },
+                                          "displayName": "Styled(CellHeader)",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-ckVGcZ",
+                                          "target": [Function],
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <CellHeader
+                                        className="c9"
+                                      >
+                                        <styled.td
+                                          as="th"
+                                          bold={true}
+                                          className="c9"
+                                          isHeader={true}
+                                        >
+                                          <StyledComponent
+                                            as="th"
+                                            bold={true}
+                                            className="c9"
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-kgoBCf",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c11",
+                                                  "rules": Array [
+                                                    [Function],
+                                                    [Function],
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "displayName": "styled.td",
+                                                "foldedComponentIds": Array [],
+                                                "propTypes": Object {
+                                                  "alignRight": [Function],
+                                                  "children": [Function],
+                                                  "isHeader": [Function],
+                                                  "numeric": [Function],
+                                                },
+                                                "render": [Function],
+                                                "styledComponentId": "sc-kgoBCf",
+                                                "target": "td",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            isHeader={true}
+                                          >
+                                            <th
+                                              className="c9 c10"
+                                            >
                                               Company name
                                             </th>
                                           </StyledComponent>
@@ -91,11 +1169,87 @@ exports[`My companies dashboard should match the snapshot 1`] = `
                                     </StyledComponent>
                                   </Styled(CellHeader)>
                                   <Styled(CellHeader)>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <CellHeader className=\\"sc-ckVGcZ dMdyDD\\">
-                                        <styled.td as=\\"th\\" bold={true} isHeader={true} className=\\"sc-ckVGcZ dMdyDD\\">
-                                          <StyledComponent as=\\"th\\" bold={true} isHeader={true} className=\\"sc-ckVGcZ dMdyDD\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <th className=\\"sc-ckVGcZ dMdyDD sc-kgoBCf keavxo\\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-ckVGcZ",
+                                            "isStatic": true,
+                                            "lastClassName": "c9",
+                                            "rules": Array [
+                                              "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 12px; line-height: 1.2;
+} font-weight: 700; font-size: 12px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 14px; line-height: 1.4285714285714286;
+}",
+                                              "@media only screen and (min-width: 769px) {
+  overflow: hidden; white-space: nowrap;
+}",
+                                            ],
+                                          },
+                                          "displayName": "Styled(CellHeader)",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-ckVGcZ",
+                                          "target": [Function],
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <CellHeader
+                                        className="c9"
+                                      >
+                                        <styled.td
+                                          as="th"
+                                          bold={true}
+                                          className="c9"
+                                          isHeader={true}
+                                        >
+                                          <StyledComponent
+                                            as="th"
+                                            bold={true}
+                                            className="c9"
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-kgoBCf",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c11",
+                                                  "rules": Array [
+                                                    [Function],
+                                                    [Function],
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "displayName": "styled.td",
+                                                "foldedComponentIds": Array [],
+                                                "propTypes": Object {
+                                                  "alignRight": [Function],
+                                                  "children": [Function],
+                                                  "isHeader": [Function],
+                                                  "numeric": [Function],
+                                                },
+                                                "render": [Function],
+                                                "styledComponentId": "sc-kgoBCf",
+                                                "target": "td",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            isHeader={true}
+                                          >
+                                            <th
+                                              className="c9 c10"
+                                            >
                                               Last interaction
                                             </th>
                                           </StyledComponent>
@@ -104,11 +1258,87 @@ exports[`My companies dashboard should match the snapshot 1`] = `
                                     </StyledComponent>
                                   </Styled(CellHeader)>
                                   <Styled(CellHeader)>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <CellHeader className=\\"sc-ckVGcZ dMdyDD\\">
-                                        <styled.td as=\\"th\\" bold={true} isHeader={true} className=\\"sc-ckVGcZ dMdyDD\\">
-                                          <StyledComponent as=\\"th\\" bold={true} isHeader={true} className=\\"sc-ckVGcZ dMdyDD\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <th className=\\"sc-ckVGcZ dMdyDD sc-kgoBCf keavxo\\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-ckVGcZ",
+                                            "isStatic": true,
+                                            "lastClassName": "c9",
+                                            "rules": Array [
+                                              "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 12px; line-height: 1.2;
+} font-weight: 700; font-size: 12px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 14px; line-height: 1.4285714285714286;
+}",
+                                              "@media only screen and (min-width: 769px) {
+  overflow: hidden; white-space: nowrap;
+}",
+                                            ],
+                                          },
+                                          "displayName": "Styled(CellHeader)",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-ckVGcZ",
+                                          "target": [Function],
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <CellHeader
+                                        className="c9"
+                                      >
+                                        <styled.td
+                                          as="th"
+                                          bold={true}
+                                          className="c9"
+                                          isHeader={true}
+                                        >
+                                          <StyledComponent
+                                            as="th"
+                                            bold={true}
+                                            className="c9"
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-kgoBCf",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c11",
+                                                  "rules": Array [
+                                                    [Function],
+                                                    [Function],
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "displayName": "styled.td",
+                                                "foldedComponentIds": Array [],
+                                                "propTypes": Object {
+                                                  "alignRight": [Function],
+                                                  "children": [Function],
+                                                  "isHeader": [Function],
+                                                  "numeric": [Function],
+                                                },
+                                                "render": [Function],
+                                                "styledComponentId": "sc-kgoBCf",
+                                                "target": "td",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            isHeader={true}
+                                          >
+                                            <th
+                                              className="c9 c10"
+                                            >
                                                
                                             </th>
                                           </StyledComponent>
@@ -123,19 +1353,187 @@ exports[`My companies dashboard should match the snapshot 1`] = `
                         </StyledComponent>
                       </styled.thead>
                       <styled.tbody>
-                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                          <tbody className=\\"sc-kAzzGY jHprQs\\">
-                            <styled.tr>
-                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                <tr className=\\"sc-kGXeez eIIwaK\\">
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-kAzzGY",
+                                "isStatic": true,
+                                "lastClassName": "jHprQs",
+                                "rules": Array [
+                                  "",
+                                ],
+                              },
+                              "displayName": "styled.tbody",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-kAzzGY",
+                              "target": "tbody",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <tbody
+                            className=""
+                          >
+                            <styled.tr
+                              key="a1138c1c-d449-4846-aa58-18fae7e1cb92"
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-kGXeez",
+                                      "isStatic": true,
+                                      "lastClassName": "eIIwaK",
+                                      "rules": Array [
+                                        "",
+                                      ],
+                                    },
+                                    "displayName": "styled.tr",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-kGXeez",
+                                    "target": "tr",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <tr
+                                  className=""
+                                >
                                   <styled.td>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <td className=\\"sc-kgoBCf hYhUur\\">
-                                        <styled.a href=\\"companies/a1138c1c-d449-4846-aa58-18fae7e1cb92\\" muted={false} textColour={false} noVisitedState={false}>
-                                          <StyledComponent href=\\"companies/a1138c1c-d449-4846-aa58-18fae7e1cb92\\" muted={false} textColour={false} noVisitedState={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <a href=\\"companies/a1138c1c-d449-4846-aa58-18fae7e1cb92\\" muted={false} className=\\"sc-dxgOiQ fnwTQd\\">
-                                              <LinesEllipsis text=\\"A1 BMW LTD!!!!!\\" maxLine=\\"2\\" ellipsis=\\"...\\" trimRight={true} basedOn=\\"words\\" className=\\"\\" component=\\"div\\" onReflow={[Function: onReflow]} winWidth={[undefined]}>
-                                                <div className=\\"LinesEllipsis  \\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-kgoBCf",
+                                            "isStatic": false,
+                                            "lastClassName": "c11",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.td",
+                                          "foldedComponentIds": Array [],
+                                          "propTypes": Object {
+                                            "alignRight": [Function],
+                                            "children": [Function],
+                                            "isHeader": [Function],
+                                            "numeric": [Function],
+                                          },
+                                          "render": [Function],
+                                          "styledComponentId": "sc-kgoBCf",
+                                          "target": "td",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <td
+                                        className="c11"
+                                      >
+                                        <styled.a
+                                          href="companies/a1138c1c-d449-4846-aa58-18fae7e1cb92"
+                                          muted={false}
+                                          noVisitedState={false}
+                                          textColour={false}
+                                        >
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-dxgOiQ",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c12",
+                                                  "rules": Array [
+                                                    "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-family: sans-serif;
+}",
+                                                    ":link {
+  color: #005ea5;
+} :visited {
+  color: #4c2c92;
+} :hover {
+  color: #2b8cc4;
+} :active {
+  color: #2b8cc4;
+} :focus {
+  color: #0b0c0c;
+}",
+                                                    "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0; background-color: #ffbf47;
+}",
+                                                    "@media print {
+  &[href^=\\"/\\"], &[href^=\\"http://\\"], &[href^=\\"https://\\"] {
+  &::after {
+  content: \\" (\\" attr(href) \\")\\"; font-size: 90%; word-wrap: break-word;
+}
+}
+}",
+                                                    [Function],
+                                                    [Function],
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "defaultProps": Object {
+                                                  "muted": false,
+                                                  "noVisitedState": false,
+                                                  "textColour": false,
+                                                },
+                                                "displayName": "styled.a",
+                                                "foldedComponentIds": Array [],
+                                                "propTypes": undefined,
+                                                "render": [Function],
+                                                "styledComponentId": "sc-dxgOiQ",
+                                                "target": "a",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            href="companies/a1138c1c-d449-4846-aa58-18fae7e1cb92"
+                                            muted={false}
+                                            noVisitedState={false}
+                                            textColour={false}
+                                          >
+                                            <a
+                                              className="c12"
+                                              href="companies/a1138c1c-d449-4846-aa58-18fae7e1cb92"
+                                              muted={false}
+                                            >
+                                              <LinesEllipsis
+                                                basedOn="words"
+                                                className=""
+                                                component="div"
+                                                ellipsis="..."
+                                                maxLine="2"
+                                                onReflow={[Function]}
+                                                text="A1 BMW LTD!!!!!"
+                                                trimRight={true}
+                                              >
+                                                <div
+                                                  className="LinesEllipsis  "
+                                                >
                                                   A1 BMW LTD!!!!!
                                                   <wbr />
                                                 </div>
@@ -147,20 +1545,176 @@ exports[`My companies dashboard should match the snapshot 1`] = `
                                     </StyledComponent>
                                   </styled.td>
                                   <Styled(styled.td)>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <td className=\\"sc-kgoBCf sc-jKJlTe gHUHyr\\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-jKJlTe",
+                                            "isStatic": false,
+                                            "lastClassName": "c13",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                              "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 12px; line-height: 1.2;
+} font-weight: 400; font-size: 12px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 14px; line-height: 1.4285714285714286;
+}",
+                                              "color: #6f777b; text-align: center;",
+                                            ],
+                                          },
+                                          "displayName": "Styled(styled.td)",
+                                          "foldedComponentIds": Array [
+                                            "sc-kgoBCf",
+                                          ],
+                                          "propTypes": Object {
+                                            "alignRight": [Function],
+                                            "children": [Function],
+                                            "isHeader": [Function],
+                                            "numeric": [Function],
+                                          },
+                                          "render": [Function],
+                                          "styledComponentId": "sc-jKJlTe",
+                                          "target": "td",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <td
+                                        className="c13"
+                                      >
                                         14 Aug 19
                                       </td>
                                     </StyledComponent>
                                   </Styled(styled.td)>
                                   <styled.td>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <td className=\\"sc-kgoBCf hYhUur\\">
-                                        <styled.a href=\\"interactions/79d92719-7402-45b6-b3d7-eff559d6b282\\" muted={false} textColour={false} noVisitedState={false}>
-                                          <StyledComponent href=\\"interactions/79d92719-7402-45b6-b3d7-eff559d6b282\\" muted={false} textColour={false} noVisitedState={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <a href=\\"interactions/79d92719-7402-45b6-b3d7-eff559d6b282\\" muted={false} className=\\"sc-dxgOiQ fnwTQd\\">
-                                              <LinesEllipsis text=\\"Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished\\" maxLine=\\"2\\" ellipsis=\\"...\\" trimRight={true} basedOn=\\"words\\" className=\\"\\" component=\\"div\\" onReflow={[Function: onReflow]} winWidth={[undefined]}>
-                                                <div className=\\"LinesEllipsis  \\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-kgoBCf",
+                                            "isStatic": false,
+                                            "lastClassName": "c11",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.td",
+                                          "foldedComponentIds": Array [],
+                                          "propTypes": Object {
+                                            "alignRight": [Function],
+                                            "children": [Function],
+                                            "isHeader": [Function],
+                                            "numeric": [Function],
+                                          },
+                                          "render": [Function],
+                                          "styledComponentId": "sc-kgoBCf",
+                                          "target": "td",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <td
+                                        className="c11"
+                                      >
+                                        <styled.a
+                                          href="interactions/79d92719-7402-45b6-b3d7-eff559d6b282"
+                                          muted={false}
+                                          noVisitedState={false}
+                                          textColour={false}
+                                        >
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-dxgOiQ",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c12",
+                                                  "rules": Array [
+                                                    "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-family: sans-serif;
+}",
+                                                    ":link {
+  color: #005ea5;
+} :visited {
+  color: #4c2c92;
+} :hover {
+  color: #2b8cc4;
+} :active {
+  color: #2b8cc4;
+} :focus {
+  color: #0b0c0c;
+}",
+                                                    "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0; background-color: #ffbf47;
+}",
+                                                    "@media print {
+  &[href^=\\"/\\"], &[href^=\\"http://\\"], &[href^=\\"https://\\"] {
+  &::after {
+  content: \\" (\\" attr(href) \\")\\"; font-size: 90%; word-wrap: break-word;
+}
+}
+}",
+                                                    [Function],
+                                                    [Function],
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "defaultProps": Object {
+                                                  "muted": false,
+                                                  "noVisitedState": false,
+                                                  "textColour": false,
+                                                },
+                                                "displayName": "styled.a",
+                                                "foldedComponentIds": Array [],
+                                                "propTypes": undefined,
+                                                "render": [Function],
+                                                "styledComponentId": "sc-dxgOiQ",
+                                                "target": "a",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            href="interactions/79d92719-7402-45b6-b3d7-eff559d6b282"
+                                            muted={false}
+                                            noVisitedState={false}
+                                            textColour={false}
+                                          >
+                                            <a
+                                              className="c12"
+                                              href="interactions/79d92719-7402-45b6-b3d7-eff559d6b282"
+                                              muted={false}
+                                            >
+                                              <LinesEllipsis
+                                                basedOn="words"
+                                                className=""
+                                                component="div"
+                                                ellipsis="..."
+                                                maxLine="2"
+                                                onReflow={[Function]}
+                                                text="Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished"
+                                                trimRight={true}
+                                              >
+                                                <div
+                                                  className="LinesEllipsis  "
+                                                >
                                                   Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished
                                                   <wbr />
                                                 </div>
@@ -174,17 +1728,159 @@ exports[`My companies dashboard should match the snapshot 1`] = `
                                 </tr>
                               </StyledComponent>
                             </styled.tr>
-                            <styled.tr>
-                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                <tr className=\\"sc-kGXeez eIIwaK\\">
+                            <styled.tr
+                              key="a30b1db3-7140-44ca-ad7a-9824c3c2ed56"
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-kGXeez",
+                                      "isStatic": true,
+                                      "lastClassName": "eIIwaK",
+                                      "rules": Array [
+                                        "",
+                                      ],
+                                    },
+                                    "displayName": "styled.tr",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-kGXeez",
+                                    "target": "tr",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <tr
+                                  className=""
+                                >
                                   <styled.td>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <td className=\\"sc-kgoBCf hYhUur\\">
-                                        <styled.a href=\\"companies/a30b1db3-7140-44ca-ad7a-9824c3c2ed56\\" muted={false} textColour={false} noVisitedState={false}>
-                                          <StyledComponent href=\\"companies/a30b1db3-7140-44ca-ad7a-9824c3c2ed56\\" muted={false} textColour={false} noVisitedState={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <a href=\\"companies/a30b1db3-7140-44ca-ad7a-9824c3c2ed56\\" muted={false} className=\\"sc-dxgOiQ fnwTQd\\">
-                                              <LinesEllipsis text=\\"Portable Potatoes\\" maxLine=\\"2\\" ellipsis=\\"...\\" trimRight={true} basedOn=\\"words\\" className=\\"\\" component=\\"div\\" onReflow={[Function: onReflow]} winWidth={[undefined]}>
-                                                <div className=\\"LinesEllipsis  \\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-kgoBCf",
+                                            "isStatic": false,
+                                            "lastClassName": "c11",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.td",
+                                          "foldedComponentIds": Array [],
+                                          "propTypes": Object {
+                                            "alignRight": [Function],
+                                            "children": [Function],
+                                            "isHeader": [Function],
+                                            "numeric": [Function],
+                                          },
+                                          "render": [Function],
+                                          "styledComponentId": "sc-kgoBCf",
+                                          "target": "td",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <td
+                                        className="c11"
+                                      >
+                                        <styled.a
+                                          href="companies/a30b1db3-7140-44ca-ad7a-9824c3c2ed56"
+                                          muted={false}
+                                          noVisitedState={false}
+                                          textColour={false}
+                                        >
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-dxgOiQ",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c12",
+                                                  "rules": Array [
+                                                    "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-family: sans-serif;
+}",
+                                                    ":link {
+  color: #005ea5;
+} :visited {
+  color: #4c2c92;
+} :hover {
+  color: #2b8cc4;
+} :active {
+  color: #2b8cc4;
+} :focus {
+  color: #0b0c0c;
+}",
+                                                    "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0; background-color: #ffbf47;
+}",
+                                                    "@media print {
+  &[href^=\\"/\\"], &[href^=\\"http://\\"], &[href^=\\"https://\\"] {
+  &::after {
+  content: \\" (\\" attr(href) \\")\\"; font-size: 90%; word-wrap: break-word;
+}
+}
+}",
+                                                    [Function],
+                                                    [Function],
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "defaultProps": Object {
+                                                  "muted": false,
+                                                  "noVisitedState": false,
+                                                  "textColour": false,
+                                                },
+                                                "displayName": "styled.a",
+                                                "foldedComponentIds": Array [],
+                                                "propTypes": undefined,
+                                                "render": [Function],
+                                                "styledComponentId": "sc-dxgOiQ",
+                                                "target": "a",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            href="companies/a30b1db3-7140-44ca-ad7a-9824c3c2ed56"
+                                            muted={false}
+                                            noVisitedState={false}
+                                            textColour={false}
+                                          >
+                                            <a
+                                              className="c12"
+                                              href="companies/a30b1db3-7140-44ca-ad7a-9824c3c2ed56"
+                                              muted={false}
+                                            >
+                                              <LinesEllipsis
+                                                basedOn="words"
+                                                className=""
+                                                component="div"
+                                                ellipsis="..."
+                                                maxLine="2"
+                                                onReflow={[Function]}
+                                                text="Portable Potatoes"
+                                                trimRight={true}
+                                              >
+                                                <div
+                                                  className="LinesEllipsis  "
+                                                >
                                                   Portable Potatoes
                                                   <wbr />
                                                 </div>
@@ -196,15 +1892,91 @@ exports[`My companies dashboard should match the snapshot 1`] = `
                                     </StyledComponent>
                                   </styled.td>
                                   <Styled(styled.td)>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <td className=\\"sc-kgoBCf sc-jKJlTe gHUHyr\\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-jKJlTe",
+                                            "isStatic": false,
+                                            "lastClassName": "c13",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                              "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 12px; line-height: 1.2;
+} font-weight: 400; font-size: 12px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 14px; line-height: 1.4285714285714286;
+}",
+                                              "color: #6f777b; text-align: center;",
+                                            ],
+                                          },
+                                          "displayName": "Styled(styled.td)",
+                                          "foldedComponentIds": Array [
+                                            "sc-kgoBCf",
+                                          ],
+                                          "propTypes": Object {
+                                            "alignRight": [Function],
+                                            "children": [Function],
+                                            "isHeader": [Function],
+                                            "numeric": [Function],
+                                          },
+                                          "render": [Function],
+                                          "styledComponentId": "sc-jKJlTe",
+                                          "target": "td",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <td
+                                        className="c13"
+                                      >
                                         -
                                       </td>
                                     </StyledComponent>
                                   </Styled(styled.td)>
                                   <styled.td>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <td className=\\"sc-kgoBCf hYhUur\\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-kgoBCf",
+                                            "isStatic": false,
+                                            "lastClassName": "c11",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.td",
+                                          "foldedComponentIds": Array [],
+                                          "propTypes": Object {
+                                            "alignRight": [Function],
+                                            "children": [Function],
+                                            "isHeader": [Function],
+                                            "numeric": [Function],
+                                          },
+                                          "render": [Function],
+                                          "styledComponentId": "sc-kgoBCf",
+                                          "target": "td",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <td
+                                        className="c11"
+                                      >
                                         No interactions have been recorded
                                       </td>
                                     </StyledComponent>
@@ -212,17 +1984,159 @@ exports[`My companies dashboard should match the snapshot 1`] = `
                                 </tr>
                               </StyledComponent>
                             </styled.tr>
-                            <styled.tr>
-                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                <tr className=\\"sc-kGXeez eIIwaK\\">
+                            <styled.tr
+                              key="b89b1db3-7140-44ca-ad7a-9824c3c2gh74"
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-kGXeez",
+                                      "isStatic": true,
+                                      "lastClassName": "eIIwaK",
+                                      "rules": Array [
+                                        "",
+                                      ],
+                                    },
+                                    "displayName": "styled.tr",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-kGXeez",
+                                    "target": "tr",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <tr
+                                  className=""
+                                >
                                   <styled.td>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <td className=\\"sc-kgoBCf hYhUur\\">
-                                        <styled.a href=\\"companies/b89b1db3-7140-44ca-ad7a-9824c3c2gh74\\" muted={false} textColour={false} noVisitedState={false}>
-                                          <StyledComponent href=\\"companies/b89b1db3-7140-44ca-ad7a-9824c3c2gh74\\" muted={false} textColour={false} noVisitedState={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <a href=\\"companies/b89b1db3-7140-44ca-ad7a-9824c3c2gh74\\" muted={false} className=\\"sc-dxgOiQ fnwTQd\\">
-                                              <LinesEllipsis text=\\"Zebra clothing\\" maxLine=\\"2\\" ellipsis=\\"...\\" trimRight={true} basedOn=\\"words\\" className=\\"\\" component=\\"div\\" onReflow={[Function: onReflow]} winWidth={[undefined]}>
-                                                <div className=\\"LinesEllipsis  \\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-kgoBCf",
+                                            "isStatic": false,
+                                            "lastClassName": "c11",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.td",
+                                          "foldedComponentIds": Array [],
+                                          "propTypes": Object {
+                                            "alignRight": [Function],
+                                            "children": [Function],
+                                            "isHeader": [Function],
+                                            "numeric": [Function],
+                                          },
+                                          "render": [Function],
+                                          "styledComponentId": "sc-kgoBCf",
+                                          "target": "td",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <td
+                                        className="c11"
+                                      >
+                                        <styled.a
+                                          href="companies/b89b1db3-7140-44ca-ad7a-9824c3c2gh74"
+                                          muted={false}
+                                          noVisitedState={false}
+                                          textColour={false}
+                                        >
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-dxgOiQ",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c12",
+                                                  "rules": Array [
+                                                    "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-family: sans-serif;
+}",
+                                                    ":link {
+  color: #005ea5;
+} :visited {
+  color: #4c2c92;
+} :hover {
+  color: #2b8cc4;
+} :active {
+  color: #2b8cc4;
+} :focus {
+  color: #0b0c0c;
+}",
+                                                    "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0; background-color: #ffbf47;
+}",
+                                                    "@media print {
+  &[href^=\\"/\\"], &[href^=\\"http://\\"], &[href^=\\"https://\\"] {
+  &::after {
+  content: \\" (\\" attr(href) \\")\\"; font-size: 90%; word-wrap: break-word;
+}
+}
+}",
+                                                    [Function],
+                                                    [Function],
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "defaultProps": Object {
+                                                  "muted": false,
+                                                  "noVisitedState": false,
+                                                  "textColour": false,
+                                                },
+                                                "displayName": "styled.a",
+                                                "foldedComponentIds": Array [],
+                                                "propTypes": undefined,
+                                                "render": [Function],
+                                                "styledComponentId": "sc-dxgOiQ",
+                                                "target": "a",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            href="companies/b89b1db3-7140-44ca-ad7a-9824c3c2gh74"
+                                            muted={false}
+                                            noVisitedState={false}
+                                            textColour={false}
+                                          >
+                                            <a
+                                              className="c12"
+                                              href="companies/b89b1db3-7140-44ca-ad7a-9824c3c2gh74"
+                                              muted={false}
+                                            >
+                                              <LinesEllipsis
+                                                basedOn="words"
+                                                className=""
+                                                component="div"
+                                                ellipsis="..."
+                                                maxLine="2"
+                                                onReflow={[Function]}
+                                                text="Zebra clothing"
+                                                trimRight={true}
+                                              >
+                                                <div
+                                                  className="LinesEllipsis  "
+                                                >
                                                   Zebra clothing
                                                   <wbr />
                                                 </div>
@@ -234,20 +2148,176 @@ exports[`My companies dashboard should match the snapshot 1`] = `
                                     </StyledComponent>
                                   </styled.td>
                                   <Styled(styled.td)>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <td className=\\"sc-kgoBCf sc-jKJlTe gHUHyr\\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-jKJlTe",
+                                            "isStatic": false,
+                                            "lastClassName": "c13",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                              "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 12px; line-height: 1.2;
+} font-weight: 400; font-size: 12px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 14px; line-height: 1.4285714285714286;
+}",
+                                              "color: #6f777b; text-align: center;",
+                                            ],
+                                          },
+                                          "displayName": "Styled(styled.td)",
+                                          "foldedComponentIds": Array [
+                                            "sc-kgoBCf",
+                                          ],
+                                          "propTypes": Object {
+                                            "alignRight": [Function],
+                                            "children": [Function],
+                                            "isHeader": [Function],
+                                            "numeric": [Function],
+                                          },
+                                          "render": [Function],
+                                          "styledComponentId": "sc-jKJlTe",
+                                          "target": "td",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <td
+                                        className="c13"
+                                      >
                                         21 Feb 2019
                                       </td>
                                     </StyledComponent>
                                   </Styled(styled.td)>
                                   <styled.td>
-                                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <td className=\\"sc-kgoBCf hYhUur\\">
-                                        <styled.a href=\\"interactions/86f92719-7402-45b6-b3d7-eff559d6b678\\" muted={false} textColour={false} noVisitedState={false}>
-                                          <StyledComponent href=\\"interactions/86f92719-7402-45b6-b3d7-eff559d6b678\\" muted={false} textColour={false} noVisitedState={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                            <a href=\\"interactions/86f92719-7402-45b6-b3d7-eff559d6b678\\" muted={false} className=\\"sc-dxgOiQ fnwTQd\\">
-                                              <LinesEllipsis text=\\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\\" maxLine=\\"2\\" ellipsis=\\"...\\" trimRight={true} basedOn=\\"words\\" className=\\"\\" component=\\"div\\" onReflow={[Function: onReflow]} winWidth={[undefined]}>
-                                                <div className=\\"LinesEllipsis  \\">
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-kgoBCf",
+                                            "isStatic": false,
+                                            "lastClassName": "c11",
+                                            "rules": Array [
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.td",
+                                          "foldedComponentIds": Array [],
+                                          "propTypes": Object {
+                                            "alignRight": [Function],
+                                            "children": [Function],
+                                            "isHeader": [Function],
+                                            "numeric": [Function],
+                                          },
+                                          "render": [Function],
+                                          "styledComponentId": "sc-kgoBCf",
+                                          "target": "td",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <td
+                                        className="c11"
+                                      >
+                                        <styled.a
+                                          href="interactions/86f92719-7402-45b6-b3d7-eff559d6b678"
+                                          muted={false}
+                                          noVisitedState={false}
+                                          textColour={false}
+                                        >
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-dxgOiQ",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c12",
+                                                  "rules": Array [
+                                                    "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-family: sans-serif;
+}",
+                                                    ":link {
+  color: #005ea5;
+} :visited {
+  color: #4c2c92;
+} :hover {
+  color: #2b8cc4;
+} :active {
+  color: #2b8cc4;
+} :focus {
+  color: #0b0c0c;
+}",
+                                                    "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0; background-color: #ffbf47;
+}",
+                                                    "@media print {
+  &[href^=\\"/\\"], &[href^=\\"http://\\"], &[href^=\\"https://\\"] {
+  &::after {
+  content: \\" (\\" attr(href) \\")\\"; font-size: 90%; word-wrap: break-word;
+}
+}
+}",
+                                                    [Function],
+                                                    [Function],
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "defaultProps": Object {
+                                                  "muted": false,
+                                                  "noVisitedState": false,
+                                                  "textColour": false,
+                                                },
+                                                "displayName": "styled.a",
+                                                "foldedComponentIds": Array [],
+                                                "propTypes": undefined,
+                                                "render": [Function],
+                                                "styledComponentId": "sc-dxgOiQ",
+                                                "target": "a",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            href="interactions/86f92719-7402-45b6-b3d7-eff559d6b678"
+                                            muted={false}
+                                            noVisitedState={false}
+                                            textColour={false}
+                                          >
+                                            <a
+                                              className="c12"
+                                              href="interactions/86f92719-7402-45b6-b3d7-eff559d6b678"
+                                              muted={false}
+                                            >
+                                              <LinesEllipsis
+                                                basedOn="words"
+                                                className=""
+                                                component="div"
+                                                ellipsis="..."
+                                                maxLine="2"
+                                                onReflow={[Function]}
+                                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                trimRight={true}
+                                              >
+                                                <div
+                                                  className="LinesEllipsis  "
+                                                >
                                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                                   <wbr />
                                                 </div>
@@ -271,16 +2341,120 @@ exports[`My companies dashboard should match the snapshot 1`] = `
             </MyCompaniesTable>
              
             <HelpText>
-              <Details summary=\\"How do I remove a company from this list\\" open={false}>
-                <styled.details open={false}>
-                  <StyledComponent open={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                    <details open={false} className=\\"sc-bdVaJa iqCPbC\\">
+              <Details
+                open={false}
+                summary="How do I remove a company from this list"
+              >
+                <styled.details
+                  open={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bdVaJa",
+                          "isStatic": false,
+                          "lastClassName": "c14",
+                          "rules": Array [
+                            "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                            "color: #0b0c0c; @media print {
+  color: #000;
+}",
+                            [Function],
+                            "display: block;",
+                          ],
+                        },
+                        "displayName": "styled.details",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bdVaJa",
+                        "target": "details",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    open={false}
+                  >
+                    <details
+                      className="c14"
+                      open={false}
+                    >
                       <styled.summary>
-                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                          <summary className=\\"sc-bwzfXH hGNYy\\">
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bwzfXH",
+                                "isStatic": true,
+                                "lastClassName": "c15",
+                                "rules": Array [
+                                  "display: inline-block; position: relative; margin-bottom: 5px; padding-left: 25px; color: #005ea5; cursor: pointer; :hover {
+  color: #2b8cc4;
+} :focus {
+  outline: 4px solid #ffbf47; outline-offset: -1px; color: #0b0c0c; background: #ffbf47;
+} ::-webkit-details-marker {
+  display: none;
+} :before {
+  content: \\"\\"; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; display: block; width: 0; height: 0; border-style: solid; border-color: transparent; clip-path: polygon(0% 0%, 100% 50%, 0% 100%); border-width: 7px 0 7px 12.124px; border-left-color: inherit; [open] > & {
+  display: block; width: 0; height: 0; border-style: solid; border-color: transparent; clip-path: polygon(0% 0%, 50% 100%, 100% 0%); border-width: 12.124px 7px 0 7px; border-top-color: inherit;
+}
+}",
+                                ],
+                              },
+                              "displayName": "styled.summary",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bwzfXH",
+                              "target": "summary",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <summary
+                            className="c15"
+                          >
                             <styled.span>
-                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                <span className=\\"sc-htpNat kqNahC\\">
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-htpNat",
+                                      "isStatic": true,
+                                      "lastClassName": "c16",
+                                      "rules": Array [
+                                        "text-decoration: underline;",
+                                      ],
+                                    },
+                                    "displayName": "styled.span",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-htpNat",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <span
+                                  className="c16"
+                                >
                                   How do I remove a company from this list
                                 </span>
                               </StyledComponent>
@@ -289,9 +2463,39 @@ exports[`My companies dashboard should match the snapshot 1`] = `
                         </StyledComponent>
                       </styled.summary>
                       <styled.div>
-                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                          <div className=\\"sc-bxivhb gOhmLO\\">
-                            You can remove a company from your list in the company&#39;s page.
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bxivhb",
+                                "isStatic": true,
+                                "lastClassName": "c17",
+                                "rules": Array [
+                                  "padding: 15px; padding-left: 20px; border-left: 5px solid #bfc1c3; p {
+  margin-top: 0; margin-bottom: 20px;
+} > :last-child, p:last-child {
+  margin-bottom: 0;
+}",
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bxivhb",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <div
+                            className="c17"
+                          >
+                            You can remove a company from your list in the company's page.
                           </div>
                         </StyledComponent>
                       </styled.div>
@@ -305,5 +2509,5 @@ exports[`My companies dashboard should match the snapshot 1`] = `
       </styled.div>
     </DashboardSection>
   </MyCompaniesTile>
-</Provider>"
+</Provider>
 `;

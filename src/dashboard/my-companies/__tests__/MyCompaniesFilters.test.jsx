@@ -11,7 +11,7 @@ describe('MyCompaniesFilters', () => {
         <MyCompaniesFilters />
       </useMyCompaniesContext.Provider>,
     )
-    expect(wrapper.debug()).toMatchSnapshot()
+    expect(wrapper).toMatchSnapshot()
   })
 
   describe('Select', () => {

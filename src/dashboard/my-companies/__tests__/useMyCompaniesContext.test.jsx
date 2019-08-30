@@ -204,7 +204,7 @@ describe('Store', () => {
   describe('useMyCompaniesContext()', () => {
     test('Provider matches snapshot', () => {
       const wrapper = mount(<useMyCompaniesContext.Provider />)
-      expect(wrapper.debug()).toMatchSnapshot()
+      expect(wrapper).toMatchSnapshot()
     })
   })
 })

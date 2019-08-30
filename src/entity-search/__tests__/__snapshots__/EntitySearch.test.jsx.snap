@@ -1,41 +1,735 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EntitySearch when at first there are results and then on second click there is an error should render the component with the error and without results 1`] = `
-"<EntitySearchWithDataProvider previouslySelected={[undefined]} getEntities={[Function]} entityFilters={{...}} cannotFind={{...}} onEntityClick={[Function]}>
-  <EntitySearch entities={{...}} error=\\"Error occurred while searching entities.\\" onEntitySearch={[Function: onEntitySearch]} previouslySelected={{...}} getEntities={[Function]} entityFilters={{...}} cannotFind={{...}} onEntityClick={[Function]}>
-    <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  padding: 7px 10px;
+  border: 2px solid transparent;
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #00823b;
+  box-shadow: 0 2px 0 #003618;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-bottom: 22px;
+}
+
+.c10:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+}
+
+.c10:link,
+.c10:visited,
+.c10:active,
+.c10:hover {
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.c10:hover,
+.c10:focus {
+  background-color: #00692f;
+}
+
+.c10:active {
+  top: 2px;
+  box-shadow: none;
+}
+
+.c10::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -4px;
+  left: -2px;
+  background: transparent;
+}
+
+.c10:active::before {
+  top: -4px;
+}
+
+.c10:disabled {
+  opacity: 0.5;
+  background: #00823b;
+}
+
+.c10:disabled:hover {
+  background-color: #00823b;
+  cursor: default;
+}
+
+.c10:disabled:focus {
+  outline: none;
+}
+
+.c10:disabled:active {
+  top: 0;
+  box-shadow: 0 2px 0 #003618;
+}
+
+.c10 svg {
+  max-width: 15px;
+}
+
+.c7 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-top: 0;
+  padding: 5px;
+  border: 2px solid #0b0c0c;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 0;
+}
+
+.c7:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+}
+
+.c7::-webkit-outer-spin-button,
+.c7::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.c7[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.c5:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.c4 {
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.c8 {
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 -15px;
+}
+
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  display: block;
+  clear: none;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+}
+
+.c0 {
+  background-color: #dee0e2;
+  padding: 10px;
+}
+
+.c2 + .c1 {
+  margin-top: 15px;
+}
+
+.c9 {
+  margin: 10px 0;
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 svg {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 32px;
+  }
+}
+
+@media print {
+  .c7 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c5 {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    width: 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c6 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 0;
+  }
+}
+
+<EntitySearchWithDataProvider
+  cannotFind={
+    Object {
+      "actions": Array [
+        "action 1",
+        "action 2",
+      ],
+      "link": Object {
+        "text": "still cannot find",
+        "url": "http://stillcannotfind.com",
+      },
+      "summary": "cannot find summary",
+    }
+  }
+  entityFilters={
+    Array [
+      Array [
+        Object {
+          "key": "search_term",
+          "label": "Company name",
+        },
+      ],
+      Array [
+        Object {
+          "key": "postal_code",
+          "label": "Company postcode",
+          "optional": true,
+          "width": "one-half",
+        },
+      ],
+    ]
+  }
+  getEntities={[Function]}
+  onEntityClick={[Function]}
+>
+  <EntitySearch
+    cannotFind={
+      Object {
+        "actions": Array [
+          "action 1",
+          "action 2",
+        ],
+        "link": Object {
+          "text": "still cannot find",
+          "url": "http://stillcannotfind.com",
+        },
+        "summary": "cannot find summary",
+      }
+    }
+    entities={null}
+    entityFilters={
+      Array [
+        Array [
+          Object {
+            "key": "search_term",
+            "label": "Company name",
+          },
+        ],
+        Array [
+          Object {
+            "key": "postal_code",
+            "label": "Company postcode",
+            "optional": true,
+            "width": "one-half",
+          },
+        ],
+      ]
+    }
+    error="Error occurred while searching entities."
+    getEntities={[Function]}
+    onEntityClick={[Function]}
+    onEntitySearch={[Function]}
+    previouslySelected={null}
+  >
+    <EntityFilters
+      entityFilters={
+        Array [
+          Array [
+            Object {
+              "key": "search_term",
+              "label": "Company name",
+            },
+          ],
+          Array [
+            Object {
+              "key": "postal_code",
+              "label": "Company postcode",
+              "optional": true,
+              "width": "one-half",
+            },
+          ],
+        ]
+      }
+      setFilter={[Function]}
+    >
       <styled.div>
-        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-fOKMvo cuaRSt\\">
-            <Styled(GridRow)>
-              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <GridRow className=\\"sc-dUjcNx kTNbrh\\">
-                  <styled.div className=\\"sc-dUjcNx kTNbrh\\">
-                    <StyledComponent className=\\"sc-dUjcNx kTNbrh\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div className=\\"sc-dUjcNx kTNbrh sc-eqIVtm dXDqzA\\">
-                        <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                          <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                              <div className=\\"sc-dVhcbM eruKDL\\">
-                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                    <Label onChange={[Function: onChange]} error={false}>
-                                      <styled.label onChange={[Function: onChange]} error={false}>
-                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-fOKMvo",
+                "isStatic": true,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  background-color: ",
+                  "#dee0e2",
+                  ";
+  padding: ",
+                  "10px",
+                  ";
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-fOKMvo",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c0"
+          >
+            <Styled(GridRow)
+              key="grid_row-0"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "c1",
+                      "isStatic": true,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  & + & {
+    margin-top: ",
+                        "15px",
+                        ";
+  }
+",
+                      ],
+                    },
+                    "displayName": "Styled(GridRow)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "c1",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <GridRow
+                  className="c1 c2"
+                >
+                  <styled.div
+                    className="c1 c2"
+                  >
+                    <StyledComponent
+                      className="c1 c2"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-eqIVtm",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              "display: flex; flex-direction: column; margin: 0 -15px; @media only screen and (min-width: 641px) {
+  flex-direction: row;
+}",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-eqIVtm",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="c1 c2 c3"
+                      >
+                        <GridCol
+                          columnFull={false}
+                          columnOneHalf={false}
+                          columnOneQuarter={false}
+                          columnOneThird={false}
+                          columnThreeQuarters={false}
+                          columnTwoThirds={false}
+                          key="grid_col-search_term"
+                        >
+                          <styled.div
+                            columnFull={false}
+                            columnOneHalf={false}
+                            columnOneQuarter={false}
+                            columnOneThird={false}
+                            columnThreeQuarters={false}
+                            columnTwoThirds={false}
+                          >
+                            <StyledComponent
+                              columnFull={false}
+                              columnOneHalf={false}
+                              columnOneQuarter={false}
+                              columnOneThird={false}
+                              columnThreeQuarters={false}
+                              columnTwoThirds={false}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-dVhcbM",
+                                    "isStatic": false,
+                                    "lastClassName": "c8",
+                                    "rules": Array [
+                                      "box-sizing: border-box; padding-right: 15px; padding-left: 15px;",
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "styled.div",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-dVhcbM",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="c4"
+                              >
+                                <EntityFilter
+                                  filter={
+                                    Object {
+                                      "key": "search_term",
+                                      "label": "Company name",
+                                    }
+                                  }
+                                  key="entity_filter-search_term"
+                                  setFilter={[Function]}
+                                >
+                                  <InputField
+                                    input={
+                                      Object {
+                                        "name": "search_term",
+                                      }
+                                    }
+                                    key="search_term"
+                                    meta={Object {}}
+                                    onChange={[Function]}
+                                  >
+                                    <Label
+                                      error={false}
+                                      onChange={[Function]}
+                                    >
+                                      <styled.label
+                                        error={false}
+                                        onChange={[Function]}
+                                      >
+                                        <StyledComponent
+                                          error={false}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "sc-ckVGcZ",
+                                                "isStatic": false,
+                                                "lastClassName": "c5",
+                                                "rules": Array [
+                                                  "display: flex; flex-direction: column; box-sizing: border-box; :after {
+  content: ''; display: table; clear: both;
+}",
+                                                  [Function],
+                                                  [Function],
+                                                ],
+                                              },
+                                              "displayName": "styled.label",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "sc-ckVGcZ",
+                                              "target": "label",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          onChange={[Function]}
+                                        >
+                                          <label
+                                            className="c5"
+                                            onChange={[Function]}
+                                          >
                                             <LabelText>
                                               <styled.span>
-                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                  <span className=\\"sc-caSCKo Fhhns\\">
+                                                <StyledComponent
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "sc-caSCKo",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c6",
+                                                        "rules": Array [
+                                                          "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                                                          "color: #0b0c0c; @media print {
+  color: #000;
+}",
+                                                          "display: block; clear: none; padding-bottom: 2px;",
+                                                          [Function],
+                                                          [Function],
+                                                        ],
+                                                      },
+                                                      "displayName": "styled.span",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "sc-caSCKo",
+                                                      "target": "span",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                >
+                                                  <span
+                                                    className="c6"
+                                                  >
                                                     Company name
                                                   </span>
                                                 </StyledComponent>
                                               </styled.span>
                                             </LabelText>
-                                            <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
-                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
-                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                  <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                            <Input
+                                              name="search_term"
+                                              type="text"
+                                            >
+                                              <styled.input
+                                                name="search_term"
+                                                type="text"
+                                              >
+                                                <StyledComponent
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "sc-dxgOiQ",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c7",
+                                                        "rules": Array [
+                                                          "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                                                          "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0;
+}",
+                                                          "box-sizing: border-box; width: 100%; height: 40px; margin-top: 0; padding: 5px; border: 2px solid #0b0c0c; border-radius: 0; appearance: none; &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+  margin: 0; -webkit-appearance: none;
+} &[type=\\"number\\"] {
+  -moz-appearance: textfield;
+}",
+                                                          [Function],
+                                                          [Function],
+                                                        ],
+                                                      },
+                                                      "displayName": "styled.input",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "sc-dxgOiQ",
+                                                      "target": "input",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                  name="search_term"
+                                                  type="text"
+                                                >
+                                                  <input
+                                                    className="c7"
+                                                    name="search_term"
+                                                    type="text"
+                                                  />
                                                 </StyledComponent>
                                               </styled.input>
                                             </Input>
@@ -55,26 +749,238 @@ exports[`EntitySearch when at first there are results and then on second click t
                 </GridRow>
               </StyledComponent>
             </Styled(GridRow)>
-            <Styled(GridRow)>
-              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <GridRow className=\\"sc-dUjcNx kTNbrh\\">
-                  <styled.div className=\\"sc-dUjcNx kTNbrh\\">
-                    <StyledComponent className=\\"sc-dUjcNx kTNbrh\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div className=\\"sc-dUjcNx kTNbrh sc-eqIVtm dXDqzA\\">
-                        <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                          <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                              <div className=\\"sc-dVhcbM iSqGTb\\">
-                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                    <Label onChange={[Function: onChange]} error={false}>
-                                      <styled.label onChange={[Function: onChange]} error={false}>
-                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+            <Styled(GridRow)
+              key="grid_row-1"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "c1",
+                      "isStatic": true,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  & + & {
+    margin-top: ",
+                        "15px",
+                        ";
+  }
+",
+                      ],
+                    },
+                    "displayName": "Styled(GridRow)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "c1",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <GridRow
+                  className="c1 c2"
+                >
+                  <styled.div
+                    className="c1 c2"
+                  >
+                    <StyledComponent
+                      className="c1 c2"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-eqIVtm",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              "display: flex; flex-direction: column; margin: 0 -15px; @media only screen and (min-width: 641px) {
+  flex-direction: row;
+}",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-eqIVtm",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="c1 c2 c3"
+                      >
+                        <GridCol
+                          columnFull={false}
+                          columnOneHalf={false}
+                          columnOneQuarter={false}
+                          columnOneThird={false}
+                          columnThreeQuarters={false}
+                          columnTwoThirds={false}
+                          key="grid_col-postal_code"
+                          setWidth="one-half"
+                        >
+                          <styled.div
+                            columnFull={false}
+                            columnOneHalf={false}
+                            columnOneQuarter={false}
+                            columnOneThird={false}
+                            columnThreeQuarters={false}
+                            columnTwoThirds={false}
+                            setWidth="one-half"
+                          >
+                            <StyledComponent
+                              columnFull={false}
+                              columnOneHalf={false}
+                              columnOneQuarter={false}
+                              columnOneThird={false}
+                              columnThreeQuarters={false}
+                              columnTwoThirds={false}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-dVhcbM",
+                                    "isStatic": false,
+                                    "lastClassName": "c8",
+                                    "rules": Array [
+                                      "box-sizing: border-box; padding-right: 15px; padding-left: 15px;",
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "styled.div",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-dVhcbM",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              setWidth="one-half"
+                            >
+                              <div
+                                className="c8"
+                              >
+                                <EntityFilter
+                                  filter={
+                                    Object {
+                                      "key": "postal_code",
+                                      "label": "Company postcode",
+                                      "optional": true,
+                                      "width": "one-half",
+                                    }
+                                  }
+                                  key="entity_filter-postal_code"
+                                  setFilter={[Function]}
+                                >
+                                  <InputField
+                                    input={
+                                      Object {
+                                        "name": "postal_code",
+                                      }
+                                    }
+                                    key="postal_code"
+                                    meta={Object {}}
+                                    onChange={[Function]}
+                                  >
+                                    <Label
+                                      error={false}
+                                      onChange={[Function]}
+                                    >
+                                      <styled.label
+                                        error={false}
+                                        onChange={[Function]}
+                                      >
+                                        <StyledComponent
+                                          error={false}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "sc-ckVGcZ",
+                                                "isStatic": false,
+                                                "lastClassName": "c5",
+                                                "rules": Array [
+                                                  "display: flex; flex-direction: column; box-sizing: border-box; :after {
+  content: ''; display: table; clear: both;
+}",
+                                                  [Function],
+                                                  [Function],
+                                                ],
+                                              },
+                                              "displayName": "styled.label",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "sc-ckVGcZ",
+                                              "target": "label",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          onChange={[Function]}
+                                        >
+                                          <label
+                                            className="c5"
+                                            onChange={[Function]}
+                                          >
                                             <LabelText>
                                               <styled.span>
-                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                  <span className=\\"sc-caSCKo Fhhns\\">
+                                                <StyledComponent
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "sc-caSCKo",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c6",
+                                                        "rules": Array [
+                                                          "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                                                          "color: #0b0c0c; @media print {
+  color: #000;
+}",
+                                                          "display: block; clear: none; padding-bottom: 2px;",
+                                                          [Function],
+                                                          [Function],
+                                                        ],
+                                                      },
+                                                      "displayName": "styled.span",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "sc-caSCKo",
+                                                      "target": "span",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                >
+                                                  <span
+                                                    className="c6"
+                                                  >
                                                     Company postcode
                                                     <span>
                                                        (optional)
@@ -83,10 +989,60 @@ exports[`EntitySearch when at first there are results and then on second click t
                                                 </StyledComponent>
                                               </styled.span>
                                             </LabelText>
-                                            <Input error={[undefined]} name=\\"postal_code\\" type=\\"text\\">
-                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"postal_code\\">
-                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"postal_code\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                  <input type=\\"text\\" name=\\"postal_code\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                            <Input
+                                              name="postal_code"
+                                              type="text"
+                                            >
+                                              <styled.input
+                                                name="postal_code"
+                                                type="text"
+                                              >
+                                                <StyledComponent
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "sc-dxgOiQ",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c7",
+                                                        "rules": Array [
+                                                          "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                                                          "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0;
+}",
+                                                          "box-sizing: border-box; width: 100%; height: 40px; margin-top: 0; padding: 5px; border: 2px solid #0b0c0c; border-radius: 0; appearance: none; &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+  margin: 0; -webkit-appearance: none;
+} &[type=\\"number\\"] {
+  -moz-appearance: textfield;
+}",
+                                                          [Function],
+                                                          [Function],
+                                                        ],
+                                                      },
+                                                      "displayName": "styled.input",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "sc-dxgOiQ",
+                                                      "target": "input",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                  name="postal_code"
+                                                  type="text"
+                                                >
+                                                  <input
+                                                    className="c7"
+                                                    name="postal_code"
+                                                    type="text"
+                                                  />
                                                 </StyledComponent>
                                               </styled.input>
                                             </Input>
@@ -110,12 +1066,136 @@ exports[`EntitySearch when at first there are results and then on second click t
         </StyledComponent>
       </styled.div>
     </EntityFilters>
-    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
-      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-eilVRo kagdty\\">
-          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-eilVRo kagdty\\">
-            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-eilVRo kagdty\\" forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-eilVRo kagdty sc-VigVT krXvSZ\\">
+    <Search
+      disabled={false}
+      onClick={[Function]}
+      start={false}
+    >
+      <StyledComponent
+        disabled={false}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-eilVRo",
+              "isStatic": true,
+              "lastClassName": "c9",
+              "rules": Array [
+                "
+  margin: ",
+                "10px",
+                " 0;
+",
+              ],
+            },
+            "defaultProps": Object {
+              "buttonColour": undefined,
+              "buttonHoverColour": undefined,
+              "buttonShadowColour": undefined,
+              "buttonTextColour": undefined,
+              "disabled": false,
+              "icon": undefined,
+              "start": false,
+            },
+            "displayName": "Search",
+            "foldedComponentIds": Array [],
+            "propTypes": Object {
+              "buttonColour": [Function],
+              "buttonHoverColour": [Function],
+              "buttonShadowColour": [Function],
+              "buttonTextColour": [Function],
+              "children": [Function],
+              "disabled": [Function],
+              "icon": [Function],
+              "start": [Function],
+            },
+            "render": [Function],
+            "styledComponentId": "sc-eilVRo",
+            "target": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "buttonColour": undefined,
+                "buttonHoverColour": undefined,
+                "buttonShadowColour": undefined,
+                "buttonTextColour": undefined,
+                "disabled": false,
+                "icon": undefined,
+                "start": false,
+              },
+              "propTypes": Object {
+                "buttonColour": [Function],
+                "buttonHoverColour": [Function],
+                "buttonShadowColour": [Function],
+                "buttonTextColour": [Function],
+                "children": [Function],
+                "disabled": [Function],
+                "icon": [Function],
+                "start": [Function],
+              },
+              "render": [Function],
+            },
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        onClick={[Function]}
+        start={false}
+      >
+        <ForwardRef
+          className="c9"
+          disabled={false}
+          onClick={[Function]}
+          start={false}
+        >
+          <styled.button
+            className="c9"
+            disabled={false}
+            isStart={false}
+            onClick={[Function]}
+          >
+            <StyledComponent
+              className="c9"
+              disabled={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-VigVT",
+                    "isStatic": false,
+                    "lastClassName": "c10",
+                    "rules": Array [
+                      [Function],
+                      "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0;
+}",
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.button",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-VigVT",
+                  "target": "button",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isStart={false}
+              onClick={[Function]}
+            >
+              <button
+                className="c9 c10"
+                disabled={false}
+                onClick={[Function]}
+              >
                 Search
               </button>
             </StyledComponent>
@@ -127,45 +1207,1240 @@ exports[`EntitySearch when at first there are results and then on second click t
       Error occurred while searching entities.
     </p>
   </EntitySearch>
-</EntitySearchWithDataProvider>"
+</EntitySearchWithDataProvider>
 `;
 
 exports[`EntitySearch when at first there is an error and then on second click there are results should render the component with the results and without the error 1`] = `
-"<EntitySearchWithDataProvider previouslySelected={[undefined]} getEntities={[Function]} entityFilters={{...}} cannotFind={{...}} onEntityClick={[Function]}>
-  <EntitySearch entities={{...}} error={{...}} onEntitySearch={[Function: onEntitySearch]} previouslySelected={{...}} getEntities={[Function]} entityFilters={{...}} cannotFind={{...}} onEntityClick={[Function]}>
-    <EntityFilters entityFilters={{...}} setFilter={[Function: setFilter]}>
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  padding: 7px 10px;
+  border: 2px solid transparent;
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #00823b;
+  box-shadow: 0 2px 0 #003618;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-bottom: 22px;
+}
+
+.c10:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+}
+
+.c10:link,
+.c10:visited,
+.c10:active,
+.c10:hover {
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.c10:hover,
+.c10:focus {
+  background-color: #00692f;
+}
+
+.c10:active {
+  top: 2px;
+  box-shadow: none;
+}
+
+.c10::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -4px;
+  left: -2px;
+  background: transparent;
+}
+
+.c10:active::before {
+  top: -4px;
+}
+
+.c10:disabled {
+  opacity: 0.5;
+  background: #00823b;
+}
+
+.c10:disabled:hover {
+  background-color: #00823b;
+  cursor: default;
+}
+
+.c10:disabled:focus {
+  outline: none;
+}
+
+.c10:disabled:active {
+  top: 0;
+  box-shadow: 0 2px 0 #003618;
+}
+
+.c10 svg {
+  max-width: 15px;
+}
+
+.c7 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-top: 0;
+  padding: 5px;
+  border: 2px solid #0b0c0c;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 0;
+}
+
+.c7:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+}
+
+.c7::-webkit-outer-spin-button,
+.c7::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.c7[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.c5:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.c20 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c21 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c21:hover {
+  color: #2b8cc4;
+}
+
+.c21:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c21::-webkit-details-marker {
+  display: none;
+}
+
+.c21:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c21:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c22 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c23 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c23 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c23 > :last-child,
+.c23 p:last-child {
+  margin-bottom: 0;
+}
+
+.c15 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c24 {
+  margin: 0;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 15px;
+}
+
+.c24 > p {
+  margin: 0;
+}
+
+.c24 > p > code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+}
+
+.c24 > pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+.c24 > pre > code {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+}
+
+.c4 {
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.c8 {
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 -15px;
+}
+
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  display: block;
+  clear: none;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+}
+
+.c26 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c26:link {
+  color: #005ea5;
+}
+
+.c26:visited {
+  color: #4c2c92;
+}
+
+.c26:hover {
+  color: #2b8cc4;
+}
+
+.c26:active {
+  color: #2b8cc4;
+}
+
+.c26:focus {
+  color: #0b0c0c;
+}
+
+.c26:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c19 > div {
+  margin: 5px 0 5px 4px;
+}
+
+.c25 {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+
+.c16 {
+  list-style-type: none;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.c16 > span:nth-child(1) {
+  color: #6f777b;
+  margin-right: 5px;
+}
+
+.c13 {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #bfc1c3;
+}
+
+.c18 {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #bfc1c3;
+  cursor: pointer;
+}
+
+.c18:hover {
+  border: 1px solid #2b8cc4;
+  background-color: #f8f8f8;
+}
+
+.c18:hover > h3 {
+  color: #2b8cc4;
+}
+
+.c14 {
+  margin: 0;
+  color: #005ea5;
+  font-size: 16px;
+}
+
+.c17 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  clear: both;
+  border-left: 10px solid #bfc1c3;
+}
+
+.c17:first-child {
+  margin-top: 0;
+}
+
+.c17:only-child,
+.c17:last-child {
+  margin-bottom: 0;
+}
+
+.c17 {
+  margin-top: 10px;
+}
+
+.c11 {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.c12 {
+  list-style-type: none;
+}
+
+.c0 {
+  background-color: #dee0e2;
+  padding: 10px;
+}
+
+.c2 + .c1 {
+  margin-top: 15px;
+}
+
+.c9 {
+  margin: 10px 0;
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 svg {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 32px;
+  }
+}
+
+@media print {
+  .c7 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c5 {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  .c20 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c20 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c20 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c20 {
+    margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c24 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c24 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c24 {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    width: 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c6 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  .c26 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c26[href^="/"]::after,
+  .c26[href^="http://"]::after,
+  .c26[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c14 {
+    font-size: 19px;
+  }
+}
+
+@media print {
+  .c17 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c17 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c17 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c17 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+<EntitySearchWithDataProvider
+  cannotFind={
+    Object {
+      "actions": Array [
+        "action 1",
+        "action 2",
+      ],
+      "link": Object {
+        "text": "still cannot find",
+        "url": "http://stillcannotfind.com",
+      },
+      "summary": "cannot find summary",
+    }
+  }
+  entityFilters={
+    Array [
+      Array [
+        Object {
+          "key": "search_term",
+          "label": "Company name",
+        },
+      ],
+      Array [
+        Object {
+          "key": "postal_code",
+          "label": "Company postcode",
+          "optional": true,
+          "width": "one-half",
+        },
+      ],
+    ]
+  }
+  getEntities={[Function]}
+  onEntityClick={[Function]}
+>
+  <EntitySearch
+    cannotFind={
+      Object {
+        "actions": Array [
+          "action 1",
+          "action 2",
+        ],
+        "link": Object {
+          "text": "still cannot find",
+          "url": "http://stillcannotfind.com",
+        },
+        "summary": "cannot find summary",
+      }
+    }
+    entities={
+      Array [
+        Object {
+          "canHandleClick": false,
+          "data": Object {
+            "datahub_company": Object {
+              "id": "0fb3379c-341c-4da4-b825-bf8d47b26baa",
+              "latest_interaction": Object {
+                "created_on": "2019-08-01T18:10:00",
+                "date": "2019-08-01",
+                "id": "ec4a46ef-6e50-4a5c-bba0-e311f0471312",
+                "subject": "Meeting between DIT and Joe Bloggs",
+              },
+            },
+            "dnb_company": Object {
+              "address_country": "GB",
+              "address_county": "",
+              "address_line_1": "123 Fake Street",
+              "address_line_2": "",
+              "address_postcode": "BN1 4SE",
+              "address_town": "Brighton",
+              "annual_sales": 1860000000,
+              "annual_sales_currency": "USD",
+              "domain": "example.co.uk",
+              "duns_number": "12345678",
+              "employee_number": 2000,
+              "global_ultimate_duns_number": "123456789",
+              "global_ultimate_primary_name": "Some parent company name",
+              "industry_codes": Array [
+                Object {
+                  "usSicV4": "1623",
+                  "usSicV4Description": "Water/sewer/utility construction",
+                },
+              ],
+              "is_annual_sales_estimated": null,
+              "is_employees_number_estimated": true,
+              "is_out_of_business": false,
+              "legal_status": "corporation",
+              "primary_name": "Some company name",
+              "registered_address_country": "GB",
+              "registered_address_county": "",
+              "registered_address_line_1": "",
+              "registered_address_line_2": "",
+              "registered_address_postcode": "BN1 4SE",
+              "registered_address_town": "Brighton",
+              "registration_numbers": Array [
+                Object {
+                  "registration_number": "1234567",
+                  "registration_type": "uk_companies_house_number",
+                },
+              ],
+              "trading_names": Array [
+                "Some trading name",
+              ],
+            },
+          },
+          "heading": "Some company name",
+          "meta": Object {
+            "Address": "123 Fake Street, Brighton, BN1 4SE",
+          },
+          "text": <React.Fragment>
+            This company is already on Data Hub. 
+            <a
+              href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
+            >
+              Go to the company page
+            </a>
+              to record activity.
+          </React.Fragment>,
+        },
+        Object {
+          "canHandleClick": true,
+          "data": Object {
+            "datahub_company": null,
+            "dnb_company": Object {
+              "address_country": "GB",
+              "address_county": "",
+              "address_line_1": "123 ABC Road",
+              "address_line_2": "",
+              "address_postcode": "BN2 9QB",
+              "address_town": "Brighton",
+              "annual_sales": 1999999999,
+              "annual_sales_currency": "USD",
+              "domain": "example.co.uk",
+              "duns_number": "219999999",
+              "employee_number": 300,
+              "global_ultimate_duns_number": "319999999",
+              "global_ultimate_primary_name": "Some other company parent",
+              "industry_codes": Array [
+                Object {
+                  "usSicV4": "3799",
+                  "usSicV4Description": "Mfg transportation equipment",
+                },
+              ],
+              "is_annual_sales_estimated": null,
+              "is_employees_number_estimated": true,
+              "is_out_of_business": false,
+              "legal_status": "corporation",
+              "primary_name": "Some other company",
+              "registered_address_country": "GB",
+              "registered_address_county": "",
+              "registered_address_line_1": "",
+              "registered_address_line_2": "",
+              "registered_address_postcode": "BN2 9QB",
+              "registered_address_town": "Brighton",
+              "registration_numbers": Array [
+                Object {
+                  "registration_number": "00016033",
+                  "registration_type": "uk_companies_house_number",
+                },
+              ],
+              "trading_names": Array [],
+            },
+          },
+          "heading": "Some other company",
+          "meta": Object {
+            "Address": "123 ABC Road, Brighton, BN2 9QB",
+          },
+          "text": null,
+        },
+      ]
+    }
+    entityFilters={
+      Array [
+        Array [
+          Object {
+            "key": "search_term",
+            "label": "Company name",
+          },
+        ],
+        Array [
+          Object {
+            "key": "postal_code",
+            "label": "Company postcode",
+            "optional": true,
+            "width": "one-half",
+          },
+        ],
+      ]
+    }
+    error={null}
+    getEntities={[Function]}
+    onEntityClick={[Function]}
+    onEntitySearch={[Function]}
+    previouslySelected={null}
+  >
+    <EntityFilters
+      entityFilters={
+        Array [
+          Array [
+            Object {
+              "key": "search_term",
+              "label": "Company name",
+            },
+          ],
+          Array [
+            Object {
+              "key": "postal_code",
+              "label": "Company postcode",
+              "optional": true,
+              "width": "one-half",
+            },
+          ],
+        ]
+      }
+      setFilter={[Function]}
+    >
       <styled.div>
-        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-fOKMvo cuaRSt\\">
-            <Styled(GridRow)>
-              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <GridRow className=\\"sc-dUjcNx kTNbrh\\">
-                  <styled.div className=\\"sc-dUjcNx kTNbrh\\">
-                    <StyledComponent className=\\"sc-dUjcNx kTNbrh\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div className=\\"sc-dUjcNx kTNbrh sc-eqIVtm dXDqzA\\">
-                        <GridCol setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                          <styled.div setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <StyledComponent setWidth={[undefined]} columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                              <div className=\\"sc-dVhcbM eruKDL\\">
-                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                    <Label onChange={[Function: onChange]} error={false}>
-                                      <styled.label onChange={[Function: onChange]} error={false}>
-                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-fOKMvo",
+                "isStatic": true,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "
+  background-color: ",
+                  "#dee0e2",
+                  ";
+  padding: ",
+                  "10px",
+                  ";
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-fOKMvo",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c0"
+          >
+            <Styled(GridRow)
+              key="grid_row-0"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "c1",
+                      "isStatic": true,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  & + & {
+    margin-top: ",
+                        "15px",
+                        ";
+  }
+",
+                      ],
+                    },
+                    "displayName": "Styled(GridRow)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "c1",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <GridRow
+                  className="c1 c2"
+                >
+                  <styled.div
+                    className="c1 c2"
+                  >
+                    <StyledComponent
+                      className="c1 c2"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-eqIVtm",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              "display: flex; flex-direction: column; margin: 0 -15px; @media only screen and (min-width: 641px) {
+  flex-direction: row;
+}",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-eqIVtm",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="c1 c2 c3"
+                      >
+                        <GridCol
+                          columnFull={false}
+                          columnOneHalf={false}
+                          columnOneQuarter={false}
+                          columnOneThird={false}
+                          columnThreeQuarters={false}
+                          columnTwoThirds={false}
+                          key="grid_col-search_term"
+                        >
+                          <styled.div
+                            columnFull={false}
+                            columnOneHalf={false}
+                            columnOneQuarter={false}
+                            columnOneThird={false}
+                            columnThreeQuarters={false}
+                            columnTwoThirds={false}
+                          >
+                            <StyledComponent
+                              columnFull={false}
+                              columnOneHalf={false}
+                              columnOneQuarter={false}
+                              columnOneThird={false}
+                              columnThreeQuarters={false}
+                              columnTwoThirds={false}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-dVhcbM",
+                                    "isStatic": false,
+                                    "lastClassName": "c8",
+                                    "rules": Array [
+                                      "box-sizing: border-box; padding-right: 15px; padding-left: 15px;",
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "styled.div",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-dVhcbM",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="c4"
+                              >
+                                <EntityFilter
+                                  filter={
+                                    Object {
+                                      "key": "search_term",
+                                      "label": "Company name",
+                                    }
+                                  }
+                                  key="entity_filter-search_term"
+                                  setFilter={[Function]}
+                                >
+                                  <InputField
+                                    input={
+                                      Object {
+                                        "name": "search_term",
+                                      }
+                                    }
+                                    key="search_term"
+                                    meta={Object {}}
+                                    onChange={[Function]}
+                                  >
+                                    <Label
+                                      error={false}
+                                      onChange={[Function]}
+                                    >
+                                      <styled.label
+                                        error={false}
+                                        onChange={[Function]}
+                                      >
+                                        <StyledComponent
+                                          error={false}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "sc-ckVGcZ",
+                                                "isStatic": false,
+                                                "lastClassName": "c5",
+                                                "rules": Array [
+                                                  "display: flex; flex-direction: column; box-sizing: border-box; :after {
+  content: ''; display: table; clear: both;
+}",
+                                                  [Function],
+                                                  [Function],
+                                                ],
+                                              },
+                                              "displayName": "styled.label",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "sc-ckVGcZ",
+                                              "target": "label",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          onChange={[Function]}
+                                        >
+                                          <label
+                                            className="c5"
+                                            onChange={[Function]}
+                                          >
                                             <LabelText>
                                               <styled.span>
-                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                  <span className=\\"sc-caSCKo Fhhns\\">
+                                                <StyledComponent
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "sc-caSCKo",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c6",
+                                                        "rules": Array [
+                                                          "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                                                          "color: #0b0c0c; @media print {
+  color: #000;
+}",
+                                                          "display: block; clear: none; padding-bottom: 2px;",
+                                                          [Function],
+                                                          [Function],
+                                                        ],
+                                                      },
+                                                      "displayName": "styled.span",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "sc-caSCKo",
+                                                      "target": "span",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                >
+                                                  <span
+                                                    className="c6"
+                                                  >
                                                     Company name
                                                   </span>
                                                 </StyledComponent>
                                               </styled.span>
                                             </LabelText>
-                                            <Input error={[undefined]} name=\\"search_term\\" type=\\"text\\">
-                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"search_term\\">
-                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"search_term\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                  <input type=\\"text\\" name=\\"search_term\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                            <Input
+                                              name="search_term"
+                                              type="text"
+                                            >
+                                              <styled.input
+                                                name="search_term"
+                                                type="text"
+                                              >
+                                                <StyledComponent
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "sc-dxgOiQ",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c7",
+                                                        "rules": Array [
+                                                          "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                                                          "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0;
+}",
+                                                          "box-sizing: border-box; width: 100%; height: 40px; margin-top: 0; padding: 5px; border: 2px solid #0b0c0c; border-radius: 0; appearance: none; &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+  margin: 0; -webkit-appearance: none;
+} &[type=\\"number\\"] {
+  -moz-appearance: textfield;
+}",
+                                                          [Function],
+                                                          [Function],
+                                                        ],
+                                                      },
+                                                      "displayName": "styled.input",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "sc-dxgOiQ",
+                                                      "target": "input",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                  name="search_term"
+                                                  type="text"
+                                                >
+                                                  <input
+                                                    className="c7"
+                                                    name="search_term"
+                                                    type="text"
+                                                  />
                                                 </StyledComponent>
                                               </styled.input>
                                             </Input>
@@ -185,26 +2460,238 @@ exports[`EntitySearch when at first there is an error and then on second click t
                 </GridRow>
               </StyledComponent>
             </Styled(GridRow)>
-            <Styled(GridRow)>
-              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <GridRow className=\\"sc-dUjcNx kTNbrh\\">
-                  <styled.div className=\\"sc-dUjcNx kTNbrh\\">
-                    <StyledComponent className=\\"sc-dUjcNx kTNbrh\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div className=\\"sc-dUjcNx kTNbrh sc-eqIVtm dXDqzA\\">
-                        <GridCol setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                          <styled.div setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]}>
-                            <StyledComponent setWidth=\\"one-half\\" columnOneQuarter={false} columnOneThird={false} columnOneHalf={false} columnTwoThirds={false} columnThreeQuarters={false} columnFull={false} setDesktopWidth={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-                              <div className=\\"sc-dVhcbM iSqGTb\\">
-                                <EntityFilter filter={{...}} setFilter={[Function: setFilter]}>
-                                  <InputField onChange={[Function: onChange]} input={{...}} hint={[undefined]} meta={{...}}>
-                                    <Label onChange={[Function: onChange]} error={false}>
-                                      <styled.label onChange={[Function: onChange]} error={false}>
-                                        <StyledComponent onChange={[Function: onChange]} error={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                                          <label onChange={[Function: onChange]} className=\\"sc-ckVGcZ jNBPWj\\">
+            <Styled(GridRow)
+              key="grid_row-1"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "c1",
+                      "isStatic": true,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  & + & {
+    margin-top: ",
+                        "15px",
+                        ";
+  }
+",
+                      ],
+                    },
+                    "displayName": "Styled(GridRow)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "c1",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <GridRow
+                  className="c1 c2"
+                >
+                  <styled.div
+                    className="c1 c2"
+                  >
+                    <StyledComponent
+                      className="c1 c2"
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-eqIVtm",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              "display: flex; flex-direction: column; margin: 0 -15px; @media only screen and (min-width: 641px) {
+  flex-direction: row;
+}",
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-eqIVtm",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="c1 c2 c3"
+                      >
+                        <GridCol
+                          columnFull={false}
+                          columnOneHalf={false}
+                          columnOneQuarter={false}
+                          columnOneThird={false}
+                          columnThreeQuarters={false}
+                          columnTwoThirds={false}
+                          key="grid_col-postal_code"
+                          setWidth="one-half"
+                        >
+                          <styled.div
+                            columnFull={false}
+                            columnOneHalf={false}
+                            columnOneQuarter={false}
+                            columnOneThird={false}
+                            columnThreeQuarters={false}
+                            columnTwoThirds={false}
+                            setWidth="one-half"
+                          >
+                            <StyledComponent
+                              columnFull={false}
+                              columnOneHalf={false}
+                              columnOneQuarter={false}
+                              columnOneThird={false}
+                              columnThreeQuarters={false}
+                              columnTwoThirds={false}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-dVhcbM",
+                                    "isStatic": false,
+                                    "lastClassName": "c8",
+                                    "rules": Array [
+                                      "box-sizing: border-box; padding-right: 15px; padding-left: 15px;",
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "styled.div",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-dVhcbM",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              setWidth="one-half"
+                            >
+                              <div
+                                className="c8"
+                              >
+                                <EntityFilter
+                                  filter={
+                                    Object {
+                                      "key": "postal_code",
+                                      "label": "Company postcode",
+                                      "optional": true,
+                                      "width": "one-half",
+                                    }
+                                  }
+                                  key="entity_filter-postal_code"
+                                  setFilter={[Function]}
+                                >
+                                  <InputField
+                                    input={
+                                      Object {
+                                        "name": "postal_code",
+                                      }
+                                    }
+                                    key="postal_code"
+                                    meta={Object {}}
+                                    onChange={[Function]}
+                                  >
+                                    <Label
+                                      error={false}
+                                      onChange={[Function]}
+                                    >
+                                      <styled.label
+                                        error={false}
+                                        onChange={[Function]}
+                                      >
+                                        <StyledComponent
+                                          error={false}
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "sc-ckVGcZ",
+                                                "isStatic": false,
+                                                "lastClassName": "c5",
+                                                "rules": Array [
+                                                  "display: flex; flex-direction: column; box-sizing: border-box; :after {
+  content: ''; display: table; clear: both;
+}",
+                                                  [Function],
+                                                  [Function],
+                                                ],
+                                              },
+                                              "displayName": "styled.label",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "sc-ckVGcZ",
+                                              "target": "label",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                          onChange={[Function]}
+                                        >
+                                          <label
+                                            className="c5"
+                                            onChange={[Function]}
+                                          >
                                             <LabelText>
                                               <styled.span>
-                                                <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                                  <span className=\\"sc-caSCKo Fhhns\\">
+                                                <StyledComponent
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "sc-caSCKo",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c6",
+                                                        "rules": Array [
+                                                          "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                                                          "color: #0b0c0c; @media print {
+  color: #000;
+}",
+                                                          "display: block; clear: none; padding-bottom: 2px;",
+                                                          [Function],
+                                                          [Function],
+                                                        ],
+                                                      },
+                                                      "displayName": "styled.span",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "sc-caSCKo",
+                                                      "target": "span",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                >
+                                                  <span
+                                                    className="c6"
+                                                  >
                                                     Company postcode
                                                     <span>
                                                        (optional)
@@ -213,10 +2700,60 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                                 </StyledComponent>
                                               </styled.span>
                                             </LabelText>
-                                            <Input error={[undefined]} name=\\"postal_code\\" type=\\"text\\">
-                                              <styled.input type=\\"text\\" error={[undefined]} name=\\"postal_code\\">
-                                                <StyledComponent type=\\"text\\" error={[undefined]} name=\\"postal_code\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                                  <input type=\\"text\\" name=\\"postal_code\\" className=\\"sc-dxgOiQ KJcFQ\\" />
+                                            <Input
+                                              name="postal_code"
+                                              type="text"
+                                            >
+                                              <styled.input
+                                                name="postal_code"
+                                                type="text"
+                                              >
+                                                <StyledComponent
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "sc-dxgOiQ",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c7",
+                                                        "rules": Array [
+                                                          "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                                                          "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0;
+}",
+                                                          "box-sizing: border-box; width: 100%; height: 40px; margin-top: 0; padding: 5px; border: 2px solid #0b0c0c; border-radius: 0; appearance: none; &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+  margin: 0; -webkit-appearance: none;
+} &[type=\\"number\\"] {
+  -moz-appearance: textfield;
+}",
+                                                          [Function],
+                                                          [Function],
+                                                        ],
+                                                      },
+                                                      "displayName": "styled.input",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "sc-dxgOiQ",
+                                                      "target": "input",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                  name="postal_code"
+                                                  type="text"
+                                                >
+                                                  <input
+                                                    className="c7"
+                                                    name="postal_code"
+                                                    type="text"
+                                                  />
                                                 </StyledComponent>
                                               </styled.input>
                                             </Input>
@@ -240,12 +2777,136 @@ exports[`EntitySearch when at first there is an error and then on second click t
         </StyledComponent>
       </styled.div>
     </EntityFilters>
-    <Search onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]}>
-      <StyledComponent onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} forwardedComponent={{...}} forwardedRef={{...}}>
-        <ForwardRef onClick={[Function: onSearchClick]} icon={[undefined]} disabled={false} start={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-eilVRo kagdty\\">
-          <styled.button isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-eilVRo kagdty\\">
-            <StyledComponent isStart={false} icon={[undefined]} onClick={[Function: onSearchClick]} disabled={false} buttonColour={[undefined]} buttonHoverColour={[undefined]} buttonShadowColour={[undefined]} buttonTextColour={[undefined]} className=\\"sc-eilVRo kagdty\\" forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function: onSearchClick]} disabled={false} className=\\"sc-eilVRo kagdty sc-VigVT krXvSZ\\">
+    <Search
+      disabled={false}
+      onClick={[Function]}
+      start={false}
+    >
+      <StyledComponent
+        disabled={false}
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-eilVRo",
+              "isStatic": true,
+              "lastClassName": "c9",
+              "rules": Array [
+                "
+  margin: ",
+                "10px",
+                " 0;
+",
+              ],
+            },
+            "defaultProps": Object {
+              "buttonColour": undefined,
+              "buttonHoverColour": undefined,
+              "buttonShadowColour": undefined,
+              "buttonTextColour": undefined,
+              "disabled": false,
+              "icon": undefined,
+              "start": false,
+            },
+            "displayName": "Search",
+            "foldedComponentIds": Array [],
+            "propTypes": Object {
+              "buttonColour": [Function],
+              "buttonHoverColour": [Function],
+              "buttonShadowColour": [Function],
+              "buttonTextColour": [Function],
+              "children": [Function],
+              "disabled": [Function],
+              "icon": [Function],
+              "start": [Function],
+            },
+            "render": [Function],
+            "styledComponentId": "sc-eilVRo",
+            "target": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "buttonColour": undefined,
+                "buttonHoverColour": undefined,
+                "buttonShadowColour": undefined,
+                "buttonTextColour": undefined,
+                "disabled": false,
+                "icon": undefined,
+                "start": false,
+              },
+              "propTypes": Object {
+                "buttonColour": [Function],
+                "buttonHoverColour": [Function],
+                "buttonShadowColour": [Function],
+                "buttonTextColour": [Function],
+                "children": [Function],
+                "disabled": [Function],
+                "icon": [Function],
+                "start": [Function],
+              },
+              "render": [Function],
+            },
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        onClick={[Function]}
+        start={false}
+      >
+        <ForwardRef
+          className="c9"
+          disabled={false}
+          onClick={[Function]}
+          start={false}
+        >
+          <styled.button
+            className="c9"
+            disabled={false}
+            isStart={false}
+            onClick={[Function]}
+          >
+            <StyledComponent
+              className="c9"
+              disabled={false}
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-VigVT",
+                    "isStatic": false,
+                    "lastClassName": "c10",
+                    "rules": Array [
+                      [Function],
+                      "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0;
+}",
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.button",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-VigVT",
+                  "target": "button",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isStart={false}
+              onClick={[Function]}
+            >
+              <button
+                className="c9 c10"
+                disabled={false}
+                onClick={[Function]}
+              >
                 Search
               </button>
             </StyledComponent>
@@ -253,24 +2914,415 @@ exports[`EntitySearch when at first there is an error and then on second click t
         </ForwardRef>
       </StyledComponent>
     </Search>
-    <EntityList entities={{...}} onEntityClick={[Function]}>
+    <EntityList
+      entities={
+        Array [
+          Object {
+            "canHandleClick": false,
+            "data": Object {
+              "datahub_company": Object {
+                "id": "0fb3379c-341c-4da4-b825-bf8d47b26baa",
+                "latest_interaction": Object {
+                  "created_on": "2019-08-01T18:10:00",
+                  "date": "2019-08-01",
+                  "id": "ec4a46ef-6e50-4a5c-bba0-e311f0471312",
+                  "subject": "Meeting between DIT and Joe Bloggs",
+                },
+              },
+              "dnb_company": Object {
+                "address_country": "GB",
+                "address_county": "",
+                "address_line_1": "123 Fake Street",
+                "address_line_2": "",
+                "address_postcode": "BN1 4SE",
+                "address_town": "Brighton",
+                "annual_sales": 1860000000,
+                "annual_sales_currency": "USD",
+                "domain": "example.co.uk",
+                "duns_number": "12345678",
+                "employee_number": 2000,
+                "global_ultimate_duns_number": "123456789",
+                "global_ultimate_primary_name": "Some parent company name",
+                "industry_codes": Array [
+                  Object {
+                    "usSicV4": "1623",
+                    "usSicV4Description": "Water/sewer/utility construction",
+                  },
+                ],
+                "is_annual_sales_estimated": null,
+                "is_employees_number_estimated": true,
+                "is_out_of_business": false,
+                "legal_status": "corporation",
+                "primary_name": "Some company name",
+                "registered_address_country": "GB",
+                "registered_address_county": "",
+                "registered_address_line_1": "",
+                "registered_address_line_2": "",
+                "registered_address_postcode": "BN1 4SE",
+                "registered_address_town": "Brighton",
+                "registration_numbers": Array [
+                  Object {
+                    "registration_number": "1234567",
+                    "registration_type": "uk_companies_house_number",
+                  },
+                ],
+                "trading_names": Array [
+                  "Some trading name",
+                ],
+              },
+            },
+            "heading": "Some company name",
+            "meta": Object {
+              "Address": "123 Fake Street, Brighton, BN1 4SE",
+            },
+            "text": <React.Fragment>
+              This company is already on Data Hub. 
+              <a
+                href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
+              >
+                Go to the company page
+              </a>
+                to record activity.
+            </React.Fragment>,
+          },
+          Object {
+            "canHandleClick": true,
+            "data": Object {
+              "datahub_company": null,
+              "dnb_company": Object {
+                "address_country": "GB",
+                "address_county": "",
+                "address_line_1": "123 ABC Road",
+                "address_line_2": "",
+                "address_postcode": "BN2 9QB",
+                "address_town": "Brighton",
+                "annual_sales": 1999999999,
+                "annual_sales_currency": "USD",
+                "domain": "example.co.uk",
+                "duns_number": "219999999",
+                "employee_number": 300,
+                "global_ultimate_duns_number": "319999999",
+                "global_ultimate_primary_name": "Some other company parent",
+                "industry_codes": Array [
+                  Object {
+                    "usSicV4": "3799",
+                    "usSicV4Description": "Mfg transportation equipment",
+                  },
+                ],
+                "is_annual_sales_estimated": null,
+                "is_employees_number_estimated": true,
+                "is_out_of_business": false,
+                "legal_status": "corporation",
+                "primary_name": "Some other company",
+                "registered_address_country": "GB",
+                "registered_address_county": "",
+                "registered_address_line_1": "",
+                "registered_address_line_2": "",
+                "registered_address_postcode": "BN2 9QB",
+                "registered_address_town": "Brighton",
+                "registration_numbers": Array [
+                  Object {
+                    "registration_number": "00016033",
+                    "registration_type": "uk_companies_house_number",
+                  },
+                ],
+                "trading_names": Array [],
+              },
+            },
+            "heading": "Some other company",
+            "meta": Object {
+              "Address": "123 ABC Road, Brighton, BN2 9QB",
+            },
+            "text": null,
+          },
+        ]
+      }
+      onEntityClick={[Function]}
+    >
       <styled.ol>
-        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <ol className=\\"sc-krvtoX etImff\\">
-            <styled.li>
-              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-fYiAbW hSTGFp\\">
-                  <EntityListItem onEntityClick={[Function]} heading=\\"Some company name\\" meta={{...}} text={{...}} canHandleClick={false} data={{...}}>
-                    <StyledEntity onClick={[Function: onClick]} canHandleClick={false}>
-                      <StyledComponent onClick={[Function: onClick]} canHandleClick={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div onClick={[Function: onClick]} className=\\"sc-lkqHmb biLRnd\\">
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-krvtoX",
+                "isStatic": true,
+                "lastClassName": "c11",
+                "rules": Array [
+                  "
+  margin-bottom: ",
+                  "20px",
+                  ";
+  padding-left: 0;
+",
+                ],
+              },
+              "displayName": "styled.ol",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-krvtoX",
+              "target": "ol",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <ol
+            className="c11"
+          >
+            <styled.li
+              key="62"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-fYiAbW",
+                      "isStatic": true,
+                      "lastClassName": "c12",
+                      "rules": Array [
+                        "
+  list-style-type: none;
+",
+                      ],
+                    },
+                    "displayName": "styled.li",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-fYiAbW",
+                    "target": "li",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <li
+                  className="c12"
+                >
+                  <EntityListItem
+                    canHandleClick={false}
+                    data={
+                      Object {
+                        "datahub_company": Object {
+                          "id": "0fb3379c-341c-4da4-b825-bf8d47b26baa",
+                          "latest_interaction": Object {
+                            "created_on": "2019-08-01T18:10:00",
+                            "date": "2019-08-01",
+                            "id": "ec4a46ef-6e50-4a5c-bba0-e311f0471312",
+                            "subject": "Meeting between DIT and Joe Bloggs",
+                          },
+                        },
+                        "dnb_company": Object {
+                          "address_country": "GB",
+                          "address_county": "",
+                          "address_line_1": "123 Fake Street",
+                          "address_line_2": "",
+                          "address_postcode": "BN1 4SE",
+                          "address_town": "Brighton",
+                          "annual_sales": 1860000000,
+                          "annual_sales_currency": "USD",
+                          "domain": "example.co.uk",
+                          "duns_number": "12345678",
+                          "employee_number": 2000,
+                          "global_ultimate_duns_number": "123456789",
+                          "global_ultimate_primary_name": "Some parent company name",
+                          "industry_codes": Array [
+                            Object {
+                              "usSicV4": "1623",
+                              "usSicV4Description": "Water/sewer/utility construction",
+                            },
+                          ],
+                          "is_annual_sales_estimated": null,
+                          "is_employees_number_estimated": true,
+                          "is_out_of_business": false,
+                          "legal_status": "corporation",
+                          "primary_name": "Some company name",
+                          "registered_address_country": "GB",
+                          "registered_address_county": "",
+                          "registered_address_line_1": "",
+                          "registered_address_line_2": "",
+                          "registered_address_postcode": "BN1 4SE",
+                          "registered_address_town": "Brighton",
+                          "registration_numbers": Array [
+                            Object {
+                              "registration_number": "1234567",
+                              "registration_type": "uk_companies_house_number",
+                            },
+                          ],
+                          "trading_names": Array [
+                            "Some trading name",
+                          ],
+                        },
+                      }
+                    }
+                    heading="Some company name"
+                    meta={
+                      Object {
+                        "Address": "123 Fake Street, Brighton, BN1 4SE",
+                      }
+                    }
+                    onEntityClick={[Function]}
+                    text={
+                      <React.Fragment>
+                        This company is already on Data Hub. 
+                        <a
+                          href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
+                        >
+                          Go to the company page
+                        </a>
+                          to record activity.
+                      </React.Fragment>
+                    }
+                  >
+                    <StyledEntity
+                      canHandleClick={false}
+                      key="64"
+                      onClick={[Function]}
+                    >
+                      <StyledComponent
+                        canHandleClick={false}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-lkqHmb",
+                              "isStatic": false,
+                              "lastClassName": "c18",
+                              "rules": Array [
+                                "
+  margin-bottom: ",
+                                "10px",
+                                ";
+  padding: ",
+                                "10px",
+                                ";
+  border: 1px solid ",
+                                "#bfc1c3",
+                                ";  
+  
+  ",
+                                [Function],
+                                "
+",
+                              ],
+                            },
+                            "displayName": "StyledEntity",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-lkqHmb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="c13"
+                          onClick={[Function]}
+                        >
                           <Styled(H3)>
-                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                              <H3 className=\\"sc-eLExRp dnEJWw\\">
-                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-eLExRp dnEJWw\\" level={[undefined]}>
-                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-eLExRp dnEJWw\\">
-                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-eLExRp dnEJWw\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <h3 size=\\"MEDIUM\\" className=\\"sc-eLExRp dnEJWw sc-cMljjf kCLKvB\\">
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-eLExRp",
+                                    "isStatic": true,
+                                    "lastClassName": "c14",
+                                    "rules": Array [
+                                      "
+  margin: 0;
+  color: ",
+                                      "#005ea5",
+                                      ";
+  font-size: ",
+                                      "16px",
+                                      ";
+  ",
+                                      "@media only screen and (min-width: 641px)",
+                                      " {
+    font-size: ",
+                                      "19px",
+                                      ";
+  }
+",
+                                    ],
+                                  },
+                                  "displayName": "Styled(H3)",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-eLExRp",
+                                  "target": [Function],
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <H3
+                                className="c14"
+                              >
+                                <Heading
+                                  as="h3"
+                                  className="c14"
+                                  size="MEDIUM"
+                                >
+                                  <styled.h1
+                                    as="h3"
+                                    className="c14"
+                                    size="MEDIUM"
+                                  >
+                                    <StyledComponent
+                                      as="h3"
+                                      className="c14"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-cMljjf",
+                                            "isStatic": false,
+                                            "lastClassName": "c15",
+                                            "rules": Array [
+                                              "color: #0b0c0c; @media print {
+  color: #000;
+}",
+                                              [Function],
+                                              "display: block; margin-top: 0;",
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.h1",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-cMljjf",
+                                          "target": "h1",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      size="MEDIUM"
+                                    >
+                                      <h3
+                                        className="c14 c15"
+                                        size="MEDIUM"
+                                      >
                                         Some company name
                                       </h3>
                                     </StyledComponent>
@@ -279,10 +3331,61 @@ exports[`EntitySearch when at first there is an error and then on second click t
                               </H3>
                             </StyledComponent>
                           </Styled(H3)>
-                          <EntityListItemMetaList meta={{...}}>
-                            <styled.div>
-                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-bXGyLb fkuQpX\\">
+                          <EntityListItemMetaList
+                            meta={
+                              Object {
+                                "Address": "123 Fake Street, Brighton, BN1 4SE",
+                              }
+                            }
+                          >
+                            <styled.div
+                              key="65"
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bXGyLb",
+                                      "isStatic": true,
+                                      "lastClassName": "c16",
+                                      "rules": Array [
+                                        "
+  list-style-type: none;
+  margin-top: ",
+                                        "10px",
+                                        ";
+  font-size: ",
+                                        "16px",
+                                        ";
+    
+  & > span:nth-child(1) {
+    color: ",
+                                        "#6f777b",
+                                        ";
+    margin-right: ",
+                                        "5px",
+                                        ";
+  }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.div",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bXGyLb",
+                                    "target": "div",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <div
+                                  className="c16"
+                                >
                                   <span>
                                     Address
                                     :
@@ -295,10 +3398,62 @@ exports[`EntitySearch when at first there is an error and then on second click t
                             </styled.div>
                           </EntityListItemMetaList>
                           <Styled(styled.div)>
-                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                              <div className=\\"sc-kjoXOD sc-cbkKFq gCylUe\\">
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-cbkKFq",
+                                    "isStatic": false,
+                                    "lastClassName": "c17",
+                                    "rules": Array [
+                                      "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                                      "color: #0b0c0c; @media print {
+  color: #000;
+}",
+                                      "padding: 15px;",
+                                      [Function],
+                                      "clear: both; border-left: 10px solid #bfc1c3; :first-child {
+  margin-top: 0;
+} :only-child,:last-child {
+  margin-bottom: 0;
+}",
+                                      "
+  & {
+    margin-top: ",
+                                      "10px",
+                                      ";
+  }
+",
+                                    ],
+                                  },
+                                  "displayName": "Styled(styled.div)",
+                                  "foldedComponentIds": Array [
+                                    "sc-kjoXOD",
+                                  ],
+                                  "propTypes": undefined,
+                                  "render": [Function],
+                                  "styledComponentId": "sc-cbkKFq",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="c17"
+                              >
                                 This company is already on Data Hub. 
-                                <a href=\\"/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa\\">
+                                <a
+                                  href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
+                                >
                                   Go to the company page
                                 </a>
                                   to record activity.
@@ -312,20 +3467,236 @@ exports[`EntitySearch when at first there is an error and then on second click t
                 </li>
               </StyledComponent>
             </styled.li>
-            <styled.li>
-              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <li className=\\"sc-fYiAbW hSTGFp\\">
-                  <EntityListItem onEntityClick={[Function]} heading=\\"Some other company\\" meta={{...}} text={{...}} canHandleClick={true} data={{...}}>
-                    <StyledEntity onClick={[Function: onClick]} canHandleClick={true}>
-                      <StyledComponent onClick={[Function: onClick]} canHandleClick={true} forwardedComponent={{...}} forwardedRef={{...}}>
-                        <div onClick={[Function: onClick]} className=\\"sc-lkqHmb fsFxdo\\">
+            <styled.li
+              key="63"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-fYiAbW",
+                      "isStatic": true,
+                      "lastClassName": "c12",
+                      "rules": Array [
+                        "
+  list-style-type: none;
+",
+                      ],
+                    },
+                    "displayName": "styled.li",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-fYiAbW",
+                    "target": "li",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <li
+                  className="c12"
+                >
+                  <EntityListItem
+                    canHandleClick={true}
+                    data={
+                      Object {
+                        "datahub_company": null,
+                        "dnb_company": Object {
+                          "address_country": "GB",
+                          "address_county": "",
+                          "address_line_1": "123 ABC Road",
+                          "address_line_2": "",
+                          "address_postcode": "BN2 9QB",
+                          "address_town": "Brighton",
+                          "annual_sales": 1999999999,
+                          "annual_sales_currency": "USD",
+                          "domain": "example.co.uk",
+                          "duns_number": "219999999",
+                          "employee_number": 300,
+                          "global_ultimate_duns_number": "319999999",
+                          "global_ultimate_primary_name": "Some other company parent",
+                          "industry_codes": Array [
+                            Object {
+                              "usSicV4": "3799",
+                              "usSicV4Description": "Mfg transportation equipment",
+                            },
+                          ],
+                          "is_annual_sales_estimated": null,
+                          "is_employees_number_estimated": true,
+                          "is_out_of_business": false,
+                          "legal_status": "corporation",
+                          "primary_name": "Some other company",
+                          "registered_address_country": "GB",
+                          "registered_address_county": "",
+                          "registered_address_line_1": "",
+                          "registered_address_line_2": "",
+                          "registered_address_postcode": "BN2 9QB",
+                          "registered_address_town": "Brighton",
+                          "registration_numbers": Array [
+                            Object {
+                              "registration_number": "00016033",
+                              "registration_type": "uk_companies_house_number",
+                            },
+                          ],
+                          "trading_names": Array [],
+                        },
+                      }
+                    }
+                    heading="Some other company"
+                    meta={
+                      Object {
+                        "Address": "123 ABC Road, Brighton, BN2 9QB",
+                      }
+                    }
+                    onEntityClick={[Function]}
+                    text={null}
+                  >
+                    <StyledEntity
+                      canHandleClick={true}
+                      key="66"
+                      onClick={[Function]}
+                    >
+                      <StyledComponent
+                        canHandleClick={true}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-lkqHmb",
+                              "isStatic": false,
+                              "lastClassName": "c18",
+                              "rules": Array [
+                                "
+  margin-bottom: ",
+                                "10px",
+                                ";
+  padding: ",
+                                "10px",
+                                ";
+  border: 1px solid ",
+                                "#bfc1c3",
+                                ";  
+  
+  ",
+                                [Function],
+                                "
+",
+                              ],
+                            },
+                            "displayName": "StyledEntity",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-lkqHmb",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="c18"
+                          onClick={[Function]}
+                        >
                           <Styled(H3)>
-                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                              <H3 className=\\"sc-eLExRp dnEJWw\\">
-                                <Heading as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-eLExRp dnEJWw\\" level={[undefined]}>
-                                  <styled.h1 as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-eLExRp dnEJWw\\">
-                                    <StyledComponent as=\\"h3\\" size=\\"MEDIUM\\" className=\\"sc-eLExRp dnEJWw\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                                      <h3 size=\\"MEDIUM\\" className=\\"sc-eLExRp dnEJWw sc-cMljjf kCLKvB\\">
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-eLExRp",
+                                    "isStatic": true,
+                                    "lastClassName": "c14",
+                                    "rules": Array [
+                                      "
+  margin: 0;
+  color: ",
+                                      "#005ea5",
+                                      ";
+  font-size: ",
+                                      "16px",
+                                      ";
+  ",
+                                      "@media only screen and (min-width: 641px)",
+                                      " {
+    font-size: ",
+                                      "19px",
+                                      ";
+  }
+",
+                                    ],
+                                  },
+                                  "displayName": "Styled(H3)",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-eLExRp",
+                                  "target": [Function],
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <H3
+                                className="c14"
+                              >
+                                <Heading
+                                  as="h3"
+                                  className="c14"
+                                  size="MEDIUM"
+                                >
+                                  <styled.h1
+                                    as="h3"
+                                    className="c14"
+                                    size="MEDIUM"
+                                  >
+                                    <StyledComponent
+                                      as="h3"
+                                      className="c14"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-cMljjf",
+                                            "isStatic": false,
+                                            "lastClassName": "c15",
+                                            "rules": Array [
+                                              "color: #0b0c0c; @media print {
+  color: #000;
+}",
+                                              [Function],
+                                              "display: block; margin-top: 0;",
+                                              [Function],
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "styled.h1",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-cMljjf",
+                                          "target": "h1",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                      size="MEDIUM"
+                                    >
+                                      <h3
+                                        className="c14 c15"
+                                        size="MEDIUM"
+                                      >
                                         Some other company
                                       </h3>
                                     </StyledComponent>
@@ -334,10 +3705,61 @@ exports[`EntitySearch when at first there is an error and then on second click t
                               </H3>
                             </StyledComponent>
                           </Styled(H3)>
-                          <EntityListItemMetaList meta={{...}}>
-                            <styled.div>
-                              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                                <div className=\\"sc-bXGyLb fkuQpX\\">
+                          <EntityListItemMetaList
+                            meta={
+                              Object {
+                                "Address": "123 ABC Road, Brighton, BN2 9QB",
+                              }
+                            }
+                          >
+                            <styled.div
+                              key="67"
+                            >
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bXGyLb",
+                                      "isStatic": true,
+                                      "lastClassName": "c16",
+                                      "rules": Array [
+                                        "
+  list-style-type: none;
+  margin-top: ",
+                                        "10px",
+                                        ";
+  font-size: ",
+                                        "16px",
+                                        ";
+    
+  & > span:nth-child(1) {
+    color: ",
+                                        "#6f777b",
+                                        ";
+    margin-right: ",
+                                        "5px",
+                                        ";
+  }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.div",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bXGyLb",
+                                    "target": "div",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <div
+                                  className="c16"
+                                >
                                   <span>
                                     Address
                                     :
@@ -360,19 +3782,175 @@ exports[`EntitySearch when at first there is an error and then on second click t
         </StyledComponent>
       </styled.ol>
     </EntityList>
-    <CannotFindDetails summary=\\"cannot find summary\\" actions={{...}} link={{...}}>
-      <Styled(Details) summary=\\"cannot find summary\\">
-        <StyledComponent summary=\\"cannot find summary\\" forwardedComponent={{...}} forwardedRef={{...}}>
-          <Details summary=\\"cannot find summary\\" className=\\"sc-gojNiO iOggNW\\" open={false}>
-            <styled.details className=\\"sc-gojNiO iOggNW\\" open={false}>
-              <StyledComponent className=\\"sc-gojNiO iOggNW\\" open={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                <details className=\\"sc-gojNiO iOggNW sc-kEYyzF ihcnje\\" open={false}>
+    <CannotFindDetails
+      actions={
+        Array [
+          "action 1",
+          "action 2",
+        ]
+      }
+      link={
+        Object {
+          "text": "still cannot find",
+          "url": "http://stillcannotfind.com",
+        }
+      }
+      summary="cannot find summary"
+    >
+      <Styled(Details)
+        summary="cannot find summary"
+      >
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-gojNiO",
+                "isStatic": true,
+                "lastClassName": "c19",
+                "rules": Array [
+                  "
+  & > div {
+    margin: ",
+                  "5px",
+                  " 0 ",
+                  "5px",
+                  " 4px;
+  }
+",
+                ],
+              },
+              "displayName": "Styled(Details)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-gojNiO",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          summary="cannot find summary"
+        >
+          <Details
+            className="c19"
+            open={false}
+            summary="cannot find summary"
+          >
+            <styled.details
+              className="c19"
+              open={false}
+            >
+              <StyledComponent
+                className="c19"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-kEYyzF",
+                      "isStatic": false,
+                      "lastClassName": "c20",
+                      "rules": Array [
+                        "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-size: 14px; line-height: 1.15;
+} font-weight: 400; font-size: 16px; line-height: 1.25; @media only screen and (min-width: 641px) {
+  font-size: 19px; line-height: 1.3157894736842106;
+}",
+                        "color: #0b0c0c; @media print {
+  color: #000;
+}",
+                        [Function],
+                        "display: block;",
+                      ],
+                    },
+                    "displayName": "styled.details",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-kEYyzF",
+                    "target": "details",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                open={false}
+              >
+                <details
+                  className="c19 c20"
+                  open={false}
+                >
                   <styled.summary>
-                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                      <summary className=\\"sc-kkGfuU cCdZFh\\">
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-kkGfuU",
+                            "isStatic": true,
+                            "lastClassName": "c21",
+                            "rules": Array [
+                              "display: inline-block; position: relative; margin-bottom: 5px; padding-left: 25px; color: #005ea5; cursor: pointer; :hover {
+  color: #2b8cc4;
+} :focus {
+  outline: 4px solid #ffbf47; outline-offset: -1px; color: #0b0c0c; background: #ffbf47;
+} ::-webkit-details-marker {
+  display: none;
+} :before {
+  content: \\"\\"; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; display: block; width: 0; height: 0; border-style: solid; border-color: transparent; clip-path: polygon(0% 0%, 100% 50%, 0% 100%); border-width: 7px 0 7px 12.124px; border-left-color: inherit; [open] > & {
+  display: block; width: 0; height: 0; border-style: solid; border-color: transparent; clip-path: polygon(0% 0%, 50% 100%, 100% 0%); border-width: 12.124px 7px 0 7px; border-top-color: inherit;
+}
+}",
+                            ],
+                          },
+                          "displayName": "styled.summary",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-kkGfuU",
+                          "target": "summary",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <summary
+                        className="c21"
+                      >
                         <styled.span>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <span className=\\"sc-iAyFgw jRkIxn\\">
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-iAyFgw",
+                                  "isStatic": true,
+                                  "lastClassName": "c22",
+                                  "rules": Array [
+                                    "text-decoration: underline;",
+                                  ],
+                                },
+                                "displayName": "styled.span",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-iAyFgw",
+                                "target": "span",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                          >
+                            <span
+                              className="c22"
+                            >
                               cannot find summary
                             </span>
                           </StyledComponent>
@@ -381,17 +3959,226 @@ exports[`EntitySearch when at first there is an error and then on second click t
                     </StyledComponent>
                   </styled.summary>
                   <styled.div>
-                    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                      <div className=\\"sc-hSdWYo dfimje\\">
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-hSdWYo",
+                            "isStatic": true,
+                            "lastClassName": "c23",
+                            "rules": Array [
+                              "padding: 15px; padding-left: 20px; border-left: 5px solid #bfc1c3; p {
+  margin-top: 0; margin-bottom: 20px;
+} > :last-child, p:last-child {
+  margin-bottom: 0;
+}",
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-hSdWYo",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="c23"
+                      >
                         <div>
-                          <Paragraph supportingText={false} linkRenderer={[Function: linkRenderer]}>
-                            <Styled(ReactMarkdown) source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]}>
-                              <StyledComponent source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]} forwardedComponent={{...}} forwardedRef={{...}}>
-                                <ReactMarkdown source=\\"Try refining your search by taking the following actions:\\" escapeHtml={false} skipHtml={true} allowedTypes={{...}} renderers={{...}} supportingText={false} linkRenderer={[Function: linkRenderer]} className=\\"sc-jDwBTQ hGdygu\\" sourcePos={false} rawSourcePos={false} transformLinkUri={[Function: uriTransformer]} astPlugins={{...}} plugins={{...}} parserOptions={{...}}>
-                                  <Root className=\\"sc-jDwBTQ hGdygu\\">
-                                    <div className=\\"sc-jDwBTQ hGdygu\\">
-                                      <p>
-                                        <TextRenderer nodeKey=\\"text-1-1\\" value=\\"Try refining your search by taking the following actions:\\">
+                          <Paragraph
+                            linkRenderer={[Function]}
+                            supportingText={false}
+                          >
+                            <Styled(ReactMarkdown)
+                              allowedTypes={
+                                Array [
+                                  "paragraph",
+                                  "emphasis",
+                                  "strong",
+                                  "link",
+                                  "inlineCode",
+                                  "code",
+                                  "text",
+                                ]
+                              }
+                              escapeHtml={false}
+                              linkRenderer={[Function]}
+                              renderers={
+                                Object {
+                                  "link": [Function],
+                                }
+                              }
+                              skipHtml={true}
+                              source="Try refining your search by taking the following actions:"
+                              supportingText={false}
+                            >
+                              <StyledComponent
+                                allowedTypes={
+                                  Array [
+                                    "paragraph",
+                                    "emphasis",
+                                    "strong",
+                                    "link",
+                                    "inlineCode",
+                                    "code",
+                                    "text",
+                                  ]
+                                }
+                                escapeHtml={false}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-jDwBTQ",
+                                      "isStatic": false,
+                                      "lastClassName": "c24",
+                                      "rules": Array [
+                                        "margin: 0; > p {
+  margin: 0;
+} > p > code {
+  padding: 0.2em 0.4em; margin: 0; font-size: 85%; background-color: rgba(27,31,35,0.05); border-radius: 3px;
+} > pre {
+  padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: #f6f8fa; border-radius: 3px;
+} > pre > code {
+  display: inline; padding: 0; margin: 0; border: 0; overflow: visible; line-height: inherit; word-wrap: normal;
+}",
+                                        [Function],
+                                        [Function],
+                                      ],
+                                    },
+                                    "displayName": "Styled(ReactMarkdown)",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "renderers": Object {
+                                      "blockquote": "blockquote",
+                                      "break": "br",
+                                      "code": [Function],
+                                      "definition": [Function],
+                                      "delete": "del",
+                                      "emphasis": "em",
+                                      "heading": [Function],
+                                      "html": [Function],
+                                      "image": "img",
+                                      "imageReference": "img",
+                                      "inlineCode": [Function],
+                                      "link": "a",
+                                      "linkReference": "a",
+                                      "list": [Function],
+                                      "listItem": [Function],
+                                      "paragraph": "p",
+                                      "parsedHtml": [Function],
+                                      "root": [Function],
+                                      "strong": "strong",
+                                      "table": [Function],
+                                      "tableBody": [Function],
+                                      "tableCell": [Function],
+                                      "tableHead": [Function],
+                                      "tableRow": [Function],
+                                      "text": [Function],
+                                      "thematicBreak": "hr",
+                                      "virtualHtml": [Function],
+                                    },
+                                    "styledComponentId": "sc-jDwBTQ",
+                                    "target": [Function],
+                                    "toString": [Function],
+                                    "types": Array [
+                                      "break",
+                                      "paragraph",
+                                      "emphasis",
+                                      "strong",
+                                      "thematicBreak",
+                                      "blockquote",
+                                      "delete",
+                                      "link",
+                                      "image",
+                                      "linkReference",
+                                      "imageReference",
+                                      "table",
+                                      "tableHead",
+                                      "tableBody",
+                                      "tableRow",
+                                      "tableCell",
+                                      "root",
+                                      "text",
+                                      "list",
+                                      "listItem",
+                                      "definition",
+                                      "heading",
+                                      "inlineCode",
+                                      "code",
+                                      "html",
+                                      "virtualHtml",
+                                      "parsedHtml",
+                                    ],
+                                    "uriTransformer": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                linkRenderer={[Function]}
+                                renderers={
+                                  Object {
+                                    "link": [Function],
+                                  }
+                                }
+                                skipHtml={true}
+                                source="Try refining your search by taking the following actions:"
+                                supportingText={false}
+                              >
+                                <ReactMarkdown
+                                  allowedTypes={
+                                    Array [
+                                      "paragraph",
+                                      "emphasis",
+                                      "strong",
+                                      "link",
+                                      "inlineCode",
+                                      "code",
+                                      "text",
+                                    ]
+                                  }
+                                  astPlugins={Array []}
+                                  className="c24"
+                                  escapeHtml={false}
+                                  linkRenderer={[Function]}
+                                  parserOptions={Object {}}
+                                  plugins={Array []}
+                                  rawSourcePos={false}
+                                  renderers={
+                                    Object {
+                                      "link": [Function],
+                                    }
+                                  }
+                                  skipHtml={true}
+                                  source="Try refining your search by taking the following actions:"
+                                  sourcePos={false}
+                                  supportingText={false}
+                                  transformLinkUri={[Function]}
+                                >
+                                  <Root
+                                    className="c24"
+                                    key="root-1-1"
+                                  >
+                                    <div
+                                      className="c24"
+                                    >
+                                      <p
+                                        key="paragraph-1-1"
+                                      >
+                                        <TextRenderer
+                                          key="text-1-1"
+                                          nodeKey="text-1-1"
+                                          value="Try refining your search by taking the following actions:"
+                                        >
                                           Try refining your search by taking the following actions:
                                         </TextRenderer>
                                       </p>
@@ -402,20 +4189,127 @@ exports[`EntitySearch when at first there is an error and then on second click t
                             </Styled(ReactMarkdown)>
                           </Paragraph>
                           <styled.ul>
-                            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                              <ul className=\\"sc-daURTG gkKnhg\\">
-                                <li>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-daURTG",
+                                    "isStatic": true,
+                                    "lastClassName": "c25",
+                                    "rules": Array [
+                                      "
+  list-style-type: disc;
+  padding-left: ",
+                                      "30px",
+                                      ";
+",
+                                    ],
+                                  },
+                                  "displayName": "styled.ul",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-daURTG",
+                                  "target": "ul",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <ul
+                                className="c25"
+                              >
+                                <li
+                                  key="68"
+                                >
                                   action 1
                                 </li>
-                                <li>
+                                <li
+                                  key="69"
+                                >
                                   action 2
                                 </li>
                               </ul>
                             </StyledComponent>
                           </styled.ul>
-                          <styled.a href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} textColour={false} noVisitedState={false}>
-                            <StyledComponent href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} textColour={false} noVisitedState={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                              <a href=\\"http://stillcannotfind.com\\" onClick={{...}} muted={false} className=\\"sc-cJSrbW gKuUWc\\">
+                          <styled.a
+                            href="http://stillcannotfind.com"
+                            muted={false}
+                            noVisitedState={false}
+                            onClick={null}
+                            textColour={false}
+                          >
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-cJSrbW",
+                                    "isStatic": false,
+                                    "lastClassName": "c26",
+                                    "rules": Array [
+                                      "font-family: \\"nta\\", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; @media print {
+  font-family: sans-serif;
+}",
+                                      ":link {
+  color: #005ea5;
+} :visited {
+  color: #4c2c92;
+} :hover {
+  color: #2b8cc4;
+} :active {
+  color: #2b8cc4;
+} :focus {
+  color: #0b0c0c;
+}",
+                                      "&:focus {
+  outline: 3px solid #ffbf47; outline-offset: 0; background-color: #ffbf47;
+}",
+                                      "@media print {
+  &[href^=\\"/\\"], &[href^=\\"http://\\"], &[href^=\\"https://\\"] {
+  &::after {
+  content: \\" (\\" attr(href) \\")\\"; font-size: 90%; word-wrap: break-word;
+}
+}
+}",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "defaultProps": Object {
+                                    "muted": false,
+                                    "noVisitedState": false,
+                                    "textColour": false,
+                                  },
+                                  "displayName": "styled.a",
+                                  "foldedComponentIds": Array [],
+                                  "propTypes": undefined,
+                                  "render": [Function],
+                                  "styledComponentId": "sc-cJSrbW",
+                                  "target": "a",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              href="http://stillcannotfind.com"
+                              muted={false}
+                              noVisitedState={false}
+                              onClick={null}
+                              textColour={false}
+                            >
+                              <a
+                                className="c26"
+                                href="http://stillcannotfind.com"
+                                muted={false}
+                                onClick={null}
+                              >
                                 still cannot find
                               </a>
                             </StyledComponent>
@@ -432,7 +4326,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
       </Styled(Details)>
     </CannotFindDetails>
   </EntitySearch>
-</EntitySearchWithDataProvider>"
+</EntitySearchWithDataProvider>
 `;
 
 exports[`EntitySearch when initially loading the entity search component should render the component without entities 1`] = `

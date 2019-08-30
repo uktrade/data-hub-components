@@ -345,7 +345,7 @@ describe('EntitySearch', () => {
     })
 
     test('should render the component with the error and without results', () => {
-      expect(wrappedEntitySearch.debug()).toMatchSnapshot()
+      expect(wrappedEntitySearch).toMatchSnapshot()
     })
   })
 
@@ -377,7 +377,7 @@ describe('EntitySearch', () => {
     })
 
     test('should render the component with the results and without the error', () => {
-      expect(wrappedEntitySearch.debug()).toMatchSnapshot()
+      expect(wrappedEntitySearch).toMatchSnapshot()
     })
   })
 })

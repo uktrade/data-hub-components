@@ -2,7 +2,7 @@ import React from 'react'
 import { find } from 'lodash'
 
 import PropTypes from 'prop-types'
-import Cards from './cards'
+import cards from './cards'
 
 export default class ActivityFeedCard extends React.PureComponent {
   static propTypes = {
@@ -17,7 +17,7 @@ export default class ActivityFeedCard extends React.PureComponent {
   constructor(props) {
     super(props)
     const { activity } = this.props
-    this.Card = find(Cards, c => c.canRender(activity))
+    this.Card = find(cards, c => c.canRender(activity))
   }
 
   render() {
