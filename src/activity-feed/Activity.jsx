@@ -4,7 +4,7 @@ import { find } from 'lodash'
 import PropTypes from 'prop-types'
 import cards from './cards'
 
-export default class ActivityFeedCard extends React.PureComponent {
+export default class Activity extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
     showDetails: PropTypes.bool,

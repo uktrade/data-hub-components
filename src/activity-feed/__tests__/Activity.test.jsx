@@ -2,9 +2,10 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import moment from 'moment'
 import { set } from 'lodash'
-
 import MockDate from 'mockdate'
-import ActivityFeedCard from '../ActivityFeedCard'
+
+import Activity from '../Activity'
+
 import companiesHouseAccountsDueFixture from '../__fixtures__/companies_house/accounts_are_due'
 import companiesHouseCompaniesFixture from '../__fixtures__/companies_house/incorporated'
 import hmrcExportersFixture from '../__fixtures__/hmrc/export_of_goods'
@@ -19,11 +20,11 @@ import orderAddedFixture from '../__fixtures__/omis/order_added'
 // Lock the date so moment's relative date doesn't break our deterministic tests.
 MockDate.set(1559750582706)
 
-describe('ActivityFeedCard', () => {
+describe('Activity', () => {
   describe('when the interaction is empty', () => {
     test('should render null', () => {
       const tree = renderer
-        .create(<ActivityFeedCard activity={{}} showDetails={false} />)
+        .create(<Activity activity={{}} showDetails={false} />)
         .toJSON()
       expect(tree).toBeNull()
     })
@@ -32,7 +33,7 @@ describe('ActivityFeedCard', () => {
   describe('when there is an interaction', () => {
     test('should render interaction activity', () => {
       const tree = renderer
-        .create(<ActivityFeedCard activity={interactionActivityFixture} showDetails={false} />)
+        .create(<Activity activity={interactionActivityFixture} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -44,7 +45,7 @@ describe('ActivityFeedCard', () => {
       set(fixture, 'object.dit:status', 'draft')
       set(fixture, 'object.startTime', moment().subtract(1, 'years').toISOString())
       const tree = renderer
-        .create(<ActivityFeedCard activity={fixture} showDetails={false} />)
+        .create(<Activity activity={fixture} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -56,7 +57,7 @@ describe('ActivityFeedCard', () => {
       set(fixture, 'object.dit:status', 'draft')
       set(fixture, 'object.startTime', moment().add(1, 'days').toISOString())
       const tree = renderer
-        .create(<ActivityFeedCard activity={fixture} showDetails={false} />)
+        .create(<Activity activity={fixture} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -68,7 +69,7 @@ describe('ActivityFeedCard', () => {
       set(fixture, 'object.dit:status', 'draft')
       set(fixture, 'object.dit:archived', true)
       const tree = renderer
-        .create(<ActivityFeedCard activity={fixture} showDetails={false} />)
+        .create(<Activity activity={fixture} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -79,7 +80,7 @@ describe('ActivityFeedCard', () => {
       const fixture = { ...interactionActivityFixture }
       set(fixture, 'object.dit:status', 'complete')
       const tree = renderer
-        .create(<ActivityFeedCard activity={fixture} showDetails={false} />)
+        .create(<Activity activity={fixture} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -88,7 +89,7 @@ describe('ActivityFeedCard', () => {
   describe('when there is a service delivery', () => {
     test('should render service delivery activity', () => {
       const tree = renderer
-        .create(<ActivityFeedCard activity={serviceDeliveryActivityFixture} showDetails={false} />)
+        .create(<Activity activity={serviceDeliveryActivityFixture} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -102,7 +103,7 @@ describe('ActivityFeedCard', () => {
         },
       }
       const tree = renderer
-        .create(<ActivityFeedCard activity={activity} showDetails={false} />)
+        .create(<Activity activity={activity} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -116,7 +117,7 @@ describe('ActivityFeedCard', () => {
         interactionActivityFixture.object.attributedTo.filter(a => !a.type.includes('Person')))
 
       const tree = renderer
-        .create(<ActivityFeedCard activity={interactionWithNoPeople} showDetails={false} />)
+        .create(<Activity activity={interactionWithNoPeople} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -128,7 +129,7 @@ describe('ActivityFeedCard', () => {
       set(interactionWithoutService, 'object.dit:service', null)
 
       const tree = renderer
-        .create(<ActivityFeedCard activity={interactionWithoutService} showDetails={false} />)
+        .create(<Activity activity={interactionWithoutService} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -138,7 +139,7 @@ describe('ActivityFeedCard', () => {
     test('should render the CTI investment project activity card', () => {
       const commitmentToInvest = { ...investmentProjectsCTIFixture }
       const tree = renderer
-        .create(<ActivityFeedCard activity={commitmentToInvest} showDetails={false} />)
+        .create(<Activity activity={commitmentToInvest} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -148,7 +149,7 @@ describe('ActivityFeedCard', () => {
     test('should render the FDI investment project activity card', () => {
       const foreignDirectInvestment = { ...investmentProjectsFDIFixture }
       const tree = renderer
-        .create(<ActivityFeedCard activity={foreignDirectInvestment} showDetails={false} />)
+        .create(<Activity activity={foreignDirectInvestment} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -158,7 +159,7 @@ describe('ActivityFeedCard', () => {
     test('should render the Non-FDI investment project activity card', () => {
       const nonForeignDirectInvestment = { ...investmentProjectsNonFDIFixture }
       const tree = renderer
-        .create(<ActivityFeedCard activity={nonForeignDirectInvestment} showDetails={false} />)
+        .create(<Activity activity={nonForeignDirectInvestment} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -168,7 +169,7 @@ describe('ActivityFeedCard', () => {
     test('should render an activity card', () => {
       const orderAdded = { ...orderAddedFixture }
       const tree = renderer
-        .create(<ActivityFeedCard activity={orderAdded} showDetails={false} />)
+        .create(<Activity activity={orderAdded} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -178,7 +179,7 @@ describe('ActivityFeedCard', () => {
     test('should render an activity card', () => {
       const companiesHouseAccountsDue = { ...companiesHouseAccountsDueFixture }
       const tree = renderer
-        .create(<ActivityFeedCard activity={companiesHouseAccountsDue} showDetails={false} />)
+        .create(<Activity activity={companiesHouseAccountsDue} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -188,7 +189,7 @@ describe('ActivityFeedCard', () => {
     test('should render an activity card', () => {
       const companiesHouseCompanyIncorporated = { ...companiesHouseCompaniesFixture }
       const tree = renderer
-        .create(<ActivityFeedCard
+        .create(<Activity
           activity={companiesHouseCompanyIncorporated}
           showDetails={false}
         />)
@@ -200,7 +201,7 @@ describe('ActivityFeedCard', () => {
   describe('when there is a HMRC Exporter record', () => {
     test('should render an activity card', () => {
       const tree = renderer
-        .create(<ActivityFeedCard activity={hmrcExportersFixture} showDetails={false} />)
+        .create(<Activity activity={hmrcExportersFixture} showDetails={false} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })

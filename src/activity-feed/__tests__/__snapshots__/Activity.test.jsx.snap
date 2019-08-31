@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ActivityFeedCard when a New OMIS order is added should render an activity card 1`] = `
+exports[`Activity when a New OMIS order is added should render an activity card 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -586,7 +586,7 @@ exports[`ActivityFeedCard when a New OMIS order is added should render an activi
 </div>
 `;
 
-exports[`ActivityFeedCard when an investment project is CTI should render the CTI investment project activity card 1`] = `
+exports[`Activity when an investment project is CTI should render the CTI investment project activity card 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -1128,7 +1128,7 @@ exports[`ActivityFeedCard when an investment project is CTI should render the CT
 </div>
 `;
 
-exports[`ActivityFeedCard when an investment project is FDI should render the FDI investment project activity card 1`] = `
+exports[`Activity when an investment project is FDI should render the FDI investment project activity card 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -1804,7 +1804,7 @@ exports[`ActivityFeedCard when an investment project is FDI should render the FD
 </div>
 `;
 
-exports[`ActivityFeedCard when an investment project is Non-FDI should render the Non-FDI investment project activity card 1`] = `
+exports[`Activity when an investment project is Non-FDI should render the Non-FDI investment project activity card 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -2390,7 +2390,7 @@ exports[`ActivityFeedCard when an investment project is Non-FDI should render th
 </div>
 `;
 
-exports[`ActivityFeedCard when the interaction does not have a service should render interaction activity without services 1`] = `
+exports[`Activity when the interaction does not have a service should render interaction activity without services 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -2900,7 +2900,7 @@ exports[`ActivityFeedCard when the interaction does not have a service should re
 </div>
 `;
 
-exports[`ActivityFeedCard when the interaction is a draft and archived should render interaction activity with "Cancelled interaction" badge 1`] = `
+exports[`Activity when the interaction is a draft and archived should render interaction activity with "Cancelled interaction" badge 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -3533,7 +3533,7 @@ exports[`ActivityFeedCard when the interaction is a draft and archived should re
 </div>
 `;
 
-exports[`ActivityFeedCard when the interaction is a draft and upcoming should render interaction activity with "Upcoming interaction" badge 1`] = `
+exports[`Activity when the interaction is a draft and upcoming should render interaction activity with "Upcoming interaction" badge 1`] = `
 .c0 {
   border: 1px dashed #bfc1c3;
   padding: 15px;
@@ -4166,7 +4166,7 @@ exports[`ActivityFeedCard when the interaction is a draft and upcoming should re
 </div>
 `;
 
-exports[`ActivityFeedCard when the interaction is a draft in the past should render interaction activity with "Incomplete interaction" badge 1`] = `
+exports[`Activity when the interaction is a draft in the past should render interaction activity with "Incomplete interaction" badge 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -4799,7 +4799,7 @@ exports[`ActivityFeedCard when the interaction is a draft in the past should ren
 </div>
 `;
 
-exports[`ActivityFeedCard when the interaction is complete should render interaction activity with "Completed interaction" badge 1`] = `
+exports[`Activity when the interaction is complete should render interaction activity with "Completed interaction" badge 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -5432,7 +5432,7 @@ exports[`ActivityFeedCard when the interaction is complete should render interac
 </div>
 `;
 
-exports[`ActivityFeedCard when there is a Companies House Accounts record should render an activity card 1`] = `
+exports[`Activity when there is a Companies House Accounts record should render an activity card 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -6021,7 +6021,7 @@ exports[`ActivityFeedCard when there is a Companies House Accounts record should
 </div>
 `;
 
-exports[`ActivityFeedCard when there is a Companies House Company incorporation record should render an activity card 1`] = `
+exports[`Activity when there is a Companies House Company incorporation record should render an activity card 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -6604,7 +6604,7 @@ exports[`ActivityFeedCard when there is a Companies House Company incorporation 
 </div>
 `;
 
-exports[`ActivityFeedCard when there is a HMRC Exporter record should render an activity card 1`] = `
+exports[`Activity when there is a HMRC Exporter record should render an activity card 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -7057,7 +7057,7 @@ exports[`ActivityFeedCard when there is a HMRC Exporter record should render an 
 </div>
 `;
 
-exports[`ActivityFeedCard when there is a service delivery should render service delivery activity 1`] = `
+exports[`Activity when there is a service delivery should render service delivery activity 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -7627,9 +7627,9 @@ exports[`ActivityFeedCard when there is a service delivery should render service
 </div>
 `;
 
-exports[`ActivityFeedCard when there is an activity item of unknown type should not render an activity card 1`] = `null`;
+exports[`Activity when there is an activity item of unknown type should not render an activity card 1`] = `null`;
 
-exports[`ActivityFeedCard when there is an interaction should render interaction activity 1`] = `
+exports[`Activity when there is an interaction should render interaction activity 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -8262,7 +8262,7 @@ exports[`ActivityFeedCard when there is an interaction should render interaction
 </div>
 `;
 
-exports[`ActivityFeedCard when there is an interaction without any people involved should render interaction activity without advisers nor contacts 1`] = `
+exports[`Activity when there is an interaction without any people involved should render interaction activity without advisers nor contacts 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
   padding: 15px;
