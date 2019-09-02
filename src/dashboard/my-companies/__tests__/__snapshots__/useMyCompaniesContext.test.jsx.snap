@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Store useMyCompaniesContext() Provider matches snapshot 1`] = `<Provider />`;

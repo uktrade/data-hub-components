@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
 
-import ActivityFeedCard from './ActivityFeedCard'
+import Activity from './Activity'
 import ActivityFeedHeader from './ActivityFeedHeader'
 import ActivityFeedFilters from './ActivityFeedFilters'
 import ActivityFeedPagination from './ActivityFeedPagination'
@@ -89,7 +89,7 @@ export default class ActivityFeed extends React.Component {
         <ActivityFeedCardList>
           {activities.map(activity => (
             <li key={activity.id}>
-              <ActivityFeedCard activity={activity} showDetails={showDetails} />
+              <Activity activity={activity} showDetails={showDetails} />
             </li>
           ))}
         </ActivityFeedCardList>
