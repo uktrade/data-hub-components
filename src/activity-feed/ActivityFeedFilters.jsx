@@ -1,19 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { GREY_3 } from 'govuk-colours'
-import { SPACING, FONT_SIZE } from '@govuk-react/constants'
-import { Link } from 'govuk-react'
+import { SPACING } from '@govuk-react/constants'
+import Checkbox from '@govuk-react/checkbox'
 import PropTypes from 'prop-types'
 
 const StyledActivityFeedFilters = styled('div')`
-  background-color: ${GREY_3};
   padding: ${SPACING.SCALE_2};
+  padding-left: 0;
 `
-
-const StyledLink = styled(Link)`
-  font-size: ${FONT_SIZE.SIZE_16};
-`
-StyledLink.displayName = 'ShowDetails'
 
 export default class ActivityFeedFilters extends React.PureComponent {
   static propTypes = {
@@ -24,15 +18,15 @@ export default class ActivityFeedFilters extends React.PureComponent {
   render() {
     const { onShowDetailsClick, showDetails } = this.props
 
-    const onClick = (e) => {
-      e.preventDefault()
-      onShowDetailsClick()
-    }
-
     return (
       <StyledActivityFeedFilters>
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <StyledLink href="#" onClick={onClick}>{ showDetails ? 'Hide' : 'Show' } details for all activities</StyledLink>
+        <Checkbox
+          onChange={onShowDetailsClick}
+          checked={showDetails}
+        >
+          Show details for all activities
+        </Checkbox>
+
       </StyledActivityFeedFilters>
     )
   }

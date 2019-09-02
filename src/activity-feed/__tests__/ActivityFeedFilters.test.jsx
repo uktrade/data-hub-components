@@ -23,24 +23,21 @@ describe('ActivityFeedFilters', () => {
     })
   })
 
-  describe('when the "Show details for all activities" link is clicked', () => {
-    let onShowDetailsClickMock
-    let preventDefaultMock
+  describe('when the "Show details for all activities" checkbox is clicked', () => {
+    const onShowDetailsClickMock = jest.fn()
 
     beforeEach(() => {
-      onShowDetailsClickMock = jest.fn()
-      preventDefaultMock = jest.fn()
-
       const wrapper = shallow((<ActivityFeedFilters
         onShowDetailsClick={onShowDetailsClickMock}
         showDetails={false}
       />))
-
-      wrapper.find('ShowDetails').simulate('click', { preventDefault: preventDefaultMock })
+      wrapper.find('Checkbox').simulate('change', {
+        target: { checked: true },
+      })
     })
 
-    test('should prevent default', () => {
-      expect(preventDefaultMock.mock.calls.length).toEqual(1)
+    afterEach(() => {
+      onShowDetailsClickMock.mockReset()
     })
 
     test('should call onShowDetailsClick', () => {

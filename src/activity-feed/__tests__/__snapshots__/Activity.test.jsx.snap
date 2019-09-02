@@ -442,6 +442,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -467,6 +468,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -492,6 +494,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -536,6 +539,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -1028,6 +1032,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -1053,6 +1058,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -1078,6 +1084,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -1570,6 +1577,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -1595,6 +1603,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -1620,6 +1629,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -1699,6 +1709,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -1724,6 +1735,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -1749,6 +1761,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -1774,6 +1787,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -2246,6 +2260,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -2271,6 +2286,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -2315,6 +2331,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -2340,6 +2357,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -2841,6 +2859,7 @@ exports[`Activity when the interaction does not have a service should render int
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -2868,6 +2887,7 @@ exports[`Activity when the interaction does not have a service should render int
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -3355,6 +3375,7 @@ exports[`Activity when the interaction is a draft and archived should render int
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -3424,6 +3445,7 @@ exports[`Activity when the interaction is a draft and archived should render int
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -3503,6 +3525,7 @@ exports[`Activity when the interaction is a draft and archived should render int
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -3988,6 +4011,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -4057,6 +4081,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -4136,6 +4161,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -4621,6 +4647,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -4690,6 +4717,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -4769,6 +4797,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -5254,6 +5283,7 @@ exports[`Activity when the interaction is complete should render interaction act
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -5323,6 +5353,7 @@ exports[`Activity when the interaction is complete should render interaction act
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -5402,6 +5433,7 @@ exports[`Activity when the interaction is complete should render interaction act
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -5892,6 +5924,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -5917,6 +5950,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -5942,6 +5976,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -5967,6 +6002,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -5992,6 +6028,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -6413,6 +6450,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -6438,6 +6476,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -6463,6 +6502,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -6488,6 +6528,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -6513,6 +6554,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -6538,6 +6580,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -6563,6 +6606,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -6996,6 +7040,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -7512,6 +7557,7 @@ exports[`Activity when there is a service delivery should render service deliver
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -7552,6 +7598,7 @@ exports[`Activity when there is a service delivery should render service deliver
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -7597,6 +7644,7 @@ exports[`Activity when there is a service delivery should render service deliver
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -8084,6 +8132,7 @@ exports[`Activity when there is an interaction should render interaction activit
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -8153,6 +8202,7 @@ exports[`Activity when there is an interaction should render interaction activit
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -8232,6 +8282,7 @@ exports[`Activity when there is an interaction should render interaction activit
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -8713,6 +8764,7 @@ exports[`Activity when there is an interaction without any people involved shoul
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -8740,6 +8792,7 @@ exports[`Activity when there is an interaction without any people involved shoul
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
@@ -8767,6 +8820,7 @@ exports[`Activity when there is an interaction without any people involved shoul
                 Object {
                   "border": 0,
                   "fontWeight": "normal",
+                  "width": "35%",
                 }
               }
             >
