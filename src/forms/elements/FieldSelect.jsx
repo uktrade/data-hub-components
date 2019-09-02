@@ -4,8 +4,8 @@ import Select from '@govuk-react/select'
 
 import useField from '../hooks/useField'
 
-const FieldSelect = ({ name, label, validate, options, emptyOption }) => {
-  const { error, touched, onChange, onBlur } = useField({ name, label, validate })
+const FieldSelect = ({ name, label, validate, required, options, emptyOption }) => {
+  const { error, touched, onChange, onBlur } = useField({ name, label, validate, required })
 
   return (
     <div>
@@ -34,6 +34,7 @@ FieldSelect.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
   validate: PropTypes.func,
+  required: PropTypes.string,
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
@@ -45,6 +46,7 @@ FieldSelect.propTypes = {
 
 FieldSelect.defaultProps = {
   validate: null,
+  required: null,
   label: null,
   options: [],
   emptyOption: 'Please select',

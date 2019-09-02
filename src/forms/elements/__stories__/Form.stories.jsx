@@ -31,13 +31,13 @@ storiesOf('Forms', module)
             <StepHeader />
 
             <Step name="first">
-              <FieldInput type="number" name="age" label="Age" validate={value => (!value ? 'Age is required' : null)} />
-              <FieldInput type="number" name="height" label="Height" validate={value => (!value ? 'Height is required' : null)} />
+              <FieldInput type="number" name="age" label="Age" required="Enter age" />
+              <FieldInput type="number" name="height" label="Height" required="Enter height" />
 
               <FieldRadios
                 name="companyLocation"
                 label="Where is the company based?"
-                validate={value => (!value ? 'Please specify where the company is based' : null)}
+                required="Specify where the company is based"
                 options={[
                   { label: 'UK', value: 'uk' },
                   {
@@ -53,7 +53,8 @@ storiesOf('Forms', module)
               <FieldSelect
                 name="country"
                 label="Country"
-                validate={value => (!value ? 'Please specify where the company is based' : null)}
+                required="Chose one of the countries"
+                validate={value => (value !== 'it' ? 'You need to select Italy' : null)}
                 options={[
                   { label: 'Germany', value: 'de' },
                   { label: 'France', value: 'fr' },
@@ -64,13 +65,13 @@ storiesOf('Forms', module)
 
             {values.age === '1' && (
               <Step name="second" label="Add a Company">
-                <FieldInput type="text" name="name" label="Name" validate={value => (!value ? 'name is required' : null)} />
+                <FieldInput type="text" name="name" label="Name" required="Enter name" />
                 <FieldInput type="email" name="email" label="Email" />
               </Step>
             )}
 
             <Step name="third">
-              <FieldInput type="number" name="shoeSize" label="Shoe size" validate={value => (!value ? 'Shoe size is required' : null)} />
+              <FieldInput type="number" name="shoeSize" label="Shoe size" required="Enter shoe size" />
             </Step>
 
             <Step name="fourth">

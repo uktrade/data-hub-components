@@ -5,8 +5,8 @@ import MultiChoice from '@govuk-react/multi-choice'
 
 import useField from '../hooks/useField'
 
-const FieldRadios = ({ name, validate, label, options, ...rest }) => {
-  const { value, error, touched, onChange, onBlur } = useField({ name, label, validate })
+const FieldRadios = ({ name, validate, required, label, options, ...rest }) => {
+  const { value, error, touched, onChange, onBlur } = useField({ name, label, validate, required })
 
   return (
     <div>
@@ -35,6 +35,7 @@ const FieldRadios = ({ name, validate, label, options, ...rest }) => {
 FieldRadios.propTypes = {
   name: PropTypes.string.isRequired,
   validate: PropTypes.func,
+  required: PropTypes.string,
   label: PropTypes.string,
   options: PropTypes.arrayOf(
     PropTypes.shape({
@@ -47,6 +48,7 @@ FieldRadios.propTypes = {
 
 FieldRadios.defaultProps = {
   validate: null,
+  required: null,
   label: null,
   options: [],
 }
