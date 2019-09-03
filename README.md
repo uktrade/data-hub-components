@@ -130,11 +130,12 @@ git cz
 4. Wait for PR to pass tests and get the required number of approvals.
 5. Once there are no outstanding comments the PR is merged.
 6. Once again tests are being run on `master` branch.
-7. If tests pass, a NPM release is created using version number determined by commit messages.
-8. Storybook is being build and published to `gh-pages` branch which will be available on [GitHub Pages](https://uktrade.github.io/data-hub-components).
-9. GitHub release is created with commit messages added as changelog.
-10. A new comment is added to the previously merged PR with information about the release.
-11. A tag `released` is added to the PR.
+7. If tests pass, a [NPM release](https://www.npmjs.com/package/data-hub-components) is created using version number determined by commit messages.
+8. The Git repo is tagged using the same version.
+9. Storybook is being build and published to the `gh-pages` branch which will be available on [GitHub Pages](https://uktrade.github.io/data-hub-components).
+10. A GitHub release is created using the commit messages as the changelog.
+11. A new comment is added to the previously merged PR with information about the release.
+12. A tag `released` is added to the PR.
 
 ## Notes
 
