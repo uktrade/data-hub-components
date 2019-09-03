@@ -8,7 +8,6 @@ const TestField = (props) => {
   const field = useField({
     name: 'testField',
     label: 'testLabel',
-    validate: () => 'testError',
     ...props,
   })
 
@@ -30,17 +29,17 @@ const TestField = (props) => {
 }
 
 describe('useField', () => {
-  describe('when field is mounted with `initialValue`', () => {
-    let wrapper
-    let value
-    let input
-    let touched
-    let error
+  let wrapper
+  let value
+  let input
+  let touched
+  let error
 
+  describe('when field is mounted with `initialValue`', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <TestField initialValue="testInitialValue" />
+          <TestField initialValue="testInitialValue" validate={() => 'testError'} />
         </Form>,
       )
       value = wrapper.find('.value')
@@ -73,7 +72,7 @@ describe('useField', () => {
       })
     })
 
-    describe('when form is submitted', () => {
+    describe('when form is submitted without filling the field', () => {
       beforeAll(() => {
         wrapper.simulate('submit')
       })
@@ -82,6 +81,22 @@ describe('useField', () => {
         expect(touched.text()).toEqual('true')
         expect(error.text()).toEqual('testError')
       })
+    })
+  })
+
+  describe('when form is submitted without filling the required field', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          <TestField required="testRequiredError" />
+        </Form>,
+      )
+      error = wrapper.find('.error')
+      wrapper.simulate('submit')
+    })
+
+    test('should return error for the required field', () => {
+      expect(error.text()).toEqual('testRequiredError')
     })
   })
 })

@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
+import { isEmpty } from 'lodash'
 
 import useFormContext from './useFormContext'
 
-function useField({ name, label, initialValue = '', validate = null }) {
+function useField({ name, label, initialValue = '', validate = null, required = null }) {
   const {
     registerField,
     deregisterField,
@@ -11,9 +12,19 @@ function useField({ name, label, initialValue = '', validate = null }) {
     getFieldState,
   } = useFormContext()
 
+  function prepareValidators() {
+    const validators = Array.isArray(validate) ? validate : [validate].filter(v => v)
+
+    if (required) {
+      validators.unshift(value => (isEmpty(value) ? required : null))
+    }
+
+    return validators
+  }
+
   useEffect(
     () => {
-      registerField({ name, label, initialValue, validate })
+      registerField({ name, label, initialValue, validate: prepareValidators() })
 
       return () => {
         deregisterField(name)

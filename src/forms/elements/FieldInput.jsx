@@ -5,8 +5,8 @@ import { RED } from 'govuk-colours'
 import useField from '../hooks/useField'
 import FieldError from './FieldError'
 
-const FieldInput = ({ name, type, validate, label, ...rest }) => {
-  const { value, error, onChange, onBlur } = useField({ name, label, validate })
+const FieldInput = ({ name, type, validate, required, label, ...rest }) => {
+  const { value, error, onChange, onBlur } = useField({ name, label, validate, required })
 
   return (
     <div>
@@ -29,16 +29,17 @@ const FieldInput = ({ name, type, validate, label, ...rest }) => {
   )
 }
 
-
 FieldInput.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   validate: PropTypes.func,
+  required: PropTypes.string,
   label: PropTypes.string,
 }
 
 FieldInput.defaultProps = {
   validate: null,
+  required: null,
   label: null,
 }
 

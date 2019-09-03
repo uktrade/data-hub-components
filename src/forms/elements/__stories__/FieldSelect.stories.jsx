@@ -19,7 +19,8 @@ storiesOf('Forms', module)
           { label: 'testOptionLabel1', value: 'testOptionValue1' },
           { label: 'testOptionLabel2', value: 'testOptionValue2' },
         ])}
-        validate={value => (!value ? text('error', 'This is an example error message') : null)}
+        required="Select one of the options"
+        validate={value => (value !== 'testOptionValue2' ? text('error', 'You need to select testOptionValue2') : null)}
       />
 
       <Button>Submit</Button>
