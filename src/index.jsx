@@ -11,15 +11,8 @@ export { default as MyCompaniesTile } from './dashboard/my-companies/MyCompanies
 export { default as useMyCompaniesContext } from './dashboard/my-companies/useMyCompaniesContext'
 
 // Entity search
-export { default as CannotFindDetails } from './entity-search/CannotFindDetails'
-export { default as EntityFilter } from './entity-search/EntityFilter'
-export { default as EntityFilters } from './entity-search/EntityFilters'
-export { default as EntityList } from './entity-search/EntityList'
-export { default as EntityListItem } from './entity-search/EntityListItem'
-export { default as EntityListItemMetaList } from './entity-search/EntityListItemMetaList'
 export { default as EntitySearch } from './entity-search/EntitySearch'
 export { default as EntitySearchWithDataProvider } from './entity-search/EntitySearchWithDataProvider'
-export { default as PreviouslySelected } from './entity-search/PreviouslySelected'
 
 // Forms
 export { default as useField } from './forms/hooks/useField'
