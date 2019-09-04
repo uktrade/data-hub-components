@@ -132,7 +132,7 @@ git cz
 6. Once again tests are being run on `master` branch.
 7. If tests pass, a [NPM release](https://www.npmjs.com/package/data-hub-components) is created using version number determined by commit messages.
 8. The Git repo is tagged using the same version.
-9. Storybook is being build and published to the `gh-pages` branch which will be available on [GitHub Pages](https://uktrade.github.io/data-hub-components).
+9. Storybook is built and published to the `gh-pages` branch which will be available on [GitHub Pages](https://uktrade.github.io/data-hub-components).
 10. A GitHub release is created using the commit messages as the changelog.
 11. A new comment is added to the previously merged PR with information about the release.
 12. A tag `released` is added to the PR.
