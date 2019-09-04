@@ -122,6 +122,21 @@ git add .
 git cz
 ```
 
+## Release process
+
+1. Create a new branch based on `master`.
+2. Commit code to the newly created branch following conventions specified by `semantic-release` above.
+3. Create a PR to the `master` branch.
+4. Wait for PR to pass tests and get the required number of approvals.
+5. Once there are no outstanding comments the PR is merged.
+6. Once again tests are being run on `master` branch.
+7. If tests pass, a [NPM release](https://www.npmjs.com/package/data-hub-components) is created using version number determined by commit messages.
+8. The Git repo is tagged using the same version.
+9. Storybook is built and published to the `gh-pages` branch which will be available on [GitHub Pages](https://uktrade.github.io/data-hub-components).
+10. A GitHub release is created using the commit messages as the changelog.
+11. A new comment is added to the previously merged PR with information about the release.
+12. A tag `released` is added to the PR.
+
 ## Notes
 
 * `react-markdown` is required only temporary to resolve dependency issue with [@govuk-react/paragraph](https://github.com/govuk-react/govuk-react/tree/master/components/paragraph), see issue on the [govuk-react](https://github.com/govuk-react/govuk-react/issues/425) project.
