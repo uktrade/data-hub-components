@@ -98,84 +98,6 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
   max-width: 15px;
 }
 
-.c6 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  display: block;
-  position: relative;
-  min-height: 40px;
-  padding: 0 0 0 40px;
-  clear: left;
-  margin-bottom: 10px;
-}
-
-.c7 {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.c7:checked + span:after {
-  opacity: 1;
-}
-
-.c7:focus + span:before {
-  outline: 3px solid transparent;
-  outline-offset: 3px;
-  box-shadow: 0 0 0 3px #ffbf47;
-}
-
-.c7 + span {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.c8 {
-  display: inline-block;
-  cursor: pointer;
-  padding: 8px 15px 5px;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-}
-
-.c8::before {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border: 2px solid black;
-  background: transparent;
-}
-
-.c8::after {
-  content: '';
-  position: absolute;
-  top: 11px;
-  left: 9px;
-  width: 18px;
-  height: 7px;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  border: solid;
-  border-width: 0 0 5px 5px;
-  border-top-color: transparent;
-  background: transparent;
-  opacity: 0;
-}
-
 .c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
@@ -295,6 +217,84 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
   width: 100%;
 }
 
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: block;
+  position: relative;
+  min-height: 40px;
+  padding: 0 0 0 40px;
+  clear: left;
+  margin-bottom: 10px;
+}
+
+.c7 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.c7:checked + span:after {
+  opacity: 1;
+}
+
+.c7:focus + span:before {
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px #ffbf47;
+}
+
+.c7 + span {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c8 {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 15px 5px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.c8::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  background: transparent;
+}
+
+.c8::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  width: 18px;
+  height: 7px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: solid;
+  border-width: 0 0 5px 5px;
+  border-top-color: transparent;
+  background: transparent;
+  opacity: 0;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -389,26 +389,6 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
 }
 
 @media print {
-  .c6 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 10px;
-  }
-}
-
-@media print {
   .c3 {
     color: #000;
   }
@@ -431,6 +411,26 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
 @media only screen and (min-width:641px) {
   .c3 {
     margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 10px;
   }
 }
 
@@ -710,6 +710,19 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
 `;
 
 exports[`ActivityFeed when the activity feed has child elements should render the children 1`] = `
+.c3 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.0416666666666667;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .c6 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -788,19 +801,6 @@ exports[`ActivityFeed when the activity feed has child elements should render th
   opacity: 0;
 }
 
-.c3 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.0416666666666667;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -857,26 +857,6 @@ exports[`ActivityFeed when the activity feed has child elements should render th
 }
 
 @media print {
-  .c6 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 10px;
-  }
-}
-
-@media print {
   .c3 {
     color: #000;
   }
@@ -899,6 +879,26 @@ exports[`ActivityFeed when the activity feed has child elements should render th
 @media only screen and (min-width:641px) {
   .c3 {
     margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 10px;
   }
 }
 
@@ -961,6 +961,19 @@ exports[`ActivityFeed when the activity feed has child elements should render th
 `;
 
 exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
+.c3 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.0416666666666667;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .c6 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1039,19 +1052,6 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
   opacity: 0;
 }
 
-.c3 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.0416666666666667;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1108,26 +1108,6 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
 }
 
 @media print {
-  .c6 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 10px;
-  }
-}
-
-@media print {
   .c3 {
     color: #000;
   }
@@ -1150,6 +1130,26 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
 @media only screen and (min-width:641px) {
   .c3 {
     margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 10px;
   }
 }
 
@@ -1304,84 +1304,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
 
 .c35 svg {
   max-width: 15px;
-}
-
-.c6 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  display: block;
-  position: relative;
-  min-height: 40px;
-  padding: 0 0 0 40px;
-  clear: left;
-  margin-bottom: 10px;
-}
-
-.c7 {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.c7:checked + span:after {
-  opacity: 1;
-}
-
-.c7:focus + span:before {
-  outline: 3px solid transparent;
-  outline-offset: 3px;
-  box-shadow: 0 0 0 3px #ffbf47;
-}
-
-.c7 + span {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.c8 {
-  display: inline-block;
-  cursor: pointer;
-  padding: 8px 15px 5px;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-}
-
-.c8::before {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border: 2px solid black;
-  background: transparent;
-}
-
-.c8::after {
-  content: '';
-  position: absolute;
-  top: 11px;
-  left: 9px;
-  width: 18px;
-  height: 7px;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  border: solid;
-  border-width: 0 0 5px 5px;
-  border-top-color: transparent;
-  background: transparent;
-  opacity: 0;
 }
 
 .c20 {
@@ -1670,6 +1592,84 @@ exports[`ActivityFeed when there are more activities to load should render with 
   margin-bottom: 20px;
 }
 
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: block;
+  position: relative;
+  min-height: 40px;
+  padding: 0 0 0 40px;
+  clear: left;
+  margin-bottom: 10px;
+}
+
+.c7 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.c7:checked + span:after {
+  opacity: 1;
+}
+
+.c7:focus + span:before {
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px #ffbf47;
+}
+
+.c7 + span {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c8 {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 15px 5px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.c8::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  background: transparent;
+}
+
+.c8::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  width: 18px;
+  height: 7px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: solid;
+  border-width: 0 0 5px 5px;
+  border-top-color: transparent;
+  background: transparent;
+  opacity: 0;
+}
+
 .c10 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -1853,26 +1853,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
 }
 
 @media print {
-  .c6 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 10px;
-  }
-}
-
-@media print {
   .c20 {
     font-size: 14px;
     line-height: 1.15;
@@ -1989,6 +1969,26 @@ exports[`ActivityFeed when there are more activities to load should render with 
 @media only screen and (min-width:641px) {
   .c25 {
     margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 10px;
   }
 }
 
@@ -7244,84 +7244,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
 `;
 
 exports[`ActivityFeed when there is a single activity should render single activity with appropriate header 1`] = `
-.c6 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  display: block;
-  position: relative;
-  min-height: 40px;
-  padding: 0 0 0 40px;
-  clear: left;
-  margin-bottom: 10px;
-}
-
-.c7 {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.c7:checked + span:after {
-  opacity: 1;
-}
-
-.c7:focus + span:before {
-  outline: 3px solid transparent;
-  outline-offset: 3px;
-  box-shadow: 0 0 0 3px #ffbf47;
-}
-
-.c7 + span {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.c8 {
-  display: inline-block;
-  cursor: pointer;
-  padding: 8px 15px 5px;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-}
-
-.c8::before {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border: 2px solid black;
-  background: transparent;
-}
-
-.c8::after {
-  content: '';
-  position: absolute;
-  top: 11px;
-  left: 9px;
-  width: 18px;
-  height: 7px;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  border: solid;
-  border-width: 0 0 5px 5px;
-  border-top-color: transparent;
-  background: transparent;
-  opacity: 0;
-}
-
 .c20 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -7502,6 +7424,84 @@ exports[`ActivityFeed when there is a single activity should render single activ
   margin-bottom: 20px;
 }
 
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: block;
+  position: relative;
+  min-height: 40px;
+  padding: 0 0 0 40px;
+  clear: left;
+  margin-bottom: 10px;
+}
+
+.c7 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.c7:checked + span:after {
+  opacity: 1;
+}
+
+.c7:focus + span:before {
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px #ffbf47;
+}
+
+.c7 + span {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c8 {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 15px 5px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.c8::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  background: transparent;
+}
+
+.c8::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  width: 18px;
+  height: 7px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: solid;
+  border-width: 0 0 5px 5px;
+  border-top-color: transparent;
+  background: transparent;
+  opacity: 0;
+}
+
 .c10 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -7647,26 +7647,6 @@ exports[`ActivityFeed when there is a single activity should render single activ
 }
 
 @media print {
-  .c6 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 10px;
-  }
-}
-
-@media print {
   .c20 {
     font-size: 14px;
     line-height: 1.15;
@@ -7783,6 +7763,26 @@ exports[`ActivityFeed when there is a single activity should render single activ
 @media only screen and (min-width:641px) {
   .c25 {
     margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 10px;
   }
 }
 
