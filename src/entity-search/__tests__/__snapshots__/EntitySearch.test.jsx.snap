@@ -415,7 +415,7 @@ exports[`EntitySearch when at first there are results and then on second click t
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fOKMvo",
+                "componentId": "sc-krvtoX",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -432,7 +432,7 @@ exports[`EntitySearch when at first there are results and then on second click t
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fOKMvo",
+              "styledComponentId": "sc-krvtoX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -1078,7 +1078,7 @@ exports[`EntitySearch when at first there are results and then on second click t
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-eilVRo",
+              "componentId": "sc-dUjcNx",
               "isStatic": true,
               "lastClassName": "c9",
               "rules": Array [
@@ -1111,7 +1111,7 @@ exports[`EntitySearch when at first there are results and then on second click t
               "start": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-eilVRo",
+            "styledComponentId": "sc-dUjcNx",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -2126,7 +2126,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fOKMvo",
+                "componentId": "sc-krvtoX",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -2143,7 +2143,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fOKMvo",
+              "styledComponentId": "sc-krvtoX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -2789,7 +2789,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-eilVRo",
+              "componentId": "sc-dUjcNx",
               "isStatic": true,
               "lastClassName": "c9",
               "rules": Array [
@@ -2822,7 +2822,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
               "start": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-eilVRo",
+            "styledComponentId": "sc-dUjcNx",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -3046,7 +3046,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-krvtoX",
+                "componentId": "sc-eLExRp",
                 "isStatic": true,
                 "lastClassName": "c11",
                 "rules": Array [
@@ -3061,7 +3061,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
               "displayName": "styled.ol",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-krvtoX",
+              "styledComponentId": "sc-eLExRp",
               "target": "ol",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -3082,7 +3082,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
+                      "componentId": "sc-cbkKFq",
                       "isStatic": true,
                       "lastClassName": "c12",
                       "rules": Array [
@@ -3094,7 +3094,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                     "displayName": "styled.li",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
+                    "styledComponentId": "sc-cbkKFq",
                     "target": "li",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -3193,7 +3193,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
+                              "componentId": "sc-daURTG",
                               "isStatic": false,
                               "lastClassName": "c18",
                               "rules": Array [
@@ -3217,7 +3217,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                             "displayName": "StyledEntity",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
+                            "styledComponentId": "sc-daURTG",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -3238,7 +3238,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
+                                    "componentId": "sc-bXGyLb",
                                     "isStatic": true,
                                     "lastClassName": "c14",
                                     "rules": Array [
@@ -3263,7 +3263,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                   "displayName": "Styled(H3)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
+                                  "styledComponentId": "sc-bXGyLb",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -3347,7 +3347,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
+                                      "componentId": "sc-gojNiO",
                                       "isStatic": true,
                                       "lastClassName": "c16",
                                       "rules": Array [
@@ -3374,7 +3374,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
+                                    "styledComponentId": "sc-gojNiO",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -3404,7 +3404,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cbkKFq",
+                                    "componentId": "sc-lkqHmb",
                                     "isStatic": false,
                                     "lastClassName": "c17",
                                     "rules": Array [
@@ -3434,11 +3434,11 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                   },
                                   "displayName": "Styled(styled.div)",
                                   "foldedComponentIds": Array [
-                                    "sc-kjoXOD",
+                                    "sc-gisBJw",
                                   ],
                                   "propTypes": undefined,
                                   "render": [Function],
-                                  "styledComponentId": "sc-cbkKFq",
+                                  "styledComponentId": "sc-lkqHmb",
                                   "target": "div",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -3476,7 +3476,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
+                      "componentId": "sc-cbkKFq",
                       "isStatic": true,
                       "lastClassName": "c12",
                       "rules": Array [
@@ -3488,7 +3488,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                     "displayName": "styled.li",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
+                    "styledComponentId": "sc-cbkKFq",
                     "target": "li",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -3567,7 +3567,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
+                              "componentId": "sc-daURTG",
                               "isStatic": false,
                               "lastClassName": "c18",
                               "rules": Array [
@@ -3591,7 +3591,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                             "displayName": "StyledEntity",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
+                            "styledComponentId": "sc-daURTG",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -3612,7 +3612,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
+                                    "componentId": "sc-bXGyLb",
                                     "isStatic": true,
                                     "lastClassName": "c14",
                                     "rules": Array [
@@ -3637,7 +3637,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                   "displayName": "Styled(H3)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
+                                  "styledComponentId": "sc-bXGyLb",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -3721,7 +3721,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
+                                      "componentId": "sc-gojNiO",
                                       "isStatic": true,
                                       "lastClassName": "c16",
                                       "rules": Array [
@@ -3748,7 +3748,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
+                                    "styledComponentId": "sc-gojNiO",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -3806,7 +3806,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-gojNiO",
+                "componentId": "sc-exAgwC",
                 "isStatic": true,
                 "lastClassName": "c19",
                 "rules": Array [
@@ -3824,7 +3824,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
               "displayName": "Styled(Details)",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-gojNiO",
+              "styledComponentId": "sc-exAgwC",
               "target": [Function],
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -4195,7 +4195,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-daURTG",
+                                    "componentId": "sc-cQFLBn",
                                     "isStatic": true,
                                     "lastClassName": "c25",
                                     "rules": Array [
@@ -4210,7 +4210,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                   "displayName": "styled.ul",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-daURTG",
+                                  "styledComponentId": "sc-cQFLBn",
                                   "target": "ul",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -4248,7 +4248,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cJSrbW",
+                                    "componentId": "sc-TOsTZ",
                                     "isStatic": false,
                                     "lastClassName": "c26",
                                     "rules": Array [
@@ -4290,7 +4290,7 @@ exports[`EntitySearch when at first there is an error and then on second click t
                                   "foldedComponentIds": Array [],
                                   "propTypes": undefined,
                                   "render": [Function],
-                                  "styledComponentId": "sc-cJSrbW",
+                                  "styledComponentId": "sc-TOsTZ",
                                   "target": "a",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -4744,7 +4744,7 @@ exports[`EntitySearch when initially loading the entity search component should 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fOKMvo",
+                "componentId": "sc-krvtoX",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -4761,7 +4761,7 @@ exports[`EntitySearch when initially loading the entity search component should 
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fOKMvo",
+              "styledComponentId": "sc-krvtoX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -5407,7 +5407,7 @@ exports[`EntitySearch when initially loading the entity search component should 
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-eilVRo",
+              "componentId": "sc-dUjcNx",
               "isStatic": true,
               "lastClassName": "c9",
               "rules": Array [
@@ -5440,7 +5440,7 @@ exports[`EntitySearch when initially loading the entity search component should 
               "start": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-eilVRo",
+            "styledComponentId": "sc-dUjcNx",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -6452,7 +6452,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fOKMvo",
+                "componentId": "sc-krvtoX",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -6469,7 +6469,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fOKMvo",
+              "styledComponentId": "sc-krvtoX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -7115,7 +7115,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-eilVRo",
+              "componentId": "sc-dUjcNx",
               "isStatic": true,
               "lastClassName": "c9",
               "rules": Array [
@@ -7148,7 +7148,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
               "start": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-eilVRo",
+            "styledComponentId": "sc-dUjcNx",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -7372,7 +7372,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-krvtoX",
+                "componentId": "sc-eLExRp",
                 "isStatic": true,
                 "lastClassName": "c11",
                 "rules": Array [
@@ -7387,7 +7387,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
               "displayName": "styled.ol",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-krvtoX",
+              "styledComponentId": "sc-eLExRp",
               "target": "ol",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -7408,7 +7408,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
+                      "componentId": "sc-cbkKFq",
                       "isStatic": true,
                       "lastClassName": "c12",
                       "rules": Array [
@@ -7420,7 +7420,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                     "displayName": "styled.li",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
+                    "styledComponentId": "sc-cbkKFq",
                     "target": "li",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -7519,7 +7519,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
+                              "componentId": "sc-daURTG",
                               "isStatic": false,
                               "lastClassName": "c18",
                               "rules": Array [
@@ -7543,7 +7543,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                             "displayName": "StyledEntity",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
+                            "styledComponentId": "sc-daURTG",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -7564,7 +7564,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
+                                    "componentId": "sc-bXGyLb",
                                     "isStatic": true,
                                     "lastClassName": "c14",
                                     "rules": Array [
@@ -7589,7 +7589,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                   "displayName": "Styled(H3)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
+                                  "styledComponentId": "sc-bXGyLb",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -7673,7 +7673,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
+                                      "componentId": "sc-gojNiO",
                                       "isStatic": true,
                                       "lastClassName": "c16",
                                       "rules": Array [
@@ -7700,7 +7700,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
+                                    "styledComponentId": "sc-gojNiO",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -7730,7 +7730,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cbkKFq",
+                                    "componentId": "sc-lkqHmb",
                                     "isStatic": false,
                                     "lastClassName": "c17",
                                     "rules": Array [
@@ -7760,11 +7760,11 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                   },
                                   "displayName": "Styled(styled.div)",
                                   "foldedComponentIds": Array [
-                                    "sc-kjoXOD",
+                                    "sc-gisBJw",
                                   ],
                                   "propTypes": undefined,
                                   "render": [Function],
-                                  "styledComponentId": "sc-cbkKFq",
+                                  "styledComponentId": "sc-lkqHmb",
                                   "target": "div",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -7802,7 +7802,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
+                      "componentId": "sc-cbkKFq",
                       "isStatic": true,
                       "lastClassName": "c12",
                       "rules": Array [
@@ -7814,7 +7814,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                     "displayName": "styled.li",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
+                    "styledComponentId": "sc-cbkKFq",
                     "target": "li",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -7893,7 +7893,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
+                              "componentId": "sc-daURTG",
                               "isStatic": false,
                               "lastClassName": "c18",
                               "rules": Array [
@@ -7917,7 +7917,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                             "displayName": "StyledEntity",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
+                            "styledComponentId": "sc-daURTG",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -7938,7 +7938,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
+                                    "componentId": "sc-bXGyLb",
                                     "isStatic": true,
                                     "lastClassName": "c14",
                                     "rules": Array [
@@ -7963,7 +7963,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                   "displayName": "Styled(H3)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
+                                  "styledComponentId": "sc-bXGyLb",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -8047,7 +8047,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
+                                      "componentId": "sc-gojNiO",
                                       "isStatic": true,
                                       "lastClassName": "c16",
                                       "rules": Array [
@@ -8074,7 +8074,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
+                                    "styledComponentId": "sc-gojNiO",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -8132,7 +8132,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-gojNiO",
+                "componentId": "sc-exAgwC",
                 "isStatic": true,
                 "lastClassName": "c19",
                 "rules": Array [
@@ -8150,7 +8150,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
               "displayName": "Styled(Details)",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-gojNiO",
+              "styledComponentId": "sc-exAgwC",
               "target": [Function],
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -8521,7 +8521,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-daURTG",
+                                    "componentId": "sc-cQFLBn",
                                     "isStatic": true,
                                     "lastClassName": "c25",
                                     "rules": Array [
@@ -8536,7 +8536,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                   "displayName": "styled.ul",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-daURTG",
+                                  "styledComponentId": "sc-cQFLBn",
                                   "target": "ul",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -8574,7 +8574,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cJSrbW",
+                                    "componentId": "sc-TOsTZ",
                                     "isStatic": false,
                                     "lastClassName": "c26",
                                     "rules": Array [
@@ -8616,7 +8616,7 @@ exports[`EntitySearch when the "Search" button has been clicked should render th
                                   "foldedComponentIds": Array [],
                                   "propTypes": undefined,
                                   "render": [Function],
-                                  "styledComponentId": "sc-cJSrbW",
+                                  "styledComponentId": "sc-TOsTZ",
                                   "target": "a",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -9070,7 +9070,7 @@ exports[`EntitySearch when the API returns 0 results should render the component
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fOKMvo",
+                "componentId": "sc-krvtoX",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -9087,7 +9087,7 @@ exports[`EntitySearch when the API returns 0 results should render the component
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fOKMvo",
+              "styledComponentId": "sc-krvtoX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -9733,7 +9733,7 @@ exports[`EntitySearch when the API returns 0 results should render the component
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-eilVRo",
+              "componentId": "sc-dUjcNx",
               "isStatic": true,
               "lastClassName": "c9",
               "rules": Array [
@@ -9766,7 +9766,7 @@ exports[`EntitySearch when the API returns 0 results should render the component
               "start": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-eilVRo",
+            "styledComponentId": "sc-dUjcNx",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -10280,7 +10280,7 @@ exports[`EntitySearch when the API returns a server error should render the comp
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fOKMvo",
+                "componentId": "sc-krvtoX",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -10297,7 +10297,7 @@ exports[`EntitySearch when the API returns a server error should render the comp
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fOKMvo",
+              "styledComponentId": "sc-krvtoX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -10943,7 +10943,7 @@ exports[`EntitySearch when the API returns a server error should render the comp
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-eilVRo",
+              "componentId": "sc-dUjcNx",
               "isStatic": true,
               "lastClassName": "c9",
               "rules": Array [
@@ -10976,7 +10976,7 @@ exports[`EntitySearch when the API returns a server error should render the comp
               "start": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-eilVRo",
+            "styledComponentId": "sc-dUjcNx",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -11862,7 +11862,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fOKMvo",
+                "componentId": "sc-krvtoX",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -11879,7 +11879,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fOKMvo",
+              "styledComponentId": "sc-krvtoX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -12525,7 +12525,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-eilVRo",
+              "componentId": "sc-dUjcNx",
               "isStatic": true,
               "lastClassName": "c9",
               "rules": Array [
@@ -12558,7 +12558,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
               "start": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-eilVRo",
+            "styledComponentId": "sc-dUjcNx",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -12714,7 +12714,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-krvtoX",
+                "componentId": "sc-eLExRp",
                 "isStatic": true,
                 "lastClassName": "c11",
                 "rules": Array [
@@ -12729,7 +12729,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
               "displayName": "styled.ol",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-krvtoX",
+              "styledComponentId": "sc-eLExRp",
               "target": "ol",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -12750,7 +12750,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
+                      "componentId": "sc-cbkKFq",
                       "isStatic": true,
                       "lastClassName": "c12",
                       "rules": Array [
@@ -12762,7 +12762,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                     "displayName": "styled.li",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
+                    "styledComponentId": "sc-cbkKFq",
                     "target": "li",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -12841,7 +12841,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
+                              "componentId": "sc-daURTG",
                               "isStatic": false,
                               "lastClassName": "c13",
                               "rules": Array [
@@ -12865,7 +12865,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                             "displayName": "StyledEntity",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
+                            "styledComponentId": "sc-daURTG",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -12886,7 +12886,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
+                                    "componentId": "sc-bXGyLb",
                                     "isStatic": true,
                                     "lastClassName": "c14",
                                     "rules": Array [
@@ -12911,7 +12911,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                   "displayName": "Styled(H3)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
+                                  "styledComponentId": "sc-bXGyLb",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -12995,7 +12995,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
+                                      "componentId": "sc-gojNiO",
                                       "isStatic": true,
                                       "lastClassName": "c16",
                                       "rules": Array [
@@ -13022,7 +13022,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
+                                    "styledComponentId": "sc-gojNiO",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -13080,7 +13080,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-gojNiO",
+                "componentId": "sc-exAgwC",
                 "isStatic": true,
                 "lastClassName": "c17",
                 "rules": Array [
@@ -13098,7 +13098,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
               "displayName": "Styled(Details)",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-gojNiO",
+              "styledComponentId": "sc-exAgwC",
               "target": [Function],
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -13469,7 +13469,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-daURTG",
+                                    "componentId": "sc-cQFLBn",
                                     "isStatic": true,
                                     "lastClassName": "c23",
                                     "rules": Array [
@@ -13484,7 +13484,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                   "displayName": "styled.ul",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-daURTG",
+                                  "styledComponentId": "sc-cQFLBn",
                                   "target": "ul",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -13522,7 +13522,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cJSrbW",
+                                    "componentId": "sc-TOsTZ",
                                     "isStatic": false,
                                     "lastClassName": "c24",
                                     "rules": Array [
@@ -13564,7 +13564,7 @@ exports[`EntitySearch when the company name filter is applied should render the 
                                   "foldedComponentIds": Array [],
                                   "propTypes": undefined,
                                   "render": [Function],
-                                  "styledComponentId": "sc-cJSrbW",
+                                  "styledComponentId": "sc-TOsTZ",
                                   "target": "a",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -14018,7 +14018,7 @@ exports[`EntitySearch when the company postcode filter is applied should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fOKMvo",
+                "componentId": "sc-krvtoX",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -14035,7 +14035,7 @@ exports[`EntitySearch when the company postcode filter is applied should render 
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fOKMvo",
+              "styledComponentId": "sc-krvtoX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -14681,7 +14681,7 @@ exports[`EntitySearch when the company postcode filter is applied should render 
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-eilVRo",
+              "componentId": "sc-dUjcNx",
               "isStatic": true,
               "lastClassName": "c9",
               "rules": Array [
@@ -14714,7 +14714,7 @@ exports[`EntitySearch when the company postcode filter is applied should render 
               "start": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-eilVRo",
+            "styledComponentId": "sc-dUjcNx",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -15729,7 +15729,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fOKMvo",
+                "componentId": "sc-krvtoX",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -15746,7 +15746,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fOKMvo",
+              "styledComponentId": "sc-krvtoX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -16392,7 +16392,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-eilVRo",
+              "componentId": "sc-dUjcNx",
               "isStatic": true,
               "lastClassName": "c9",
               "rules": Array [
@@ -16425,7 +16425,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
               "start": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-eilVRo",
+            "styledComponentId": "sc-dUjcNx",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -16649,7 +16649,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-krvtoX",
+                "componentId": "sc-eLExRp",
                 "isStatic": true,
                 "lastClassName": "c11",
                 "rules": Array [
@@ -16664,7 +16664,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
               "displayName": "styled.ol",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-krvtoX",
+              "styledComponentId": "sc-eLExRp",
               "target": "ol",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -16685,7 +16685,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
+                      "componentId": "sc-cbkKFq",
                       "isStatic": true,
                       "lastClassName": "c12",
                       "rules": Array [
@@ -16697,7 +16697,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                     "displayName": "styled.li",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
+                    "styledComponentId": "sc-cbkKFq",
                     "target": "li",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -16796,7 +16796,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
+                              "componentId": "sc-daURTG",
                               "isStatic": false,
                               "lastClassName": "c18",
                               "rules": Array [
@@ -16820,7 +16820,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                             "displayName": "StyledEntity",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
+                            "styledComponentId": "sc-daURTG",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -16841,7 +16841,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
+                                    "componentId": "sc-bXGyLb",
                                     "isStatic": true,
                                     "lastClassName": "c14",
                                     "rules": Array [
@@ -16866,7 +16866,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                   "displayName": "Styled(H3)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
+                                  "styledComponentId": "sc-bXGyLb",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -16950,7 +16950,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
+                                      "componentId": "sc-gojNiO",
                                       "isStatic": true,
                                       "lastClassName": "c16",
                                       "rules": Array [
@@ -16977,7 +16977,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
+                                    "styledComponentId": "sc-gojNiO",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -17007,7 +17007,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cbkKFq",
+                                    "componentId": "sc-lkqHmb",
                                     "isStatic": false,
                                     "lastClassName": "c17",
                                     "rules": Array [
@@ -17037,11 +17037,11 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                   },
                                   "displayName": "Styled(styled.div)",
                                   "foldedComponentIds": Array [
-                                    "sc-kjoXOD",
+                                    "sc-gisBJw",
                                   ],
                                   "propTypes": undefined,
                                   "render": [Function],
-                                  "styledComponentId": "sc-cbkKFq",
+                                  "styledComponentId": "sc-lkqHmb",
                                   "target": "div",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -17079,7 +17079,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
+                      "componentId": "sc-cbkKFq",
                       "isStatic": true,
                       "lastClassName": "c12",
                       "rules": Array [
@@ -17091,7 +17091,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                     "displayName": "styled.li",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
+                    "styledComponentId": "sc-cbkKFq",
                     "target": "li",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -17170,7 +17170,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
+                              "componentId": "sc-daURTG",
                               "isStatic": false,
                               "lastClassName": "c18",
                               "rules": Array [
@@ -17194,7 +17194,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                             "displayName": "StyledEntity",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
+                            "styledComponentId": "sc-daURTG",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -17215,7 +17215,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
+                                    "componentId": "sc-bXGyLb",
                                     "isStatic": true,
                                     "lastClassName": "c14",
                                     "rules": Array [
@@ -17240,7 +17240,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                   "displayName": "Styled(H3)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
+                                  "styledComponentId": "sc-bXGyLb",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -17324,7 +17324,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
+                                      "componentId": "sc-gojNiO",
                                       "isStatic": true,
                                       "lastClassName": "c16",
                                       "rules": Array [
@@ -17351,7 +17351,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
+                                    "styledComponentId": "sc-gojNiO",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -17409,7 +17409,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-gojNiO",
+                "componentId": "sc-exAgwC",
                 "isStatic": true,
                 "lastClassName": "c19",
                 "rules": Array [
@@ -17427,7 +17427,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
               "displayName": "Styled(Details)",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-gojNiO",
+              "styledComponentId": "sc-exAgwC",
               "target": [Function],
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -17798,7 +17798,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-daURTG",
+                                    "componentId": "sc-cQFLBn",
                                     "isStatic": true,
                                     "lastClassName": "c25",
                                     "rules": Array [
@@ -17813,7 +17813,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                   "displayName": "styled.ul",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-daURTG",
+                                  "styledComponentId": "sc-cQFLBn",
                                   "target": "ul",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -17851,7 +17851,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cJSrbW",
+                                    "componentId": "sc-TOsTZ",
                                     "isStatic": false,
                                     "lastClassName": "c26",
                                     "rules": Array [
@@ -17893,7 +17893,7 @@ exports[`EntitySearch when the entity search results are clicked should render t
                                   "foldedComponentIds": Array [],
                                   "propTypes": undefined,
                                   "render": [Function],
-                                  "styledComponentId": "sc-cJSrbW",
+                                  "styledComponentId": "sc-TOsTZ",
                                   "target": "a",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -18868,7 +18868,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fOKMvo",
+                "componentId": "sc-krvtoX",
                 "isStatic": true,
                 "lastClassName": "c0",
                 "rules": Array [
@@ -18885,7 +18885,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fOKMvo",
+              "styledComponentId": "sc-krvtoX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -19531,7 +19531,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-eilVRo",
+              "componentId": "sc-dUjcNx",
               "isStatic": true,
               "lastClassName": "c9",
               "rules": Array [
@@ -19564,7 +19564,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
               "start": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-eilVRo",
+            "styledComponentId": "sc-dUjcNx",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -19788,7 +19788,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-krvtoX",
+                "componentId": "sc-eLExRp",
                 "isStatic": true,
                 "lastClassName": "c11",
                 "rules": Array [
@@ -19803,7 +19803,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
               "displayName": "styled.ol",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-krvtoX",
+              "styledComponentId": "sc-eLExRp",
               "target": "ol",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -19824,7 +19824,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
+                      "componentId": "sc-cbkKFq",
                       "isStatic": true,
                       "lastClassName": "c12",
                       "rules": Array [
@@ -19836,7 +19836,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                     "displayName": "styled.li",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
+                    "styledComponentId": "sc-cbkKFq",
                     "target": "li",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -19935,7 +19935,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
+                              "componentId": "sc-daURTG",
                               "isStatic": false,
                               "lastClassName": "c18",
                               "rules": Array [
@@ -19959,7 +19959,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                             "displayName": "StyledEntity",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
+                            "styledComponentId": "sc-daURTG",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -19980,7 +19980,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
+                                    "componentId": "sc-bXGyLb",
                                     "isStatic": true,
                                     "lastClassName": "c14",
                                     "rules": Array [
@@ -20005,7 +20005,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                   "displayName": "Styled(H3)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
+                                  "styledComponentId": "sc-bXGyLb",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -20089,7 +20089,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
+                                      "componentId": "sc-gojNiO",
                                       "isStatic": true,
                                       "lastClassName": "c16",
                                       "rules": Array [
@@ -20116,7 +20116,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
+                                    "styledComponentId": "sc-gojNiO",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -20146,7 +20146,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cbkKFq",
+                                    "componentId": "sc-lkqHmb",
                                     "isStatic": false,
                                     "lastClassName": "c17",
                                     "rules": Array [
@@ -20176,11 +20176,11 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                   },
                                   "displayName": "Styled(styled.div)",
                                   "foldedComponentIds": Array [
-                                    "sc-kjoXOD",
+                                    "sc-gisBJw",
                                   ],
                                   "propTypes": undefined,
                                   "render": [Function],
-                                  "styledComponentId": "sc-cbkKFq",
+                                  "styledComponentId": "sc-lkqHmb",
                                   "target": "div",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -20218,7 +20218,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
+                      "componentId": "sc-cbkKFq",
                       "isStatic": true,
                       "lastClassName": "c12",
                       "rules": Array [
@@ -20230,7 +20230,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                     "displayName": "styled.li",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
+                    "styledComponentId": "sc-cbkKFq",
                     "target": "li",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -20309,7 +20309,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
+                              "componentId": "sc-daURTG",
                               "isStatic": false,
                               "lastClassName": "c18",
                               "rules": Array [
@@ -20333,7 +20333,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                             "displayName": "StyledEntity",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
+                            "styledComponentId": "sc-daURTG",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -20354,7 +20354,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
+                                    "componentId": "sc-bXGyLb",
                                     "isStatic": true,
                                     "lastClassName": "c14",
                                     "rules": Array [
@@ -20379,7 +20379,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                   "displayName": "Styled(H3)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
+                                  "styledComponentId": "sc-bXGyLb",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -20463,7 +20463,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
+                                      "componentId": "sc-gojNiO",
                                       "isStatic": true,
                                       "lastClassName": "c16",
                                       "rules": Array [
@@ -20490,7 +20490,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
+                                    "styledComponentId": "sc-gojNiO",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -20558,7 +20558,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-gojNiO",
+                "componentId": "sc-exAgwC",
                 "isStatic": true,
                 "lastClassName": "c19",
                 "rules": Array [
@@ -20576,7 +20576,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
               "displayName": "Styled(Details)",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-gojNiO",
+              "styledComponentId": "sc-exAgwC",
               "target": [Function],
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -20947,7 +20947,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-daURTG",
+                                    "componentId": "sc-cQFLBn",
                                     "isStatic": true,
                                     "lastClassName": "c25",
                                     "rules": Array [
@@ -20962,7 +20962,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                   "displayName": "styled.ul",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-daURTG",
+                                  "styledComponentId": "sc-cQFLBn",
                                   "target": "ul",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -21000,7 +21000,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cJSrbW",
+                                    "componentId": "sc-TOsTZ",
                                     "isStatic": false,
                                     "lastClassName": "c26",
                                     "rules": Array [
@@ -21042,7 +21042,7 @@ exports[`EntitySearch when the the cannot find link has a callback should render
                                   "foldedComponentIds": Array [],
                                   "propTypes": undefined,
                                   "render": [Function],
-                                  "styledComponentId": "sc-cJSrbW",
+                                  "styledComponentId": "sc-TOsTZ",
                                   "target": "a",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -22080,7 +22080,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-gHboQg",
+                  "componentId": "sc-fOKMvo",
                   "isStatic": false,
                   "lastClassName": "c0",
                   "rules": Array [
@@ -22125,11 +22125,11 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                 },
                 "displayName": "Styled(styled.a)",
                 "foldedComponentIds": Array [
-                  "sc-cJSrbW",
+                  "sc-TOsTZ",
                 ],
                 "propTypes": undefined,
                 "render": [Function],
-                "styledComponentId": "sc-gHboQg",
+                "styledComponentId": "sc-fOKMvo",
                 "target": "a",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -22183,7 +22183,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fOKMvo",
+                "componentId": "sc-krvtoX",
                 "isStatic": true,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -22200,7 +22200,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
               "displayName": "styled.div",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fOKMvo",
+              "styledComponentId": "sc-krvtoX",
               "target": "div",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -22846,7 +22846,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-eilVRo",
+              "componentId": "sc-dUjcNx",
               "isStatic": true,
               "lastClassName": "c10",
               "rules": Array [
@@ -22879,7 +22879,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
               "start": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-eilVRo",
+            "styledComponentId": "sc-dUjcNx",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -23103,7 +23103,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-krvtoX",
+                "componentId": "sc-eLExRp",
                 "isStatic": true,
                 "lastClassName": "c12",
                 "rules": Array [
@@ -23118,7 +23118,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
               "displayName": "styled.ol",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-krvtoX",
+              "styledComponentId": "sc-eLExRp",
               "target": "ol",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -23139,7 +23139,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
+                      "componentId": "sc-cbkKFq",
                       "isStatic": true,
                       "lastClassName": "c13",
                       "rules": Array [
@@ -23151,7 +23151,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                     "displayName": "styled.li",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
+                    "styledComponentId": "sc-cbkKFq",
                     "target": "li",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -23250,7 +23250,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
+                              "componentId": "sc-daURTG",
                               "isStatic": false,
                               "lastClassName": "c19",
                               "rules": Array [
@@ -23274,7 +23274,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                             "displayName": "StyledEntity",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
+                            "styledComponentId": "sc-daURTG",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -23295,7 +23295,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
+                                    "componentId": "sc-bXGyLb",
                                     "isStatic": true,
                                     "lastClassName": "c15",
                                     "rules": Array [
@@ -23320,7 +23320,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                   "displayName": "Styled(H3)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
+                                  "styledComponentId": "sc-bXGyLb",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -23404,7 +23404,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
+                                      "componentId": "sc-gojNiO",
                                       "isStatic": true,
                                       "lastClassName": "c17",
                                       "rules": Array [
@@ -23431,7 +23431,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
+                                    "styledComponentId": "sc-gojNiO",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -23461,7 +23461,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cbkKFq",
+                                    "componentId": "sc-lkqHmb",
                                     "isStatic": false,
                                     "lastClassName": "c18",
                                     "rules": Array [
@@ -23491,11 +23491,11 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                   },
                                   "displayName": "Styled(styled.div)",
                                   "foldedComponentIds": Array [
-                                    "sc-kjoXOD",
+                                    "sc-gisBJw",
                                   ],
                                   "propTypes": undefined,
                                   "render": [Function],
-                                  "styledComponentId": "sc-cbkKFq",
+                                  "styledComponentId": "sc-lkqHmb",
                                   "target": "div",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -23533,7 +23533,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-fYiAbW",
+                      "componentId": "sc-cbkKFq",
                       "isStatic": true,
                       "lastClassName": "c13",
                       "rules": Array [
@@ -23545,7 +23545,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                     "displayName": "styled.li",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-fYiAbW",
+                    "styledComponentId": "sc-cbkKFq",
                     "target": "li",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -23624,7 +23624,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-lkqHmb",
+                              "componentId": "sc-daURTG",
                               "isStatic": false,
                               "lastClassName": "c19",
                               "rules": Array [
@@ -23648,7 +23648,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                             "displayName": "StyledEntity",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-lkqHmb",
+                            "styledComponentId": "sc-daURTG",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -23669,7 +23669,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-eLExRp",
+                                    "componentId": "sc-bXGyLb",
                                     "isStatic": true,
                                     "lastClassName": "c15",
                                     "rules": Array [
@@ -23694,7 +23694,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                   "displayName": "Styled(H3)",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-eLExRp",
+                                  "styledComponentId": "sc-bXGyLb",
                                   "target": [Function],
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -23778,7 +23778,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bXGyLb",
+                                      "componentId": "sc-gojNiO",
                                       "isStatic": true,
                                       "lastClassName": "c17",
                                       "rules": Array [
@@ -23805,7 +23805,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bXGyLb",
+                                    "styledComponentId": "sc-gojNiO",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -23863,7 +23863,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-gojNiO",
+                "componentId": "sc-exAgwC",
                 "isStatic": true,
                 "lastClassName": "c20",
                 "rules": Array [
@@ -23881,7 +23881,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
               "displayName": "Styled(Details)",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-gojNiO",
+              "styledComponentId": "sc-exAgwC",
               "target": [Function],
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -24252,7 +24252,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-daURTG",
+                                    "componentId": "sc-cQFLBn",
                                     "isStatic": true,
                                     "lastClassName": "c26",
                                     "rules": Array [
@@ -24267,7 +24267,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                   "displayName": "styled.ul",
                                   "foldedComponentIds": Array [],
                                   "render": [Function],
-                                  "styledComponentId": "sc-daURTG",
+                                  "styledComponentId": "sc-cQFLBn",
                                   "target": "ul",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -24305,7 +24305,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-cJSrbW",
+                                    "componentId": "sc-TOsTZ",
                                     "isStatic": false,
                                     "lastClassName": "c27",
                                     "rules": Array [
@@ -24347,7 +24347,7 @@ exports[`EntitySearch when there is a previously selected "Change" link which is
                                   "foldedComponentIds": Array [],
                                   "propTypes": undefined,
                                   "render": [Function],
-                                  "styledComponentId": "sc-cJSrbW",
+                                  "styledComponentId": "sc-TOsTZ",
                                   "target": "a",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],

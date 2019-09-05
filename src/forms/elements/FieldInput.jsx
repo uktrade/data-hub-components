@@ -1,31 +1,32 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { RED } from 'govuk-colours'
+import InputField from '@govuk-react/input-field'
+import FormGroup from '@govuk-react/form-group'
 
 import useField from '../hooks/useField'
-import FieldError from './FieldError'
 
 const FieldInput = ({ name, type, validate, required, label, ...rest }) => {
-  const { value, error, onChange, onBlur } = useField({ name, label, validate, required })
+  const { value, error, touched, onChange, onBlur } = useField({ name, label, validate, required })
 
   return (
-    <div>
-      {label && <label htmlFor={name}>{label}</label>}
-
-      <input
-        {...rest}
+    <FormGroup>
+      <InputField
         name={name}
         key={name}
         id={name}
         type={type}
-        value={value}
-        onChange={onChange}
-        onBlur={onBlur}
-        style={error ? { border: `solid 1px ${RED}` } : null}
-      />
-
-      <FieldError name={name} />
-    </div>
+        meta={{ error, touched }}
+        input={{
+          type,
+          value,
+          onChange,
+          onBlur,
+          ...rest,
+        }}
+      >
+        {label}
+      </InputField>
+    </FormGroup>
   )
 }
 

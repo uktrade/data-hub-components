@@ -44,6 +44,8 @@
     "@govuk-react/constants": "^0.7.1",
     "@govuk-react/details": "^0.7.1",
     "@govuk-react/error-text": "^0.7.1",
+    "@govuk-react/form-group": "^0.7.1",
+    "@govuk-react/input-field": "^0.7.1",
     "@govuk-react/label-text": "^0.7.1",
     "@govuk-react/lib": "^0.7.1",
     "@govuk-react/link": "^0.7.1",

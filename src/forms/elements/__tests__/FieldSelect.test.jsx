@@ -92,7 +92,8 @@ describe('FieldSelect', () => {
     })
 
     test('should render with an error', () => {
-      expect(wrapper.find('span').at(1).text()).toEqual('testError')
+      const errorContainer = wrapper.find('span').at(1)
+      expect(errorContainer.text()).toEqual('testError')
     })
   })
 
@@ -107,6 +108,37 @@ describe('FieldSelect', () => {
 
     test('should create an empty option with the same value', () => {
       expect(wrapper.find('option').first().text()).toEqual('testEmptyOption')
+    })
+  })
+
+  describe('when one of the options is selected', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          {form => (
+            <>
+              <FieldSelect
+                name="testField"
+                options={[
+                  { label: 'testOptionLabel1', value: 'testOptionValue1' },
+                  { label: 'testOptionLabel2', value: 'testOptionValue2' },
+                ]}
+              />
+              <div id="values">{form.values.testField}</div>
+            </>
+          )}
+        </Form>,
+      )
+      const testField1 = wrapper.find('select')
+      testField1.simulate('change', { target: { value: 'testOptionValue2' } })
+    })
+
+    test('should update field value', () => {
+      expect(wrapper.find('select').prop('defaultValue')).toEqual('testOptionValue2')
+    })
+
+    test('should update value in form state', () => {
+      expect(wrapper.find('#values').text()).toEqual('testOptionValue2')
     })
   })
 })
