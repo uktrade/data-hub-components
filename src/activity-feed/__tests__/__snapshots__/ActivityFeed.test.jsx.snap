@@ -2149,7 +2149,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -2219,7 +2218,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -2299,7 +2297,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -2399,7 +2396,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -2469,7 +2465,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -2549,7 +2544,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -2649,7 +2643,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -2719,7 +2712,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -2799,7 +2791,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -2899,7 +2890,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -2969,7 +2959,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3049,7 +3038,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3149,7 +3137,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3219,7 +3206,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3299,7 +3285,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3399,7 +3384,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3469,7 +3453,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3549,7 +3532,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3649,7 +3631,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3719,7 +3700,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3799,7 +3779,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3899,7 +3878,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -3969,7 +3947,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4049,7 +4026,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4149,7 +4125,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4219,7 +4194,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4299,7 +4273,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4399,7 +4372,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4469,7 +4441,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4549,7 +4520,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4649,7 +4619,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4719,7 +4688,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4799,7 +4767,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4899,7 +4866,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -4969,7 +4935,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5049,7 +5014,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5149,7 +5113,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5219,7 +5182,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5299,7 +5261,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5399,7 +5360,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5469,7 +5429,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5549,7 +5508,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5649,7 +5607,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5719,7 +5676,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5799,7 +5755,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5899,7 +5854,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -5969,7 +5923,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6049,7 +6002,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6149,7 +6101,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6219,7 +6170,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6299,7 +6249,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6399,7 +6348,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6469,7 +6417,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6549,7 +6496,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6649,7 +6595,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6719,7 +6664,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6799,7 +6743,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6899,7 +6842,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -6969,7 +6911,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -7049,7 +6990,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -8003,7 +7943,6 @@ exports[`ActivityFeed when there is a single activity should render single activ
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -8073,7 +8012,6 @@ exports[`ActivityFeed when there is a single activity should render single activ
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >
@@ -8153,7 +8091,6 @@ exports[`ActivityFeed when there is a single activity should render single activ
                       Object {
                         "border": 0,
                         "fontWeight": "normal",
-                        "width": "35%",
                       }
                     }
                   >

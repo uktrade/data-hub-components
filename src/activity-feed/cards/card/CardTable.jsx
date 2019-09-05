@@ -36,7 +36,7 @@ class DetailsRow extends React.PureComponent {
 
     return (
       <Table.Row>
-        <Table.CellHeader style={{ fontWeight: 'normal', border: 0, width: '35%' }}>{header}</Table.CellHeader>
+        <Table.CellHeader style={{ fontWeight: 'normal', border: 0 }}>{header}</Table.CellHeader>
         <Table.Cell style={{ border: 0 }}>{children}</Table.Cell>
       </Table.Row>
     )
