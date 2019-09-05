@@ -54,11 +54,9 @@ export default class ActivityFeed extends React.Component {
     this.onShowDetailsClick = this.onShowDetailsClick.bind(this)
   }
 
-  onShowDetailsClick() {
-    const { showDetails } = this.state
-
+  onShowDetailsClick(e) {
     this.setState({
-      showDetails: !showDetails,
+      showDetails: e.target.checked,
     })
   }
 

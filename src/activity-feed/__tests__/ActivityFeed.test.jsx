@@ -113,5 +113,22 @@ describe('ActivityFeed', () => {
         expect(wrapper.find(Details).last().prop('open')).toBeTruthy()
       })
     })
+
+    describe('when the checkbox is unchecked', () => {
+      beforeAll(() => {
+        wrapper.find('input').simulate('change', {
+          target: { checked: false },
+        })
+      })
+
+      test('should display the checkbox in "unchecked" state', () => {
+        expect(wrapper.find(Checkbox).prop('checked')).toBeFalsy()
+      })
+
+      test('should close all cards', () => {
+        expect(wrapper.find(Details).first().prop('open')).toBeFalsy()
+        expect(wrapper.find(Details).last().prop('open')).toBeFalsy()
+      })
+    })
   })
 })
