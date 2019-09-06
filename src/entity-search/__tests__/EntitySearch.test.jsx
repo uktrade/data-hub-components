@@ -47,7 +47,7 @@ const wrapEntitySearch = ({
 }
 
 describe('EntitySearch', () => {
-  describe('when initially loading the entity search component', () => {
+  describe('when loading the entity search component', () => {
     let wrappedEntitySearch
 
     beforeAll(() => {
@@ -56,36 +56,51 @@ describe('EntitySearch', () => {
       wrappedEntitySearch = wrapEntitySearch()
     })
 
-    test('should render the component without entities', () => {
-      expect(wrappedEntitySearch).toMatchSnapshot()
-    })
-  })
-
-  describe('when the "Search" button has been clicked', () => {
-    let wrappedEntitySearch
-    let preventDefaultMock
-
-    beforeAll(async () => {
-      setupSuccessMocks(API_ENDPOINT)
-
-      wrappedEntitySearch = wrapEntitySearch()
-      preventDefaultMock = jest.fn()
-
-      wrappedEntitySearch
-        .find('Search')
-        .simulate('click', { preventDefault: preventDefaultMock })
-
-      await act(flushPromises)
-
-      wrappedEntitySearch.update()
+    test('should show the filters', () => {
+      expect(wrappedEntitySearch.find('label').at(0).text()).toEqual('Company name')
+      expect(wrappedEntitySearch.find('[name="search_term"]').exists()).toBeTruthy()
+      expect(wrappedEntitySearch.find('label').at(1).text()).toEqual('Company postcode (optional)')
+      expect(wrappedEntitySearch.find('[name="postal_code"]').exists()).toBeTruthy()
     })
 
-    test('should prevent the default button action', () => {
-      expect(preventDefaultMock.mock.calls.length).toEqual(1)
+    test('should show the "Search" button', () => {
+      expect(wrappedEntitySearch.find('Search').exists()).toBeTruthy()
     })
 
-    test('should render the component with entities', () => {
-      expect(wrappedEntitySearch).toMatchSnapshot()
+    test('should not show the entities', () => {
+      expect(wrappedEntitySearch.find('ol').exists()).toBeFalsy()
+    })
+
+    test('should not show the cannot find details', () => {
+      expect(wrappedEntitySearch.find('ul').exists()).toBeFalsy()
+    })
+
+    describe('when the "Search" button is click', () => {
+      const preventDefaultSpy = jest.fn()
+
+      beforeAll(async () => {
+        wrappedEntitySearch
+          .find('Search')
+          .simulate('click', { preventDefault: preventDefaultSpy })
+
+        await act(flushPromises)
+
+        wrappedEntitySearch.update()
+      })
+
+      test('should prevent the default button action', () => {
+        expect(preventDefaultSpy.mock.calls.length).toEqual(1)
+      })
+
+      test('should show the entities', () => {
+        const entityList = wrappedEntitySearch.find('ol')
+        expect(entityList.find('li').length).toEqual(2)
+      })
+
+      test('should show the cannot find details', () => {
+        const actionList = wrappedEntitySearch.find('ul')
+        expect(actionList.find('li').length).toEqual(2)
+      })
     })
   })
 
@@ -112,7 +127,10 @@ describe('EntitySearch', () => {
     })
 
     test('should render the component with filtered entities', () => {
-      expect(wrappedEntitySearch).toMatchSnapshot()
+      const entityList = wrappedEntitySearch.find('ol')
+      const results = entityList.find('li')
+      expect(results.length).toEqual(1)
+      expect(results.find('h3').text()).toEqual('Some other company')
     })
   })
 
@@ -139,25 +157,25 @@ describe('EntitySearch', () => {
     })
 
     test('should render the component with filtered entities', () => {
-      expect(wrappedEntitySearch).toMatchSnapshot()
+      const entityList = wrappedEntitySearch.find('ol')
+      const results = entityList.find('li')
+      expect(results.length).toEqual(1)
+      expect(results.find('h3').text()).toEqual('Some company name')
     })
   })
 
   describe('when the the cannot find link has a callback', () => {
     let wrappedEntitySearch
-    let onCannotFindLinkClick
-    let preventDefaultMock
+    const onCannotFindLinkSpy = jest.fn()
+    const preventDefaultSpy = jest.fn()
 
     beforeAll(async () => {
       setupSuccessMocks(API_ENDPOINT)
 
-      onCannotFindLinkClick = jest.fn()
-      preventDefaultMock = jest.fn()
-
       wrappedEntitySearch = wrapEntitySearch({
         cannotFindLink: {
           text: 'still cannot find',
-          onClick: onCannotFindLinkClick,
+          onClick: onCannotFindLinkSpy,
         },
       })
 
@@ -170,36 +188,30 @@ describe('EntitySearch', () => {
       wrappedEntitySearch
         .find('[href="#cannot-find"]')
         .at(1)
-        .simulate('click', { preventDefault: preventDefaultMock })
-    })
-
-    test('should render the component', () => {
-      expect(wrappedEntitySearch).toMatchSnapshot()
+        .simulate('click', { preventDefault: preventDefaultSpy })
     })
 
     test('should prevent the default link action', () => {
-      expect(preventDefaultMock.mock.calls.length).toEqual(1)
+      expect(preventDefaultSpy.mock.calls.length).toEqual(1)
     })
 
     test('should call the onCannotFindLinkClick event', () => {
-      expect(onCannotFindLinkClick.mock.calls.length).toEqual(1)
+      expect(onCannotFindLinkSpy.mock.calls.length).toEqual(1)
     })
   })
 
+
   describe('when there is a previously selected "Change" link which is clicked', () => {
     let wrappedEntitySearch
-    let onChangeClick
-    let preventDefaultMock
+    const onChangeClickSpy = jest.fn()
+    const preventDefaultSpy = jest.fn()
 
     beforeAll(async () => {
       setupSuccessMocks(API_ENDPOINT)
 
-      onChangeClick = jest.fn()
-      preventDefaultMock = jest.fn()
-
       wrappedEntitySearch = wrapEntitySearch({
         previouslySelected: {
-          onChangeClick,
+          onChangeClick: onChangeClickSpy,
           text: 'previously selected',
         },
       })
@@ -213,30 +225,24 @@ describe('EntitySearch', () => {
       wrappedEntitySearch
         .find('[href="#previously-selected"]')
         .at(1)
-        .simulate('click', { preventDefault: preventDefaultMock })
-    })
-
-    test('should render the component', () => {
-      expect(wrappedEntitySearch).toMatchSnapshot()
+        .simulate('click', { preventDefault: preventDefaultSpy })
     })
 
     test('should prevent the default link action', () => {
-      expect(preventDefaultMock.mock.calls.length).toEqual(1)
+      expect(preventDefaultSpy.mock.calls.length).toEqual(1)
     })
 
     test('should call the onChangeClick event', () => {
-      expect(onChangeClick.mock.calls.length).toEqual(1)
+      expect(onChangeClickSpy.mock.calls.length).toEqual(1)
     })
   })
 
   describe('when the entity search results are clicked', () => {
     let wrappedEntitySearch
-    let onEntityClick
+    const onEntityClick = jest.fn()
 
     beforeEach(async () => {
       setupSuccessMocks(API_ENDPOINT)
-
-      onEntityClick = jest.fn()
 
       wrappedEntitySearch = wrapEntitySearch({
         onEntityClick,
@@ -247,10 +253,6 @@ describe('EntitySearch', () => {
       await act(flushPromises)
 
       wrappedEntitySearch.update()
-    })
-
-    test('should render the component', () => {
-      expect(wrappedEntitySearch).toMatchSnapshot()
     })
 
     describe('when the first entity is clicked', () => {
@@ -292,8 +294,17 @@ describe('EntitySearch', () => {
       wrappedEntitySearch.update()
     })
 
-    test('should render the component with an error message', () => {
-      expect(wrappedEntitySearch).toMatchSnapshot()
+    test('should not show the entities', () => {
+      expect(wrappedEntitySearch.find('ol').exists()).toBeFalsy()
+    })
+
+    test('should not show the cannot find details', () => {
+      expect(wrappedEntitySearch.find('ul').exists()).toBeFalsy()
+    })
+
+    test('should show an error', () => {
+      const expected = 'Error occurred while searching entities.'
+      expect(wrappedEntitySearch.find('p').text()).toEqual(expected)
     })
   })
 
@@ -312,8 +323,17 @@ describe('EntitySearch', () => {
       wrappedEntitySearch.update()
     })
 
-    test('should render the component with a "no entities" message', () => {
-      expect(wrappedEntitySearch).toMatchSnapshot()
+    test('should not show the entities', () => {
+      expect(wrappedEntitySearch.find('ol').exists()).toBeFalsy()
+    })
+
+    test('should not show the cannot find details', () => {
+      expect(wrappedEntitySearch.find('ul').exists()).toBeFalsy()
+    })
+
+    test('should show an error', () => {
+      const expected = 'There are no entities to show.'
+      expect(wrappedEntitySearch.find('p').text()).toEqual(expected)
     })
   })
 
@@ -344,8 +364,17 @@ describe('EntitySearch', () => {
       wrappedEntitySearch.update()
     })
 
-    test('should render the component with the error and without results', () => {
-      expect(wrappedEntitySearch).toMatchSnapshot()
+    test('should not show the entities', () => {
+      expect(wrappedEntitySearch.find('ol').exists()).toBeFalsy()
+    })
+
+    test('should not show the cannot find details', () => {
+      expect(wrappedEntitySearch.find('ul').exists()).toBeFalsy()
+    })
+
+    test('should show an error', () => {
+      const expected = 'Error occurred while searching entities.'
+      expect(wrappedEntitySearch.find('p').text()).toEqual(expected)
     })
   })
 
@@ -376,8 +405,20 @@ describe('EntitySearch', () => {
       wrappedEntitySearch.update()
     })
 
-    test('should render the component with the results and without the error', () => {
-      expect(wrappedEntitySearch).toMatchSnapshot()
+    test('should show the entities', () => {
+      const entityList = wrappedEntitySearch.find('ol')
+      expect(entityList.find('li').length).toEqual(2)
+    })
+
+    test('should show the cannot find details', () => {
+      const actionList = wrappedEntitySearch.find('ul')
+      expect(actionList.find('li').length).toEqual(2)
+    })
+
+    test('should not show an error', () => {
+      const actual = wrappedEntitySearch.find('p').text()
+      expect(actual).not.toEqual('Error occurred while searching entities.')
+      expect(actual).not.toEqual('There are no entities to show.')
     })
   })
 })
