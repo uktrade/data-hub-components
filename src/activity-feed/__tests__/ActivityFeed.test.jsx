@@ -4,6 +4,7 @@ import { uniqueId } from 'lodash'
 import { mount } from 'enzyme'
 import { Details } from 'govuk-react'
 
+import Checkbox from '@govuk-react/checkbox'
 import ActivityFeed from '../ActivityFeed'
 import interactionActivityFixture from '../__fixtures__/interactions/interaction'
 
@@ -77,27 +78,57 @@ describe('ActivityFeed', () => {
     })
   })
 
-  describe('when the "Show details for all activities" link is clicked', () => {
+  describe('when the "Show details for all activities" checkbox is mounted', () => {
     let wrapper
 
-    beforeEach(() => {
+    beforeAll(() => {
       wrapper = mount((<ActivityFeed
         totalActivities={1}
         activities={[interactionActivityFixture]}
       />))
-
-      wrapper.find('ShowDetails').at(0).simulate('click')
     })
 
-    test('should change the link text', () => {
-      expect(wrapper.find('ShowDetails').at(0).prop('children')).toEqual([
-        'Hide',
-        ' details for all activities',
-      ])
+    test('should display the checkbox in "unchecked" state', () => {
+      expect(wrapper.find(Checkbox).prop('checked')).toBeFalsy()
     })
 
-    test('should open all cards', () => {
-      expect(wrapper.find(Details).at(0).prop('open')).toEqual(true)
+    test('should display all cards in closed state', () => {
+      expect(wrapper.find(Details).first().prop('open')).toBeFalsy()
+      expect(wrapper.find(Details).last().prop('open')).toBeFalsy()
+    })
+
+    describe('when the checkbox is clicked', () => {
+      beforeAll(() => {
+        wrapper.find('input').simulate('change', {
+          target: { checked: true },
+        })
+      })
+
+      test('should display the checkbox in "checked" state', () => {
+        expect(wrapper.find(Checkbox).prop('checked')).toBeTruthy()
+      })
+
+      test('should open all cards', () => {
+        expect(wrapper.find(Details).first().prop('open')).toBeTruthy()
+        expect(wrapper.find(Details).last().prop('open')).toBeTruthy()
+      })
+    })
+
+    describe('when the checkbox is unchecked', () => {
+      beforeAll(() => {
+        wrapper.find('input').simulate('change', {
+          target: { checked: false },
+        })
+      })
+
+      test('should display the checkbox in "unchecked" state', () => {
+        expect(wrapper.find(Checkbox).prop('checked')).toBeFalsy()
+      })
+
+      test('should close all cards', () => {
+        expect(wrapper.find(Details).first().prop('open')).toBeFalsy()
+        expect(wrapper.find(Details).last().prop('open')).toBeFalsy()
+      })
     })
   })
 })
