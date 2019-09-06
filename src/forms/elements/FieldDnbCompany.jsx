@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import FormGroup from '@govuk-react/form-group'
 import useFormContext from '../hooks/useFormContext'
 import EntitySearchWithDataProvider from '../../entity-search/EntitySearchWithDataProvider'
 import dnbCompanySearchDataProvider from '../../entity-search/data-providers/DnbCompanySearch'
@@ -14,7 +15,7 @@ const FieldDnbCompany = ({
   const { goBack, goForward, setFieldValue } = useFormContext()
 
   return (
-    <div>
+    <FormGroup>
       <label htmlFor={name}>{label}</label>
 
       <EntitySearchWithDataProvider
@@ -58,7 +59,7 @@ const FieldDnbCompany = ({
           }
         }}
       />
-    </div>
+    </FormGroup>
   )
 }
 

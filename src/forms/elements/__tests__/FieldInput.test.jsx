@@ -3,7 +3,6 @@ import { mount } from 'enzyme'
 
 import Form from '../Form'
 import FieldInput from '../FieldInput'
-import FieldError from '../FieldError'
 
 describe('FieldInput', () => {
   let wrapper
@@ -36,7 +35,8 @@ describe('FieldInput', () => {
     })
 
     test('should render the field without a label', () => {
-      expect(wrapper.find('label').exists()).toBeFalsy()
+      const label = wrapper.find('span')
+      expect(label.text()).toEqual('')
     })
   })
 
@@ -47,13 +47,37 @@ describe('FieldInput', () => {
           <FieldInput type="text" name="testField" validate={() => 'testError'} />
         </Form>,
       )
-      const testField1 = wrapper.find('#testField')
-      testField1.simulate('change', { target: { value: 'testValue' } })
       wrapper.simulate('submit')
     })
 
     test('should render with an error', () => {
-      expect(wrapper.find(FieldError).text()).toEqual('testError')
+      const errorContainer = wrapper.find('span').at(1)
+      expect(errorContainer.text()).toEqual('testError')
+    })
+  })
+
+  describe('when the text is typed to the field', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          {form => (
+            <>
+              <FieldInput type="text" name="testField" />
+              <div id="values">{form.values.testField}</div>
+            </>
+          )}
+        </Form>,
+      )
+      const testField1 = wrapper.find('input')
+      testField1.simulate('change', { target: { value: 'testValue' } })
+    })
+
+    test('should update field value', () => {
+      expect(wrapper.find('input').prop('value')).toEqual('testValue')
+    })
+
+    test('should update value in form state', () => {
+      expect(wrapper.find('#values').text()).toEqual('testValue')
     })
   })
 })

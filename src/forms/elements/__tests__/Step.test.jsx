@@ -3,7 +3,16 @@ import { mount } from 'enzyme'
 
 import Form from '../Form'
 import Step from '../Step'
-import FieldInput from '../FieldInput'
+import useField from '../../hooks/useField'
+
+const TestField = (props) => {
+  const field = useField(props)
+  return (
+    <input
+      {...field}
+    />
+  )
+}
 
 describe('Step', () => {
   let formState
@@ -19,7 +28,7 @@ describe('Step', () => {
             <>
               <div className="form-state">{JSON.stringify(form)}</div>
               <Step name="testStep1">
-                <FieldInput type="text" name="testField1" />
+                <TestField type="text" name="testField1" id="testField1" />
               </Step>
             </>
           )}
@@ -73,11 +82,11 @@ describe('Step', () => {
             <>
               <div className="form-state">{JSON.stringify(form)}</div>
               <Step name="testStepMounted">
-                <FieldInput type="text" name="testField1" />
+                <TestField type="text" name="testField1" id="testField1" />
               </Step>
               {form.values.testField1 === 'mount' && (
                 <Step name="testStepWillMount">
-                  <FieldInput type="text" name="testField2" />
+                  <TestField type="text" name="testField2" id="testField2" />
                 </Step>
               )}
             </>
@@ -95,11 +104,11 @@ describe('Step', () => {
               <>
                 <div className="form-state">{JSON.stringify(form)}</div>
                 <Step name="testStepMounted">
-                  <FieldInput type="text" name="testField1" />
+                  <TestField type="text" name="testField1" id="testField1" />
                 </Step>
                 {form.values.testField1 === 'mount' && (
                   <Step name="testStepWillMount">
-                    <FieldInput type="text" name="testField2" />
+                    <TestField type="text" name="testField2" id="testField2" />
                   </Step>
                 )}
               </>
@@ -153,20 +162,21 @@ describe('Step', () => {
             <>
               <div className="form-state">{JSON.stringify(form)}</div>
               <Step name="testStep1">
-                <FieldInput
+                <TestField
                   type="text"
                   name="testField1"
+                  id="testField1"
                   validate={value => (!value ? 'testField1 is required' : null)}
                 />
               </Step>
               <Step name="testStep2">
-                <FieldInput type="text" name="testField2" />
+                <TestField type="text" name="testField2" id="testField2" />
               </Step>
               <Step name="testStep3">
-                <FieldInput type="text" name="testField3" />
+                <TestField type="text" name="testField3" id="testField3" />
               </Step>
               <Step name="testStep4">
-                <FieldInput type="text" name="testField4" />
+                <TestField type="text" name="testField4" id="testField4" />
               </Step>
             </>
           )}
