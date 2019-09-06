@@ -4,15 +4,17 @@ import { action } from '@storybook/addon-actions'
 import { GridCol, GridRow, Main, H2 } from 'govuk-react'
 import { SPACING } from '@govuk-react/constants'
 import PropTypes from 'prop-types'
+import { BLUE } from 'govuk-colours'
 
 import { setupSuccessMocks, setupErrorMocks, setupNoResultsMocks } from '../__mocks__/company-search'
 import dataHubAddCompanyBackground from './images/data-hub-add-company.png'
 import dnbCompanySearchDataProvider from '../data-providers/DnbCompanySearch'
 import EntitySearchWithDataProvider from '../EntitySearchWithDataProvider'
+import EntityListHeader from '../EntityListHeader'
 
 const apiEndpoint = 'http://localhost:3010/v4/dnb/company-search'
 
-const EntitySearchForStorybook = ({ previouslySelected, cannotFindLink }) => {
+const EntitySearchForStorybook = ({ previouslySelected, entityListHeader, cannotFindLink }) => {
   return (
     <Main>
       <GridRow>
@@ -42,6 +44,7 @@ const EntitySearchForStorybook = ({ previouslySelected, cannotFindLink }) => {
                 },
               ],
             ]}
+            entityListHeader={entityListHeader}
             cannotFind={{
               summary: 'I cannot find the company I am looking for',
               actions: [
@@ -68,6 +71,7 @@ EntitySearchForStorybook.propTypes = {
     text: PropTypes.string.isRequired,
     onChangeClick: PropTypes.func.isRequired,
   },
+  entityListHeader: PropTypes.node,
   cannotFindLink: {
     text: PropTypes.string.isRequired,
     url: PropTypes.string,
@@ -77,6 +81,7 @@ EntitySearchForStorybook.propTypes = {
 
 EntitySearchForStorybook.defaultProps = {
   previouslySelected: null,
+  entityListHeader: null,
   cannotFindLink: {
     text: 'I still cannot find the company',
     url: 'http://stillcannotfind.com',
@@ -89,6 +94,20 @@ storiesOf('EntitySearch', module)
 
     return (
       <EntitySearchForStorybook />
+    )
+  })
+  .add('Data Hub company search with entity list header', () => {
+    setupSuccessMocks()
+
+    return (
+      <EntitySearchForStorybook
+        entityListHeader={(
+          <EntityListHeader colour={BLUE}>
+            The search results below are verified company records from Dun & Bradstreet,
+            an external and up to date source of company information.
+          </EntityListHeader>
+        )}
+      />
     )
   })
   .add('Data Hub company search with cannot find link callback', () => {
