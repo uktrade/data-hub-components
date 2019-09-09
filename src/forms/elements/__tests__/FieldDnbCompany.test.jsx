@@ -7,6 +7,7 @@ import EntityList from '../../../entity-search/EntityList'
 import EntityListItem from '../../../entity-search/EntityListItem'
 import FieldDnbCompany from '../FieldDnbCompany'
 import Form from '../Form'
+import StatusMessage from '../../../status-message/StatusMessage'
 import Step from '../Step'
 import { setupSuccessMocks } from '../../../entity-search/__mocks__/company-search'
 import entitySearchFixtures from '../../../entity-search/__fixtures__'
@@ -49,6 +50,10 @@ describe('FieldDnbCompany', () => {
       expect(wrapper.find('[name="search_term"]').exists()).toBeTruthy()
       expect(wrapper.find('label').at(2).text()).toEqual('Company postcode (optional)')
       expect(wrapper.find('[name="postal_code"]').exists()).toBeTruthy()
+    })
+
+    test('should not initially render the field with an entity list header', () => {
+      expect(wrapper.find(StatusMessage).exists()).toBeFalsy()
     })
   })
 
@@ -110,6 +115,10 @@ describe('FieldDnbCompany', () => {
       await act(flushPromises)
 
       wrapper.update()
+    })
+
+    test('should render the field with an entity list header', () => {
+      expect(wrapper.find(StatusMessage).exists()).toBeTruthy()
     })
 
     test('should render entities', () => {

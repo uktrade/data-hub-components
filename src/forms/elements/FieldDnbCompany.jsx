@@ -5,6 +5,8 @@ import FormGroup from '@govuk-react/form-group'
 import useFormContext from '../hooks/useFormContext'
 import EntitySearchWithDataProvider from '../../entity-search/EntitySearchWithDataProvider'
 import dnbCompanySearchDataProvider from '../../entity-search/data-providers/DnbCompanySearch'
+import StatusMessage from '../../status-message/StatusMessage'
+import { Info } from '../../status-message/StatusMessageVariant'
 
 const FieldDnbCompany = ({
   name,
@@ -58,6 +60,12 @@ const FieldDnbCompany = ({
             goForward()
           }
         }}
+        entityListHeader={(
+          <StatusMessage variant={Info}>
+            The search results below are verified company records from Dun & Bradstreet,
+            an external and up to date source of company information.
+          </StatusMessage>
+        )}
       />
     </FormGroup>
   )
