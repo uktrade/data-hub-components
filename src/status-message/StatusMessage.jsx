@@ -2,42 +2,32 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
-import { ERROR_COLOUR, BLUE, GREEN, ORANGE } from 'govuk-colours'
-
-import { Error, Info, Success, Warning } from './StatusMessageVariant'
-
-const Colours = {
-  [Error]: ERROR_COLOUR,
-  [Info]: BLUE,
-  [Success]: GREEN,
-  [Warning]: ORANGE,
-}
+import { BLUE } from 'govuk-colours'
 
 const StyledStatusMessage = styled('div')`
-  border: ${({ variant }) => `${SPACING.SCALE_1} solid ${Colours[variant]}`};
-  color: ${({ variant }) => Colours[variant]};
+  border: ${({ colour }) => `${SPACING.SCALE_1} solid ${colour}`};
+  color: ${({ colour }) => colour};
   padding: ${SPACING.SCALE_3};
   margin-top: ${SPACING.SCALE_2};
   font-weight: bold;
   line-height: 1.5;
 `
 
-const StatusMessage = ({ variant, children }) => {
+const StatusMessage = ({ colour, children }) => {
   return (
-    <StyledStatusMessage variant={variant}>
+    <StyledStatusMessage colour={colour}>
       {children}
     </StyledStatusMessage>
   )
 }
 
 StatusMessage.propTypes = {
-  variant: PropTypes.oneOf([
-    Error,
-    Info,
-    Success,
-    Warning,
-  ]).isRequired,
+  colour: PropTypes.string,
   children: PropTypes.node.isRequired,
+}
+
+StatusMessage.defaultProps = {
+  colour: BLUE,
 }
 
 export default StatusMessage

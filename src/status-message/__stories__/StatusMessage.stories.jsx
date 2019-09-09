@@ -1,27 +1,17 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { ERROR_COLOUR } from 'govuk-colours'
 
 import StatusMessage from '../StatusMessage'
-import { Error, Info, Success, Warning } from '../StatusMessageVariant'
 
 storiesOf('StatusMessage', module)
-  .add('Error', () => {
+  .add('Default', () => {
     return (
-      <StatusMessage variant={Error}>An error message</StatusMessage>
+      <StatusMessage>An info message</StatusMessage>
     )
   })
-  .add('Info', () => {
+  .add('Custom colour', () => {
     return (
-      <StatusMessage variant={Info}>An error message</StatusMessage>
-    )
-  })
-  .add('Success', () => {
-    return (
-      <StatusMessage variant={Success}>A success message</StatusMessage>
-    )
-  })
-  .add('Warning', () => {
-    return (
-      <StatusMessage variant={Warning}>A warning message</StatusMessage>
+      <StatusMessage colour={ERROR_COLOUR}>An error message</StatusMessage>
     )
   })
