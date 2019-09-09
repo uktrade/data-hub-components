@@ -1577,6 +1577,15 @@
     "@govuk-react/lib" "^0.7.0"
     govuk-colours "^1.0.3"
 
+"@govuk-react/inset-text@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/inset-text/-/inset-text-0.7.1.tgz#d21e09956cffab5f77356627127614af22135604"
+  integrity sha512-SDFZYjdRStg3ZkZg8GWNIF13vWO7739YcoIYNblmZNNxEZCQbVNGj3B5TonM+5aB4CgaBTK4joufyq5cH+Lpyg==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
+    govuk-colours "^1.0.3"
+
 "@govuk-react/label-text@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@govuk-react/label-text/-/label-text-0.7.0.tgz#2d985e3cbf91dcc371d4ea79b109457cf5eb8fdd"
@@ -1741,6 +1750,14 @@
   dependencies:
     "@govuk-react/lib" "^0.7.0"
     "@govuk-react/link" "^0.7.0"
+
+"@govuk-react/paragraph@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/paragraph/-/paragraph-0.7.1.tgz#b05ff7a2ec2a52c7b9500585aa8b7582be21ab93"
+  integrity sha512-vHCOKJ6J56ut7f+6vr0sHJVjWk2TMFhF4zF6DByDW/S8td5Wi//+Oolke4p+JrspPV3AV2rsnTSo/9x7Rl+5gw==
+  dependencies:
+    "@govuk-react/lib" "^0.7.1"
+    "@govuk-react/link" "^0.7.1"
 
 "@govuk-react/phase-banner@^0.7.0":
   version "0.7.0"
