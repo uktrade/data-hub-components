@@ -13,14 +13,14 @@ export function setupSuccessMocks(apiEndpoint) {
     .onPost(apiEndpoint, { search_term: 'some other company' })
     .reply(200, fixtures.companySearchFilteredByCompanyName)
   mock
-    .onPost(apiEndpoint, { address_postcode: 'BN1 4SE' })
+    .onPost(apiEndpoint, { postal_code: 'BN1 4SE' })
     .reply(200, fixtures.companySearchFilteredByPostcode)
 }
 
 export function setupErrorMocks(apiEndpoint) {
   mock.onPost(apiEndpoint, {}).reply(500)
   mock.onPost(apiEndpoint, { search_term: 'some other company' }).reply(500)
-  mock.onPost(apiEndpoint, { address_postcode: 'BN1 4SE' }).reply(500)
+  mock.onPost(apiEndpoint, { postal_code: 'BN1 4SE' }).reply(500)
 }
 
 export function setupNoResultsMocks(apiEndpoint) {
@@ -31,6 +31,6 @@ export function setupNoResultsMocks(apiEndpoint) {
     .onPost(apiEndpoint, { search_term: 'some other company' })
     .reply(200, fixtures.companySearchNoResults)
   mock
-    .onPost(apiEndpoint, { address_postcode: 'BN1 4SE' })
+    .onPost(apiEndpoint, { postal_code: 'BN1 4SE' })
     .reply(200, fixtures.companySearchNoResults)
 }

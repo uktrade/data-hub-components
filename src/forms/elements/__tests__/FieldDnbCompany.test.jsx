@@ -2,9 +2,12 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { act } from 'react-dom/test-utils'
 
+import CannotFindDetails from '../../../entity-search/CannotFindDetails'
+import EntityList from '../../../entity-search/EntityList'
+import EntityListItem from '../../../entity-search/EntityListItem'
+import FieldDnbCompany from '../FieldDnbCompany'
 import Form from '../Form'
 import Step from '../Step'
-import FieldDnbCompany from '../FieldDnbCompany'
 import { setupSuccessMocks } from '../../../entity-search/__mocks__/company-search'
 import entitySearchFixtures from '../../../entity-search/__fixtures__'
 
@@ -110,18 +113,18 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should render entities', () => {
-      const entityList = wrapper.find('ol')
+      const entityList = wrapper.find(EntityList)
       expect(entityList.find('li').length).toEqual(2)
     })
 
     test('should render cannot find actions', () => {
-      const actionList = wrapper.find('ul')
+      const actionList = wrapper.find(CannotFindDetails)
       expect(actionList.find('li').length).toEqual(3)
     })
 
     describe('when an entity is clicked', () => {
       beforeAll(() => {
-        wrapper.find('StyledEntity').at(1).simulate('click')
+        wrapper.find(EntityListItem).at(1).simulate('click')
       })
 
       test('should set the field value', () => {

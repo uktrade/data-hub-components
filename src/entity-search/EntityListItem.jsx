@@ -26,7 +26,6 @@ const StyledEntity = styled('div')`
     }
   `}
 `
-StyledEntity.displayName = 'StyledEntity'
 
 const StyledHeading = styled(H3)`
   margin: 0;
