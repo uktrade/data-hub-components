@@ -18,6 +18,7 @@ StyledButton.displayName = 'Search'
 const EntitySearch = ({
   previouslySelected,
   entityFilters,
+  entityListHeader,
   onEntitySearch,
   entities,
   cannotFind,
@@ -40,6 +41,8 @@ const EntitySearch = ({
 
       {entities && entities.length ? (
         <>
+          {entityListHeader}
+
           <EntityList entities={entities} onEntityClick={onEntityClick} />
           <CannotFindDetails {...cannotFind} />
         </>
@@ -70,6 +73,7 @@ EntitySearch.propTypes = {
       }),
     ),
   ).isRequired,
+  entityListHeader: PropTypes.node,
   cannotFind: PropTypes.shape({
     summary: PropTypes.string.isRequired,
     actions: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -89,6 +93,7 @@ EntitySearch.propTypes = {
 
 EntitySearch.defaultProps = {
   entities: null,
+  entityListHeader: null,
   previouslySelected: null,
   error: null,
 }

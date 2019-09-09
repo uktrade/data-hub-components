@@ -9,6 +9,8 @@ import CannotFindDetails from '../CannotFindDetails'
 import EntityList from '../EntityList'
 import EntityListItem from '../EntityListItem'
 import EntitySearchWithDataProvider from '../EntitySearchWithDataProvider'
+import StatusMessage from '../../status-message/StatusMessage'
+import { Info } from '../../status-message/StatusMessageVariant'
 
 const API_ENDPOINT = 'http://localhost:8000/v4/dnb/company-search'
 
@@ -25,6 +27,7 @@ const wrapEntitySearch = ({
     text: 'still cannot find',
   },
   onEntityClick = () => {},
+  entityListHeader,
 } = {}) => {
   return mount(<EntitySearchWithDataProvider
     previouslySelected={previouslySelected}
@@ -46,6 +49,7 @@ const wrapEntitySearch = ({
       link: cannotFindLink,
     }}
     onEntityClick={onEntityClick}
+    entityListHeader={entityListHeader}
   />)
 }
 
@@ -70,6 +74,14 @@ describe('EntitySearch', () => {
       expect(wrappedEntitySearch.find('Search').exists()).toBeTruthy()
     })
 
+    test('should not show the entity list header', () => {
+      expect(wrappedEntitySearch.find(StatusMessage).exists()).toBeFalsy()
+    })
+
+    test('should not show the entities', () => {
+      expect(wrappedEntitySearch.find(EntityList).exists()).toBeFalsy()
+    })
+
     test('should not show the entities', () => {
       expect(wrappedEntitySearch.find(EntityList).exists()).toBeFalsy()
     })
@@ -78,7 +90,7 @@ describe('EntitySearch', () => {
       expect(wrappedEntitySearch.find(CannotFindDetails).exists()).toBeFalsy()
     })
 
-    describe('when the "Search" button is click', () => {
+    describe('when the "Search" button is clicked', () => {
       const preventDefaultSpy = jest.fn()
 
       beforeAll(async () => {
@@ -93,6 +105,10 @@ describe('EntitySearch', () => {
 
       test('should prevent the default button action', () => {
         expect(preventDefaultSpy.mock.calls.length).toEqual(1)
+      })
+
+      test('should not show the entity list header', () => {
+        expect(wrappedEntitySearch.find(StatusMessage).exists()).toBeFalsy()
       })
 
       test('should show the entities', () => {
@@ -203,7 +219,6 @@ describe('EntitySearch', () => {
     })
   })
 
-
   describe('when there is a previously selected "Change" link which is clicked', () => {
     let wrappedEntitySearch
     const onChangeClickSpy = jest.fn()
@@ -237,6 +252,40 @@ describe('EntitySearch', () => {
 
     test('should call the onChangeClick event', () => {
       expect(onChangeClickSpy.mock.calls.length).toEqual(1)
+    })
+  })
+
+  describe('when the entity list header is a status message', () => {
+    describe('when loading the entity search component', () => {
+      let wrappedEntitySearch
+
+      beforeAll(() => {
+        setupSuccessMocks(API_ENDPOINT)
+
+        wrappedEntitySearch = wrapEntitySearch({
+          entityListHeader: <StatusMessage variant={Info}>Some info</StatusMessage>,
+        })
+      })
+
+      test('should not show the entity list header', () => {
+        expect(wrappedEntitySearch.find(StatusMessage).exists()).toBeFalsy()
+      })
+
+      describe('when the "Search" button is clicked', () => {
+        beforeAll(async () => {
+          wrappedEntitySearch
+            .find('Search')
+            .simulate('click')
+
+          await act(flushPromises)
+
+          wrappedEntitySearch.update()
+        })
+
+        test('should show the entity list header', () => {
+          expect(wrappedEntitySearch.find(StatusMessage).exists()).toBeTruthy()
+        })
+      })
     })
   })
 
