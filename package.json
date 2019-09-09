@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "yarn storybook",
-    "build": "rimraf dist && NODE_ENV=production babel src --out-dir dist --ignore **/*.stories.jsx,**/*.test.jsx,**/*.test.js,**/__snapshots__,**/__tests__",
+    "build": "rimraf dist && NODE_ENV=production babel src --out-dir dist --ignore **/*.stories.jsx,**/*.test.jsx,**/*.test.js,**/__snapshots__,**/__tests__,**/__mocks__,**/__fixtures__",
     "test": "jest",
     "test:update": "jest --updateSnapshot",
     "lint": "eslint './src/**/*.{js,jsx}'",
