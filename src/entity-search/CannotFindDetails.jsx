@@ -25,7 +25,7 @@ const CannotFindDetails = ({ summary, actions, link }) => {
   return (
     <StyledDetails summary={summary}>
       <div>
-        <Paragraph>Try refining your search by taking the following actions:</Paragraph>
+        <Paragraph>Try improving your search by:</Paragraph>
         <StyledList>
           {actions.map(text => <li key={uniqueId()}>{text}</li>)}
         </StyledList>

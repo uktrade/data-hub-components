@@ -47,9 +47,9 @@ const EntitySearchForStorybook = ({ previouslySelected, entityListHeader, cannot
             cannotFind={{
               summary: 'I cannot find the company I am looking for',
               actions: [
-                'Check the country selected is correct',
-                'Check for spelling errors in the company name',
-                'Remove or add Ltd or Limited to your search',
+                'checking the company name for spelling errors',
+                'making sure you selected the correct country',
+                'adding a postcode to your search to narrow down the results',
               ],
               link: cannotFindLink,
             }}
