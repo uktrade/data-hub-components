@@ -1,0 +1,47 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import { RED } from 'govuk-colours'
+import Button from '@govuk-react/button'
+import InsetText from '@govuk-react/inset-text'
+import Link from '@govuk-react/link'
+import ListItem from '@govuk-react/list-item'
+import Paragraph from '@govuk-react/paragraph'
+import UnorderedList from '@govuk-react/unordered-list'
+import pluralise from 'pluralise'
+
+import FormActions from '../forms/elements/FormActions'
+
+const DeleteCompanyListSection = ({
+  companyList,
+  onDelete,
+  returnUrl,
+}) => {
+  const companyCountText = pluralise.withCount(companyList.item_count, '% company', '% companies')
+
+  return (
+    <div>
+      <Paragraph>
+        Deleting this list will remove all companies from this list. These companies will remain on
+        any other lists.
+      </Paragraph>
+      <InsetText>
+        <UnorderedList listStyleType="none" mb={0}>
+          <ListItem><strong>{ companyList.name }</strong></ListItem>
+          <ListItem>{ companyCountText }</ListItem>
+        </UnorderedList>
+      </InsetText>
+      <FormActions>
+        <Button buttonColour={RED} onClick={onDelete}>Delete list</Button>
+        <Link href={returnUrl}>Return without deleting</Link>
+      </FormActions>
+    </div>
+  )
+}
+
+DeleteCompanyListSection.propTypes = {
+  companyList: PropTypes.object.isRequired,
+  onDelete: PropTypes.func.isRequired,
+  returnUrl: PropTypes.string.isRequired,
+}
+
+export default DeleteCompanyListSection

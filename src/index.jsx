@@ -9,6 +9,9 @@ export { default as ActivityFeedPagination } from './activity-feed/ActivityFeedP
 // Button Link
 export { default as ButtonLink } from './button-link/ButtonLink'
 
+// Company lists
+export { default as DeleteCompanyListSection } from './company-list/DeleteCompanyListSection'
+
 // Dashboard
 export { default as MyCompaniesTile } from './dashboard/my-companies/MyCompaniesTile'
 export { default as useMyCompaniesContext } from './dashboard/my-companies/useMyCompaniesContext'
