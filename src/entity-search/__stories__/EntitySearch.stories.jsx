@@ -10,7 +10,6 @@ import dataHubAddCompanyBackground from './images/data-hub-add-company.png'
 import dnbCompanySearchDataProvider from '../data-providers/DnbCompanySearch'
 import EntitySearchWithDataProvider from '../EntitySearchWithDataProvider'
 import StatusMessage from '../../status-message/StatusMessage'
-import { Info } from '../../status-message/StatusMessageVariant'
 
 const apiEndpoint = 'http://localhost:3010/v4/dnb/company-search'
 
@@ -102,7 +101,7 @@ storiesOf('EntitySearch', module)
     return (
       <EntitySearchForStorybook
         entityListHeader={(
-          <StatusMessage variant={Info}>
+          <StatusMessage>
             The search results below are verified company records from Dun & Bradstreet,
             an external and up to date source of company information.
           </StatusMessage>

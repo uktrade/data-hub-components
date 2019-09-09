@@ -10,7 +10,6 @@ import EntityList from '../EntityList'
 import EntityListItem from '../EntityListItem'
 import EntitySearchWithDataProvider from '../EntitySearchWithDataProvider'
 import StatusMessage from '../../status-message/StatusMessage'
-import { Info } from '../../status-message/StatusMessageVariant'
 
 const API_ENDPOINT = 'http://localhost:8000/v4/dnb/company-search'
 
@@ -263,7 +262,7 @@ describe('EntitySearch', () => {
         setupSuccessMocks(API_ENDPOINT)
 
         wrappedEntitySearch = wrapEntitySearch({
-          entityListHeader: <StatusMessage variant={Info}>Some info</StatusMessage>,
+          entityListHeader: <StatusMessage>Some info</StatusMessage>,
         })
       })
 
