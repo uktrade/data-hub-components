@@ -10,7 +10,7 @@ import Form from '../Form'
 addDecorator(withKnobs)
 
 storiesOf('Forms', module)
-  .add('FieldSelect - Default', () => (
+  .add('FieldSelect', () => (
     <Form onSubmit={action('onSubmit')}>
       {form => (
         <>

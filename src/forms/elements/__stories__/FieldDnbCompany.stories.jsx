@@ -20,7 +20,7 @@ function Values() {
 }
 
 storiesOf('Forms', module)
-  .add('FieldDnbCompany - Default', () => {
+  .add('FieldDnbCompany', () => {
     setupSuccessMocks(API_ENDPOINT)
 
     return (
