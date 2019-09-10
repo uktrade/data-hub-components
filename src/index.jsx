@@ -24,3 +24,6 @@ export { default as FieldDnbCompany } from './forms/elements/FieldDnbCompany'
 export { default as FieldInput } from './forms/elements/FieldInput'
 export { default as FieldRadios } from './forms/elements/FieldRadios'
 export { default as FieldSelect } from './forms/elements/FieldSelect'
+
+// Status message
+export { default as StatusMessage } from './status-message/StatusMessage'
