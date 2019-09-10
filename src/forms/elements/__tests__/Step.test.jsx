@@ -256,7 +256,7 @@ describe('Step', () => {
 
         describe('when the "Back" button is clicked', () => {
           beforeAll(() => {
-            const prevButton = wrapper.find('button').at(0)
+            const prevButton = wrapper.find('button').at(1)
             prevButton.simulate('click')
             formState = JSON.parse(wrapper.find('.form-state').text())
           })
@@ -289,7 +289,7 @@ describe('Step', () => {
     })
 
     test('should render a back button with modified step', () => {
-      expect(wrapper.find('button').at(0).text()).toEqual('testForwardButtonText')
+      expect(wrapper.find('button').text()).toEqual('testForwardButtonText')
     })
   })
 
@@ -304,7 +304,7 @@ describe('Step', () => {
     })
 
     test('should render a back button with modified step', () => {
-      expect(wrapper.find('button').at(0).text()).toEqual('testBackButtonText')
+      expect(wrapper.find('button').at(1).text()).toEqual('testBackButtonText')
     })
   })
 

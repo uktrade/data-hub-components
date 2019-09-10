@@ -23,7 +23,7 @@ function StepHeader() {
 }
 
 storiesOf('Forms', module)
-  .add('Multistep Example Form', () => {
+  .add('Form - Full example', () => {
     return (
       <Form onSubmit={action('onSubmit')}>
         {({ values }) => (
