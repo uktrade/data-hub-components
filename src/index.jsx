@@ -10,6 +10,9 @@ export { default as ActivityFeedPagination } from './activity-feed/ActivityFeedP
 export { default as MyCompaniesTile } from './dashboard/my-companies/MyCompaniesTile'
 export { default as useMyCompaniesContext } from './dashboard/my-companies/useMyCompaniesContext'
 
+// DetailsText
+export { default as DetailsText } from './details-text/DetailsText'
+
 // Entity search
 export { default as EntitySearch } from './entity-search/EntitySearch'
 export { default as EntitySearchWithDataProvider } from './entity-search/EntitySearchWithDataProvider'
