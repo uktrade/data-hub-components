@@ -1,5 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import HintText from '@govuk-react/hint-text'
 
 import Form from '../Form'
 import FieldInput from '../FieldInput'
@@ -7,11 +8,11 @@ import FieldInput from '../FieldInput'
 describe('FieldInput', () => {
   let wrapper
 
-  describe('when the field does specify label', () => {
+  describe('when the field does specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldInput type="text" label="testLabel" name="testField" />
+          <FieldInput type="text" name="testField" label="testLabel" />
         </Form>,
       )
     })
@@ -25,7 +26,7 @@ describe('FieldInput', () => {
     })
   })
 
-  describe('when the field does not specify label', () => {
+  describe('when the field does not specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
@@ -37,6 +38,34 @@ describe('FieldInput', () => {
     test('should render the field without a label', () => {
       const label = wrapper.find('span')
       expect(label.text()).toEqual('')
+    })
+  })
+
+  describe('when the field does specify a legend', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          <FieldInput type="text" name="testField" legend="testLegend" />
+        </Form>,
+      )
+    })
+
+    test('should render the field with a legend', () => {
+      expect(wrapper.find('legend').text()).toEqual('testLegend')
+    })
+  })
+
+  describe('when the field does specify a hint', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          <FieldInput type="text" name="testField" hint="testHint" />
+        </Form>,
+      )
+    })
+
+    test('should render the field with a legend', () => {
+      expect(wrapper.find(HintText).text()).toEqual('testHint')
     })
   })
 

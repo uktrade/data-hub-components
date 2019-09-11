@@ -47,6 +47,7 @@ function FormWrapper(props) {
 
   return (
     <form
+      noValidate={true}
       onSubmit={(e) => {
         e.preventDefault()
         formContextProps.goForward()

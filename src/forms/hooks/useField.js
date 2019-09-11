@@ -3,7 +3,7 @@ import { isEmpty } from 'lodash'
 
 import useFormContext from './useFormContext'
 
-function useField({ name, label, initialValue = '', validate = null, required = null }) {
+function useField({ name, initialValue = '', validate = null, required = null }) {
   const {
     registerField,
     deregisterField,
@@ -24,7 +24,7 @@ function useField({ name, label, initialValue = '', validate = null, required = 
 
   useEffect(
     () => {
-      registerField({ name, label, initialValue, validate: prepareValidators() })
+      registerField({ name, initialValue, validate: prepareValidators() })
 
       return () => {
         deregisterField(name)

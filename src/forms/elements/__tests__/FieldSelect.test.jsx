@@ -1,5 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import Label from '@govuk-react/label'
+import HintText from '@govuk-react/hint-text'
 
 import Form from '../Form'
 import FieldSelect from '../FieldSelect'
@@ -7,39 +9,59 @@ import FieldSelect from '../FieldSelect'
 describe('FieldSelect', () => {
   let wrapper
 
-  describe('when the field does specify label', () => {
+  describe('when the field does specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldSelect
-            name="testField"
-            label="testLabel"
-          />
+          <FieldSelect name="testField" label="testLabel" />
         </Form>,
       )
     })
 
     test('should render the field with a label', () => {
-      const label = wrapper.find('span')
-      expect(label.exists()).toBeTruthy()
-      expect(label.text()).toEqual('testLabel')
+      expect(wrapper.find(Label).at(0).text()).toEqual('testLabel')
     })
   })
 
-  describe('when the field does not specify label', () => {
+  describe('when the field does not specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldSelect
-            name="testField"
-          />
+          <FieldSelect name="testField" emptyOption="" />
         </Form>,
       )
     })
 
     test('should render the field without a label', () => {
-      const label = wrapper.find('span')
-      expect(label.text()).toEqual('')
+      expect(wrapper.find(Label).at(0).text()).toEqual('')
+    })
+  })
+
+  describe('when the field does specify a legend', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          <FieldSelect name="testField" legend="testLegend" />
+        </Form>,
+      )
+    })
+
+    test('should render the field with a legend', () => {
+      expect(wrapper.find('legend').text()).toEqual('testLegend')
+    })
+  })
+
+  describe('when the field does specify a hint', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          <FieldSelect name="testField" hint="testHint" />
+        </Form>,
+      )
+    })
+
+    test('should render the field with a legend', () => {
+      expect(wrapper.find(HintText).text()).toEqual('testHint')
     })
   })
 
