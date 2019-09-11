@@ -40,8 +40,13 @@ const wrapFieldDnbCompanyForm = () => {
             />
           </Step>
 
-          <Step name="third">third</Step>
+          {!values.cannotFind && (
+            <Step name="third">third</Step>
+          )}
 
+          {values.cannotFind && (
+            <Step name="fourth">fourth</Step>
+          )}
         </>
       )}
     </Form>,
@@ -138,6 +143,30 @@ describe('FieldDnbCompany', () => {
 
     test('should go to the third step', () => {
       expect(wrapper.find(Step).at(2).text()).toContain('third')
+    })
+  })
+
+  describe('when the "I still cannot find the company" link is clicked', () => {
+    beforeAll(async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
+      wrapper = wrapFieldDnbCompanyForm()
+
+      wrapper.find('Search').simulate('click')
+
+      await act(flushPromises)
+
+      wrapper.update()
+
+      wrapper.find('[href="#cannot-find"]').at(1).simulate('click')
+    })
+
+    test('should set the field cannot find', () => {
+      expect(wrapper.find('.field-cannot-find').text()).toEqual('true')
+    })
+
+    test('should go to the fourth step', () => {
+      expect(wrapper.find(Step).at(2).text()).toContain('fourth')
     })
   })
 })

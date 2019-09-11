@@ -50,7 +50,10 @@ const FieldDnbCompany = ({
           ],
           link: {
             text: 'I still cannot find the company',
-            url: 'http://stillcannotfind.com',
+            onClick: () => {
+              setFieldValue('cannotFind', true)
+              goForward()
+            },
           },
         }}
         onEntityClick={(entity) => {
