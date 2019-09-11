@@ -1,21 +1,9 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { Button } from 'govuk-react'
-import { LINK_COLOUR } from 'govuk-colours'
-import styled from 'styled-components'
 
 import useFormContext from '../hooks/useFormContext'
-
-const StyledBackButton = styled(Button)`
-  &, &:hover, &:focus {
-    background: transparent;
-    box-shadow: none;
-    color: ${LINK_COLOUR};
-    cursor: pointer;
-    text-align: left;
-    text-decoration: underline;
-  }
-`
+import ButtonLink from '../../button-link/ButtonLink'
 
 function Step({
   name, backButtonText, forwardButtonText,
@@ -54,9 +42,9 @@ function Step({
       {' '}
 
       {!hideBackButton && !isFirstStep() && (
-        <StyledBackButton onClick={goBack}>
+        <ButtonLink onClick={goBack}>
           {backButtonText || defaultBackButtonText}
-        </StyledBackButton>
+        </ButtonLink>
       )}
     </>
   )
