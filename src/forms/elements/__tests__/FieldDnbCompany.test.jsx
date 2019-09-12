@@ -2,6 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { act } from 'react-dom/test-utils'
 
+import ButtonLink from '../../../button-link/ButtonLink'
 import CannotFindDetails from '../../../entity-search/CannotFindDetails'
 import EntityList from '../../../entity-search/EntityList'
 import EntityListItem from '../../../entity-search/EntityListItem'
@@ -161,12 +162,41 @@ describe('FieldDnbCompany', () => {
       wrapper.find('[href="#cannot-find"]').at(1).simulate('click')
     })
 
-    test('should set the field cannot find', () => {
+    test('should set the field cannot find to "true"', () => {
       expect(wrapper.find('.field-cannot-find').text()).toEqual('true')
     })
 
     test('should go to the fourth step', () => {
       expect(wrapper.find(Step).at(2).text()).toContain('fourth')
+    })
+
+    describe('when the "Back" button is clicked and a company is selected', () => {
+      beforeAll(async () => {
+        wrapper.find(ButtonLink).simulate('click')
+
+        wrapper.update()
+
+        wrapper.find('Search').simulate('click')
+
+        await act(flushPromises)
+
+        wrapper.update()
+
+        wrapper.find(EntityListItem).at(1).simulate('click')
+      })
+
+      test('should set the field cannot find to "false"', () => {
+        expect(wrapper.find('.field-cannot-find').text()).toEqual('false')
+      })
+
+      test('should go to the fourth step', () => {
+        expect(wrapper.find(Step).at(2).text()).toContain('third')
+      })
+
+      test('should set the field value', () => {
+        const expected = JSON.stringify(entitySearchFixtures.companySearch.results[1].dnb_company)
+        expect(wrapper.find('.field-value').text()).toEqual(expected)
+      })
     })
   })
 })

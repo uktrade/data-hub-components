@@ -58,6 +58,7 @@ const FieldDnbCompany = ({
         }}
         onEntityClick={(entity) => {
           if (!entity.datahub_company) {
+            setFieldValue('cannotFind', false)
             setFieldValue(name, entity.dnb_company)
             goForward()
           }
