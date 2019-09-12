@@ -20,21 +20,45 @@ const flushPromises = () => {
   })
 }
 
+const wrapFieldDnbCompanyForm = () => {
+  return mount(
+    <Form initialStep={1}>
+      {({ currentStep, values }) => (
+        <>
+          <div className="current-step">{currentStep}</div>
+          <div className="field-value">{JSON.stringify(values.testField)}</div>
+          <div className="field-cannot-find">{JSON.stringify(values.cannotFind)}</div>
+
+          <Step name="first" />
+
+          <Step name="second">
+            <FieldDnbCompany
+              name="testField"
+              label="testLabel"
+              country="UK"
+              apiEndpoint={API_ENDPOINT}
+            />
+          </Step>
+
+          {!values.cannotFind && (
+            <Step name="third">third</Step>
+          )}
+
+          {values.cannotFind && (
+            <Step name="fourth">fourth</Step>
+          )}
+        </>
+      )}
+    </Form>,
+  )
+}
+
 describe('FieldDnbCompany', () => {
   let wrapper
 
   describe('when all fields have been specified', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <Form>
-          <FieldDnbCompany
-            name="testField"
-            label="testLabel"
-            country="UK"
-            apiEndpoint={API_ENDPOINT}
-          />
-        </Form>,
-      )
+      wrapper = wrapFieldDnbCompanyForm()
     })
 
     test('should render the field with a label', () => {
@@ -59,21 +83,7 @@ describe('FieldDnbCompany', () => {
 
   describe('when the company country "Change" link is clicked', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <Form initialStep={1}>
-          {({ currentStep }) => (
-            <>
-              <div className="current-step">{currentStep}</div>
-              <FieldDnbCompany
-                name="testField"
-                label="testLabel"
-                country="UK"
-                apiEndpoint={API_ENDPOINT}
-              />
-            </>
-          )}
-        </Form>,
-      )
+      wrapper = wrapFieldDnbCompanyForm()
 
       wrapper.find('[href="#previously-selected"]').at(0).simulate('click')
     })
@@ -87,28 +97,7 @@ describe('FieldDnbCompany', () => {
     beforeAll(async () => {
       setupSuccessMocks(API_ENDPOINT)
 
-      wrapper = mount(
-        <Form initialStep={1}>
-          {({ currentStep, values }) => (
-            <>
-              <div className="current-step">{currentStep}</div>
-              <div className="field-value">{JSON.stringify(values.testField)}</div>
-
-              <Step name="first" />
-              <Step name="second">
-                <FieldDnbCompany
-                  name="testField"
-                  label="testLabel"
-                  country="UK"
-                  apiEndpoint={API_ENDPOINT}
-                />
-              </Step>
-              <Step name="third" />
-
-            </>
-          )}
-        </Form>,
-      )
+      wrapper = wrapFieldDnbCompanyForm()
 
       wrapper.find('Search').simulate('click')
 
@@ -130,20 +119,54 @@ describe('FieldDnbCompany', () => {
       const actionList = wrapper.find(CannotFindDetails)
       expect(actionList.find('li').length).toEqual(3)
     })
+  })
 
-    describe('when an entity is clicked', () => {
-      beforeAll(() => {
-        wrapper.find(EntityListItem).at(1).simulate('click')
-      })
+  describe('when an entity is clicked', () => {
+    beforeAll(async () => {
+      setupSuccessMocks(API_ENDPOINT)
 
-      test('should set the field value', () => {
-        const expected = JSON.stringify(entitySearchFixtures.companySearch.results[1].dnb_company)
-        expect(wrapper.find('.field-value').text()).toEqual(expected)
-      })
+      wrapper = wrapFieldDnbCompanyForm()
 
-      test('should go to the third step', () => {
-        expect(wrapper.find('.current-step').text()).toEqual('2')
-      })
+      wrapper.find('Search').simulate('click')
+
+      await act(flushPromises)
+
+      wrapper.update()
+
+      wrapper.find(EntityListItem).at(1).simulate('click')
+    })
+
+    test('should set the field value', () => {
+      const expected = JSON.stringify(entitySearchFixtures.companySearch.results[1].dnb_company)
+      expect(wrapper.find('.field-value').text()).toEqual(expected)
+    })
+
+    test('should go to the third step', () => {
+      expect(wrapper.find(Step).at(2).text()).toContain('third')
+    })
+  })
+
+  describe('when the "I still cannot find the company" link is clicked', () => {
+    beforeAll(async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
+      wrapper = wrapFieldDnbCompanyForm()
+
+      wrapper.find('Search').simulate('click')
+
+      await act(flushPromises)
+
+      wrapper.update()
+
+      wrapper.find('[href="#cannot-find"]').at(1).simulate('click')
+    })
+
+    test('should set the field cannot find', () => {
+      expect(wrapper.find('.field-cannot-find').text()).toEqual('true')
+    })
+
+    test('should go to the fourth step', () => {
+      expect(wrapper.find(Step).at(2).text()).toContain('fourth')
     })
   })
 })

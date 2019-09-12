@@ -25,17 +25,32 @@ storiesOf('Forms', module)
 
     return (
       <Form onSubmit={action('onSubmit')}>
-        <Step name="first" hideForwardButton={true}>
-          <FieldDnbCompany
-            name="dnb_company"
-            label="Find the company"
-            country="UK"
-            apiEndpoint={API_ENDPOINT}
-          />
-        </Step>
-        <Step name="second">
-          <Values />
-        </Step>
+        {({ values }) => (
+          <>
+            <Step name="first" hideForwardButton={true}>
+              <FieldDnbCompany
+                name="dnb_company"
+                label="Find the company"
+                country="UK"
+                apiEndpoint={API_ENDPOINT}
+              />
+            </Step>
+
+            {!values.cannotFind && (
+              <Step name="second">
+                <p>Company selected</p>
+              </Step>
+            )}
+
+            {values.cannotFind && (
+              <Step name="third">
+                <p>Cannot find company</p>
+              </Step>
+            )}
+
+            <Values />
+          </>
+        )}
       </Form>
     )
   })
