@@ -1955,6 +1955,14 @@
     "@govuk-react/lib" "^0.7.0"
     govuk-colours "^1.0.3"
 
+"@govuk-react/visually-hidden@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/visually-hidden/-/visually-hidden-0.7.1.tgz#a74e980400cc4f2a0766bad8980a4e5d05b1bd21"
+  integrity sha512-Lrc4mJpnpEmmgIBGYPzicq45ty8tF03cjYujMhZyzaEQsYnvZc5Ty2igRvSbYFOJ6KN71wUkQQ0u7c0A4TUZ8A==
+  dependencies:
+    "@govuk-react/lib" "^0.7.1"
+    govuk-colours "^1.0.3"
+
 "@govuk-react/warning-text@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@govuk-react/warning-text/-/warning-text-0.7.0.tgz#67d28d6e8d6bc0b6325cdb6fa084ce3651715c60"
