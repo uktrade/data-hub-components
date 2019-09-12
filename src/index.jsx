@@ -6,6 +6,9 @@ export { default as ActivityFeedFilters } from './activity-feed/ActivityFeedFilt
 export { default as ActivityFeedHeader } from './activity-feed/ActivityFeedHeader'
 export { default as ActivityFeedPagination } from './activity-feed/ActivityFeedPagination'
 
+// Button Link
+export { default as ButtonLink } from './button-link/ButtonLink'
+
 // Dashboard
 export { default as MyCompaniesTile } from './dashboard/my-companies/MyCompaniesTile'
 export { default as useMyCompaniesContext } from './dashboard/my-companies/useMyCompaniesContext'
