@@ -1,32 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import InputField from '@govuk-react/input-field'
-import FormGroup from '@govuk-react/form-group'
 
 import useField from '../hooks/useField'
+import FieldWrapper from './FieldWrapper'
 
-const FieldInput = ({ name, type, validate, required, label, ...rest }) => {
-  const { value, error, touched, onChange, onBlur } = useField({ name, label, validate, required })
+const FieldInput = ({ name, type, validate, required, label, legend, hint, ...rest }) => {
+  const { value, error, touched, onChange, onBlur } = useField({ name, validate, required })
 
   return (
-    <FormGroup>
+    <FieldWrapper {...({ name, label, legend, hint, error })}>
       <InputField
-        name={name}
         key={name}
-        id={name}
-        type={type}
         meta={{ error, touched }}
         input={{
+          id: name,
           type,
+          name,
           value,
           onChange,
           onBlur,
           ...rest,
         }}
-      >
-        {label}
-      </InputField>
-    </FormGroup>
+      />
+    </FieldWrapper>
   )
 }
 
@@ -36,12 +33,16 @@ FieldInput.propTypes = {
   validate: PropTypes.func,
   required: PropTypes.string,
   label: PropTypes.string,
+  legend: PropTypes.string,
+  hint: PropTypes.string,
 }
 
 FieldInput.defaultProps = {
   validate: null,
   required: null,
   label: null,
+  legend: null,
+  hint: null,
 }
 
 export default FieldInput

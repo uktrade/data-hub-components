@@ -31,6 +31,7 @@ storiesOf('Forms', module)
               <FieldDnbCompany
                 name="dnb_company"
                 label="Find the company"
+                hint="Some hint"
                 country="UK"
                 apiEndpoint={API_ENDPOINT}
               />

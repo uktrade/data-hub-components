@@ -17,6 +17,7 @@ storiesOf('Forms', module)
           <FieldSelect
             name="testField"
             label="Test select"
+            hint="Some hint"
             emptyOption={text('emptyOption', 'Please select')}
             options={object('options', [
               { label: 'testOptionLabel1', value: 'testOptionValue1' },

@@ -16,6 +16,7 @@ storiesOf('Forms', module)
         <>
           <FieldInput
             label="Text"
+            hint="Some hint"
             name="testField"
             required="Enter text"
             type="text"
@@ -32,6 +33,7 @@ storiesOf('Forms', module)
         <>
           <FieldInput
             label="Number"
+            hint="Some hint"
             name="testField"
             required="Enter number"
             type="number"

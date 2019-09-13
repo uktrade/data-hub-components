@@ -1470,6 +1470,14 @@
     "@govuk-react/constants" "^0.7.0"
     "@govuk-react/lib" "^0.7.0"
 
+"@govuk-react/heading@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/heading/-/heading-0.7.1.tgz#196b2f4f960df7768e4ca83a1e9d8b2c58526b90"
+  integrity sha512-kr4NwDPBWos7y0WUo8uxsJ0blb/3RQQZ6HDWHyc7zZTYx+yN8whTNNcJS9EVAnhevxJbHnaYKodgTGW7VL7rCw==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
+
 "@govuk-react/hint-text@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@govuk-react/hint-text/-/hint-text-0.7.0.tgz#e41dcdd1d58834e0ac2d20e50fe63a1041ab86e3"

@@ -1,24 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import FormGroup from '@govuk-react/form-group'
 import useFormContext from '../hooks/useFormContext'
 import EntitySearchWithDataProvider from '../../entity-search/EntitySearchWithDataProvider'
 import dnbCompanySearchDataProvider from '../../entity-search/data-providers/DnbCompanySearch'
 import StatusMessage from '../../status-message/StatusMessage'
+import FieldWrapper from './FieldWrapper'
 
 const FieldDnbCompany = ({
   name,
   label,
+  legend,
+  hint,
   country,
   apiEndpoint,
 }) => {
   const { goBack, goForward, setFieldValue } = useFormContext()
 
   return (
-    <FormGroup>
-      <label htmlFor={name}>{label}</label>
-
+    <FieldWrapper {...({ name, label, legend, hint })}>
       <EntitySearchWithDataProvider
         getEntities={dnbCompanySearchDataProvider(apiEndpoint)}
         previouslySelected={{
@@ -70,15 +69,23 @@ const FieldDnbCompany = ({
           </StatusMessage>
         )}
       />
-    </FormGroup>
+    </FieldWrapper>
   )
 }
 
 FieldDnbCompany.propTypes = {
   name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  legend: PropTypes.string,
+  hint: PropTypes.string,
   country: PropTypes.string.isRequired,
   apiEndpoint: PropTypes.string.isRequired,
+}
+
+FieldDnbCompany.defaultProps = {
+  label: null,
+  legend: null,
+  hint: null,
 }
 
 export default FieldDnbCompany

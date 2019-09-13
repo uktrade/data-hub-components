@@ -3,16 +3,16 @@ import PropTypes from 'prop-types'
 import Radio from '@govuk-react/radio'
 import MultiChoice from '@govuk-react/multi-choice'
 
-import FormGroup from '@govuk-react/form-group'
 import useField from '../hooks/useField'
+import FieldWrapper from './FieldWrapper'
 
-const FieldRadios = ({ name, validate, required, label, options, ...rest }) => {
-  const { value, error, touched, onChange, onBlur } = useField({ name, label, validate, required })
+const FieldRadios = ({ name, validate, required, label, legend, hint, options }) => {
+  const { value, error, touched, onChange, onBlur } = useField({ name, validate, required })
 
   return (
-    <FormGroup>
-      <MultiChoice label={label} meta={{ error, touched }}>
-        {options.map(({ label: optionLabel, value: optionValue, children }) => (
+    <FieldWrapper {...({ name, label, legend, hint, error })}>
+      <MultiChoice meta={{ error, touched }}>
+        {options.map(({ label: optionLabel, value: optionValue, children, ...optionProps }) => (
           <div key={optionValue}>
             <Radio
               key={optionValue}
@@ -20,7 +20,7 @@ const FieldRadios = ({ name, validate, required, label, options, ...rest }) => {
               checked={value === optionValue}
               onChange={onChange}
               onBlur={onBlur}
-              {...rest}
+              {...optionProps}
             >
               {optionLabel}
             </Radio>
@@ -29,7 +29,7 @@ const FieldRadios = ({ name, validate, required, label, options, ...rest }) => {
           </div>
         ))}
       </MultiChoice>
-    </FormGroup>
+    </FieldWrapper>
   )
 }
 
@@ -38,6 +38,8 @@ FieldRadios.propTypes = {
   validate: PropTypes.func,
   required: PropTypes.string,
   label: PropTypes.string,
+  legend: PropTypes.string,
+  hint: PropTypes.string,
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
@@ -51,6 +53,8 @@ FieldRadios.defaultProps = {
   validate: null,
   required: null,
   label: null,
+  legend: null,
+  hint: null,
   options: [],
 }
 
