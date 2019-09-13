@@ -1,7 +1,10 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { GridCol, GridRow, Main, H2 } from 'govuk-react'
+import { H2 } from '@govuk-react/heading'
+import GridCol from '@govuk-react/grid-col'
+import GridRow from '@govuk-react/grid-row'
+import Main from '@govuk-react/main'
 import { SPACING } from '@govuk-react/constants'
 import PropTypes from 'prop-types'
 

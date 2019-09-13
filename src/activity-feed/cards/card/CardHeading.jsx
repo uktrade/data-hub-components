@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MEDIA_QUERIES, HEADING_SIZES, SPACING, BODY_SIZES, SPACING_POINTS } from '@govuk-react/constants'
-import { H3, Link } from 'govuk-react'
+import { H3 } from '@govuk-react/heading'
+import Link from '@govuk-react/link'
 import { BLUE, GREY_1 } from 'govuk-colours'
 import PropTypes from 'prop-types'
 

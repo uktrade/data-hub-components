@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Button } from 'govuk-react'
+import Button from '@govuk-react/button'
 import { LINK_COLOUR } from 'govuk-colours'
 
 const ButtonLink = styled(Button).attrs(props => (props))`

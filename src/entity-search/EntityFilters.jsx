@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import { GREY_3 } from 'govuk-colours'
 import { SPACING } from '@govuk-react/constants'
 import PropTypes from 'prop-types'
-import { GridCol, GridRow } from 'govuk-react'
+import GridCol from '@govuk-react/grid-col'
+import GridRow from '@govuk-react/grid-row'
 
 import EntityFilter from './EntityFilter'
 

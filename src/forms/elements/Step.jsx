@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
-import { Button } from 'govuk-react'
+import Button from '@govuk-react/button'
 
 import useFormContext from '../hooks/useFormContext'
 import ButtonLink from '../../button-link/ButtonLink'

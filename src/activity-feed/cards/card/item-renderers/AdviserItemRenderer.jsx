@@ -1,4 +1,4 @@
-import { Link } from 'govuk-react'
+import Link from '@govuk-react/link'
 import PropTypes from 'prop-types'
 import React from 'react'
 

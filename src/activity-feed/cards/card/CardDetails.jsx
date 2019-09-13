@@ -1,5 +1,6 @@
 import React from 'react'
-import { Details, Link } from 'govuk-react'
+import Details from '@govuk-react/details'
+import Link from '@govuk-react/link'
 import styled from 'styled-components'
 import { SPACING, MEDIA_QUERIES, FONT_SIZE } from '@govuk-react/constants'
 import PropTypes from 'prop-types'

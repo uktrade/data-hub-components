@@ -1,4 +1,6 @@
-import { Details, Link, Paragraph } from 'govuk-react'
+import Details from '@govuk-react/details'
+import Link from '@govuk-react/link'
+import Paragraph from '@govuk-react/paragraph'
 import React from 'react'
 import PropTypes from 'prop-types'
 import { uniqueId } from 'lodash'

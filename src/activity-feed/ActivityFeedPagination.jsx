@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, LoadingBox } from 'govuk-react'
+import Button from '@govuk-react/button'
+import LoadingBox from '@govuk-react/loading-box'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { SPACING } from '@govuk-react/constants'

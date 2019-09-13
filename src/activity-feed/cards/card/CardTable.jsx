@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Table } from 'govuk-react'
+import Table from '@govuk-react/table'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
 
