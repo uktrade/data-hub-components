@@ -3,9 +3,8 @@ import axios from 'axios'
 
 import fixtures from '../__fixtures__'
 
-const mock = new MockAdapter(axios)
-
 export function setupSuccessMocks(apiEndpoint) {
+  const mock = new MockAdapter(axios)
   mock
     .onPost(apiEndpoint, {})
     .reply(200, fixtures.companySearch)
@@ -18,12 +17,14 @@ export function setupSuccessMocks(apiEndpoint) {
 }
 
 export function setupErrorMocks(apiEndpoint) {
+  const mock = new MockAdapter(axios)
   mock.onPost(apiEndpoint, {}).reply(500)
   mock.onPost(apiEndpoint, { search_term: 'some other company' }).reply(500)
   mock.onPost(apiEndpoint, { postal_code: 'BN1 4SE' }).reply(500)
 }
 
 export function setupNoResultsMocks(apiEndpoint) {
+  const mock = new MockAdapter(axios)
   mock
     .onPost(apiEndpoint, {})
     .reply(200, fixtures.companySearchNoResults)

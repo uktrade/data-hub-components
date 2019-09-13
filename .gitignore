@@ -68,6 +68,7 @@ typings/
 # IDE
 .idea/
 .history*
+.vscode
 
 # Production build
 dist/
