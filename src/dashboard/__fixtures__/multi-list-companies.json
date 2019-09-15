@@ -1,0 +1,70 @@
+[
+  {
+    "id": "1",
+    "item_count": 2,
+    "name": "List A",
+    "created_on": "2019-09-12T11:03:54.718081Z",
+    "companyList": [
+      {
+        "company": {
+          "name": "A1 BMW LTD!!!!!",
+          "id": "1a",
+          "isArchived": false
+        },
+        "latestInteraction": {
+          "id": "79d92719-7402-45b6-b3d7-eff559d6b282",
+          "date": "2019-08-14",
+          "displayDate": "14 Aug 19",
+          "subject": "Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished"
+        }
+      },
+      {
+        "company": {
+          "name": "A2 BMW LTD!!!!!",
+          "id": "1b",
+          "isArchived": false
+        },
+        "latestInteraction": {
+          "id": "79d92719-7402-45b6-b3d7-eff559d6b282",
+          "date": "2019-07-10",
+          "displayDate": "14 Aug 19",
+          "subject": "Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "item_count": 0,
+    "name": "List B",
+    "created_on": "2019-09-12T11:03:50.546167Z",
+    "companyList": [
+      {
+        "company": {
+          "name": "B1 BMW LTD!!!!!",
+          "id": "2a",
+          "isArchived": false
+        },
+        "latestInteraction": {
+          "id": "79d92719-7402-45b6-b3d7-eff559d6b282",
+          "date": "2019-08-14",
+          "displayDate": "14 Aug 19",
+          "subject": "Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished"
+        }
+      },
+      {
+        "company": {
+          "name": "B2 BMW LTD!!!!!",
+          "id": "2b",
+          "isArchived": false
+        },
+        "latestInteraction": {
+          "id": "79d92719-7402-45b6-b3d7-eff559d6b282",
+          "date": "2019-07-10",
+          "displayDate": "14 Aug 19",
+          "subject": "Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished"
+        }
+      }
+    ]
+  }
+]
