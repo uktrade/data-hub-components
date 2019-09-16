@@ -10,7 +10,7 @@ export { default as ActivityFeedPagination } from './activity-feed/ActivityFeedP
 export { default as ButtonLink } from './button-link/ButtonLink'
 
 // Company lists
-export { default as DeleteCompanyListSection } from './company-list/DeleteCompanyListSection'
+export { default as DeleteCompanyListSection } from './company-lists/DeleteCompanyListSection'
 
 // Dashboard
 export { default as MyCompaniesTile } from './dashboard/my-companies/MyCompaniesTile'
@@ -34,3 +34,6 @@ export { default as FieldSelect } from './forms/elements/FieldSelect'
 
 // Status message
 export { default as StatusMessage } from './status-message/StatusMessage'
+
+// Company lists
+export { default as CreateListForm } from './company-lists/CreateListForm'
