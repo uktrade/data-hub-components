@@ -1316,6 +1316,15 @@
     "@govuk-react/lib" "^0.7.1"
     govuk-colours "^1.0.3"
 
+"@govuk-react/fieldset@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@govuk-react/fieldset/-/fieldset-0.7.1.tgz#0b5114626ffc7502105b1532fa157b0e2cf39a58"
+  integrity sha512-BOWCKdFVTQGzQHsGKV21RDUy0adoBofL+jnLpoMX+ExKOKPtS5WLmzDe15bHVuCqCk/OvaYyC+efWK+twy3aWw==
+  dependencies:
+    "@govuk-react/constants" "^0.7.1"
+    "@govuk-react/lib" "^0.7.1"
+    govuk-colours "^1.0.3"
+
 "@govuk-react/form-group@^0.7.1":
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/@govuk-react/form-group/-/form-group-0.7.1.tgz#c5566b459606e6a2e92f9cd3038102fb291f913c"

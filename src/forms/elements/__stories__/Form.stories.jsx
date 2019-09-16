@@ -1,5 +1,6 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
+import { addDecorator, storiesOf } from '@storybook/react'
+import { withKnobs } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 import { H3 } from '@govuk-react/heading'
 
@@ -8,6 +9,8 @@ import FieldRadios from '../FieldRadios'
 import FieldSelect from '../FieldSelect'
 import FieldDnbCompany from '../FieldDnbCompany'
 import { setupSuccessMocks } from '../../../entity-search/__mocks__/company-search'
+
+addDecorator(withKnobs)
 
 function Values() {
   const form = useFormContext()
@@ -25,7 +28,6 @@ storiesOf('Forms', module)
   .add('Form - Full example', () => {
     const ENTITY_SEARCH_ENDPOINT = 'http://localhost:3010/v4/dnb/company-search'
     setupSuccessMocks(ENTITY_SEARCH_ENDPOINT)
-
     return (
       <Form onSubmit={action('onSubmit')}>
         {({ values }) => (
@@ -33,7 +35,7 @@ storiesOf('Forms', module)
             <StepHeader />
 
             <Step name="first">
-              <FieldInput type="number" name="age" label="Age" hint="Type 18 or more to add additional step" required="Enter age" />
+              <FieldInput type="number" name="age" label="Age" required="Enter age" />
               <FieldInput type="number" name="height" label="Height" required="Enter height" />
 
               <FieldRadios

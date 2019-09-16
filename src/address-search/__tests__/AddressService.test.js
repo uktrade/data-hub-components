@@ -18,6 +18,10 @@ describe('AddressService', () => {
     test('should return addresses', () => {
       expect(addresses).toEqual([
         {
+          address1: '1 address found',
+          id: '1 address found',
+        },
+        {
           postcode: 'postcode',
           county: 'six',
           townOrCity: 'five',
@@ -39,6 +43,10 @@ describe('AddressService', () => {
     test('should return addresses', () => {
       expect(addresses).toEqual([
         {
+          address1: '1 address found',
+          id: '1 address found',
+        },
+        {
           postcode: 'postcode',
           address1: 'zero - one',
           address2: 'two',
@@ -57,6 +65,10 @@ describe('AddressService', () => {
 
     test('should return addresses', () => {
       expect(addresses).toEqual([
+        {
+          address1: '1 address found',
+          id: '1 address found',
+        },
         {
           postcode: 'postcode',
           townOrCity: 'five',

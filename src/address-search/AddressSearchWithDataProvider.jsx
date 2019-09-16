@@ -6,7 +6,7 @@ import AddressSearch from './AddressSearch'
 const ERROR_MSG_400 = 'Enter a valid postcode'
 const ERROR_MSG_500 = 'An error occurred while searching for an address'
 
-const AddressSearchWithDataProvider = ({ getAddress }) => {
+const AddressSearchWithDataProvider = ({ getAddress, onAddressSelect }) => {
   const [addressList, setAddressList] = useState(null)
   const [error, setError] = useState(null)
   const [postcode, setPostcode] = useState(null)
@@ -30,15 +30,17 @@ const AddressSearchWithDataProvider = ({ getAddress }) => {
 
   return (
     <AddressSearch
-      addressList={addressList}
       error={error}
+      addressList={addressList}
       onAddressSearch={setPostcode}
+      onAddressSelect={onAddressSelect}
     />
   )
 }
 
 AddressSearchWithDataProvider.propTypes = {
   getAddress: PropTypes.func.isRequired,
+  onAddressSelect: PropTypes.func.isRequired,
 }
 
 export default AddressSearchWithDataProvider

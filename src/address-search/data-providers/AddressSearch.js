@@ -1,3 +1,4 @@
+import pluralise from 'pluralise'
 import axios from 'axios'
 import {
   map,
@@ -35,9 +36,23 @@ const transformAddress = (address, postcode) => {
   }
 }
 
+const createAddressCount = (addresses) => {
+  const addressCount = `${pluralise.withCount(addresses.length, '% address', '% addresses')} found`
+  return {
+    address1: addressCount,
+    id: addressCount,
+  }
+}
+
 export default (baseUrl, apiKey) => {
   return async (postcode) => {
     const { data } = await axios.get(`${baseUrl}/${postcode}?api-key=${apiKey}`)
-    return map(data.Addresses, address => transformAddress(address, postcode))
+    const addresses = map(data.Addresses, address => transformAddress(address, postcode))
+    const addressAcount = createAddressCount(addresses)
+
+    return [
+      addressAcount,
+      ...addresses,
+    ]
   }
 }

@@ -2,44 +2,75 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Button from '@govuk-react/button'
 import Select from '@govuk-react/select'
-import InputField from '@govuk-react/input-field'
+import Input from '@govuk-react/input'
+import { Search } from '@govuk-react/icons'
+import styled from 'styled-components'
+import { GREY_3, BLACK } from 'govuk-colours'
+
+import FieldWrapper from '../forms/elements/FieldWrapper'
 
 const UNKNOWN = 'unknown'
+
+const StyledInput = styled(Input)`
+  width: 165px;
+`
 
 const AddressSearch = ({
   error,
   addressList,
   onAddressSearch,
+  onAddressSelect,
 }) => {
   const [postCode, setPostCode] = useState(null)
+  const [address, setAddress] = useState(null)
 
-  const onAddressSearchClick = (evt) => {
+  const onAddressSearchBtnClick = (evt) => {
     evt.preventDefault()
+    setAddress(null)
+    onAddressSelect({})
     onAddressSearch(postCode || UNKNOWN)
+  }
+
+  const onAddressChange = (evt) => {
+    setAddress(addressList[evt.target.selectedIndex])
+    onAddressSelect(addressList[evt.target.selectedIndex])
   }
 
   return (
     <>
-      <div>
-        <InputField
-          name="postcode"
-          type="text"
+      <FieldWrapper name="postcode" label="Postcode">
+        <StyledInput
           error={error}
+          input={{
+            id: 'postcode',
+            name: 'postcode',
+            type: 'text',
+          }}
           onChange={evt => setPostCode(evt.target.value)}
         />
-        <Button onClick={onAddressSearchClick}>Find UK Address</Button>
-      </div>
-      { addressList && (
-        <Select name="address" label="Select an address">
-          {
-            addressList.map((value, index) => {
-              return <option key={value.id} value={index}>{ value.address1 }</option>
-            })
-          }
-        </Select>
-      )}
+      </FieldWrapper>
 
-      {error && <p>{error}</p>}
+      <Button
+        onClick={onAddressSearchBtnClick}
+        buttonColour={GREY_3}
+        buttonTextColour={BLACK}
+        icon={<Search />}
+      >
+        Find UK address
+      </Button>
+
+      {addressList && (
+        <FieldWrapper name="address" label="Select an address">
+          <Select
+            value={address}
+            onChange={onAddressChange}
+          >
+            {addressList.map(({ id, address1 }, index) => {
+              return <option key={id} value={index}>{ address1 }</option>
+            })}
+          </Select>
+        </FieldWrapper>
+      )}
     </>
   )
 }
@@ -48,6 +79,7 @@ AddressSearch.propTypes = {
   error: PropTypes.string,
   addressList: PropTypes.array,
   onAddressSearch: PropTypes.func.isRequired,
+  onAddressSelect: PropTypes.func.isRequired,
 }
 
 AddressSearch.defaultProps = {
