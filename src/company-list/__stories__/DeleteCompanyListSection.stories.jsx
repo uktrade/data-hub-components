@@ -31,3 +31,11 @@ storiesOf('DeleteCompanyListSection', module)
       returnUrl="#"
     />
   ))
+  .add('with error', () => (
+    <DeleteCompanyListSection
+      companyList={listWithMultipleItems}
+      errorMessage="Request failed with status code 404"
+      onDelete={onDelete}
+      returnUrl="#"
+    />
+  ))
