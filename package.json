@@ -46,6 +46,7 @@
     "@govuk-react/details": "^0.7.1",
     "@govuk-react/error-summary": "^0.7.1",
     "@govuk-react/error-text": "^0.7.1",
+    "@govuk-react/fieldset": "^0.7.1",
     "@govuk-react/form-group": "^0.7.1",
     "@govuk-react/grid-col": "^0.7.1",
     "@govuk-react/grid-row": "^0.7.1",

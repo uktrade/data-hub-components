@@ -1,20 +1,29 @@
 import React from 'react'
-import { addDecorator, storiesOf } from '@storybook/react'
-import { withKnobs, text } from '@storybook/addon-knobs'
+import { storiesOf } from '@storybook/react'
 
-import addressSearch from '../data-providers/AddressSearch'
-import AddressSearchWithDataProvider from '../AddressSearchWithDataProvider'
+import AddressSearch from '../AddressSearch'
+import fixtures from '../__fixtures__/address-search-SW1H 9AJ'
 
-const BASE_URL = 'https://api.getAddress.io/v2/uk'
-
-addDecorator(withKnobs)
-
-storiesOf('Address search', module)
-  .add('Data Hub address search', () => {
-    const API_KEY = text('API KEY', 'YOUR_GETADDRESS_IO_API_KEY')
+storiesOf('AddressSearch', module)
+  .add('with addresses', () => {
     return (
-      <AddressSearchWithDataProvider
-        getAddress={addressSearch(BASE_URL, API_KEY)}
+      <AddressSearch
+        addressList={fixtures}
+      />
+    )
+  })
+  .add('without addresses', () => {
+    return (
+      <AddressSearch
+        addressList={[]}
+      />
+    )
+  })
+  .add('with error', () => {
+    return (
+      <AddressSearch
+        addressList={[]}
+        error="Error!"
       />
     )
   })
