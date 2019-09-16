@@ -7,7 +7,6 @@ const CreateListFormStory = () => {
   return (
     <CreateListForm
       onSubmitHandler={action('I have been clicked!')}
-      id="1"
       name="listName"
       hint="This is a name only you see, and can be up to 30 characters"
       label="List name"
