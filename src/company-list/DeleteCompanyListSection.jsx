@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { RED } from 'govuk-colours'
 import Button from '@govuk-react/button'
+import ErrorSummary from '@govuk-react/error-summary'
 import InsetText from '@govuk-react/inset-text'
 import Link from '@govuk-react/link'
 import ListItem from '@govuk-react/list-item'
@@ -13,6 +14,7 @@ import FormActions from '../forms/elements/FormActions'
 
 const DeleteCompanyListSection = ({
   companyList,
+  errorMessage,
   onDelete,
   returnUrl,
 }) => {
@@ -20,6 +22,8 @@ const DeleteCompanyListSection = ({
 
   return (
     <div>
+      { errorMessage
+      && <ErrorSummary heading="There was an error deleting this list" description={errorMessage} errors={[]} />}
       <Paragraph>
         Deleting this list will remove all companies from this list. These companies will remain on
         any other lists.
@@ -40,8 +44,13 @@ const DeleteCompanyListSection = ({
 
 DeleteCompanyListSection.propTypes = {
   companyList: PropTypes.object.isRequired,
+  errorMessage: PropTypes.string,
   onDelete: PropTypes.func.isRequired,
   returnUrl: PropTypes.string.isRequired,
+}
+
+DeleteCompanyListSection.defaultProps = {
+  errorMessage: null,
 }
 
 export default DeleteCompanyListSection

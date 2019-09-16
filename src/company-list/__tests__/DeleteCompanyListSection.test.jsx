@@ -1,6 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import Button from '@govuk-react/button'
+import ErrorSummary from '@govuk-react/error-summary'
 import ListItem from '@govuk-react/list-item'
 
 import DeleteCompanyListSection from '../DeleteCompanyListSection'
@@ -41,6 +42,29 @@ describe('DeleteCompanyListSection', () => {
     test('triggers the onDelete callback on click', () => {
       wrapper.find(Button).simulate('click')
       expect(onDeleteSpy).toHaveBeenCalledTimes(1)
+    })
+
+    test('does not display an error message by default', () => {
+      expect(wrapper.find(ErrorSummary).exists()).toBeFalsy()
+    })
+  })
+
+  describe('with error message', () => {
+    test('displays the error message', () => {
+      const companyList = {
+        ...baseCompanyList,
+        item_count: 10,
+      }
+      const wrapper = mount(
+        <DeleteCompanyListSection
+          companyList={companyList}
+          onDelete={jest.fn()}
+          returnUrl="test-return-url"
+          errorMessage="Request failed"
+        />,
+      )
+
+      expect(wrapper.find(ErrorSummary).exists()).toBeTruthy()
     })
   })
 
