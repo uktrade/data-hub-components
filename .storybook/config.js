@@ -1,8 +1,7 @@
 import React from 'react'
-import { addDecorator, addParameters, configure } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
+import { addDecorator, configure } from '@storybook/react'
 import { FONT_SIZE, FONT_STACK, MEDIA_QUERIES } from '@govuk-react/constants'
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const req = require.context('../src', true, /.*\.stories\.(js|jsx)$/)
 
@@ -17,13 +16,6 @@ const GlobalStyle = createGlobalStyle`
 `
 
 addDecorator(s => <><GlobalStyle />{s()}</>)
-addDecorator(withInfo)
-
-addParameters({
-  options: {
-    showAddonPanel: false,
-  },
-})
 
 const loadStories = () => req.keys().forEach(filename => req(filename))
 
