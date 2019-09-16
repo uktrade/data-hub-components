@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
 import { BLUE, GREY_1 } from 'govuk-colours'
-import { H3 } from 'govuk-react'
+import { H3 } from '@govuk-react/heading'
 import PropTypes from 'prop-types'
 import { SOURCE_TYPES } from '../../constants'
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { H2, Button } from 'govuk-react'
+import Button from '@govuk-react/button'
+import { H2 } from '@govuk-react/heading'
 import styled from 'styled-components'
 import { SPACING, MEDIA_QUERIES } from '@govuk-react/constants'
 import pluralise from 'pluralise'

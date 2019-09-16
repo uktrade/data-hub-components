@@ -2,7 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { uniqueId } from 'lodash'
 import { mount } from 'enzyme'
-import { Details } from 'govuk-react'
+import Details from '@govuk-react/details'
 
 import Checkbox from '@govuk-react/checkbox'
 import ActivityFeed from '../ActivityFeed'

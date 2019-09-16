@@ -1,11 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActivityFeedPagination renders default pagination 1`] = `
-.c3 {
-  -webkit-animation: caisTa 1s infinite linear;
-  animation: caisTa 1s infinite linear;
-}
-
 .c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -96,6 +91,11 @@ exports[`ActivityFeedPagination renders default pagination 1`] = `
 
 .c5 svg {
   max-width: 15px;
+}
+
+.c3 {
+  -webkit-animation: caisTa 1s infinite linear;
+  animation: caisTa 1s infinite linear;
 }
 
 .c1 {
@@ -465,11 +465,6 @@ exports[`ActivityFeedPagination renders default pagination 1`] = `
 `;
 
 exports[`ActivityFeedPagination renders pagination with loader 1`] = `
-.c3 {
-  -webkit-animation: caisTa 1s infinite linear;
-  animation: caisTa 1s infinite linear;
-}
-
 .c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -560,6 +555,11 @@ exports[`ActivityFeedPagination renders pagination with loader 1`] = `
 
 .c5 svg {
   max-width: 15px;
+}
+
+.c3 {
+  -webkit-animation: caisTa 1s infinite linear;
+  animation: caisTa 1s infinite linear;
 }
 
 .c1 {
@@ -929,11 +929,6 @@ exports[`ActivityFeedPagination renders pagination with loader 1`] = `
 `;
 
 exports[`ActivityFeedPagination renders pagination with loader 2`] = `
-.c3 {
-  -webkit-animation: caisTa 1s infinite linear;
-  animation: caisTa 1s infinite linear;
-}
-
 .c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1024,6 +1019,11 @@ exports[`ActivityFeedPagination renders pagination with loader 2`] = `
 
 .c5 svg {
   max-width: 15px;
+}
+
+.c3 {
+  -webkit-animation: caisTa 1s infinite linear;
+  animation: caisTa 1s infinite linear;
 }
 
 .c1 {

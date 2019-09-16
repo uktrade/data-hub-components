@@ -1,9 +1,95 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActivityFeed when activities are being loaded should display a loader 1`] = `
-.c13 {
-  -webkit-animation: caisTa 1s infinite linear;
-  animation: caisTa 1s infinite linear;
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: block;
+  position: relative;
+  min-height: 40px;
+  padding: 0 0 0 40px;
+  clear: left;
+  margin-bottom: 10px;
+}
+
+.c7 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.c7:checked + span:after {
+  opacity: 1;
+}
+
+.c7:focus + span:before {
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px #ffbf47;
+}
+
+.c7 + span {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c8 {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 15px 5px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.c8::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  background: transparent;
+}
+
+.c8::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  width: 18px;
+  height: 7px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: solid;
+  border-width: 0 0 5px 5px;
+  border-top-color: transparent;
+  background: transparent;
+  opacity: 0;
+}
+
+.c3 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.0416666666666667;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .c15 {
@@ -98,17 +184,50 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
   max-width: 15px;
 }
 
-.c3 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.0416666666666667;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.c1 > div {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.c2 {
+  margin-top: 5px;
+}
+
+.c2 > H2 {
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.c4 {
+  text-align: right;
+}
+
+.c4 > Button {
+  margin-bottom: 0;
+}
+
+.c5 {
+  padding: 10px;
+  padding-left: 0;
+}
+
+.c13 {
+  -webkit-animation: caisTa 1s infinite linear;
+  animation: caisTa 1s infinite linear;
 }
 
 .c11 {
@@ -217,125 +336,6 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
   width: 100%;
 }
 
-.c6 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  display: block;
-  position: relative;
-  min-height: 40px;
-  padding: 0 0 0 40px;
-  clear: left;
-  margin-bottom: 10px;
-}
-
-.c7 {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.c7:checked + span:after {
-  opacity: 1;
-}
-
-.c7:focus + span:before {
-  outline: 3px solid transparent;
-  outline-offset: 3px;
-  box-shadow: 0 0 0 3px #ffbf47;
-}
-
-.c7 + span {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.c8 {
-  display: inline-block;
-  cursor: pointer;
-  padding: 8px 15px 5px;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-}
-
-.c8::before {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border: 2px solid black;
-  background: transparent;
-}
-
-.c8::after {
-  content: '';
-  position: absolute;
-  top: 11px;
-  left: 9px;
-  width: 18px;
-  height: 7px;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  border: solid;
-  border-width: 0 0 5px 5px;
-  border-top-color: transparent;
-  background: transparent;
-  opacity: 0;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  border-bottom: 2px solid #000;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-}
-
-.c1 > div {
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.c2 {
-  margin-top: 5px;
-}
-
-.c2 > H2 {
-  font-weight: normal;
-  font-size: 28px;
-  margin-bottom: 0;
-}
-
-.c4 {
-  text-align: right;
-}
-
-.c4 > Button {
-  margin-bottom: 0;
-}
-
-.c5 {
-  padding: 10px;
-  padding-left: 0;
-}
-
 .c10 {
   text-align: center;
   margin-top: 30px;
@@ -354,6 +354,52 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
 
 .c9 > li {
   margin-bottom: 10px;
+}
+
+@media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c3 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c3 {
+    font-size: 24px;
+    line-height: 1.05;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
 }
 
 @media print {
@@ -385,52 +431,6 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
 @media only screen and (min-width:641px) {
   .c15 {
     margin-bottom: 32px;
-  }
-}
-
-@media print {
-  .c3 {
-    color: #000;
-  }
-}
-
-@media print {
-  .c3 {
-    font-size: 24px;
-    line-height: 1.05;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c3 {
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c3 {
-    margin-bottom: 30px;
-  }
-}
-
-@media print {
-  .c6 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 10px;
   }
 }
 
@@ -710,19 +710,6 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
 `;
 
 exports[`ActivityFeed when the activity feed has child elements should render the children 1`] = `
-.c3 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.0416666666666667;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
 .c6 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -801,6 +788,19 @@ exports[`ActivityFeed when the activity feed has child elements should render th
   opacity: 0;
 }
 
+.c3 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.0416666666666667;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -857,6 +857,26 @@ exports[`ActivityFeed when the activity feed has child elements should render th
 }
 
 @media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
   .c3 {
     color: #000;
   }
@@ -879,26 +899,6 @@ exports[`ActivityFeed when the activity feed has child elements should render th
 @media only screen and (min-width:641px) {
   .c3 {
     margin-bottom: 30px;
-  }
-}
-
-@media print {
-  .c6 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 10px;
   }
 }
 
@@ -961,6 +961,84 @@ exports[`ActivityFeed when the activity feed has child elements should render th
 `;
 
 exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
+.c6 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: block;
+  position: relative;
+  min-height: 40px;
+  padding: 0 0 0 40px;
+  clear: left;
+  margin-bottom: 10px;
+}
+
+.c7 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.c7:checked + span:after {
+  opacity: 1;
+}
+
+.c7:focus + span:before {
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px #ffbf47;
+}
+
+.c7 + span {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c8 {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 15px 5px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.c8::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  background: transparent;
+}
+
+.c8::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  width: 18px;
+  height: 7px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: solid;
+  border-width: 0 0 5px 5px;
+  border-top-color: transparent;
+  background: transparent;
+  opacity: 0;
+}
+
 .c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
@@ -972,6 +1050,250 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
   display: block;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.c1 > div {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.c2 {
+  margin-top: 5px;
+}
+
+.c2 > H2 {
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.c4 {
+  text-align: right;
+}
+
+.c4 > Button {
+  margin-bottom: 0;
+}
+
+.c5 {
+  padding: 10px;
+  padding-left: 0;
+}
+
+.c0 {
+  margin: 10px 0;
+}
+
+.c9 {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.c9 > li {
+  margin-bottom: 10px;
+}
+
+@media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c3 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c3 {
+    font-size: 24px;
+    line-height: 1.05;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c1 > div {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h2
+        className="c3"
+        size="LARGE"
+      >
+        Activities
+      </h2>
+    </div>
+    <div
+      className="c4"
+    />
+  </div>
+  <div
+    className="c5"
+  >
+    <label
+      className="c6"
+    >
+      <input
+        checked={false}
+        className="c7"
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        className="c8"
+      >
+        Show details for all activities
+      </span>
+    </label>
+  </div>
+  <ol
+    className="c9"
+  />
+</div>
+`;
+
+exports[`ActivityFeed when there are more activities to load should render with "Load more" link 1`] = `
+.c20 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.c21 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  color: #005ea5;
+  cursor: pointer;
+}
+
+.c21:hover {
+  color: #2b8cc4;
+}
+
+.c21:focus {
+  outline: 4px solid #ffbf47;
+  outline-offset: -1px;
+  color: #0b0c0c;
+  background: #ffbf47;
+}
+
+.c21::-webkit-details-marker {
+  display: none;
+}
+
+.c21:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  clip-path: polygon(0% 0%,100% 50%,0% 100%);
+  border-width: 7px 0 7px 12.124px;
+  border-left-color: inherit;
+}
+
+[open] > .c21:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  clip-path: polygon(0% 0%,50% 100%,100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
+}
+
+.c22 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c23 {
+  padding: 15px;
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+.c23 p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c23 > :last-child,
+.c23 p:last-child {
+  margin-bottom: 0;
 }
 
 .c6 {
@@ -1052,7 +1374,59 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
   opacity: 0;
 }
 
-.c1 {
+.c10 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c15:link {
+  color: #005ea5;
+}
+
+.c15:visited {
+  color: #4c2c92;
+}
+
+.c15:hover {
+  color: #2b8cc4;
+}
+
+.c15:active {
+  color: #2b8cc4;
+}
+
+.c15:focus {
+  color: #0b0c0c;
+}
+
+.c15:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c19 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c19 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c19 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1060,158 +1434,126 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  border-bottom: 2px solid #000;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
 }
 
-.c1 > div {
+.c3 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.0416666666666667;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c14 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c12 {
+  width: 100%;
+}
+
+.c13 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c13 > a:link,
+.c13 a:visited,
+.c13 a:hover,
+.c13 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c16 {
   width: 100%;
   margin-bottom: 5px;
+  font-size: 16px;
 }
 
-.c2 {
-  margin-top: 5px;
+.c17 {
+  padding: 10px 0 10px;
+  display: inline;
+  margin-left: 5px;
 }
 
-.c2 > H2 {
-  font-weight: normal;
-  font-size: 28px;
-  margin-bottom: 0;
+.c18 {
+  border: 2px solid #006435;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
 }
 
-.c4 {
-  text-align: right;
+.c26 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
 }
 
-.c4 > Button {
-  margin-bottom: 0;
+.c26:last-child {
+  padding-right: 0;
 }
 
-.c5 {
-  padding: 10px;
-  padding-left: 0;
+.c27 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
 }
 
-.c0 {
-  margin: 10px 0;
+.c27:last-child {
+  padding-right: 0;
 }
 
-.c9 {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 10px;
+.c25 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
-.c9 > li {
+.c24 {
   margin-bottom: 10px;
 }
 
-@media print {
-  .c3 {
-    color: #000;
-  }
+.c24 > tbody > tr > th,
+.c24 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
 }
 
-@media print {
-  .c3 {
-    font-size: 24px;
-    line-height: 1.05;
-  }
+.c29 {
+  list-style-type: none;
 }
 
-@media only screen and (min-width:641px) {
-  .c3 {
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c3 {
-    margin-bottom: 30px;
-  }
-}
-
-@media print {
-  .c6 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c1 > div {
-    width: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      className="c2"
-    >
-      <h2
-        className="c3"
-        size="LARGE"
-      >
-        Activities
-      </h2>
-    </div>
-    <div
-      className="c4"
-    />
-  </div>
-  <div
-    className="c5"
-  >
-    <label
-      className="c6"
-    >
-      <input
-        checked={false}
-        className="c7"
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <span
-        className="c8"
-      >
-        Show details for all activities
-      </span>
-    </label>
-  </div>
-  <ol
-    className="c9"
-  />
-</div>
-`;
-
-exports[`ActivityFeed when there are more activities to load should render with "Load more" link 1`] = `
-.c33 {
-  -webkit-animation: caisTa 1s infinite linear;
-  animation: caisTa 1s infinite linear;
+.c28 {
+  margin: 0;
+  padding-left: 0;
 }
 
 .c35 {
@@ -1306,149 +1648,50 @@ exports[`ActivityFeed when there are more activities to load should render with 
   max-width: 15px;
 }
 
-.c20 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  margin-bottom: 20px;
-  display: block;
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
 }
 
-.c21 {
-  display: inline-block;
-  position: relative;
+.c1 > div {
+  width: 100%;
   margin-bottom: 5px;
-  padding-left: 25px;
-  color: #005ea5;
-  cursor: pointer;
 }
 
-.c21:hover {
-  color: #2b8cc4;
+.c2 {
+  margin-top: 5px;
 }
 
-.c21:focus {
-  outline: 4px solid #ffbf47;
-  outline-offset: -1px;
-  color: #0b0c0c;
-  background: #ffbf47;
-}
-
-.c21::-webkit-details-marker {
-  display: none;
-}
-
-.c21:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-color: transparent;
-  -webkit-clip-path: polygon(0% 0%,100% 50%,0% 100%);
-  clip-path: polygon(0% 0%,100% 50%,0% 100%);
-  border-width: 7px 0 7px 12.124px;
-  border-left-color: inherit;
-}
-
-[open] > .c21:before {
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-color: transparent;
-  -webkit-clip-path: polygon(0% 0%,50% 100%,100% 0%);
-  clip-path: polygon(0% 0%,50% 100%,100% 0%);
-  border-width: 12.124px 7px 0 7px;
-  border-top-color: inherit;
-}
-
-.c22 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c23 {
-  padding: 15px;
-  padding-left: 20px;
-  border-left: 5px solid #bfc1c3;
-}
-
-.c23 p {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.c23 > :last-child,
-.c23 p:last-child {
+.c2 > H2 {
+  font-weight: normal;
+  font-size: 28px;
   margin-bottom: 0;
 }
 
-.c3 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.0416666666666667;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
+.c4 {
+  text-align: right;
 }
 
-.c14 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
+.c4 > Button {
+  margin-bottom: 0;
 }
 
-.c15 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.c5 {
+  padding: 10px;
+  padding-left: 0;
 }
 
-.c15:link {
-  color: #005ea5;
-}
-
-.c15:visited {
-  color: #4c2c92;
-}
-
-.c15:hover {
-  color: #2b8cc4;
-}
-
-.c15:active {
-  color: #2b8cc4;
-}
-
-.c15:focus {
-  color: #0b0c0c;
-}
-
-.c15:focus {
-  outline: 3px solid #ffbf47;
-  outline-offset: 0;
-  background-color: #ffbf47;
+.c33 {
+  -webkit-animation: caisTa 1s infinite linear;
+  animation: caisTa 1s infinite linear;
 }
 
 .c31 {
@@ -1557,249 +1800,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
   width: 100%;
 }
 
-.c26 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-  font-weight: 700;
-}
-
-.c26:last-child {
-  padding-right: 0;
-}
-
-.c27 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-}
-
-.c27:last-child {
-  padding-right: 0;
-}
-
-.c25 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-.c6 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  display: block;
-  position: relative;
-  min-height: 40px;
-  padding: 0 0 0 40px;
-  clear: left;
-  margin-bottom: 10px;
-}
-
-.c7 {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.c7:checked + span:after {
-  opacity: 1;
-}
-
-.c7:focus + span:before {
-  outline: 3px solid transparent;
-  outline-offset: 3px;
-  box-shadow: 0 0 0 3px #ffbf47;
-}
-
-.c7 + span {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.c8 {
-  display: inline-block;
-  cursor: pointer;
-  padding: 8px 15px 5px;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-}
-
-.c8::before {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border: 2px solid black;
-  background: transparent;
-}
-
-.c8::after {
-  content: '';
-  position: absolute;
-  top: 11px;
-  left: 9px;
-  width: 18px;
-  height: 7px;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  border: solid;
-  border-width: 0 0 5px 5px;
-  border-top-color: transparent;
-  background: transparent;
-  opacity: 0;
-}
-
-.c10 {
-  border: 1px solid #bfc1c3;
-  padding: 15px;
-}
-
-.c19 {
-  font-size: 16px;
-  margin: 10px 0 0;
-}
-
-.c19 > div {
-  padding: 5px;
-  padding-bottom: 15px;
-  margin: 5px 0 5px 4px;
-}
-
-.c19 > div > a {
-  padding: 20px 0 10px 10px;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-}
-
-.c12 {
-  width: 100%;
-}
-
-.c13 {
-  font-weight: normal;
-  font-size: 24px;
-  color: #005ea5;
-}
-
-.c13 > a:link,
-.c13 a:visited,
-.c13 a:hover,
-.c13 a:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c16 {
-  width: 100%;
-  margin-bottom: 5px;
-  font-size: 16px;
-}
-
-.c17 {
-  padding: 10px 0 10px;
-  display: inline;
-  margin-left: 5px;
-}
-
-.c18 {
-  border: 2px solid #006435;
-  border-radius: 4px;
-  padding: 2px 4px;
-  font-size: 14px;
-}
-
-.c24 {
-  margin-bottom: 10px;
-}
-
-.c24 > tbody > tr > th,
-.c24 td {
-  font-weight: normal;
-  border: 0;
-  padding: 10px;
-  font-size: 16px;
-  vertical-align: top;
-}
-
-.c29 {
-  list-style-type: none;
-}
-
-.c28 {
-  margin: 0;
-  padding-left: 0;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  border-bottom: 2px solid #000;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-}
-
-.c1 > div {
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.c2 {
-  margin-top: 5px;
-}
-
-.c2 > H2 {
-  font-weight: normal;
-  font-size: 28px;
-  margin-bottom: 0;
-}
-
-.c4 {
-  text-align: right;
-}
-
-.c4 > Button {
-  margin-bottom: 0;
-}
-
-.c5 {
-  padding: 10px;
-  padding-left: 0;
-}
-
 .c30 {
   text-align: center;
   margin-top: 30px;
@@ -1818,38 +1818,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
 
 .c9 > li {
   margin-bottom: 10px;
-}
-
-@media print {
-  .c35 {
-    font-size: 14px;
-    line-height: 19px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c35 {
-    font-size: 19px;
-    line-height: 19px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c35 {
-    width: auto;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c35 svg {
-    margin-left: 10px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c35 {
-    margin-bottom: 32px;
-  }
 }
 
 @media print {
@@ -1875,6 +1843,48 @@ exports[`ActivityFeed when there are more activities to load should render with 
 @media only screen and (min-width:641px) {
   .c20 {
     margin-bottom: 30px;
+  }
+}
+
+@media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c15 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c15[href^="/"]::after,
+  .c15[href^="http://"]::after,
+  .c15[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c19 {
+    margin-top: -15px;
   }
 }
 
@@ -1930,19 +1940,32 @@ exports[`ActivityFeed when there are more activities to load should render with 
   }
 }
 
-@media print {
-  .c15 {
-    font-family: sans-serif;
+@media only screen and (min-width:641px) {
+  .c12 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
   }
 }
 
-@media print {
-  .c15[href^="/"]::after,
-  .c15[href^="http://"]::after,
-  .c15[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
+@media only screen and (min-width:641px) {
+  .c13 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c16 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c17 {
+    display: block;
   }
 }
 
@@ -1973,57 +1996,34 @@ exports[`ActivityFeed when there are more activities to load should render with 
 }
 
 @media print {
-  .c6 {
+  .c35 {
     font-size: 14px;
-    line-height: 1.15;
+    line-height: 19px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c6 {
+  .c35 {
     font-size: 19px;
-    line-height: 1.3157894736842106;
+    line-height: 19px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 10px;
+  .c35 {
+    width: auto;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c19 {
-    margin-top: -15px;
+  .c35 svg {
+    margin-left: 10px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c12 {
-    width: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c13 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c16 {
-    width: 200px;
-    text-align: right;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c17 {
-    display: block;
+  .c35 {
+    margin-bottom: 32px;
   }
 }
 
@@ -7331,99 +7331,6 @@ exports[`ActivityFeed when there is a single activity should render single activ
   margin-bottom: 0;
 }
 
-.c3 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.0416666666666667;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.c14 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-.c15 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.c15:link {
-  color: #005ea5;
-}
-
-.c15:visited {
-  color: #4c2c92;
-}
-
-.c15:hover {
-  color: #2b8cc4;
-}
-
-.c15:active {
-  color: #2b8cc4;
-}
-
-.c15:focus {
-  color: #0b0c0c;
-}
-
-.c15:focus {
-  outline: 3px solid #ffbf47;
-  outline-offset: 0;
-  background-color: #ffbf47;
-}
-
-.c26 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-  font-weight: 700;
-}
-
-.c26:last-child {
-  padding-right: 0;
-}
-
-.c27 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-}
-
-.c27:last-child {
-  padding-right: 0;
-}
-
-.c25 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
 .c6 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -7507,6 +7414,38 @@ exports[`ActivityFeed when there is a single activity should render single activ
   padding: 15px;
 }
 
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c15:link {
+  color: #005ea5;
+}
+
+.c15:visited {
+  color: #4c2c92;
+}
+
+.c15:hover {
+  color: #2b8cc4;
+}
+
+.c15:active {
+  color: #2b8cc4;
+}
+
+.c15:focus {
+  color: #0b0c0c;
+}
+
+.c15:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
 .c19 {
   font-size: 16px;
   margin: 10px 0 0;
@@ -7530,6 +7469,32 @@ exports[`ActivityFeed when there is a single activity should render single activ
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.c3 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.0416666666666667;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c14 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .c12 {
@@ -7567,6 +7532,41 @@ exports[`ActivityFeed when there is a single activity should render single activ
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
+}
+
+.c26 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c26:last-child {
+  padding-right: 0;
+}
+
+.c27 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c27:last-child {
+  padding-right: 0;
+}
+
+.c25 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .c24 {
@@ -7673,6 +7673,48 @@ exports[`ActivityFeed when there is a single activity should render single activ
 }
 
 @media print {
+  .c6 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c15 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c15[href^="/"]::after,
+  .c15[href^="http://"]::after,
+  .c15[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c19 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c3 {
     color: #000;
   }
@@ -7724,74 +7766,6 @@ exports[`ActivityFeed when there is a single activity should render single activ
   }
 }
 
-@media print {
-  .c15 {
-    font-family: sans-serif;
-  }
-}
-
-@media print {
-  .c15[href^="/"]::after,
-  .c15[href^="http://"]::after,
-  .c15[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
-  }
-}
-
-@media print {
-  .c25 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c25 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c25 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c25 {
-    margin-bottom: 30px;
-  }
-}
-
-@media print {
-  .c6 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c19 {
-    margin-top: -15px;
-  }
-}
-
 @media only screen and (min-width:641px) {
   .c12 {
     width: 0;
@@ -7818,6 +7792,32 @@ exports[`ActivityFeed when there is a single activity should render single activ
 @media only screen and (min-width:641px) {
   .c17 {
     display: block;
+  }
+}
+
+@media print {
+  .c25 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c25 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c25 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c25 {
+    margin-bottom: 30px;
   }
 }
 

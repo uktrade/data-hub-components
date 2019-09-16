@@ -93,19 +93,6 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c6 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -136,6 +123,77 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   outline: 3px solid #ffbf47;
   outline-offset: 0;
   background-color: #ffbf47;
+}
+
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #005ea5;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c5 > a:link,
+.c5 a:visited,
+.c5 a:hover,
+.c5 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .c15 {
@@ -171,64 +229,6 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   border-spacing: 0;
   border-collapse: collapse;
   margin-bottom: 20px;
-}
-
-.c8 {
-  font-size: 16px;
-  margin: 10px 0 0;
-}
-
-.c8 > div {
-  padding: 5px;
-  padding-bottom: 15px;
-  margin: 5px 0 5px 4px;
-}
-
-.c8 > div > a {
-  padding: 20px 0 10px 10px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-}
-
-.c3 {
-  display: inline-block;
-  font-weight: normal;
-  color: white;
-  padding: 2px 5px;
-  background-color: #005ea5;
-  margin-bottom: 10px;
-}
-
-.c2 {
-  width: 100%;
-}
-
-.c5 {
-  font-weight: normal;
-  font-size: 24px;
-  color: #005ea5;
-}
-
-.c5 > a:link,
-.c5 a:visited,
-.c5 a:hover,
-.c5 a:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c7 {
-  width: 100%;
-  margin-bottom: 5px;
-  font-size: 16px;
 }
 
 .c13 {
@@ -280,6 +280,28 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 @media print {
+  .c6 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c6[href^="/"]::after,
+  .c6[href^="http://"]::after,
+  .c6[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -305,19 +327,26 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   }
 }
 
-@media print {
-  .c6 {
-    font-family: sans-serif;
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
   }
 }
 
-@media print {
-  .c6[href^="/"]::after,
-  .c6[href^="http://"]::after,
-  .c6[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
+@media only screen and (min-width:641px) {
+  .c5 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
   }
 }
 
@@ -344,35 +373,6 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 @media only screen and (min-width:641px) {
   .c14 {
     margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c8 {
-    margin-top: -15px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c2 {
-    width: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c5 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c7 {
-    width: 200px;
-    text-align: right;
   }
 }
 
@@ -679,19 +679,6 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c6 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -722,6 +709,77 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   outline: 3px solid #ffbf47;
   outline-offset: 0;
   background-color: #ffbf47;
+}
+
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #005ea5;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c5 > a:link,
+.c5 a:visited,
+.c5 a:hover,
+.c5 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .c15 {
@@ -757,64 +815,6 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   border-spacing: 0;
   border-collapse: collapse;
   margin-bottom: 20px;
-}
-
-.c8 {
-  font-size: 16px;
-  margin: 10px 0 0;
-}
-
-.c8 > div {
-  padding: 5px;
-  padding-bottom: 15px;
-  margin: 5px 0 5px 4px;
-}
-
-.c8 > div > a {
-  padding: 20px 0 10px 10px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-}
-
-.c3 {
-  display: inline-block;
-  font-weight: normal;
-  color: white;
-  padding: 2px 5px;
-  background-color: #005ea5;
-  margin-bottom: 10px;
-}
-
-.c2 {
-  width: 100%;
-}
-
-.c5 {
-  font-weight: normal;
-  font-size: 24px;
-  color: #005ea5;
-}
-
-.c5 > a:link,
-.c5 a:visited,
-.c5 a:hover,
-.c5 a:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c7 {
-  width: 100%;
-  margin-bottom: 5px;
-  font-size: 16px;
 }
 
 .c13 {
@@ -866,6 +866,28 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 @media print {
+  .c6 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c6[href^="/"]::after,
+  .c6[href^="http://"]::after,
+  .c6[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -891,19 +913,26 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   }
 }
 
-@media print {
-  .c6 {
-    font-family: sans-serif;
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
   }
 }
 
-@media print {
-  .c6[href^="/"]::after,
-  .c6[href^="http://"]::after,
-  .c6[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
+@media only screen and (min-width:641px) {
+  .c5 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
   }
 }
 
@@ -930,35 +959,6 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 @media only screen and (min-width:641px) {
   .c14 {
     margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c8 {
-    margin-top: -15px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c2 {
-    width: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c5 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c7 {
-    width: 200px;
-    text-align: right;
   }
 }
 
@@ -1221,19 +1221,6 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c6 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1264,6 +1251,77 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   outline: 3px solid #ffbf47;
   outline-offset: 0;
   background-color: #ffbf47;
+}
+
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #005ea5;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c5 > a:link,
+.c5 a:visited,
+.c5 a:hover,
+.c5 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .c15 {
@@ -1299,64 +1357,6 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   border-spacing: 0;
   border-collapse: collapse;
   margin-bottom: 20px;
-}
-
-.c8 {
-  font-size: 16px;
-  margin: 10px 0 0;
-}
-
-.c8 > div {
-  padding: 5px;
-  padding-bottom: 15px;
-  margin: 5px 0 5px 4px;
-}
-
-.c8 > div > a {
-  padding: 20px 0 10px 10px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-}
-
-.c3 {
-  display: inline-block;
-  font-weight: normal;
-  color: white;
-  padding: 2px 5px;
-  background-color: #005ea5;
-  margin-bottom: 10px;
-}
-
-.c2 {
-  width: 100%;
-}
-
-.c5 {
-  font-weight: normal;
-  font-size: 24px;
-  color: #005ea5;
-}
-
-.c5 > a:link,
-.c5 a:visited,
-.c5 a:hover,
-.c5 a:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c7 {
-  width: 100%;
-  margin-bottom: 5px;
-  font-size: 16px;
 }
 
 .c13 {
@@ -1408,6 +1408,28 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 @media print {
+  .c6 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c6[href^="/"]::after,
+  .c6[href^="http://"]::after,
+  .c6[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -1433,19 +1455,26 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   }
 }
 
-@media print {
-  .c6 {
-    font-family: sans-serif;
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
   }
 }
 
-@media print {
-  .c6[href^="/"]::after,
-  .c6[href^="http://"]::after,
-  .c6[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
+@media only screen and (min-width:641px) {
+  .c5 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
   }
 }
 
@@ -1472,35 +1501,6 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 @media only screen and (min-width:641px) {
   .c14 {
     margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c8 {
-    margin-top: -15px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c2 {
-    width: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c5 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c7 {
-    width: 200px;
-    text-align: right;
   }
 }
 
@@ -1897,19 +1897,6 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c6 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1940,6 +1927,77 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   outline: 3px solid #ffbf47;
   outline-offset: 0;
   background-color: #ffbf47;
+}
+
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #005ea5;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #005ea5;
+}
+
+.c5 > a:link,
+.c5 a:visited,
+.c5 a:hover,
+.c5 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .c15 {
@@ -1975,64 +2033,6 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   border-spacing: 0;
   border-collapse: collapse;
   margin-bottom: 20px;
-}
-
-.c8 {
-  font-size: 16px;
-  margin: 10px 0 0;
-}
-
-.c8 > div {
-  padding: 5px;
-  padding-bottom: 15px;
-  margin: 5px 0 5px 4px;
-}
-
-.c8 > div > a {
-  padding: 20px 0 10px 10px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-}
-
-.c3 {
-  display: inline-block;
-  font-weight: normal;
-  color: white;
-  padding: 2px 5px;
-  background-color: #005ea5;
-  margin-bottom: 10px;
-}
-
-.c2 {
-  width: 100%;
-}
-
-.c5 {
-  font-weight: normal;
-  font-size: 24px;
-  color: #005ea5;
-}
-
-.c5 > a:link,
-.c5 a:visited,
-.c5 a:hover,
-.c5 a:active {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c7 {
-  width: 100%;
-  margin-bottom: 5px;
-  font-size: 16px;
 }
 
 .c13 {
@@ -2084,6 +2084,28 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 @media print {
+  .c6 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c6[href^="/"]::after,
+  .c6[href^="http://"]::after,
+  .c6[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -2109,19 +2131,26 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   }
 }
 
-@media print {
-  .c6 {
-    font-family: sans-serif;
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
   }
 }
 
-@media print {
-  .c6[href^="/"]::after,
-  .c6[href^="http://"]::after,
-  .c6[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
+@media only screen and (min-width:641px) {
+  .c5 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
   }
 }
 
@@ -2148,35 +2177,6 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 @media only screen and (min-width:641px) {
   .c14 {
     margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c8 {
-    margin-top: -15px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c2 {
-    width: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c5 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c7 {
-    width: 200px;
-    text-align: right;
   }
 }
 
@@ -2483,19 +2483,6 @@ exports[`Activity when the interaction does not have a service should render int
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -2528,41 +2515,6 @@ exports[`Activity when the interaction does not have a service should render int
   background-color: #ffbf47;
 }
 
-.c16 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-  font-weight: 700;
-}
-
-.c16:last-child {
-  padding-right: 0;
-}
-
-.c17 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-}
-
-.c17:last-child {
-  padding-right: 0;
-}
-
-.c15 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
 .c9 {
   font-size: 16px;
   margin: 10px 0 0;
@@ -2586,6 +2538,19 @@ exports[`Activity when the interaction does not have a service should render int
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .c2 {
@@ -2623,6 +2588,41 @@ exports[`Activity when the interaction does not have a service should render int
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .c14 {
@@ -2670,6 +2670,28 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 @media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -2692,54 +2714,6 @@ exports[`Activity when the interaction does not have a service should render int
 @media only screen and (min-width:641px) {
   .c4 {
     margin-bottom: 20px;
-  }
-}
-
-@media print {
-  .c5 {
-    font-family: sans-serif;
-  }
-}
-
-@media print {
-  .c5[href^="/"]::after,
-  .c5[href^="http://"]::after,
-  .c5[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
-  }
-}
-
-@media print {
-  .c15 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c15 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c9 {
-    margin-top: -15px;
   }
 }
 
@@ -2769,6 +2743,32 @@ exports[`Activity when the interaction does not have a service should render int
 @media only screen and (min-width:641px) {
   .c7 {
     display: block;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
   }
 }
 
@@ -2993,19 +2993,6 @@ exports[`Activity when the interaction is a draft and archived should render int
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -3038,41 +3025,6 @@ exports[`Activity when the interaction is a draft and archived should render int
   background-color: #ffbf47;
 }
 
-.c16 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-  font-weight: 700;
-}
-
-.c16:last-child {
-  padding-right: 0;
-}
-
-.c17 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-}
-
-.c17:last-child {
-  padding-right: 0;
-}
-
-.c15 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
 .c9 {
   font-size: 16px;
   margin: 10px 0 0;
@@ -3096,6 +3048,19 @@ exports[`Activity when the interaction is a draft and archived should render int
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .c2 {
@@ -3133,6 +3098,41 @@ exports[`Activity when the interaction is a draft and archived should render int
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .c14 {
@@ -3184,6 +3184,28 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 @media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -3206,54 +3228,6 @@ exports[`Activity when the interaction is a draft and archived should render int
 @media only screen and (min-width:641px) {
   .c4 {
     margin-bottom: 20px;
-  }
-}
-
-@media print {
-  .c5 {
-    font-family: sans-serif;
-  }
-}
-
-@media print {
-  .c5[href^="/"]::after,
-  .c5[href^="http://"]::after,
-  .c5[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
-  }
-}
-
-@media print {
-  .c15 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c15 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c9 {
-    margin-top: -15px;
   }
 }
 
@@ -3283,6 +3257,32 @@ exports[`Activity when the interaction is a draft and archived should render int
 @media only screen and (min-width:641px) {
   .c7 {
     display: block;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
   }
 }
 
@@ -3626,19 +3626,6 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -3671,41 +3658,6 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   background-color: #ffbf47;
 }
 
-.c16 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-  font-weight: 700;
-}
-
-.c16:last-child {
-  padding-right: 0;
-}
-
-.c17 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-}
-
-.c17:last-child {
-  padding-right: 0;
-}
-
-.c15 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
 .c9 {
   font-size: 16px;
   margin: 10px 0 0;
@@ -3729,6 +3681,19 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .c2 {
@@ -3766,6 +3731,41 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .c14 {
@@ -3817,6 +3817,28 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 @media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -3839,54 +3861,6 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 @media only screen and (min-width:641px) {
   .c4 {
     margin-bottom: 20px;
-  }
-}
-
-@media print {
-  .c5 {
-    font-family: sans-serif;
-  }
-}
-
-@media print {
-  .c5[href^="/"]::after,
-  .c5[href^="http://"]::after,
-  .c5[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
-  }
-}
-
-@media print {
-  .c15 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c15 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c9 {
-    margin-top: -15px;
   }
 }
 
@@ -3916,6 +3890,32 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 @media only screen and (min-width:641px) {
   .c7 {
     display: block;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
   }
 }
 
@@ -4259,19 +4259,6 @@ exports[`Activity when the interaction is a draft in the past should render inte
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -4304,41 +4291,6 @@ exports[`Activity when the interaction is a draft in the past should render inte
   background-color: #ffbf47;
 }
 
-.c16 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-  font-weight: 700;
-}
-
-.c16:last-child {
-  padding-right: 0;
-}
-
-.c17 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-}
-
-.c17:last-child {
-  padding-right: 0;
-}
-
-.c15 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
 .c9 {
   font-size: 16px;
   margin: 10px 0 0;
@@ -4362,6 +4314,19 @@ exports[`Activity when the interaction is a draft in the past should render inte
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .c2 {
@@ -4399,6 +4364,41 @@ exports[`Activity when the interaction is a draft in the past should render inte
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .c14 {
@@ -4450,6 +4450,28 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 @media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -4472,54 +4494,6 @@ exports[`Activity when the interaction is a draft in the past should render inte
 @media only screen and (min-width:641px) {
   .c4 {
     margin-bottom: 20px;
-  }
-}
-
-@media print {
-  .c5 {
-    font-family: sans-serif;
-  }
-}
-
-@media print {
-  .c5[href^="/"]::after,
-  .c5[href^="http://"]::after,
-  .c5[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
-  }
-}
-
-@media print {
-  .c15 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c15 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c9 {
-    margin-top: -15px;
   }
 }
 
@@ -4549,6 +4523,32 @@ exports[`Activity when the interaction is a draft in the past should render inte
 @media only screen and (min-width:641px) {
   .c7 {
     display: block;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
   }
 }
 
@@ -4892,19 +4892,6 @@ exports[`Activity when the interaction is complete should render interaction act
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -4937,41 +4924,6 @@ exports[`Activity when the interaction is complete should render interaction act
   background-color: #ffbf47;
 }
 
-.c16 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-  font-weight: 700;
-}
-
-.c16:last-child {
-  padding-right: 0;
-}
-
-.c17 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-}
-
-.c17:last-child {
-  padding-right: 0;
-}
-
-.c15 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
 .c9 {
   font-size: 16px;
   margin: 10px 0 0;
@@ -4995,6 +4947,19 @@ exports[`Activity when the interaction is complete should render interaction act
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .c2 {
@@ -5032,6 +4997,41 @@ exports[`Activity when the interaction is complete should render interaction act
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .c14 {
@@ -5083,6 +5083,28 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 @media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -5105,54 +5127,6 @@ exports[`Activity when the interaction is complete should render interaction act
 @media only screen and (min-width:641px) {
   .c4 {
     margin-bottom: 20px;
-  }
-}
-
-@media print {
-  .c5 {
-    font-family: sans-serif;
-  }
-}
-
-@media print {
-  .c5[href^="/"]::after,
-  .c5[href^="http://"]::after,
-  .c5[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
-  }
-}
-
-@media print {
-  .c15 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c15 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c9 {
-    margin-top: -15px;
   }
 }
 
@@ -5182,6 +5156,32 @@ exports[`Activity when the interaction is complete should render interaction act
 @media only screen and (min-width:641px) {
   .c7 {
     display: block;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
   }
 }
 
@@ -5525,19 +5525,6 @@ exports[`Activity when there is a Companies House Accounts record should render 
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c8 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5570,41 +5557,6 @@ exports[`Activity when there is a Companies House Accounts record should render 
   background-color: #ffbf47;
 }
 
-.c17 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-  font-weight: 700;
-}
-
-.c17:last-child {
-  padding-right: 0;
-}
-
-.c18 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-}
-
-.c18:last-child {
-  padding-right: 0;
-}
-
-.c16 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
 .c10 {
   font-size: 16px;
   margin: 10px 0 0;
@@ -5628,6 +5580,19 @@ exports[`Activity when there is a Companies House Accounts record should render 
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .c3 {
@@ -5676,6 +5641,41 @@ exports[`Activity when there is a Companies House Accounts record should render 
   font-size: 16px;
 }
 
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c18 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c18:last-child {
+  padding-right: 0;
+}
+
+.c16 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
 .c15 {
   margin-bottom: 10px;
 }
@@ -5716,6 +5716,28 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 @media print {
+  .c8 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c8[href^="/"]::after,
+  .c8[href^="http://"]::after,
+  .c8[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -5738,54 +5760,6 @@ exports[`Activity when there is a Companies House Accounts record should render 
 @media only screen and (min-width:641px) {
   .c4 {
     margin-bottom: 20px;
-  }
-}
-
-@media print {
-  .c8 {
-    font-family: sans-serif;
-  }
-}
-
-@media print {
-  .c8[href^="/"]::after,
-  .c8[href^="http://"]::after,
-  .c8[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
-  }
-}
-
-@media print {
-  .c16 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c16 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c16 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c16 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c10 {
-    margin-top: -15px;
   }
 }
 
@@ -5815,6 +5789,32 @@ exports[`Activity when there is a Companies House Accounts record should render 
   .c9 {
     width: 200px;
     text-align: right;
+  }
+}
+
+@media print {
+  .c16 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c16 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c16 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c16 {
+    margin-bottom: 30px;
   }
 }
 
@@ -6114,6 +6114,31 @@ exports[`Activity when there is a Companies House Company incorporation record s
   margin-bottom: 0;
 }
 
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
 .c4 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
@@ -6125,6 +6150,38 @@ exports[`Activity when there is a Companies House Company incorporation record s
   display: block;
   margin-top: 0;
   margin-bottom: 15px;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #6f777b;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c6 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #393939;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 19px;
+  margin-left: 5px;
+  color: #6f777b;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .c15 {
@@ -6160,63 +6217,6 @@ exports[`Activity when there is a Companies House Company incorporation record s
   border-spacing: 0;
   border-collapse: collapse;
   margin-bottom: 20px;
-}
-
-.c8 {
-  font-size: 16px;
-  margin: 10px 0 0;
-}
-
-.c8 > div {
-  padding: 5px;
-  padding-bottom: 15px;
-  margin: 5px 0 5px 4px;
-}
-
-.c8 > div > a {
-  padding: 20px 0 10px 10px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-}
-
-.c3 {
-  display: inline-block;
-  font-weight: normal;
-  color: white;
-  padding: 2px 5px;
-  background-color: #6f777b;
-  margin-bottom: 10px;
-}
-
-.c2 {
-  width: 100%;
-}
-
-.c6 {
-  font-weight: normal;
-  font-size: 24px;
-  color: #393939;
-}
-
-.c5 {
-  font-weight: normal;
-  font-size: 19px;
-  margin-left: 5px;
-  color: #6f777b;
-}
-
-.c7 {
-  width: 100%;
-  margin-bottom: 5px;
-  font-size: 16px;
 }
 
 .c13 {
@@ -6267,6 +6267,12 @@ exports[`Activity when there is a Companies House Company incorporation record s
   }
 }
 
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
 @media print {
   .c4 {
     color: #000;
@@ -6293,6 +6299,29 @@ exports[`Activity when there is a Companies House Company incorporation record s
   }
 }
 
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
 @media print {
   .c14 {
     font-size: 14px;
@@ -6316,35 +6345,6 @@ exports[`Activity when there is a Companies House Company incorporation record s
 @media only screen and (min-width:641px) {
   .c14 {
     margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c8 {
-    margin-top: -15px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c2 {
-    width: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c7 {
-    width: 200px;
-    text-align: right;
   }
 }
 
@@ -6697,6 +6697,31 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   margin-bottom: 0;
 }
 
+.c8 {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+.c8 > div {
+  padding: 5px;
+  padding-bottom: 15px;
+  margin: 5px 0 5px 4px;
+}
+
+.c8 > div > a {
+  padding: 20px 0 10px 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
 .c4 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
@@ -6708,6 +6733,38 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   display: block;
   margin-top: 0;
   margin-bottom: 15px;
+}
+
+.c3 {
+  display: inline-block;
+  font-weight: normal;
+  color: white;
+  padding: 2px 5px;
+  background-color: #6f777b;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c6 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #393939;
+}
+
+.c5 {
+  font-weight: normal;
+  font-size: 19px;
+  margin-left: 5px;
+  color: #6f777b;
+}
+
+.c7 {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .c15 {
@@ -6743,63 +6800,6 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   border-spacing: 0;
   border-collapse: collapse;
   margin-bottom: 20px;
-}
-
-.c8 {
-  font-size: 16px;
-  margin: 10px 0 0;
-}
-
-.c8 > div {
-  padding: 5px;
-  padding-bottom: 15px;
-  margin: 5px 0 5px 4px;
-}
-
-.c8 > div > a {
-  padding: 20px 0 10px 10px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-}
-
-.c3 {
-  display: inline-block;
-  font-weight: normal;
-  color: white;
-  padding: 2px 5px;
-  background-color: #6f777b;
-  margin-bottom: 10px;
-}
-
-.c2 {
-  width: 100%;
-}
-
-.c6 {
-  font-weight: normal;
-  font-size: 24px;
-  color: #393939;
-}
-
-.c5 {
-  font-weight: normal;
-  font-size: 19px;
-  margin-left: 5px;
-  color: #6f777b;
-}
-
-.c7 {
-  width: 100%;
-  margin-bottom: 5px;
-  font-size: 16px;
 }
 
 .c13 {
@@ -6850,6 +6850,12 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   }
 }
 
+@media only screen and (min-width:641px) {
+  .c8 {
+    margin-top: -15px;
+  }
+}
+
 @media print {
   .c4 {
     color: #000;
@@ -6876,6 +6882,29 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   }
 }
 
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    width: 200px;
+    text-align: right;
+  }
+}
+
 @media print {
   .c14 {
     font-size: 14px;
@@ -6899,35 +6928,6 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
 @media only screen and (min-width:641px) {
   .c14 {
     margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c8 {
-    margin-top: -15px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c2 {
-    width: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c6 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c7 {
-    width: 200px;
-    text-align: right;
   }
 }
 
@@ -7150,19 +7150,6 @@ exports[`Activity when there is a service delivery should render service deliver
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -7195,41 +7182,6 @@ exports[`Activity when there is a service delivery should render service deliver
   background-color: #ffbf47;
 }
 
-.c16 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-  font-weight: 700;
-}
-
-.c16:last-child {
-  padding-right: 0;
-}
-
-.c17 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-}
-
-.c17:last-child {
-  padding-right: 0;
-}
-
-.c15 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
 .c9 {
   font-size: 16px;
   margin: 10px 0 0;
@@ -7253,6 +7205,19 @@ exports[`Activity when there is a service delivery should render service deliver
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .c2 {
@@ -7290,6 +7255,41 @@ exports[`Activity when there is a service delivery should render service deliver
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .c14 {
@@ -7341,6 +7341,28 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 @media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -7363,54 +7385,6 @@ exports[`Activity when there is a service delivery should render service deliver
 @media only screen and (min-width:641px) {
   .c4 {
     margin-bottom: 20px;
-  }
-}
-
-@media print {
-  .c5 {
-    font-family: sans-serif;
-  }
-}
-
-@media print {
-  .c5[href^="/"]::after,
-  .c5[href^="http://"]::after,
-  .c5[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
-  }
-}
-
-@media print {
-  .c15 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c15 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c9 {
-    margin-top: -15px;
   }
 }
 
@@ -7440,6 +7414,32 @@ exports[`Activity when there is a service delivery should render service deliver
 @media only screen and (min-width:641px) {
   .c7 {
     display: block;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
   }
 }
 
@@ -7722,19 +7722,6 @@ exports[`Activity when there is an interaction should render interaction activit
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -7767,41 +7754,6 @@ exports[`Activity when there is an interaction should render interaction activit
   background-color: #ffbf47;
 }
 
-.c16 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-  font-weight: 700;
-}
-
-.c16:last-child {
-  padding-right: 0;
-}
-
-.c17 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-}
-
-.c17:last-child {
-  padding-right: 0;
-}
-
-.c15 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
 .c9 {
   font-size: 16px;
   margin: 10px 0 0;
@@ -7825,6 +7777,19 @@ exports[`Activity when there is an interaction should render interaction activit
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .c2 {
@@ -7862,6 +7827,41 @@ exports[`Activity when there is an interaction should render interaction activit
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .c14 {
@@ -7913,6 +7913,28 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 @media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -7935,54 +7957,6 @@ exports[`Activity when there is an interaction should render interaction activit
 @media only screen and (min-width:641px) {
   .c4 {
     margin-bottom: 20px;
-  }
-}
-
-@media print {
-  .c5 {
-    font-family: sans-serif;
-  }
-}
-
-@media print {
-  .c5[href^="/"]::after,
-  .c5[href^="http://"]::after,
-  .c5[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
-  }
-}
-
-@media print {
-  .c15 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c15 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c9 {
-    margin-top: -15px;
   }
 }
 
@@ -8012,6 +7986,32 @@ exports[`Activity when there is an interaction should render interaction activit
 @media only screen and (min-width:641px) {
   .c7 {
     display: block;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
   }
 }
 
@@ -8355,19 +8355,6 @@ exports[`Activity when there is an interaction without any people involved shoul
   margin-bottom: 0;
 }
 
-.c4 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1111111111111112;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8400,41 +8387,6 @@ exports[`Activity when there is an interaction without any people involved shoul
   background-color: #ffbf47;
 }
 
-.c16 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-  font-weight: 700;
-}
-
-.c16:last-child {
-  padding-right: 0;
-}
-
-.c17 {
-  padding: 10px 20px 10px 0;
-  border-bottom: 1px solid #bfc1c3;
-  text-align: left;
-}
-
-.c17:last-child {
-  padding-right: 0;
-}
-
-.c15 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
 .c9 {
   font-size: 16px;
   margin: 10px 0 0;
@@ -8458,6 +8410,19 @@ exports[`Activity when there is an interaction without any people involved shoul
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .c2 {
@@ -8495,6 +8460,41 @@ exports[`Activity when there is an interaction without any people involved shoul
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
+}
+
+.c16 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c16:last-child {
+  padding-right: 0;
+}
+
+.c17 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c17:last-child {
+  padding-right: 0;
+}
+
+.c15 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .c14 {
@@ -8542,6 +8542,28 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 @media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-top: -15px;
+  }
+}
+
+@media print {
   .c4 {
     color: #000;
   }
@@ -8564,54 +8586,6 @@ exports[`Activity when there is an interaction without any people involved shoul
 @media only screen and (min-width:641px) {
   .c4 {
     margin-bottom: 20px;
-  }
-}
-
-@media print {
-  .c5 {
-    font-family: sans-serif;
-  }
-}
-
-@media print {
-  .c5[href^="/"]::after,
-  .c5[href^="http://"]::after,
-  .c5[href^="https://"]::after {
-    content: " (" attr(href) ")";
-    font-size: 90%;
-    word-wrap: break-word;
-  }
-}
-
-@media print {
-  .c15 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c15 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c15 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c9 {
-    margin-top: -15px;
   }
 }
 
@@ -8641,6 +8615,32 @@ exports[`Activity when there is an interaction without any people involved shoul
 @media only screen and (min-width:641px) {
   .c7 {
     display: block;
+  }
+}
+
+@media print {
+  .c15 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c15 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 30px;
   }
 }
 

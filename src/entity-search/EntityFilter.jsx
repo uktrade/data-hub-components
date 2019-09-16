@@ -1,4 +1,4 @@
-import { InputField } from 'govuk-react'
+import InputField from '@govuk-react/input-field'
 import React from 'react'
 import PropTypes from 'prop-types'
 

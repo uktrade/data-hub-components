@@ -1,7 +1,9 @@
 import React from 'react'
 import { storiesOf, addDecorator } from '@storybook/react'
 import { withKnobs } from '@storybook/addon-knobs'
-import { GridCol, GridRow, Main } from 'govuk-react'
+import GridCol from '@govuk-react/grid-col'
+import GridRow from '@govuk-react/grid-row'
+import Main from '@govuk-react/main'
 import { SPACING } from '@govuk-react/constants'
 
 import ActivityFeed from '../ActivityFeed'
