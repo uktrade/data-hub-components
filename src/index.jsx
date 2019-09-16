@@ -18,7 +18,8 @@ export { default as useMyCompaniesContext } from './dashboard/my-companies/useMy
 
 // Entity search
 export { default as EntitySearch } from './entity-search/EntitySearch'
-export { default as EntitySearchWithDataProvider } from './entity-search/EntitySearchWithDataProvider'
+export { default as useDnbSearch } from './entity-search/useDnbSearch'
+export { default as useEntitySearch } from './entity-search/useEntitySearch'
 
 // Forms
 export { default as useField } from './forms/hooks/useField'

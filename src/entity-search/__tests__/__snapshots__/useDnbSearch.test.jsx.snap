@@ -1,0 +1,258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useDnbSearch when findCompany() is called with "search_term" filter should return only "Some company name" company 1`] = `
+Array [
+  Object {
+    "canHandleClick": true,
+    "data": Object {
+      "datahub_company": null,
+      "dnb_company": Object {
+        "address_country": "GB",
+        "address_county": "",
+        "address_line_1": "123 ABC Road",
+        "address_line_2": "",
+        "address_postcode": "BN2 9QB",
+        "address_town": "Brighton",
+        "annual_sales": 1999999999,
+        "annual_sales_currency": "USD",
+        "domain": "example.co.uk",
+        "duns_number": "219999999",
+        "employee_number": 300,
+        "global_ultimate_duns_number": "319999999",
+        "global_ultimate_primary_name": "Some other company parent",
+        "industry_codes": Array [
+          Object {
+            "usSicV4": "3799",
+            "usSicV4Description": "Mfg transportation equipment",
+          },
+        ],
+        "is_annual_sales_estimated": null,
+        "is_employees_number_estimated": true,
+        "is_out_of_business": false,
+        "legal_status": "corporation",
+        "primary_name": "Some other company",
+        "registered_address_country": "GB",
+        "registered_address_county": "",
+        "registered_address_line_1": "",
+        "registered_address_line_2": "",
+        "registered_address_postcode": "BN2 9QB",
+        "registered_address_town": "Brighton",
+        "registration_numbers": Array [
+          Object {
+            "registration_number": "00016033",
+            "registration_type": "uk_companies_house_number",
+          },
+        ],
+        "trading_names": Array [],
+      },
+    },
+    "heading": "Some other company",
+    "meta": Object {
+      "Address": "123 ABC Road, Brighton, BN2 9QB",
+    },
+    "text": null,
+  },
+]
+`;
+
+exports[`useDnbSearch when findCompany() is called without any filters should return all DNB search results 1`] = `
+Array [
+  Object {
+    "canHandleClick": false,
+    "data": Object {
+      "datahub_company": Object {
+        "id": "0fb3379c-341c-4da4-b825-bf8d47b26baa",
+        "latest_interaction": Object {
+          "created_on": "2019-08-01T18:10:00",
+          "date": "2019-08-01",
+          "id": "ec4a46ef-6e50-4a5c-bba0-e311f0471312",
+          "subject": "Meeting between DIT and Joe Bloggs",
+        },
+      },
+      "dnb_company": Object {
+        "address_country": "GB",
+        "address_county": "",
+        "address_line_1": "123 Fake Street",
+        "address_line_2": "",
+        "address_postcode": "BN1 4SE",
+        "address_town": "Brighton",
+        "annual_sales": 1860000000,
+        "annual_sales_currency": "USD",
+        "domain": "example.co.uk",
+        "duns_number": "12345678",
+        "employee_number": 2000,
+        "global_ultimate_duns_number": "123456789",
+        "global_ultimate_primary_name": "Some parent company name",
+        "industry_codes": Array [
+          Object {
+            "usSicV4": "1623",
+            "usSicV4Description": "Water/sewer/utility construction",
+          },
+        ],
+        "is_annual_sales_estimated": null,
+        "is_employees_number_estimated": true,
+        "is_out_of_business": false,
+        "legal_status": "corporation",
+        "primary_name": "Some company name",
+        "registered_address_country": "GB",
+        "registered_address_county": "",
+        "registered_address_line_1": "",
+        "registered_address_line_2": "",
+        "registered_address_postcode": "BN1 4SE",
+        "registered_address_town": "Brighton",
+        "registration_numbers": Array [
+          Object {
+            "registration_number": "1234567",
+            "registration_type": "uk_companies_house_number",
+          },
+        ],
+        "trading_names": Array [
+          "Some trading name",
+        ],
+      },
+    },
+    "heading": "Some company name",
+    "meta": Object {
+      "Address": "123 Fake Street, Brighton, BN1 4SE",
+    },
+    "text": <React.Fragment>
+      This company is already on Data Hub.
+       
+      <ForwardRef
+        href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
+        muted={false}
+        noVisitedState={false}
+        textColour={false}
+      >
+        Go to the company page
+      </ForwardRef>
+       to record activity.
+    </React.Fragment>,
+  },
+  Object {
+    "canHandleClick": true,
+    "data": Object {
+      "datahub_company": null,
+      "dnb_company": Object {
+        "address_country": "GB",
+        "address_county": "",
+        "address_line_1": "123 ABC Road",
+        "address_line_2": "",
+        "address_postcode": "BN2 9QB",
+        "address_town": "Brighton",
+        "annual_sales": 1999999999,
+        "annual_sales_currency": "USD",
+        "domain": "example.co.uk",
+        "duns_number": "219999999",
+        "employee_number": 300,
+        "global_ultimate_duns_number": "319999999",
+        "global_ultimate_primary_name": "Some other company parent",
+        "industry_codes": Array [
+          Object {
+            "usSicV4": "3799",
+            "usSicV4Description": "Mfg transportation equipment",
+          },
+        ],
+        "is_annual_sales_estimated": null,
+        "is_employees_number_estimated": true,
+        "is_out_of_business": false,
+        "legal_status": "corporation",
+        "primary_name": "Some other company",
+        "registered_address_country": "GB",
+        "registered_address_county": "",
+        "registered_address_line_1": "",
+        "registered_address_line_2": "",
+        "registered_address_postcode": "BN2 9QB",
+        "registered_address_town": "Brighton",
+        "registration_numbers": Array [
+          Object {
+            "registration_number": "00016033",
+            "registration_type": "uk_companies_house_number",
+          },
+        ],
+        "trading_names": Array [],
+      },
+    },
+    "heading": "Some other company",
+    "meta": Object {
+      "Address": "123 ABC Road, Brighton, BN2 9QB",
+    },
+    "text": null,
+  },
+]
+`;
+
+exports[`useDnbSearch when transformCompanyRecord() is called should return transformed company record 1`] = `
+Object {
+  "canHandleClick": false,
+  "data": Object {
+    "datahub_company": Object {
+      "id": "0fb3379c-341c-4da4-b825-bf8d47b26baa",
+      "latest_interaction": Object {
+        "created_on": "2019-08-01T18:10:00",
+        "date": "2019-08-01",
+        "id": "ec4a46ef-6e50-4a5c-bba0-e311f0471312",
+        "subject": "Meeting between DIT and Joe Bloggs",
+      },
+    },
+    "dnb_company": Object {
+      "address_country": "GB",
+      "address_county": "",
+      "address_line_1": "123 Fake Street",
+      "address_line_2": "",
+      "address_postcode": "BN1 4SE",
+      "address_town": "Brighton",
+      "annual_sales": 1860000000,
+      "annual_sales_currency": "USD",
+      "domain": "example.co.uk",
+      "duns_number": "12345678",
+      "employee_number": 2000,
+      "global_ultimate_duns_number": "123456789",
+      "global_ultimate_primary_name": "Some parent company name",
+      "industry_codes": Array [
+        Object {
+          "usSicV4": "1623",
+          "usSicV4Description": "Water/sewer/utility construction",
+        },
+      ],
+      "is_annual_sales_estimated": null,
+      "is_employees_number_estimated": true,
+      "is_out_of_business": false,
+      "legal_status": "corporation",
+      "primary_name": "Some company name",
+      "registered_address_country": "GB",
+      "registered_address_county": "",
+      "registered_address_line_1": "",
+      "registered_address_line_2": "",
+      "registered_address_postcode": "BN1 4SE",
+      "registered_address_town": "Brighton",
+      "registration_numbers": Array [
+        Object {
+          "registration_number": "1234567",
+          "registration_type": "uk_companies_house_number",
+        },
+      ],
+      "trading_names": Array [
+        "Some trading name",
+      ],
+    },
+  },
+  "heading": "Some company name",
+  "meta": Object {
+    "Address": "123 Fake Street, Brighton, BN1 4SE",
+  },
+  "text": <React.Fragment>
+    This company is already on Data Hub.
+     
+    <ForwardRef
+      href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
+      muted={false}
+      noVisitedState={false}
+      textColour={false}
+    >
+      Go to the company page
+    </ForwardRef>
+     to record activity.
+  </React.Fragment>,
+}
+`;
