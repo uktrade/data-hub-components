@@ -4,6 +4,7 @@ import Button from '@govuk-react/button'
 
 import useFormContext from '../hooks/useFormContext'
 import ButtonLink from '../../button-link/ButtonLink'
+import FormActions from './FormActions'
 
 function Step({
   name, backButtonText, forwardButtonText,
@@ -37,15 +38,15 @@ function Step({
     <>
       {children}
 
-      {!hideForwardButton && <Button>{forwardButtonText || defaultForwardButtonText}</Button>}
+      <FormActions>
+        {!hideForwardButton && <Button>{forwardButtonText || defaultForwardButtonText}</Button>}
 
-      {' '}
-
-      {!hideBackButton && !isFirstStep() && (
-        <ButtonLink onClick={goBack}>
-          {backButtonText || defaultBackButtonText}
-        </ButtonLink>
-      )}
+        {!hideBackButton && !isFirstStep() && (
+          <ButtonLink onClick={goBack}>
+            {backButtonText || defaultBackButtonText}
+          </ButtonLink>
+        )}
+      </FormActions>
     </>
   )
 }

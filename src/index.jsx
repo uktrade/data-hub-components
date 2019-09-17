@@ -18,7 +18,8 @@ export { default as useMyCompaniesContext } from './dashboard/my-companies/useMy
 
 // Entity search
 export { default as EntitySearch } from './entity-search/EntitySearch'
-export { default as EntitySearchWithDataProvider } from './entity-search/EntitySearchWithDataProvider'
+export { default as useDnbSearch } from './entity-search/useDnbSearch'
+export { default as useEntitySearch } from './entity-search/useEntitySearch'
 
 // Forms
 export { default as useField } from './forms/hooks/useField'
@@ -31,6 +32,7 @@ export { default as FieldDnbCompany } from './forms/elements/FieldDnbCompany'
 export { default as FieldInput } from './forms/elements/FieldInput'
 export { default as FieldRadios } from './forms/elements/FieldRadios'
 export { default as FieldSelect } from './forms/elements/FieldSelect'
+export { default as FieldUneditable } from './forms/elements/FieldUneditable'
 
 // Status message
 export { default as StatusMessage } from './status-message/StatusMessage'

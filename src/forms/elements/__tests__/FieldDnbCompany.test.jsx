@@ -1,15 +1,18 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import { act } from 'react-dom/test-utils'
+import Details from '@govuk-react/details'
 
 import ButtonLink from '../../../button-link/ButtonLink'
-import CannotFindDetails from '../../../entity-search/CannotFindDetails'
 import EntityList from '../../../entity-search/EntityList'
 import EntityListItem from '../../../entity-search/EntityListItem'
+import FieldUneditable from '../FieldUneditable'
+import FieldInput from '../FieldInput'
+import FormActions from '../FormActions'
 import FieldDnbCompany from '../FieldDnbCompany'
 import Form from '../Form'
-import StatusMessage from '../../../status-message/StatusMessage'
 import Step from '../Step'
+import StatusMessage from '../../../status-message/StatusMessage'
 import { setupSuccessMocks } from '../../../entity-search/__mocks__/company-search'
 import entitySearchFixtures from '../../../entity-search/__fixtures__'
 
@@ -32,7 +35,7 @@ const wrapFieldDnbCompanyForm = () => {
 
           <Step name="first" />
 
-          <Step name="second">
+          <Step name="second" hideBackButton={true} hideForwardButton={true}>
             <FieldDnbCompany
               name="testField"
               label="testLabel"
@@ -67,18 +70,28 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should render the field with the previously selected country', () => {
-      expect(wrapper.find('p').text()).toContain('Based in the UK')
+      const prevSelectedText = wrapper.find(FieldUneditable).text()
+      expect(prevSelectedText).toContain('Country')
+      expect(prevSelectedText).toContain('UK')
+      expect(prevSelectedText).toContain('Change Country')
     })
 
-    test('should render the field with filters', () => {
-      expect(wrapper.find('label').at(1).text()).toEqual('Company name')
-      expect(wrapper.find('[name="search_term"]').exists()).toBeTruthy()
-      expect(wrapper.find('label').at(2).text()).toEqual('Company postcode (optional)')
-      expect(wrapper.find('[name="postal_code"]').exists()).toBeTruthy()
+    test('should render the company name filter', () => {
+      expect(wrapper.find(FieldInput).at(0).text())
+        .toEqual('Company name')
+    })
+
+    test('should render the company postcode filter', () => {
+      expect(wrapper.find(FieldInput).at(1).text())
+        .toEqual('Company postcode (optional)')
     })
 
     test('should not initially render the field with an entity list header', () => {
       expect(wrapper.find(StatusMessage).exists()).toBeFalsy()
+    })
+
+    test('should not initially render the field with an entity list footer', () => {
+      expect(wrapper.find(Details).exists()).toBeFalsy()
     })
   })
 
@@ -86,7 +99,7 @@ describe('FieldDnbCompany', () => {
     beforeAll(() => {
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find('[href="#previously-selected"]').at(0).simulate('click')
+      wrapper.find(FieldUneditable).find(ButtonLink).simulate('click')
     })
 
     test('should go back to the first step', () => {
@@ -94,13 +107,44 @@ describe('FieldDnbCompany', () => {
     })
   })
 
-  describe('when the "Search" button is clicked', () => {
+  describe('when the search button is clicked with empty company name field', () => {
+    beforeAll(async () => {
+      wrapper = wrapFieldDnbCompanyForm()
+
+      wrapper.find(FormActions).find('button').simulate('click')
+
+      await act(flushPromises)
+
+      wrapper.update()
+    })
+
+    test('should show an error', () => {
+      expect(wrapper.text()).toContain('Enter company name')
+    })
+
+    test('should not render the field with an entity list header', () => {
+      expect(wrapper.find(StatusMessage).exists()).toBeFalsy()
+    })
+
+    test('should not render the field with an entity list footer', () => {
+      expect(wrapper.find(Details).exists()).toBeFalsy()
+    })
+
+    test('should not render entities', () => {
+      expect(wrapper.find(EntityList).exists()).toBeFalsy()
+    })
+  })
+
+  describe('when the search button is clicked after filling the company name field', () => {
     beforeAll(async () => {
       setupSuccessMocks(API_ENDPOINT)
 
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find('Search').simulate('click')
+      wrapper.find('input[name="dnbCompanyName"]')
+        .simulate('change', { target: { value: 'test value' } })
+
+      wrapper.find(FormActions).find('button').simulate('click')
 
       await act(flushPromises)
 
@@ -117,8 +161,7 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should render cannot find actions', () => {
-      const actionList = wrapper.find(CannotFindDetails)
-      expect(actionList.find('li').length).toEqual(3)
+      expect(wrapper.text()).toContain('Try improving your search by')
     })
   })
 
@@ -128,7 +171,10 @@ describe('FieldDnbCompany', () => {
 
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find('Search').simulate('click')
+      wrapper.find('input[name="dnbCompanyName"]')
+        .simulate('change', { target: { value: 'test value' } })
+
+      wrapper.find(FormActions).find('button').simulate('click')
 
       await act(flushPromises)
 
@@ -153,13 +199,16 @@ describe('FieldDnbCompany', () => {
 
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find('Search').simulate('click')
+      wrapper.find('input[name="dnbCompanyName"]')
+        .simulate('change', { target: { value: 'test value' } })
+
+      wrapper.find(FormActions).find('button').simulate('click')
 
       await act(flushPromises)
 
       wrapper.update()
 
-      wrapper.find('[href="#cannot-find"]').at(1).simulate('click')
+      wrapper.find(Details).find('button').simulate('click')
     })
 
     test('should set the field cannot find to "true"', () => {

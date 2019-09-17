@@ -3,35 +3,30 @@ import axios from 'axios'
 
 import fixtures from '../__fixtures__'
 
-export function setupSuccessMocks(apiEndpoint) {
-  const mock = new MockAdapter(axios)
+export function setupSuccessMocks(apiEndpoint, adapterOptions = {}, queryParams = {}) {
+  const mock = new MockAdapter(axios, adapterOptions)
   mock
-    .onPost(apiEndpoint, {})
+    .onPost(apiEndpoint, queryParams)
     .reply(200, fixtures.companySearch)
   mock
-    .onPost(apiEndpoint, { search_term: 'some other company' })
+    .onPost(apiEndpoint, { search_term: 'some other company', ...queryParams })
     .reply(200, fixtures.companySearchFilteredByCompanyName)
   mock
-    .onPost(apiEndpoint, { postal_code: 'BN1 4SE' })
+    .onPost(apiEndpoint, { postal_code: 'BN1 4SE', ...queryParams })
     .reply(200, fixtures.companySearchFilteredByPostcode)
+
+  mock.onAny(apiEndpoint).reply(200, fixtures.companySearch)
+  return mock
 }
 
-export function setupErrorMocks(apiEndpoint) {
-  const mock = new MockAdapter(axios)
-  mock.onPost(apiEndpoint, {}).reply(500)
-  mock.onPost(apiEndpoint, { search_term: 'some other company' }).reply(500)
-  mock.onPost(apiEndpoint, { postal_code: 'BN1 4SE' }).reply(500)
+export function setupErrorMocks(apiEndpoint, adapterOptions = {}) {
+  const mock = new MockAdapter(axios, adapterOptions)
+  mock.onPost(apiEndpoint).reply(500)
+  return mock
 }
 
-export function setupNoResultsMocks(apiEndpoint) {
-  const mock = new MockAdapter(axios)
-  mock
-    .onPost(apiEndpoint, {})
-    .reply(200, fixtures.companySearchNoResults)
-  mock
-    .onPost(apiEndpoint, { search_term: 'some other company' })
-    .reply(200, fixtures.companySearchNoResults)
-  mock
-    .onPost(apiEndpoint, { postal_code: 'BN1 4SE' })
-    .reply(200, fixtures.companySearchNoResults)
+export function setupNoResultsMocks(apiEndpoint, adapterOptions = {}) {
+  const mock = new MockAdapter(axios, adapterOptions)
+  mock.onPost(apiEndpoint).reply(200, fixtures.companySearchNoResults)
+  return mock
 }

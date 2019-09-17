@@ -13,9 +13,10 @@ const FieldUneditable = ({ name, label, legend, hint, onChangeClick, children })
       {onChangeClick && (
         <ButtonLink
           inline={true}
+          type="button"
           onClick={onChangeClick}
         >
-          Change <VisuallyHidden>{label}</VisuallyHidden>
+          Change <VisuallyHidden>{label || legend}</VisuallyHidden>
         </ButtonLink>
       )}
     </FieldWrapper>
