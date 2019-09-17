@@ -36,7 +36,10 @@ describe('ButtonLink', () => {
 
     test('should have styles', () => {
       expect(wrapper).toHaveStyleRule('padding', '0')
-      expect(wrapper).toHaveStyleRule('margin', '0')
+      expect(wrapper).toHaveStyleRule('margin', '0 0 0 5px')
+      expect(wrapper).toHaveStyleRule('border', '0')
+      expect(wrapper).toHaveStyleRule('width', 'auto')
+      expect(wrapper).toHaveStyleRule('font', 'inherit')
     })
   })
 })
