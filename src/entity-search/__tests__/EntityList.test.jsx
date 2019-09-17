@@ -36,37 +36,12 @@ describe('EntityList', () => {
       )
     })
 
-    afterEach(() => {
-      onEntityClickSpy.mockReset()
-    })
-
     test('should display the entity list', () => {
       expect(wrapper.find(EntityListItem).length).toEqual(2)
     })
 
-    describe('when the first entity is clicked (which is non-clickable)', () => {
-      test('should not call the onEntityClick event', () => {
-        wrapper
-          .find(EntityListItem)
-          .at(0)
-          .simulate('click')
-
-        expect(onEntityClickSpy.mock.calls.length).toEqual(0)
-      })
-    })
-
-    describe('when the second entity is clicked (which is clickable)', () => {
-      test('should call the onEntityClick event', () => {
-        wrapper
-          .find(EntityListItem)
-          .at(1)
-          .simulate('click')
-
-        expect(onEntityClickSpy.mock.calls.length).toEqual(1)
-        expect(onEntityClickSpy.mock.calls[0][0]).toEqual({
-          some: 'data',
-        })
-      })
+    test('should pass the click callback to the "EntityListItem"', () => {
+      expect(wrapper.find(EntityListItem).first().prop('onEntityClick')).toEqual(onEntityClickSpy)
     })
   })
 
