@@ -1,5 +1,5 @@
 import React from 'react'
-import { get, uniqueId } from 'lodash'
+import { get } from 'lodash'
 
 import PropTypes from 'prop-types'
 import {
@@ -47,11 +47,10 @@ export default class CompaniesHouseCompany extends React.PureComponent {
     const returnsLastMadeUpDate = DateUtils.format(get(activity, 'object.dit:returnsLastMadeUpDate'))
     const returnsNextDueDate = DateUtils.format(get(activity, 'object.dit:returnsNextDueDate'))
     const sicCodes = get(activity, 'object.dit:sicCodes')
-    const sicCodesCollection = sicCodes.map((value, index) => {
-      const id = uniqueId(`id-${index}`)
+    const sicCodesCollection = sicCodes.map((value) => {
       return {
-        id,
         value,
+        id: value,
       }
     })
 

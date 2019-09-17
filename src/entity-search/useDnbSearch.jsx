@@ -10,6 +10,7 @@ function useDnbSearch(apiEndpoint) {
     const { dnb_company, datahub_company } = record
 
     return {
+      id: dnb_company.duns_number,
       heading: dnb_company.primary_name,
       meta: {
         Address: compact([

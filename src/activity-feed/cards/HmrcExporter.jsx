@@ -1,5 +1,5 @@
 import React from 'react'
-import { get, uniqueId } from 'lodash'
+import { get } from 'lodash'
 
 import PropTypes from 'prop-types'
 import {
@@ -36,11 +36,10 @@ export default class HmrcExporter extends React.PureComponent {
     const reference = get(activity, 'object.attributedTo.name')
     const summary = get(activity, 'summary')
     const exportItemCodes = get(activity, 'object.dit:exportItemCodes')
-    const exportItemCodesCollection = exportItemCodes.map((value, index) => {
-      const id = uniqueId(`id-${index}`)
+    const exportItemCodesCollection = exportItemCodes.map((value) => {
       return {
-        id,
         value,
+        id: value,
       }
     })
 

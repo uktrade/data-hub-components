@@ -1,4 +1,3 @@
-import { uniqueId } from 'lodash'
 import React from 'react'
 import styled from 'styled-components'
 import { FONT_SIZE, SPACING } from '@govuk-react/constants'
@@ -19,7 +18,7 @@ const StyledMetaItem = styled('div')`
 const EntityListItemMetaList = ({ meta }) => {
   return (
     Object.keys(meta).map(metaKey => (
-      <StyledMetaItem key={uniqueId()}>
+      <StyledMetaItem key={metaKey}>
         <span>{metaKey}:</span>
         <span>{meta[metaKey]}</span>
       </StyledMetaItem>
