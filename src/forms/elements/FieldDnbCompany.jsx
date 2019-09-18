@@ -70,6 +70,7 @@ const FieldDnbCompany = ({
           name="dnbCompanyName"
           type="search"
           required="Enter company name"
+          maxLength={30}
         />
 
         <FieldInput

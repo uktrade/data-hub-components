@@ -81,6 +81,10 @@ describe('FieldDnbCompany', () => {
         .toEqual('Company name')
     })
 
+    test('should limit the number of characters in the company name filter to 30', () => {
+      expect(wrapper.find(FieldInput).at(0).prop('maxLength')).toEqual(30)
+    })
+
     test('should render the company postcode filter', () => {
       expect(wrapper.find(FieldInput).at(1).text())
         .toEqual('Company postcode (optional)')
