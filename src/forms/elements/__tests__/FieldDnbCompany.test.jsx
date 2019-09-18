@@ -13,7 +13,11 @@ import FieldDnbCompany from '../FieldDnbCompany'
 import Form from '../Form'
 import Step from '../Step'
 import StatusMessage from '../../../status-message/StatusMessage'
-import { setupSuccessMocks } from '../../../entity-search/__mocks__/company-search'
+import {
+  setupErrorMocks,
+  setupNoResultsMocks,
+  setupSuccessMocks,
+} from '../../../entity-search/__mocks__/company-search'
 import entitySearchFixtures from '../../../entity-search/__fixtures__'
 
 const API_ENDPOINT = 'http://localhost:3010/v4/dnb/company-search'
@@ -250,6 +254,64 @@ describe('FieldDnbCompany', () => {
         const expected = JSON.stringify(entitySearchFixtures.companySearch.results[1].dnb_company)
         expect(wrapper.find('.field-value').text()).toEqual(expected)
       })
+    })
+  })
+
+  describe('when an error is returned while searching for company', () => {
+    beforeAll(async () => {
+      setupErrorMocks(API_ENDPOINT)
+
+      wrapper = wrapFieldDnbCompanyForm()
+
+      wrapper.find('input[name="dnbCompanyName"]')
+        .simulate('change', { target: { value: 'test value' } })
+
+      wrapper.find(FormActions).find('button').simulate('click')
+
+      await act(flushPromises)
+
+      wrapper.update()
+    })
+
+    test('should not show the entities', () => {
+      expect(wrapper.find(EntityList).exists()).toBeFalsy()
+    })
+
+    test('should show an error', () => {
+      expect(wrapper.find(StatusMessage).text()).toEqual('Error occurred while searching for company.')
+    })
+
+    test('should display details for "unhappy path"', () => {
+      expect(wrapper.find(Details).prop('summary')).toEqual('I cannot find the company I am looking for')
+    })
+  })
+
+  describe('when no companies were returned while searching for company', () => {
+    beforeAll(async () => {
+      setupNoResultsMocks(API_ENDPOINT)
+
+      wrapper = wrapFieldDnbCompanyForm()
+
+      wrapper.find('input[name="dnbCompanyName"]')
+        .simulate('change', { target: { value: 'test value' } })
+
+      wrapper.find(FormActions).find('button').simulate('click')
+
+      await act(flushPromises)
+
+      wrapper.update()
+    })
+
+    test('should not show the entities', () => {
+      expect(wrapper.find(EntityList).exists()).toBeFalsy()
+    })
+
+    test('should show a warning', () => {
+      expect(wrapper.find(StatusMessage).text()).toEqual('There are no companies to show.')
+    })
+
+    test('should display details for "unhappy path"', () => {
+      expect(wrapper.find(Details).prop('summary')).toEqual('I cannot find the company I am looking for')
     })
   })
 })

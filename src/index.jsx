@@ -17,7 +17,6 @@ export { default as MyCompaniesTile } from './dashboard/my-companies/MyCompanies
 export { default as useMyCompaniesContext } from './dashboard/my-companies/useMyCompaniesContext'
 
 // Entity search
-export { default as EntitySearch } from './entity-search/EntitySearch'
 export { default as useDnbSearch } from './entity-search/useDnbSearch'
 export { default as useEntitySearch } from './entity-search/useEntitySearch'
 
@@ -28,6 +27,7 @@ export { default as useForm } from './forms/hooks/useForm'
 export { default as Form } from './forms/elements/Form'
 export { default as Step } from './forms/elements/Step'
 export { default as FormActions } from './forms/elements/FormActions'
+export { default as FieldAddress } from './forms/elements/FieldAddress'
 export { default as FieldDnbCompany } from './forms/elements/FieldDnbCompany'
 export { default as FieldInput } from './forms/elements/FieldInput'
 export { default as FieldRadios } from './forms/elements/FieldRadios'
