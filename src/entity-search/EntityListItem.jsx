@@ -1,4 +1,3 @@
-import { uniqueId } from 'lodash'
 import React from 'react'
 import styled from 'styled-components'
 import { FONT_SIZE, MEDIA_QUERIES, SPACING } from '@govuk-react/constants'
@@ -43,10 +42,18 @@ const StyledInsetText = styled(InsetText)`
   }
 `
 
-const EntityListItem = ({ canHandleClick, onEntityClick, data, text, heading, meta }) => {
+const EntityListItem = ({
+  id,
+  canHandleClick,
+  onEntityClick,
+  data,
+  text,
+  heading,
+  meta,
+}) => {
   return (
     <StyledEntity
-      key={uniqueId()}
+      key={`entity_${id}`}
       onClick={() => (canHandleClick ? onEntityClick(data) : null)}
       canHandleClick={canHandleClick}
     >
@@ -60,6 +67,7 @@ const EntityListItem = ({ canHandleClick, onEntityClick, data, text, heading, me
 }
 
 EntityListItem.propTypes = {
+  id: PropTypes.string.isRequired,
   onEntityClick: PropTypes.func.isRequired,
   data: PropTypes.object.isRequired,
   canHandleClick: PropTypes.bool.isRequired,

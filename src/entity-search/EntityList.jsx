@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
-import { uniqueId } from 'lodash'
 
 import EntityListItem from './EntityListItem'
 
@@ -20,7 +19,7 @@ const EntityList = ({ entities, onEntityClick }) => {
     <StyledEntityList>
       {entities.map((entity) => {
         return (
-          <StyledEntityListItem key={uniqueId()}>
+          <StyledEntityListItem key={`entity-list-item_${entity.id}`}>
             <EntityListItem onEntityClick={onEntityClick} {...entity} />
           </StyledEntityListItem>
         )

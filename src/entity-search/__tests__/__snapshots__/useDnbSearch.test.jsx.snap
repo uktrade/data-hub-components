@@ -47,6 +47,7 @@ Array [
       },
     },
     "heading": "Some other company",
+    "id": "219999999",
     "meta": Object {
       "Address": "123 ABC Road, Brighton, BN2 9QB",
     },
@@ -112,6 +113,7 @@ Array [
       },
     },
     "heading": "Some company name",
+    "id": "12345678",
     "meta": Object {
       "Address": "123 Fake Street, Brighton, BN1 4SE",
     },
@@ -174,6 +176,7 @@ Array [
       },
     },
     "heading": "Some other company",
+    "id": "219999999",
     "meta": Object {
       "Address": "123 ABC Road, Brighton, BN2 9QB",
     },
@@ -238,6 +241,7 @@ Object {
     },
   },
   "heading": "Some company name",
+  "id": "12345678",
   "meta": Object {
     "Address": "123 Fake Street, Brighton, BN1 4SE",
   },
