@@ -24,9 +24,12 @@ describe('StatusMessage', () => {
       expect(wrappedStatusMessage).toHaveStyleRule('border', '5px solid #005ea5')
       expect(wrappedStatusMessage).toHaveStyleRule('color', '#005ea5')
       expect(wrappedStatusMessage).toHaveStyleRule('padding', '15px')
-      expect(wrappedStatusMessage).toHaveStyleRule('margin-top', '10px')
+      expect(wrappedStatusMessage).toHaveStyleRule('margin-bottom', '20px')
       expect(wrappedStatusMessage).toHaveStyleRule('font-weight', 'bold')
       expect(wrappedStatusMessage).toHaveStyleRule('line-height', '1.5')
+      expect(wrappedStatusMessage).toHaveStyleRule('outline', '3px solid #ffbf47', {
+        modifier: ':focus',
+      })
     })
   })
 
@@ -45,9 +48,12 @@ describe('StatusMessage', () => {
       expect(wrappedStatusMessage).toHaveStyleRule('border', '5px solid #b10e1e')
       expect(wrappedStatusMessage).toHaveStyleRule('color', '#b10e1e')
       expect(wrappedStatusMessage).toHaveStyleRule('padding', '15px')
-      expect(wrappedStatusMessage).toHaveStyleRule('margin-top', '10px')
+      expect(wrappedStatusMessage).toHaveStyleRule('margin-bottom', '20px')
       expect(wrappedStatusMessage).toHaveStyleRule('font-weight', 'bold')
       expect(wrappedStatusMessage).toHaveStyleRule('line-height', '1.5')
+      expect(wrappedStatusMessage).toHaveStyleRule('outline', '3px solid #ffbf47', {
+        modifier: ':focus',
+      })
     })
   })
 })
