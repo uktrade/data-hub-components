@@ -6,24 +6,6 @@ import { compact } from 'lodash'
 import Link from '@govuk-react/link'
 
 function useDnbSearch(apiEndpoint) {
-  function getText(dnb_company, datahub_company) {
-    if (dnb_company.is_out_of_business) {
-      return 'This company has ceased trading and is no longer in business'
-    }
-
-    if (datahub_company) {
-      return (
-        <>
-          This company is already on Data Hub.
-          {' '}
-          <Link href={`/companies/${datahub_company.id}`}>Go to the company page</Link> to record activity.
-        </>
-      )
-    }
-
-    return null
-  }
-
   function transformCompanyRecord(record) {
     const { dnb_company, datahub_company } = record
 
@@ -39,7 +21,13 @@ function useDnbSearch(apiEndpoint) {
           dnb_company.address_postcode,
         ]).join(', '),
       },
-      text: getText(dnb_company, datahub_company),
+      text: datahub_company && (
+        <>
+          This company is already on Data Hub.
+          {' '}
+          <Link href={`/companies/${datahub_company.id}`}>Go to the company page</Link> to record activity.
+        </>
+      ),
       canHandleClick: !datahub_company,
       data: record,
     }
