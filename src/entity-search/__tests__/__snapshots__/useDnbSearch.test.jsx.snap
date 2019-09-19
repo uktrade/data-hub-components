@@ -182,10 +182,49 @@ Array [
     },
     "text": null,
   },
+  Object {
+    "canHandleClick": true,
+    "data": Object {
+      "datahub_company": null,
+      "dnb_company": Object {
+        "address_country": "GB",
+        "address_county": "",
+        "address_line_1": "20 New Fake Road",
+        "address_line_2": "",
+        "address_postcode": "B11 9QC",
+        "address_town": "Bristol",
+        "annual_sales": 2222222,
+        "annual_sales_currency": "USD",
+        "domain": "example.co.uk",
+        "duns_number": "219999996",
+        "employee_number": 100,
+        "global_ultimate_duns_number": "319999999",
+        "global_ultimate_primary_name": "Dissolvex Global",
+        "is_annual_sales_estimated": null,
+        "is_employees_number_estimated": true,
+        "is_out_of_business": true,
+        "legal_status": "corporation",
+        "primary_name": "Dissolvex",
+        "registered_address_country": "GB",
+        "registered_address_county": "",
+        "registered_address_line_1": "",
+        "registered_address_line_2": "",
+        "registered_address_postcode": "B11 9QC",
+        "registered_address_town": "Bristol",
+        "trading_names": Array [],
+      },
+    },
+    "heading": "Dissolvex",
+    "id": "219999996",
+    "meta": Object {
+      "Address": "20 New Fake Road, Bristol, B11 9QC",
+    },
+    "text": "This company has stopped trading and is no longer in business.",
+  },
 ]
 `;
 
-exports[`useDnbSearch when transformCompanyRecord() is called should return transformed company record 1`] = `
+exports[`useDnbSearch when transformCompanyRecord() is called on a company which is in Data Hub should return transformed company record 1`] = `
 Object {
   "canHandleClick": false,
   "data": Object {
@@ -258,5 +297,101 @@ Object {
     </ForwardRef>
      to record activity.
   </React.Fragment>,
+}
+`;
+
+exports[`useDnbSearch when transformCompanyRecord() is called on a company which is not in Data Hub should return transformed company record 1`] = `
+Object {
+  "canHandleClick": true,
+  "data": Object {
+    "datahub_company": null,
+    "dnb_company": Object {
+      "address_country": "GB",
+      "address_county": "",
+      "address_line_1": "123 ABC Road",
+      "address_line_2": "",
+      "address_postcode": "BN2 9QB",
+      "address_town": "Brighton",
+      "annual_sales": 1999999999,
+      "annual_sales_currency": "USD",
+      "domain": "example.co.uk",
+      "duns_number": "219999999",
+      "employee_number": 300,
+      "global_ultimate_duns_number": "319999999",
+      "global_ultimate_primary_name": "Some other company parent",
+      "industry_codes": Array [
+        Object {
+          "usSicV4": "3799",
+          "usSicV4Description": "Mfg transportation equipment",
+        },
+      ],
+      "is_annual_sales_estimated": null,
+      "is_employees_number_estimated": true,
+      "is_out_of_business": false,
+      "legal_status": "corporation",
+      "primary_name": "Some other company",
+      "registered_address_country": "GB",
+      "registered_address_county": "",
+      "registered_address_line_1": "",
+      "registered_address_line_2": "",
+      "registered_address_postcode": "BN2 9QB",
+      "registered_address_town": "Brighton",
+      "registration_numbers": Array [
+        Object {
+          "registration_number": "00016033",
+          "registration_type": "uk_companies_house_number",
+        },
+      ],
+      "trading_names": Array [],
+    },
+  },
+  "heading": "Some other company",
+  "id": "219999999",
+  "meta": Object {
+    "Address": "123 ABC Road, Brighton, BN2 9QB",
+  },
+  "text": null,
+}
+`;
+
+exports[`useDnbSearch when transformCompanyRecord() is called on a dissolved company should return transformed company record 1`] = `
+Object {
+  "canHandleClick": true,
+  "data": Object {
+    "datahub_company": null,
+    "dnb_company": Object {
+      "address_country": "GB",
+      "address_county": "",
+      "address_line_1": "20 New Fake Road",
+      "address_line_2": "",
+      "address_postcode": "B11 9QC",
+      "address_town": "Bristol",
+      "annual_sales": 2222222,
+      "annual_sales_currency": "USD",
+      "domain": "example.co.uk",
+      "duns_number": "219999996",
+      "employee_number": 100,
+      "global_ultimate_duns_number": "319999999",
+      "global_ultimate_primary_name": "Dissolvex Global",
+      "is_annual_sales_estimated": null,
+      "is_employees_number_estimated": true,
+      "is_out_of_business": true,
+      "legal_status": "corporation",
+      "primary_name": "Dissolvex",
+      "registered_address_country": "GB",
+      "registered_address_county": "",
+      "registered_address_line_1": "",
+      "registered_address_line_2": "",
+      "registered_address_postcode": "B11 9QC",
+      "registered_address_town": "Bristol",
+      "trading_names": Array [],
+    },
+  },
+  "heading": "Dissolvex",
+  "id": "219999996",
+  "meta": Object {
+    "Address": "20 New Fake Road, Bristol, B11 9QC",
+  },
+  "text": "This company has stopped trading and is no longer in business.",
 }
 `;
