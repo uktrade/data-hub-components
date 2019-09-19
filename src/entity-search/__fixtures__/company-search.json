@@ -97,6 +97,36 @@
         "legal_status": "corporation"
       },
       "datahub_company": null
+    },
+    {
+      "dnb_company": {
+        "duns_number": "219999996",
+        "primary_name": "Dissolvex",
+        "trading_names": [],
+        "global_ultimate_duns_number": "319999999",
+        "global_ultimate_primary_name": "Dissolvex Global",
+        "domain": "example.co.uk",
+        "is_out_of_business": true,
+        "address_line_1": "20 New Fake Road",
+        "address_line_2": "",
+        "address_town": "Bristol",
+        "address_county": "",
+        "address_postcode": "B11 9QC",
+        "address_country": "GB",
+        "registered_address_line_1": "",
+        "registered_address_line_2": "",
+        "registered_address_town": "Bristol",
+        "registered_address_county": "",
+        "registered_address_postcode": "B11 9QC",
+        "registered_address_country": "GB",
+        "annual_sales": 2222222,
+        "annual_sales_currency": "USD",
+        "is_annual_sales_estimated": null,
+        "employee_number": 100,
+        "is_employees_number_estimated": true,
+        "legal_status": "corporation"
+      },
+      "datahub_company": null
     }
   ]
 }

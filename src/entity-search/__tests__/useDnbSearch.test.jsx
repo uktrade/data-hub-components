@@ -11,12 +11,40 @@ describe('useDnbSearch', () => {
   let axiosMock
   let response
 
-  describe('when transformCompanyRecord() is called', () => {
+  describe('when transformCompanyRecord() is called on a company which is in Data Hub', () => {
     let transformedCompanyRecord
 
     beforeAll(() => {
       transformedCompanyRecord = result.current.transformCompanyRecord(
         searchResultsFixture.results[0],
+      )
+    })
+
+    test('should return transformed company record', () => {
+      expect(transformedCompanyRecord).toMatchSnapshot()
+    })
+  })
+
+  describe('when transformCompanyRecord() is called on a company which is not in Data Hub', () => {
+    let transformedCompanyRecord
+
+    beforeAll(() => {
+      transformedCompanyRecord = result.current.transformCompanyRecord(
+        searchResultsFixture.results[1],
+      )
+    })
+
+    test('should return transformed company record', () => {
+      expect(transformedCompanyRecord).toMatchSnapshot()
+    })
+  })
+
+  describe('when transformCompanyRecord() is called on a dissolved company', () => {
+    let transformedCompanyRecord
+
+    beforeAll(() => {
+      transformedCompanyRecord = result.current.transformCompanyRecord(
+        searchResultsFixture.results[2],
       )
     })
 
@@ -31,6 +59,8 @@ describe('useDnbSearch', () => {
       response = await result.current.findCompany()
     })
 
+    afterAll(() => axiosMock.restore())
+
     test('should return all DNB search results', () => {
       expect(response).toMatchSnapshot()
     })
@@ -43,6 +73,8 @@ describe('useDnbSearch', () => {
         search_term: 'some other company',
       })
     })
+
+    afterAll(() => axiosMock.restore())
 
     test('should call endpoint with the specified filter', () => {
       expect(axiosMock.history.post[0].data).toEqual(JSON.stringify({
@@ -65,6 +97,8 @@ describe('useDnbSearch', () => {
         response = e
       }
     })
+
+    afterAll(() => axiosMock.restore())
 
     test('should return an error message', () => {
       expect(response.toString()).toEqual(
