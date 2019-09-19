@@ -15,6 +15,46 @@ const testField2 = {
 }
 
 describe('useForm', () => {
+  describe('when the hook is called', () => {
+    let hook
+
+    beforeAll(() => {
+      const { result } = renderHook(() => useForm())
+      hook = result.current
+    })
+
+    test('should return initial values', () => {
+      expect(hook).toEqual({
+        currentStep: 0,
+        deregisterField: hook.deregisterField,
+        deregisterStep: hook.deregisterStep,
+        errors: {},
+        fields: {},
+        getFieldState: hook.getFieldState,
+        getStepIndex: hook.getStepIndex,
+        goBack: hook.goBack,
+        goForward: hook.goForward,
+        goToStepByName: hook.goToStepByName,
+        isDirty: false,
+        isFirstStep: hook.isFirstStep,
+        isLastStep: hook.isLastStep,
+        isSubmitted: false,
+        registerField: hook.registerField,
+        registerStep: hook.registerStep,
+        setCurrentStep: hook.setCurrentStep,
+        setFieldError: hook.setFieldError,
+        setFieldTouched: hook.setFieldTouched,
+        setFieldValue: hook.setFieldValue,
+        setIsSubmitted: hook.setIsSubmitted,
+        steps: [],
+        touched: {},
+        validateField: hook.validateField,
+        validateForm: hook.validateForm,
+        values: {},
+      })
+    })
+  })
+
   describe('when getFieldState() is called', () => {
     let fieldState
 
@@ -165,6 +205,10 @@ describe('useForm', () => {
       expect(result.current.values).toEqual({
         testField: 'testValue',
       })
+    })
+
+    test('should set "isDirty" to false', () => {
+      expect(result.current.isDirty).toBeTruthy()
     })
   })
 
@@ -443,6 +487,35 @@ describe('useForm', () => {
 
     test('should not throw an error', () => {
       expect(error).toBeUndefined()
+    })
+  })
+
+  describe('when setIsSubmitted() is called', () => {
+    const { result } = renderHook(() => useForm())
+    let error
+
+    act(() => {
+      try {
+        result.current.goForward()
+      } catch (e) {
+        error = e
+      }
+    })
+
+    test('should not throw an error', () => {
+      expect(error).toBeUndefined()
+    })
+  })
+
+  describe('when setIsSubmitted() is called with a "true" value', () => {
+    const { result } = renderHook(() => useForm())
+
+    act(() => {
+      result.current.setIsSubmitted(true)
+    })
+
+    test('should set "isSubmitted" to true', () => {
+      expect(result.current.isSubmitted).toBeTruthy()
     })
   })
 })

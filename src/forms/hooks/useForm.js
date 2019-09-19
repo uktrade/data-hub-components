@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { isEmpty } from 'lodash'
+import { useBeforeUnload } from 'react-use'
 
 function useForm({
   initialValues = {},
@@ -12,6 +13,14 @@ function useForm({
   const [fields, setFields] = useState({})
   const [steps, setSteps] = useState([])
   const [currentStep, setCurrentStep] = useState(initialStep)
+  const [isSubmitted, setIsSubmitted] = useState(false)
+
+  const isDirty = !isEmpty(values) && values !== initialValues
+
+  useBeforeUnload(
+    isDirty && !isSubmitted,
+    'Changes that you made will not be saved.',
+  )
 
   const getFieldState = (name) => {
     return {
@@ -143,6 +152,8 @@ function useForm({
     if (typeof onSubmit === 'function') {
       onSubmit(values)
     }
+
+    setIsSubmitted(true)
   }
   const goBack = () => setCurrentStep(currentStep - 1)
   const goToStepByName = stepName => setCurrentStep(steps.indexOf(stepName))
@@ -165,6 +176,9 @@ function useForm({
     registerStep,
     deregisterStep,
     setCurrentStep,
+    isDirty,
+    isSubmitted,
+    setIsSubmitted,
     goForward,
     goBack,
     goToStepByName,
