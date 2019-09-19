@@ -508,23 +508,6 @@ describe('useForm', () => {
     })
   })
 
-  describe('when setIsSubmitted() is called', () => {
-    const { result } = renderHook(() => useForm())
-    let error
-
-    act(() => {
-      try {
-        result.current.goForward()
-      } catch (e) {
-        error = e
-      }
-    })
-
-    test('should not throw an error', () => {
-      expect(error).toBeUndefined()
-    })
-  })
-
   describe('when setIsSubmitted() is called with a "true" value', () => {
     const { result } = renderHook(() => useForm())
 

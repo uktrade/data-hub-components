@@ -8,6 +8,26 @@ import FieldInput from '../FieldInput'
 describe('FieldInput', () => {
   let wrapper
 
+  describe('when the field is mounted', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          <FieldInput type="text" name="testField" />
+        </Form>,
+      )
+    })
+
+    test('should set default attributes on the input', () => {
+      const input = wrapper.find('input[type="text"]')
+      expect(input.prop('id')).toEqual('testField')
+      expect(input.prop('name')).toEqual('testField')
+      expect(input.prop('type')).toEqual('text')
+      expect(input.prop('value')).toEqual('')
+      expect(input.prop('onBlur')).toBeInstanceOf(Function)
+      expect(input.prop('onChange')).toBeInstanceOf(Function)
+    })
+  })
+
   describe('when the field does specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
@@ -107,6 +127,22 @@ describe('FieldInput', () => {
 
     test('should update value in form state', () => {
       expect(wrapper.find('#values').text()).toEqual('testValue')
+    })
+  })
+
+  describe('when extra props are passed to the component', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          <FieldInput type="text" name="testField" minLength={3} maxLength={10} />
+        </Form>,
+      )
+    })
+
+    test('should render input with all the extra props', () => {
+      const input = wrapper.find('input[type="text"]')
+      expect(input.prop('minLength')).toEqual(3)
+      expect(input.prop('maxLength')).toEqual(10)
     })
   })
 })
