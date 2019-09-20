@@ -195,20 +195,38 @@ describe('useForm', () => {
   })
 
   describe('when setFieldValue() is called', () => {
-    const { result } = renderHook(() => useForm())
+    describe('when field value is populated', () => {
+      const { result } = renderHook(() => useForm())
 
-    act(() => {
-      result.current.setFieldValue('testField', 'testValue')
-    })
+      act(() => {
+        result.current.setFieldValue('testField', 'testValue')
+      })
 
-    test('should set field value', () => {
-      expect(result.current.values).toEqual({
-        testField: 'testValue',
+      test('should set the field value', () => {
+        expect(result.current.values).toEqual({
+          testField: 'testValue',
+        })
+      })
+
+      test('should set "isDirty" to true', () => {
+        expect(result.current.isDirty).toBeTruthy()
       })
     })
 
-    test('should set "isDirty" to false', () => {
-      expect(result.current.isDirty).toBeTruthy()
+    describe('when field value is an empty string', () => {
+      const { result } = renderHook(() => useForm())
+
+      act(() => {
+        result.current.setFieldValue('testField', '')
+      })
+
+      test('should unset the field value', () => {
+        expect(result.current.values).toEqual({})
+      })
+
+      test('should set "isDirty" to false', () => {
+        expect(result.current.isDirty).toBeFalsy()
+      })
     })
   })
 
