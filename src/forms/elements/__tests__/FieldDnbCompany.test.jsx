@@ -161,7 +161,7 @@ describe('FieldDnbCompany', () => {
 
     test('should render entities', () => {
       const entityList = wrapper.find(EntityList)
-      expect(entityList.find('li').length).toEqual(2)
+      expect(entityList.find('li').length).toEqual(3)
     })
 
     test('should render cannot find actions', () => {
