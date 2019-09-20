@@ -16,7 +16,7 @@ jobs:
           paths:
             - node_modules
       - run: yarn lint
-      - run: yarn test --verbose
+      - run: yarn test --verbose --logHeapUsage
       - store_artifacts:
           path: test-results
       - store_test_results:
