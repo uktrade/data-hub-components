@@ -1,5 +1,8 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import HintText from '@govuk-react/hint-text'
+import ErrorText from '@govuk-react/error-text'
+
 import CreateListForm from '../CreateListForm'
 
 describe('CreateListForm', () => {
@@ -19,6 +22,7 @@ describe('CreateListForm', () => {
     const hint = wrapper.find('span').at(0)
     const button = wrapper.find('button')
     const cancelUrl = wrapper.find('a[href="/companies/"]')
+
     test('should render correctly', () => {
       expect(label.text()).toEqual('List name')
       expect(hint.text()).toEqual('Hint')
@@ -27,6 +31,7 @@ describe('CreateListForm', () => {
       expect(cancelUrl).toHaveLength(1)
     })
   })
+
   describe('When not passing props that are not required', () => {
     const wrapper = mount(
       <CreateListForm
@@ -37,13 +42,15 @@ describe('CreateListForm', () => {
         maxLength={30}
       />,
     )
-    const hint = wrapper.find('span').at(0)
+    const hint = wrapper.find(HintText)
     const cancelUrl = wrapper.find('a[href="/companies/"]')
+
     test('should render correctly', () => {
-      expect(hint.text()).toEqual('')
+      expect(hint.exists()).toBeFalsy()
       expect(cancelUrl).toHaveLength(1)
     })
   })
+
   describe('when submitting with no errors', () => {
     const onSubmitSpy = jest.fn()
     const wrapper = mount(
@@ -55,6 +62,7 @@ describe('CreateListForm', () => {
         maxLength={30}
       />,
     )
+
     test('should fire a onSubmit handler', () => {
       const input = wrapper.find('input')
       input.simulate('change', { target: { value: 'list name' } })
@@ -62,6 +70,7 @@ describe('CreateListForm', () => {
       expect(onSubmitSpy).toBeCalledTimes(1)
     })
   })
+
   describe('when submitting form with errors', () => {
     const onSubmitSpy = jest.fn()
     const wrapper = mount(
@@ -73,19 +82,19 @@ describe('CreateListForm', () => {
         maxLength={30}
       />,
     )
+
     test('should prompt for a list name', () => {
       wrapper.simulate('submit')
-      const errorMessage = wrapper.find('span').at(1)
       expect(onSubmitSpy).toBeCalledTimes(0)
-      expect(errorMessage.text()).toContain('Enter a name for your list')
+      expect(wrapper.find(ErrorText).text()).toEqual('Enter a name for your list')
     })
+
     test('should ask for less than 30 characters', () => {
       const input = wrapper.find('input')
       input.simulate('change', { target: { value: 'oneverylooooooooooooooooooooooooooooooooooooonnnnnngggg name' } })
       wrapper.simulate('submit')
-      const errorMessage = wrapper.find('span').at(1)
       expect(onSubmitSpy).toBeCalledTimes(0)
-      expect(errorMessage.text()).toContain('Enter list name which is no longer than 30 characters')
+      expect(wrapper.find(ErrorText).text()).toEqual('Enter list name which is no longer than 30 characters')
     })
   })
 })
