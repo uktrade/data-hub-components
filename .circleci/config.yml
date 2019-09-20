@@ -9,14 +9,20 @@ jobs:
       - restore_cache:
           name: Restore downloaded packages from cache
           key: yarn-dependency-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
-      - run: yarn install --frozen-lockfile
+      - run:
+          name: Install node packages
+          command: yarn install --frozen-lockfile
       - save_cache:
           name: Save downloaded packages to cache
           key: yarn-dependency-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
-      - run: yarn lint
-      - run: yarn test --verbose --logHeapUsage --maxWorkers=2
+      - run:
+          name: Run linter
+          command: yarn lint
+      - run:
+          name: Run tests
+          command: yarn test --verbose --logHeapUsage --maxWorkers=2
       - store_artifacts:
           path: test-results
       - store_test_results:
@@ -24,7 +30,9 @@ jobs:
       - run:
           name: Publish coverage to Codecov
           command: bash <(curl -s https://codecov.io/bash) -f test-results/coverage/coverage-final.json
-      - run: yarn release # Will only release to NPM on master branch
+      - run:
+          name: Release to npm (only on master)
+          command: yarn release
 
 workflows:
   version: 2
