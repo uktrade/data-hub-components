@@ -1,6 +1,8 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import HintText from '@govuk-react/hint-text'
+import Label from '@govuk-react/label'
+import ErrorText from '@govuk-react/error-text'
 
 import Form from '../Form'
 import FieldInput from '../FieldInput'
@@ -42,7 +44,7 @@ describe('FieldInput', () => {
     })
 
     test('should render the field with a label', () => {
-      expect(wrapper.find('label').exists()).toBeTruthy()
+      expect(wrapper.find(Label).exists()).toBeTruthy()
     })
   })
 
@@ -56,8 +58,7 @@ describe('FieldInput', () => {
     })
 
     test('should render the field without a label', () => {
-      const label = wrapper.find('span')
-      expect(label.text()).toEqual('')
+      expect(wrapper.find(Label).exists()).toBeFalsy()
     })
   })
 
@@ -100,8 +101,11 @@ describe('FieldInput', () => {
     })
 
     test('should render with an error', () => {
-      const errorContainer = wrapper.find('span').at(1)
-      expect(errorContainer.text()).toEqual('testError')
+      const inputWrapper = wrapper.find('div').at(1)
+      expect(wrapper.find(ErrorText).text()).toEqual('testError')
+      expect(inputWrapper).toHaveStyleRule('border-left', '4px solid #b10e1e')
+      expect(inputWrapper).toHaveStyleRule('margin-right', '15px')
+      expect(inputWrapper).toHaveStyleRule('padding-left', '10px')
     })
   })
 

@@ -52,6 +52,7 @@
     "@govuk-react/heading": "^0.7.1",
     "@govuk-react/hint-text": "^0.7.1",
     "@govuk-react/icons": "^0.7.1",
+    "@govuk-react/input": "^0.7.1",
     "@govuk-react/input-field": "^0.7.1",
     "@govuk-react/inset-text": "^0.7.1",
     "@govuk-react/label": "^0.7.1",
