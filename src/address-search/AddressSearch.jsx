@@ -59,7 +59,7 @@ const AddressSearch = ({
         Find UK address
       </Button>
 
-      {addressList && (
+      {(addressList && addressList.length > 0) && (
         <FieldWrapper name="address" label="Select an address">
           <Select
             value={address}
