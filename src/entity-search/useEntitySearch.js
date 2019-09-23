@@ -1,21 +1,23 @@
 import { useState } from 'react'
 
 function useEntitySearch(searchEntitiesCallback) {
-  const [entities, setEntities] = useState(null)
+  const [entities, setEntities] = useState([])
   const [error, setError] = useState(null)
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [searching, setSearching] = useState(false)
+  const [searched, setSearched] = useState(false)
 
   async function onEntitySearch(filters = {}) {
     try {
-      setIsSubmitting(true)
-      const newEntities = await searchEntitiesCallback(filters)
+      setSearching(true)
       setError(null)
+      const newEntities = await searchEntitiesCallback(filters)
       setEntities(newEntities)
     } catch (ex) {
-      setEntities(null)
+      setEntities([])
       setError('Error occurred while searching entities.')
     } finally {
-      setIsSubmitting(false)
+      setSearching(false)
+      setSearched(true)
     }
   }
 
@@ -23,7 +25,8 @@ function useEntitySearch(searchEntitiesCallback) {
     onEntitySearch,
     entities,
     error,
-    isSubmitting,
+    searching,
+    searched,
   }
 }
 

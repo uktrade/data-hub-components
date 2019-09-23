@@ -21,12 +21,16 @@ describe('useEntitySearch', () => {
       expect(hook.result.current.error).toBeNull()
     })
 
-    test('should set "entities" as null', () => {
-      expect(hook.result.current.entities).toBeNull()
+    test('should set "entities" as an empty array', () => {
+      expect(hook.result.current.entities).toEqual([])
     })
 
-    test('should set "isSubmitting" as false', () => {
-      expect(hook.result.current.isSubmitting).toBeFalsy()
+    test('should set "searching" as false', () => {
+      expect(hook.result.current.searching).toBeFalsy()
+    })
+
+    test('should set "searched" as false', () => {
+      expect(hook.result.current.searched).toBeFalsy()
     })
 
     test('should not call the search callback', () => {
@@ -61,8 +65,12 @@ describe('useEntitySearch', () => {
       expect(hook.result.current.entities).toEqual(mockEntities)
     })
 
-    test('should set "isSubmitting" as false', () => {
-      expect(hook.result.current.isSubmitting).toBeFalsy()
+    test('should set "searching" as false', () => {
+      expect(hook.result.current.searching).toBeFalsy()
+    })
+
+    test('should set "searched" as true', () => {
+      expect(hook.result.current.searched).toBeTruthy()
     })
   })
 
@@ -80,12 +88,16 @@ describe('useEntitySearch', () => {
       expect(hook.result.current.error).toEqual('Error occurred while searching entities.')
     })
 
-    test('should set "entities" as null', () => {
-      expect(hook.result.current.entities).toBeNull()
+    test('should set "entities" as an empty array', () => {
+      expect(hook.result.current.entities).toEqual([])
     })
 
-    test('should set "isSubmitting" as false', () => {
-      expect(hook.result.current.isSubmitting).toBeFalsy()
+    test('should set "searching" as false', () => {
+      expect(hook.result.current.searching).toBeFalsy()
+    })
+
+    test('should set "searched" as true', () => {
+      expect(hook.result.current.searched).toBeTruthy()
     })
   })
 })

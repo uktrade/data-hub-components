@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { isEmpty } from 'lodash'
-import { WIDTHS } from '@govuk-react/constants'
 
+import { WIDTHS } from '@govuk-react/constants'
+import { Search } from '@govuk-react/icons'
 import UnorderedList from '@govuk-react/unordered-list'
 import Details from '@govuk-react/details'
 import Button from '@govuk-react/button'
 import Paragraph from '@govuk-react/paragraph'
 import ListItem from '@govuk-react/list-item'
 import LoadingBox from '@govuk-react/loading-box'
-import { Search } from '@govuk-react/icons'
 
 import useFormContext from '../hooks/useFormContext'
 import StatusMessage from '../../status-message/StatusMessage'
@@ -19,8 +19,8 @@ import FieldInput from './FieldInput'
 import ButtonLink from '../../button-link/ButtonLink'
 import useEntitySearch from '../../entity-search/useEntitySearch'
 import useDnbSearch from '../../entity-search/useDnbSearch'
-import EntitySearch from '../../entity-search/EntitySearch'
 import FormActions from './FormActions'
+import EntityList from '../../entity-search/EntityList'
 
 const FieldDnbCompany = ({
   name,
@@ -33,7 +33,7 @@ const FieldDnbCompany = ({
 }) => {
   const { values, goBack, goForward, validateForm, setFieldValue } = useFormContext()
   const { findCompany } = useDnbSearch(apiEndpoint)
-  const { onEntitySearch, isSubmitting, error, entities } = useEntitySearch(findCompany)
+  const { onEntitySearch, searching, searched, error, entities } = useEntitySearch(findCompany)
 
   function onSearchClick(e) {
     e.preventDefault()
@@ -57,7 +57,7 @@ const FieldDnbCompany = ({
   }
 
   return (
-    <LoadingBox timeOut={0} loading={isSubmitting}>
+    <LoadingBox timeOut={0} loading={searching}>
       <FieldWrapper {...({ name, label, legend, hint })}>
         {country && (
           <FieldUneditable legend="Country" name="dnbCountry" onChangeClick={goBack}>
@@ -84,17 +84,27 @@ const FieldDnbCompany = ({
           <Button icon={<Search />} onClick={onSearchClick}>Find company</Button>
         </FormActions>
 
-        <EntitySearch
-          error={error}
-          entities={entities}
-          onEntityClick={onEntityClick}
-          entityListHeader={(
-            <StatusMessage>
-              The search results below are verified company records from Dun & Bradstreet,
-              an external and up to date source of company information.
-            </StatusMessage>
-          )}
-          entityListFooter={(
+        {searched && (
+          <>
+            {entities.length > 0 && (
+              <>
+                <StatusMessage>
+                  The search results below are verified company records from Dun & Bradstreet,
+                  an external and up to date source of company information.
+                </StatusMessage>
+
+                <EntityList entities={entities} onEntityClick={onEntityClick} />
+              </>
+            )}
+
+            {!error && entities.length === 0 && (
+              <StatusMessage>There are no companies to show.</StatusMessage>
+            )}
+
+            {error && (
+              <StatusMessage>Error occurred while searching for company.</StatusMessage>
+            )}
+
             <Details summary="I cannot find the company I am looking for">
               <Paragraph>Try improving your search by:</Paragraph>
               <UnorderedList>
@@ -111,8 +121,8 @@ const FieldDnbCompany = ({
                 I still cannot find the company
               </ButtonLink>
             </Details>
-          )}
-        />
+          </>
+        )}
       </FieldWrapper>
     </LoadingBox>
   )
