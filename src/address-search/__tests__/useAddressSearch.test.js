@@ -3,10 +3,10 @@ import { act } from 'react-test-renderer'
 import useAddressSearch from '../useAddressSearch'
 
 const mockAddressList = [{
-  county: 'Greater London',
-  city: 'London',
   address1: 'DESIGN102 - 102 Petty France',
   address2: ' Westminster',
+  city: 'London',
+  county: 'Greater London',
   postcode: 'SW1H 9AJ',
   country: '80756b9a-5d95-e211-a939-e4115bead28a',
 }]
@@ -66,7 +66,7 @@ describe('useAddressSearch', () => {
     })
   })
 
-  describe('when onAddressSearch() is called and the search returns error', () => {
+  describe('when onAddressSearch() is called and the search is unsuccessful', () => {
     const searchCallbackSpy = jest.fn(() => Promise.reject(Error('Some error')))
 
     beforeAll(async () => {
