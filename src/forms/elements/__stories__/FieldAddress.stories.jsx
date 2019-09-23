@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 import Form from '../Form'
 import FieldAddress from '../FieldAddress'
-import { setupSuccessMocks } from '../../../address-search/__mocks__/postcode-lookup'
+import { setupPostcodeMock200 } from '../../../address-search/__mocks__/postcode-lookup'
 
 const API_ENDPOINT = 'http://localhost:3000/api/postcodelookup'
 const POSTCODE = 'SW1H 9AJ'
@@ -18,7 +18,7 @@ const StyledButton = styled(Button)`
 
 storiesOf('Forms', module)
   .add('FieldAddress - success', () => {
-    setupSuccessMocks(`${API_ENDPOINT}/${POSTCODE}`, { delayResponse: 750 })
+    setupPostcodeMock200(`${API_ENDPOINT}/${POSTCODE}`, { delayResponse: 750 })
     return (
       <Form onSubmit={action('onSubmit')}>
         {form => (

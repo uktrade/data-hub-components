@@ -163,8 +163,10 @@ describe('FieldDnbCompany', () => {
   })
 
   describe('when the search button is clicked after filling the company name field', () => {
+    let axiosMock
+
     beforeAll(async () => {
-      setupSuccessMocks(API_ENDPOINT)
+      axiosMock = setupSuccessMocks(API_ENDPOINT)
 
       wrapper = wrapFieldDnbCompanyForm()
 
@@ -176,6 +178,10 @@ describe('FieldDnbCompany', () => {
       await act(flushPromises)
 
       wrapper.update()
+    })
+
+    afterAll(() => {
+      axiosMock.restore()
     })
 
     test('should render the field with an entity list header', () => {
@@ -193,8 +199,10 @@ describe('FieldDnbCompany', () => {
   })
 
   describe('when an entity is clicked', () => {
+    let axiosMock
+
     beforeAll(async () => {
-      setupSuccessMocks(API_ENDPOINT)
+      axiosMock = setupSuccessMocks(API_ENDPOINT)
 
       wrapper = wrapFieldDnbCompanyForm()
 
@@ -210,6 +218,10 @@ describe('FieldDnbCompany', () => {
       wrapper.find(EntityListItem).at(1).simulate('click')
     })
 
+    afterAll(() => {
+      axiosMock.restore()
+    })
+
     test('should set the field value', () => {
       const expected = JSON.stringify(entitySearchFixtures.companySearch.results[1].dnb_company)
       expect(wrapper.find('.field-value').text()).toEqual(expected)
@@ -221,8 +233,10 @@ describe('FieldDnbCompany', () => {
   })
 
   describe('when the "I still cannot find the company" link is clicked', () => {
+    let axiosMock
+
     beforeAll(async () => {
-      setupSuccessMocks(API_ENDPOINT)
+      axiosMock = setupSuccessMocks(API_ENDPOINT)
 
       wrapper = wrapFieldDnbCompanyForm()
 
@@ -236,6 +250,10 @@ describe('FieldDnbCompany', () => {
       wrapper.update()
 
       wrapper.find(Details).find('button').simulate('click')
+    })
+
+    afterAll(() => {
+      axiosMock.restore()
     })
 
     test('should set the field cannot find to "true"', () => {
