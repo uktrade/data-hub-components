@@ -142,8 +142,8 @@ describe('Step', () => {
         formState = JSON.parse(wrapper.find('.form-state').text())
       })
 
-      test('should render only a "Next" button', () => {
-        expect(wrapper.find('button').text()).toEqual('Next')
+      test('should render only a "Continue" button', () => {
+        expect(wrapper.find('button').text()).toEqual('Continue')
       })
       test('should not change the current step', () => {
         expect(formState.currentStep).toEqual(0)
@@ -186,8 +186,8 @@ describe('Step', () => {
     })
 
     describe('when the form is mounted', () => {
-      test('should render only a "Next" button', () => {
-        expect(wrapper.find('button').text()).toEqual('Next')
+      test('should render only a "Continue" button', () => {
+        expect(wrapper.find('button').text()).toEqual('Continue')
       })
       test('should save the current step to form state', () => {
         expect(formState.currentStep).toEqual(0)
@@ -207,7 +207,7 @@ describe('Step', () => {
         ])
       })
 
-      describe('when the required field is not filled and the "Next" button is clicked', () => {
+      describe('when the required field is not filled and the "Continue" button is clicked', () => {
         beforeAll(() => {
           wrapper.find('button').simulate('submit')
           formState = JSON.parse(wrapper.find('.form-state').text())
@@ -234,7 +234,7 @@ describe('Step', () => {
         })
       })
 
-      describe('when the required field is filled and the "Next" button is clicked', () => {
+      describe('when the required field is filled and the "Continue" button is clicked', () => {
         beforeAll(() => {
           wrapper.find('#testField1').simulate('change', { target: { value: 'hello' } })
           wrapper.find('button').simulate('submit')
