@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { isEmpty, omit } from 'lodash'
+import { isEmpty, omit, set, get } from 'lodash'
 import { useBeforeUnload } from 'react-use'
 
 function useForm({
@@ -24,9 +24,9 @@ function useForm({
 
   const getFieldState = (name) => {
     return {
-      value: values[name] || '',
-      touched: touched[name] || false,
-      error: errors[name] || null,
+      value: get(values, name) || '',
+      touched: get(touched, name) || false,
+      error: get(errors, name) || null,
     }
   }
 
@@ -78,7 +78,13 @@ function useForm({
       return omit(prevValues, name)
     }
 
-    return { ...prevValues, [name]: fieldValue }
+    const blah = { ...prevValues }
+
+    set(blah, name, fieldValue)
+
+    return blah
+
+    // return { ...prevValues, [name]: fieldValue }
   })
   const setFieldTouched = (name, fieldTouched) => {
     setTouched(prevTouched => ({ ...prevTouched, [name]: fieldTouched }))

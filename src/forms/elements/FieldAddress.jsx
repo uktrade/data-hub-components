@@ -26,12 +26,13 @@ const FieldAddress = ({
   const isUK = country === UNITED_KINGDOM
 
   function onAddressSelect(address) {
-    setFieldValue('postcode', address.postcode)
-    setFieldValue('address1', address.address1)
-    setFieldValue('address2', address.address2)
-    setFieldValue('city', address.city)
-    setFieldValue('county', address.county)
-    setFieldValue('country', country)
+    setFieldValue('address', address)
+    // setFieldValue('postcode', address.postcode)
+    // setFieldValue('address1', address.address1)
+    // setFieldValue('address2', address.address2)
+    // setFieldValue('city', address.city)
+    // setFieldValue('county', address.county)
+    // setFieldValue('country', country)
   }
 
   return (
@@ -51,7 +52,7 @@ const FieldAddress = ({
             onAddressSelect={onAddressSelect}
           />
         )}
-        <FieldInput type="text" name="address1" label="Address line 1" required="Enter address line 1" />
+        <FieldInput type="text" name="address.line_1" label="Address line 1" required="Enter address line 1" />
         <FieldInput type="text" name="address2" label="Address line 2 (optional)" />
         <FieldInput type="text" name="city" label="Town or city" required="Enter town or city" />
         <FieldInput type="text" name="county" label="County (optional)" />
