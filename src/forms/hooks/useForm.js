@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { isEmpty, omit } from 'lodash'
+import { isEmpty, isEqual, omit } from 'lodash'
 import { useBeforeUnload } from 'react-use'
 
 function useForm({
@@ -14,8 +14,18 @@ function useForm({
   const [steps, setSteps] = useState([])
   const [currentStep, setCurrentStep] = useState(initialStep)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const isDirty = !isEmpty(values) && !isEqual(values, initialValues)
 
-  const isDirty = !isEmpty(values) && values !== initialValues
+  const formState = {
+    values,
+    touched,
+    errors,
+    fields,
+    steps,
+    currentStep,
+    isSubmitted,
+    isDirty,
+  }
 
   useBeforeUnload(
     isDirty && !isSubmitted,
@@ -40,12 +50,12 @@ function useForm({
 
     if (field && 'validate' in field) {
       if (typeof field.validate === 'function') {
-        return field.validate(value, name)
+        return field.validate(value, name, formState)
       }
 
       if (Array.isArray(field.validate)) {
         const validationErrors = field.validate
-          .map(validator => validator(value, field))
+          .map(validator => validator(value, field, formState))
           .filter(e => e)
         return validationErrors.length > 0 ? validationErrors[0] : null
       }
@@ -163,10 +173,7 @@ function useForm({
   const goToStepByName = stepName => setCurrentStep(steps.indexOf(stepName))
 
   return {
-    fields,
-    values,
-    touched,
-    errors,
+    ...formState,
     registerField,
     deregisterField,
     setFieldValue,
@@ -175,13 +182,9 @@ function useForm({
     getFieldState,
     validateForm,
     validateField,
-    currentStep,
-    steps,
     registerStep,
     deregisterStep,
     setCurrentStep,
-    isDirty,
-    isSubmitted,
     setIsSubmitted,
     goForward,
     goBack,

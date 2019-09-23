@@ -23,7 +23,7 @@ describe('useForm', () => {
       hook = result.current
     })
 
-    test('should return initial values', () => {
+    test('should return default properties', () => {
       expect(hook).toEqual({
         currentStep: 0,
         deregisterField: hook.deregisterField,
@@ -52,6 +52,31 @@ describe('useForm', () => {
         validateForm: hook.validateForm,
         values: {},
       })
+    })
+  })
+
+  describe('when the hook is called with "initialValues"', () => {
+    let hook
+
+    beforeAll(() => {
+      const { result } = renderHook(() => useForm({ initialValues: { hey: 'how are you?' } }))
+      hook = result.current
+    })
+
+    test('should return "values" equal to "initialValues"', () => {
+      expect(hook.values).toEqual({ hey: 'how are you?' })
+    })
+
+    test('should return false "isDirty"', () => {
+      expect(hook.isDirty).toEqual(false)
+    })
+
+    test('should return empty "touched"', () => {
+      expect(hook.touched).toEqual({})
+    })
+
+    test('should return empty "errors"', () => {
+      expect(hook.errors).toEqual({})
     })
   })
 
@@ -432,6 +457,49 @@ describe('useForm', () => {
 
     test('should return null', () => {
       expect(error).toEqual(null)
+    })
+  })
+
+  describe('when validateField() is called with validator that requires the form state', () => {
+    const { result } = renderHook(() => useForm())
+    let formStateFromFunction
+
+    function validatorUsingFormState(value, name, formState) {
+      formStateFromFunction = formState
+    }
+
+    beforeAll(async () => {
+      await act(async () => {
+        result.current.registerField({
+          name: 'testField1',
+          validate: validatorUsingFormState,
+        })
+
+        // Wait for field to register.
+        await Promise.resolve()
+
+        result.current.validateField('testField1')
+      })
+    })
+
+    test('should have access to the form state', () => {
+      expect(formStateFromFunction).toEqual({
+        currentStep: 0,
+        errors: {},
+        fields: {
+          testField1: {
+            name: 'testField1',
+            validate: validatorUsingFormState,
+          },
+        },
+        isDirty: false,
+        isSubmitted: false,
+        steps: [],
+        touched: {
+          testField1: false,
+        },
+        values: {},
+      })
     })
   })
 
