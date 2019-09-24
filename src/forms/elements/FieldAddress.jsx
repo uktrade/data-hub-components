@@ -31,7 +31,7 @@ const FieldAddress = ({
     setFieldValue('address2', address.address2)
     setFieldValue('city', address.city)
     setFieldValue('county', address.county)
-    setFieldValue('country', address.country.id)
+    setFieldValue('country', country.id)
   }
 
   return (
