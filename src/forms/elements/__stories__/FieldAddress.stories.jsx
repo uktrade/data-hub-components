@@ -24,7 +24,10 @@ storiesOf('Forms', module)
         {form => (
           <>
             <FieldAddress
-              country="United Kingdom"
+              country={{
+                id: '80756b9a-5d95-e211-a939-e4115bead28a',
+                name: 'United Kingdom',
+              }}
               apiEndpoint={API_ENDPOINT}
             />
             <StyledButton>Submit</StyledButton>
