@@ -13,6 +13,10 @@ const testField2 = {
   name: 'testField2',
   label: 'testLabel2',
 }
+const testField2a = {
+  name: 'testField2.a',
+  label: 'testLabel2a',
+}
 
 describe('useForm', () => {
   describe('when the hook is called', () => {
@@ -81,26 +85,42 @@ describe('useForm', () => {
   })
 
   describe('when getFieldState() is called', () => {
-    let fieldState
+    let fieldState1
+    let fieldState2
+    let fieldState2a
 
     beforeAll(async () => {
       const { result } = renderHook(() => useForm())
 
       await act(async () => {
         result.current.registerField(testField1)
+        result.current.registerField(testField2)
+        result.current.registerField(testField2a)
 
         // Wait for field to register.
         await Promise.resolve()
 
-        fieldState = result.current.getFieldState('testField1')
+        fieldState1 = result.current.getFieldState('testField1')
+        fieldState2 = result.current.getFieldState('testField2')
+        fieldState2a = result.current.getFieldState('fieldState2a')
       })
     })
 
     test('should return field state', () => {
-      expect(fieldState).toEqual({
+      expect(fieldState1).toEqual({
         error: null,
         touched: false,
         value: 'testInitialValue1',
+      })
+      expect(fieldState2).toEqual({
+        error: null,
+        touched: false,
+        value: '',
+      })
+      expect(fieldState2a).toEqual({
+        error: null,
+        touched: false,
+        value: '',
       })
     })
   })
@@ -125,6 +145,7 @@ describe('useForm', () => {
       await act(async () => {
         result.current.registerField(testField1)
         result.current.registerField(testField2)
+        result.current.registerField(testField2a)
 
         // Wait for fields to register.
         await Promise.resolve()
@@ -143,6 +164,10 @@ describe('useForm', () => {
           label: 'testLabel2',
           name: 'testField2',
         },
+        'testField2.a': {
+          label: 'testLabel2a',
+          name: 'testField2.a',
+        },
       })
     })
     test('should set initial value', () => {
@@ -154,6 +179,7 @@ describe('useForm', () => {
       expect(result.current.touched).toEqual({
         testField1: false,
         testField2: false,
+        'testField2.a': false,
       })
     })
   })
@@ -164,11 +190,15 @@ describe('useForm', () => {
     beforeAll(async () => {
       await act(async () => {
         result.current.registerField(testField1)
+        result.current.registerField(testField2)
+        result.current.registerField(testField2a)
 
         // Wait for field to register.
         await Promise.resolve()
 
         result.current.deregisterField('testField1')
+        result.current.deregisterField('testField2')
+        result.current.deregisterField('testField2.a')
       })
     })
 
@@ -269,23 +299,25 @@ describe('useForm', () => {
     })
   })
 
-  describe('when setFieldTouched() is called without validation', () => {
+  describe('when setFieldTouched() is called', () => {
     const { result } = renderHook(() => useForm())
 
     act(() => {
-      result.current.setFieldTouched('testField1', true, false)
+      result.current.setFieldTouched('testField1', true)
+      result.current.setFieldTouched('testField2.a', true)
     })
 
     test('should mark field as touched', () => {
       expect(result.current.touched).toEqual({
         testField1: true,
+        'testField2.a': true,
       })
     })
-    test('should set field value', () => {
-      expect(result.current.touched).toEqual({
-        testField1: true,
-      })
+
+    test('should not set field values', () => {
+      expect(result.current.values).toEqual({})
     })
+
     test('should not set any errors', () => {
       expect(result.current.errors).toEqual({})
     })
@@ -298,7 +330,7 @@ describe('useForm', () => {
       await act(async () => {
         result.current.registerField({ name: 'testField1', validate: () => 'testError1' })
         result.current.registerField({ name: 'testField2', validate: () => 'testError2' })
-        result.current.registerField({ name: 'testField3', validate: () => 'testError3' })
+        result.current.registerField({ name: 'testField2.a', validate: () => 'testError2a' })
 
         // Wait for fields to register.
         await Promise.resolve()
@@ -311,7 +343,7 @@ describe('useForm', () => {
       expect(result.current.errors).toEqual({
         testField1: 'testError1',
         testField2: 'testError2',
-        testField3: 'testError3',
+        'testField2.a': 'testError2a',
       })
     })
   })
@@ -322,23 +354,6 @@ describe('useForm', () => {
 
     test('should throw an exception', () => {
       expect(callback).toThrowError('Field madeUpField does not exist')
-    })
-  })
-
-  describe('when deregisterField() is called', () => {
-    const { result } = renderHook(() => useForm())
-
-    act(() => {
-      result.current.registerField(testField1)
-      result.current.deregisterField(['testField1'])
-    })
-
-    test('should remove fields from the form state', () => {
-      expect(result.current.fields).toEqual({})
-    })
-
-    test('should remove touched', () => {
-      expect(result.current.touched).toEqual({})
     })
   })
 

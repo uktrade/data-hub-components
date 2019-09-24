@@ -24,11 +24,13 @@ function useField({ name, initialValue = '', validate = null, required = null })
 
   useEffect(
     () => {
-      registerField({ name, initialValue, validate: prepareValidators() })
+      registerField({
+        name,
+        initialValue,
+        validate: prepareValidators(),
+      })
 
-      return () => {
-        deregisterField(name)
-      }
+      return () => deregisterField(name)
     },
     [name],
   )

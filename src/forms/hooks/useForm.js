@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { isEmpty, isEqual, omit } from 'lodash'
+import { isEmpty, isEqual, set, get } from 'lodash'
 import { useBeforeUnload } from 'react-use'
 
 function useForm({
@@ -32,25 +32,23 @@ function useForm({
     'Changes that you made will not be saved.',
   )
 
-  const getFieldState = (name) => {
-    return {
-      value: values[name] || '',
-      touched: touched[name] || false,
-      error: errors[name] || null,
-    }
-  }
+  const getFieldState = fieldName => ({
+    value: get(values, fieldName, ''),
+    touched: touched[fieldName] || false,
+    error: errors[fieldName] || null,
+  })
 
-  const validateField = (name) => {
-    const field = fields[name]
-    const value = values[name]
+  const validateField = (fieldName) => {
+    const field = fields[fieldName]
+    const value = get(values, fieldName)
 
     if (!field) {
-      throw new Error(`Field ${name} does not exist`)
+      throw new Error(`Field ${fieldName} does not exist`)
     }
 
     if (field && 'validate' in field) {
       if (typeof field.validate === 'function') {
-        return field.validate(value, name, formState)
+        return field.validate(value, fieldName, formState)
       }
 
       if (Array.isArray(field.validate)) {
@@ -69,12 +67,12 @@ function useForm({
     const newErrors = {}
     const newTouched = {}
 
-    fieldsToValidate.forEach((name) => {
-      const error = validateField(name)
+    fieldsToValidate.forEach((fieldName) => {
+      const error = validateField(fieldName)
       if (error) {
-        newErrors[name] = error
+        newErrors[fieldName] = error
       }
-      newTouched[name] = true
+      newTouched[fieldName] = true
     })
 
     setErrors(newErrors)
@@ -83,65 +81,71 @@ function useForm({
     return newErrors
   }
 
-  const setFieldValue = (name, fieldValue) => setValues((prevValues) => {
+  const setFieldValue = (fieldName, fieldValue) => {
     if (fieldValue === '') {
-      return omit(prevValues, name)
+      return
     }
 
-    return { ...prevValues, [name]: fieldValue }
-  })
-  const setFieldTouched = (name, fieldTouched) => {
-    setTouched(prevTouched => ({ ...prevTouched, [name]: fieldTouched }))
+    setValues(prevValues => set({ ...prevValues }, fieldName, fieldValue))
   }
-  const setFieldError = (name, error) => setErrors(prevErrors => ({ ...prevErrors, [name]: error }))
 
-  const registerField = field => setFields((prevFields) => {
-    const { name, initialValue } = field
+  const setFieldTouched = (fieldName, fieldTouched) => {
+    setTouched(prevTouched => ({ ...prevTouched, [fieldName]: fieldTouched }))
+  }
 
-    if (initialValue) {
-      setFieldValue(name, initialValue)
-    }
+  const setFieldError = (fieldName, error) => {
+    setErrors(prevErrors => ({ ...prevErrors, [fieldName]: error }))
+  }
 
-    setFieldTouched(name, false)
+  const registerField = (field) => {
+    setFields((prevFields) => {
+      const { name: fieldName, initialValue } = field
 
-    if (!(name in prevFields)) {
-      return {
-        ...prevFields,
-        [name]: field,
+      if (initialValue) {
+        setFieldValue(fieldName, initialValue)
       }
-    }
-    return prevFields
-  })
 
-  const deregisterField = (name) => {
+      setFieldTouched(fieldName, false)
+
+      if (!(fieldName in prevFields)) {
+        return {
+          ...prevFields,
+          [fieldName]: field,
+        }
+      }
+      return prevFields
+    })
+  }
+
+  const deregisterField = (fieldName) => {
     setFields((prevFields) => {
       const newFields = { ...prevFields }
-      delete newFields[name]
+      delete newFields[fieldName]
       return newFields
     })
     setErrors((prevErrors) => {
       const newErrors = { ...prevErrors }
-      delete newErrors[name]
+      delete newErrors[fieldName]
       return newErrors
     })
     setTouched((prevTouched) => {
       const newTouched = { ...prevTouched }
-      delete newTouched[name]
+      delete newTouched[fieldName]
       return newTouched
     })
   }
 
-  const registerStep = (name) => {
+  const registerStep = (fieldName) => {
     setSteps((prevSteps) => {
-      if (!prevSteps.includes(name)) {
+      if (!prevSteps.includes(fieldName)) {
         const newSteps = [...prevSteps]
-        newSteps.push(name)
+        newSteps.push(fieldName)
         return newSteps
       }
       return prevSteps
     })
   }
-  const deregisterStep = name => setSteps(prevSteps => prevSteps.filter(s => s !== name))
+  const deregisterStep = fieldName => setSteps(prevSteps => prevSteps.filter(s => s !== fieldName))
 
   const isFirstStep = () => currentStep === 0
   const isLastStep = () => currentStep === steps.length - 1 || steps.length === 0
