@@ -32,7 +32,7 @@ function Step({
   }
 
   const defaultBackButtonText = 'Back'
-  const defaultForwardButtonText = isLastStep() ? 'Submit' : 'Next'
+  const defaultForwardButtonText = isLastStep() ? 'Submit' : 'Continue'
 
   return (
     <>
