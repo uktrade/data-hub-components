@@ -163,11 +163,11 @@ function useForm({
       return
     }
 
+    setIsSubmitted(true)
+
     if (typeof onSubmit === 'function') {
       onSubmit(values)
     }
-
-    setIsSubmitted(true)
   }
   const goBack = () => setCurrentStep(currentStep - 1)
   const goToStepByName = stepName => setCurrentStep(steps.indexOf(stepName))
