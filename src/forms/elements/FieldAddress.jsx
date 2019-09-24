@@ -23,7 +23,7 @@ const FieldAddress = ({
   } = useAddressSearch(postcodeLookup(apiEndpoint))
 
   const { setFieldValue } = useFormContext()
-  const isUK = country === UNITED_KINGDOM
+  const isUK = country.name === UNITED_KINGDOM
 
   function onAddressSelect(address) {
     setFieldValue('postcode', address.postcode)
@@ -31,7 +31,7 @@ const FieldAddress = ({
     setFieldValue('address2', address.address2)
     setFieldValue('city', address.city)
     setFieldValue('county', address.county)
-    setFieldValue('country', country)
+    setFieldValue('country', address.country.id)
   }
 
   return (
@@ -58,14 +58,17 @@ const FieldAddress = ({
         {!isUK && (
           <FieldInput type="text" name="postcode" label="Postcode (optional)" />
         )}
-        <FieldUneditable name="country" label="Country">{ country }</FieldUneditable>
+        <FieldUneditable name="country" label="Country">{country.name}</FieldUneditable>
       </fieldset>
     </LoadingBox>
   )
 }
 
 FieldAddress.propTypes = {
-  country: PropTypes.string.isRequired,
+  country: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired,
   apiEndpoint: PropTypes.string.isRequired,
 }
 
