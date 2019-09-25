@@ -44,7 +44,7 @@ const AddressSearch = ({
           input={{
             id: 'postcode',
             name: 'postcode',
-            type: 'text',
+            type: 'search',
           }}
           onChange={evt => setPostCode(evt.target.value)}
         />
@@ -71,6 +71,8 @@ const AddressSearch = ({
           </Select>
         </FieldWrapper>
       )}
+
+      {error && <p>{error}</p>}
     </>
   )
 }
