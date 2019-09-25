@@ -25,8 +25,8 @@ const FieldUneditable = ({ name, label, legend, hint, onChangeClick, children })
 
 FieldUneditable.propTypes = {
   name: PropTypes.string.isRequired,
-  label: PropTypes.string,
-  legend: PropTypes.string,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   hint: PropTypes.string,
   onChangeClick: PropTypes.func,
   children: PropTypes.node.isRequired,

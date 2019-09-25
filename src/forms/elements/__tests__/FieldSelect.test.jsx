@@ -151,8 +151,7 @@ describe('FieldSelect', () => {
           )}
         </Form>,
       )
-      const testField1 = wrapper.find('select')
-      testField1.simulate('change', { target: { value: 'testOptionValue2' } })
+      wrapper.find('select').simulate('change', { target: { value: 'testOptionValue2' } })
     })
 
     test('should update field value', () => {

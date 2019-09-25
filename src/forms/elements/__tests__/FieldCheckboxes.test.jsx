@@ -1,20 +1,20 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import Radio from '@govuk-react/radio'
 import Label from '@govuk-react/label'
 import HintText from '@govuk-react/hint-text'
+import Checkbox from '@govuk-react/checkbox'
 
 import Form from '../Form'
-import FieldRadios from '../FieldRadios'
+import FieldCheckboxes from '../FieldCheckboxes'
 
-describe('FieldRadios', () => {
+describe('FieldCheckboxes', () => {
   let wrapper
 
   describe('when the field does specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldRadios name="testField" label="testLabel" />
+          <FieldCheckboxes name="testField" label="testLabel" />
         </Form>,
       )
     })
@@ -28,7 +28,7 @@ describe('FieldRadios', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldRadios name="testField" />
+          <FieldCheckboxes name="testField" />
         </Form>,
       )
     })
@@ -42,7 +42,7 @@ describe('FieldRadios', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldRadios name="testField" legend="testLegend" />
+          <FieldCheckboxes name="testField" legend="testLegend" />
         </Form>,
       )
     })
@@ -56,7 +56,7 @@ describe('FieldRadios', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldRadios name="testField" hint="testHint" />
+          <FieldCheckboxes name="testField" hint="testHint" />
         </Form>,
       )
     })
@@ -67,12 +67,12 @@ describe('FieldRadios', () => {
   })
 
   describe('when the field does specify options', () => {
-    let radios
+    let checkboxes
 
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldRadios
+          <FieldCheckboxes
             name="testField"
             options={[
               { label: 'testOptionLabel1', value: 'testOptionValue1' },
@@ -81,21 +81,21 @@ describe('FieldRadios', () => {
           />
         </Form>,
       )
-      radios = wrapper.find(Radio)
+      checkboxes = wrapper.find(Checkbox)
     })
 
-    test('should render the radio inputs', () => {
-      expect(wrapper.find('input[type="radio"]').length).toEqual(2)
+    test('should render the checkbox inputs', () => {
+      expect(wrapper.find(Checkbox).length).toEqual(2)
     })
 
     test('should render a label for each option', () => {
-      expect(radios.first().text()).toEqual('testOptionLabel1')
-      expect(radios.at(1).text()).toEqual('testOptionLabel2')
+      expect(checkboxes.first().text()).toEqual('testOptionLabel1')
+      expect(checkboxes.at(1).text()).toEqual('testOptionLabel2')
     })
 
-    test('should render a value for each option', () => {
-      expect(radios.first().prop('value')).toEqual('testOptionValue1')
-      expect(radios.at(1).prop('value')).toEqual('testOptionValue2')
+    test('should render a name for each option', () => {
+      expect(checkboxes.first().prop('name')).toEqual('testOptionValue1')
+      expect(checkboxes.at(1).prop('name')).toEqual('testOptionValue2')
     })
   })
 
@@ -103,7 +103,7 @@ describe('FieldRadios', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldRadios name="testField" validate={() => 'testError'} />
+          <FieldCheckboxes name="testField" validate={() => 'testError'} />
         </Form>,
       )
       wrapper.find('form').simulate('submit')
@@ -114,20 +114,20 @@ describe('FieldRadios', () => {
     })
   })
 
-  describe('when a radio is checked', () => {
+  describe('when a checkbox is checked', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
           {form => (
             <>
-              <FieldRadios
+              <FieldCheckboxes
                 name="testField"
                 options={[
                   { label: 'testOptionLabel1', value: 'testOptionValue1' },
                   { label: 'testOptionLabel2', value: 'testOptionValue2' },
                 ]}
               />
-              <div id="values">{form.values.testField}</div>
+              <div id="values">{JSON.stringify(form.values.testField)}</div>
             </>
           )}
         </Form>,
@@ -136,17 +136,36 @@ describe('FieldRadios', () => {
       wrapper.find('input').first().simulate('change', {
         target: {
           checked: true,
-          value: 'testOptionValue1',
+          name: 'testOptionValue1',
         },
       })
     })
 
     test('should update value in form state', () => {
-      expect(wrapper.find('#values').text()).toEqual('testOptionValue1')
+      expect(wrapper.find('#values').text()).toEqual('["testOptionValue1"]')
     })
 
     test('should check the first checkbox', () => {
       expect(wrapper.find('input').first().prop('checked')).toBeTruthy()
+    })
+
+    describe('when a checkbox is unchecked', () => {
+      beforeAll(() => {
+        wrapper.find('input').first().simulate('change', {
+          target: {
+            checked: false,
+            name: 'testOptionValue1',
+          },
+        })
+      })
+
+      test('should update value in form state', () => {
+        expect(wrapper.find('#values').text()).toEqual('[]')
+      })
+
+      test('should uncheck the first checkbox', () => {
+        expect(wrapper.find('input').first().prop('checked')).toBeFalsy()
+      })
     })
   })
 })
