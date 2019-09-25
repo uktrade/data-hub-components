@@ -23,7 +23,6 @@ const StyledDashboardSectionContainer = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  border-top: 4px solid ${GREY_2};
   ${typography.font({ size: 14 })}
 `
 
