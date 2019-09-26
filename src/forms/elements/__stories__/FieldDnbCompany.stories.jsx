@@ -32,7 +32,7 @@ storiesOf('Forms', module)
       <Form onSubmit={action('onSubmit')}>
         {({ values }) => (
           <>
-            <Step name="first" hideForwardButton={true}>
+            <Step name="first" forwardButton={null}>
               <FieldDnbCompany
                 name="dnb_company"
                 legend={<H3>Find the company</H3>}
@@ -66,7 +66,7 @@ storiesOf('Forms', module)
     return (
       <Form onSubmit={action('onSubmit')}>
         <>
-          <Step name="first" hideForwardButton={true}>
+          <Step name="first" forwardButton={null}>
             <FieldDnbCompany
               name="dnb_company"
               legend={<H3>Find the company</H3>}
@@ -86,7 +86,7 @@ storiesOf('Forms', module)
     return (
       <Form onSubmit={action('onSubmit')}>
         <>
-          <Step name="first" hideForwardButton={true}>
+          <Step name="first" forwardButton={null}>
             <FieldDnbCompany
               name="dnb_company"
               legend={<H3>Find the company</H3>}

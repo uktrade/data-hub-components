@@ -36,7 +36,7 @@ storiesOf('Forms', module)
           <Values />
         </Step>
 
-        <Step name="second" forwardButtonText="GO FORWARD!" backButtonText="GO BACK!">
+        <Step name="second" forwardButton="GO FORWARD!" backButton="GO BACK!">
           <Values />
 
           <p>Custom button labels <span role="img">⬇</span>️</p>

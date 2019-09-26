@@ -6,10 +6,7 @@ import useFormContext from '../hooks/useFormContext'
 import ButtonLink from '../../button-link/ButtonLink'
 import FormActions from './FormActions'
 
-function Step({
-  name, backButtonText, forwardButtonText,
-  hideBackButton, hideForwardButton, children,
-}) {
+function Step({ name, backButton, forwardButton, children }) {
   const {
     currentStep,
     goBack,
@@ -31,41 +28,53 @@ function Step({
     return null
   }
 
-  const defaultBackButtonText = 'Back'
-  const defaultForwardButtonText = isLastStep() ? 'Submit' : 'Continue'
+  const renderBackButton = () => {
+    if (typeof backButton === 'undefined') {
+      return <ButtonLink name="back" onClick={goBack}>Back</ButtonLink>
+    }
+
+    if (typeof backButton === 'string') {
+      return <ButtonLink name="back" onClick={goBack}>{backButton}</ButtonLink>
+    }
+
+    return backButton
+  }
+
+  const renderForwardButton = () => {
+    if (typeof forwardButton === 'undefined') {
+      return <Button name="forward">{isLastStep() ? 'Submit' : 'Continue'}</Button>
+    }
+
+    if (typeof forwardButton === 'string') {
+      return <Button name="forward">{forwardButton}</Button>
+    }
+
+    return forwardButton
+  }
 
   return (
     <>
       {children}
 
       <FormActions>
-        {!hideForwardButton && <Button>{forwardButtonText || defaultForwardButtonText}</Button>}
+        {renderForwardButton()}
 
-        {!hideBackButton && !isFirstStep() && (
-          <ButtonLink onClick={goBack}>
-            {backButtonText || defaultBackButtonText}
-          </ButtonLink>
-        )}
+        {!isFirstStep() && renderBackButton()}
       </FormActions>
     </>
   )
 }
 
 Step.propTypes = {
-  name: PropTypes.string,
-  backButtonText: PropTypes.string,
-  forwardButtonText: PropTypes.string,
-  hideBackButton: PropTypes.bool,
-  hideForwardButton: PropTypes.bool,
+  name: PropTypes.string.isRequired,
+  backButton: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  forwardButton: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   children: PropTypes.node,
 }
 
 Step.defaultProps = {
-  name: null,
-  backButtonText: null,
-  forwardButtonText: null,
-  hideBackButton: false,
-  hideForwardButton: false,
+  backButton: undefined,
+  forwardButton: undefined,
   children: null,
 }
 

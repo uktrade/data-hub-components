@@ -71,7 +71,7 @@ storiesOf('Forms', module)
               </Step>
             )}
 
-            <Step name="third" hideForwardButton={true} hideBackButton={true}>
+            <Step name="third" forwardButton={null} backButton={null}>
               <FieldDnbCompany
                 name="dnb_company"
                 legend={<H3>Find the company</H3>}

@@ -39,7 +39,7 @@ const wrapFieldDnbCompanyForm = () => {
 
           <Step name="first" />
 
-          <Step name="second" hideBackButton={true} hideForwardButton={true}>
+          <Step name="second" backButton={null} forwardButton={null}>
             <FieldDnbCompany
               name="testField"
               label="testLabel"
