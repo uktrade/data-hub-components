@@ -6,11 +6,9 @@ import Step from '../Step'
 import useField from '../../hooks/useField'
 
 const TestField = (props) => {
-  const field = useField(props)
+  const { name, value, onChange, onBlur } = useField(props)
   return (
-    <input
-      {...field}
-    />
+    <input name={name} value={value} onChange={onChange} onBlur={onBlur} />
   )
 }
 

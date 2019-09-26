@@ -1,17 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FONT_SIZE, MEDIA_QUERIES, SPACING } from '@govuk-react/constants'
+import { FOCUSABLE, FONT_SIZE, MEDIA_QUERIES, SPACING } from '@govuk-react/constants'
 import { GREY_2, GREY_4, LINK_COLOUR, LINK_HOVER_COLOUR } from 'govuk-colours'
 import { H3 } from '@govuk-react/heading'
 import InsetText from '@govuk-react/inset-text'
 import PropTypes from 'prop-types'
+
+import { isEmpty } from 'lodash'
 
 import EntityListItemMetaList from './EntityListItemMetaList'
 
 const StyledEntity = styled('div')`
   margin-bottom: ${SPACING.SCALE_2};
   padding: ${SPACING.SCALE_2};
-  border: 1px solid ${GREY_2};  
+  border: 1px solid ${GREY_2};
+  ${FOCUSABLE};
   
   ${({ canHandleClick }) => canHandleClick && `
     cursor: pointer;
@@ -54,12 +57,14 @@ const EntityListItem = ({
   return (
     <StyledEntity
       key={`entity_${id}`}
-      onClick={() => (canHandleClick ? onEntityClick(data) : null)}
+      tabIndex={canHandleClick ? 0 : undefined}
+      onClick={() => canHandleClick && onEntityClick(data)}
+      onKeyDown={e => canHandleClick && e.keyCode === 13 && onEntityClick(data)}
       canHandleClick={canHandleClick}
     >
-      <StyledHeading>{heading}</StyledHeading>
+      {heading && <StyledHeading>{heading}</StyledHeading>}
 
-      <EntityListItemMetaList meta={meta} />
+      {!isEmpty(meta) && <EntityListItemMetaList meta={meta} />}
 
       {text && <StyledInsetText>{text}</StyledInsetText>}
     </StyledEntity>
@@ -68,16 +73,21 @@ const EntityListItem = ({
 
 EntityListItem.propTypes = {
   id: PropTypes.string.isRequired,
-  onEntityClick: PropTypes.func.isRequired,
-  data: PropTypes.object.isRequired,
-  canHandleClick: PropTypes.bool.isRequired,
+  canHandleClick: PropTypes.bool,
+  onEntityClick: PropTypes.func,
+  data: PropTypes.shape({}),
   text: PropTypes.node,
-  heading: PropTypes.string.isRequired,
-  meta: PropTypes.object.isRequired,
+  heading: PropTypes.string,
+  meta: PropTypes.shape({}),
 }
 
 EntityListItem.defaultProps = {
   text: null,
+  canHandleClick: false,
+  onEntityClick: null,
+  data: {},
+  heading: null,
+  meta: null,
 }
 
 export default EntityListItem
