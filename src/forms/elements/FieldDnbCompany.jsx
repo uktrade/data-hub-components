@@ -70,6 +70,9 @@ const FieldDnbCompany = ({
           name="dnbCompanyName"
           type="search"
           required="Enter company name"
+          validate={value => (value && value.length < 2
+            ? 'Enter company name that is 2 characters long or more'
+            : null)}
           maxLength={30}
         />
 

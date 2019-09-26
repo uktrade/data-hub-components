@@ -143,6 +143,25 @@ describe('FieldDnbCompany', () => {
     })
   })
 
+  describe('when the search button is clicked with company name shorter than the minimum of 2 characters', () => {
+    beforeAll(async () => {
+      wrapper = wrapFieldDnbCompanyForm()
+
+      wrapper.find('input[name="dnbCompanyName"]')
+        .simulate('change', { target: { value: 'a' } })
+
+      wrapper.find(FormActions).find('button').simulate('click')
+
+      await act(flushPromises)
+
+      wrapper.update()
+    })
+
+    test('should show an error', () => {
+      expect(wrapper.text()).toContain('Enter company name that is 2 characters long or more')
+    })
+  })
+
   describe('when the search button is clicked after filling the company name field', () => {
     beforeAll(async () => {
       setupSuccessMocks(API_ENDPOINT)
