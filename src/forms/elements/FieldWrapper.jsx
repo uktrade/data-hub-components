@@ -77,8 +77,8 @@ const FieldWrapper = ({ name, label, legend, hint, error, children }) => (
 
 FieldWrapper.propTypes = {
   name: PropTypes.string.isRequired,
-  label: PropTypes.string,
-  legend: PropTypes.string,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   hint: PropTypes.string,
   error: PropTypes.string,
   children: PropTypes.node,

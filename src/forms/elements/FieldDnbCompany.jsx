@@ -133,8 +133,8 @@ const FieldDnbCompany = ({
 
 FieldDnbCompany.propTypes = {
   name: PropTypes.string.isRequired,
-  label: PropTypes.string,
-  legend: PropTypes.string,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   hint: PropTypes.string,
   country: PropTypes.string,
   apiEndpoint: PropTypes.string.isRequired,

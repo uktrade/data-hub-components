@@ -1,31 +1,51 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Radio from '@govuk-react/radio'
+import Checkbox from '@govuk-react/checkbox'
 import MultiChoice from '@govuk-react/multi-choice'
 
 import useField from '../hooks/useField'
 import FieldWrapper from './FieldWrapper'
+import useFormContext from '../hooks/useFormContext'
 
-const FieldRadios = ({ name, validate, required, label, legend, hint, options }) => {
-  const { value, error, touched, onChange, onBlur } = useField({ name, validate, required })
+const FieldCheckboxes = ({ name, validate, required, label, legend, hint, options }) => {
+  const { value, error, touched, onBlur } = useField({ name, validate, required })
+  const { setFieldValue } = useFormContext()
+
+  const onChange = (e) => {
+    const { name: optionName, checked } = e.target
+    let newValue = Array.isArray(value) ? [...value] : []
+
+    if (checked) {
+      newValue.push(optionName)
+    } else if (newValue.includes(optionName)) {
+      newValue = newValue.filter(item => item !== optionName)
+    }
+
+    setFieldValue(name, newValue)
+  }
 
   return (
     <FieldWrapper {...({ name, label, legend, hint, error })}>
       <MultiChoice meta={{ error, touched }}>
-        {options.map(({ label: optionLabel, value: optionValue, children, ...optionProps }) => (
+        {options.map(({
+          value: optionValue,
+          label: optionLabel,
+          children,
+          ...optionProps
+        }) => (
           <div key={optionValue}>
-            <Radio
+            <Checkbox
               key={optionValue}
-              value={optionValue}
-              checked={value === optionValue}
+              name={optionValue}
+              checked={value.includes(optionValue)}
               onChange={onChange}
               onBlur={onBlur}
               {...optionProps}
             >
               {optionLabel}
-            </Radio>
+            </Checkbox>
 
-            {value === optionValue && !!children ? children : null}
+            {value.includes(optionValue) && !!children ? children : null}
           </div>
         ))}
       </MultiChoice>
@@ -33,7 +53,7 @@ const FieldRadios = ({ name, validate, required, label, legend, hint, options })
   )
 }
 
-FieldRadios.propTypes = {
+FieldCheckboxes.propTypes = {
   name: PropTypes.string.isRequired,
   validate: PropTypes.func,
   required: PropTypes.string,
@@ -49,7 +69,7 @@ FieldRadios.propTypes = {
   ),
 }
 
-FieldRadios.defaultProps = {
+FieldCheckboxes.defaultProps = {
   validate: null,
   required: null,
   label: null,
@@ -58,4 +78,4 @@ FieldRadios.defaultProps = {
   options: [],
 }
 
-export default FieldRadios
+export default FieldCheckboxes
