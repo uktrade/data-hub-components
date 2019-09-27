@@ -1,11 +1,11 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { SelectInput } from '@govuk-react/select'
 import LabelText from '@govuk-react/label-text'
 import { MEDIA_QUERIES, SPACING } from '@govuk-react/constants'
 import { typography } from '@govuk-react/lib'
-import ACTIONS from './constants'
 import useMyCompaniesContext from './useMyCompaniesContext'
+import { FILTER_CHANGE, ORDER_CHANGE } from './constants'
 
 const StyledSelectInput = styled(SelectInput)(typography.font({ size: 14 }), {
   [MEDIA_QUERIES.LARGESCREEN]: {
@@ -27,29 +27,26 @@ const StyledSearch = styled.input`
 `
 
 function MyCompaniesFilters() {
-  const { state, dispatch } = useMyCompaniesContext()
-  const inputEl = useRef()
-
-  const handleSelectChange = (e) => {
-    dispatch({ type: ACTIONS.SORT_BY, sortType: e.target.value })
-  }
-
-  const handleInputChange = (e) => {
-    dispatch({ type: ACTIONS.FILTER_BY, filterText: e.target.value })
-  }
+  const { dispatch } = useMyCompaniesContext()
 
   return (
     <StyledContainer>
       <StyledSearch
         type="text"
         placeholder="Search list"
-        onChange={handleInputChange}
-        value={state.filterText}
-        ref={inputEl}
+        onChange={e => dispatch({
+          type: FILTER_CHANGE,
+          filter: e.target.value,
+        })}
       />
       <StyledLabelText>
         Sort By:{' '}
-        <StyledSelectInput onChange={handleSelectChange} value={state.sortType}>
+        <StyledSelectInput
+          onChange={e => dispatch({
+            type: ORDER_CHANGE,
+            sortBy: e.target.value,
+          })}
+        >
           <option value="recent">Recent interaction</option>
           <option value="least-recent">Least recent interaction</option>
           <option value="alphabetical">Company name A-Z</option>

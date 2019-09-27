@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import React from 'react'
 import styled from 'styled-components'
 import LinesEllipsis from 'react-lines-ellipsis'
@@ -7,6 +8,7 @@ import Link from '@govuk-react/link'
 import { GREY_1 } from 'govuk-colours'
 import { MEDIA_QUERIES } from '@govuk-react/constants'
 import useMyCompaniesContext from './useMyCompaniesContext'
+import Filters from './MyCompaniesFilters'
 
 const StyledCellHeader = styled(Table.CellHeader)(
   typography.font({ size: 14, weight: 'bold' }),
@@ -23,8 +25,27 @@ const StyledDateCell = styled(Table.Cell)(typography.font({ size: 14 }), {
   'text-align': 'center',
 })
 
+export function sortCompanies(companies, sortType) {
+  const sort = {
+    recent: _.orderBy(companies, [c => c.latestInteraction.date || ''], ['desc']),
+    'least-recent': _.orderBy(companies, [c => c.latestInteraction.date || ''], ['asc']),
+    alphabetical: _.orderBy(companies, [c => c.company.name], ['asc']),
+  }
+  return sort[sortType]
+}
+
+export const filterCompanyName = (companies, filterText) => (filterText.length
+  ? companies.filter(c => c.company.name.toLowerCase().includes(filterText.toLowerCase()))
+  : companies)
+
 function MyCompaniesTable() {
-  const { state } = useMyCompaniesContext()
+  const { state: { lists, selectedIdx, sortBy, filter } } = useMyCompaniesContext()
+  const list = lists[selectedIdx]
+  const companies = sortCompanies(
+    filterCompanyName(list.companies, filter),
+    sortBy,
+  )
+
   const header = (
     <Table.Row>
       <StyledCellHeader>Company name</StyledCellHeader>
@@ -33,7 +54,7 @@ function MyCompaniesTable() {
     </Table.Row>
   )
 
-  const rows = state.companies.map(({ company, latestInteraction }) => {
+  const rows = companies.map(({ company, latestInteraction }) => {
     return (
       <Table.Row key={company.id}>
         <Table.Cell>
@@ -66,7 +87,13 @@ function MyCompaniesTable() {
       </Table.Row>
     )
   })
-  return <Table head={header}>{rows}</Table>
+
+  return (
+    <>
+      {companies.length > 1 && <Filters />}
+      <Table head={header}>{rows}</Table>
+    </>
+  )
 }
 
 export default MyCompaniesTable
