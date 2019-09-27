@@ -26,3 +26,5 @@ console.error = message => {
 
   originalConsoleError(message)
 }
+
+window.scrollTo = jest.fn()
