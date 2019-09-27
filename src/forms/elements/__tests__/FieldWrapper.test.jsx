@@ -2,6 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import Label from '@govuk-react/label'
 import HintText from '@govuk-react/hint-text'
+import Paragraph from '@govuk-react/paragraph'
 import { ERROR_COLOUR } from 'govuk-colours'
 import { BORDER_WIDTH_FORM_ELEMENT_ERROR, SPACING } from '@govuk-react/constants'
 
@@ -71,6 +72,51 @@ describe('FieldWrapper', () => {
       expect(legend).toHaveStyleRule('border-left', undefined)
       expect(legend).toHaveStyleRule('margin-right', undefined)
       expect(legend).toHaveStyleRule('padding-left', undefined)
+    })
+
+    test('should add border around the fieldset', () => {
+      const fieldset = wrapper.find('fieldset')
+      expect(fieldset).toHaveStyleRule('border', '0')
+      expect(fieldset).toHaveStyleRule('padding', '0')
+    })
+  })
+
+  describe('When the "legend" prop is specified and "showBorder" is set to true', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <FieldWrapper
+          name="testName"
+          hint="testHint"
+          legend="testLegend"
+          showBorder={true}
+        >
+          Test error
+        </FieldWrapper>,
+      )
+    })
+
+    test('should set the content with children', () => {
+      expect(wrapper.text()).toContain('Test error')
+    })
+
+    test('should add a hint as paragraph', () => {
+      expect(wrapper.find(Paragraph).text()).toEqual('testHint')
+    })
+
+    test('should add a legend', () => {
+      expect(wrapper.find('legend').text()).toEqual('testLegend')
+    })
+
+    test('should add border around the fieldset', () => {
+      const fieldset = wrapper.find('fieldset')
+      expect(fieldset).toHaveStyleRule('border', '1px solid #bfc1c3')
+      expect(fieldset).toHaveStyleRule('padding', '15px')
+    })
+
+    test('should add additional spacing to legend', () => {
+      const legend = wrapper.find('legend')
+      expect(legend).toHaveStyleRule('padding', '10px')
+      expect(legend).toHaveStyleRule('margin-left', '-10px')
     })
   })
 

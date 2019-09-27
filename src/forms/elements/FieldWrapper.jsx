@@ -4,14 +4,19 @@ import FormGroup from '@govuk-react/form-group'
 import Label from '@govuk-react/label'
 import styled from 'styled-components'
 import HintText from '@govuk-react/hint-text'
-import { ERROR_COLOUR } from 'govuk-colours'
+import { ERROR_COLOUR, GREY_2 } from 'govuk-colours'
 import { BORDER_WIDTH_FORM_ELEMENT_ERROR, SPACING } from '@govuk-react/constants'
+import Paragraph from '@govuk-react/paragraph'
 
 const StyledFieldset = styled('fieldset')`
   min-width: 0;
   margin: 0;
   padding: 0;
   border: 0;
+  ${props => props.showBorder && `
+    border: 1px solid ${GREY_2};
+    padding: ${SPACING.SCALE_3};
+  `}
 `
 
 const StyledLegend = styled('legend')`
@@ -29,29 +34,15 @@ const StyledLegend = styled('legend')`
     margin-right: ${SPACING.SCALE_3};
     padding-left: ${SPACING.SCALE_2};
   `}
+  ${props => props.showBorder && `
+    padding: ${SPACING.SCALE_2};
+    margin-left: -${SPACING.SCALE_2};
+  `}
 `
 
 const StyledLabel = styled(Label)`
   padding-bottom: ${SPACING.SCALE_1};
 `
-
-const FieldInner = ({ legend, error, children }) => (
-  legend
-    ? <StyledFieldset><StyledLegend error={error}>{legend}</StyledLegend>{children}</StyledFieldset>
-    : children
-)
-
-FieldInner.propTypes = {
-  legend: PropTypes.string,
-  error: PropTypes.string,
-  children: PropTypes.node,
-}
-
-FieldInner.defaultProps = {
-  legend: null,
-  error: null,
-  children: null,
-}
 
 const StyledHint = styled(HintText)`
   padding: 0;
@@ -65,15 +56,43 @@ const StyledHint = styled(HintText)`
   `}
 `
 
-const FieldWrapper = ({ name, label, legend, hint, error, children }) => (
+const FieldInner = ({ legend, error, showBorder, children }) => (
+  legend
+    ? (
+      <StyledFieldset showBorder={showBorder}>
+        <StyledLegend error={error} showBorder={showBorder}>{legend}</StyledLegend>
+        {children}
+      </StyledFieldset>
+    )
+    : children
+)
+
+const FieldWrapper = ({ name, label, legend, hint, error, showBorder, children }) => (
   <FormGroup>
-    <FieldInner legend={legend} error={error}>
+    <FieldInner legend={legend} error={error} showBorder={showBorder}>
       { label && <StyledLabel error={error} htmlFor={name}>{label}</StyledLabel> }
-      { hint && <StyledHint error={error}>{hint}</StyledHint> }
+      { hint && (showBorder
+        ? <Paragraph>{hint}</Paragraph>
+        : <StyledHint error={error}>{hint}</StyledHint>
+      )}
       { children }
     </FieldInner>
   </FormGroup>
 )
+
+FieldInner.propTypes = {
+  legend: PropTypes.string,
+  error: PropTypes.string,
+  showBorder: PropTypes.bool,
+  children: PropTypes.node,
+}
+
+FieldInner.defaultProps = {
+  legend: null,
+  error: null,
+  showBorder: false,
+  children: null,
+}
 
 FieldWrapper.propTypes = {
   name: PropTypes.string.isRequired,
@@ -81,6 +100,7 @@ FieldWrapper.propTypes = {
   legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   hint: PropTypes.string,
   error: PropTypes.string,
+  showBorder: PropTypes.bool,
   children: PropTypes.node,
 }
 
@@ -89,6 +109,7 @@ FieldWrapper.defaultProps = {
   legend: null,
   hint: null,
   error: null,
+  showBorder: false,
   children: null,
 }
 

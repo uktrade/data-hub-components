@@ -4,7 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 import { H3 } from '@govuk-react/heading'
 
-import { useFormContext, Form, Step, FieldInput } from '../../../index'
+import { FieldInput, Form, Step, useFormContext } from '../../../index'
 import FieldRadios from '../FieldRadios'
 import FieldSelect from '../FieldSelect'
 import FieldDnbCompany from '../FieldDnbCompany'
