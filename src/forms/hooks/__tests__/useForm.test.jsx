@@ -15,68 +15,68 @@ const testField2 = {
 }
 
 describe('useForm', () => {
-  describe('when the hook is called', () => {
-    let hook
+  let formState
 
+  describe('when the hook is called', () => {
     beforeAll(() => {
-      const { result } = renderHook(() => useForm())
-      hook = result.current
+      const hook = renderHook(() => useForm())
+      formState = hook.result.current
     })
 
     test('should return default properties', () => {
-      expect(hook).toEqual({
+      expect(formState).toEqual({
         currentStep: 0,
-        deregisterField: hook.deregisterField,
-        deregisterStep: hook.deregisterStep,
+        deregisterField: formState.deregisterField,
+        deregisterStep: formState.deregisterStep,
         errors: {},
         fields: {},
-        getFieldState: hook.getFieldState,
-        getStepIndex: hook.getStepIndex,
-        goBack: hook.goBack,
-        goForward: hook.goForward,
-        goToStepByName: hook.goToStepByName,
+        getFieldState: formState.getFieldState,
+        getStepIndex: formState.getStepIndex,
+        goBack: formState.goBack,
+        goForward: formState.goForward,
+        goToStepByName: formState.goToStepByName,
         isDirty: false,
-        isFirstStep: hook.isFirstStep,
-        isLastStep: hook.isLastStep,
+        isFirstStep: formState.isFirstStep,
+        isLastStep: formState.isLastStep,
         isSubmitted: false,
-        registerField: hook.registerField,
-        registerStep: hook.registerStep,
-        setCurrentStep: hook.setCurrentStep,
-        setFieldError: hook.setFieldError,
-        setFieldTouched: hook.setFieldTouched,
-        setFieldValue: hook.setFieldValue,
-        setIsSubmitted: hook.setIsSubmitted,
+        registerField: formState.registerField,
+        registerStep: formState.registerStep,
+        setCurrentStep: formState.setCurrentStep,
+        setFieldError: formState.setFieldError,
+        setFieldTouched: formState.setFieldTouched,
+        setFieldValue: formState.setFieldValue,
+        setIsSubmitted: formState.setIsSubmitted,
         steps: [],
         touched: {},
-        validateField: hook.validateField,
-        validateForm: hook.validateForm,
+        validateField: formState.validateField,
+        validateForm: formState.validateForm,
         values: {},
       })
     })
   })
 
   describe('when the hook is called with "initialValues"', () => {
-    let hook
-
     beforeAll(() => {
-      const { result } = renderHook(() => useForm({ initialValues: { hey: 'how are you?' } }))
-      hook = result.current
+      const hook = renderHook(() => useForm({
+        initialValues: { hey: 'how are you?' },
+      }))
+      formState = hook.result.current
     })
 
     test('should return "values" equal to "initialValues"', () => {
-      expect(hook.values).toEqual({ hey: 'how are you?' })
+      expect(formState.values).toEqual({ hey: 'how are you?' })
     })
 
     test('should return false "isDirty"', () => {
-      expect(hook.isDirty).toEqual(false)
+      expect(formState.isDirty).toEqual(false)
     })
 
     test('should return empty "touched"', () => {
-      expect(hook.touched).toEqual({})
+      expect(formState.touched).toEqual({})
     })
 
     test('should return empty "errors"', () => {
-      expect(hook.errors).toEqual({})
+      expect(formState.errors).toEqual({})
     })
   })
 
@@ -84,15 +84,11 @@ describe('useForm', () => {
     let fieldState
 
     beforeAll(async () => {
-      const { result } = renderHook(() => useForm())
+      const hook = renderHook(() => useForm())
 
       await act(async () => {
-        result.current.registerField(testField1)
-
-        // Wait for field to register.
-        await Promise.resolve()
-
-        fieldState = result.current.getFieldState('testField1')
+        await hook.result.current.registerField(testField1)
+        fieldState = hook.result.current.getFieldState('testField1')
       })
     })
 
@@ -106,8 +102,15 @@ describe('useForm', () => {
   })
 
   describe('when getFieldState() is called on nonexistent field', () => {
-    const { result } = renderHook(() => useForm())
-    const fieldState = result.current.getFieldState('testField1')
+    let fieldState
+
+    beforeAll(() => {
+      const hook = renderHook(() => useForm())
+
+      act(() => {
+        fieldState = hook.result.current.getFieldState('testField1')
+      })
+    })
 
     test('should return an object with default values', () => {
       expect(fieldState).toEqual({
@@ -119,20 +122,18 @@ describe('useForm', () => {
   })
 
   describe('when registerField() is called', () => {
-    const { result } = renderHook(() => useForm())
-
     beforeAll(async () => {
-      await act(async () => {
-        result.current.registerField(testField1)
-        result.current.registerField(testField2)
+      const hook = renderHook(() => useForm())
 
-        // Wait for fields to register.
-        await Promise.resolve()
+      await act(async () => {
+        await hook.result.current.registerField(testField1)
+        await hook.result.current.registerField(testField2)
+        formState = hook.result.current
       })
     })
 
     test('should register fields', () => {
-      expect(result.current.fields).toEqual({
+      expect(formState.fields).toEqual({
         testField1: {
           initialValue: 'testInitialValue1',
           label: 'testLabel1',
@@ -145,13 +146,15 @@ describe('useForm', () => {
         },
       })
     })
+
     test('should set initial value', () => {
-      expect(result.current.values).toEqual({
+      expect(formState.values).toEqual({
         testField1: 'testInitialValue1',
       })
     })
+
     test('should set touched', () => {
-      expect(result.current.touched).toEqual({
+      expect(formState.touched).toEqual({
         testField1: false,
         testField2: false,
       })
@@ -159,166 +162,182 @@ describe('useForm', () => {
   })
 
   describe('when deregisterField() is called', () => {
-    const { result } = renderHook(() => useForm())
-
     beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
       await act(async () => {
-        result.current.registerField(testField1)
-
-        // Wait for field to register.
-        await Promise.resolve()
-
-        result.current.deregisterField('testField1')
+        await hook.result.current.registerField(testField1)
+        await hook.result.current.deregisterField('testField1')
+        formState = hook.result.current
       })
     })
 
     test('should deregister field', () => {
-      expect(result.current.fields).toEqual({})
+      expect(formState.fields).toEqual({})
     })
+
     test('should unmark field as touched', () => {
-      expect(result.current.touched).toEqual({})
+      expect(formState.touched).toEqual({})
     })
+
     test('should remove field error', () => {
-      expect(result.current.errors).toEqual({})
+      expect(formState.errors).toEqual({})
     })
   })
 
   describe('when registerField() is called on already registered field', () => {
-    const { result } = renderHook(() => useForm())
-
     beforeAll(async () => {
-      await act(async () => {
-        result.current.registerField(testField1)
-        result.current.registerField(testField1)
+      const hook = renderHook(() => useForm())
 
-        // Wait for fields to register.
-        await Promise.resolve()
+      await act(async () => {
+        await hook.result.current.registerField(testField1)
+        await hook.result.current.registerField(testField1)
+        formState = hook.result.current
       })
     })
 
     test('should not register a duplicated field', () => {
-      expect(Object.keys(result.current.fields)).toEqual(['testField1'])
+      expect(Object.keys(formState.fields)).toEqual(['testField1'])
     })
   })
 
   describe('when registerStep() is called on already registered step', () => {
-    const { result } = renderHook(() => useForm())
-
     beforeAll(async () => {
-      await act(async () => {
-        result.current.registerStep('testStep1')
-        result.current.registerStep('testStep1')
+      const hook = renderHook(() => useForm())
 
-        // Wait for steps to register.
-        await Promise.resolve()
+      await act(async () => {
+        await hook.result.current.registerStep('testStep1')
+        await hook.result.current.registerStep('testStep1')
+        formState = hook.result.current
       })
     })
 
     test('should not register a duplicated step', () => {
-      expect(result.current.steps).toEqual(['testStep1'])
+      expect(formState.steps).toEqual(['testStep1'])
     })
   })
 
-  describe('when setFieldValue() is called', () => {
-    describe('when field value is populated', () => {
-      const { result } = renderHook(() => useForm())
+  describe('when setFieldValue() is called with a non-empty value', () => {
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm())
 
-      act(() => {
-        result.current.setFieldValue('testField', 'testValue')
-      })
-
-      test('should set the field value', () => {
-        expect(result.current.values).toEqual({
-          testField: 'testValue',
-        })
-      })
-
-      test('should set "isDirty" to true', () => {
-        expect(result.current.isDirty).toBeTruthy()
+      await act(async () => {
+        await hook.result.current.setFieldValue('testField', 'testValue')
+        formState = hook.result.current
       })
     })
 
-    describe('when field value is an empty string', () => {
-      const { result } = renderHook(() => useForm())
+    test('should set the field value', () => {
+      expect(formState.values).toEqual({ testField: 'testValue' })
+    })
 
-      act(() => {
-        result.current.setFieldValue('testField', '')
-      })
+    test('should set "isDirty" to true', () => {
+      expect(formState.isDirty).toBeTruthy()
+    })
+  })
 
-      test('should unset the field value', () => {
-        expect(result.current.values).toEqual({})
-      })
+  describe('when setFieldValue() is called with an empty value', () => {
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm())
 
-      test('should set "isDirty" to false', () => {
-        expect(result.current.isDirty).toBeFalsy()
+      await act(async () => {
+        await hook.result.current.setFieldValue('testField', '')
+        formState = hook.result.current
       })
+    })
+
+    test('should unset the field value', () => {
+      expect(formState.values).toEqual({})
+    })
+
+    test('should set "isDirty" to false', () => {
+      expect(formState.isDirty).toBeFalsy()
     })
   })
 
   describe('when setFieldError() is called', () => {
-    const { result } = renderHook(() => useForm())
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm())
 
-    act(() => {
-      result.current.setFieldError('testField', 'testError')
+      await act(async () => {
+        window.scrollTo = jest.fn()
+        await hook.result.current.setFieldError('testField', 'testError')
+        formState = hook.result.current
+      })
     })
 
     test('should set field error', () => {
-      expect(result.current.errors).toEqual({
-        testField: 'testError',
-      })
+      expect(formState.errors).toEqual({ testField: 'testError' })
+    })
+
+    test('should scroll to the top of the page', () => {
+      expect(window.scrollTo).toBeCalledTimes(1)
+      expect(window.scrollTo).toBeCalledWith(0, 0)
     })
   })
 
-  describe('when setFieldTouched() is called without validation', () => {
-    const { result } = renderHook(() => useForm())
+  describe('when setFieldTouched() is called', () => {
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm())
 
-    act(() => {
-      result.current.setFieldTouched('testField1', true, false)
+      await act(async () => {
+        window.scrollTo = jest.fn()
+        await hook.result.current.setFieldTouched('testField1', true)
+        formState = hook.result.current
+      })
     })
 
     test('should mark field as touched', () => {
-      expect(result.current.touched).toEqual({
-        testField1: true,
-      })
+      expect(formState.touched).toEqual({ testField1: true })
     })
+
     test('should set field value', () => {
-      expect(result.current.touched).toEqual({
-        testField1: true,
-      })
+      expect(formState.touched).toEqual({ testField1: true })
     })
+
     test('should not set any errors', () => {
-      expect(result.current.errors).toEqual({})
+      expect(formState.errors).toEqual({})
     })
   })
 
   describe('when validateForm() is called with provided fields', () => {
-    const { result } = renderHook(() => useForm())
-
     beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
       await act(async () => {
-        result.current.registerField({ name: 'testField1', validate: () => 'testError1' })
-        result.current.registerField({ name: 'testField2', validate: () => 'testError2' })
-        result.current.registerField({ name: 'testField3', validate: () => 'testError3' })
+        await hook.result.current.registerField({ name: 'testField1', validate: () => 'testError1' })
+        await hook.result.current.registerField({ name: 'testField2', validate: () => 'testError2' })
+        await hook.result.current.registerField({ name: 'testField3', validate: () => 'testError3' })
 
-        // Wait for fields to register.
-        await Promise.resolve()
+        window.scrollTo = jest.fn()
 
-        result.current.validateForm()
+        hook.result.current.validateForm()
+
+        formState = hook.result.current
       })
     })
 
-    test('should validate all the fields', () => {
-      expect(result.current.errors).toEqual({
+    test('should validate all the fields and set errors', () => {
+      expect(formState.errors).toEqual({
         testField1: 'testError1',
         testField2: 'testError2',
         testField3: 'testError3',
       })
     })
+
+    test('should scroll to the top of the page', () => {
+      expect(window.scrollTo).toBeCalledTimes(1)
+      expect(window.scrollTo).toBeCalledWith(0, 0)
+    })
   })
 
   describe('when validateForm() is called on nonexistent field', () => {
-    const { result } = renderHook(() => useForm())
-    const callback = () => result.current.validateForm(['madeUpField'])
+    let callback
+
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+      callback = () => hook.result.current.validateForm(['madeUpField'])
+    })
 
     test('should throw an exception', () => {
       expect(callback).toThrowError('Field madeUpField does not exist')
@@ -326,69 +345,71 @@ describe('useForm', () => {
   })
 
   describe('when deregisterField() is called', () => {
-    const { result } = renderHook(() => useForm())
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm())
 
-    act(() => {
-      result.current.registerField(testField1)
-      result.current.deregisterField(['testField1'])
+      await act(async () => {
+        await hook.result.current.registerField(testField1)
+        await hook.result.current.deregisterField(['testField1'])
+
+        formState = hook.result.current
+      })
     })
 
     test('should remove fields from the form state', () => {
-      expect(result.current.fields).toEqual({})
+      expect(formState.fields).toEqual({})
     })
 
     test('should remove touched', () => {
-      expect(result.current.touched).toEqual({})
+      expect(formState.touched).toEqual({})
     })
   })
 
   describe('when registerStep() is called', () => {
-    const { result } = renderHook(() => useForm())
-
     beforeAll(async () => {
-      await act(async () => {
-        result.current.registerStep('testStep')
+      const hook = renderHook(() => useForm())
 
-        // Wait for step to register.
-        await Promise.resolve()
+      await act(async () => {
+        await hook.result.current.registerStep('testStep')
+
+        formState = hook.result.current
       })
     })
 
     test('should add the step to form state', () => {
-      expect(result.current.steps).toEqual(['testStep'])
+      expect(formState.steps).toEqual(['testStep'])
     })
   })
 
   describe('when validateField() is called with a single validator', () => {
-    const { result } = renderHook(() => useForm())
-    let error = null
+    let validationError
 
     beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
       await act(async () => {
-        result.current.registerField({
+        await hook.result.current.registerField({
           name: 'testField1',
           validate: () => 'testError1',
         })
 
-        // Wait for field to register.
-        await Promise.resolve()
-
-        error = result.current.validateField('testField1')
+        validationError = await hook.result.current.validateField('testField1')
       })
     })
 
     test('should return an error', () => {
-      expect(error).toEqual('testError1')
+      expect(validationError).toEqual('testError1')
     })
   })
 
   describe('when validateField() is called with multiple validators and both fails validation', () => {
-    const { result } = renderHook(() => useForm())
-    let error
+    let validationError
 
     beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
       await act(async () => {
-        result.current.registerField({
+        await hook.result.current.registerField({
           name: 'testField1',
           validate: [
             () => 'testError1',
@@ -396,25 +417,23 @@ describe('useForm', () => {
           ],
         })
 
-        // Wait for field to register.
-        await Promise.resolve()
-
-        error = result.current.validateField('testField1')
+        validationError = await hook.result.current.validateField('testField1')
       })
     })
 
     test('should return an error only from the first validator', () => {
-      expect(error).toEqual('testError1')
+      expect(validationError).toEqual('testError1')
     })
   })
 
   describe('when validateField() is called with multiple validators and only one fails validation', () => {
-    const { result } = renderHook(() => useForm())
-    let error
+    let validationError
 
     beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
       await act(async () => {
-        result.current.registerField({
+        await hook.result.current.registerField({
           name: 'testField1',
           validate: [
             () => null,
@@ -422,25 +441,23 @@ describe('useForm', () => {
           ],
         })
 
-        // Wait for field to register.
-        await Promise.resolve()
-
-        error = result.current.validateField('testField1')
+        validationError = await hook.result.current.validateField('testField1')
       })
     })
 
     test('should return an error from the second validator', () => {
-      expect(error).toEqual('testError2')
+      expect(validationError).toEqual('testError2')
     })
   })
 
   describe('when validateField() is called with multiple validators and none fails validation', () => {
-    const { result } = renderHook(() => useForm())
-    let error
+    let validationError
 
     beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
       await act(async () => {
-        result.current.registerField({
+        await hook.result.current.registerField({
           name: 'testField1',
           validate: [
             () => null,
@@ -448,42 +465,35 @@ describe('useForm', () => {
           ],
         })
 
-        // Wait for field to register.
-        await Promise.resolve()
-
-        error = result.current.validateField('testField1')
+        validationError = await hook.result.current.validateField('testField1')
       })
     })
 
-    test('should return null', () => {
-      expect(error).toEqual(null)
+    test('should return null (no error)', () => {
+      expect(validationError).toEqual(null)
     })
   })
 
   describe('when validateField() is called with validator that requires the form state', () => {
-    const { result } = renderHook(() => useForm())
-    let formStateFromFunction
-
-    function validatorUsingFormState(value, name, formState) {
-      formStateFromFunction = formState
+    function validatorUsingFormState(value, name, formSt) {
+      formState = formSt
     }
 
     beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
       await act(async () => {
-        result.current.registerField({
+        await hook.result.current.registerField({
           name: 'testField1',
           validate: validatorUsingFormState,
         })
 
-        // Wait for field to register.
-        await Promise.resolve()
-
-        result.current.validateField('testField1')
+        await hook.result.current.validateField('testField1')
       })
     })
 
     test('should have access to the form state', () => {
-      expect(formStateFromFunction).toEqual({
+      expect(formState).toEqual({
         currentStep: 0,
         errors: {},
         fields: {
@@ -504,87 +514,158 @@ describe('useForm', () => {
   })
 
   describe('when validateField() is called on a field without validation', () => {
-    const { result } = renderHook(() => useForm())
-    let error = null
+    let validationError
 
     beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
       await act(async () => {
-        result.current.registerField({
+        await hook.result.current.registerField({
           name: 'testField1',
         })
 
-        // Wait for field to register.
-        await Promise.resolve()
-
-        error = result.current.validateField('testField1')
+        validationError = await hook.result.current.validateField('testField1')
       })
     })
 
     test('should return null', () => {
-      expect(error).toBeNull()
+      expect(validationError).toBeNull()
     })
   })
 
   describe('when deregisterStep() is called', () => {
-    const { result } = renderHook(() => useForm())
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm())
 
-    act(() => {
-      result.current.registerStep('testStep')
-      result.current.deregisterStep('testStep')
+      await act(async () => {
+        await hook.result.current.registerStep('testStep')
+        await hook.result.current.deregisterStep('testStep')
+        formState = hook.result.current
+      })
     })
 
     test('should remove the step from the form state', () => {
-      expect(result.current.steps).toEqual([])
+      expect(formState.steps).toEqual([])
     })
   })
 
-  describe('when goToStepByName() is called', () => {
-    const { result } = renderHook(() => useForm())
-
+  describe('when setCurrentStep() is called', () => {
     beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
       await act(async () => {
-        result.current.registerStep('testStep1')
-        result.current.registerStep('testStep2')
-        result.current.registerStep('testStep3')
+        await hook.result.current.registerStep('testStep1')
+        await hook.result.current.registerStep('testStep2')
 
-        // Wait for steps to register.
-        await Promise.resolve()
+        window.scrollTo = jest.fn()
 
-        result.current.goToStepByName('testStep3')
+        hook.result.current.setCurrentStep(1)
+
+        formState = hook.result.current
       })
     })
 
     test('should update the current step', () => {
-      expect(result.current.currentStep).toEqual(2)
+      expect(formState.currentStep).toEqual(1)
+    })
+
+    test('should scroll to the top of the page', () => {
+      expect(window.scrollTo).toBeCalledTimes(1)
+      expect(window.scrollTo).toBeCalledWith(0, 0)
     })
   })
 
-  describe('when goForward() is called without onSubmit() callback', () => {
-    const { result } = renderHook(() => useForm())
-    let error
+  describe('when goToStepByName() is called', () => {
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm())
 
-    act(() => {
-      try {
-        result.current.goForward()
-      } catch (e) {
-        error = e
-      }
+      await act(async () => {
+        await hook.result.current.registerStep('testStep1')
+        await hook.result.current.registerStep('testStep2')
+        await hook.result.current.registerStep('testStep3')
+
+        window.scrollTo = jest.fn()
+
+        hook.result.current.goToStepByName('testStep3')
+
+        formState = hook.result.current
+      })
     })
 
-    test('should not throw an error', () => {
-      expect(error).toBeUndefined()
+    test('should update the current step', () => {
+      expect(formState.currentStep).toEqual(2)
+    })
+
+    test('should scroll to the top of the page', () => {
+      expect(window.scrollTo).toBeCalledTimes(1)
+      expect(window.scrollTo).toBeCalledWith(0, 0)
+    })
+  })
+
+  describe('when goForward() is called', () => {
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
+      await act(async () => {
+        await hook.result.current.registerStep('testStep1')
+        await hook.result.current.registerStep('testStep2')
+
+        window.scrollTo = jest.fn()
+
+        hook.result.current.goForward()
+
+        formState = hook.result.current
+      })
+    })
+
+    test('should go to the next step', () => {
+      expect(formState.currentStep).toEqual(1)
+    })
+
+    test('should scroll to the top of the page', () => {
+      expect(window.scrollTo).toBeCalledTimes(1)
+      expect(window.scrollTo).toBeCalledWith(0, 0)
+    })
+  })
+
+  describe('when goBack() is called', () => {
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm({ initialStep: 1 }))
+
+      await act(async () => {
+        await hook.result.current.registerStep('testStep1')
+        await hook.result.current.registerStep('testStep2')
+
+        window.scrollTo = jest.fn()
+
+        hook.result.current.goBack()
+
+        formState = hook.result.current
+      })
+    })
+
+    test('should go to the previous step', () => {
+      expect(formState.currentStep).toEqual(0)
+    })
+
+    test('should scroll to the top of the page', () => {
+      expect(window.scrollTo).toBeCalledTimes(1)
+      expect(window.scrollTo).toBeCalledWith(0, 0)
     })
   })
 
   describe('when setIsSubmitted() is called with a "true" value', () => {
-    const { result } = renderHook(() => useForm())
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm({ initialStep: 1 }))
 
-    act(() => {
-      result.current.setIsSubmitted(true)
+      await act(async () => {
+        await hook.result.current.setIsSubmitted(true)
+        formState = hook.result.current
+      })
     })
 
     test('should set "isSubmitted" to true', () => {
-      expect(result.current.isSubmitted).toBeTruthy()
+      expect(formState.isSubmitted).toBeTruthy()
     })
   })
 })

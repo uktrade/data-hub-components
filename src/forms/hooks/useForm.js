@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { isEmpty, isEqual, omit } from 'lodash'
 import { useBeforeUnload } from 'react-use'
 
@@ -31,6 +31,12 @@ function useForm({
     isDirty && !isSubmitted,
     'Changes that you made will not be saved.',
   )
+
+
+  // Using JSON.stringify() to avoid extra calls as {} !== {}
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [currentStep, JSON.stringify(errors)])
 
   const getFieldState = (name) => {
     return {
@@ -169,7 +175,9 @@ function useForm({
 
     setIsSubmitted(true)
   }
+
   const goBack = () => setCurrentStep(currentStep - 1)
+
   const goToStepByName = stepName => setCurrentStep(steps.indexOf(stepName))
 
   return {
