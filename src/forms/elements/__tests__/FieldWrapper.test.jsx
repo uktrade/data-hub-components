@@ -19,7 +19,6 @@ describe('FieldWrapper', () => {
       expect(wrapper.text()).toContain('Test default')
     })
 
-
     test('should not add a label', () => {
       expect(wrapper.find(Label).exists()).toBeFalsy()
     })

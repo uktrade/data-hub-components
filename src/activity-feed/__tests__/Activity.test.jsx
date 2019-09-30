@@ -16,7 +16,6 @@ import investmentProjectsFDIFixture from '../__fixtures__/investment_projects/pr
 import investmentProjectsNonFDIFixture from '../__fixtures__/investment_projects/project_added_non_fdi'
 import orderAddedFixture from '../__fixtures__/omis/order_added'
 
-
 // Lock the date so moment's relative date doesn't break our deterministic tests.
 MockDate.set(1559750582706)
 
