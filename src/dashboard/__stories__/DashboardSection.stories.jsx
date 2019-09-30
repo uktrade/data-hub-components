@@ -82,7 +82,7 @@ storiesOf('Dashboard')
     <WithData initialState={{
       lists: [
         {
-          name: 'Foo',
+          name: 'Very long list name lorem ipsum dolor sit amet',
           companies: allCompanies,
         },
         {
