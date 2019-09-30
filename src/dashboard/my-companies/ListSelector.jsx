@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { H2 } from '@govuk-react/heading'
+import Link from '@govuk-react/link'
 import Select from '@govuk-react/select'
 import useMyCompaniesContext from './useMyCompaniesContext'
 import { LIST_CHANGE } from './constants'
@@ -9,7 +11,7 @@ const Root = styled.div`
   align-items: baseline;
 `
 
-const Headline = styled.h2`
+const Headline = styled(H2)`
   flex-grow: 1;
 `
 
@@ -67,9 +69,9 @@ const ListSelector = () => {
                 </>
               )
             }
-            <a href="#foo">
+            <Link href="#foo">
               Edit lists
-            </a>
+            </Link>
           </>
         )
         : null

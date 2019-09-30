@@ -41,7 +41,7 @@ export const filterCompanyName = (companies, filterText) => (filterText.length
 function MyCompaniesTable() {
   const { state: { lists, selectedIdx, sortBy, filter } } = useMyCompaniesContext()
   const list = lists[selectedIdx]
-  const companies = sortCompanies(
+  const filteredSortedCompanies = sortCompanies(
     filterCompanyName(list.companies, filter),
     sortBy,
   )
@@ -54,7 +54,7 @@ function MyCompaniesTable() {
     </Table.Row>
   )
 
-  const rows = companies.map(({ company, latestInteraction }) => {
+  const rows = filteredSortedCompanies.map(({ company, latestInteraction }) => {
     return (
       <Table.Row key={company.id}>
         <Table.Cell>
@@ -90,7 +90,7 @@ function MyCompaniesTable() {
 
   return (
     <>
-      {companies.length > 1 && <Filters />}
+      {list.companies.length > 1 && <Filters />}
       <Table head={header}>{rows}</Table>
     </>
   )

@@ -28,7 +28,7 @@ const defaultState = {
   filter: '',
 }
 
-const reducer = (state, { type, ...action }) => {
+export const reducer = (state, { type, ...action }) => {
   switch (type) {
     case LIST_CHANGE:
       return { ...state, selectedIdx: action.idx }
