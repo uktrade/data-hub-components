@@ -3,46 +3,76 @@ import { mount } from 'enzyme'
 import MyCompaniesFilters from '../MyCompaniesFilters'
 import useMyCompaniesContext from '../useMyCompaniesContext'
 
+// TODO: Move to utils
+const withTargetValue = value => ({
+  target: {
+    value,
+  },
+})
+
 describe('MyCompaniesFilters', () => {
-  const mockDispatch = jest.fn()
-  test('renders company filters', () => {
-    const wrapper = mount(
-      <useMyCompaniesContext.Provider>
-        <MyCompaniesFilters />
-      </useMyCompaniesContext.Provider>
-    )
-    expect(wrapper).toMatchSnapshot()
-  })
-
   describe('Select', () => {
-    test('should call store actions when event handler fires', () => {
+    test('Should update context state on interaction', () => {
+      const stateHistory = []
+
+      const SomeComponent = () => {
+        const { state: { filter, sortBy } } = useMyCompaniesContext()
+        stateHistory.push({ filter, sortBy })
+        return null
+      }
+
       const wrapper = mount(
-        <useMyCompaniesContext.Provider mockProps={{ dispatch: mockDispatch }}>
+        <useMyCompaniesContext.Provider>
           <MyCompaniesFilters />
-        </useMyCompaniesContext.Provider>
+          <SomeComponent />
+        </useMyCompaniesContext.Provider>,
       )
-      wrapper.find('select').simulate('change', { target: { value: 'recent' } })
 
-      expect(mockDispatch).toHaveBeenCalledWith({
-        type: 'sortBy',
-        sortType: 'recent',
-      })
-    })
-  })
+      wrapper.find('select')
+        .simulate('change', withTargetValue('alphabetical'))
+        .simulate('change', withTargetValue('least-recent'))
+        .simulate('change', withTargetValue('recent'))
 
-  describe('Search', () => {
-    test('should call store actions when event handler fires', () => {
-      const wrapper = mount(
-        <useMyCompaniesContext.Provider mockProps={{ dispatch: mockDispatch }}>
-          <MyCompaniesFilters />
-        </useMyCompaniesContext.Provider>
-      )
-      wrapper.find('input').simulate('change', { target: { value: 'hello' } })
+      wrapper.find('input')
+        .simulate('change', withTargetValue('foo'))
+        .simulate('change', withTargetValue('bar'))
+        .simulate('change', withTargetValue('baz'))
+        .simulate('change', withTargetValue(''))
 
-      expect(mockDispatch).toHaveBeenCalledWith({
-        type: 'filterBy',
-        filterText: 'hello',
-      })
+      expect(stateHistory).toEqual([
+        {
+          filter: '',
+          sortBy: 'recent',
+        },
+        {
+          filter: '',
+          sortBy: 'alphabetical',
+        },
+        {
+          filter: '',
+          sortBy: 'least-recent',
+        },
+        {
+          filter: '',
+          sortBy: 'recent',
+        },
+        {
+          filter: 'foo',
+          sortBy: 'recent',
+        },
+        {
+          filter: 'bar',
+          sortBy: 'recent',
+        },
+        {
+          filter: 'baz',
+          sortBy: 'recent',
+        },
+        {
+          filter: '',
+          sortBy: 'recent',
+        },
+      ])
     })
   })
 })
