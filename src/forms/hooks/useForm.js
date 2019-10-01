@@ -32,7 +32,6 @@ function useForm({
     'Changes that you made will not be saved.',
   )
 
-
   // Using JSON.stringify() to avoid extra calls as {} !== {}
   useEffect(() => {
     window.scrollTo(0, 0)

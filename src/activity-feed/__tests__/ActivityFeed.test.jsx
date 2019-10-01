@@ -8,12 +8,10 @@ import Checkbox from '@govuk-react/checkbox'
 import ActivityFeed from '../ActivityFeed'
 import interactionActivityFixture from '../__fixtures__/interactions/interaction'
 
-
 const generateActivities = total => Array.from({ length: total }, () => ({
   ...interactionActivityFixture,
   id: uniqueId(),
 }))
-
 
 describe('ActivityFeed', () => {
   describe('when the feed is empty', () => {
@@ -36,7 +34,6 @@ describe('ActivityFeed', () => {
       expect(tree).toMatchSnapshot()
     })
   })
-
 
   describe('when there are more activities to load', () => {
     test('should render with "Load more" link', () => {

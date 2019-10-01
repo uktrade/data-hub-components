@@ -24,23 +24,23 @@ export const filterCompanyName = (companies, filterText) => (filterText.length
 
 export function reducer(state, action) {
   switch (action.type) {
-    case ACTIONS.SORT_BY:
-      return {
-        ...state,
-        companies: getSortedCompanies(state.companies, action.sortType),
-        sortType: action.sortType,
-      }
-    case ACTIONS.FILTER_BY:
-      return {
-        ...state,
-        filterText: action.filterText,
-        companies: getSortedCompanies(
-          filterCompanyName(state.companiesInitial, action.filterText),
-          state.sortType,
-        ),
-      }
-    default:
-      return state
+  case ACTIONS.SORT_BY:
+    return {
+      ...state,
+      companies: getSortedCompanies(state.companies, action.sortType),
+      sortType: action.sortType,
+    }
+  case ACTIONS.FILTER_BY:
+    return {
+      ...state,
+      filterText: action.filterText,
+      companies: getSortedCompanies(
+        filterCompanyName(state.companiesInitial, action.filterText),
+        state.sortType,
+      ),
+    }
+  default:
+    return state
   }
 }
 

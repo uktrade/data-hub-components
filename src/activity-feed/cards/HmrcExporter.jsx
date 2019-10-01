@@ -43,7 +43,6 @@ export default class HmrcExporter extends React.PureComponent {
       }
     })
 
-
     return (
       <Card>
         <CardHeader>

@@ -19,40 +19,86 @@
     "react-hooks"
   ],
   "rules": {
-    "no-underscore-dangle": ["error", {"allow": ["_source"]}],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_source"
+        ]
+      }
+    ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "off",
     "react/prefer-stateless-function": "off",
     "react/no-multi-comp": "off",
     "react/forbid-prop-types": "off",
-    "react/jsx-boolean-value": ["error", "always"],
+    "react/jsx-boolean-value": [
+      "error",
+      "always"
+    ],
     "react/jsx-one-expression-per-line": "off",
-    "react/sort-comp": ["error", { "order": [
-      "lifecycle",
-      "everything-else",
-      "render"
-    ]}],
-    "semi": ["error", "never"],
+    "react/sort-comp": [
+      "error",
+      {
+        "order": [
+          "lifecycle",
+          "everything-else",
+          "render"
+        ]
+      }
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
     "object-curly-newline": "off",
     "no-else-return": "off",
     "arrow-body-style": "off",
-    "jsx-a11y/label-has-for": [ 2, {
-      "components": [ "Label" ],
-      "required": {
-        "any": [ "nesting", "id" ]
-      },
-      "allowChildren": false
-    }]
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": [
+          "Label"
+        ],
+        "required": {
+          "any": [
+            "nesting",
+            "id"
+          ]
+        },
+        "allowChildren": false
+      }
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "eol-last": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ]
   },
   "overrides": [
     {
-      "files": ["**.stories.{js,jsx}"],
+      "files": [
+        "**.stories.{js,jsx}"
+      ],
       "rules": {
-        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true
+          }
+        ]
       }
     },
     {
-      "files": ["**.test.{js,jsx}"],
+      "files": [
+        "**.test.{js,jsx}"
+      ],
       "env": {
         "jest": true,
         "browser": true
