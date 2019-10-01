@@ -13,87 +13,74 @@ const WithData = props => (
 
 storiesOf('Dashboard')
   .add('No lists', () => (
-    <WithData initialState={{
-      lists: [],
-    }}
-    />
+    <WithData />
   ))
   .add('One empty list', () => (
-    <WithData initialState={{
-      lists: [
-        {
-          name: "I'm empty",
-          companies: [],
-        },
-      ],
-    }}
+    <WithData lists={[
+      {
+        name: "I'm empty",
+        companies: [],
+      },
+    ]}
     />
   ))
   .add('One full list', () => (
-    <WithData initialState={{
-      lists: [
-        {
-          name: 'Foo',
-          companies: allCompanies,
-        },
-      ],
-    }}
+    <WithData lists={[
+      {
+        name: 'Foo',
+        companies: allCompanies,
+      },
+    ]}
     />
   ))
   .add('Three lists, first empty', () => (
-    <WithData initialState={{
-      lists: [
-        {
-          name: 'Foo',
-          companies: allCompanies,
-        },
-        {
-          name: 'Bar',
-          companies: [],
-        },
-        {
-          name: 'Baz',
-          companies: allCompanies.slice(0, -1),
-        },
-      ],
-    }}
+    <WithData lists={[
+      {
+        name: 'Foo',
+        companies: allCompanies,
+      },
+      {
+        name: 'Bar',
+        companies: [],
+      },
+      {
+        name: 'Baz',
+        companies: allCompanies.slice(0, -1),
+      },
+    ]}
     />
   ))
   .add('Three lists, first with single company', () => (
-    <WithData initialState={{
-      lists: [
-        {
-          name: 'Foo',
-          companies: allCompanies,
-        },
-        {
-          name: 'Bar',
-          companies: allCompanies.slice(1, 2),
-        },
-        {
-          name: 'Baz',
-          companies: allCompanies.slice(0, -1),
-        },
-      ],
-    }}
+    <WithData lists={[
+      {
+        name: 'Foo',
+        companies: allCompanies,
+      },
+      {
+        name: 'Bar',
+        companies: allCompanies.slice(1, 2),
+      },
+      {
+        name: 'Baz',
+        companies: allCompanies.slice(0, -1),
+      },
+    ]}
     />
   ))
   .add('Three company lists', () => (
-    <WithData initialState={{
-      lists: [
-        {
-          name: 'Very long list name lorem ipsum dolor sit amet',
-          companies: allCompanies,
-        },
-        {
-          name: 'Bar',
-          companies: allCompanies.slice(1),
-        },
-        {
-          name: 'Baz',
-          companies: allCompanies.slice(0, -1),
-        },
-      ],
-    }}
+    <WithData lists={[
+      {
+        name: 'Very long list name lorem ipsum dolor sit amet',
+        companies: allCompanies,
+      },
+      {
+        name: 'Bar',
+        companies: allCompanies.slice(1),
+      },
+      {
+        name: 'Baz',
+        companies: allCompanies.slice(0, -1),
+      },
+    ]}
     />
   ))
