@@ -2,13 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import MyCompaniesFilters from '../MyCompaniesFilters'
 import useMyCompaniesContext from '../useMyCompaniesContext'
-
-// TODO: Move to utils
-const withTargetValue = value => ({
-  target: {
-    value,
-  },
-})
+import { withTargetValue } from '../../../utils/test'
 
 describe('MyCompaniesFilters', () => {
   describe('Select', () => {
