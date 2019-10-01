@@ -272,7 +272,7 @@ describe('Store', () => {
       }
 
       mount(
-        <useMyCompaniesContext.Provider { ...initialState }>
+        <useMyCompaniesContext.Provider {...initialState}>
           <SomeComponent />
         </useMyCompaniesContext.Provider>,
       )
