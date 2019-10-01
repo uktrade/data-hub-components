@@ -8,7 +8,7 @@ import ListSelector from '../ListSelector'
 describe('ListSelector', () => {
   test('No lists', () => {
     const wrapper = mount(
-      <useMyCompaniesContext.Provider initialState={{}}>
+      <useMyCompaniesContext.Provider>
         <ListSelector />
       </useMyCompaniesContext.Provider>,
     )
@@ -17,15 +17,7 @@ describe('ListSelector', () => {
 
   test('One list', () => {
     const wrapper = mount(
-      <useMyCompaniesContext.Provider
-        initialState={{
-          lists: [
-            {
-              name: 'Foo',
-            },
-          ],
-        }}
-      >
+      <useMyCompaniesContext.Provider lists={[{ name: 'Foo' }]}>
         <ListSelector />
       </useMyCompaniesContext.Provider>,
     )
@@ -35,19 +27,17 @@ describe('ListSelector', () => {
   test('Three list', () => {
     const wrapper = mount(
       <useMyCompaniesContext.Provider
-        initialState={{
-          lists: [
-            {
-              name: 'Foo',
-            },
-            {
-              name: 'Bar',
-            },
-            {
-              name: 'Baz',
-            },
-          ],
-        }}
+        lists={[
+          {
+            name: 'Foo',
+          },
+          {
+            name: 'Bar',
+          },
+          {
+            name: 'Baz',
+          },
+        ]}
       >
         <ListSelector />
       </useMyCompaniesContext.Provider>,

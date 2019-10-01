@@ -39,12 +39,14 @@ export const reducer = (state, { type, ...action }) => {
   }
 }
 
-const useMyCompaniesContext = createUseContext(({ initialState = {} }) => {
+// We are unpacking children here just to remove them from initialState.
+const useMyCompaniesContext = createUseContext(({ children, ...initialState }) => {
   const [state, dispatch] = useReducer(
     reducer,
     {
       ...defaultState,
       ...initialState,
+      // Reducer assumes the list of company lists is sorted.
       lists: _.sortBy(initialState.lists, 'name'),
     },
   )
