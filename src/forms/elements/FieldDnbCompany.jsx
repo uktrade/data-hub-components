@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { isEmpty } from 'lodash'
+import styled from 'styled-components'
 
-import { WIDTHS } from '@govuk-react/constants'
+import { WIDTHS, SPACING } from '@govuk-react/constants'
 import { Search } from '@govuk-react/icons'
 import UnorderedList from '@govuk-react/unordered-list'
 import Details from '@govuk-react/details'
@@ -21,6 +22,11 @@ import useEntitySearch from '../../entity-search/useEntitySearch'
 import useDnbSearch from '../../entity-search/useDnbSearch'
 import FormActions from './FormActions'
 import EntityList from '../../entity-search/EntityList'
+
+const StyledUnorderedList = styled(UnorderedList)`
+  list-style-type: disc;
+  padding-left: ${SPACING.SCALE_5};
+`
 
 const FieldDnbCompany = ({
   name,
@@ -133,7 +139,7 @@ const FieldDnbCompany = ({
 
             <Details summary="I cannot find the company I am looking for">
               <Paragraph>Try improving your search by:</Paragraph>
-              <UnorderedList>
+              <StyledUnorderedList>
                 <ListItem>
                   checking the company name for spelling errors
                 </ListItem>
@@ -143,7 +149,7 @@ const FieldDnbCompany = ({
                 <ListItem>
                   adding a postcode to your search to narrow down the results
                 </ListItem>
-              </UnorderedList>
+              </StyledUnorderedList>
               <ButtonLink
                 onClick={() => {
                   setFieldValue('cannotFind', true)
