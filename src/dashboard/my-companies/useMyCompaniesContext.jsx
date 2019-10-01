@@ -3,8 +3,6 @@ import { useReducer } from 'react'
 import createUseContext from 'constate'
 import { FILTER_CHANGE, LIST_CHANGE, ORDER_CHANGE } from './constants'
 
-export const getModel = (el = null) => (el ? JSON.parse(el.dataset.model) : [])
-
 export function getSortedCompanies(companies, sortType) {
   const sort = {
     recent: _.orderBy(companies, [c => c.latestInteraction.date || ''], ['desc']),
@@ -41,7 +39,7 @@ export const reducer = (state, { type, ...action }) => {
   }
 }
 
-const useMyCompaniesContext = createUseContext(({ initialState }) => {
+const useMyCompaniesContext = createUseContext(({ initialState = {} }) => {
   const [state, dispatch] = useReducer(
     reducer,
     {

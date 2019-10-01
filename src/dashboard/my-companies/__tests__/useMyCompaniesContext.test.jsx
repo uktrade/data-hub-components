@@ -1,24 +1,26 @@
+import _ from 'lodash'
 import React from 'react'
 import { mount } from 'enzyme'
 import useMyCompaniesContext, {
   getSortedCompanies,
   reducer,
   filterCompanyName,
-  getModel,
 } from '../useMyCompaniesContext'
 import companies from '../../__fixtures__/companies'
+import { LIST_CHANGE, FILTER_CHANGE, ORDER_CHANGE } from '../constants'
+
+const initialState = {
+  lists: [
+    { name: 'Foo' },
+    { name: 'Bar' },
+    { name: 'Baz' },
+  ],
+  selectedIdx: 0,
+  sortBy: 'alphabetical',
+  filter: 'foobarbaz',
+}
 
 describe('Store', () => {
-  describe('getModel()', () => {
-    test('returns empty array if no element has been passed in', () => {
-      expect(getModel()).toEqual([])
-    })
-    test('returns data attribute as a JS object if element has been passed', () => {
-      const ele = document.createElement('div')
-      ele.dataset.model = '{"foo":"bar"}'
-      expect(getModel(ele)).toEqual({ foo: 'bar' })
-    })
-  })
   describe('getSortedCompanies()', () => {
     test('sort by recent', () => {
       const expected = [
@@ -184,30 +186,101 @@ describe('Store', () => {
     })
   })
   describe('reducer()', () => {
-    test('sortBy', () => {
-      const action = { type: 'sortBy', sortType: 'recent' }
-      const reduceWithSortByRecent = reducer(companies, action)
-      expect(reduceWithSortByRecent.sortType).toEqual('recent')
+    test('List change', () => {
+      expect(reducer(initialState, {
+        type: LIST_CHANGE,
+        idx: 1,
+      })).toEqual({ ...initialState, selectedIdx: 1 })
+
+      expect(reducer(initialState, {
+        type: LIST_CHANGE,
+        idx: 2,
+      })).toEqual({ ...initialState, selectedIdx: 2 })
+
+      expect(reducer(initialState, {
+        type: LIST_CHANGE,
+        idx: 0,
+      })).toEqual({ ...initialState, selectedIdx: 0 })
     })
-    test('filterBy', () => {
-      const action = { type: 'filterBy', filterText: 'abc' }
-      const reduceWithFilterByRecent = reducer(
-        { companiesInitial: companies },
-        action
-      )
-      expect(reduceWithFilterByRecent.filterText).toEqual('abc')
+
+    test('Order by change', () => {
+      expect(reducer(initialState, {
+        type: ORDER_CHANGE,
+        sortBy: 'recent',
+      })).toEqual({ ...initialState, sortBy: 'recent' })
+
+      expect(reducer(initialState, {
+        type: ORDER_CHANGE,
+        sortBy: 'least-recent',
+      })).toEqual({ ...initialState, sortBy: 'least-recent' })
+
+      expect(reducer(initialState, {
+        type: ORDER_CHANGE,
+        sortBy: 'alphabetical',
+      })).toEqual({ ...initialState, sortBy: 'alphabetical' })
     })
-    test('No action type so return original state', () => {
-      const action = { type: '', filterText: 'abc' }
-      const reduceWithNoAction = reducer(companies, action)
-      expect(reduceWithNoAction).toEqual(companies)
+
+    test('Filter change', () => {
+      expect(reducer(initialState, {
+        type: FILTER_CHANGE,
+        filter: 'foo',
+      })).toEqual({ ...initialState, filter: 'foo' })
+
+      expect(reducer(initialState, {
+        type: FILTER_CHANGE,
+        filter: 'bar',
+      })).toEqual({ ...initialState, filter: 'bar' })
+
+      expect(reducer(initialState, {
+        type: FILTER_CHANGE,
+        filter: '',
+      })).toEqual({ ...initialState, filter: '' })
     })
   })
 
   describe('useMyCompaniesContext()', () => {
-    test('Provider matches snapshot', () => {
-      const wrapper = mount(<useMyCompaniesContext.Provider />)
-      expect(wrapper).toMatchSnapshot()
+    test('Default state', () => {
+      let actual
+
+      const SomeComponent = () => {
+        const { state } = useMyCompaniesContext()
+        actual = state
+        return null
+      }
+
+      mount(
+        <useMyCompaniesContext.Provider>
+          <SomeComponent />
+        </useMyCompaniesContext.Provider>,
+      )
+
+      expect(actual).toEqual({
+        lists: [],
+        filter: '',
+        sortBy: 'recent',
+        selectedIdx: 0,
+      })
+    })
+
+    test('Provided state', () => {
+      let actual
+
+      const SomeComponent = () => {
+        const { state } = useMyCompaniesContext()
+        actual = state
+        return null
+      }
+
+      mount(
+        <useMyCompaniesContext.Provider initialState={initialState}>
+          <SomeComponent />
+        </useMyCompaniesContext.Provider>,
+      )
+
+      expect(actual).toEqual({
+        ...initialState,
+        lists: _.orderBy(initialState.lists, 'name'),
+      })
     })
   })
 })
