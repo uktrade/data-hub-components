@@ -149,6 +149,9 @@ const FieldDnbCompany = ({
                 <ListItem>
                   adding a postcode to your search to narrow down the results
                 </ListItem>
+                <ListItem>
+                  removing the words &quot;limited&quot; or &quot;ltd&quot;
+                </ListItem>
               </StyledUnorderedList>
               <ButtonLink
                 onClick={() => {
