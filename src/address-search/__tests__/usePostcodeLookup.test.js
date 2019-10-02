@@ -1,4 +1,4 @@
-import postcodeLookup from '../PostcodeLookup'
+import usePostcodeLookup from '../usePostcodeLookup'
 import {
   setupPostcodeMock200,
   setupPostcodeMock404,
@@ -12,10 +12,10 @@ describe('useAddressSearch', () => {
   let axiosMock
   let response
 
-  describe('when postcodeLookup() is called with a postcode', () => {
+  describe('when usePostcodeLookup() is called with a postcode', () => {
     beforeAll(async () => {
       axiosMock = setupPostcodeMock200(ENDPOINT_WITH_POSTCODE)
-      response = await postcodeLookup(ENDPOINT)(POSTCODE)
+      response = await usePostcodeLookup(ENDPOINT)(POSTCODE)
     })
 
     afterAll(() => {
@@ -25,16 +25,15 @@ describe('useAddressSearch', () => {
     test('should return 7 addresses and the address count notification', () => {
       const addressCount = '7 addresses found'
       expect(response[0].address1).toBe(addressCount)
-      expect(response[0].id).toBe(addressCount)
       expect(response).toHaveLength(8)
     })
   })
 
-  describe('when postcodeLookup() is called without a postcode', () => {
+  describe('when usePostcodeLookup() is called without a postcode', () => {
     beforeAll(async () => {
       axiosMock = setupPostcodeMock404(ENDPOINT)
       try {
-        response = await postcodeLookup(ENDPOINT)('')
+        response = await usePostcodeLookup(ENDPOINT)('')
       } catch (evt) {
         response = evt
       }

@@ -17,13 +17,16 @@ const StyledButton = styled(Button)`
 `
 
 storiesOf('Forms', module)
-  .add('FieldAddress - success', () => {
+  .add('FieldAddress', () => {
     setupPostcodeMock200(`${API_ENDPOINT}/${POSTCODE}`, { delayResponse: 750 })
     return (
       <Form onSubmit={action('onSubmit')}>
         {form => (
           <>
             <FieldAddress
+              legend="Address"
+              name="address"
+              hint="Type 'SW1H 9AJ' to get results, otherwise you will get an error."
               country={{
                 id: '80756b9a-5d95-e211-a939-e4115bead28a',
                 name: 'United Kingdom',

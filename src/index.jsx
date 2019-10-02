@@ -6,6 +6,10 @@ export { default as ActivityFeedFilters } from './activity-feed/ActivityFeedFilt
 export { default as ActivityFeedHeader } from './activity-feed/ActivityFeedHeader'
 export { default as ActivityFeedPagination } from './activity-feed/ActivityFeedPagination'
 
+// Address search
+export { default as useAddressSearch } from './address-search/useAddressSearch'
+export { default as usePostcodeLookup } from './address-search/usePostcodeLookup'
+
 // Button Link
 export { default as ButtonLink } from './button-link/ButtonLink'
 
