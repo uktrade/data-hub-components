@@ -2,7 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import MyCompaniesFilters from '../MyCompaniesFilters'
 import useMyCompaniesContext from '../useMyCompaniesContext'
-import { withTargetValue } from '../../../utils/test'
+import { withTargetValue } from '../../../utils/testing'
 
 describe('MyCompaniesFilters', () => {
   describe('Select', () => {

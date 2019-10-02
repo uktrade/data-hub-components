@@ -2,7 +2,7 @@ import { mount } from 'enzyme'
 import React from 'react'
 import useMyCompaniesContext from '../useMyCompaniesContext'
 import ListSelector from '../ListSelector'
-import { withTargetValue } from '../../../utils/test'
+import { withTargetValue } from '../../../utils/testing'
 
 // https://github.com/facebook/create-react-app/issues/6398#issuecomment-462475835
 
@@ -25,7 +25,7 @@ describe('ListSelector', () => {
     expect(wrapper.text()).toBe('My companies listFooEdit lists')
   })
 
-  describe('Three list', () => {
+  describe('Three lists', () => {
     test('Render', () => {
       const wrapper = mount(
         <useMyCompaniesContext.Provider
@@ -78,7 +78,7 @@ describe('ListSelector', () => {
           <SomeComponent />
         </useMyCompaniesContext.Provider>,
       )
-      
+
       wrapper.find('select')
         .simulate('change', withTargetValue(2))
         .simulate('change', withTargetValue(1))
