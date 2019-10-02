@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import CollectionItem from '../CollectionItem'
-import largeCapitalProfileItem from '../__fixtures__/largeCapitalProfileItem'
+import capitalProfileItem from '../__fixtures__/capitalProfileItem'
 
 describe('CollectionItem', () => {
   let wrapper
@@ -10,10 +10,10 @@ describe('CollectionItem', () => {
     beforeAll(() => {
       wrapper = mount(
         <CollectionItem
-          headingUrl={largeCapitalProfileItem.headerUrl}
-          headingText={largeCapitalProfileItem.headerText}
-          badges={largeCapitalProfileItem.badges}
-          metadata={largeCapitalProfileItem.metadata}
+          headingUrl={capitalProfileItem.headerUrl}
+          headingText={capitalProfileItem.headerText}
+          badges={capitalProfileItem.badges}
+          metadata={capitalProfileItem.metadata}
         />,
       )
     })
@@ -47,8 +47,8 @@ describe('CollectionItem', () => {
     beforeAll(() => {
       wrapper = mount(
         <CollectionItem
-          headingUrl={largeCapitalProfileItem.headerUrl}
-          headingText={largeCapitalProfileItem.headerText}
+          headingUrl={capitalProfileItem.headerUrl}
+          headingText={capitalProfileItem.headerText}
         />,
       )
     })
