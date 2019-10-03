@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 import MyCompaniesTable from '../MyCompaniesTable'
 import MyCompaniesFilters from '../MyCompaniesFilters'
 import useMyCompaniesContext from '../useMyCompaniesContext'
-import { changeAndUpdate, changeSelectAndUpdate } from '../../../utils/testing'
+import { changeAndUpdate, changeSelectAndUpdate } from '../../../utils/enzyme'
 
 const getTableRowTexts = wrapper => (
   wrapper.find('tbody tr').map(row => row.text())

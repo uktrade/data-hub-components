@@ -2,7 +2,7 @@ import { mount } from 'enzyme'
 import React from 'react'
 import useMyCompaniesContext from '../useMyCompaniesContext'
 import ListSelector from '../ListSelector'
-import { withTargetValue } from '../../../utils/testing'
+import { withTargetValue } from '../../../utils/enzyme'
 
 // https://github.com/facebook/create-react-app/issues/6398#issuecomment-462475835
 
