@@ -17,12 +17,12 @@ const StyledSummary = styled('div')`
 
 const StyledCount = styled('div')`
   margin-top: ${SPACING.SCALE_1};
+`
 
-  & > H2 {
-    font-weight: normal;
-    font-size: ${FONT_SIZE.SIZE_27};
-    margin-bottom: 0;
-  }
+const StyledH2 = styled(H2)`
+  font-weight: normal;
+  font-size: ${FONT_SIZE.SIZE_27};
+  margin-bottom: 0;
 `
 
 const StyledActions = styled('div')`
@@ -49,7 +49,7 @@ function CollectionHeader({
   return (
     <StyledSummary>
       <StyledCount>
-        <H2>{headerText}</H2>
+        <StyledH2>{headerText}</StyledH2>
       </StyledCount>
       <StyledActions>
         {addItemUrl && (
