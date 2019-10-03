@@ -15,6 +15,8 @@ export { default as ButtonLink } from './button-link/ButtonLink'
 
 // Company lists
 export { default as DeleteCompanyListSection } from './company-lists/DeleteCompanyListSection'
+export { default as CreateListForm } from './company-lists/CreateListForm'
+export { default as AddRemoveFromListForm } from './company-lists/AddRemoveFromListForm'
 
 // Dashboard
 export { default as MyCompaniesTile } from './dashboard/my-companies/MyCompaniesTile'
@@ -40,6 +42,3 @@ export { default as FieldUneditable } from './forms/elements/FieldUneditable'
 
 // Status message
 export { default as StatusMessage } from './status-message/StatusMessage'
-
-// Company lists
-export { default as CreateListForm } from './company-lists/CreateListForm'
