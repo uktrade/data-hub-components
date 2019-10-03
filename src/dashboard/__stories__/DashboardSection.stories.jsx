@@ -84,3 +84,49 @@ storiesOf('Dashboard')
     ]}
     />
   ))
+  .add('remove me', () => (
+    <WithData lists={[
+      {
+        name: 'Foo',
+        companies: [
+          {
+            company: {
+              name: 'Company A',
+              id: 'a',
+            },
+            latestInteraction: {
+              id: 'a',
+              date: '2019-01-06',
+              displayDate: '6 Jan 2019',
+              subject: 'Interaction A',
+            },
+          },
+          {
+            company: {
+              name: 'Company B',
+              id: 'b',
+            },
+            latestInteraction: {
+              id: 'a',
+              date: '2019-01-04',
+              displayDate: '4 Jan 2019',
+              subject: 'Interaction B',
+            },
+          },
+          {
+            company: {
+              name: 'Company C',
+              id: 'c',
+            },
+            latestInteraction: {
+              id: 'c',
+              date: '2019-01-05',
+              displayDate: '5 Jan 2019',
+              subject: 'Interaction C',
+            },
+          },
+        ],
+      },
+    ]}
+    />
+  ))
