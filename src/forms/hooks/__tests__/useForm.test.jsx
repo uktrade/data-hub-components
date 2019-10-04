@@ -38,6 +38,7 @@ describe('useForm', () => {
         isDirty: false,
         isFirstStep: formState.isFirstStep,
         isLastStep: formState.isLastStep,
+        isLoading: false,
         isSubmitted: false,
         registerField: formState.registerField,
         registerStep: formState.registerStep,
@@ -45,8 +46,10 @@ describe('useForm', () => {
         setFieldError: formState.setFieldError,
         setFieldTouched: formState.setFieldTouched,
         setFieldValue: formState.setFieldValue,
+        setIsLoading: formState.setIsLoading,
         setIsSubmitted: formState.setIsSubmitted,
         steps: [],
+        submissionError: null,
         touched: {},
         validateField: formState.validateField,
         validateForm: formState.validateForm,
@@ -505,8 +508,10 @@ describe('useForm', () => {
           },
         },
         isDirty: false,
+        isLoading: false,
         isSubmitted: false,
         steps: [],
+        submissionError: null,
         touched: {
           testField1: false,
         },
@@ -664,6 +669,99 @@ describe('useForm', () => {
         await hook.result.current.setIsSubmitted(true)
         formState = hook.result.current
       })
+    })
+
+    test('should set "isSubmitted" to true', () => {
+      expect(formState.isSubmitted).toBeTruthy()
+    })
+  })
+
+  describe('when setIsLoading() is called with a "true" value', () => {
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
+      await act(async () => {
+        await hook.result.current.setIsLoading(true)
+        formState = hook.result.current
+      })
+    })
+
+    test('should set "isSubmitted" to true', () => {
+      expect(formState.isLoading).toBeTruthy()
+    })
+  })
+
+  describe('when form was submitted but exception was thrown', () => {
+    const error = new Error('testException')
+
+    beforeAll(async () => {
+      const onSubmit = () => {
+        throw error
+      }
+
+      const hook = renderHook(() => useForm({ onSubmit }))
+
+      await act(async () => {
+        await hook.result.current.goForward()
+        formState = hook.result.current
+      })
+    })
+
+    test('should set "submissionError"', () => {
+      expect(formState.submissionError).toEqual(error)
+    })
+
+    test('should set "isLoading" to false', () => {
+      expect(formState.isLoading).toBeFalsy()
+    })
+
+    test('should NOT set "isSubmitted" to true', () => {
+      expect(formState.isSubmitted).toBeFalsy()
+    })
+  })
+
+  describe('when form was submitted and redirection URL was set', () => {
+    beforeAll(async () => {
+      window.location.assign = jest.fn()
+
+      const onSubmit = () => 'http://example.com'
+
+      const hook = renderHook(() => useForm({ onSubmit }))
+
+      await act(async () => {
+        await hook.result.current.goForward()
+        formState = hook.result.current
+      })
+    })
+
+    test('should redirect the page', () => {
+      expect(window.location.assign).toHaveBeenCalledTimes(1)
+      expect(window.location.assign).toHaveBeenCalledWith('http://example.com')
+    })
+
+    test('should keep isLoading with truthy value', () => {
+      expect(formState.isLoading).toBeTruthy()
+    })
+
+    test('should keep isSubmitted with falsy value', () => {
+      expect(formState.isSubmitted).toBeFalsy()
+    })
+  })
+
+  describe('when form was submitted successfully', () => {
+    const onSubmit = jest.fn()
+
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm({ onSubmit }))
+
+      await act(async () => {
+        await hook.result.current.goForward()
+        formState = hook.result.current
+      })
+    })
+
+    test('should set "isLoading" to false', () => {
+      expect(formState.isLoading).toBeFalsy()
     })
 
     test('should set "isSubmitted" to true', () => {

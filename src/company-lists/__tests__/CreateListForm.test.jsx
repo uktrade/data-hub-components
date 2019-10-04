@@ -1,5 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import { act } from 'react-dom/test-utils'
 import HintText from '@govuk-react/hint-text'
 import ErrorText from '@govuk-react/error-text'
 
@@ -46,27 +47,33 @@ describe('CreateListForm', () => {
     const cancelUrl = wrapper.find('a[href="/companies/"]')
 
     test('should render correctly', () => {
-      expect(hint.exists()).toBeFalsy()
+      expect(hint.exists()).toBe(false)
       expect(cancelUrl).toHaveLength(1)
     })
   })
 
   describe('when submitting with no errors', () => {
     const onSubmitSpy = jest.fn()
-    const wrapper = mount(
-      <CreateListForm
-        onSubmitHandler={onSubmitSpy}
-        name="listName"
-        cancelUrl="/companies/"
-        label="List name"
-        maxLength={30}
-      />
-    )
+
+    beforeAll(async () => {
+      const wrapper = mount(
+        <CreateListForm
+          onSubmitHandler={onSubmitSpy}
+          name="listName"
+          cancelUrl="/companies/"
+          label="List name"
+          maxLength={30}
+        />
+      )
+
+      await act(async () => {
+        const input = wrapper.find('input')
+        await input.simulate('change', { target: { value: 'list name' } })
+        await wrapper.simulate('submit')
+      })
+    })
 
     test('should fire a onSubmit handler', () => {
-      const input = wrapper.find('input')
-      input.simulate('change', { target: { value: 'list name' } })
-      wrapper.simulate('submit')
       expect(onSubmitSpy).toBeCalledTimes(1)
     })
   })

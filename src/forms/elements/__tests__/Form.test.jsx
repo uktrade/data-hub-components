@@ -1,13 +1,16 @@
 import React from 'react'
 import { mount } from 'enzyme'
-
+import LoadingBox from '@govuk-react/loading-box'
+import { act } from 'react-dom/test-utils'
 import Form from '../Form'
 import FieldInput from '../FieldInput'
 
 describe('Form', () => {
-  describe('when form has many fields', () => {
-    test('should render all 14 fields without issue', () => {
-      const wrapper = mount(
+  let wrapper
+
+  describe('when a form has many fields', () => {
+    beforeAll(() => {
+      wrapper = mount(
         <Form>
           <FieldInput type="text" name="foo" />
           <FieldInput type="text" name="bar" />
@@ -25,29 +28,88 @@ describe('Form', () => {
           <FieldInput type="text" name="bru" />
         </Form>
       )
+    })
+
+    test('should render all 14 fields without issue', () => {
       expect(wrapper.find(FieldInput).length).toEqual(14)
     })
   })
 
-  describe('when complete form is submitted', () => {
-    test('should call onSubmit function', () => {
-      const onSubmitSpy = jest.fn()
-      const wrapper = mount(
+  describe('when children are passed as a function', () => {
+    let formState
+
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          {(form) => {
+            formState = form
+          }}
+        </Form>
+      )
+    })
+
+    test('should pass form state as the argument', () => {
+      expect(formState).toEqual({
+        currentStep: 0,
+        deregisterField: formState.deregisterField,
+        deregisterStep: formState.deregisterStep,
+        errors: {},
+        fields: {},
+        getFieldState: formState.getFieldState,
+        getStepIndex: formState.getStepIndex,
+        goBack: formState.goBack,
+        goForward: formState.goForward,
+        goToStepByName: formState.goToStepByName,
+        isDirty: false,
+        isFirstStep: formState.isFirstStep,
+        isLastStep: formState.isLastStep,
+        isLoading: false,
+        isSubmitted: false,
+        registerField: formState.registerField,
+        registerStep: formState.registerStep,
+        setCurrentStep: formState.setCurrentStep,
+        setFieldError: formState.setFieldError,
+        setFieldTouched: formState.setFieldTouched,
+        setFieldValue: formState.setFieldValue,
+        setIsLoading: formState.setIsLoading,
+        setIsSubmitted: formState.setIsSubmitted,
+        steps: [],
+        submissionError: null,
+        touched: {},
+        validateField: formState.validateField,
+        validateForm: formState.validateForm,
+        values: {},
+      })
+    })
+  })
+
+  describe('when a completed form is submitted', () => {
+    const onSubmitSpy = jest.fn()
+
+    beforeAll(async () => {
+      wrapper = mount(
         <Form onSubmit={onSubmitSpy}>
           <FieldInput name="testField" type="text" />
         </Form>
       )
-      const input = wrapper.find(FieldInput)
-      input.simulate('change', { target: { value: 'hello' } })
-      wrapper.simulate('submit')
 
+      await act(async () => {
+        const input = wrapper.find(FieldInput)
+        input.simulate('change', { target: { value: 'hello' } })
+        wrapper.simulate('submit')
+      })
+    })
+
+    test('should call onSubmit function', () => {
       expect(onSubmitSpy).toBeCalledTimes(1)
     })
   })
 
-  describe('when incomplete form is submitted', () => {
-    test('should validate each field', () => {
-      const wrapper = mount(
+  describe('when an incomplete form is submitted', () => {
+    const onSubmitSpy = jest.fn()
+
+    beforeAll(async () => {
+      wrapper = mount(
         <Form>
           {(form) => (
             <>
@@ -73,9 +135,14 @@ describe('Form', () => {
           )}
         </Form>
       )
-      const submit = wrapper.find('.submit')
-      submit.simulate('click')
 
+      await act(async () => {
+        const submit = wrapper.find('.submit')
+        submit.simulate('click')
+      })
+    })
+
+    test('should validate each field', () => {
       const formState = JSON.parse(wrapper.find('.form-state').text())
       expect(formState.errors).toEqual({
         testField1: 'testError1',
@@ -88,23 +155,24 @@ describe('Form', () => {
     })
 
     test('should not call onSubmit function', () => {
-      const onSubmitSpy = jest.fn()
-      const wrapper = mount(
-        <Form onSubmit={onSubmitSpy}>
-          {(form) => (
-            <>
-              <div className="form-state">{JSON.stringify(form)}</div>
-              <FieldInput
-                type="text"
-                name="testField"
-                validate={() => 'testError'}
-              />
-            </>
-          )}
+      expect(onSubmitSpy).toHaveBeenCalledTimes(0)
+    })
+  })
+
+  describe('when form is in loading state', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <Form>
+          {(form) => {
+            form.setIsLoading(true)
+          }}
         </Form>
       )
-      wrapper.simulate('submit')
-      expect(onSubmitSpy).toHaveBeenCalledTimes(0)
+    })
+
+    test('should display the loading indicator', () => {
+      const loader = wrapper.find(LoadingBox)
+      expect(loader.prop('loading')).toBe(true)
     })
   })
 })

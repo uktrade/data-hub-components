@@ -1,5 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import { act } from 'react-dom/test-utils'
 
 import AddRemoveFromListForm from '../AddRemoveFromListForm'
 import listsWithCompany from '../__fixtures__/lists-with-company'
@@ -65,17 +66,24 @@ describe('AddRemoveFromList', () => {
 
   describe('when saving options', () => {
     const onSubmitSpy = jest.fn()
-    const wrapper = mount(
-      <AddRemoveFromListForm
-        list={listsWithCompany}
-        onSubmitHandler={onSubmitSpy}
-        isLoading={false}
-        createNewListUrl="/create-url"
-        cancelLinkUrl="/cancel-link"
-      />
-    )
+
+    beforeAll(async () => {
+      const wrapper = mount(
+        <AddRemoveFromListForm
+          list={listsWithCompany}
+          onSubmitHandler={onSubmitSpy}
+          isLoading={false}
+          createNewListUrl="/create-url"
+          cancelLinkUrl="/cancel-link"
+        />
+      )
+
+      await act(async () => {
+        await wrapper.simulate('submit')
+      })
+    })
+
     test('should fire a onSubmit handler', () => {
-      wrapper.simulate('submit')
       expect(onSubmitSpy).toBeCalledTimes(1)
     })
   })

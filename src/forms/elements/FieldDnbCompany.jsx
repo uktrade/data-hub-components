@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { isEmpty } from 'lodash'
 import styled from 'styled-components'
@@ -10,7 +10,6 @@ import Details from '@govuk-react/details'
 import Button from '@govuk-react/button'
 import Paragraph from '@govuk-react/paragraph'
 import ListItem from '@govuk-react/list-item'
-import LoadingBox from '@govuk-react/loading-box'
 
 import useFormContext from '../hooks/useFormContext'
 import StatusMessage from '../../status-message/StatusMessage'
@@ -43,6 +42,7 @@ const FieldDnbCompany = ({
     goForward,
     validateForm,
     setFieldValue,
+    setIsLoading,
   } = useFormContext()
   const { findCompany } = useDnbSearch(apiEndpoint)
   const {
@@ -66,6 +66,8 @@ const FieldDnbCompany = ({
     return null
   }
 
+  useEffect(() => setIsLoading(searching), [searching])
+
   function onEntityClick(entity) {
     if (!entity.datahub_company) {
       setFieldValue('cannotFind', false)
@@ -75,97 +77,93 @@ const FieldDnbCompany = ({
   }
 
   return (
-    <LoadingBox timeOut={0} loading={searching}>
-      <FieldWrapper {...{ name, label, legend, hint }}>
-        {country && (
-          <FieldUneditable
-            legend="Country"
-            name="dnbCountry"
-            onChangeClick={goBack}
-          >
-            {country}
-          </FieldUneditable>
-        )}
+    <FieldWrapper {...{ name, label, legend, hint }}>
+      {country && (
+        <FieldUneditable
+          legend="Country"
+          name="dnbCountry"
+          onChangeClick={goBack}
+        >
+          {country}
+        </FieldUneditable>
+      )}
 
-        <FieldInput
-          label="Company name"
-          name="dnbCompanyName"
-          type="search"
-          required="Enter company name"
-          validate={(value) =>
-            value && value.length < 2
-              ? 'Enter company name that is 2 characters long or more'
-              : null
-          }
-          maxLength={30}
-        />
+      <FieldInput
+        label="Company name"
+        name="dnbCompanyName"
+        type="search"
+        required="Enter company name"
+        validate={(value) =>
+          value && value.length < 2
+            ? 'Enter company name that is 2 characters long or more'
+            : null
+        }
+        maxLength={30}
+      />
 
-        <FieldInput
-          label="Company postcode (optional)"
-          name="dnbPostalCode"
-          style={{ width: WIDTHS['one-third'] }}
-          type="search"
-        />
+      <FieldInput
+        label="Company postcode (optional)"
+        name="dnbPostalCode"
+        style={{ width: WIDTHS['one-third'] }}
+        type="search"
+      />
 
-        <FormActions>
-          <Button icon={<Search />} onClick={onSearchClick}>
-            Find company
-          </Button>
-        </FormActions>
+      <FormActions>
+        <Button icon={<Search />} onClick={onSearchClick}>
+          Find company
+        </Button>
+      </FormActions>
 
-        {searched && (
-          <>
-            {entities.length > 0 && (
-              <>
-                <StatusMessage>
-                  The search results below are verified company records from Dun
-                  & Bradstreet, an external and up to date source of company
-                  information.
-                </StatusMessage>
-
-                <EntityList entities={entities} onEntityClick={onEntityClick} />
-              </>
-            )}
-
-            {!error && entities.length === 0 && (
-              <StatusMessage>There are no companies to show.</StatusMessage>
-            )}
-
-            {error && (
+      {searched && (
+        <>
+          {entities.length > 0 && (
+            <>
               <StatusMessage>
-                Error occurred while searching for company.
+                The search results below are verified company records from Dun &
+                Bradstreet, an external and up to date source of company
+                information.
               </StatusMessage>
-            )}
 
-            <Details summary="I cannot find the company I am looking for">
-              <Paragraph>Try improving your search by:</Paragraph>
-              <StyledUnorderedList>
-                <ListItem>
-                  checking the company name for spelling errors
-                </ListItem>
-                <ListItem>
-                  making sure you selected the correct country
-                </ListItem>
-                <ListItem>
-                  adding a postcode to your search to narrow down the results
-                </ListItem>
-                <ListItem>
-                  removing the words &quot;limited&quot; or &quot;ltd&quot;
-                </ListItem>
-              </StyledUnorderedList>
-              <ButtonLink
-                onClick={() => {
-                  setFieldValue('cannotFind', true)
-                  goForward()
-                }}
-              >
-                I still cannot find the company
-              </ButtonLink>
-            </Details>
-          </>
-        )}
-      </FieldWrapper>
-    </LoadingBox>
+              <EntityList entities={entities} onEntityClick={onEntityClick} />
+            </>
+          )}
+
+          {!error && entities.length === 0 && (
+            <StatusMessage>There are no companies to show.</StatusMessage>
+          )}
+
+          {error && (
+            <StatusMessage>
+              Error occurred while searching for company.
+            </StatusMessage>
+          )}
+
+          <Details summary="I cannot find the company I am looking for">
+            <Paragraph>Try improving your search by:</Paragraph>
+
+            <StyledUnorderedList>
+              <ListItem>checking the company name for spelling errors</ListItem>
+              <ListItem>making sure you selected the correct country</ListItem>
+              <ListItem>
+                adding a postcode to your search to narrow down the results
+              </ListItem>
+              <ListItem>
+                removing the words &quot;limited&quot; or &quot;ltd&quot;
+              </ListItem>
+            </StyledUnorderedList>
+
+            <ButtonLink
+              onClick={() => {
+                setFieldValue('cannotFind', true)
+                goForward()
+              }}
+            >
+              I still cannot find the company
+            </ButtonLink>
+          </Details>
+        </>
+      )}
+    </FieldWrapper>
   )
 }
 

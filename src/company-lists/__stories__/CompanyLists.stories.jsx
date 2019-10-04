@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import CreateListForm from '../CreateListForm'
@@ -20,12 +20,8 @@ storiesOf('Company lists', module)
   })
   .add('Add or remove from list', () =>
     React.createElement(() => {
-      const [loading, setLoading] = useState(false)
-      const mockRequest = () => {
-        setLoading(true)
-        setTimeout(() => {
-          setLoading(false)
-        }, 2000)
+      const mockRequest = async () => {
+        await new Promise((resolve) => setTimeout(() => resolve(), 2000))
       }
       return (
         <>
@@ -33,7 +29,6 @@ storiesOf('Company lists', module)
           <AddRemoveFromListForm
             list={listsWithCompany}
             onSubmitHandler={() => mockRequest()}
-            isLoading={loading}
             createNewListUrl="#"
             cancelLinkUrl="#"
           />

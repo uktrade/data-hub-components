@@ -1,5 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import { act } from 'react-dom/test-utils'
 
 import Form from '../Form'
 import Step from '../Step'
@@ -45,21 +46,26 @@ describe('Step', () => {
       expect(formState.steps).toEqual(['testStep1'])
     })
     test('should render child fields', () => {
-      expect(wrapper.find('#testField1').exists()).toBeTruthy()
+      expect(wrapper.find('#testField1').exists()).toBe(true)
     })
     test('should register fields within the step', () => {
       expect(Object.keys(formState.fields)).toEqual(['testField1'])
     })
 
     describe('when the form is filled and the "Submit" button is clicked', () => {
-      beforeAll(() => {
-        const testField1 = wrapper.find('#testField1')
-        testField1.simulate('change', { target: { value: 'testValue' } })
-        const submitButton = wrapper.find('button')
-        submitButton.simulate('submit')
+      beforeAll(async () => {
+        await act(async () => {
+          const testField1 = wrapper.find('#testField1')
+          await testField1.simulate('change', {
+            target: { value: 'testValue' },
+          })
+
+          const submitButton = wrapper.find('button')
+          await submitButton.simulate('submit')
+        })
       })
 
-      test('should call onSubmit() with form values', () => {
+      test('should call onSubmit() with form values and setRedirectURl callback', () => {
         expect(onSubmitSpy).toHaveBeenCalledTimes(1)
         expect(onSubmitSpy).toHaveBeenCalledWith({
           testField1: 'testValue',
@@ -100,7 +106,7 @@ describe('Step', () => {
       expect(formState.steps).toEqual(['testStepMounted'])
     })
     test('should render child fields', () => {
-      expect(wrapper.find('#testField1').exists()).toBeTruthy()
+      expect(wrapper.find('#testField1').exists()).toBe(true)
     })
     test('should register fields within the step', () => {
       expect(Object.keys(formState.fields)).toEqual(['testField1'])
@@ -168,7 +174,7 @@ describe('Step', () => {
       expect(formState.currentStep).toEqual(0)
     })
     test('should render child fields from the first step', () => {
-      expect(wrapper.find('#testField1').exists()).toBeTruthy()
+      expect(wrapper.find('#testField1').exists()).toBe(true)
     })
     test('should register fields from the first step', () => {
       expect(Object.keys(formState.fields)).toEqual(['testField1'])
@@ -202,7 +208,7 @@ describe('Step', () => {
         })
       })
       test('should render child fields from the first step', () => {
-        expect(wrapper.find('#testField2').exists()).toBeFalsy()
+        expect(wrapper.find('#testField2').exists()).toBe(false)
       })
       test('should register fields from the first step', () => {
         expect(Object.keys(formState.fields)).toEqual(['testField1'])
@@ -230,10 +236,10 @@ describe('Step', () => {
         expect(wrapper.find('button[name="back"]').text()).toEqual('Back')
       })
       test('should render child fields from the second step', () => {
-        expect(wrapper.find('#testField2').exists()).toBeTruthy()
+        expect(wrapper.find('#testField2').exists()).toBe(true)
       })
       test('should not render child fields from the first step', () => {
-        expect(wrapper.find('#testField1').exists()).toBeFalsy()
+        expect(wrapper.find('#testField1').exists()).toBe(false)
       })
       test('should register fields from the second step', () => {
         expect(Object.keys(formState.fields)).toEqual(['testField2'])
@@ -253,10 +259,10 @@ describe('Step', () => {
           expect(wrapper.find('button').text()).toEqual('Continue')
         })
         test('should render child fields from the first step', () => {
-          expect(wrapper.find('#testField1').exists()).toBeTruthy()
+          expect(wrapper.find('#testField1').exists()).toBe(true)
         })
         test('should not render child fields from the second step', () => {
-          expect(wrapper.find('#testField2').exists()).toBeFalsy()
+          expect(wrapper.find('#testField2').exists()).toBe(false)
         })
         test('should register fields from the first step', () => {
           expect(Object.keys(formState.fields)).toEqual(['testField1'])
@@ -310,7 +316,7 @@ describe('Step', () => {
     })
 
     test('should hide the forward button', () => {
-      expect(wrapper.find('button[name="forward"]').exists()).toBeFalsy()
+      expect(wrapper.find('button[name="forward"]').exists()).toBe(false)
     })
   })
 
@@ -325,7 +331,7 @@ describe('Step', () => {
     })
 
     test('should hide the back button', () => {
-      expect(wrapper.find('button[name="back"]').exists()).toBeFalsy()
+      expect(wrapper.find('button[name="back"]').exists()).toBe(false)
     })
   })
 
