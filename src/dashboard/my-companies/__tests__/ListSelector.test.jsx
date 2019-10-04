@@ -4,8 +4,6 @@ import useMyCompaniesContext from '../useMyCompaniesContext'
 import ListSelector from '../ListSelector'
 import { withTargetValue } from '../../../utils/enzyme'
 
-// https://github.com/facebook/create-react-app/issues/6398#issuecomment-462475835
-
 describe('ListSelector', () => {
   test('No lists', () => {
     const wrapper = mount(
@@ -55,7 +53,7 @@ describe('ListSelector', () => {
     test('Interaction to state', () => {
       const stateHistory = []
 
-      const SomeComponent = () => {
+      const Mock = () => {
         const { state } = useMyCompaniesContext()
         stateHistory.push(state.selectedIdx)
         return null
@@ -75,7 +73,7 @@ describe('ListSelector', () => {
         ]}
         >
           <ListSelector />
-          <SomeComponent />
+          <Mock />
         </useMyCompaniesContext.Provider>,
       )
 

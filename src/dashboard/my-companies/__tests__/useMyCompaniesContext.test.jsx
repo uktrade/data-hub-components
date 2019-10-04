@@ -33,7 +33,6 @@ describe('Store', () => {
           latestInteraction: {
             id: '79d92719-7402-45b6-b3d7-eff559d6b282',
             date: '2019-08-14',
-            displayDate: '14 Aug 19',
             subject:
               'Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished',
           },
@@ -46,7 +45,6 @@ describe('Store', () => {
           },
           latestInteraction: {
             id: '86f92719-7402-45b6-b3d7-eff559d6b678',
-            displayDate: '21 Feb 2019',
             date: '2019-02-21',
             subject:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -59,7 +57,6 @@ describe('Store', () => {
             isArchived: false,
           },
           latestInteraction: {
-            displayDate: '-',
             date: null,
             subject: 'No interactions have been recorded',
           },
@@ -77,7 +74,6 @@ describe('Store', () => {
             isArchived: false,
           },
           latestInteraction: {
-            displayDate: '-',
             date: null,
             subject: 'No interactions have been recorded',
           },
@@ -90,7 +86,6 @@ describe('Store', () => {
           },
           latestInteraction: {
             id: '86f92719-7402-45b6-b3d7-eff559d6b678',
-            displayDate: '21 Feb 2019',
             date: '2019-02-21',
             subject:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -105,7 +100,6 @@ describe('Store', () => {
           latestInteraction: {
             id: '79d92719-7402-45b6-b3d7-eff559d6b282',
             date: '2019-08-14',
-            displayDate: '14 Aug 19',
             subject:
               'Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished',
           },
@@ -125,7 +119,6 @@ describe('Store', () => {
           latestInteraction: {
             id: '79d92719-7402-45b6-b3d7-eff559d6b282',
             date: '2019-08-14',
-            displayDate: '14 Aug 19',
             subject:
               'Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished',
           },
@@ -137,7 +130,6 @@ describe('Store', () => {
             isArchived: false,
           },
           latestInteraction: {
-            displayDate: '-',
             date: null,
             subject: 'No interactions have been recorded',
           },
@@ -150,7 +142,6 @@ describe('Store', () => {
           },
           latestInteraction: {
             id: '86f92719-7402-45b6-b3d7-eff559d6b678',
-            displayDate: '21 Feb 2019',
             date: '2019-02-21',
             subject:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -171,7 +162,6 @@ describe('Store', () => {
             isArchived: false,
           },
           latestInteraction: {
-            displayDate: '-',
             date: null,
             subject: 'No interactions have been recorded',
           },

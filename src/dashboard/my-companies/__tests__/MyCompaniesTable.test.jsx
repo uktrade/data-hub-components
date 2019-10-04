@@ -32,7 +32,6 @@ const companies = [
     latestInteraction: {
       id: 'a',
       date: '2019-01-06',
-      displayDate: '6 Jan 2019',
       subject: 'Interaction A',
     },
   },
@@ -44,7 +43,6 @@ const companies = [
     latestInteraction: {
       id: 'a',
       date: '2019-01-04',
-      displayDate: '4 Jan 2019',
       subject: 'Interaction B',
     },
   },
@@ -56,7 +54,6 @@ const companies = [
     latestInteraction: {
       id: 'c',
       date: '2019-01-05',
-      displayDate: '5 Jan 2019',
       subject: 'Interaction C',
     },
   },

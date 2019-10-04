@@ -1,4 +1,5 @@
 import _ from 'lodash'
+import moment from 'moment'
 import React from 'react'
 import styled from 'styled-components'
 import LinesEllipsis from 'react-lines-ellipsis'
@@ -68,7 +69,12 @@ function MyCompaniesTable() {
             />
           </Link>
         </Table.Cell>
-        <StyledDateCell>{latestInteraction.displayDate}</StyledDateCell>
+        <StyledDateCell>
+          {latestInteraction.date
+            ? moment(latestInteraction.date).format('D MMM YYYY')
+            : '-'
+          }
+        </StyledDateCell>
         <Table.Cell>
           {latestInteraction.id ? (
             <Link href={`interactions/${latestInteraction.id}`}>

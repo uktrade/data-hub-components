@@ -9,7 +9,7 @@ describe('MyCompaniesFilters', () => {
     test('Should update context state on interaction', () => {
       const stateHistory = []
 
-      const SomeComponent = () => {
+      const Mock = () => {
         const { state: { filter, sortBy } } = useMyCompaniesContext()
         stateHistory.push({ filter, sortBy })
         return null
@@ -18,7 +18,7 @@ describe('MyCompaniesFilters', () => {
       const wrapper = mount(
         <useMyCompaniesContext.Provider>
           <MyCompaniesFilters />
-          <SomeComponent />
+          <Mock />
         </useMyCompaniesContext.Provider>,
       )
 
