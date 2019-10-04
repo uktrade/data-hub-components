@@ -46,7 +46,7 @@ describe('My companies dashboard', () => {
       expect(wrapper.find(MyCompaniesTable)).toHaveLength(0)
       expect(wrapper.text()).toBe(
         'My companies list'
-        + 'View lists'
+        + 'View list'
         + 'Bar'
         + 'Baz'
         + 'Foo'

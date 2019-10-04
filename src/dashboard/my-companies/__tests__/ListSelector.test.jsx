@@ -36,7 +36,7 @@ describe('ListSelector', () => {
           <ListSelector />
         </useMyCompaniesContext.Provider>,
       )
-      expect(wrapper.text()).toBe('My companies listView listsBarBazFooEdit lists')
+      expect(wrapper.text()).toBe('My companies listView listBarBazFooEdit lists')
       expect(wrapper.containsAllMatchingElements([
         <option value={0}>Bar</option>,
         <option value={1}>Baz</option>,
