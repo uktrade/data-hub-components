@@ -5,7 +5,6 @@ import useMyCompaniesContext from './useMyCompaniesContext'
 import MyCompaniesTable from './MyCompaniesTable'
 import ListSelector from './ListSelector'
 
-
 const EmptyListMsg = () => (
   <HintText>
     You have not added any companies to your list.

@@ -4,7 +4,6 @@ import useMyCompaniesContext from '../my-companies/useMyCompaniesContext'
 import MyCompaniesTile from '../my-companies/MyCompaniesTile'
 import allCompanies from '../__fixtures__/companies.json'
 
-
 const WithData = props => (
   <useMyCompaniesContext.Provider {...props}>
     <MyCompaniesTile />

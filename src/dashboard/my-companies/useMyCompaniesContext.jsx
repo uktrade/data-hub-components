@@ -28,14 +28,14 @@ const defaultState = {
 
 export const reducer = (state, { type, ...action }) => {
   switch (type) {
-    case LIST_CHANGE:
-      return { ...state, selectedIdx: action.idx }
-    case FILTER_CHANGE:
-      return { ...state, filter: action.filter }
-    case ORDER_CHANGE:
-      return { ...state, sortBy: action.sortBy }
-    default:
-      return state
+  case LIST_CHANGE:
+    return { ...state, selectedIdx: action.idx }
+  case FILTER_CHANGE:
+    return { ...state, filter: action.filter }
+  case ORDER_CHANGE:
+    return { ...state, sortBy: action.sortBy }
+  default:
+    return state
   }
 }
 
