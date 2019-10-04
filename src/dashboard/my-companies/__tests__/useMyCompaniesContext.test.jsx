@@ -175,18 +175,17 @@ describe('Store', () => {
       expect(recent).toEqual(companies)
     })
   })
+
   describe('reducer()', () => {
     test('List change', () => {
       expect(reducer(initialState, {
         type: LIST_CHANGE,
         idx: 1,
       })).toEqual({ ...initialState, selectedIdx: 1 })
-
       expect(reducer(initialState, {
         type: LIST_CHANGE,
         idx: 2,
       })).toEqual({ ...initialState, selectedIdx: 2 })
-
       expect(reducer(initialState, {
         type: LIST_CHANGE,
         idx: 0,
@@ -198,12 +197,10 @@ describe('Store', () => {
         type: ORDER_CHANGE,
         sortBy: 'recent',
       })).toEqual({ ...initialState, sortBy: 'recent' })
-
       expect(reducer(initialState, {
         type: ORDER_CHANGE,
         sortBy: 'least-recent',
       })).toEqual({ ...initialState, sortBy: 'least-recent' })
-
       expect(reducer(initialState, {
         type: ORDER_CHANGE,
         sortBy: 'alphabetical',
@@ -215,12 +212,10 @@ describe('Store', () => {
         type: FILTER_CHANGE,
         filter: 'foo',
       })).toEqual({ ...initialState, filter: 'foo' })
-
       expect(reducer(initialState, {
         type: FILTER_CHANGE,
         filter: 'bar',
       })).toEqual({ ...initialState, filter: 'bar' })
-
       expect(reducer(initialState, {
         type: FILTER_CHANGE,
         filter: '',
@@ -231,19 +226,16 @@ describe('Store', () => {
   describe('useMyCompaniesContext()', () => {
     test('Default state', () => {
       let actual
-
-      const SomeComponent = () => {
+      const Mock = () => {
         const { state } = useMyCompaniesContext()
         actual = state
         return null
       }
-
       mount(
         <useMyCompaniesContext.Provider>
-          <SomeComponent />
+          <Mock />
         </useMyCompaniesContext.Provider>,
       )
-
       expect(actual).toEqual({
         lists: [],
         filter: '',
@@ -254,19 +246,16 @@ describe('Store', () => {
 
     test('Provided state', () => {
       let actual
-
-      const SomeComponent = () => {
+      const Mock = () => {
         const { state } = useMyCompaniesContext()
         actual = state
         return null
       }
-
       mount(
         <useMyCompaniesContext.Provider {...initialState}>
-          <SomeComponent />
+          <Mock />
         </useMyCompaniesContext.Provider>,
       )
-
       expect(actual).toEqual({
         ...initialState,
         lists: _.orderBy(initialState.lists, 'name'),

@@ -15,7 +15,6 @@ describe('My companies dashboard', () => {
   test('No lists', () => {
     const wrapper = fixture([])
     expect(wrapper.find(MyCompaniesTable)).toHaveLength(0)
-
     expect(wrapper.text()).toBe(
       'My companies list'
       + 'You have not yet created any lists with companies.'
@@ -25,15 +24,8 @@ describe('My companies dashboard', () => {
   })
 
   test('One empty list', () => {
-    const wrapper = fixture([
-      {
-        name: 'Foo',
-        companies: [],
-      },
-    ])
-
+    const wrapper = fixture([{ name: 'Foo', companies: [] }])
     expect(wrapper.find(MyCompaniesTable)).toHaveLength(0)
-
     expect(wrapper.text()).toBe(
       'My companies list'
       + 'Foo'
@@ -47,20 +39,10 @@ describe('My companies dashboard', () => {
   describe('Multiple lists', () => {
     test('first empty', () => {
       const wrapper = fixture([
-        {
-          name: 'Foo',
-          companies,
-        },
-        {
-          name: 'Bar',
-          companies: [],
-        },
-        {
-          name: 'Baz',
-          companies,
-        },
+        { name: 'Foo', companies },
+        { name: 'Bar', companies: [] },
+        { name: 'Baz', companies },
       ])
-
       expect(wrapper.find(MyCompaniesTable)).toHaveLength(0)
       expect(wrapper.text()).toBe(
         'My companies list'
@@ -77,20 +59,10 @@ describe('My companies dashboard', () => {
 
     test('first not empty', () => {
       const wrapper = fixture([
-        {
-          name: 'Foo',
-          companies,
-        },
-        {
-          name: 'Bar',
-          companies,
-        },
-        {
-          name: 'Baz',
-          companies,
-        },
+        { name: 'Foo', companies },
+        { name: 'Bar', companies },
+        { name: 'Baz', companies },
       ])
-
       expect(wrapper.find(MyCompaniesTable)).toHaveLength(1)
     })
   })

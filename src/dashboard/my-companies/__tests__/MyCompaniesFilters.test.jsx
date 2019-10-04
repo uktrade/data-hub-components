@@ -34,38 +34,14 @@ describe('MyCompaniesFilters', () => {
         .simulate('change', withTargetValue(''))
 
       expect(stateHistory).toEqual([
-        {
-          filter: '',
-          sortBy: 'recent',
-        },
-        {
-          filter: '',
-          sortBy: 'alphabetical',
-        },
-        {
-          filter: '',
-          sortBy: 'least-recent',
-        },
-        {
-          filter: '',
-          sortBy: 'recent',
-        },
-        {
-          filter: 'foo',
-          sortBy: 'recent',
-        },
-        {
-          filter: 'bar',
-          sortBy: 'recent',
-        },
-        {
-          filter: 'baz',
-          sortBy: 'recent',
-        },
-        {
-          filter: '',
-          sortBy: 'recent',
-        },
+        { filter: '', sortBy: 'recent' },
+        { filter: '', sortBy: 'alphabetical' },
+        { filter: '', sortBy: 'least-recent' },
+        { filter: '', sortBy: 'recent' },
+        { filter: 'foo', sortBy: 'recent' },
+        { filter: 'bar', sortBy: 'recent' },
+        { filter: 'baz', sortBy: 'recent' },
+        { filter: '', sortBy: 'recent' },
       ])
     })
   })

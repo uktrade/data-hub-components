@@ -25,10 +25,7 @@ const fixture = companies => (
 
 const companies = [
   {
-    company: {
-      name: 'Company A foo',
-      id: 'a',
-    },
+    company: { name: 'Company A foo', id: 'a' },
     latestInteraction: {
       id: 'a',
       date: '2019-01-06',
@@ -36,10 +33,7 @@ const companies = [
     },
   },
   {
-    company: {
-      name: 'Company B fooo',
-      id: 'b',
-    },
+    company: { name: 'Company B fooo', id: 'b' },
     latestInteraction: {
       id: 'a',
       date: '2019-01-04',
@@ -47,10 +41,7 @@ const companies = [
     },
   },
   {
-    company: {
-      name: 'Company C foooo',
-      id: 'c',
-    },
+    company: { name: 'Company C foooo', id: 'c' },
     latestInteraction: {
       id: 'c',
       date: '2019-01-05',

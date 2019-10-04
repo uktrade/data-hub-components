@@ -9,13 +9,9 @@ import { MEDIA_QUERIES, SPACING } from '@govuk-react/constants'
 import useMyCompaniesContext from './useMyCompaniesContext'
 import { FILTER_CHANGE, ORDER_CHANGE } from './constants'
 
-const StyledSelectInput = styled(SelectInput)(
-  {
-    [MEDIA_QUERIES.LARGESCREEN]: {
-      width: 'auto',
-    },
-  },
-)
+const StyledSelectInput = styled(SelectInput)({
+  [MEDIA_QUERIES.LARGESCREEN]: { width: 'auto' },
+})
 
 const StyledInput = styled(Input)({
   width: 200,
@@ -39,9 +35,7 @@ const StyledLabelText = styled(LabelText)({
 
 const InlineLabel = ({ text, children }) => (
   <StyledLabel>
-    <StyledLabelText>
-      {text}
-    </StyledLabelText>
+    <StyledLabelText>{text}</StyledLabelText>
     {children}
   </StyledLabel>
 )
@@ -63,18 +57,12 @@ function MyCompaniesFilters() {
       <InlineLabel text="Search this list">
         <StyledInput
           placeholder="Company name"
-          onChange={e => dispatch({
-            type: FILTER_CHANGE,
-            filter: e.target.value,
-          })}
+          onChange={e => dispatch({ type: FILTER_CHANGE, filter: e.target.value })}
         />
       </InlineLabel>
       <InlineLabel text="Sort by">
         <StyledSelectInput
-          onChange={e => dispatch({
-            type: ORDER_CHANGE,
-            sortBy: e.target.value,
-          })}
+          onChange={e => dispatch({ type: ORDER_CHANGE, sortBy: e.target.value })}
         >
           <option value="recent">Recent interaction</option>
           <option value="least-recent">Least recent interaction</option>

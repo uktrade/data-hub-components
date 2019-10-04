@@ -28,9 +28,8 @@ const StyledSelect = styled(Select)`
   }
 `
 
-const ListSelector = () => {
+export default () => {
   const { state: { lists }, dispatch } = useMyCompaniesContext()
-
   return (
     <Root>
       <Headline>
@@ -58,7 +57,6 @@ const ListSelector = () => {
                       }),
                     }}
                   >
-                    {/* TODO: Sort lists alphabetically */}
                     {/* eslint-disable react/no-array-index-key */}
                     {lists.map(({ name }, idx) => (
                       <option key={idx} value={idx}>
@@ -79,5 +77,3 @@ const ListSelector = () => {
     </Root>
   )
 }
-
-export default ListSelector

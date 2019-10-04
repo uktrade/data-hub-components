@@ -28,15 +28,9 @@ describe('ListSelector', () => {
       const wrapper = mount(
         <useMyCompaniesContext.Provider
           lists={[
-            {
-              name: 'Foo',
-            },
-            {
-              name: 'Bar',
-            },
-            {
-              name: 'Baz',
-            },
+            { name: 'Foo' },
+            { name: 'Bar' },
+            { name: 'Baz' },
           ]}
         >
           <ListSelector />
@@ -52,7 +46,6 @@ describe('ListSelector', () => {
 
     test('Interaction to state', () => {
       const stateHistory = []
-
       const Mock = () => {
         const { state } = useMyCompaniesContext()
         stateHistory.push(state.selectedIdx)
@@ -61,15 +54,9 @@ describe('ListSelector', () => {
 
       const wrapper = mount(
         <useMyCompaniesContext.Provider lists={[
-          {
-            name: 'Foo',
-          },
-          {
-            name: 'Bar',
-          },
-          {
-            name: 'Baz',
-          },
+          { name: 'Foo' },
+          { name: 'Bar' },
+          { name: 'Baz' },
         ]}
         >
           <ListSelector />
