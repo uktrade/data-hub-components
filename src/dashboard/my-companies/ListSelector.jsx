@@ -48,7 +48,7 @@ export default () => {
               : (
                 <>
                   <RightSideItem as="span">
-                    View lists
+                    View list
                   </RightSideItem>
                   <StyledSelect
                     input={{
