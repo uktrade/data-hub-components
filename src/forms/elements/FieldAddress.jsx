@@ -71,7 +71,7 @@ const FieldAddress = ({ name, label, legend, hint, country, apiEndpoint }) => {
         {isUK && (
           <>
             <StyledFieldPostcode
-              type="text"
+              type="search"
               name="postcode"
               label="Postcode"
               required="Enter postcode"

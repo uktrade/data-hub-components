@@ -10,6 +10,13 @@ export function setupPostcodeMock200(apiEndpoint, adapterOptions = {}) {
   return mock
 }
 
+export function setupPostcodeMock400(apiEndpoint, adapterOptions = {}) {
+  const mock = new MockAdapter(axios, adapterOptions)
+  mock.onGet(apiEndpoint).reply(400)
+
+  return mock
+}
+
 export function setupPostcodeMock404(apiEndpoint, adapterOptions = {}) {
   const mock = new MockAdapter(axios, adapterOptions)
   mock.onGet(apiEndpoint).reply(404)
