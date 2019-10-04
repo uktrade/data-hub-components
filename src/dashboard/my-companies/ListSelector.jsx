@@ -25,6 +25,7 @@ const StyledSelect = styled(Select)`
   // The underlying select has for some reason witdh 50%
   select {
     width: initial;
+    min-width: 200px;
   }
 `
 
