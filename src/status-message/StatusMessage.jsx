@@ -16,11 +16,7 @@ const StyledStatusMessage = styled('div')`
 `
 
 const StatusMessage = ({ colour, children }) => {
-  return (
-    <StyledStatusMessage colour={colour}>
-      {children}
-    </StyledStatusMessage>
-  )
+  return <StyledStatusMessage colour={colour}>{children}</StyledStatusMessage>
 }
 
 StatusMessage.propTypes = {

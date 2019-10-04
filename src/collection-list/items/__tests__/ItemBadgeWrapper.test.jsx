@@ -7,11 +7,7 @@ describe('ItemBadgeWrapper', () => {
 
   describe('when a child is passed', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <ItemBadgeWrapper>
-        Test Child
-        </ItemBadgeWrapper>,
-      )
+      wrapper = mount(<ItemBadgeWrapper>Test Child</ItemBadgeWrapper>)
     })
 
     test('should render the component', () => {
@@ -25,9 +21,7 @@ describe('ItemBadgeWrapper', () => {
 
   describe('when no children are passed', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <ItemBadgeWrapper />,
-      )
+      wrapper = mount(<ItemBadgeWrapper />)
     })
 
     test('should render the component', () => {

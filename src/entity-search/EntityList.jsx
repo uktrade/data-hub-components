@@ -29,13 +29,15 @@ const EntityList = ({ entities, onEntityClick }) => {
 }
 
 EntityList.propTypes = {
-  entities: PropTypes.arrayOf(PropTypes.shape({
-    data: PropTypes.object.isRequired,
-    canHandleClick: PropTypes.bool.isRequired,
-    text: PropTypes.node,
-    heading: PropTypes.string.isRequired,
-    meta: PropTypes.object.isRequired,
-  })),
+  entities: PropTypes.arrayOf(
+    PropTypes.shape({
+      data: PropTypes.object.isRequired,
+      canHandleClick: PropTypes.bool.isRequired,
+      text: PropTypes.node,
+      heading: PropTypes.string.isRequired,
+      meta: PropTypes.object.isRequired,
+    })
+  ),
   onEntityClick: PropTypes.func.isRequired,
 }
 

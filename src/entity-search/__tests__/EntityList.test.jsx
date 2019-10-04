@@ -9,7 +9,7 @@ const entitiesFixture = [
     name: 'Non-clickable entity',
     heading: 'some heading',
     meta: {},
-    data: { },
+    data: {},
     canHandleClick: false,
   },
   {
@@ -32,7 +32,7 @@ describe('EntityList', () => {
         <EntityList
           onEntityClick={onEntityClickSpy}
           entities={entitiesFixture}
-        />,
+        />
       )
     })
 
@@ -41,17 +41,19 @@ describe('EntityList', () => {
     })
 
     test('should pass the click callback to the "EntityListItem"', () => {
-      expect(wrapper.find(EntityListItem).first().prop('onEntityClick')).toEqual(onEntityClickSpy)
+      expect(
+        wrapper
+          .find(EntityListItem)
+          .first()
+          .prop('onEntityClick')
+      ).toEqual(onEntityClickSpy)
     })
   })
 
   describe('when there are 0 entities', () => {
     beforeAll(() => {
       wrapper = mount(
-        <EntityList
-          onEntityClick={onEntityClickSpy}
-          entities={[]}
-        />,
+        <EntityList onEntityClick={onEntityClickSpy} entities={[]} />
       )
     })
 

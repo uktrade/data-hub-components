@@ -6,7 +6,11 @@ const ContactItemRenderer = (item) => {
   const name = <Link href={item.url}>{item.name}</Link>
   const jobTitle = item.jobTitle ? <span>({item.jobTitle})</span> : null
 
-  return <>{name} {jobTitle}</>
+  return (
+    <>
+      {name} {jobTitle}
+    </>
+  )
 }
 
 ContactItemRenderer.propTypes = {

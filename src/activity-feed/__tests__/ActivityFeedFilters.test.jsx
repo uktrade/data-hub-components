@@ -8,7 +8,12 @@ describe('ActivityFeedFilters', () => {
   describe('when the details for all activities are hidden', () => {
     test('renders filters', () => {
       const tree = renderer
-        .create(<ActivityFeedFilters onShowDetailsClick={() => {}} showDetails={false} />)
+        .create(
+          <ActivityFeedFilters
+            onShowDetailsClick={() => {}}
+            showDetails={false}
+          />
+        )
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -17,7 +22,12 @@ describe('ActivityFeedFilters', () => {
   describe('when the details for all activities are shown', () => {
     test('renders filters', () => {
       const tree = renderer
-        .create(<ActivityFeedFilters onShowDetailsClick={() => {}} showDetails={true} />)
+        .create(
+          <ActivityFeedFilters
+            onShowDetailsClick={() => {}}
+            showDetails={true}
+          />
+        )
         .toJSON()
       expect(tree).toMatchSnapshot()
     })
@@ -27,10 +37,12 @@ describe('ActivityFeedFilters', () => {
     const onShowDetailsClickMock = jest.fn()
 
     beforeEach(() => {
-      const wrapper = shallow((<ActivityFeedFilters
-        onShowDetailsClick={onShowDetailsClickMock}
-        showDetails={false}
-      />))
+      const wrapper = shallow(
+        <ActivityFeedFilters
+          onShowDetailsClick={onShowDetailsClickMock}
+          showDetails={false}
+        />
+      )
       wrapper.find('Checkbox').simulate('change', {
         target: { checked: true },
       })

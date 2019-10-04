@@ -206,7 +206,7 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
   margin-top: 5px;
 }
 
-.c2 > H2 {
+.c2 > h2 {
   font-weight: normal;
   font-size: 28px;
   margin-bottom: 0;
@@ -216,7 +216,7 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
   text-align: right;
 }
 
-.c4 > Button {
+.c4 > button {
   margin-bottom: 0;
 }
 
@@ -823,7 +823,7 @@ exports[`ActivityFeed when the activity feed has child elements should render th
   margin-top: 5px;
 }
 
-.c2 > H2 {
+.c2 > h2 {
   font-weight: normal;
   font-size: 28px;
   margin-bottom: 0;
@@ -833,7 +833,7 @@ exports[`ActivityFeed when the activity feed has child elements should render th
   text-align: right;
 }
 
-.c4 > Button {
+.c4 > button {
   margin-bottom: 0;
 }
 
@@ -1074,7 +1074,7 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
   margin-top: 5px;
 }
 
-.c2 > H2 {
+.c2 > h2 {
   font-weight: normal;
   font-size: 28px;
   margin-bottom: 0;
@@ -1084,7 +1084,7 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
   text-align: right;
 }
 
-.c4 > Button {
+.c4 > button {
   margin-bottom: 0;
 }
 
@@ -1670,7 +1670,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
   margin-top: 5px;
 }
 
-.c2 > H2 {
+.c2 > h2 {
   font-weight: normal;
   font-size: 28px;
   margin-bottom: 0;
@@ -1680,7 +1680,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
   text-align: right;
 }
 
-.c4 > Button {
+.c4 > button {
   margin-bottom: 0;
 }
 
@@ -7613,7 +7613,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
   margin-top: 5px;
 }
 
-.c2 > H2 {
+.c2 > h2 {
   font-weight: normal;
   font-size: 28px;
   margin-bottom: 0;
@@ -7623,7 +7623,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
   text-align: right;
 }
 
-.c4 > Button {
+.c4 > button {
   margin-bottom: 0;
 }
 

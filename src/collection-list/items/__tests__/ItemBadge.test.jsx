@@ -7,9 +7,7 @@ describe('ItemBadge', () => {
 
   describe('when text is passed', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <ItemBadge>USA</ItemBadge>,
-      )
+      wrapper = mount(<ItemBadge>USA</ItemBadge>)
     })
 
     test('should render the component', () => {
@@ -17,15 +15,18 @@ describe('ItemBadge', () => {
     })
 
     test('should render the text', () => {
-      expect(wrapper.find(ItemBadge).at(0).text()).toBe('USA')
+      expect(
+        wrapper
+          .find(ItemBadge)
+          .at(0)
+          .text()
+      ).toBe('USA')
     })
   })
 
   describe('when no text is passed', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <ItemBadge />,
-      )
+      wrapper = mount(<ItemBadge />)
     })
 
     test('should render the component', () => {
@@ -33,7 +34,12 @@ describe('ItemBadge', () => {
     })
 
     test('should render no text', () => {
-      expect(wrapper.find(ItemBadge).at(0).text()).toBe('')
+      expect(
+        wrapper
+          .find(ItemBadge)
+          .at(0)
+          .text()
+      ).toBe('')
     })
   })
 })

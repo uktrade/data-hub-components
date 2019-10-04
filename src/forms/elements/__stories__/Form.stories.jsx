@@ -20,73 +20,91 @@ function Values() {
 function StepHeader() {
   const { currentStep, steps } = useFormContext()
   return (
-    <div>Step {currentStep + 1} of {steps.length}</div>
+    <div>
+      Step {currentStep + 1} of {steps.length}
+    </div>
   )
 }
 
-storiesOf('Forms', module)
-  .add('Form - Full example', () => {
-    const ENTITY_SEARCH_ENDPOINT = 'http://localhost:3010/v4/dnb/company-search'
-    setupSuccessMocks(ENTITY_SEARCH_ENDPOINT)
-    return (
-      <Form onSubmit={action('onSubmit')}>
-        {({ values }) => (
-          <>
-            <StepHeader />
+storiesOf('Forms', module).add('Form - Full example', () => {
+  const ENTITY_SEARCH_ENDPOINT = 'http://localhost:3010/v4/dnb/company-search'
+  setupSuccessMocks(ENTITY_SEARCH_ENDPOINT)
+  return (
+    <Form onSubmit={action('onSubmit')}>
+      {({ values }) => (
+        <>
+          <StepHeader />
 
-            <Step name="first">
-              <FieldInput type="number" name="age" label="Age" required="Enter age" />
-              <FieldInput type="number" name="height" label="Height" required="Enter height" />
+          <Step name="first">
+            <FieldInput
+              type="number"
+              name="age"
+              label="Age"
+              required="Enter age"
+            />
+            <FieldInput
+              type="number"
+              name="height"
+              label="Height"
+              required="Enter height"
+            />
 
-              <FieldRadios
-                name="companyLocation"
-                label="Where is the company based?"
-                required="Specify where the company is based"
-                options={[
-                  { label: 'UK', value: 'UK' },
-                  {
-                    label: 'Overseas',
-                    value: 'overseas',
-                    children: (
-                      <FieldSelect
-                        name="country"
-                        label="Country"
-                        required="Chose one of the countries"
-                        validate={value => (value !== 'Italy' ? 'Select Italy' : null)}
-                        options={[
-                          { label: 'Germany', value: 'Germany' },
-                          { label: 'France', value: 'France' },
-                          { label: 'Italy', value: 'Italy' },
-                        ]}
-                      />
-                    ),
-                  },
-                ]}
+            <FieldRadios
+              name="companyLocation"
+              label="Where is the company based?"
+              required="Specify where the company is based"
+              options={[
+                { label: 'UK', value: 'UK' },
+                {
+                  label: 'Overseas',
+                  value: 'overseas',
+                  children: (
+                    <FieldSelect
+                      name="country"
+                      label="Country"
+                      required="Chose one of the countries"
+                      validate={(value) =>
+                        value !== 'Italy' ? 'Select Italy' : null
+                      }
+                      options={[
+                        { label: 'Germany', value: 'Germany' },
+                        { label: 'France', value: 'France' },
+                        { label: 'Italy', value: 'Italy' },
+                      ]}
+                    />
+                  ),
+                },
+              ]}
+            />
+          </Step>
+
+          {values.age >= '18' && (
+            <Step name="second">
+              <FieldInput
+                type="text"
+                name="Job"
+                label="Job"
+                required="Enter job"
               />
             </Step>
+          )}
 
-            {values.age >= '18' && (
-              <Step name="second">
-                <FieldInput type="text" name="Job" label="Job" required="Enter job" />
-              </Step>
-            )}
+          <Step name="third" forwardButton={null} backButton={null}>
+            <FieldDnbCompany
+              name="dnb_company"
+              legend={<H3>Find the company</H3>}
+              country={values.country || values.companyLocation}
+              apiEndpoint={ENTITY_SEARCH_ENDPOINT}
+            />
+          </Step>
 
-            <Step name="third" forwardButton={null} backButton={null}>
-              <FieldDnbCompany
-                name="dnb_company"
-                legend={<H3>Find the company</H3>}
-                country={values.country || values.companyLocation}
-                apiEndpoint={ENTITY_SEARCH_ENDPOINT}
-              />
-            </Step>
+          <Step name="fourth">
+            <p>Last step</p>
+          </Step>
 
-            <Step name="fourth">
-              <p>Last step</p>
-            </Step>
-
-            <Values />
-          </>
-        )}
-      </Form>
-    )
-  })
+          <Values />
+        </>
+      )}
+    </Form>
+  )
+})

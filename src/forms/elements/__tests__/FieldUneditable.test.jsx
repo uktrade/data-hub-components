@@ -14,8 +14,10 @@ describe('FieldUneditable', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldUneditable name="testField" label="testLabel">testValue</FieldUneditable>
-        </Form>,
+          <FieldUneditable name="testField" label="testLabel">
+            testValue
+          </FieldUneditable>
+        </Form>
       )
     })
 
@@ -33,7 +35,7 @@ describe('FieldUneditable', () => {
       wrapper = mount(
         <Form>
           <FieldUneditable name="testField">testValue</FieldUneditable>
-        </Form>,
+        </Form>
       )
     })
 
@@ -46,8 +48,10 @@ describe('FieldUneditable', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldUneditable type="text" name="testField" legend="testLegend">testValue</FieldUneditable>
-        </Form>,
+          <FieldUneditable type="text" name="testField" legend="testLegend">
+            testValue
+          </FieldUneditable>
+        </Form>
       )
     })
 
@@ -60,8 +64,10 @@ describe('FieldUneditable', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldUneditable type="text" name="testField" hint="testHint">testValue</FieldUneditable>
-        </Form>,
+          <FieldUneditable type="text" name="testField" hint="testHint">
+            testValue
+          </FieldUneditable>
+        </Form>
       )
     })
 
@@ -76,10 +82,15 @@ describe('FieldUneditable', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldUneditable type="text" name="testField" label="Test value" onChangeClick={onChangeClickSpy}>
+          <FieldUneditable
+            type="text"
+            name="testField"
+            label="Test value"
+            onChangeClick={onChangeClickSpy}
+          >
             testValue
           </FieldUneditable>
-        </Form>,
+        </Form>
       )
     })
 

@@ -128,7 +128,8 @@ Array [
       >
         Go to the company page
       </ForwardRef>
-       to record activity.
+       
+      to record activity.
     </React.Fragment>,
   },
   Object {
@@ -295,7 +296,8 @@ Object {
     >
       Go to the company page
     </ForwardRef>
-     to record activity.
+     
+    to record activity.
   </React.Fragment>,
 }
 `;

@@ -4,7 +4,10 @@ import Label from '@govuk-react/label'
 import HintText from '@govuk-react/hint-text'
 import Paragraph from '@govuk-react/paragraph'
 import { ERROR_COLOUR } from 'govuk-colours'
-import { BORDER_WIDTH_FORM_ELEMENT_ERROR, SPACING } from '@govuk-react/constants'
+import {
+  BORDER_WIDTH_FORM_ELEMENT_ERROR,
+  SPACING,
+} from '@govuk-react/constants'
 
 import FieldWrapper from '../FieldWrapper'
 
@@ -35,7 +38,11 @@ describe('FieldWrapper', () => {
 
   describe('When the label prop is specified', () => {
     beforeAll(() => {
-      wrapper = mount(<FieldWrapper name="testName" label="testLabel">Test label</FieldWrapper>)
+      wrapper = mount(
+        <FieldWrapper name="testName" label="testLabel">
+          Test label
+        </FieldWrapper>
+      )
     })
 
     test('should set the content with children', () => {
@@ -56,7 +63,11 @@ describe('FieldWrapper', () => {
 
   describe('When the legend prop is specified', () => {
     beforeAll(() => {
-      wrapper = mount(<FieldWrapper name="testName" legend="testLegend">Test legend</FieldWrapper>)
+      wrapper = mount(
+        <FieldWrapper name="testName" legend="testLegend">
+          Test legend
+        </FieldWrapper>
+      )
     })
 
     test('should set the content with children', () => {
@@ -91,7 +102,7 @@ describe('FieldWrapper', () => {
           showBorder={true}
         >
           Test error
-        </FieldWrapper>,
+        </FieldWrapper>
       )
     })
 
@@ -122,7 +133,11 @@ describe('FieldWrapper', () => {
 
   describe('When the hint prop is specified', () => {
     beforeAll(() => {
-      wrapper = mount(<FieldWrapper name="testName" hint="testHint">Test hint</FieldWrapper>)
+      wrapper = mount(
+        <FieldWrapper name="testName" hint="testHint">
+          Test hint
+        </FieldWrapper>
+      )
     })
 
     test('should set the content with children', () => {
@@ -143,7 +158,11 @@ describe('FieldWrapper', () => {
 
   describe('When the label and error props are specified', () => {
     beforeAll(() => {
-      wrapper = mount(<FieldWrapper name="testName" label="testLabel" error="testError">Test error</FieldWrapper>)
+      wrapper = mount(
+        <FieldWrapper name="testName" label="testLabel" error="testError">
+          Test error
+        </FieldWrapper>
+      )
     })
 
     test('should set the content with children', () => {
@@ -156,7 +175,10 @@ describe('FieldWrapper', () => {
 
     test('should add error styles to the label', () => {
       const label = wrapper.find(Label)
-      expect(label).toHaveStyleRule('border-left', `${BORDER_WIDTH_FORM_ELEMENT_ERROR} solid ${ERROR_COLOUR}`)
+      expect(label).toHaveStyleRule(
+        'border-left',
+        `${BORDER_WIDTH_FORM_ELEMENT_ERROR} solid ${ERROR_COLOUR}`
+      )
       expect(label).toHaveStyleRule('margin-right', SPACING.SCALE_3)
       expect(label).toHaveStyleRule('padding-left', SPACING.SCALE_2)
     })
@@ -164,7 +186,11 @@ describe('FieldWrapper', () => {
 
   describe('When the legend and error props are specified', () => {
     beforeAll(() => {
-      wrapper = mount(<FieldWrapper name="testName" legend="testLegend" error="testError">Test error</FieldWrapper>)
+      wrapper = mount(
+        <FieldWrapper name="testName" legend="testLegend" error="testError">
+          Test error
+        </FieldWrapper>
+      )
     })
 
     test('should set the content with children', () => {
@@ -177,7 +203,10 @@ describe('FieldWrapper', () => {
 
     test('should add error styles to the legend', () => {
       const legend = wrapper.find('fieldset legend')
-      expect(legend).toHaveStyleRule('border-left', `${BORDER_WIDTH_FORM_ELEMENT_ERROR} solid ${ERROR_COLOUR}`)
+      expect(legend).toHaveStyleRule(
+        'border-left',
+        `${BORDER_WIDTH_FORM_ELEMENT_ERROR} solid ${ERROR_COLOUR}`
+      )
       expect(legend).toHaveStyleRule('margin-right', SPACING.SCALE_3)
       expect(legend).toHaveStyleRule('padding-left', SPACING.SCALE_2)
     })
@@ -185,7 +214,11 @@ describe('FieldWrapper', () => {
 
   describe('When the hint and error props are specified', () => {
     beforeAll(() => {
-      wrapper = mount(<FieldWrapper name="testName" hint="testHint" error="testError">Test error</FieldWrapper>)
+      wrapper = mount(
+        <FieldWrapper name="testName" hint="testHint" error="testError">
+          Test error
+        </FieldWrapper>
+      )
     })
 
     test('should set the content with children', () => {
@@ -198,7 +231,10 @@ describe('FieldWrapper', () => {
 
     test('should add error styles to the legend', () => {
       const hint = wrapper.find(HintText)
-      expect(hint).toHaveStyleRule('border-left', `${BORDER_WIDTH_FORM_ELEMENT_ERROR} solid ${ERROR_COLOUR}`)
+      expect(hint).toHaveStyleRule(
+        'border-left',
+        `${BORDER_WIDTH_FORM_ELEMENT_ERROR} solid ${ERROR_COLOUR}`
+      )
       expect(hint).toHaveStyleRule('margin-right', SPACING.SCALE_3)
       expect(hint).toHaveStyleRule('padding-left', SPACING.SCALE_2)
     })

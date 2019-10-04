@@ -17,7 +17,7 @@ export default class Activity extends React.PureComponent {
   constructor(props) {
     super(props)
     const { activity } = this.props
-    this.Card = find(cards, c => c.canRender(activity))
+    this.Card = find(cards, (c) => c.canRender(activity))
   }
 
   render() {

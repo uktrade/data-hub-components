@@ -18,9 +18,7 @@ describe('EntityListItem', () => {
 
   describe('when an empty entity is mounted', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <EntityListItem id="test" />,
-      )
+      wrapper = mount(<EntityListItem id="test" />)
     })
 
     test('should not display the heading', () => {
@@ -46,7 +44,7 @@ describe('EntityListItem', () => {
           data={data}
           canHandleClick={true}
           onEntityClick={onEntityClickSpy}
-        />,
+        />
       )
       entityContainer = wrapper.find('div')
     })
@@ -99,7 +97,7 @@ describe('EntityListItem', () => {
           id="test"
           canHandleClick={false}
           onEntityClick={onEntityClickSpy}
-        />,
+        />
       )
       entityContainer = wrapper.find('div')
     })
@@ -135,9 +133,7 @@ describe('EntityListItem', () => {
 
   describe('when the "heading" prop was passed', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <EntityListItem id="test" heading="test heading" />,
-      )
+      wrapper = mount(<EntityListItem id="test" heading="test heading" />)
     })
 
     test('should display the heading', () => {
@@ -147,9 +143,7 @@ describe('EntityListItem', () => {
 
   describe('when the "text" prop was passed', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <EntityListItem id="test" text="test text" />,
-      )
+      wrapper = mount(<EntityListItem id="test" text="test text" />)
       wrapper.update()
     })
 
@@ -165,9 +159,7 @@ describe('EntityListItem', () => {
     }
 
     beforeAll(() => {
-      wrapper = mount(
-        <EntityListItem id="test" meta={meta} />,
-      )
+      wrapper = mount(<EntityListItem id="test" meta={meta} />)
     })
 
     test('should render "EntityListItemMetaList" component', () => {

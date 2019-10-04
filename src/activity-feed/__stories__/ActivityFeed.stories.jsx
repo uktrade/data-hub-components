@@ -28,15 +28,16 @@ class ActivityFeedDemoApp extends React.Component {
     await this.onLoadMore()
   }
 
-  fetchActivities = () => new Promise((resolve) => {
-    // Simulate delay.
-    setTimeout(() => {
-      resolve({
-        activities: activityFeedFixtures,
-        total: 1000,
-      })
-    }, 1500)
-  })
+  fetchActivities = () =>
+    new Promise((resolve) => {
+      // Simulate delay.
+      setTimeout(() => {
+        resolve({
+          activities: activityFeedFixtures,
+          total: 1000,
+        })
+      }, 1500)
+    })
 
   onLoadMore = async () => {
     const { activities, offset } = this.state
@@ -47,7 +48,10 @@ class ActivityFeedDemoApp extends React.Component {
     })
 
     try {
-      const { activities: newActivities, total } = await this.fetchActivities(offset, limit)
+      const { activities: newActivities, total } = await this.fetchActivities(
+        offset,
+        limit
+      )
       const allActivities = activities.concat(newActivities)
 
       this.setState({

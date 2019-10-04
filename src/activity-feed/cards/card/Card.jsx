@@ -5,7 +5,8 @@ import PropTypes from 'prop-types'
 import { GREY_2 } from 'govuk-colours'
 
 const CardContainer = styled('div')`
-  border: ${({ isUpcoming }) => (isUpcoming ? `1px dashed ${GREY_2}` : `1px solid ${GREY_2}`)};
+  border: ${({ isUpcoming }) =>
+    isUpcoming ? `1px dashed ${GREY_2}` : `1px solid ${GREY_2}`};
   padding: ${SPACING.SCALE_3};
 `
 
@@ -23,10 +24,6 @@ export default class Card extends React.PureComponent {
   render() {
     const { isUpcoming, children } = this.props
 
-    return (
-      <CardContainer isUpcoming={isUpcoming}>
-        {children}
-      </CardContainer>
-    )
+    return <CardContainer isUpcoming={isUpcoming}>{children}</CardContainer>
   }
 }

@@ -23,12 +23,17 @@ describe('FieldAddress', () => {
             country={country}
             apiEndpoint={ENDPOINT}
           />
-        </Form>,
+        </Form>
       )
     })
 
     test('should display the postcode label', () => {
-      expect(wrapper.find('label').first().text()).toEqual('Postcode')
+      expect(
+        wrapper
+          .find('label')
+          .first()
+          .text()
+      ).toEqual('Postcode')
     })
 
     test('should display the postcode search field', () => {
@@ -56,7 +61,7 @@ describe('FieldAddress', () => {
             country={country}
             apiEndpoint={ENDPOINT}
           />
-        </Form>,
+        </Form>
       )
 
       wrapper.find('button').simulate('click')

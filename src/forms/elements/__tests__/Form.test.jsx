@@ -23,7 +23,7 @@ describe('Form', () => {
           <FieldInput type="text" name="faa" />
           <FieldInput type="text" name="laa" />
           <FieldInput type="text" name="bru" />
-        </Form>,
+        </Form>
       )
       expect(wrapper.find(FieldInput).length).toEqual(14)
     })
@@ -35,7 +35,7 @@ describe('Form', () => {
       const wrapper = mount(
         <Form onSubmit={onSubmitSpy}>
           <FieldInput name="testField" type="text" />
-        </Form>,
+        </Form>
       )
       const input = wrapper.find(FieldInput)
       input.simulate('change', { target: { value: 'hello' } })
@@ -49,15 +49,29 @@ describe('Form', () => {
     test('should validate each field', () => {
       const wrapper = mount(
         <Form>
-          {form => (
+          {(form) => (
             <>
               <div className="form-state">{JSON.stringify(form)}</div>
-              <FieldInput type="text" name="testField1" validate={() => 'testError1'} />
-              <FieldInput type="text" name="testField2" validate={() => 'testError2'} />
-              <button type="submit" className="submit" onClick={form.validateForm}>Submit</button>
+              <FieldInput
+                type="text"
+                name="testField1"
+                validate={() => 'testError1'}
+              />
+              <FieldInput
+                type="text"
+                name="testField2"
+                validate={() => 'testError2'}
+              />
+              <button
+                type="submit"
+                className="submit"
+                onClick={form.validateForm}
+              >
+                Submit
+              </button>
             </>
           )}
-        </Form>,
+        </Form>
       )
       const submit = wrapper.find('.submit')
       submit.simulate('click')
@@ -77,13 +91,17 @@ describe('Form', () => {
       const onSubmitSpy = jest.fn()
       const wrapper = mount(
         <Form onSubmit={onSubmitSpy}>
-          {form => (
+          {(form) => (
             <>
               <div className="form-state">{JSON.stringify(form)}</div>
-              <FieldInput type="text" name="testField" validate={() => 'testError'} />
+              <FieldInput
+                type="text"
+                name="testField"
+                validate={() => 'testError'}
+              />
             </>
           )}
-        </Form>,
+        </Form>
       )
       wrapper.simulate('submit')
       expect(onSubmitSpy).toHaveBeenCalledTimes(0)

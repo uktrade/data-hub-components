@@ -40,10 +40,7 @@ const StyledLink = styled.a`
   margin-bottom: 0;
 `
 
-function CollectionHeader({
-  totalItems,
-  itemName,
-  addItemUrl }) {
+function CollectionHeader({ totalItems, itemName, addItemUrl }) {
   const headerText = pluralise.withCount(totalItems, `% ${itemName}`)
 
   return (

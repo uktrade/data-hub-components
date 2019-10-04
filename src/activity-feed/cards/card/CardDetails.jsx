@@ -8,17 +8,17 @@ import PropTypes from 'prop-types'
 const GovUkDetails = styled(Details)`
   font-size: ${FONT_SIZE.SIZE_16};
   margin: ${SPACING.SCALE_2} 0 0;
-  
+
   & > div {
     padding: ${SPACING.SCALE_1};
     padding-bottom: ${SPACING.SCALE_3};
     margin: ${SPACING.SCALE_1} 0 ${SPACING.SCALE_1} 4px;
-    
+
     & > a {
       padding: ${SPACING.SCALE_4} 0 ${SPACING.SCALE_2} ${SPACING.SCALE_2};
     }
   }
-  
+
   ${MEDIA_QUERIES.TABLET} {
     margin-top: -${SPACING.SCALE_3};
   }
@@ -44,9 +44,7 @@ export default class CardDetails extends React.PureComponent {
       return null
     }
 
-    return (
-      <Link href={link.url}>{link.text}</Link>
-    )
+    return <Link href={link.url}>{link.text}</Link>
   }
 
   render() {

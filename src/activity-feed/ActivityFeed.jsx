@@ -16,7 +16,7 @@ const ActivityFeedCardList = styled('ol')`
   list-style-type: none;
   padding: 0;
   margin-top: ${SPACING.SCALE_2};
-  
+
   & > li {
     margin-bottom: ${SPACING.SCALE_2};
   }
@@ -85,14 +85,19 @@ export default class ActivityFeed extends React.Component {
           showDetails={showDetails}
         />
         <ActivityFeedCardList>
-          {activities.map(activity => (
+          {activities.map((activity) => (
             <li key={activity.id}>
               <Activity activity={activity} showDetails={showDetails} />
             </li>
           ))}
         </ActivityFeedCardList>
 
-        {hasMore && <ActivityFeedPagination isLoading={isLoading} onLoadMore={onLoadMore} />}
+        {hasMore && (
+          <ActivityFeedPagination
+            isLoading={isLoading}
+            onLoadMore={onLoadMore}
+          />
+        )}
 
         {children}
       </ActivityFeedContainer>

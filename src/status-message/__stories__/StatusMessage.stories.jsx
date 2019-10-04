@@ -6,12 +6,8 @@ import StatusMessage from '../StatusMessage'
 
 storiesOf('StatusMessage', module)
   .add('Default', () => {
-    return (
-      <StatusMessage>An info message</StatusMessage>
-    )
+    return <StatusMessage>An info message</StatusMessage>
   })
   .add('Custom colour', () => {
-    return (
-      <StatusMessage colour={ERROR_COLOUR}>An error message</StatusMessage>
-    )
+    return <StatusMessage colour={ERROR_COLOUR}>An error message</StatusMessage>
   })

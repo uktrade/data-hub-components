@@ -14,28 +14,24 @@ describe('CollectionHeader', () => {
           itemName={capitalProfileHeading.itemName}
           addItemText={capitalProfileHeading.addItemText}
           addItemUrl={capitalProfileHeading.addItemUrl}
-        />,
+        />
       )
     })
 
     test('should render the component', () => {
-      expect(wrapper.find(CollectionHeader)
-        .exists()).toBe(true)
+      expect(wrapper.find(CollectionHeader).exists()).toBe(true)
     })
 
     test('should render the totalItems and itemName', () => {
-      expect(wrapper.find('h2')
-        .text()).toBe('1 profile')
+      expect(wrapper.find('h2').text()).toBe('1 profile')
     })
 
     test('should render the addItemText', () => {
-      expect(wrapper.find('a')
-        .text()).toBe('Add profile')
+      expect(wrapper.find('a').text()).toBe('Add profile')
     })
 
     test('should render the addItemUrl', () => {
-      expect(wrapper.find("a[href='#']"))
-        .toHaveLength(1)
+      expect(wrapper.find("a[href='#']")).toHaveLength(1)
     })
   })
 
@@ -45,23 +41,20 @@ describe('CollectionHeader', () => {
         <CollectionHeader
           totalItems={2}
           itemName={capitalProfileHeading.itemName}
-        />,
+        />
       )
     })
 
     test('should render the component', () => {
-      expect(wrapper.find(CollectionHeader)
-        .exists()).toBe(true)
+      expect(wrapper.find(CollectionHeader).exists()).toBe(true)
     })
 
     test('should render the totalItems with the itemNamePlural', () => {
-      expect(wrapper.find('h2')
-        .text()).toBe('2 profiles')
+      expect(wrapper.find('h2').text()).toBe('2 profiles')
     })
 
     test('should not render the addItem button', () => {
-      expect(wrapper.find('a')
-        .exists()).toBe(false)
+      expect(wrapper.find('a').exists()).toBe(false)
     })
   })
 })

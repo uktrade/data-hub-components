@@ -3,9 +3,13 @@ import pluralise from 'pluralise'
 
 function usePostcodeLookup(apiEndpoint) {
   function createAddressCount(addresses) {
-    const addressCount = `${pluralise.withCount(addresses.length, '% address', '% addresses')} found`
+    const addressCount = pluralise.withCount(
+      addresses.length,
+      '% address',
+      '% addresses'
+    )
     return {
-      address1: addressCount,
+      address1: `${addressCount} found`,
     }
   }
 
@@ -13,10 +17,7 @@ function usePostcodeLookup(apiEndpoint) {
     const { data } = await axios.get(`${apiEndpoint}/${postcode}`)
     const addressCount = createAddressCount(data)
 
-    return [
-      addressCount,
-      ...data,
-    ]
+    return [addressCount, ...data]
   }
 }
 

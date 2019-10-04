@@ -62,7 +62,9 @@ export default class CardUtils {
       : BADGES[status.toUpperCase()]
 
     const isUpcoming = status === STATUS.UPCOMING
-    const typeText = isServiceDelivery(activity) ? 'service delivery' : 'interaction'
+    const typeText = isServiceDelivery(activity)
+      ? 'service delivery'
+      : 'interaction'
 
     return {
       badge,

@@ -5,9 +5,7 @@ import ActivityFeedHeader from '../ActivityFeedHeader'
 
 describe('ActivityFeedHeader', () => {
   test('renders header without props', () => {
-    const tree = renderer
-      .create(<ActivityFeedHeader />)
-      .toJSON()
+    const tree = renderer.create(<ActivityFeedHeader />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
@@ -18,7 +16,7 @@ describe('ActivityFeedHeader', () => {
           totalActivities={999}
           addContentText="Test button"
           addContentLink="http://testing.example.com"
-        />,
+        />
       )
       .toJSON()
     expect(tree).toMatchSnapshot()
@@ -26,11 +24,7 @@ describe('ActivityFeedHeader', () => {
 
   test('renders header with one activity', () => {
     const tree = renderer
-      .create(
-        <ActivityFeedHeader
-          totalActivities={1}
-        />,
-      )
+      .create(<ActivityFeedHeader totalActivities={1} />)
       .toJSON()
     expect(tree).toMatchSnapshot()
   })

@@ -7,11 +7,7 @@ describe('ItemMetaWrapper', () => {
 
   describe('when a child is passed', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <ItemMetaWrapper>
-        Test Child
-        </ItemMetaWrapper>,
-      )
+      wrapper = mount(<ItemMetaWrapper>Test Child</ItemMetaWrapper>)
     })
 
     test('should render the component', () => {
@@ -25,9 +21,7 @@ describe('ItemMetaWrapper', () => {
 
   describe('when no children are passed', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <ItemMetaWrapper />,
-      )
+      wrapper = mount(<ItemMetaWrapper />)
     })
 
     test('should render the component', () => {

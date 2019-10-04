@@ -5,18 +5,14 @@ import addressSearch from '../__fixtures__/address-search-SW1H 9AJ'
 
 export function setupPostcodeMock200(apiEndpoint, adapterOptions = {}) {
   const mock = new MockAdapter(axios, adapterOptions)
-  mock
-    .onGet(apiEndpoint)
-    .reply(200, addressSearch)
+  mock.onGet(apiEndpoint).reply(200, addressSearch)
 
   return mock
 }
 
 export function setupPostcodeMock404(apiEndpoint, adapterOptions = {}) {
   const mock = new MockAdapter(axios, adapterOptions)
-  mock
-    .onGet(apiEndpoint)
-    .reply(404)
+  mock.onGet(apiEndpoint).reply(404)
 
   return mock
 }

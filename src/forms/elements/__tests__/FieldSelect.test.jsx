@@ -14,12 +14,17 @@ describe('FieldSelect', () => {
       wrapper = mount(
         <Form>
           <FieldSelect name="testField" label="testLabel" />
-        </Form>,
+        </Form>
       )
     })
 
     test('should render the field with a label', () => {
-      expect(wrapper.find(Label).at(0).text()).toEqual('testLabel')
+      expect(
+        wrapper
+          .find(Label)
+          .at(0)
+          .text()
+      ).toEqual('testLabel')
     })
   })
 
@@ -28,12 +33,17 @@ describe('FieldSelect', () => {
       wrapper = mount(
         <Form>
           <FieldSelect name="testField" emptyOption="" />
-        </Form>,
+        </Form>
       )
     })
 
     test('should render the field without a label', () => {
-      expect(wrapper.find(Label).at(0).text()).toEqual('')
+      expect(
+        wrapper
+          .find(Label)
+          .at(0)
+          .text()
+      ).toEqual('')
     })
   })
 
@@ -42,7 +52,7 @@ describe('FieldSelect', () => {
       wrapper = mount(
         <Form>
           <FieldSelect name="testField" legend="testLegend" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -56,7 +66,7 @@ describe('FieldSelect', () => {
       wrapper = mount(
         <Form>
           <FieldSelect name="testField" hint="testHint" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -78,7 +88,7 @@ describe('FieldSelect', () => {
               { label: 'testOptionLabel2', value: 'testOptionValue2' },
             ]}
           />
-        </Form>,
+        </Form>
       )
       options = wrapper.find('option')
     })
@@ -108,7 +118,7 @@ describe('FieldSelect', () => {
       wrapper = mount(
         <Form>
           <FieldSelect name="testField" validate={() => 'testError'} />
-        </Form>,
+        </Form>
       )
       wrapper.find('form').simulate('submit')
     })
@@ -124,12 +134,17 @@ describe('FieldSelect', () => {
       wrapper = mount(
         <Form>
           <FieldSelect name="testField" emptyOption="testEmptyOption" />
-        </Form>,
+        </Form>
       )
     })
 
     test('should create an empty option with the same value', () => {
-      expect(wrapper.find('option').first().text()).toEqual('testEmptyOption')
+      expect(
+        wrapper
+          .find('option')
+          .first()
+          .text()
+      ).toEqual('testEmptyOption')
     })
   })
 
@@ -137,7 +152,7 @@ describe('FieldSelect', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          {form => (
+          {(form) => (
             <>
               <FieldSelect
                 name="testField"
@@ -149,13 +164,17 @@ describe('FieldSelect', () => {
               <div id="values">{form.values.testField}</div>
             </>
           )}
-        </Form>,
+        </Form>
       )
-      wrapper.find('select').simulate('change', { target: { value: 'testOptionValue2' } })
+      wrapper
+        .find('select')
+        .simulate('change', { target: { value: 'testOptionValue2' } })
     })
 
     test('should update field value', () => {
-      expect(wrapper.find('select').prop('defaultValue')).toEqual('testOptionValue2')
+      expect(wrapper.find('select').prop('defaultValue')).toEqual(
+        'testOptionValue2'
+      )
     })
 
     test('should update value in form state', () => {

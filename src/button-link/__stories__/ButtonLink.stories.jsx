@@ -15,6 +15,8 @@ storiesOf('ButtonLink', module)
   })
   .add('Inline', () => {
     return (
-      <div>Some text <ButtonLink inline={true}>Change</ButtonLink></div>
+      <div>
+        Some text <ButtonLink inline={true}>Change</ButtonLink>
+      </div>
     )
   })

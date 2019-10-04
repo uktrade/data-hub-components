@@ -9,7 +9,7 @@ describe('MyCompaniesFilters', () => {
     const wrapper = mount(
       <useMyCompaniesContext.Provider>
         <MyCompaniesFilters />
-      </useMyCompaniesContext.Provider>,
+      </useMyCompaniesContext.Provider>
     )
     expect(wrapper).toMatchSnapshot()
   })
@@ -19,7 +19,7 @@ describe('MyCompaniesFilters', () => {
       const wrapper = mount(
         <useMyCompaniesContext.Provider mockProps={{ dispatch: mockDispatch }}>
           <MyCompaniesFilters />
-        </useMyCompaniesContext.Provider>,
+        </useMyCompaniesContext.Provider>
       )
       wrapper.find('select').simulate('change', { target: { value: 'recent' } })
 
@@ -35,7 +35,7 @@ describe('MyCompaniesFilters', () => {
       const wrapper = mount(
         <useMyCompaniesContext.Provider mockProps={{ dispatch: mockDispatch }}>
           <MyCompaniesFilters />
-        </useMyCompaniesContext.Provider>,
+        </useMyCompaniesContext.Provider>
       )
       wrapper.find('input').simulate('change', { target: { value: 'hello' } })
 

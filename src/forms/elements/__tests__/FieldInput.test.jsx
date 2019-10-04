@@ -15,7 +15,7 @@ describe('FieldInput', () => {
       wrapper = mount(
         <Form>
           <FieldInput type="text" name="testField" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -35,7 +35,7 @@ describe('FieldInput', () => {
       wrapper = mount(
         <Form>
           <FieldInput type="text" name="testField" label="testLabel" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -53,7 +53,7 @@ describe('FieldInput', () => {
       wrapper = mount(
         <Form>
           <FieldInput type="text" name="testField" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -67,7 +67,7 @@ describe('FieldInput', () => {
       wrapper = mount(
         <Form>
           <FieldInput type="text" name="testField" legend="testLegend" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -81,7 +81,7 @@ describe('FieldInput', () => {
       wrapper = mount(
         <Form>
           <FieldInput type="text" name="testField" hint="testHint" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -94,8 +94,12 @@ describe('FieldInput', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldInput type="text" name="testField" validate={() => 'testError'} />
-        </Form>,
+          <FieldInput
+            type="text"
+            name="testField"
+            validate={() => 'testError'}
+          />
+        </Form>
       )
       wrapper.simulate('submit')
     })
@@ -113,13 +117,13 @@ describe('FieldInput', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          {form => (
+          {(form) => (
             <>
               <FieldInput type="text" name="testField" />
               <div id="values">{form.values.testField}</div>
             </>
           )}
-        </Form>,
+        </Form>
       )
       const testField1 = wrapper.find('input')
       testField1.simulate('change', { target: { value: 'testValue' } })
@@ -138,8 +142,13 @@ describe('FieldInput', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <FieldInput type="text" name="testField" minLength={3} maxLength={10} />
-        </Form>,
+          <FieldInput
+            type="text"
+            name="testField"
+            minLength={3}
+            maxLength={10}
+          />
+        </Form>
       )
     })
 

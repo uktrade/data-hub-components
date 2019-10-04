@@ -16,7 +16,9 @@ const MyCompaniesDashboardStory = ({ fixture }) => {
 }
 
 storiesOf('Dashboard', module)
-  .add('View all companies', () => <MyCompaniesDashboardStory fixture={allCompanies} />)
+  .add('View all companies', () => (
+    <MyCompaniesDashboardStory fixture={allCompanies} />
+  ))
   .add('No companies', () => <MyCompaniesDashboardStory fixture={[]} />)
 
 MyCompaniesDashboardStory.propTypes = {

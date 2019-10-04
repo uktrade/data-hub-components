@@ -8,7 +8,7 @@ const StyledListItem = styled('li')`
 
 const StyledUList = styled('ul')`
   margin: 0;
-  padding-left: 0
+  padding-left: 0;
 `
 
 export default class CardDetailsList extends React.PureComponent {
@@ -27,15 +27,11 @@ export default class CardDetailsList extends React.PureComponent {
 
     return (
       <StyledUList>
-        {
-          items.map((item, index) => (
-            <StyledListItem key={item.id}>
-              {
-                itemRenderer(item, index, itemPropName)
-              }
-            </StyledListItem>
-          ))
-        }
+        {items.map((item, index) => (
+          <StyledListItem key={item.id}>
+            {itemRenderer(item, index, itemPropName)}
+          </StyledListItem>
+        ))}
       </StyledUList>
     )
   }

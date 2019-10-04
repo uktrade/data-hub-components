@@ -47,8 +47,14 @@ export default class ActivityFeedApp extends React.Component {
     })
 
     try {
-      const { activities: newActivities, total } = await ActivityFeedApp.fetchActivities(
-        apiEndpoint, offset, limit, queryParams,
+      const {
+        activities: newActivities,
+        total,
+      } = await ActivityFeedApp.fetchActivities(
+        apiEndpoint,
+        offset,
+        limit,
+        queryParams
       )
       const allActivities = activities.concat(newActivities)
 
@@ -80,7 +86,7 @@ export default class ActivityFeedApp extends React.Component {
 
     return {
       total,
-      activities: hits.map(hit => hit._source),
+      activities: hits.map((hit) => hit._source),
     }
   }
 

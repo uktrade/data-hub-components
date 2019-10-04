@@ -7,8 +7,20 @@ import useField from '../hooks/useField'
 import FieldWrapper from './FieldWrapper'
 import useFormContext from '../hooks/useFormContext'
 
-const FieldCheckboxes = ({ name, validate, required, label, legend, hint, options }) => {
-  const { value, error, touched, onBlur } = useField({ name, validate, required })
+const FieldCheckboxes = ({
+  name,
+  validate,
+  required,
+  label,
+  legend,
+  hint,
+  options,
+}) => {
+  const { value, error, touched, onBlur } = useField({
+    name,
+    validate,
+    required,
+  })
   const { setFieldValue } = useFormContext()
 
   const onChange = (e) => {
@@ -18,36 +30,38 @@ const FieldCheckboxes = ({ name, validate, required, label, legend, hint, option
     if (checked) {
       newValue.push(optionName)
     } else if (newValue.includes(optionName)) {
-      newValue = newValue.filter(item => item !== optionName)
+      newValue = newValue.filter((item) => item !== optionName)
     }
 
     setFieldValue(name, newValue)
   }
 
   return (
-    <FieldWrapper {...({ name, label, legend, hint, error })}>
+    <FieldWrapper {...{ name, label, legend, hint, error }}>
       <MultiChoice meta={{ error, touched }}>
-        {options.map(({
-          value: optionValue,
-          label: optionLabel,
-          children,
-          ...optionProps
-        }) => (
-          <div key={optionValue}>
-            <Checkbox
-              key={optionValue}
-              name={optionValue}
-              checked={value.includes(optionValue)}
-              onChange={onChange}
-              onBlur={onBlur}
-              {...optionProps}
-            >
-              {optionLabel}
-            </Checkbox>
+        {options.map(
+          ({
+            value: optionValue,
+            label: optionLabel,
+            children,
+            ...optionProps
+          }) => (
+            <div key={optionValue}>
+              <Checkbox
+                key={optionValue}
+                name={optionValue}
+                checked={value.includes(optionValue)}
+                onChange={onChange}
+                onBlur={onBlur}
+                {...optionProps}
+              >
+                {optionLabel}
+              </Checkbox>
 
-            {value.includes(optionValue) && !!children ? children : null}
-          </div>
-        ))}
+              {value.includes(optionValue) && !!children ? children : null}
+            </div>
+          )
+        )}
       </MultiChoice>
     </FieldWrapper>
   )
@@ -65,7 +79,7 @@ FieldCheckboxes.propTypes = {
       label: PropTypes.string.isRequired,
       value: PropTypes.string.isRequired,
       children: PropTypes.node,
-    }),
+    })
   ),
 }
 

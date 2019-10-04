@@ -5,17 +5,19 @@ import VisuallyHidden from '@govuk-react/visually-hidden'
 import FieldWrapper from './FieldWrapper'
 import ButtonLink from '../../button-link/ButtonLink'
 
-const FieldUneditable = ({ name, label, legend, hint, onChangeClick, children }) => {
+const FieldUneditable = ({
+  name,
+  label,
+  legend,
+  hint,
+  onChangeClick,
+  children,
+}) => {
   return (
-    <FieldWrapper {...({ name, label, legend, hint })}>
-      {children}
-      {' '}
+    <FieldWrapper {...{ name, label, legend, hint }}>
+      {children}{' '}
       {onChangeClick && (
-        <ButtonLink
-          inline={true}
-          type="button"
-          onClick={onChangeClick}
-        >
+        <ButtonLink inline={true} type="button" onClick={onChangeClick}>
           Change <VisuallyHidden>{label || legend}</VisuallyHidden>
         </ButtonLink>
       )}

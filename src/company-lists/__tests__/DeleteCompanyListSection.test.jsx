@@ -27,7 +27,7 @@ describe('DeleteCompanyListSection', () => {
           companyList={companyList}
           onDelete={onDeleteSpy}
           returnUrl="test-return-url"
-        />,
+        />
       )
     })
 
@@ -36,7 +36,12 @@ describe('DeleteCompanyListSection', () => {
     })
 
     test('displays the list name', () => {
-      expect(wrapper.find(ListItem).first().text()).toEqual(companyList.name)
+      expect(
+        wrapper
+          .find(ListItem)
+          .first()
+          .text()
+      ).toEqual(companyList.name)
     })
 
     test('triggers the onDelete callback on click', () => {
@@ -61,7 +66,7 @@ describe('DeleteCompanyListSection', () => {
           onDelete={jest.fn()}
           returnUrl="test-return-url"
           errorMessage="Request failed"
-        />,
+        />
       )
 
       expect(wrapper.find(ErrorSummary).exists()).toBeTruthy()
@@ -69,21 +74,29 @@ describe('DeleteCompanyListSection', () => {
   })
 
   describe('with multiple or no items', () => {
-    test.each([0, 20])('displays the correct count for %s items', (itemCount) => {
-      const companyList = {
-        ...baseCompanyList,
-        item_count: itemCount,
-      }
-      const wrapper = mount(
-        <DeleteCompanyListSection
-          companyList={companyList}
-          onDelete={jest.fn()}
-          returnUrl="test-return-url"
-        />,
-      )
+    test.each([0, 20])(
+      'displays the correct count for %s items',
+      (itemCount) => {
+        const companyList = {
+          ...baseCompanyList,
+          item_count: itemCount,
+        }
+        const wrapper = mount(
+          <DeleteCompanyListSection
+            companyList={companyList}
+            onDelete={jest.fn()}
+            returnUrl="test-return-url"
+          />
+        )
 
-      expect(wrapper.find(ListItem).at(1).text()).toEqual(`${itemCount} companies`)
-    })
+        expect(
+          wrapper
+            .find(ListItem)
+            .at(1)
+            .text()
+        ).toEqual(`${itemCount} companies`)
+      }
+    )
   })
 
   describe('with one item', () => {
@@ -97,10 +110,15 @@ describe('DeleteCompanyListSection', () => {
           companyList={companyList}
           onDelete={jest.fn()}
           returnUrl="test-return-url"
-        />,
+        />
       )
 
-      expect(wrapper.find(ListItem).at(1).text()).toEqual(`${companyList.item_count} company`)
+      expect(
+        wrapper
+          .find(ListItem)
+          .at(1)
+          .text()
+      ).toEqual(`${companyList.item_count} company`)
     })
   })
 })

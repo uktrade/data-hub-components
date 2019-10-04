@@ -30,8 +30,6 @@ export default class CardBlockHeading extends React.PureComponent {
   render() {
     const { text, sourceType } = this.props
 
-    return (
-      <BlockHeading sourceType={sourceType}>{text}</BlockHeading>
-    )
+    return <BlockHeading sourceType={sourceType}>{text}</BlockHeading>
   }
 }

@@ -15,7 +15,7 @@ describe('FieldCheckboxes', () => {
       wrapper = mount(
         <Form>
           <FieldCheckboxes name="testField" label="testLabel" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -29,7 +29,7 @@ describe('FieldCheckboxes', () => {
       wrapper = mount(
         <Form>
           <FieldCheckboxes name="testField" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -43,7 +43,7 @@ describe('FieldCheckboxes', () => {
       wrapper = mount(
         <Form>
           <FieldCheckboxes name="testField" legend="testLegend" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -57,7 +57,7 @@ describe('FieldCheckboxes', () => {
       wrapper = mount(
         <Form>
           <FieldCheckboxes name="testField" hint="testHint" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -79,7 +79,7 @@ describe('FieldCheckboxes', () => {
               { label: 'testOptionLabel2', value: 'testOptionValue2' },
             ]}
           />
-        </Form>,
+        </Form>
       )
       checkboxes = wrapper.find(Checkbox)
     })
@@ -104,13 +104,18 @@ describe('FieldCheckboxes', () => {
       wrapper = mount(
         <Form>
           <FieldCheckboxes name="testField" validate={() => 'testError'} />
-        </Form>,
+        </Form>
       )
       wrapper.find('form').simulate('submit')
     })
 
     test('should render with an error', () => {
-      expect(wrapper.find('span').at(1).text()).toEqual('testError')
+      expect(
+        wrapper
+          .find('span')
+          .at(1)
+          .text()
+      ).toEqual('testError')
     })
   })
 
@@ -118,7 +123,7 @@ describe('FieldCheckboxes', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          {form => (
+          {(form) => (
             <>
               <FieldCheckboxes
                 name="testField"
@@ -130,15 +135,18 @@ describe('FieldCheckboxes', () => {
               <div id="values">{JSON.stringify(form.values.testField)}</div>
             </>
           )}
-        </Form>,
+        </Form>
       )
 
-      wrapper.find('input').first().simulate('change', {
-        target: {
-          checked: true,
-          name: 'testOptionValue1',
-        },
-      })
+      wrapper
+        .find('input')
+        .first()
+        .simulate('change', {
+          target: {
+            checked: true,
+            name: 'testOptionValue1',
+          },
+        })
     })
 
     test('should update value in form state', () => {
@@ -146,17 +154,25 @@ describe('FieldCheckboxes', () => {
     })
 
     test('should check the first checkbox', () => {
-      expect(wrapper.find('input').first().prop('checked')).toBeTruthy()
+      expect(
+        wrapper
+          .find('input')
+          .first()
+          .prop('checked')
+      ).toBeTruthy()
     })
 
     describe('when a checkbox is unchecked', () => {
       beforeAll(() => {
-        wrapper.find('input').first().simulate('change', {
-          target: {
-            checked: false,
-            name: 'testOptionValue1',
-          },
-        })
+        wrapper
+          .find('input')
+          .first()
+          .simulate('change', {
+            target: {
+              checked: false,
+              name: 'testOptionValue1',
+            },
+          })
       })
 
       test('should update value in form state', () => {
@@ -164,7 +180,12 @@ describe('FieldCheckboxes', () => {
       })
 
       test('should uncheck the first checkbox', () => {
-        expect(wrapper.find('input').first().prop('checked')).toBeFalsy()
+        expect(
+          wrapper
+            .find('input')
+            .first()
+            .prop('checked')
+        ).toBeFalsy()
       })
     })
   })

@@ -15,7 +15,7 @@ const StyledCellHeader = styled(Table.CellHeader)(
       overflow: 'hidden',
       'white-space': 'nowrap',
     },
-  },
+  }
 )
 
 const StyledDateCell = styled(Table.Cell)(typography.font({ size: 14 }), {
@@ -47,9 +47,7 @@ function MyCompaniesTable() {
             />
           </Link>
         </Table.Cell>
-        <StyledDateCell>
-          {latestInteraction.displayDate}
-        </StyledDateCell>
+        <StyledDateCell>{latestInteraction.displayDate}</StyledDateCell>
         <Table.Cell>
           {latestInteraction.id ? (
             <Link href={`interactions/${latestInteraction.id}`}>

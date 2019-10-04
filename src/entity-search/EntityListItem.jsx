@@ -1,6 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FOCUSABLE, FONT_SIZE, MEDIA_QUERIES, SPACING } from '@govuk-react/constants'
+import {
+  FOCUSABLE,
+  FONT_SIZE,
+  MEDIA_QUERIES,
+  SPACING,
+} from '@govuk-react/constants'
 import { GREY_2, GREY_4, LINK_COLOUR, LINK_HOVER_COLOUR } from 'govuk-colours'
 import { H3 } from '@govuk-react/heading'
 import InsetText from '@govuk-react/inset-text'
@@ -15,8 +20,10 @@ const StyledEntity = styled('div')`
   padding: ${SPACING.SCALE_2};
   border: 1px solid ${GREY_2};
   ${FOCUSABLE};
-  
-  ${({ canHandleClick }) => canHandleClick && `
+
+  ${({ canHandleClick }) =>
+    canHandleClick &&
+    `
     cursor: pointer;
 
     &:hover {
@@ -59,7 +66,9 @@ const EntityListItem = ({
       key={`entity_${id}`}
       tabIndex={canHandleClick ? 0 : undefined}
       onClick={() => canHandleClick && onEntityClick(data)}
-      onKeyDown={e => canHandleClick && e.keyCode === 13 && onEntityClick(data)}
+      onKeyDown={(e) =>
+        canHandleClick && e.keyCode === 13 && onEntityClick(data)
+      }
       canHandleClick={canHandleClick}
     >
       {heading && <StyledHeading>{heading}</StyledHeading>}

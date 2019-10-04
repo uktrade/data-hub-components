@@ -13,7 +13,7 @@ describe('CardHeading', () => {
             subHeading="View sub heading"
             summary="view summary"
             link={{ text: 'Go to the detail page', url: '#' }}
-          />,
+          />
         )
         .toJSON()
 
@@ -30,7 +30,7 @@ describe('CardHeading', () => {
           <CardHeading
             blockText="View block card heading"
             link={{ text: 'Go to the detail page', url: '#' }}
-          />,
+          />
         )
         .toJSON()
 
@@ -47,7 +47,7 @@ describe('CardHeading', () => {
           <CardHeading
             blockText="View block card heading"
             link={{ text: 'Go to the detail page', url: '#' }}
-          />,
+          />
         )
         .toJSON()
 

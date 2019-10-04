@@ -18,19 +18,23 @@ function MyCompaniesTile() {
   const hasCompanies = !!state.companies.length
   const isFiltering = !!state.filterText.length
   const hasNoCompaniesInWatchList = !hasCompanies && !isFiltering
-  const hasNoResults = !!state.companiesInitial.length && !state.companies.length
+  const hasNoResults =
+    !!state.companiesInitial.length && !state.companies.length
 
   const SubHeading = (
     <Fragment>
       You have not added any companies to your list. <br />
-      You can add companies to this list from a company page, and only you can see this list.
+      You can add companies to this list from a company page, and only you can
+      see this list.
     </Fragment>
   )
 
   return (
     <DashboardSection
       heading="My Companies"
-      headingSlotComponent={!!state.companiesInitial.length && <MyCompaniesFilters />}
+      headingSlotComponent={
+        !!state.companiesInitial.length && <MyCompaniesFilters />
+      }
       subHeading={SubHeading}
       showSubHeading={hasNoCompaniesInWatchList}
     >

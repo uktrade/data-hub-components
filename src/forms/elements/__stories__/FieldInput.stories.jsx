@@ -12,7 +12,7 @@ addDecorator(withKnobs)
 storiesOf('Forms', module)
   .add('FieldInput - Text', () => (
     <Form onSubmit={action('onSubmit')}>
-      {form => (
+      {(form) => (
         <>
           <FieldInput
             label="Text"
@@ -29,7 +29,7 @@ storiesOf('Forms', module)
   ))
   .add('FieldInput - Number', () => (
     <Form onSubmit={action('onSubmit')}>
-      {form => (
+      {(form) => (
         <>
           <FieldInput
             label="Number"

@@ -7,17 +7,21 @@ import companies from '../../__fixtures__/companies'
 describe('My companies dashboard', () => {
   test('should match the snapshot', () => {
     const wrapper = mount(
-      <useMyCompaniesContext.Provider mockInitialState={{ companiesInitial: companies, companies }}>
+      <useMyCompaniesContext.Provider
+        mockInitialState={{ companiesInitial: companies, companies }}
+      >
         <MyCompaniesTile />
-      </useMyCompaniesContext.Provider>,
+      </useMyCompaniesContext.Provider>
     )
     expect(wrapper).toMatchSnapshot()
   })
   describe('when there are a list of companies', () => {
     const wrapper = mount(
-      <useMyCompaniesContext.Provider mockInitialState={{ companiesInitial: companies, companies }}>
+      <useMyCompaniesContext.Provider
+        mockInitialState={{ companiesInitial: companies, companies }}
+      >
         <MyCompaniesTile />
-      </useMyCompaniesContext.Provider>,
+      </useMyCompaniesContext.Provider>
     )
     test('should render filters', () => {
       expect(wrapper.find('input[type="text"]')).toHaveLength(1)
@@ -34,7 +38,7 @@ describe('My companies dashboard', () => {
     const wrapper = mount(
       <useMyCompaniesContext.Provider data={[]}>
         <MyCompaniesTile />
-      </useMyCompaniesContext.Provider>,
+      </useMyCompaniesContext.Provider>
     )
     test('should not render filters', () => {
       expect(wrapper.find('input[type="text"]')).toHaveLength(0)
@@ -47,7 +51,9 @@ describe('My companies dashboard', () => {
       expect(wrapper.find('details')).toHaveLength(0)
     })
     test('should render no companies message', () => {
-      expect(wrapper.find('p').text()).toContain('You have not added any companies to your list. You can add companies to this list from a company page, and only you can see this list.')
+      expect(wrapper.find('p').text()).toContain(
+        'You have not added any companies to your list. You can add companies to this list from a company page, and only you can see this list.'
+      )
     })
   })
   describe('Search for companies', () => {
@@ -57,14 +63,14 @@ describe('My companies dashboard', () => {
           mockInitialState={{ companiesInitial: companies, companies }}
         >
           <MyCompaniesTile />
-        </useMyCompaniesContext.Provider>,
+        </useMyCompaniesContext.Provider>
       )
       wrapper.find('input').simulate('change', { target: { value: 'z' } })
       expect(wrapper.find('table').text()).toContain('Zebra')
       expect(wrapper.find('tbody')).toHaveLength(1)
     })
   })
-  describe('when text filter doesn\'nt match any companies', () => {
+  describe("when text filter doesn'nt match any companies", () => {
     const companiesInitial = [
       {
         company: {
@@ -80,13 +86,17 @@ describe('My companies dashboard', () => {
       },
     ]
     const wrapper = mount(
-      <useMyCompaniesContext.Provider mockInitialState={{ companiesInitial, filterText: 'Z1', companies: [] }}>
+      <useMyCompaniesContext.Provider
+        mockInitialState={{ companiesInitial, filterText: 'Z1', companies: [] }}
+      >
         <MyCompaniesTile />
-      </useMyCompaniesContext.Provider>,
+      </useMyCompaniesContext.Provider>
     )
 
     test('should render the no companies message', () => {
-      expect(wrapper.find('p').text()).toContain('No companies match your search')
+      expect(wrapper.find('p').text()).toContain(
+        'No companies match your search'
+      )
     })
   })
 })

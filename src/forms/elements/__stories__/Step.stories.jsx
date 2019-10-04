@@ -22,33 +22,36 @@ function Values() {
 function StepHeader() {
   const { currentStep, steps } = useFormContext()
   return (
-    <div>Step {currentStep + 1} of {steps.length}</div>
+    <div>
+      Step {currentStep + 1} of {steps.length}
+    </div>
   )
 }
 
-storiesOf('Forms', module)
-  .add('Step', () => {
-    return (
-      <Form onSubmit={action('onSubmit')}>
-        <StepHeader />
+storiesOf('Forms', module).add('Step', () => {
+  return (
+    <Form onSubmit={action('onSubmit')}>
+      <StepHeader />
 
-        <Step name="first">
-          <Values />
-        </Step>
+      <Step name="first">
+        <Values />
+      </Step>
 
-        <Step name="second" forwardButton="GO FORWARD!" backButton="GO BACK!">
-          <Values />
+      <Step name="second" forwardButton="GO FORWARD!" backButton="GO BACK!">
+        <Values />
 
-          <p>Custom button labels <span role="img">⬇</span>️</p>
-        </Step>
+        <p>
+          Custom button labels <span role="img">⬇</span>️
+        </p>
+      </Step>
 
-        <Step name="third">
-          <Values />
-        </Step>
+      <Step name="third">
+        <Values />
+      </Step>
 
-        <Step name="fourth">
-          <Values />
-        </Step>
-      </Form>
-    )
-  })
+      <Step name="fourth">
+        <Values />
+      </Step>
+    </Form>
+  )
+})

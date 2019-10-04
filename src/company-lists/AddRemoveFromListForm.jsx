@@ -15,15 +15,13 @@ const StyledDiv = styled.div`
   margin: 0;
 `
 
-const AddRemoveFromListForm = (
-  {
-    list,
-    onSubmitHandler,
-    createNewListUrl,
-    isLoading,
-    cancelLinkUrl,
-  },
-) => {
+const AddRemoveFromListForm = ({
+  list,
+  onSubmitHandler,
+  createNewListUrl,
+  isLoading,
+  cancelLinkUrl,
+}) => {
   const { companyId, companyLists } = list
   const initState = companyLists.reduce((obj, { listId, isAdded }) => {
     return { ...obj, [listId]: isAdded }
@@ -47,7 +45,8 @@ const AddRemoveFromListForm = (
                   label: 'No',
                   value: 'no',
                   inline: 'true',
-                }]}
+                },
+              ]}
             />
           </div>
         ))}

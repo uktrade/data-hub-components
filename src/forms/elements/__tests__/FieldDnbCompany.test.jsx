@@ -35,7 +35,9 @@ const wrapFieldDnbCompanyForm = () => {
         <>
           <div className="current-step">{currentStep}</div>
           <div className="field-value">{JSON.stringify(values.testField)}</div>
-          <div className="field-cannot-find">{JSON.stringify(values.cannotFind)}</div>
+          <div className="field-cannot-find">
+            {JSON.stringify(values.cannotFind)}
+          </div>
 
           <Step name="first" />
 
@@ -48,16 +50,12 @@ const wrapFieldDnbCompanyForm = () => {
             />
           </Step>
 
-          {!values.cannotFind && (
-            <Step name="third">third</Step>
-          )}
+          {!values.cannotFind && <Step name="third">third</Step>}
 
-          {values.cannotFind && (
-            <Step name="fourth">fourth</Step>
-          )}
+          {values.cannotFind && <Step name="fourth">fourth</Step>}
         </>
       )}
-    </Form>,
+    </Form>
   )
 }
 
@@ -70,7 +68,12 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should render the field with a label', () => {
-      expect(wrapper.find('label').at(0).text()).toEqual('testLabel')
+      expect(
+        wrapper
+          .find('label')
+          .at(0)
+          .text()
+      ).toEqual('testLabel')
     })
 
     test('should render the field with the previously selected country', () => {
@@ -81,17 +84,30 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should render the company name filter', () => {
-      expect(wrapper.find(FieldInput).at(0).text())
-        .toEqual('Company name')
+      expect(
+        wrapper
+          .find(FieldInput)
+          .at(0)
+          .text()
+      ).toEqual('Company name')
     })
 
     test('should limit the number of characters in the company name filter to 30', () => {
-      expect(wrapper.find(FieldInput).at(0).prop('maxLength')).toEqual(30)
+      expect(
+        wrapper
+          .find(FieldInput)
+          .at(0)
+          .prop('maxLength')
+      ).toEqual(30)
     })
 
     test('should render the company postcode filter', () => {
-      expect(wrapper.find(FieldInput).at(1).text())
-        .toEqual('Company postcode (optional)')
+      expect(
+        wrapper
+          .find(FieldInput)
+          .at(1)
+          .text()
+      ).toEqual('Company postcode (optional)')
     })
 
     test('should not initially render the field with an entity list header', () => {
@@ -107,7 +123,10 @@ describe('FieldDnbCompany', () => {
     beforeAll(() => {
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find(FieldUneditable).find(ButtonLink).simulate('click')
+      wrapper
+        .find(FieldUneditable)
+        .find(ButtonLink)
+        .simulate('click')
     })
 
     test('should go back to the first step', () => {
@@ -119,7 +138,10 @@ describe('FieldDnbCompany', () => {
     beforeAll(async () => {
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find(FormActions).find('button').simulate('click')
+      wrapper
+        .find(FormActions)
+        .find('button')
+        .simulate('click')
 
       await act(flushPromises)
 
@@ -147,10 +169,14 @@ describe('FieldDnbCompany', () => {
     beforeAll(async () => {
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find('input[name="dnbCompanyName"]')
+      wrapper
+        .find('input[name="dnbCompanyName"]')
         .simulate('change', { target: { value: 'a' } })
 
-      wrapper.find(FormActions).find('button').simulate('click')
+      wrapper
+        .find(FormActions)
+        .find('button')
+        .simulate('click')
 
       await act(flushPromises)
 
@@ -158,7 +184,9 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should show an error', () => {
-      expect(wrapper.text()).toContain('Enter company name that is 2 characters long or more')
+      expect(wrapper.text()).toContain(
+        'Enter company name that is 2 characters long or more'
+      )
     })
   })
 
@@ -170,10 +198,14 @@ describe('FieldDnbCompany', () => {
 
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find('input[name="dnbCompanyName"]')
+      wrapper
+        .find('input[name="dnbCompanyName"]')
         .simulate('change', { target: { value: 'test value' } })
 
-      wrapper.find(FormActions).find('button').simulate('click')
+      wrapper
+        .find(FormActions)
+        .find('button')
+        .simulate('click')
 
       await act(flushPromises)
 
@@ -206,16 +238,23 @@ describe('FieldDnbCompany', () => {
 
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find('input[name="dnbCompanyName"]')
+      wrapper
+        .find('input[name="dnbCompanyName"]')
         .simulate('change', { target: { value: 'test value' } })
 
-      wrapper.find(FormActions).find('button').simulate('click')
+      wrapper
+        .find(FormActions)
+        .find('button')
+        .simulate('click')
 
       await act(flushPromises)
 
       wrapper.update()
 
-      wrapper.find(EntityListItem).at(1).simulate('click')
+      wrapper
+        .find(EntityListItem)
+        .at(1)
+        .simulate('click')
     })
 
     afterAll(() => {
@@ -223,12 +262,19 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should set the field value', () => {
-      const expected = JSON.stringify(entitySearchFixtures.companySearch.results[1].dnb_company)
+      const expected = JSON.stringify(
+        entitySearchFixtures.companySearch.results[1].dnb_company
+      )
       expect(wrapper.find('.field-value').text()).toEqual(expected)
     })
 
     test('should go to the third step', () => {
-      expect(wrapper.find(Step).at(2).text()).toContain('third')
+      expect(
+        wrapper
+          .find(Step)
+          .at(2)
+          .text()
+      ).toContain('third')
     })
   })
 
@@ -240,16 +286,23 @@ describe('FieldDnbCompany', () => {
 
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find('input[name="dnbCompanyName"]')
+      wrapper
+        .find('input[name="dnbCompanyName"]')
         .simulate('change', { target: { value: 'test value' } })
 
-      wrapper.find(FormActions).find('button').simulate('click')
+      wrapper
+        .find(FormActions)
+        .find('button')
+        .simulate('click')
 
       await act(flushPromises)
 
       wrapper.update()
 
-      wrapper.find(Details).find('button').simulate('click')
+      wrapper
+        .find(Details)
+        .find('button')
+        .simulate('click')
     })
 
     afterAll(() => {
@@ -261,7 +314,12 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should go to the fourth step', () => {
-      expect(wrapper.find(Step).at(2).text()).toContain('fourth')
+      expect(
+        wrapper
+          .find(Step)
+          .at(2)
+          .text()
+      ).toContain('fourth')
     })
 
     describe('when the "Back" button is clicked and a company is selected', () => {
@@ -276,7 +334,10 @@ describe('FieldDnbCompany', () => {
 
         wrapper.update()
 
-        wrapper.find(EntityListItem).at(1).simulate('click')
+        wrapper
+          .find(EntityListItem)
+          .at(1)
+          .simulate('click')
       })
 
       test('should set the field cannot find to "false"', () => {
@@ -284,11 +345,18 @@ describe('FieldDnbCompany', () => {
       })
 
       test('should go to the fourth step', () => {
-        expect(wrapper.find(Step).at(2).text()).toContain('third')
+        expect(
+          wrapper
+            .find(Step)
+            .at(2)
+            .text()
+        ).toContain('third')
       })
 
       test('should set the field value', () => {
-        const expected = JSON.stringify(entitySearchFixtures.companySearch.results[1].dnb_company)
+        const expected = JSON.stringify(
+          entitySearchFixtures.companySearch.results[1].dnb_company
+        )
         expect(wrapper.find('.field-value').text()).toEqual(expected)
       })
     })
@@ -300,10 +368,14 @@ describe('FieldDnbCompany', () => {
 
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find('input[name="dnbCompanyName"]')
+      wrapper
+        .find('input[name="dnbCompanyName"]')
         .simulate('change', { target: { value: 'test value' } })
 
-      wrapper.find(FormActions).find('button').simulate('click')
+      wrapper
+        .find(FormActions)
+        .find('button')
+        .simulate('click')
 
       await act(flushPromises)
 
@@ -315,11 +387,15 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should show an error', () => {
-      expect(wrapper.find(StatusMessage).text()).toEqual('Error occurred while searching for company.')
+      expect(wrapper.find(StatusMessage).text()).toEqual(
+        'Error occurred while searching for company.'
+      )
     })
 
     test('should display details for "unhappy path"', () => {
-      expect(wrapper.find(Details).prop('summary')).toEqual('I cannot find the company I am looking for')
+      expect(wrapper.find(Details).prop('summary')).toEqual(
+        'I cannot find the company I am looking for'
+      )
     })
   })
 
@@ -329,10 +405,14 @@ describe('FieldDnbCompany', () => {
 
       wrapper = wrapFieldDnbCompanyForm()
 
-      wrapper.find('input[name="dnbCompanyName"]')
+      wrapper
+        .find('input[name="dnbCompanyName"]')
         .simulate('change', { target: { value: 'test value' } })
 
-      wrapper.find(FormActions).find('button').simulate('click')
+      wrapper
+        .find(FormActions)
+        .find('button')
+        .simulate('click')
 
       await act(flushPromises)
 
@@ -344,11 +424,15 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should show a warning', () => {
-      expect(wrapper.find(StatusMessage).text()).toEqual('There are no companies to show.')
+      expect(wrapper.find(StatusMessage).text()).toEqual(
+        'There are no companies to show.'
+      )
     })
 
     test('should display details for "unhappy path"', () => {
-      expect(wrapper.find(Details).prop('summary')).toEqual('I cannot find the company I am looking for')
+      expect(wrapper.find(Details).prop('summary')).toEqual(
+        'I cannot find the company I am looking for'
+      )
     })
   })
 })

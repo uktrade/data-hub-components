@@ -12,11 +12,11 @@ const HeaderSummary = styled('div')`
   border-bottom: 2px solid #000;
   margin-bottom: ${SPACING.SCALE_2};
   padding-bottom: ${SPACING.SCALE_1};
-  
+
   & > div {
     width: 100%;
     margin-bottom: ${SPACING.SCALE_1};
-    
+
     ${MEDIA_QUERIES.TABLET} {
       width: 0;
       flex-grow: 1;
@@ -26,8 +26,8 @@ const HeaderSummary = styled('div')`
 
 const HeaderCount = styled('div')`
   margin-top: ${SPACING.SCALE_1};
-  
-  & > H2 {
+
+  & > h2 {
     font-weight: normal;
     font-size: 28px;
     margin-bottom: 0;
@@ -36,8 +36,8 @@ const HeaderCount = styled('div')`
 
 const HeaderActions = styled('div')`
   text-align: right;
-  
-  & > Button {
+
+  & > button {
     margin-bottom: 0;
   }
 `
@@ -61,7 +61,12 @@ export default class ActivityFeedHeader extends React.Component {
 
   render() {
     const { totalActivities, addContentText, addContentLink } = this.props
-    const headerText = pluralise.withCount(totalActivities, '% activity', '% activities', 'Activities')
+    const headerText = pluralise.withCount(
+      totalActivities,
+      '% activity',
+      '% activities',
+      'Activities'
+    )
     const showAddContentButton = addContentText && addContentLink
 
     return (
@@ -70,8 +75,7 @@ export default class ActivityFeedHeader extends React.Component {
           <H2>{headerText}</H2>
         </HeaderCount>
         <HeaderActions>
-          {showAddContentButton
-          && (
+          {showAddContentButton && (
             <Button
               as={Link}
               href={addContentLink}
@@ -80,8 +84,7 @@ export default class ActivityFeedHeader extends React.Component {
             >
               {addContentText}
             </Button>
-          )
-          }
+          )}
         </HeaderActions>
       </HeaderSummary>
     )

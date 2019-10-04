@@ -7,9 +7,7 @@ describe('ItemMeta', () => {
 
   describe('when a label and value are passed', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <ItemMeta label="Updated on" value="12 September 2019" />,
-      )
+      wrapper = mount(<ItemMeta label="Updated on" value="12 September 2019" />)
     })
 
     test('should render the component', () => {
@@ -17,15 +15,18 @@ describe('ItemMeta', () => {
     })
 
     test('should render the label and value as text', () => {
-      expect(wrapper.find(ItemMeta).at(0).text()).toBe('Updated on 12 September 2019')
+      expect(
+        wrapper
+          .find(ItemMeta)
+          .at(0)
+          .text()
+      ).toBe('Updated on 12 September 2019')
     })
   })
 
   describe('when no label and value are passed', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <ItemMeta />,
-      )
+      wrapper = mount(<ItemMeta />)
     })
 
     test('should render the component', () => {
@@ -33,7 +34,12 @@ describe('ItemMeta', () => {
     })
 
     test('should render no label or value', () => {
-      expect(wrapper.find(ItemMeta).at(0).text()).toBe(' ')
+      expect(
+        wrapper
+          .find(ItemMeta)
+          .at(0)
+          .text()
+      ).toBe(' ')
     })
   })
 })

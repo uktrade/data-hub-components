@@ -128,7 +128,7 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
   margin-top: 5px;
 }
 
-.c1 > H2 {
+.c1 > h2 {
   font-weight: normal;
   font-size: 28px;
   margin-bottom: 0;
@@ -138,7 +138,7 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
   text-align: right;
 }
 
-.c3 > Button {
+.c3 > button {
   margin-bottom: 0;
 }
 
@@ -277,7 +277,7 @@ exports[`ActivityFeedHeader renders header with one activity 1`] = `
   margin-top: 5px;
 }
 
-.c1 > H2 {
+.c1 > h2 {
   font-weight: normal;
   font-size: 28px;
   margin-bottom: 0;
@@ -287,7 +287,7 @@ exports[`ActivityFeedHeader renders header with one activity 1`] = `
   text-align: right;
 }
 
-.c3 > Button {
+.c3 > button {
   margin-bottom: 0;
 }
 
@@ -382,7 +382,7 @@ exports[`ActivityFeedHeader renders header without props 1`] = `
   margin-top: 5px;
 }
 
-.c1 > H2 {
+.c1 > h2 {
   font-weight: normal;
   font-size: 28px;
   margin-bottom: 0;
@@ -392,7 +392,7 @@ exports[`ActivityFeedHeader renders header without props 1`] = `
   text-align: right;
 }
 
-.c3 > Button {
+.c3 > button {
   margin-bottom: 0;
 }
 

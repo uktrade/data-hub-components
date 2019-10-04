@@ -2,7 +2,7 @@ import { renderHook, act } from '@testing-library/react-hooks'
 
 import useForm from '../useForm'
 
-const validate = value => (value !== 'correctValue' ? 'testError1' : null)
+const validate = (value) => (value !== 'correctValue' ? 'testError1' : null)
 const testField1 = {
   name: 'testField1',
   label: 'testLabel1',
@@ -57,9 +57,11 @@ describe('useForm', () => {
 
   describe('when the hook is called with "initialValues"', () => {
     beforeAll(() => {
-      const hook = renderHook(() => useForm({
-        initialValues: { hey: 'how are you?' },
-      }))
+      const hook = renderHook(() =>
+        useForm({
+          initialValues: { hey: 'how are you?' },
+        })
+      )
       formState = hook.result.current
     })
 
@@ -305,9 +307,18 @@ describe('useForm', () => {
       const hook = renderHook(() => useForm())
 
       await act(async () => {
-        await hook.result.current.registerField({ name: 'testField1', validate: () => 'testError1' })
-        await hook.result.current.registerField({ name: 'testField2', validate: () => 'testError2' })
-        await hook.result.current.registerField({ name: 'testField3', validate: () => 'testError3' })
+        await hook.result.current.registerField({
+          name: 'testField1',
+          validate: () => 'testError1',
+        })
+        await hook.result.current.registerField({
+          name: 'testField2',
+          validate: () => 'testError2',
+        })
+        await hook.result.current.registerField({
+          name: 'testField3',
+          validate: () => 'testError3',
+        })
 
         window.scrollTo = jest.fn()
 
@@ -411,10 +422,7 @@ describe('useForm', () => {
       await act(async () => {
         await hook.result.current.registerField({
           name: 'testField1',
-          validate: [
-            () => 'testError1',
-            () => 'testError2',
-          ],
+          validate: [() => 'testError1', () => 'testError2'],
         })
 
         validationError = await hook.result.current.validateField('testField1')
@@ -435,10 +443,7 @@ describe('useForm', () => {
       await act(async () => {
         await hook.result.current.registerField({
           name: 'testField1',
-          validate: [
-            () => null,
-            () => 'testError2',
-          ],
+          validate: [() => null, () => 'testError2'],
         })
 
         validationError = await hook.result.current.validateField('testField1')
@@ -459,10 +464,7 @@ describe('useForm', () => {
       await act(async () => {
         await hook.result.current.registerField({
           name: 'testField1',
-          validate: [
-            () => null,
-            () => null,
-          ],
+          validate: [() => null, () => null],
         })
 
         validationError = await hook.result.current.validateField('testField1')
