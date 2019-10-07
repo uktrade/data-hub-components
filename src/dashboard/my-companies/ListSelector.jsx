@@ -3,36 +3,37 @@ import styled from 'styled-components'
 import { H2 } from '@govuk-react/heading'
 import Link from '@govuk-react/link'
 import Select from '@govuk-react/select'
+import { SPACING } from '@govuk-react/constants'
 import useMyCompaniesContext from './useMyCompaniesContext'
 import { LIST_CHANGE } from './constants'
 
-const StyledRoot = styled.div`
-  display: flex;
-  align-items: baseline;
-`
+const StyledRoot = styled.div({
+  display: 'flex',
+  alignItems: 'baseline',
+})
 
-const StyledHedline = styled(H2)`
-  flex-grow: 1;
-`
+const StyledHedline = styled(H2)({
+  flexGrow: 1,
+})
 
-const StyledListName = styled.div`
-  margin-right: 10px;
-`
+const StyledListName = styled.div({
+  marginRight: SPACING.SCALE_2,
+})
 
-const StyledSelect = styled(Select)`
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  margin-right: 10px;
-  span {
-    margin-right: 10px;
-  }
-  // The underlying select has for some reason witdh 50%
-  select {
-    width: initial;
-    min-width: 200px;
-  }
-`
+const StyledSelect = styled(Select)({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'baseline',
+  marginRight: SPACING.SCALE_2,
+  span: {
+    marginRight: SPACING.SCALE_2,
+  },
+  // We need to override the select style because it has a hardcoded 50% width.
+  select: {
+    width: 'initial',
+    minWidth: 200,
+  },
+})
 
 export default () => {
   const { state: { lists }, dispatch } = useMyCompaniesContext()
