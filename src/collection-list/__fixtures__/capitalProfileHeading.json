@@ -1,5 +1,6 @@
 {
   "totalItems": 1,
   "itemName": "profile",
-  "addItemUrl": "#"
+  "addItemUrl": "#",
+  "downloadUrl": "#"
 }
