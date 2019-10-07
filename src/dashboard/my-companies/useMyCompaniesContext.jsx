@@ -43,8 +43,9 @@ export const reducer = (state, { type, ...action }) => {
 const useMyCompaniesContext = createUseContext(({
   children,
   editListsLinkProps,
-  ...initialState
+  ...rest
 }) => {
+  const initialState = _.pick(rest, ['lists', 'selectedIdx', 'sortBy', 'filter'])
   const [state, dispatch] = useReducer(
     reducer,
     {
