@@ -15,13 +15,18 @@ const StyledHedline = styled(H2)`
   flex-grow: 1;
 `
 
-const StyledRightSideItem = styled.div`
+const StyledListName = styled.div`
   margin-right: 10px;
 `
 
 const StyledSelect = styled(Select)`
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
   margin-right: 10px;
+  span {
+    margin-right: 10px;
+  }
   // The underlying select has for some reason witdh 50%
   select {
     width: initial;
@@ -41,16 +46,14 @@ export default () => {
           <>
             {lists.length === 1
               ? (
-                <StyledRightSideItem as="h3">
+                <StyledListName as="h3">
                   {lists[0].name}
-                </StyledRightSideItem>
+                </StyledListName>
               )
               : (
                 <>
-                  <StyledRightSideItem as="span">
-                    View list
-                  </StyledRightSideItem>
                   <StyledSelect
+                    label="View list"
                     input={{
                       onChange: e => dispatch({
                         type: LIST_CHANGE,
