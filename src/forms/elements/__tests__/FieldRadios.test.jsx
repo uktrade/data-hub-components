@@ -15,7 +15,7 @@ describe('FieldRadios', () => {
       wrapper = mount(
         <Form>
           <FieldRadios name="testField" label="testLabel" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -29,7 +29,7 @@ describe('FieldRadios', () => {
       wrapper = mount(
         <Form>
           <FieldRadios name="testField" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -43,7 +43,7 @@ describe('FieldRadios', () => {
       wrapper = mount(
         <Form>
           <FieldRadios name="testField" legend="testLegend" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -57,7 +57,7 @@ describe('FieldRadios', () => {
       wrapper = mount(
         <Form>
           <FieldRadios name="testField" hint="testHint" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -79,7 +79,7 @@ describe('FieldRadios', () => {
               { label: 'testOptionLabel2', value: 'testOptionValue2' },
             ]}
           />
-        </Form>,
+        </Form>
       )
       radios = wrapper.find(Radio)
     })
@@ -104,13 +104,18 @@ describe('FieldRadios', () => {
       wrapper = mount(
         <Form>
           <FieldRadios name="testField" validate={() => 'testError'} />
-        </Form>,
+        </Form>
       )
       wrapper.find('form').simulate('submit')
     })
 
     test('should render with an error', () => {
-      expect(wrapper.find('span').at(1).text()).toEqual('testError')
+      expect(
+        wrapper
+          .find('span')
+          .at(1)
+          .text()
+      ).toEqual('testError')
     })
   })
 
@@ -118,7 +123,7 @@ describe('FieldRadios', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          {form => (
+          {(form) => (
             <>
               <FieldRadios
                 name="testField"
@@ -130,15 +135,18 @@ describe('FieldRadios', () => {
               <div id="values">{form.values.testField}</div>
             </>
           )}
-        </Form>,
+        </Form>
       )
 
-      wrapper.find('input').first().simulate('change', {
-        target: {
-          checked: true,
-          value: 'testOptionValue1',
-        },
-      })
+      wrapper
+        .find('input')
+        .first()
+        .simulate('change', {
+          target: {
+            checked: true,
+            value: 'testOptionValue1',
+          },
+        })
     })
 
     test('should update value in form state', () => {
@@ -146,7 +154,12 @@ describe('FieldRadios', () => {
     })
 
     test('should check the first checkbox', () => {
-      expect(wrapper.find('input').first().prop('checked')).toBeTruthy()
+      expect(
+        wrapper
+          .find('input')
+          .first()
+          .prop('checked')
+      ).toBeTruthy()
     })
   })
 })

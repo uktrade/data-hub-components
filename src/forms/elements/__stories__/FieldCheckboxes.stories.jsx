@@ -25,30 +25,29 @@ const options = [
   },
 ]
 
-storiesOf('Forms', module)
-  .add('FieldCheckboxes', () => (
-    <Form>
-      {form => (
-        <>
-          <FieldCheckboxes
-            name="countries"
-            label="What are your favourite countries?"
-            hint="Some hint"
-            required="Select at least one country"
-            options={options}
-          />
+storiesOf('Forms', module).add('FieldCheckboxes', () => (
+  <Form>
+    {(form) => (
+      <>
+        <FieldCheckboxes
+          name="countries"
+          label="What are your favourite countries?"
+          hint="Some hint"
+          required="Select at least one country"
+          options={options}
+        />
 
-          <FieldCheckboxes
-            name="countries2"
-            legend={<H1>Using H1 as legend</H1>}
-            hint="Some hint"
-            required="Select at least one country"
-            options={options}
-          />
+        <FieldCheckboxes
+          name="countries2"
+          legend={<H1>Using H1 as legend</H1>}
+          hint="Some hint"
+          required="Select at least one country"
+          options={options}
+        />
 
-          <Button>Submit</Button>
-          <pre>{JSON.stringify(form, null, 2)}</pre>
-        </>
-      )}
-    </Form>
-  ))
+        <Button>Submit</Button>
+        <pre>{JSON.stringify(form, null, 2)}</pre>
+      </>
+    )}
+  </Form>
+))

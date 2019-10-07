@@ -30,11 +30,19 @@ function Step({ name, backButton, forwardButton, children }) {
 
   const renderBackButton = () => {
     if (typeof backButton === 'undefined') {
-      return <ButtonLink name="back" onClick={goBack}>Back</ButtonLink>
+      return (
+        <ButtonLink name="back" onClick={goBack}>
+          Back
+        </ButtonLink>
+      )
     }
 
     if (typeof backButton === 'string') {
-      return <ButtonLink name="back" onClick={goBack}>{backButton}</ButtonLink>
+      return (
+        <ButtonLink name="back" onClick={goBack}>
+          {backButton}
+        </ButtonLink>
+      )
     }
 
     return backButton
@@ -42,7 +50,9 @@ function Step({ name, backButton, forwardButton, children }) {
 
   const renderForwardButton = () => {
     if (typeof forwardButton === 'undefined') {
-      return <Button name="forward">{isLastStep() ? 'Submit' : 'Continue'}</Button>
+      return (
+        <Button name="forward">{isLastStep() ? 'Submit' : 'Continue'}</Button>
+      )
     }
 
     if (typeof forwardButton === 'string') {

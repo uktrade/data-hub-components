@@ -31,7 +31,7 @@ describe('ActivityFeedApp', () => {
             done()
           }
         }}
-      />,
+      />
     )
   })
 })

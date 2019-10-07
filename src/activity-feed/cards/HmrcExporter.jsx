@@ -4,16 +4,15 @@ import { get } from 'lodash'
 import PropTypes from 'prop-types'
 import {
   Card,
-  CardDetails, CardDetailsList,
+  CardDetails,
+  CardDetailsList,
   CardHeader,
   CardHeading,
   CardMeta,
   CardTable,
 } from './card'
 
-import {
-  DefaultItemRenderer,
-} from './card/item-renderers'
+import { DefaultItemRenderer } from './card/item-renderers'
 
 import CardUtils from './card/CardUtils'
 import { SOURCE_TYPES } from '../constants'
@@ -25,9 +24,7 @@ export default class HmrcExporter extends React.PureComponent {
   }
 
   static canRender(activity) {
-    return CardUtils.canRenderByTypes(activity, [
-      'dit:Export',
-    ])
+    return CardUtils.canRenderByTypes(activity, ['dit:Export'])
   }
 
   render() {
@@ -59,16 +56,18 @@ export default class HmrcExporter extends React.PureComponent {
           summary="View key export details"
           showDetails={showDetails}
         >
-          <CardTable rows={
-            [
+          <CardTable
+            rows={[
               { header: 'Company name', content: reference },
               {
                 header: 'Export Item code(s)',
-                content: <CardDetailsList
-                  itemPropName="value"
-                  itemRenderer={DefaultItemRenderer}
-                  items={exportItemCodesCollection}
-                />,
+                content: (
+                  <CardDetailsList
+                    itemPropName="value"
+                    itemRenderer={DefaultItemRenderer}
+                    items={exportItemCodesCollection}
+                  />
+                ),
               },
             ]}
           />

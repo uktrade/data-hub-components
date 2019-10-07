@@ -4,10 +4,17 @@ import React from 'react'
 
 const AdviserItemRenderer = (item) => {
   const name = <span>{item.name}</span>
-  const emailAddress = <Link href={`mailto:${item.emailAddress}`}> {item.emailAddress}</Link>
+  const emailAddress = (
+    <Link href={`mailto:${item.emailAddress}`}> {item.emailAddress}</Link>
+  )
   const team = item.team ? `, (${item.team})` : null
 
-  return <>{name}, {emailAddress}{team}</>
+  return (
+    <>
+      {name}, {emailAddress}
+      {team}
+    </>
+  )
 }
 
 AdviserItemRenderer.propTypes = {

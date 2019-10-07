@@ -32,29 +32,28 @@ const options = [
   },
 ]
 
-storiesOf('Forms', module)
-  .add('FieldRadios', () => (
-    <Form onSubmit={action('onSubmit')}>
-      {form => (
-        <>
-          <FieldRadios
-            name="companyLocation"
-            label="Where is the company based?"
-            hint="Some hint"
-            required="Specify where the company is based"
-            options={options}
-          />
+storiesOf('Forms', module).add('FieldRadios', () => (
+  <Form onSubmit={action('onSubmit')}>
+    {(form) => (
+      <>
+        <FieldRadios
+          name="companyLocation"
+          label="Where is the company based?"
+          hint="Some hint"
+          required="Specify where the company is based"
+          options={options}
+        />
 
-          <FieldRadios
-            name="companyLocation2"
-            legend={<H1>Using H1 as legend</H1>}
-            hint="Some hint"
-            required="Specify where the company is based"
-            options={options}
-          />
-          <Button>Submit</Button>
-          <pre>{JSON.stringify(form, null, 2)}</pre>
-        </>
-      )}
-    </Form>
-  ))
+        <FieldRadios
+          name="companyLocation2"
+          legend={<H1>Using H1 as legend</H1>}
+          hint="Some hint"
+          required="Specify where the company is based"
+          options={options}
+        />
+        <Button>Submit</Button>
+        <pre>{JSON.stringify(form, null, 2)}</pre>
+      </>
+    )}
+  </Form>
+))

@@ -1,6 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MEDIA_QUERIES, HEADING_SIZES, SPACING, BODY_SIZES, SPACING_POINTS } from '@govuk-react/constants'
+import {
+  MEDIA_QUERIES,
+  HEADING_SIZES,
+  SPACING,
+  BODY_SIZES,
+  SPACING_POINTS,
+} from '@govuk-react/constants'
 import { H3 } from '@govuk-react/heading'
 import Link from '@govuk-react/link'
 import { BLUE, GREY_1 } from 'govuk-colours'
@@ -10,7 +16,7 @@ import CardHeadingBlock from './CardHeadingBlock'
 
 const HeadingContainer = styled('div')`
   width: 100%;
-  
+
   ${MEDIA_QUERIES.TABLET} {
     width: 0;
     flex-grow: 1;
@@ -21,11 +27,14 @@ const Heading = styled(H3)`
   font-weight: normal;
   font-size: ${HEADING_SIZES.MEDIUM}px;
   color: ${BLUE};
-  
-  & > a:link, a:visited, a:hover, a:active {
+
+  & > a:link,
+  a:visited,
+  a:hover,
+  a:active {
     text-decoration: none;
   }
-  
+
   ${MEDIA_QUERIES.TABLET} {
     margin-bottom: ${SPACING.SCALE_5};
   }
@@ -35,7 +44,7 @@ const StyledActivitySummary = styled(H3)`
   font-weight: normal;
   font-size: ${HEADING_SIZES.MEDIUM}px;
   color: #393939;
-  
+
   ${MEDIA_QUERIES.TABLET} {
     margin-bottom: ${SPACING.SCALE_5};
   }
@@ -73,11 +82,7 @@ export default class CardHeading extends React.PureComponent {
       return null
     }
 
-    return (
-      <StyledActivitySummary>
-        {summary}
-      </StyledActivitySummary>
-    )
+    return <StyledActivitySummary>{summary}</StyledActivitySummary>
   }
 
   renderSubHeading = (data) => {
@@ -85,11 +90,7 @@ export default class CardHeading extends React.PureComponent {
       return null
     }
 
-    return (
-      <StyledSubHeading>
-        {data}
-      </StyledSubHeading>
-    )
+    return <StyledSubHeading>{data}</StyledSubHeading>
   }
 
   renderLinkHeading = (link) => {
@@ -106,8 +107,9 @@ export default class CardHeading extends React.PureComponent {
 
   render() {
     const { link, blockText, subHeading, sourceType, summary } = this.props
-    const cardHeadingBlock = blockText
-      ? <CardHeadingBlock sourceType={sourceType} text={blockText} /> : null
+    const cardHeadingBlock = blockText ? (
+      <CardHeadingBlock sourceType={sourceType} text={blockText} />
+    ) : null
 
     return (
       <HeadingContainer>

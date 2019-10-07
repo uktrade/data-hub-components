@@ -16,7 +16,7 @@ describe('useDnbSearch', () => {
 
     beforeAll(() => {
       transformedCompanyRecord = result.current.transformCompanyRecord(
-        searchResultsFixture.results[0],
+        searchResultsFixture.results[0]
       )
     })
 
@@ -30,7 +30,7 @@ describe('useDnbSearch', () => {
 
     beforeAll(() => {
       transformedCompanyRecord = result.current.transformCompanyRecord(
-        searchResultsFixture.results[1],
+        searchResultsFixture.results[1]
       )
     })
 
@@ -44,7 +44,7 @@ describe('useDnbSearch', () => {
 
     beforeAll(() => {
       transformedCompanyRecord = result.current.transformCompanyRecord(
-        searchResultsFixture.results[2],
+        searchResultsFixture.results[2]
       )
     })
 
@@ -77,9 +77,11 @@ describe('useDnbSearch', () => {
     afterAll(() => axiosMock.restore())
 
     test('should call endpoint with the specified filter', () => {
-      expect(axiosMock.history.post[0].data).toEqual(JSON.stringify({
-        search_term: 'some other company',
-      }))
+      expect(axiosMock.history.post[0].data).toEqual(
+        JSON.stringify({
+          search_term: 'some other company',
+        })
+      )
     })
 
     test('should return only "Some company name" company', () => {
@@ -102,7 +104,7 @@ describe('useDnbSearch', () => {
 
     test('should return an error message', () => {
       expect(response.toString()).toEqual(
-        'Error: Request failed with status code 500',
+        'Error: Request failed with status code 500'
       )
     })
   })

@@ -16,27 +16,32 @@ const FieldSelect = ({
   emptyOption,
   ...rest
 }) => {
-  const { error, touched, value, onChange, onBlur } = useField({ name, validate, required })
+  const { error, touched, value, onChange, onBlur } = useField({
+    name,
+    validate,
+    required,
+  })
 
   return (
-    <FieldWrapper {...({ name, label, legend, hint, error })}>
+    <FieldWrapper {...{ name, label, legend, hint, error }}>
       <Select
         name={name}
         onChange={onChange}
         onBlur={onBlur}
-        meta={({ error, touched })}
+        meta={{ error, touched }}
         input={{
           id: name,
           defaultValue: value,
           ...rest,
         }}
       >
-        {emptyOption && <option key="" value="">{emptyOption}</option>}
+        {emptyOption && (
+          <option key="" value="">
+            {emptyOption}
+          </option>
+        )}
         {options.map(({ label: optionLabel, value: optionValue }) => (
-          <option
-            key={optionValue}
-            value={optionValue}
-          >
+          <option key={optionValue} value={optionValue}>
             {optionLabel}
           </option>
         ))}
@@ -56,7 +61,7 @@ FieldSelect.propTypes = {
     PropTypes.shape({
       label: PropTypes.string.isRequired,
       value: PropTypes.string.isRequired,
-    }),
+    })
   ),
   emptyOption: PropTypes.string,
 }

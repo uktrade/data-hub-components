@@ -21,10 +21,7 @@ Form.propTypes = {
   initialValues: PropTypes.shape({}),
   initialStep: PropTypes.number,
   onSubmit: PropTypes.func,
-  children: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.node,
-  ]),
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
 }
 
 Form.defaultProps = {
@@ -59,10 +56,7 @@ function FormWrapper(props) {
 }
 
 FormWrapper.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.node,
-  ]),
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
 }
 
 FormWrapper.defaultProps = {

@@ -4,14 +4,14 @@ describe('CardUtils.js', () => {
   describe('#canRenderByTypes', () => {
     describe('when the type exists', () => {
       test('should return true', () => {
-        const actual = CardUtils.canRenderByTypes({
-          object: {
-            type: [
-              'Event',
-              'dit:Interaction',
-            ],
+        const actual = CardUtils.canRenderByTypes(
+          {
+            object: {
+              type: ['Event', 'dit:Interaction'],
+            },
           },
-        }, ['dit:Interaction'])
+          ['dit:Interaction']
+        )
 
         expect(actual).toBeTruthy()
       })
@@ -19,14 +19,14 @@ describe('CardUtils.js', () => {
 
     describe('when the type does not exist', () => {
       test('should return false', () => {
-        const actual = CardUtils.canRenderByTypes({
-          object: {
-            type: [
-              'Event',
-              'dit:Interaction',
-            ],
+        const actual = CardUtils.canRenderByTypes(
+          {
+            object: {
+              type: ['Event', 'dit:Interaction'],
+            },
           },
-        }, ['dit:InvestmentProject'])
+          ['dit:InvestmentProject']
+        )
 
         expect(actual).toBeFalsy()
       })

@@ -8,7 +8,7 @@ const StyledMetaItem = styled('div')`
   list-style-type: none;
   margin-top: ${SPACING.SCALE_2};
   font-size: ${FONT_SIZE.SIZE_16};
-    
+
   & > span:nth-child(1) {
     color: ${SECONDARY_TEXT_COLOUR};
     margin-right: ${SPACING.SCALE_1};
@@ -16,14 +16,12 @@ const StyledMetaItem = styled('div')`
 `
 
 const EntityListItemMetaList = ({ meta }) => {
-  return (
-    Object.keys(meta).map(metaKey => (
-      <StyledMetaItem key={metaKey}>
-        <span>{metaKey}:</span>
-        <span>{meta[metaKey]}</span>
-      </StyledMetaItem>
-    ))
-  )
+  return Object.keys(meta).map((metaKey) => (
+    <StyledMetaItem key={metaKey}>
+      <span>{metaKey}:</span>
+      <span>{meta[metaKey]}</span>
+    </StyledMetaItem>
+  ))
 }
 
 EntityListItemMetaList.propTypes = {

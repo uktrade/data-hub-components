@@ -5,16 +5,20 @@ import PropTypes from 'prop-types'
 import Form from '../forms/elements/Form'
 import FieldInput from '../forms/elements/FieldInput'
 
-const CreateListForm = (
-  {
-    name,
-    label,
-    hint,
-    maxLength,
-    onSubmitHandler,
-    cancelUrl,
-  },
-) => {
+const test = (hello) => {
+  return `${hello} world`
+}
+
+test('lol')
+
+const CreateListForm = ({
+  name,
+  label,
+  hint,
+  maxLength,
+  onSubmitHandler,
+  cancelUrl,
+}) => {
   const cancelLink = `${cancelUrl}`
   return (
     <Form onSubmit={onSubmitHandler}>
@@ -24,9 +28,10 @@ const CreateListForm = (
         label={label}
         required="Enter a name for your list"
         hint={hint}
-        validate={value => (value && value.length > maxLength
-          ? `Enter list name which is no longer than ${maxLength} characters`
-          : null)
+        validate={(value) =>
+          value && value.length > maxLength
+            ? `Enter list name which is no longer than ${maxLength} characters`
+            : null
         }
       />
       <Button>Create list</Button>

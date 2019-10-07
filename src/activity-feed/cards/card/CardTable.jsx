@@ -7,8 +7,9 @@ import { SPACING } from '@govuk-react/constants'
 
 const GovUkTable = styled(Table)`
   margin-bottom: ${SPACING.SCALE_2};
-  
-  & > tbody > tr > th, td  {
+
+  & > tbody > tr > th,
+  td {
     font-weight: normal;
     border: 0;
     padding: ${SPACING.SCALE_2};
@@ -36,7 +37,9 @@ class DetailsRow extends React.PureComponent {
 
     return (
       <Table.Row>
-        <Table.CellHeader style={{ fontWeight: 'normal', border: 0 }}>{header}</Table.CellHeader>
+        <Table.CellHeader style={{ fontWeight: 'normal', border: 0 }}>
+          {header}
+        </Table.CellHeader>
         <Table.Cell style={{ border: 0 }}>{children}</Table.Cell>
       </Table.Row>
     )
@@ -45,10 +48,12 @@ class DetailsRow extends React.PureComponent {
 
 export default class CardTable extends React.Component {
   static propTypes = {
-    rows: PropTypes.arrayOf(PropTypes.shape({
-      header: PropTypes.string,
-      content: PropTypes.node,
-    })).isRequired,
+    rows: PropTypes.arrayOf(
+      PropTypes.shape({
+        header: PropTypes.string,
+        content: PropTypes.node,
+      })
+    ).isRequired,
   }
 
   render() {

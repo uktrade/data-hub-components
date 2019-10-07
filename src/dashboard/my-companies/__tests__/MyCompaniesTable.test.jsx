@@ -9,7 +9,7 @@ describe('MyCompaniesTable', () => {
     const wrapper = mount(
       <useMyCompaniesContext.Provider data={companies}>
         <MyCompaniesTable />
-      </useMyCompaniesContext.Provider>,
+      </useMyCompaniesContext.Provider>
     )
     expect(wrapper).toMatchSnapshot()
   })

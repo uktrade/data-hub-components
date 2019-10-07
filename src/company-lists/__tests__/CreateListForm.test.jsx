@@ -15,7 +15,7 @@ describe('CreateListForm', () => {
         label="List name"
         cancelUrl="/companies/"
         maxLength={30}
-      />,
+      />
     )
     const input = wrapper.find('input')
     const label = wrapper.find('label').at(0)
@@ -40,7 +40,7 @@ describe('CreateListForm', () => {
         cancelUrl="/companies/"
         label="List name"
         maxLength={30}
-      />,
+      />
     )
     const hint = wrapper.find(HintText)
     const cancelUrl = wrapper.find('a[href="/companies/"]')
@@ -60,7 +60,7 @@ describe('CreateListForm', () => {
         cancelUrl="/companies/"
         label="List name"
         maxLength={30}
-      />,
+      />
     )
 
     test('should fire a onSubmit handler', () => {
@@ -80,21 +80,29 @@ describe('CreateListForm', () => {
         cancelUrl="/companies/"
         label="List name"
         maxLength={30}
-      />,
+      />
     )
 
     test('should prompt for a list name', () => {
       wrapper.simulate('submit')
       expect(onSubmitSpy).toBeCalledTimes(0)
-      expect(wrapper.find(ErrorText).text()).toEqual('Enter a name for your list')
+      expect(wrapper.find(ErrorText).text()).toEqual(
+        'Enter a name for your list'
+      )
     })
 
     test('should ask for less than 30 characters', () => {
       const input = wrapper.find('input')
-      input.simulate('change', { target: { value: 'oneverylooooooooooooooooooooooooooooooooooooonnnnnngggg name' } })
+      input.simulate('change', {
+        target: {
+          value: 'oneverylooooooooooooooooooooooooooooooooooooonnnnnngggg name',
+        },
+      })
       wrapper.simulate('submit')
       expect(onSubmitSpy).toBeCalledTimes(0)
-      expect(wrapper.find(ErrorText).text()).toEqual('Enter list name which is no longer than 30 characters')
+      expect(wrapper.find(ErrorText).text()).toEqual(
+        'Enter list name which is no longer than 30 characters'
+      )
     })
   })
 })

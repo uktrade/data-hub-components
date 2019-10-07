@@ -15,10 +15,6 @@ export default class CardContent extends React.PureComponent {
   render() {
     const { children } = this.props
 
-    return (
-      <CardHeaderContainer>
-        {children}
-      </CardHeaderContainer>
-    )
+    return <CardHeaderContainer>{children}</CardHeaderContainer>
   }
 }

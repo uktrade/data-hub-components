@@ -26,17 +26,19 @@ const StyledFieldPostcode = styled(FieldInput)`
   }
 `
 
-const FieldAddress = ({
-  name,
-  label,
-  legend,
-  hint,
-  country,
-  apiEndpoint,
-}) => {
+const FieldAddress = ({ name, label, legend, hint, country, apiEndpoint }) => {
   const findAddress = usePostcodeLookup(apiEndpoint)
-  const { onAddressSearch, isSubmitting, error, addressList } = useAddressSearch(findAddress)
-  const { values: { postcode }, setFieldValue, validateForm } = useFormContext()
+  const {
+    onAddressSearch,
+    isSubmitting,
+    error,
+    addressList,
+  } = useAddressSearch(findAddress)
+  const {
+    values: { postcode },
+    setFieldValue,
+    validateForm,
+  } = useFormContext()
 
   const isUK = country.name === UNITED_KINGDOM
 
@@ -65,7 +67,7 @@ const FieldAddress = ({
 
   return (
     <LoadingBox timeOut={0} loading={isSubmitting}>
-      <FieldWrapper {...({ name, label, legend, hint })} showBorder={true}>
+      <FieldWrapper {...{ name, label, legend, hint }} showBorder={true}>
         {isUK && (
           <>
             <StyledFieldPostcode
@@ -87,16 +89,19 @@ const FieldAddress = ({
 
             {error && (
               <StatusMessage>
-                Error occurred while searching for an address. Enter the address manually.
+                Error occurred while searching for an address. Enter the address
+                manually.
               </StatusMessage>
             )}
 
-            {(addressList && addressList.length > 0) && (
+            {addressList && addressList.length > 0 && (
               <FormGroup>
                 <Select label="Select an address" onChange={onAddressSelect}>
                   {addressList.map(({ address1 }, index) => (
                     // eslint-disable-next-line react/no-array-index-key
-                    <option key={index} value={index}>{ address1 }</option>
+                    <option key={index} value={index}>
+                      {address1}
+                    </option>
                   ))}
                 </Select>
               </FormGroup>
@@ -112,12 +117,28 @@ const FieldAddress = ({
           />
         )}
 
-        <FieldInput type="text" name="address1" label="Address line 1" required="Enter address line 1" />
-        <FieldInput type="text" name="address2" label="Address line 2 (optional)" />
-        <FieldInput type="text" name="city" label="Town or city" required="Enter town or city" />
+        <FieldInput
+          type="text"
+          name="address1"
+          label="Address line 1"
+          required="Enter address line 1"
+        />
+        <FieldInput
+          type="text"
+          name="address2"
+          label="Address line 2 (optional)"
+        />
+        <FieldInput
+          type="text"
+          name="city"
+          label="Town or city"
+          required="Enter town or city"
+        />
         <FieldInput type="text" name="county" label="County (optional)" />
 
-        <FieldUneditable name="country" label="Country">{country.name}</FieldUneditable>
+        <FieldUneditable name="country" label="Country">
+          {country.name}
+        </FieldUneditable>
       </FieldWrapper>
     </LoadingBox>
   )

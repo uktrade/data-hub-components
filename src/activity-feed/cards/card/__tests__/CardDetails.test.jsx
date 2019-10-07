@@ -13,7 +13,7 @@ describe('CardDetails', () => {
             link={{ text: 'Go to the interaction detail page', url: '#' }}
           >
             <p>children</p>
-          </CardDetails>,
+          </CardDetails>
         )
         .toJSON()
 
@@ -31,7 +31,7 @@ describe('CardDetails', () => {
             link={{ text: 'Go to the interaction detail page', url: '#' }}
           >
             <p>children</p>
-          </CardDetails>,
+          </CardDetails>
         )
         .toJSON()
 
@@ -49,7 +49,7 @@ describe('CardDetails', () => {
             link={{ text: 'Go to the interaction detail page', url: '#' }}
           >
             <p>children</p>
-          </CardDetails>,
+          </CardDetails>
         )
         .toJSON()
 
@@ -61,12 +61,9 @@ describe('CardDetails', () => {
     test('should still render the card', () => {
       const tree = renderer
         .create(
-          <CardDetails
-            summary="View interaction details"
-            showDetails={false}
-          >
+          <CardDetails summary="View interaction details" showDetails={false}>
             <p>children</p>
-          </CardDetails>,
+          </CardDetails>
         )
         .toJSON()
 

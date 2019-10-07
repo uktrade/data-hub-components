@@ -3,7 +3,12 @@ import { isEmpty } from 'lodash'
 
 import useFormContext from './useFormContext'
 
-function useField({ name, initialValue = '', validate = null, required = null }) {
+function useField({
+  name,
+  initialValue = '',
+  validate = null,
+  required = null,
+}) {
   const {
     registerField,
     deregisterField,
@@ -13,25 +18,24 @@ function useField({ name, initialValue = '', validate = null, required = null })
   } = useFormContext()
 
   function prepareValidators() {
-    const validators = Array.isArray(validate) ? validate : [validate].filter(v => v)
+    const validators = Array.isArray(validate)
+      ? validate
+      : [validate].filter((v) => v)
 
     if (required) {
-      validators.unshift(value => (isEmpty(value) ? required : null))
+      validators.unshift((value) => (isEmpty(value) ? required : null))
     }
 
     return validators
   }
 
-  useEffect(
-    () => {
-      registerField({ name, initialValue, validate: prepareValidators() })
+  useEffect(() => {
+    registerField({ name, initialValue, validate: prepareValidators() })
 
-      return () => {
-        deregisterField(name)
-      }
-    },
-    [name],
-  )
+    return () => {
+      deregisterField(name)
+    }
+  }, [name])
 
   const fieldState = getFieldState(name)
 
@@ -40,7 +44,7 @@ function useField({ name, initialValue = '', validate = null, required = null })
     value: fieldState.value,
     error: fieldState.error,
     touched: fieldState.touched,
-    onChange: e => setFieldValue(name, e.target.value),
+    onChange: (e) => setFieldValue(name, e.target.value),
     onBlur: () => setFieldTouched(name, true),
   }
 }

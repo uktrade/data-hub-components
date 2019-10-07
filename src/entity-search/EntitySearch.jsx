@@ -18,11 +18,9 @@ const EntitySearch = ({
 }) => {
   return (
     <>
-      <StyledFiltersContainer>
-        {children}
-      </StyledFiltersContainer>
+      <StyledFiltersContainer>{children}</StyledFiltersContainer>
 
-      {(entities && entities.length > 0) && (
+      {entities && entities.length > 0 && (
         <>
           {entityListHeader}
 
@@ -42,10 +40,12 @@ const EntitySearch = ({
 }
 
 EntitySearch.propTypes = {
-  entities: PropTypes.arrayOf(PropTypes.shape({
-    heading: PropTypes.string.isRequired,
-    meta: PropTypes.object.isRequired,
-  })),
+  entities: PropTypes.arrayOf(
+    PropTypes.shape({
+      heading: PropTypes.string.isRequired,
+      meta: PropTypes.object.isRequired,
+    })
+  ),
   entityListHeader: PropTypes.node,
   entityListFooter: PropTypes.node,
   onEntityClick: PropTypes.func.isRequired,

@@ -23,9 +23,7 @@ export default class CompaniesHouseAccount extends React.PureComponent {
   }
 
   static canRender(activity) {
-    return CardUtils.canRenderByTypes(activity, [
-      'dit:Accounts',
-    ])
+    return CardUtils.canRenderByTypes(activity, ['dit:Accounts'])
   }
 
   render() {
@@ -34,11 +32,22 @@ export default class CompaniesHouseAccount extends React.PureComponent {
     const reference = get(activity, 'object.name')
     const taxonomy = get(activity, 'dit:taxonomy')
     const summary = get(activity, 'summary')
-    const balanceSheetDate = DateUtils.format(get(activity, 'object.dit:balanceSheetDate'))
-    const netAssetsLiabilities = NumberUtils.currency(get(activity, 'object.dit:netAssetsLiabilitiesIncludingPensionAssetLiability'))
+    const balanceSheetDate = DateUtils.format(
+      get(activity, 'object.dit:balanceSheetDate')
+    )
+    const netAssetsLiabilities = NumberUtils.currency(
+      get(
+        activity,
+        'object.dit:netAssetsLiabilitiesIncludingPensionAssetLiability'
+      )
+    )
     const periodEnd = DateUtils.format(get(activity, 'object.dit:periodEnd'))
-    const periodStart = DateUtils.format(get(activity, 'object.dit:periodStart'))
-    const shareholderFunds = NumberUtils.currency(get(activity, 'object.dit:shareholderFunds'))
+    const periodStart = DateUtils.format(
+      get(activity, 'object.dit:periodStart')
+    )
+    const shareholderFunds = NumberUtils.currency(
+      get(activity, 'object.dit:shareholderFunds')
+    )
 
     return (
       <Card>
@@ -59,10 +68,14 @@ export default class CompaniesHouseAccount extends React.PureComponent {
           link={{ taxonomy, text: 'Go to the Companies House accounts page' }}
           showDetails={showDetails}
         >
-          <CardTable rows={
-            [
+          <CardTable
+            rows={[
               { header: 'Balance sheet date', content: balanceSheetDate },
-              { header: 'Net assets liabilities including pension asset liability', content: netAssetsLiabilities },
+              {
+                header:
+                  'Net assets liabilities including pension asset liability',
+                content: netAssetsLiabilities,
+              },
               { header: 'Period start', content: periodStart },
               { header: 'Period end', content: periodEnd },
               { header: 'Shareholder funds', content: shareholderFunds },

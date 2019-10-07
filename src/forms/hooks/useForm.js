@@ -29,7 +29,7 @@ function useForm({
 
   useBeforeUnload(
     isDirty && !isSubmitted,
-    'Changes that you made will not be saved.',
+    'Changes that you made will not be saved.'
   )
 
   // Using JSON.stringify() to avoid extra calls as {} !== {}
@@ -60,8 +60,8 @@ function useForm({
 
       if (Array.isArray(field.validate)) {
         const validationErrors = field.validate
-          .map(validator => validator(value, field, formState))
-          .filter(e => e)
+          .map((validator) => validator(value, field, formState))
+          .filter((e) => e)
         return validationErrors.length > 0 ? validationErrors[0] : null
       }
     }
@@ -70,7 +70,8 @@ function useForm({
   }
 
   const validateForm = (fieldNames = []) => {
-    const fieldsToValidate = fieldNames.length > 0 ? fieldNames : Object.keys(fields)
+    const fieldsToValidate =
+      fieldNames.length > 0 ? fieldNames : Object.keys(fields)
     const newErrors = {}
     const newTouched = {}
 
@@ -88,35 +89,38 @@ function useForm({
     return newErrors
   }
 
-  const setFieldValue = (name, fieldValue) => setValues((prevValues) => {
-    if (fieldValue === '') {
-      return omit(prevValues, name)
-    }
-
-    return { ...prevValues, [name]: fieldValue }
-  })
-  const setFieldTouched = (name, fieldTouched) => {
-    setTouched(prevTouched => ({ ...prevTouched, [name]: fieldTouched }))
-  }
-  const setFieldError = (name, error) => setErrors(prevErrors => ({ ...prevErrors, [name]: error }))
-
-  const registerField = field => setFields((prevFields) => {
-    const { name, initialValue } = field
-
-    if (initialValue) {
-      setFieldValue(name, initialValue)
-    }
-
-    setFieldTouched(name, false)
-
-    if (!(name in prevFields)) {
-      return {
-        ...prevFields,
-        [name]: field,
+  const setFieldValue = (name, fieldValue) =>
+    setValues((prevValues) => {
+      if (fieldValue === '') {
+        return omit(prevValues, name)
       }
-    }
-    return prevFields
-  })
+
+      return { ...prevValues, [name]: fieldValue }
+    })
+  const setFieldTouched = (name, fieldTouched) => {
+    setTouched((prevTouched) => ({ ...prevTouched, [name]: fieldTouched }))
+  }
+  const setFieldError = (name, error) =>
+    setErrors((prevErrors) => ({ ...prevErrors, [name]: error }))
+
+  const registerField = (field) =>
+    setFields((prevFields) => {
+      const { name, initialValue } = field
+
+      if (initialValue) {
+        setFieldValue(name, initialValue)
+      }
+
+      setFieldTouched(name, false)
+
+      if (!(name in prevFields)) {
+        return {
+          ...prevFields,
+          [name]: field,
+        }
+      }
+      return prevFields
+    })
 
   const deregisterField = (name) => {
     setFields((prevFields) => {
@@ -146,10 +150,12 @@ function useForm({
       return prevSteps
     })
   }
-  const deregisterStep = name => setSteps(prevSteps => prevSteps.filter(s => s !== name))
+  const deregisterStep = (name) =>
+    setSteps((prevSteps) => prevSteps.filter((s) => s !== name))
 
   const isFirstStep = () => currentStep === 0
-  const isLastStep = () => currentStep === steps.length - 1 || steps.length === 0
+  const isLastStep = () =>
+    currentStep === steps.length - 1 || steps.length === 0
 
   const getStepIndex = (stepName) => {
     const index = steps.indexOf(stepName)
@@ -177,7 +183,7 @@ function useForm({
 
   const goBack = () => setCurrentStep(currentStep - 1)
 
-  const goToStepByName = stepName => setCurrentStep(steps.indexOf(stepName))
+  const goToStepByName = (stepName) => setCurrentStep(steps.indexOf(stepName))
 
   return {
     ...formState,

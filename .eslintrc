@@ -1,7 +1,9 @@
 {
   "parser": "babel-eslint",
   "extends": [
-    "airbnb"
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier/react"
   ],
   "env": {
     "browser": true,
@@ -68,10 +70,6 @@
         },
         "allowChildren": false
       }
-    ],
-    "indent": [
-      "error",
-      2
     ],
     "eol-last": "error",
     "no-multiple-empty-lines": [

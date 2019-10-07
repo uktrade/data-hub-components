@@ -12,10 +12,7 @@ import {
   CardDetailsList,
 } from './card'
 
-import {
-  ContactItemRenderer,
-  AdviserItemRenderer,
-} from './card/item-renderers'
+import { ContactItemRenderer, AdviserItemRenderer } from './card/item-renderers'
 
 import CardUtils from './card/CardUtils'
 import DateUtils from '../../utils/DateUtils'
@@ -32,9 +29,7 @@ export default class InvestmentProject extends React.PureComponent {
   }
 
   static canRender(activity) {
-    return CardUtils.canRenderByTypes(activity, [
-      'dit:InvestmentProject',
-    ])
+    return CardUtils.canRenderByTypes(activity, ['dit:InvestmentProject'])
   }
 
   render() {
@@ -46,21 +41,34 @@ export default class InvestmentProject extends React.PureComponent {
     const name = get(activity, 'object.name')
     const investmentType = get(activity, 'object.dit:investmentType.name')
     const adviser = CardUtils.getAdviser(activity)
-    const estimatedLandDate = DateUtils.format(get(activity, 'object.dit:estimatedLandDate'))
+    const estimatedLandDate = DateUtils.format(
+      get(activity, 'object.dit:estimatedLandDate')
+    )
     const contacts = CardUtils.getContacts(activity)
 
     // Specific to Foreign direct investment (FDI) only
-    const totalInvestment = NumberUtils.currency(get(activity, 'object.dit:totalInvestment'))
-    const foreignEquityInvestment = NumberUtils.currency(get(activity, 'object.dit:foreignEquityInvestment'))
-    const grossValueAdded = NumberUtils.currency(get(activity, 'object.dit:grossValueAdded'))
-    const numberNewJobs = NumberUtils.decimal(get(activity, 'object.dit:numberNewJobs'))
+    const totalInvestment = NumberUtils.currency(
+      get(activity, 'object.dit:totalInvestment')
+    )
+    const foreignEquityInvestment = NumberUtils.currency(
+      get(activity, 'object.dit:foreignEquityInvestment')
+    )
+    const grossValueAdded = NumberUtils.currency(
+      get(activity, 'object.dit:grossValueAdded')
+    )
+    const numberNewJobs = NumberUtils.decimal(
+      get(activity, 'object.dit:numberNewJobs')
+    )
 
     const published = get(activity, 'published')
 
     return (
       <Card>
         <CardHeader>
-          <CardHeading link={{ url, text: name }} blockText={`${title} - ${investmentType}`} />
+          <CardHeading
+            link={{ url, text: name }}
+            blockText={`${title} - ${investmentType}`}
+          />
           <CardMeta startTime={published} />
         </CardHeader>
         <CardDetails
@@ -68,14 +76,33 @@ export default class InvestmentProject extends React.PureComponent {
           link={{ url, text: 'Go to the investment project detail page' }}
           showDetails={showDetails}
         >
-          <CardTable rows={
-            [
+          <CardTable
+            rows={[
               { header: 'Investment Type', content: investmentType },
-              { header: 'Added by', content: adviser ? <CardDetailsList itemRenderer={AdviserItemRenderer} items={[adviser]} /> : null },
+              {
+                header: 'Added by',
+                content: adviser ? (
+                  <CardDetailsList
+                    itemRenderer={AdviserItemRenderer}
+                    items={[adviser]}
+                  />
+                ) : null,
+              },
               { header: 'Estimated land date', content: estimatedLandDate },
-              { header: 'Company contact(s)', content: <CardDetailsList itemRenderer={ContactItemRenderer} items={contacts} /> },
+              {
+                header: 'Company contact(s)',
+                content: (
+                  <CardDetailsList
+                    itemRenderer={ContactItemRenderer}
+                    items={contacts}
+                  />
+                ),
+              },
               { header: 'Total Investment', content: totalInvestment },
-              { header: 'Capital expenditure value', content: foreignEquityInvestment },
+              {
+                header: 'Capital expenditure value',
+                content: foreignEquityInvestment,
+              },
               { header: 'Gross value added (GVA)', content: grossValueAdded },
               { header: 'Number of new jobs', content: numberNewJobs },
             ]}

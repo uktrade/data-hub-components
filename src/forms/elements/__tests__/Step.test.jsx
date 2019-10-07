@@ -7,9 +7,7 @@ import useField from '../../hooks/useField'
 
 const TestField = (props) => {
   const { name, value, onChange, onBlur } = useField(props)
-  return (
-    <input name={name} value={value} onChange={onChange} onBlur={onBlur} />
-  )
+  return <input name={name} value={value} onChange={onChange} onBlur={onBlur} />
 }
 
 describe('Step', () => {
@@ -22,7 +20,7 @@ describe('Step', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form onSubmit={onSubmitSpy}>
-          {form => (
+          {(form) => (
             <>
               <div className="form-state">{JSON.stringify(form)}</div>
               <Step name="testStep1">
@@ -30,7 +28,7 @@ describe('Step', () => {
               </Step>
             </>
           )}
-        </Form>,
+        </Form>
       )
       formState = JSON.parse(wrapper.find('.form-state').text())
     })
@@ -74,7 +72,7 @@ describe('Step', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          {form => (
+          {(form) => (
             <>
               <div className="form-state">{JSON.stringify(form)}</div>
               <Step name="testStepMounted">
@@ -87,7 +85,7 @@ describe('Step', () => {
               )}
             </>
           )}
-        </Form>,
+        </Form>
       )
       formState = JSON.parse(wrapper.find('.form-state').text())
     })
@@ -122,7 +120,10 @@ describe('Step', () => {
         expect(formState.currentStep).toEqual(0)
       })
       test('should register the step', () => {
-        expect(formState.steps).toEqual(['testStepMounted', 'testStepWillMount'])
+        expect(formState.steps).toEqual([
+          'testStepMounted',
+          'testStepWillMount',
+        ])
       })
     })
   })
@@ -131,7 +132,7 @@ describe('Step', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          {form => (
+          {(form) => (
             <>
               <div className="form-state">{JSON.stringify(form)}</div>
               <Step name="testStep1">
@@ -139,7 +140,9 @@ describe('Step', () => {
                   type="text"
                   name="testField1"
                   id="testField1"
-                  validate={value => (!value ? 'testField1 is required' : null)}
+                  validate={(value) =>
+                    !value ? 'testField1 is required' : null
+                  }
                 />
               </Step>
               <Step name="testStep2">
@@ -153,7 +156,7 @@ describe('Step', () => {
               </Step>
             </>
           )}
-        </Form>,
+        </Form>
       )
       formState = JSON.parse(wrapper.find('.form-state').text())
     })
@@ -208,7 +211,9 @@ describe('Step', () => {
 
     describe('when the required field is filled and the "Continue" button is clicked', () => {
       beforeAll(() => {
-        wrapper.find('#testField1').simulate('change', { target: { value: 'hello' } })
+        wrapper
+          .find('#testField1')
+          .simulate('change', { target: { value: 'hello' } })
         wrapper.find('button').simulate('submit')
         formState = JSON.parse(wrapper.find('.form-state').text())
       })
@@ -217,7 +222,9 @@ describe('Step', () => {
         expect(formState.currentStep).toEqual(1)
       })
       test('should render a "Continue" button', () => {
-        expect(wrapper.find('button[name="forward"]').text()).toEqual('Continue')
+        expect(wrapper.find('button[name="forward"]').text()).toEqual(
+          'Continue'
+        )
       })
       test('should render a "Back" button', () => {
         expect(wrapper.find('button[name="back"]').text()).toEqual('Back')
@@ -264,12 +271,14 @@ describe('Step', () => {
         <Form>
           <Step name="testStep1" forwardButton="testForwardButtonText" />
           <Step name="testStep2" />
-        </Form>,
+        </Form>
       )
     })
 
     test('should render a forward button with a custom text', () => {
-      expect(wrapper.find('button[name="forward"]').text()).toEqual('testForwardButtonText')
+      expect(wrapper.find('button[name="forward"]').text()).toEqual(
+        'testForwardButtonText'
+      )
     })
   })
 
@@ -279,12 +288,14 @@ describe('Step', () => {
         <Form initialStep={1}>
           <Step name="testStep1" />
           <Step name="testStep2" backButton="testBackButtonText" />
-        </Form>,
+        </Form>
       )
     })
 
     test('should render a back button with a custom text', () => {
-      expect(wrapper.find('button[name="back"]').text()).toEqual('testBackButtonText')
+      expect(wrapper.find('button[name="back"]').text()).toEqual(
+        'testBackButtonText'
+      )
     })
   })
 
@@ -294,7 +305,7 @@ describe('Step', () => {
         <Form>
           <Step name="testStep1" forwardButton={null} />
           <Step name="testStep2" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -309,7 +320,7 @@ describe('Step', () => {
         <Form initialStep={1}>
           <Step name="testStep1" />
           <Step name="testStep2" backButton={null} />
-        </Form>,
+        </Form>
       )
     })
 
@@ -324,7 +335,7 @@ describe('Step', () => {
         <Form>
           <Step name="testStep1" forwardButton={<a href="/">Go to form A</a>} />
           <Step name="testStep2" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -339,8 +350,11 @@ describe('Step', () => {
       wrapper = mount(
         <Form initialStep={1}>
           <Step name="testStep1" />
-          <Step name="testStep2" backButton={<a href="/">Back to homepage</a>} />
-        </Form>,
+          <Step
+            name="testStep2"
+            backButton={<a href="/">Back to homepage</a>}
+          />
+        </Form>
       )
     })
 
@@ -356,7 +370,7 @@ describe('Step', () => {
         <Form>
           <Step name="testStep1" />
           <Step name="testStep2" />
-        </Form>,
+        </Form>
       )
     })
 
@@ -371,7 +385,7 @@ describe('Step', () => {
         <Form initialStep={1}>
           <Step name="testStep1" />
           <Step name="testStep2" />
-        </Form>,
+        </Form>
       )
     })
 

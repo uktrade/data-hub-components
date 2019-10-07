@@ -85,7 +85,9 @@ describe('useEntitySearch', () => {
     })
 
     test('should set "error"', () => {
-      expect(hook.result.current.error).toEqual('Error occurred while searching entities.')
+      expect(hook.result.current.error).toEqual(
+        'Error occurred while searching entities.'
+      )
     })
 
     test('should set "entities" as an empty array', () => {

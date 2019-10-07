@@ -34,7 +34,7 @@ export default class ActivityFeedPagination extends React.Component {
             buttonColour="#dee0e2"
             buttonTextColour="#000"
           >
-          Show more activity
+            Show more activity
           </Button>
         </LoadingBox>
       </Pagination>

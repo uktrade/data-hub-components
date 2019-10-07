@@ -3,11 +3,13 @@ import axios from 'axios'
 
 import fixtures from '../__fixtures__'
 
-export function setupSuccessMocks(apiEndpoint, adapterOptions = {}, queryParams = {}) {
+export function setupSuccessMocks(
+  apiEndpoint,
+  adapterOptions = {},
+  queryParams = {}
+) {
   const mock = new MockAdapter(axios, adapterOptions)
-  mock
-    .onPost(apiEndpoint, queryParams)
-    .reply(200, fixtures.companySearch)
+  mock.onPost(apiEndpoint, queryParams).reply(200, fixtures.companySearch)
   mock
     .onPost(apiEndpoint, { search_term: 'some other company', ...queryParams })
     .reply(200, fixtures.companySearchFilteredByCompanyName)

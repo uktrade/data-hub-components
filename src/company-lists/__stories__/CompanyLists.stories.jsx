@@ -18,24 +18,26 @@ storiesOf('Company lists', module)
       />
     )
   })
-  .add('Add or remove from list', () => React.createElement(() => {
-    const [loading, setLoading] = useState(false)
-    const mockRequest = () => {
-      setLoading(true)
-      setTimeout(() => {
-        setLoading(false)
-      }, 2000)
-    }
-    return (
-      <>
-        <h1>Add or remove Lambda plc from your lists</h1>
-        <AddRemoveFromListForm
-          list={listsWithCompany}
-          onSubmitHandler={() => mockRequest()}
-          isLoading={loading}
-          createNewListUrl="#"
-          cancelLinkUrl="#"
-        />
-      </>
-    )
-  }))
+  .add('Add or remove from list', () =>
+    React.createElement(() => {
+      const [loading, setLoading] = useState(false)
+      const mockRequest = () => {
+        setLoading(true)
+        setTimeout(() => {
+          setLoading(false)
+        }, 2000)
+      }
+      return (
+        <>
+          <h1>Add or remove Lambda plc from your lists</h1>
+          <AddRemoveFromListForm
+            list={listsWithCompany}
+            onSubmitHandler={() => mockRequest()}
+            isLoading={loading}
+            createNewListUrl="#"
+            cancelLinkUrl="#"
+          />
+        </>
+      )
+    })
+  )

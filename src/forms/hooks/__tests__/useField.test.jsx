@@ -39,8 +39,11 @@ describe('useField', () => {
     beforeAll(() => {
       wrapper = mount(
         <Form>
-          <TestField initialValue="testInitialValue" validate={() => 'testError'} />
-        </Form>,
+          <TestField
+            initialValue="testInitialValue"
+            validate={() => 'testError'}
+          />
+        </Form>
       )
       value = wrapper.find('.value')
       input = wrapper.find('.field')
@@ -89,7 +92,7 @@ describe('useField', () => {
       wrapper = mount(
         <Form>
           <TestField required="testRequiredError" />
-        </Form>,
+        </Form>
       )
       error = wrapper.find('.error')
       wrapper.simulate('submit')

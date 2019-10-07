@@ -1,10 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import {
-  CardHeader,
-  CardHeading,
-} from '../activity-feed/cards/card'
+import { CardHeader, CardHeading } from '../activity-feed/cards/card'
 import {
   Item,
   ItemBadgeWrapper,
@@ -20,13 +17,17 @@ function CollectionItem({ headingUrl, headingText, badges, metadata }) {
         <CardHeading link={{ url: headingUrl, text: headingText }} />
         {badges && (
           <ItemBadgeWrapper>
-            {badges.map(text => <ItemBadge>{text}</ItemBadge>)}
+            {badges.map((text) => (
+              <ItemBadge>{text}</ItemBadge>
+            ))}
           </ItemBadgeWrapper>
         )}
       </CardHeader>
       {metadata && (
         <ItemMetaWrapper>
-          {metadata.map(data => <ItemMeta label={data.label} value={data.value} />)}
+          {metadata.map((data) => (
+            <ItemMeta label={data.label} value={data.value} />
+          ))}
         </ItemMetaWrapper>
       )}
     </Item>

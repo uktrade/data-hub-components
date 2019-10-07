@@ -10,12 +10,14 @@ import FieldInput from '../FieldInput'
 
 addDecorator(withKnobs)
 
-const testInput = (<FieldInput name="testField" type="text" required="Some error" />)
+const testInput = (
+  <FieldInput name="testField" type="text" required="Some error" />
+)
 
 storiesOf('Forms', module)
   .add('FieldWrapper - Label', () => (
     <Form>
-      {form => (
+      {(form) => (
         <>
           <FieldWrapper
             label="Text"
@@ -33,7 +35,7 @@ storiesOf('Forms', module)
   ))
   .add('FieldWrapper - Legend', () => (
     <Form>
-      {form => (
+      {(form) => (
         <>
           <FieldWrapper
             legend="Legend as text"

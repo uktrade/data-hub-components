@@ -191,7 +191,10 @@ describe('Store', () => {
     })
     test('filterBy', () => {
       const action = { type: 'filterBy', filterText: 'abc' }
-      const reduceWithFilterByRecent = reducer({ companiesInitial: companies }, action)
+      const reduceWithFilterByRecent = reducer(
+        { companiesInitial: companies },
+        action
+      )
       expect(reduceWithFilterByRecent.filterText).toEqual('abc')
     })
     test('No action type so return original state', () => {

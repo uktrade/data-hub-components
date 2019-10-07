@@ -11,10 +11,7 @@ import {
   CardDetailsList,
 } from './card'
 
-import {
-  ContactItemRenderer,
-  AdviserItemRenderer,
-} from './card/item-renderers'
+import { ContactItemRenderer, AdviserItemRenderer } from './card/item-renderers'
 
 import CardUtils from './card/CardUtils'
 import InteractionUtils from './InteractionUtils'
@@ -45,21 +42,44 @@ export default class Interaction extends React.PureComponent {
     return (
       <Card isUpcoming={transformed.isUpcoming}>
         <CardHeader>
-          <CardHeading link={{ url: transformed.url, text: transformed.subject }} />
-          <CardMeta startTime={transformed.startTime} badge={transformed.badge} />
+          <CardHeading
+            link={{ url: transformed.url, text: transformed.subject }}
+          />
+          <CardMeta
+            startTime={transformed.startTime}
+            badge={transformed.badge}
+          />
         </CardHeader>
         <CardDetails
           summary={`View ${transformed.typeText} details`}
-          link={{ url: transformed.url, text: `Go to the ${transformed.typeText} detail page` }}
+          link={{
+            url: transformed.url,
+            text: `Go to the ${transformed.typeText} detail page`,
+          }}
           showDetails={showDetails}
         >
-          <CardTable rows={
-            [
-              { header: 'Company contact(s)', content: <CardDetailsList itemRenderer={ContactItemRenderer} items={contacts} /> },
-              { header: 'Adviser(s)', content: <CardDetailsList itemRenderer={AdviserItemRenderer} items={advisers} /> },
+          <CardTable
+            rows={[
+              {
+                header: 'Company contact(s)',
+                content: (
+                  <CardDetailsList
+                    itemRenderer={ContactItemRenderer}
+                    items={contacts}
+                  />
+                ),
+              },
+              {
+                header: 'Adviser(s)',
+                content: (
+                  <CardDetailsList
+                    itemRenderer={AdviserItemRenderer}
+                    items={advisers}
+                  />
+                ),
+              },
               { header: 'Services', content: transformed.service },
-            ]
-          }
+            ]}
           />
         </CardDetails>
       </Card>

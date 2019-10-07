@@ -13,7 +13,7 @@ describe('AddRemoveFromList', () => {
         isLoading={false}
         createNewListUrl="/create-url"
         cancelLinkUrl="/cancel-link"
-      />,
+      />
     )
     const fieldset = wrapper.find('fieldset')
     const radioButtons = wrapper.find('input[type="radio"]')
@@ -72,7 +72,7 @@ describe('AddRemoveFromList', () => {
         isLoading={false}
         createNewListUrl="/create-url"
         cancelLinkUrl="/cancel-link"
-      />,
+      />
     )
     test('should fire a onSubmit handler', () => {
       wrapper.simulate('submit')

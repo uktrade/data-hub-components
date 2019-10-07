@@ -31,9 +31,21 @@ const FieldDnbCompany = ({
   apiEndpoint,
   queryParams,
 }) => {
-  const { values, goBack, goForward, validateForm, setFieldValue } = useFormContext()
+  const {
+    values,
+    goBack,
+    goForward,
+    validateForm,
+    setFieldValue,
+  } = useFormContext()
   const { findCompany } = useDnbSearch(apiEndpoint)
-  const { onEntitySearch, searching, searched, error, entities } = useEntitySearch(findCompany)
+  const {
+    onEntitySearch,
+    searching,
+    searched,
+    error,
+    entities,
+  } = useEntitySearch(findCompany)
 
   function onSearchClick(e) {
     e.preventDefault()
@@ -58,9 +70,13 @@ const FieldDnbCompany = ({
 
   return (
     <LoadingBox timeOut={0} loading={searching}>
-      <FieldWrapper {...({ name, label, legend, hint })}>
+      <FieldWrapper {...{ name, label, legend, hint }}>
         {country && (
-          <FieldUneditable legend="Country" name="dnbCountry" onChangeClick={goBack}>
+          <FieldUneditable
+            legend="Country"
+            name="dnbCountry"
+            onChangeClick={goBack}
+          >
             {country}
           </FieldUneditable>
         )}
@@ -70,9 +86,11 @@ const FieldDnbCompany = ({
           name="dnbCompanyName"
           type="search"
           required="Enter company name"
-          validate={value => (value && value.length < 2
-            ? 'Enter company name that is 2 characters long or more'
-            : null)}
+          validate={(value) =>
+            value && value.length < 2
+              ? 'Enter company name that is 2 characters long or more'
+              : null
+          }
           maxLength={30}
         />
 
@@ -84,7 +102,9 @@ const FieldDnbCompany = ({
         />
 
         <FormActions>
-          <Button icon={<Search />} onClick={onSearchClick}>Find company</Button>
+          <Button icon={<Search />} onClick={onSearchClick}>
+            Find company
+          </Button>
         </FormActions>
 
         {searched && (
@@ -92,8 +112,9 @@ const FieldDnbCompany = ({
             {entities.length > 0 && (
               <>
                 <StatusMessage>
-                  The search results below are verified company records from Dun & Bradstreet,
-                  an external and up to date source of company information.
+                  The search results below are verified company records from Dun
+                  & Bradstreet, an external and up to date source of company
+                  information.
                 </StatusMessage>
 
                 <EntityList entities={entities} onEntityClick={onEntityClick} />
@@ -105,15 +126,23 @@ const FieldDnbCompany = ({
             )}
 
             {error && (
-              <StatusMessage>Error occurred while searching for company.</StatusMessage>
+              <StatusMessage>
+                Error occurred while searching for company.
+              </StatusMessage>
             )}
 
             <Details summary="I cannot find the company I am looking for">
               <Paragraph>Try improving your search by:</Paragraph>
               <UnorderedList>
-                <ListItem>checking the company name for spelling errors</ListItem>
-                <ListItem>making sure you selected the correct country</ListItem>
-                <ListItem>adding a postcode to your search to narrow down the results</ListItem>
+                <ListItem>
+                  checking the company name for spelling errors
+                </ListItem>
+                <ListItem>
+                  making sure you selected the correct country
+                </ListItem>
+                <ListItem>
+                  adding a postcode to your search to narrow down the results
+                </ListItem>
               </UnorderedList>
               <ButtonLink
                 onClick={() => {

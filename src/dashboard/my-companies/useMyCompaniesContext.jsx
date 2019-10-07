@@ -11,36 +11,47 @@ export const getModel = (el = null) => (el ? JSON.parse(el.dataset.model) : [])
 
 export function getSortedCompanies(companies, sortType) {
   const sort = {
-    recent: orderBy(companies, [c => c.latestInteraction.date || ''], ['desc']),
-    'least-recent': orderBy(companies, [c => c.latestInteraction.date || ''], ['asc']),
-    alphabetical: orderBy(companies, [c => c.company.name], ['asc']),
+    recent: orderBy(
+      companies,
+      [(c) => c.latestInteraction.date || ''],
+      ['desc']
+    ),
+    'least-recent': orderBy(
+      companies,
+      [(c) => c.latestInteraction.date || ''],
+      ['asc']
+    ),
+    alphabetical: orderBy(companies, [(c) => c.company.name], ['asc']),
   }
   return sort[sortType]
 }
 
-export const filterCompanyName = (companies, filterText) => (filterText.length
-  ? companies.filter(c => c.company.name.toLowerCase().includes(filterText.toLowerCase()))
-  : companies)
+export const filterCompanyName = (companies, filterText) =>
+  filterText.length
+    ? companies.filter((c) =>
+        c.company.name.toLowerCase().includes(filterText.toLowerCase())
+      )
+    : companies
 
 export function reducer(state, action) {
   switch (action.type) {
-  case ACTIONS.SORT_BY:
-    return {
-      ...state,
-      companies: getSortedCompanies(state.companies, action.sortType),
-      sortType: action.sortType,
-    }
-  case ACTIONS.FILTER_BY:
-    return {
-      ...state,
-      filterText: action.filterText,
-      companies: getSortedCompanies(
-        filterCompanyName(state.companiesInitial, action.filterText),
-        state.sortType,
-      ),
-    }
-  default:
-    return state
+    case ACTIONS.SORT_BY:
+      return {
+        ...state,
+        companies: getSortedCompanies(state.companies, action.sortType),
+        sortType: action.sortType,
+      }
+    case ACTIONS.FILTER_BY:
+      return {
+        ...state,
+        filterText: action.filterText,
+        companies: getSortedCompanies(
+          filterCompanyName(state.companiesInitial, action.filterText),
+          state.sortType
+        ),
+      }
+    default:
+      return state
   }
 }
 
@@ -51,13 +62,18 @@ const initialState = {
   filterText: '',
 }
 
-const useMyCompaniesContext = createUseContext(({ mockProps = {}, mockInitialState = {} }) => {
-  const [state, dispatch] = useReducer(reducer, { ...initialState, ...mockInitialState })
-  return {
-    state,
-    dispatch,
-    ...mockProps,
+const useMyCompaniesContext = createUseContext(
+  ({ mockProps = {}, mockInitialState = {} }) => {
+    const [state, dispatch] = useReducer(reducer, {
+      ...initialState,
+      ...mockInitialState,
+    })
+    return {
+      state,
+      dispatch,
+      ...mockProps,
+    }
   }
-})
+)
 
 export default useMyCompaniesContext

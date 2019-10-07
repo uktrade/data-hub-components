@@ -4,9 +4,9 @@ import { SPACING } from '@govuk-react/constants'
 import { GREY_2 } from 'govuk-colours'
 
 const Item = styled('div')`
-    border-bottom: 2px solid ${GREY_2};
-    padding: ${SPACING.SCALE_2};
-  `
+  border-bottom: 2px solid ${GREY_2};
+  padding: ${SPACING.SCALE_2};
+`
 
 Item.propTypes = {
   children: PropTypes.node,

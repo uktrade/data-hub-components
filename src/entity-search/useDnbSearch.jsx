@@ -14,9 +14,11 @@ function useDnbSearch(apiEndpoint) {
     if (datahub_company) {
       return (
         <>
-          This company is already on Data Hub.
-          {' '}
-          <Link href={`/companies/${datahub_company.id}`}>Go to the company page</Link> to record activity.
+          This company is already on Data Hub.{' '}
+          <Link href={`/companies/${datahub_company.id}`}>
+            Go to the company page
+          </Link>{' '}
+          to record activity.
         </>
       )
     }

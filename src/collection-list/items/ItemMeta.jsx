@@ -9,7 +9,7 @@ const StyledMeta = styled('span')`
 
 const StyledText = styled('span')`
   color: ${GREY_1};
-  `
+`
 
 function ItemMeta({ label, value }) {
   return (

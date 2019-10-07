@@ -8,16 +8,15 @@ import FieldUneditable from '../FieldUneditable'
 
 addDecorator(withKnobs)
 
-storiesOf('Forms', module)
-  .add('FieldUneditable', () => (
-    <Form>
-      <FieldUneditable
-        name="testField"
-        label="Country"
-        hint="Your selection from the previous step"
-        onChangeClick={action('onChangeClick')}
-      >
-        United Kingdom
-      </FieldUneditable>
-    </Form>
-  ))
+storiesOf('Forms', module).add('FieldUneditable', () => (
+  <Form>
+    <FieldUneditable
+      name="testField"
+      label="Country"
+      hint="Your selection from the previous step"
+      onChangeClick={action('onChangeClick')}
+    >
+      United Kingdom
+    </FieldUneditable>
+  </Form>
+))

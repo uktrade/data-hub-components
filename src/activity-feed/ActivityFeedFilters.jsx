@@ -20,13 +20,9 @@ export default class ActivityFeedFilters extends React.PureComponent {
 
     return (
       <StyledActivityFeedFilters>
-        <Checkbox
-          onChange={onShowDetailsClick}
-          checked={showDetails}
-        >
+        <Checkbox onChange={onShowDetailsClick} checked={showDetails}>
           Show details for all activities
         </Checkbox>
-
       </StyledActivityFeedFilters>
     )
   }

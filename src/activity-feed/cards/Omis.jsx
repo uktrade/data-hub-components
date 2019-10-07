@@ -12,10 +12,7 @@ import {
   CardDetailsList,
 } from './card'
 
-import {
-  AdviserItemRenderer,
-  ContactItemRenderer,
-} from './card/item-renderers'
+import { AdviserItemRenderer, ContactItemRenderer } from './card/item-renderers'
 
 import CardUtils from './card/CardUtils'
 
@@ -26,9 +23,7 @@ export default class Omis extends React.PureComponent {
   }
 
   static canRender(activity) {
-    return CardUtils.canRenderByTypes(activity, [
-      'dit:OMISOrder',
-    ])
+    return CardUtils.canRenderByTypes(activity, ['dit:OMISOrder'])
   }
 
   render() {
@@ -45,7 +40,10 @@ export default class Omis extends React.PureComponent {
     return (
       <Card>
         <CardHeader>
-          <CardHeading link={{ url, text: reference }} blockText="New Order (OMIS) added" />
+          <CardHeading
+            link={{ url, text: reference }}
+            blockText="New Order (OMIS) added"
+          />
           <CardMeta startTime={published} />
         </CardHeader>
         <CardDetails
@@ -53,12 +51,28 @@ export default class Omis extends React.PureComponent {
           link={{ url, text: 'Go to the order detail page' }}
           showDetails={showDetails}
         >
-          <CardTable rows={
-            [
+          <CardTable
+            rows={[
               { header: 'Country', content: country },
               { header: 'UK region', content: ukRegion },
-              { header: 'Added by', content: adviser ? <CardDetailsList itemRenderer={AdviserItemRenderer} items={[adviser]} /> : null },
-              { header: 'Company contact(s)', content: <CardDetailsList itemRenderer={ContactItemRenderer} items={contacts} /> },
+              {
+                header: 'Added by',
+                content: adviser ? (
+                  <CardDetailsList
+                    itemRenderer={AdviserItemRenderer}
+                    items={[adviser]}
+                  />
+                ) : null,
+              },
+              {
+                header: 'Company contact(s)',
+                content: (
+                  <CardDetailsList
+                    itemRenderer={ContactItemRenderer}
+                    items={contacts}
+                  />
+                ),
+              },
             ]}
           />
         </CardDetails>
