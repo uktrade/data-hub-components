@@ -3,16 +3,11 @@ import Button from '@govuk-react/button'
 import Link from '@govuk-react/link'
 import PropTypes from 'prop-types'
 import { GREY_3, TEXT_COLOUR } from 'govuk-colours'
-import styled from 'styled-components'
 
 import Form from '../forms/elements/Form'
 import FieldRadios from '../forms/elements/FieldRadios'
 import FieldInput from '../forms/elements/FieldInput'
 import FormActions from '../forms/elements/FormActions'
-
-const StyledDiv = styled.div`
-  margin: 0;
-`
 
 const AddRemoveFromListForm = ({
   list,
@@ -47,22 +42,20 @@ const AddRemoveFromListForm = ({
           />
         </div>
       ))}
+
+      <Button
+        as={Link}
+        href={createNewListUrl}
+        buttonColour={GREY_3}
+        buttonTextColour={TEXT_COLOUR}
+      >
+        Create a new list
+      </Button>
+
       <FormActions>
-        <Button
-          as={Link}
-          href={createNewListUrl}
-          buttonColour={GREY_3}
-          buttonTextColour={TEXT_COLOUR}
-        >
-          Create a new list
-        </Button>
-        <StyledDiv>
-          <Button>Save</Button>
-        </StyledDiv>
-      </FormActions>
-      <div>
+        <Button>Save</Button>
         <Link href={cancelLinkUrl}>Cancel</Link>
-      </div>
+      </FormActions>
     </Form>
   )
 }
