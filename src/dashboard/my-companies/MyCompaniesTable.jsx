@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import { orderBy } from 'lodash'
 import moment from 'moment'
 import React from 'react'
 import styled from 'styled-components'
@@ -28,9 +28,9 @@ const StyledDateCell = styled(Table.Cell)(typography.font({ size: 14 }), {
 
 export function sortCompanies(companies, sortType) {
   const sort = {
-    recent: _.orderBy(companies, [c => c.latestInteraction.date || ''], ['desc']),
-    'least-recent': _.orderBy(companies, [c => c.latestInteraction.date || ''], ['asc']),
-    alphabetical: _.orderBy(companies, [c => c.company.name], ['asc']),
+    recent: orderBy(companies, [c => c.latestInteraction.date || ''], ['desc']),
+    'least-recent': orderBy(companies, [c => c.latestInteraction.date || ''], ['asc']),
+    alphabetical: orderBy(companies, [c => c.company.name], ['asc']),
   }
   return sort[sortType]
 }

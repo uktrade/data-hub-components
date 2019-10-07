@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import { orderBy } from 'lodash'
 import React from 'react'
 import { mount } from 'enzyme'
 import useMyCompaniesContext, {
@@ -258,7 +258,7 @@ describe('Store', () => {
       )
       expect(actual).toEqual({
         ...initialState,
-        lists: _.orderBy(initialState.lists, 'name'),
+        lists: orderBy(initialState.lists, 'name'),
       })
     })
   })

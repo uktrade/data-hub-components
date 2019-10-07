@@ -1,4 +1,4 @@
-import _ from 'lodash'
+import { orderBy, pick } from 'lodash'
 import { useReducer } from 'react'
 import createUseContext from 'constate'
 import { FILTER_CHANGE, LIST_CHANGE, ORDER_CHANGE } from './constants'
@@ -45,14 +45,14 @@ const useMyCompaniesContext = createUseContext(({
   editListsLinkProps,
   ...rest
 }) => {
-  const initialState = _.pick(rest, ['lists', 'selectedIdx', 'sortBy', 'filter'])
+  const initialState = pick(rest, ['lists', 'selectedIdx', 'sortBy', 'filter'])
   const [state, dispatch] = useReducer(
     reducer,
     {
       ...defaultState,
       ...initialState,
       // Reducer assumes the list of company lists is sorted.
-      lists: _.sortBy(initialState.lists, 'name'),
+      lists: orderBy(initialState.lists, 'name'),
     },
   )
 
