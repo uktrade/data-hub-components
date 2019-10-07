@@ -6,16 +6,16 @@ import Select from '@govuk-react/select'
 import useMyCompaniesContext from './useMyCompaniesContext'
 import { LIST_CHANGE } from './constants'
 
-const Root = styled.div`
+const StyledRoot = styled.div`
   display: flex;
   align-items: baseline;
 `
 
-const Headline = styled(H2)`
+const StyledHedline = styled(H2)`
   flex-grow: 1;
 `
 
-const RightSideItem = styled.div`
+const StyledRightSideItem = styled.div`
   margin-right: 10px;
 `
 
@@ -32,24 +32,24 @@ const StyledSelect = styled(Select)`
 export default () => {
   const { state: { lists }, dispatch } = useMyCompaniesContext()
   return (
-    <Root>
-      <Headline>
+    <StyledRoot>
+      <StyledHedline>
         My companies list
-      </Headline>
+      </StyledHedline>
       {lists.length
         ? (
           <>
             {lists.length === 1
               ? (
-                <RightSideItem as="h3">
+                <StyledRightSideItem as="h3">
                   {lists[0].name}
-                </RightSideItem>
+                </StyledRightSideItem>
               )
               : (
                 <>
-                  <RightSideItem as="span">
+                  <StyledRightSideItem as="span">
                     View list
-                  </RightSideItem>
+                  </StyledRightSideItem>
                   <StyledSelect
                     input={{
                       onChange: e => dispatch({
@@ -75,6 +75,6 @@ export default () => {
         )
         : null
       }
-    </Root>
+    </StyledRoot>
   )
 }
