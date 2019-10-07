@@ -3,21 +3,9 @@ import { useReducer } from 'react'
 import createUseContext from 'constate'
 import { FILTER_CHANGE, LIST_CHANGE, ORDER_CHANGE } from './constants'
 
-export function getSortedCompanies(companies, sortType) {
-  const sort = {
-    recent: _.orderBy(companies, [c => c.latestInteraction.date || ''], ['desc']),
-    'least-recent': _.orderBy(companies, [c => c.latestInteraction.date || ''], ['asc']),
-    alphabetical: _.orderBy(companies, [c => c.company.name], ['asc']),
-  }
-  return sort[sortType]
-}
-
-export const filterCompanyName = (companies, filterText) =>
-  filterText.length
-    ? companies.filter((c) =>
-        c.company.name.toLowerCase().includes(filterText.toLowerCase())
-      )
-    : companies
+export const filterCompanyName = (companies, filterText) => (filterText.length
+  ? companies.filter(c => c.company.name.toLowerCase().includes(filterText.toLowerCase()))
+  : companies)
 
 const defaultState = {
   lists: [],

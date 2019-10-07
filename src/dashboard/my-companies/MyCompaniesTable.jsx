@@ -26,7 +26,7 @@ const StyledDateCell = styled(Table.Cell)(typography.font({ size: 14 }), {
   'text-align': 'center',
 })
 
-export function sortCompanies(companies, sortType) {
+function sortCompanies(companies, sortType) {
   const sort = {
     recent: orderBy(companies, [c => c.latestInteraction.date || ''], ['desc']),
     'least-recent': orderBy(companies, [c => c.latestInteraction.date || ''], ['asc']),
@@ -35,7 +35,7 @@ export function sortCompanies(companies, sortType) {
   return sort[sortType]
 }
 
-export const filterCompanyName = (companies, filterText) => (filterText.length
+const filterCompanyName = (companies, filterText) => (filterText.length
   ? companies.filter(c => c.company.name.toLowerCase().includes(filterText.toLowerCase()))
   : companies)
 
