@@ -6,6 +6,7 @@ import ErrorText from '@govuk-react/error-text'
 
 import Form from '../Form'
 import FieldInput from '../FieldInput'
+import FieldWrapper from '../FieldWrapper'
 
 describe('FieldInput', () => {
   let wrapper
@@ -40,11 +41,11 @@ describe('FieldInput', () => {
     })
 
     test('should render the input', () => {
-      expect(wrapper.find('input[type="text"]').exists()).toBeTruthy()
+      expect(wrapper.find('input[type="text"]').exists()).toBe(true)
     })
 
     test('should render the field with a label', () => {
-      expect(wrapper.find(Label).exists()).toBeTruthy()
+      expect(wrapper.find(Label).exists()).toBe(true)
     })
   })
 
@@ -58,7 +59,7 @@ describe('FieldInput', () => {
     })
 
     test('should render the field without a label', () => {
-      expect(wrapper.find(Label).exists()).toBeFalsy()
+      expect(wrapper.find(Label).exists()).toBe(false)
     })
   })
 
@@ -101,12 +102,18 @@ describe('FieldInput', () => {
           />
         </Form>
       )
-      wrapper.simulate('submit')
+      wrapper.find('form').simulate('submit')
     })
 
-    test('should render with an error', () => {
-      const inputWrapper = wrapper.find('div').at(1)
+    test('should render error message', () => {
       expect(wrapper.find(ErrorText).text()).toEqual('testError')
+    })
+
+    test('should render with an error styles', () => {
+      const inputWrapper = wrapper
+        .find(FieldWrapper)
+        .find('div')
+        .at(1)
       expect(inputWrapper).toHaveStyleRule('border-left', '4px solid #b10e1e')
       expect(inputWrapper).toHaveStyleRule('margin-right', '15px')
       expect(inputWrapper).toHaveStyleRule('padding-left', '10px')

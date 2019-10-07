@@ -4,6 +4,7 @@ import Link from '@govuk-react/link'
 import PropTypes from 'prop-types'
 import Form from '../forms/elements/Form'
 import FieldInput from '../forms/elements/FieldInput'
+import FormActions from '../forms/elements/FormActions'
 
 const test = (hello) => {
   return `${hello} world`
@@ -34,10 +35,10 @@ const CreateListForm = ({
             : null
         }
       />
-      <Button>Create list</Button>
-      <div>
+      <FormActions>
+        <Button>Create list</Button>
         <Link href={cancelLink}>Cancel</Link>
-      </div>
+      </FormActions>
     </Form>
   )
 }

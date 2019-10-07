@@ -9,7 +9,7 @@ import listWithoutItems from '../__fixtures__/list-without-items.json'
 
 const onDelete = action('DeleteCompanyListSection.onDelete')
 
-storiesOf('DeleteCompanyListSection', module)
+storiesOf('Company lists / DeleteCompanyListSection', module)
   .add('with multiple items', () => (
     <DeleteCompanyListSection
       companyList={listWithMultipleItems}

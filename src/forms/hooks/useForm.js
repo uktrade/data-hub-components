@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { isEmpty, isEqual, omit } from 'lodash'
-import { useBeforeUnload } from 'react-use'
+import { useBeforeUnload, useDeepCompareEffect } from 'react-use'
 
 function useForm({
   initialValues = {},
@@ -13,8 +13,12 @@ function useForm({
   const [fields, setFields] = useState({})
   const [steps, setSteps] = useState([])
   const [currentStep, setCurrentStep] = useState(initialStep)
+  const [isLoading, setIsLoading] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [submissionError, setSubmissionError] = useState(null)
   const isDirty = !isEmpty(values) && !isEqual(values, initialValues)
+
+  const [redirectUrl, setRedirectUrl] = useState(null)
 
   const formState = {
     values,
@@ -23,19 +27,26 @@ function useForm({
     fields,
     steps,
     currentStep,
+    isLoading,
     isSubmitted,
     isDirty,
+    submissionError,
   }
 
   useBeforeUnload(
-    isDirty && !isSubmitted,
+    isDirty && !isSubmitted && !submissionError && !redirectUrl,
     'Changes that you made will not be saved.'
   )
 
-  // Using JSON.stringify() to avoid extra calls as {} !== {}
   useEffect(() => {
+    if (redirectUrl) {
+      window.location.assign(redirectUrl)
+    }
+  }, [redirectUrl])
+
+  useDeepCompareEffect(() => {
     window.scrollTo(0, 0)
-  }, [currentStep, JSON.stringify(errors)])
+  }, [currentStep, errors])
 
   const getFieldState = (name) => {
     return {
@@ -157,12 +168,33 @@ function useForm({
   const isLastStep = () =>
     currentStep === steps.length - 1 || steps.length === 0
 
+  const submitForm = async () => {
+    try {
+      let newRedirectUrl
+      setIsLoading(true)
+
+      if (typeof onSubmit === 'function') {
+        newRedirectUrl = await onSubmit(values)
+      }
+
+      if (newRedirectUrl) {
+        setRedirectUrl(newRedirectUrl)
+      } else {
+        setIsLoading(false)
+        setIsSubmitted(true)
+      }
+    } catch (e) {
+      setSubmissionError(e)
+      setIsLoading(false)
+    }
+  }
+
   const getStepIndex = (stepName) => {
     const index = steps.indexOf(stepName)
     return index !== -1 ? index : null
   }
 
-  const goForward = () => {
+  const goForward = async () => {
     const validationErrors = validateForm()
 
     if (!isEmpty(validationErrors)) {
@@ -174,11 +206,7 @@ function useForm({
       return
     }
 
-    if (typeof onSubmit === 'function') {
-      onSubmit(values)
-    }
-
-    setIsSubmitted(true)
+    await submitForm()
   }
 
   const goBack = () => setCurrentStep(currentStep - 1)
@@ -198,6 +226,7 @@ function useForm({
     registerStep,
     deregisterStep,
     setCurrentStep,
+    setIsLoading,
     setIsSubmitted,
     goForward,
     goBack,

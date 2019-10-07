@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import LoadingBox from '@govuk-react/loading-box'
 
 import useFormContext from '../hooks/useFormContext'
 
@@ -50,7 +51,9 @@ function FormWrapper(props) {
         formContextProps.goForward()
       }}
     >
-      {renderChildren()}
+      <LoadingBox loading={formContextProps.isLoading}>
+        {renderChildren()}
+      </LoadingBox>
     </form>
   )
 }

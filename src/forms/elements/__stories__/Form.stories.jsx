@@ -1,6 +1,6 @@
 import React from 'react'
 import { addDecorator, storiesOf } from '@storybook/react'
-import { withKnobs } from '@storybook/addon-knobs'
+import { boolean, withKnobs } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 import { H3 } from '@govuk-react/heading'
 
@@ -9,6 +9,7 @@ import FieldRadios from '../FieldRadios'
 import FieldSelect from '../FieldSelect'
 import FieldDnbCompany from '../FieldDnbCompany'
 import { setupSuccessMocks } from '../../../entity-search/__mocks__/company-search'
+import StatusMessage from '../../../status-message/StatusMessage'
 
 addDecorator(withKnobs)
 
@@ -27,13 +28,29 @@ function StepHeader() {
 }
 
 storiesOf('Forms', module).add('Form - Full example', () => {
+  const showError = boolean('Show error', false)
+
+  async function onSubmitHandler(values) {
+    await new Promise((resolve, reject) =>
+      setTimeout(() => {
+        return showError ? reject(new Error('Some unknown error!')) : resolve()
+      }, 1000)
+    )
+    action('onSubmitHandler')(values)
+    return 'http://example.com'
+  }
+
   const ENTITY_SEARCH_ENDPOINT = 'http://localhost:3010/v4/dnb/company-search'
   setupSuccessMocks(ENTITY_SEARCH_ENDPOINT)
   return (
-    <Form onSubmit={action('onSubmit')}>
-      {({ values }) => (
+    <Form onSubmit={onSubmitHandler}>
+      {({ values, submissionError }) => (
         <>
           <StepHeader />
+
+          {submissionError && (
+            <StatusMessage>{submissionError.message}</StatusMessage>
+          )}
 
           <Step name="first">
             <FieldInput

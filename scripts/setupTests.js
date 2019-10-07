@@ -19,12 +19,12 @@ jest.setMock('react-transition-group', reactTransitionGroup)
 // Type checking with prop-types in Jest
 // See: https://medium.com/shark-bytes/type-checking-with-prop-types-in-jest-e0cd0dc92d5
 const originalConsoleError = console.error
-console.error = message => {
+console.error = (message, params) => {
   if (/(Failed prop type)/.test(message)) {
     throw new Error(message)
   }
 
-  originalConsoleError(message)
+  originalConsoleError(message, params)
 }
 
 window.scrollTo = jest.fn()
