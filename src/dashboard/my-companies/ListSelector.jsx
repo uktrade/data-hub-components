@@ -36,7 +36,11 @@ const StyledSelect = styled(Select)({
 })
 
 export default () => {
-  const { state: { lists }, dispatch } = useMyCompaniesContext()
+  const {
+    state: { lists },
+    dispatch,
+    editListsLinkProps,
+  } = useMyCompaniesContext()
   return (
     <StyledRoot>
       <StyledHedline>
@@ -72,7 +76,7 @@ export default () => {
                 </>
               )
             }
-            <Link href="#foo">
+            <Link {...editListsLinkProps}>
               Edit lists
             </Link>
           </>

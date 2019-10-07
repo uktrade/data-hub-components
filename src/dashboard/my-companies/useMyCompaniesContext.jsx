@@ -40,7 +40,11 @@ export const reducer = (state, { type, ...action }) => {
 }
 
 // We are unpacking children here just to remove them from initialState.
-const useMyCompaniesContext = createUseContext(({ children, ...initialState }) => {
+const useMyCompaniesContext = createUseContext(({
+  children,
+  editListsLinkProps,
+  ...initialState
+}) => {
   const [state, dispatch] = useReducer(
     reducer,
     {
@@ -54,6 +58,7 @@ const useMyCompaniesContext = createUseContext(({ children, ...initialState }) =
   return {
     state,
     dispatch,
+    editListsLinkProps,
   }
 )
 
