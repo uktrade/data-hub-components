@@ -14,7 +14,6 @@ const StyledRoot = styled.div({
 
 const StyledHedline = styled(H2)({
   flexGrow: 1,
-  // margin: 0,
 })
 
 const StyledListName = styled(H3)({
@@ -44,46 +43,35 @@ export default () => {
   } = useMyCompaniesContext()
   return (
     <StyledRoot>
-      <StyledHedline>
-        My companies list
-      </StyledHedline>
-      {lists.length
-        ? (
-          <>
-            {lists.length === 1
-              ? (
-                <StyledListName>
-                  {lists[0].name}
-                </StyledListName>
-              )
-              : (
-                <>
-                  <StyledSelect
-                    label="View list"
-                    input={{
-                      onChange: e => dispatch({
-                        type: LIST_CHANGE,
-                        idx: e.target.value,
-                      }),
-                    }}
-                  >
-                    {/* eslint-disable react/no-array-index-key */}
-                    {lists.map(({ name }, idx) => (
-                      <option key={idx} value={idx}>
-                        {name}
-                      </option>
-                    ))}
-                  </StyledSelect>
-                </>
-              )
-            }
-            <Link {...editListsLinkProps}>
-              Edit lists
-            </Link>
-          </>
-        )
-        : null
-      }
+      <StyledHedline>My companies list</StyledHedline>
+      {lists.length ? (
+        <>
+          {lists.length === 1 ? (
+            <StyledListName>{lists[0].name}</StyledListName>
+          ) : (
+            <>
+              <StyledSelect
+                label="View list"
+                input={{
+                  onChange: (e) =>
+                    dispatch({
+                      type: LIST_CHANGE,
+                      idx: e.target.value,
+                    }),
+                }}
+              >
+                {/* eslint-disable react/no-array-index-key */}
+                {lists.map(({ name }, idx) => (
+                  <option key={idx} value={idx}>
+                    {name}
+                  </option>
+                ))}
+              </StyledSelect>
+            </>
+          )}
+          <Link {...editListsLinkProps}>Edit lists</Link>
+        </>
+      ) : null}
     </StyledRoot>
   )
 }

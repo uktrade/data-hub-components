@@ -1,4 +1,4 @@
-export const withTargetValue = value => ({
+export const withTargetValue = (value) => ({
   target: {
     value,
   },
@@ -11,12 +11,11 @@ export const withTargetValue = value => ({
  * @param {*} wrapper - Enzyme React wrapper
  * @param {String} text - The option text
  */
-export const getOptionValueByText = (wrapper, text) => (
-  wrapper.find('option')
+export const getOptionValueByText = (wrapper, text) =>
+  wrapper
+    .find('option')
     .find({ children: text })
-    .props()
-    .value
-)
+    .props().value
 
 /**
  * @function changeAndUpdate

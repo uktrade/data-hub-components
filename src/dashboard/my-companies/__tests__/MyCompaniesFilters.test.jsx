@@ -10,7 +10,9 @@ describe('MyCompaniesFilters', () => {
       const stateHistory = []
 
       const Mock = () => {
-        const { state: { filter, sortBy } } = useMyCompaniesContext()
+        const {
+          state: { filter, sortBy },
+        } = useMyCompaniesContext()
         stateHistory.push({ filter, sortBy })
         return null
       }
@@ -19,15 +21,17 @@ describe('MyCompaniesFilters', () => {
         <useMyCompaniesContext.Provider>
           <MyCompaniesFilters />
           <Mock />
-        </useMyCompaniesContext.Provider>,
+        </useMyCompaniesContext.Provider>
       )
 
-      wrapper.find('select')
+      wrapper
+        .find('select')
         .simulate('change', withTargetValue('alphabetical'))
         .simulate('change', withTargetValue('least-recent'))
         .simulate('change', withTargetValue('recent'))
 
-      wrapper.find('input')
+      wrapper
+        .find('input')
         .simulate('change', withTargetValue('foo'))
         .simulate('change', withTargetValue('bar'))
         .simulate('change', withTargetValue('baz'))

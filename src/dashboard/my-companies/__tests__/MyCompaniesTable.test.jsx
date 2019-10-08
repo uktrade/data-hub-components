@@ -5,23 +5,17 @@ import MyCompaniesFilters from '../MyCompaniesFilters'
 import useMyCompaniesContext from '../useMyCompaniesContext'
 import { changeAndUpdate, changeSelectAndUpdate } from '../../../utils/enzyme'
 
-const getTableRowTexts = wrapper => (
-  wrapper.find('tbody tr').map(row => row.text())
-)
+const getTableRowTexts = (wrapper) =>
+  wrapper.find('tbody tr').map((row) => row.text())
 
-const fixture = companies => (
+const fixture = (companies) =>
   mount(
-    <useMyCompaniesContext.Provider lists={[
-      {
-        name: 'Lonely list',
-        companies,
-      },
-    ]}
+    <useMyCompaniesContext.Provider
+      lists={[{ name: 'Lonely list', companies }]}
     >
       <MyCompaniesTable />
-    </useMyCompaniesContext.Provider>,
+    </useMyCompaniesContext.Provider>
   )
-)
 
 const companies = [
   {
@@ -65,7 +59,7 @@ describe('MyCompaniesTable', () => {
     test('Should not display filters', () => {
       expect(wrapper.find(MyCompaniesFilters)).toHaveLength(0)
       expect(wrapper.text()).toBe(
-        'Company nameLast interaction Company A foo6 Jan 2019Interaction A',
+        'Company nameLast interaction Company A foo6 Jan 2019Interaction A'
       )
     })
   })
@@ -87,22 +81,20 @@ describe('MyCompaniesTable', () => {
 
       test('Should reorder on selecting the least recent order', () => {
         changeSelectAndUpdate(wrapper, 'Least recent interaction')
-        expect(getTableRowTexts(wrapper))
-          .toEqual([
-            'Company B fooo4 Jan 2019Interaction B',
-            'Company C foooo5 Jan 2019Interaction C',
-            'Company A foo6 Jan 2019Interaction A',
-          ])
+        expect(getTableRowTexts(wrapper)).toEqual([
+          'Company B fooo4 Jan 2019Interaction B',
+          'Company C foooo5 Jan 2019Interaction C',
+          'Company A foo6 Jan 2019Interaction A',
+        ])
       })
 
       test('Should reorder on selecting alphabetical sort option', () => {
         changeSelectAndUpdate(wrapper, 'Company name A-Z')
-        expect(getTableRowTexts(wrapper))
-          .toEqual([
-            'Company A foo6 Jan 2019Interaction A',
-            'Company B fooo4 Jan 2019Interaction B',
-            'Company C foooo5 Jan 2019Interaction C',
-          ])
+        expect(getTableRowTexts(wrapper)).toEqual([
+          'Company A foo6 Jan 2019Interaction A',
+          'Company B fooo4 Jan 2019Interaction B',
+          'Company C foooo5 Jan 2019Interaction C',
+        ])
       })
     })
 

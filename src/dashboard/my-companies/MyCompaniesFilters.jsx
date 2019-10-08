@@ -57,12 +57,16 @@ function MyCompaniesFilters() {
       <InlineLabel text="Search this list">
         <StyledInput
           placeholder="Company name"
-          onChange={e => dispatch({ type: FILTER_CHANGE, filter: e.target.value })}
+          onChange={(e) =>
+            dispatch({ type: FILTER_CHANGE, filter: e.target.value })
+          }
         />
       </InlineLabel>
       <InlineLabel text="Sort by">
         <StyledSelectInput
-          onChange={e => dispatch({ type: ORDER_CHANGE, sortBy: e.target.value })}
+          onChange={(e) =>
+            dispatch({ type: ORDER_CHANGE, sortBy: e.target.value })
+          }
         >
           <option value="recent">Recent interaction</option>
           <option value="least-recent">Least recent interaction</option>

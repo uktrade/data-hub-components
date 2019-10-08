@@ -9,11 +9,7 @@ import companies from '../../__fixtures__/companies'
 import { LIST_CHANGE, FILTER_CHANGE, ORDER_CHANGE } from '../constants'
 
 const initialState = {
-  lists: [
-    { name: 'Foo' },
-    { name: 'Bar' },
-    { name: 'Baz' },
-  ],
+  lists: [{ name: 'Foo' }, { name: 'Bar' }, { name: 'Baz' }],
   selectedIdx: 0,
   sortBy: 'alphabetical',
   filter: 'foobarbaz',
@@ -46,48 +42,66 @@ describe('Store', () => {
 
   describe('reducer()', () => {
     test('List change', () => {
-      expect(reducer(initialState, {
-        type: LIST_CHANGE,
-        idx: 1,
-      })).toEqual({ ...initialState, selectedIdx: 1 })
-      expect(reducer(initialState, {
-        type: LIST_CHANGE,
-        idx: 2,
-      })).toEqual({ ...initialState, selectedIdx: 2 })
-      expect(reducer(initialState, {
-        type: LIST_CHANGE,
-        idx: 0,
-      })).toEqual({ ...initialState, selectedIdx: 0 })
+      expect(
+        reducer(initialState, {
+          type: LIST_CHANGE,
+          idx: 1,
+        })
+      ).toEqual({ ...initialState, selectedIdx: 1 })
+      expect(
+        reducer(initialState, {
+          type: LIST_CHANGE,
+          idx: 2,
+        })
+      ).toEqual({ ...initialState, selectedIdx: 2 })
+      expect(
+        reducer(initialState, {
+          type: LIST_CHANGE,
+          idx: 0,
+        })
+      ).toEqual({ ...initialState, selectedIdx: 0 })
     })
 
     test('Order by change', () => {
-      expect(reducer(initialState, {
-        type: ORDER_CHANGE,
-        sortBy: 'recent',
-      })).toEqual({ ...initialState, sortBy: 'recent' })
-      expect(reducer(initialState, {
-        type: ORDER_CHANGE,
-        sortBy: 'least-recent',
-      })).toEqual({ ...initialState, sortBy: 'least-recent' })
-      expect(reducer(initialState, {
-        type: ORDER_CHANGE,
-        sortBy: 'alphabetical',
-      })).toEqual({ ...initialState, sortBy: 'alphabetical' })
+      expect(
+        reducer(initialState, {
+          type: ORDER_CHANGE,
+          sortBy: 'recent',
+        })
+      ).toEqual({ ...initialState, sortBy: 'recent' })
+      expect(
+        reducer(initialState, {
+          type: ORDER_CHANGE,
+          sortBy: 'least-recent',
+        })
+      ).toEqual({ ...initialState, sortBy: 'least-recent' })
+      expect(
+        reducer(initialState, {
+          type: ORDER_CHANGE,
+          sortBy: 'alphabetical',
+        })
+      ).toEqual({ ...initialState, sortBy: 'alphabetical' })
     })
 
     test('Filter change', () => {
-      expect(reducer(initialState, {
-        type: FILTER_CHANGE,
-        filter: 'foo',
-      })).toEqual({ ...initialState, filter: 'foo' })
-      expect(reducer(initialState, {
-        type: FILTER_CHANGE,
-        filter: 'bar',
-      })).toEqual({ ...initialState, filter: 'bar' })
-      expect(reducer(initialState, {
-        type: FILTER_CHANGE,
-        filter: '',
-      })).toEqual({ ...initialState, filter: '' })
+      expect(
+        reducer(initialState, {
+          type: FILTER_CHANGE,
+          filter: 'foo',
+        })
+      ).toEqual({ ...initialState, filter: 'foo' })
+      expect(
+        reducer(initialState, {
+          type: FILTER_CHANGE,
+          filter: 'bar',
+        })
+      ).toEqual({ ...initialState, filter: 'bar' })
+      expect(
+        reducer(initialState, {
+          type: FILTER_CHANGE,
+          filter: '',
+        })
+      ).toEqual({ ...initialState, filter: '' })
     })
   })
 
@@ -102,7 +116,7 @@ describe('Store', () => {
       mount(
         <useMyCompaniesContext.Provider>
           <Mock />
-        </useMyCompaniesContext.Provider>,
+        </useMyCompaniesContext.Provider>
       )
       expect(actual).toEqual({
         lists: [],
@@ -122,7 +136,7 @@ describe('Store', () => {
       mount(
         <useMyCompaniesContext.Provider {...initialState}>
           <Mock />
-        </useMyCompaniesContext.Provider>,
+        </useMyCompaniesContext.Provider>
       )
       expect(actual).toEqual({
         ...initialState,

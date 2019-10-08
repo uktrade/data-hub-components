@@ -28,23 +28,36 @@ const StyledDateCell = styled(Table.Cell)(typography.font({ size: 14 }), {
 
 function sortCompanies(companies, sortType) {
   const sort = {
-    recent: orderBy(companies, [c => c.latestInteraction.date || ''], ['desc']),
-    'least-recent': orderBy(companies, [c => c.latestInteraction.date || ''], ['asc']),
-    alphabetical: orderBy(companies, [c => c.company.name], ['asc']),
+    recent: orderBy(
+      companies,
+      [(c) => c.latestInteraction.date || ''],
+      ['desc']
+    ),
+    'least-recent': orderBy(
+      companies,
+      [(c) => c.latestInteraction.date || ''],
+      ['asc']
+    ),
+    alphabetical: orderBy(companies, [(c) => c.company.name], ['asc']),
   }
   return sort[sortType]
 }
 
-const filterCompanyName = (companies, filterText) => (filterText.length
-  ? companies.filter(c => c.company.name.toLowerCase().includes(filterText.toLowerCase()))
-  : companies)
+const filterCompanyName = (companies, filterText) =>
+  filterText.length
+    ? companies.filter((c) =>
+        c.company.name.toLowerCase().includes(filterText.toLowerCase())
+      )
+    : companies
 
 function MyCompaniesTable() {
-  const { state: { lists, selectedIdx, sortBy, filter } } = useMyCompaniesContext()
+  const {
+    state: { lists, selectedIdx, sortBy, filter },
+  } = useMyCompaniesContext()
   const list = lists[selectedIdx]
   const filteredSortedCompanies = sortCompanies(
     filterCompanyName(list.companies, filter),
-    sortBy,
+    sortBy
   )
 
   const header = (
@@ -72,8 +85,7 @@ function MyCompaniesTable() {
         <StyledDateCell>
           {latestInteraction.date
             ? moment(latestInteraction.date).format('D MMM YYYY')
-            : '-'
-          }
+            : '-'}
         </StyledDateCell>
         <Table.Cell>
           {latestInteraction.id ? (

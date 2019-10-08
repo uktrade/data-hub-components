@@ -5,21 +5,22 @@ import MyCompaniesTable from '../MyCompaniesTable'
 import useMyCompaniesContext from '../useMyCompaniesContext'
 import companies from '../../__fixtures__/companies'
 
-const fixture = lists => mount(
-  <useMyCompaniesContext.Provider lists={lists}>
-    <MyCompaniesTile />
-  </useMyCompaniesContext.Provider>,
-)
+const fixture = (lists) =>
+  mount(
+    <useMyCompaniesContext.Provider lists={lists}>
+      <MyCompaniesTile />
+    </useMyCompaniesContext.Provider>
+  )
 
 describe('My companies dashboard', () => {
   test('No lists', () => {
     const wrapper = fixture([])
     expect(wrapper.find(MyCompaniesTable)).toHaveLength(0)
     expect(wrapper.text()).toBe(
-      'My companies list'
-      + 'You have not yet created any lists with companies.'
-      + 'You can add companies to lists from a company page, '
-      + 'and only you can see these lists.',
+      'My companies list' +
+        'You have not yet created any lists with companies.' +
+        'You can add companies to lists from a company page, ' +
+        'and only you can see these lists.'
     )
   })
 
@@ -27,12 +28,12 @@ describe('My companies dashboard', () => {
     const wrapper = fixture([{ name: 'Foo', companies: [] }])
     expect(wrapper.find(MyCompaniesTable)).toHaveLength(0)
     expect(wrapper.text()).toBe(
-      'My companies list'
-      + 'Foo'
-      + 'Edit lists'
-      + 'You have not added any companies to your list.'
-      + 'You can add companies to this list from a company page, '
-      + 'and only you can see this list.',
+      'My companies list' +
+        'Foo' +
+        'Edit lists' +
+        'You have not added any companies to your list.' +
+        'You can add companies to this list from a company page, ' +
+        'and only you can see this list.'
     )
   })
 
@@ -45,15 +46,15 @@ describe('My companies dashboard', () => {
       ])
       expect(wrapper.find(MyCompaniesTable)).toHaveLength(0)
       expect(wrapper.text()).toBe(
-        'My companies list'
-        + 'View list'
-        + 'Bar'
-        + 'Baz'
-        + 'Foo'
-        + 'Edit lists'
-        + 'You have not added any companies to your list.'
-        + 'You can add companies to this list from a company page, '
-        + 'and only you can see this list.',
+        'My companies list' +
+          'View list' +
+          'Bar' +
+          'Baz' +
+          'Foo' +
+          'Edit lists' +
+          'You have not added any companies to your list.' +
+          'You can add companies to this list from a company page, ' +
+          'and only you can see this list.'
       )
     })
 
