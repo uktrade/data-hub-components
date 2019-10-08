@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { H2 } from '@govuk-react/heading'
+import { H2, H3 } from '@govuk-react/heading'
 import Link from '@govuk-react/link'
 import Select from '@govuk-react/select'
 import { SPACING } from '@govuk-react/constants'
@@ -14,9 +14,10 @@ const StyledRoot = styled.div({
 
 const StyledHedline = styled(H2)({
   flexGrow: 1,
+  // margin: 0,
 })
 
-const StyledListName = styled.div({
+const StyledListName = styled(H3)({
   marginRight: SPACING.SCALE_2,
 })
 
@@ -51,7 +52,7 @@ export default () => {
           <>
             {lists.length === 1
               ? (
-                <StyledListName as="h3">
+                <StyledListName>
                   {lists[0].name}
                 </StyledListName>
               )
