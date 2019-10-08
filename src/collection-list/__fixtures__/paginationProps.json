@@ -1,0 +1,31 @@
+{
+    "totalPages": 7,
+    "currentPage": 2,
+    "previous": "#",
+    "next": "#",
+    "pages": [
+        {
+            "label": "1",
+            "url": "#"
+        },
+        {
+            "label": "2",
+            "url": "#"
+        },
+        {
+            "label": "3",
+            "url": "#"
+        },
+        {
+            "label": "4",
+            "url": "#"
+        },
+        {
+            "label": "..."
+        },
+        {
+            "label": "7",
+            "url": "#"
+        }
+    ]
+}
