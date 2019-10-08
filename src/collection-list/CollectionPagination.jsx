@@ -72,6 +72,7 @@ const StyledSpan = styled('span')`
   line-height: ${FONT_SIZE.SIZE_24};
   color: ${GREY_1};
 `
+
 function CollectionPagination({
   totalPages,
   currentPage,
@@ -79,31 +80,23 @@ function CollectionPagination({
   next,
   pages,
 }) {
+  function getPages(page, current) {
+    if (!page.url) {
+      return <StyledSpan>{page.label}</StyledSpan>
+    }
+    if (page.label === JSON.stringify(current)) {
+      return <StyledCurrentAnchor>{page.label}</StyledCurrentAnchor>
+    }
+    return <StyledAnchor href={page.url}>{page.label}</StyledAnchor>
+  }
+
   return totalPages === 1 ? null : (
     <StyledNav aria-label={`pagination: total ${totalPages} pages`}>
       {previous && <StyledPrevious href={previous}>Previous</StyledPrevious>}
       <StyledList>
-        {pages.map((page) => {
-          if (page.url && page.label === JSON.stringify(currentPage)) {
-            return (
-              <StyledListItem>
-                <StyledCurrentAnchor>{page.label}</StyledCurrentAnchor>
-              </StyledListItem>
-            )
-          } else if (page.url) {
-            return (
-              <StyledListItem>
-                <StyledAnchor href={page.url}>{page.label}</StyledAnchor>
-              </StyledListItem>
-            )
-          } else {
-            return (
-              <StyledListItem>
-                <StyledSpan>{page.label}</StyledSpan>
-              </StyledListItem>
-            )
-          }
-        })}
+        {pages.map((page) => (
+          <StyledListItem>{getPages(page, currentPage)}</StyledListItem>
+        ))}
       </StyledList>
       {next && <StyledNext href={next}>Next</StyledNext>}
     </StyledNav>
