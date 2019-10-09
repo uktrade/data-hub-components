@@ -49,6 +49,7 @@ export default class ActivityFeed extends React.Component {
     super(props)
     this.state = {
       showDetails: false,
+      isActivityTypeFilterEnabled: false,
     }
 
     this.onShowDetailsClick = this.onShowDetailsClick.bind(this)
@@ -71,7 +72,7 @@ export default class ActivityFeed extends React.Component {
       totalActivities,
       children,
     } = this.props
-    const { showDetails } = this.state
+    const { showDetails, isActivityTypeFilterEnabled } = this.state
 
     return (
       <ActivityFeedContainer>
@@ -81,6 +82,7 @@ export default class ActivityFeed extends React.Component {
           addContentLink={addContentLink}
         />
         <ActivityFeedFilters
+          isActivityTypeFilterEnabled={isActivityTypeFilterEnabled}
           onShowDetailsClick={this.onShowDetailsClick}
           showDetails={showDetails}
         />

@@ -222,7 +222,6 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
 
 .c5 {
   padding: 10px;
-  padding-left: 0;
 }
 
 .c13 {
@@ -839,7 +838,6 @@ exports[`ActivityFeed when the activity feed has child elements should render th
 
 .c5 {
   padding: 10px;
-  padding-left: 0;
 }
 
 .c0 {
@@ -1090,7 +1088,6 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
 
 .c5 {
   padding: 10px;
-  padding-left: 0;
 }
 
 .c0 {
@@ -1686,7 +1683,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
 
 .c5 {
   padding: 10px;
-  padding-left: 0;
 }
 
 .c33 {
@@ -7629,7 +7625,6 @@ exports[`ActivityFeed when there is a single activity should render single activ
 
 .c5 {
   padding: 10px;
-  padding-left: 0;
 }
 
 .c0 {

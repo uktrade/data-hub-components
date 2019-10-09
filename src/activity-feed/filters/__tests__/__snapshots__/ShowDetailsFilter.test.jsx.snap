@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShowDetailsFilter when the details for all activities are hidden renders filters 1`] = `
+.c1 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: block;
+  position: relative;
+  min-height: 40px;
+  padding: 0 0 0 40px;
+  clear: left;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.c2:checked + span:after {
+  opacity: 1;
+}
+
+.c2:focus + span:before {
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px #ffbf47;
+}
+
+.c2 + span {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c3 {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 15px 5px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.c3::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  background: transparent;
+}
+
+.c3::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  width: 18px;
+  height: 7px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: solid;
+  border-width: 0 0 5px 5px;
+  border-top-color: transparent;
+  background: transparent;
+  opacity: 0;
+}
+
+.c0 {
+  padding: 10px;
+}
+
+@media print {
+  .c1 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c1 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c1 {
+    margin-bottom: 10px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+  >
+    <input
+      checked={false}
+      className="c2"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="c3"
+    >
+      Show details for all activities
+    </span>
+  </label>
+</div>
+`;
+
+exports[`ShowDetailsFilter when the details for all activities are shown renders filters 1`] = `
+.c1 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: block;
+  position: relative;
+  min-height: 40px;
+  padding: 0 0 0 40px;
+  clear: left;
+  margin-bottom: 10px;
+}
+
+.c2 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.c2:checked + span:after {
+  opacity: 1;
+}
+
+.c2:focus + span:before {
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px #ffbf47;
+}
+
+.c2 + span {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c3 {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 15px 5px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.c3::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  background: transparent;
+}
+
+.c3::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  width: 18px;
+  height: 7px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: solid;
+  border-width: 0 0 5px 5px;
+  border-top-color: transparent;
+  background: transparent;
+  opacity: 0;
+}
+
+.c0 {
+  padding: 10px;
+}
+
+@media print {
+  .c1 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c1 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c1 {
+    margin-bottom: 10px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+  >
+    <input
+      checked={true}
+      className="c2"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="c3"
+    >
+      Show details for all activities
+    </span>
+  </label>
+</div>
+`;
