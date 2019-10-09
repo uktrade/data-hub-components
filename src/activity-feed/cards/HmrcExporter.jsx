@@ -15,7 +15,7 @@ import {
 import { DefaultItemRenderer } from './card/item-renderers'
 
 import CardUtils from './card/CardUtils'
-import { SOURCE_TYPES } from '../constants'
+import { ACTIVITY_TYPE, SOURCE_TYPES } from '../constants'
 
 export default class HmrcExporter extends React.PureComponent {
   static propTypes = {
@@ -24,7 +24,7 @@ export default class HmrcExporter extends React.PureComponent {
   }
 
   static canRender(activity) {
-    return CardUtils.canRenderByTypes(activity, ['dit:Export'])
+    return CardUtils.canRenderByTypes(activity, ACTIVITY_TYPE.HmrcExporter)
   }
 
   render() {
