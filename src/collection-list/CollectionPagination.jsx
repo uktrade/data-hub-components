@@ -80,7 +80,7 @@ function CollectionPagination({
   next,
   pages,
 }) {
-  function getPages(page, current) {
+  function getPage(page, current) {
     if (!page.url) {
       return <StyledSpan>{page.label}</StyledSpan>
     }
@@ -95,7 +95,7 @@ function CollectionPagination({
       {previous && <StyledPrevious href={previous}>Previous</StyledPrevious>}
       <StyledList>
         {pages.map((page) => (
-          <StyledListItem>{getPages(page, currentPage)}</StyledListItem>
+          <StyledListItem>{getPage(page, currentPage)}</StyledListItem>
         ))}
       </StyledList>
       {next && <StyledNext href={next}>Next</StyledNext>}
