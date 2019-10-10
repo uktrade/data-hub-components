@@ -84,7 +84,7 @@ function CollectionPagination({
     if (!page.url) {
       return <StyledSpan>{page.label}</StyledSpan>
     }
-    if (page.label === JSON.stringify(current)) {
+    if (page.label === String(current)) {
       return <StyledCurrentAnchor>{page.label}</StyledCurrentAnchor>
     }
     return <StyledAnchor href={page.url}>{page.label}</StyledAnchor>
