@@ -5,10 +5,12 @@ import {
   capitalProfileItem,
   interactionItem,
   capitalProfileHeading,
+  paginationProps,
 } from '../__fixtures__'
 import CollectionItem from '../CollectionItem'
 import CollectionHeader from '../CollectionHeader'
 import CollectionDownload from '../CollectionDownload'
+import CollectionPagination from '../CollectionPagination'
 
 storiesOf('Collection', module).add('Collection', () => (
   <>
@@ -29,6 +31,13 @@ storiesOf('Collection', module).add('Collection', () => (
       headingText={capitalProfileItem.headerText}
       badges={capitalProfileItem.badges}
       metadata={capitalProfileItem.metadata}
+    />
+    <CollectionPagination
+      totalPages={paginationProps.totalPages}
+      currentPage={paginationProps.currentPage}
+      previous={paginationProps.previous}
+      next={paginationProps.next}
+      pages={paginationProps.pages}
     />
   </>
 ))
@@ -113,5 +122,15 @@ storiesOf('Collection', module).add('Interaction item', () => (
     headingText={interactionItem.headerText}
     badges={interactionItem.badges}
     metadata={interactionItem.metadata}
+  />
+))
+
+storiesOf('Collection', module).add('Collection pagination', () => (
+  <CollectionPagination
+    totalPages={paginationProps.totalPages}
+    currentPage={paginationProps.currentPage}
+    previous={paginationProps.previous}
+    next={paginationProps.next}
+    pages={paginationProps.pages}
   />
 ))
