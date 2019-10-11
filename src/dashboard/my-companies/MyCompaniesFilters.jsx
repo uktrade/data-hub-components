@@ -1,60 +1,78 @@
-import React, { useRef } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { SelectInput } from '@govuk-react/select'
+import Input from '@govuk-react/input'
 import LabelText from '@govuk-react/label-text'
+import Label from '@govuk-react/label'
 import { MEDIA_QUERIES, SPACING } from '@govuk-react/constants'
-import { typography } from '@govuk-react/lib'
-import ACTIONS from './constants'
 import useMyCompaniesContext from './useMyCompaniesContext'
+import { FILTER_CHANGE, ORDER_CHANGE } from './constants'
 
-const StyledSelectInput = styled(SelectInput)(typography.font({ size: 14 }), {
-  [MEDIA_QUERIES.LARGESCREEN]: {
-    width: 'auto',
-  },
+const StyledSelectInput = styled(SelectInput)({
+  [MEDIA_QUERIES.LARGESCREEN]: { width: 'auto' },
 })
 
-const StyledLabelText = styled(LabelText)(typography.font({ size: 14 }))
+const StyledInput = styled(Input)({
+  width: 200,
+  marginRight: SPACING.SCALE_6,
+})
 
 const StyledContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 `
 
-const StyledSearch = styled.input`
-  margin-right: ${SPACING.SCALE_2};
-  padding-right: ${SPACING.SCALE_1};
-  padding-left: ${SPACING.SCALE_1};
-`
+const StyledLabel = styled(Label)({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'baseline',
+})
+
+const StyledLabelText = styled(LabelText)({
+  marginRight: SPACING.SCALE_2,
+})
+
+const InlineLabel = ({ text, children }) => (
+  <StyledLabel>
+    <StyledLabelText>{text}</StyledLabelText>
+    {children}
+  </StyledLabel>
+)
+
+InlineLabel.propTypes = {
+  text: PropTypes.string.isRequired,
+  children: PropTypes.node,
+}
+
+InlineLabel.defaultProps = {
+  children: null,
+}
 
 function MyCompaniesFilters() {
-  const { state, dispatch } = useMyCompaniesContext()
-  const inputEl = useRef()
-
-  const handleSelectChange = (e) => {
-    dispatch({ type: ACTIONS.SORT_BY, sortType: e.target.value })
-  }
-
-  const handleInputChange = (e) => {
-    dispatch({ type: ACTIONS.FILTER_BY, filterText: e.target.value })
-  }
+  const { dispatch } = useMyCompaniesContext()
 
   return (
     <StyledContainer>
-      <StyledSearch
-        type="text"
-        placeholder="Search list"
-        onChange={handleInputChange}
-        value={state.filterText}
-        ref={inputEl}
-      />
-      <StyledLabelText>
-        Sort By:{' '}
-        <StyledSelectInput onChange={handleSelectChange} value={state.sortType}>
+      <InlineLabel text="Search this list">
+        <StyledInput
+          placeholder="Company name"
+          onChange={(e) =>
+            dispatch({ type: FILTER_CHANGE, filter: e.target.value })
+          }
+        />
+      </InlineLabel>
+      <InlineLabel text="Sort by">
+        <StyledSelectInput
+          onChange={(e) =>
+            dispatch({ type: ORDER_CHANGE, sortBy: e.target.value })
+          }
+        >
           <option value="recent">Recent interaction</option>
           <option value="least-recent">Least recent interaction</option>
           <option value="alphabetical">Company name A-Z</option>
         </StyledSelectInput>
-      </StyledLabelText>
+      </InlineLabel>
     </StyledContainer>
   )
 }

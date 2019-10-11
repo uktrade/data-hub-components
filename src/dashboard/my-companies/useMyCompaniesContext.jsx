@@ -1,30 +1,7 @@
+import { orderBy, pick } from 'lodash'
 import { useReducer } from 'react'
-
-import orderBy from 'lodash/orderBy'
-
 import createUseContext from 'constate'
-import ACTIONS from './constants'
-
-const element = document.querySelector('#react-mount-my-companies')
-
-export const getModel = (el = null) => (el ? JSON.parse(el.dataset.model) : [])
-
-export function getSortedCompanies(companies, sortType) {
-  const sort = {
-    recent: orderBy(
-      companies,
-      [(c) => c.latestInteraction.date || ''],
-      ['desc']
-    ),
-    'least-recent': orderBy(
-      companies,
-      [(c) => c.latestInteraction.date || ''],
-      ['asc']
-    ),
-    alphabetical: orderBy(companies, [(c) => c.company.name], ['asc']),
-  }
-  return sort[sortType]
-}
+import { FILTER_CHANGE, LIST_CHANGE, ORDER_CHANGE } from './constants'
 
 export const filterCompanyName = (companies, filterText) =>
   filterText.length
@@ -33,45 +10,46 @@ export const filterCompanyName = (companies, filterText) =>
       )
     : companies
 
-export function reducer(state, action) {
-  switch (action.type) {
-    case ACTIONS.SORT_BY:
-      return {
-        ...state,
-        companies: getSortedCompanies(state.companies, action.sortType),
-        sortType: action.sortType,
-      }
-    case ACTIONS.FILTER_BY:
-      return {
-        ...state,
-        filterText: action.filterText,
-        companies: getSortedCompanies(
-          filterCompanyName(state.companiesInitial, action.filterText),
-          state.sortType
-        ),
-      }
+const defaultState = {
+  lists: [],
+  selectedIdx: 0,
+  sortBy: 'recent',
+  filter: '',
+}
+
+export const reducer = (state, { type, ...action }) => {
+  switch (type) {
+    case LIST_CHANGE:
+      return { ...state, selectedIdx: action.idx }
+    case FILTER_CHANGE:
+      return { ...state, filter: action.filter }
+    case ORDER_CHANGE:
+      return { ...state, sortBy: action.sortBy }
     default:
       return state
   }
 }
 
-const initialState = {
-  companiesInitial: getModel(element),
-  companies: getModel(element),
-  sortType: 'recent',
-  filterText: '',
-}
-
+// We are unpacking children here just to remove them from initialState.
 const useMyCompaniesContext = createUseContext(
-  ({ mockProps = {}, mockInitialState = {} }) => {
+  ({ children, editListsLinkProps, ...rest }) => {
+    const initialState = pick(rest, [
+      'lists',
+      'selectedIdx',
+      'sortBy',
+      'filter',
+    ])
     const [state, dispatch] = useReducer(reducer, {
+      ...defaultState,
       ...initialState,
-      ...mockInitialState,
+      // Reducer assumes the list of company lists is sorted.
+      lists: orderBy(initialState.lists, 'name'),
     })
+
     return {
       state,
       dispatch,
-      ...mockProps,
+      editListsLinkProps,
     }
   }
 )

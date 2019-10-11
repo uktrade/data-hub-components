@@ -1,3 +1,5 @@
+import { orderBy } from 'lodash'
+import moment from 'moment'
 import React from 'react'
 import styled from 'styled-components'
 import LinesEllipsis from 'react-lines-ellipsis'
@@ -7,6 +9,7 @@ import Link from '@govuk-react/link'
 import { GREY_1 } from 'govuk-colours'
 import { MEDIA_QUERIES } from '@govuk-react/constants'
 import useMyCompaniesContext from './useMyCompaniesContext'
+import Filters from './MyCompaniesFilters'
 
 const StyledCellHeader = styled(Table.CellHeader)(
   typography.font({ size: 14, weight: 'bold' }),
@@ -23,8 +26,40 @@ const StyledDateCell = styled(Table.Cell)(typography.font({ size: 14 }), {
   'text-align': 'center',
 })
 
+function sortCompanies(companies, sortType) {
+  const sort = {
+    recent: orderBy(
+      companies,
+      [(c) => c.latestInteraction.date || ''],
+      ['desc']
+    ),
+    'least-recent': orderBy(
+      companies,
+      [(c) => c.latestInteraction.date || ''],
+      ['asc']
+    ),
+    alphabetical: orderBy(companies, [(c) => c.company.name], ['asc']),
+  }
+  return sort[sortType]
+}
+
+const filterCompanyName = (companies, filterText) =>
+  filterText.length
+    ? companies.filter((c) =>
+        c.company.name.toLowerCase().includes(filterText.toLowerCase())
+      )
+    : companies
+
 function MyCompaniesTable() {
-  const { state } = useMyCompaniesContext()
+  const {
+    state: { lists, selectedIdx, sortBy, filter },
+  } = useMyCompaniesContext()
+  const list = lists[selectedIdx]
+  const filteredSortedCompanies = sortCompanies(
+    filterCompanyName(list.companies, filter),
+    sortBy
+  )
+
   const header = (
     <Table.Row>
       <StyledCellHeader>Company name</StyledCellHeader>
@@ -33,7 +68,7 @@ function MyCompaniesTable() {
     </Table.Row>
   )
 
-  const rows = state.companies.map(({ company, latestInteraction }) => {
+  const rows = filteredSortedCompanies.map(({ company, latestInteraction }) => {
     return (
       <Table.Row key={company.id}>
         <Table.Cell>
@@ -47,7 +82,11 @@ function MyCompaniesTable() {
             />
           </Link>
         </Table.Cell>
-        <StyledDateCell>{latestInteraction.displayDate}</StyledDateCell>
+        <StyledDateCell>
+          {latestInteraction.date
+            ? moment(latestInteraction.date).format('D MMM YYYY')
+            : '-'}
+        </StyledDateCell>
         <Table.Cell>
           {latestInteraction.id ? (
             <Link href={`interactions/${latestInteraction.id}`}>
@@ -66,7 +105,13 @@ function MyCompaniesTable() {
       </Table.Row>
     )
   })
-  return <Table head={header}>{rows}</Table>
+
+  return (
+    <>
+      {list.companies.length > 1 && <Filters />}
+      <Table head={header}>{rows}</Table>
+    </>
+  )
 }
 
 export default MyCompaniesTable

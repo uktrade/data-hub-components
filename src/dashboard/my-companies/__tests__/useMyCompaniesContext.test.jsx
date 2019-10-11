@@ -1,164 +1,21 @@
+import { orderBy } from 'lodash'
 import React from 'react'
 import { mount } from 'enzyme'
 import useMyCompaniesContext, {
-  getSortedCompanies,
   reducer,
   filterCompanyName,
-  getModel,
 } from '../useMyCompaniesContext'
 import companies from '../../__fixtures__/companies'
+import { LIST_CHANGE, FILTER_CHANGE, ORDER_CHANGE } from '../constants'
+
+const initialState = {
+  lists: [{ name: 'Foo' }, { name: 'Bar' }, { name: 'Baz' }],
+  selectedIdx: 0,
+  sortBy: 'alphabetical',
+  filter: 'foobarbaz',
+}
 
 describe('Store', () => {
-  describe('getModel()', () => {
-    test('returns empty array if no element has been passed in', () => {
-      expect(getModel()).toEqual([])
-    })
-    test('returns data attribute as a JS object if element has been passed', () => {
-      const ele = document.createElement('div')
-      ele.dataset.model = '{"foo":"bar"}'
-      expect(getModel(ele)).toEqual({ foo: 'bar' })
-    })
-  })
-  describe('getSortedCompanies()', () => {
-    test('sort by recent', () => {
-      const expected = [
-        {
-          company: {
-            name: 'A1 BMW LTD!!!!!',
-            id: 'a1138c1c-d449-4846-aa58-18fae7e1cb92',
-            isArchived: false,
-          },
-          latestInteraction: {
-            id: '79d92719-7402-45b6-b3d7-eff559d6b282',
-            date: '2019-08-14',
-            displayDate: '14 Aug 19',
-            subject:
-              'Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished',
-          },
-        },
-        {
-          company: {
-            name: 'Zebra clothing',
-            id: 'b89b1db3-7140-44ca-ad7a-9824c3c2gh74',
-            isArchived: false,
-          },
-          latestInteraction: {
-            id: '86f92719-7402-45b6-b3d7-eff559d6b678',
-            displayDate: '21 Feb 2019',
-            date: '2019-02-21',
-            subject:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-          },
-        },
-        {
-          company: {
-            name: 'Portable Potatoes',
-            id: 'a30b1db3-7140-44ca-ad7a-9824c3c2ed56',
-            isArchived: false,
-          },
-          latestInteraction: {
-            displayDate: '-',
-            date: null,
-            subject: 'No interactions have been recorded',
-          },
-        },
-      ]
-      const recent = getSortedCompanies(companies, 'recent')
-      expect(recent).toEqual(expected)
-    })
-    test('sort by least recent', () => {
-      const expected = [
-        {
-          company: {
-            name: 'Portable Potatoes',
-            id: 'a30b1db3-7140-44ca-ad7a-9824c3c2ed56',
-            isArchived: false,
-          },
-          latestInteraction: {
-            displayDate: '-',
-            date: null,
-            subject: 'No interactions have been recorded',
-          },
-        },
-        {
-          company: {
-            name: 'Zebra clothing',
-            id: 'b89b1db3-7140-44ca-ad7a-9824c3c2gh74',
-            isArchived: false,
-          },
-          latestInteraction: {
-            id: '86f92719-7402-45b6-b3d7-eff559d6b678',
-            displayDate: '21 Feb 2019',
-            date: '2019-02-21',
-            subject:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-          },
-        },
-        {
-          company: {
-            name: 'A1 BMW LTD!!!!!',
-            id: 'a1138c1c-d449-4846-aa58-18fae7e1cb92',
-            isArchived: false,
-          },
-          latestInteraction: {
-            id: '79d92719-7402-45b6-b3d7-eff559d6b282',
-            date: '2019-08-14',
-            displayDate: '14 Aug 19',
-            subject:
-              'Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished',
-          },
-        },
-      ]
-      const leastRecent = getSortedCompanies(companies, 'least-recent')
-      expect(leastRecent).toEqual(expected)
-    })
-    test('sort by alphabetical', () => {
-      const expected = [
-        {
-          company: {
-            name: 'A1 BMW LTD!!!!!',
-            id: 'a1138c1c-d449-4846-aa58-18fae7e1cb92',
-            isArchived: false,
-          },
-          latestInteraction: {
-            id: '79d92719-7402-45b6-b3d7-eff559d6b282',
-            date: '2019-08-14',
-            displayDate: '14 Aug 19',
-            subject:
-              'Here is a long interaction title some more text some more text some more text almost finished some more text nearly there more text finished',
-          },
-        },
-        {
-          company: {
-            name: 'Portable Potatoes',
-            id: 'a30b1db3-7140-44ca-ad7a-9824c3c2ed56',
-            isArchived: false,
-          },
-          latestInteraction: {
-            displayDate: '-',
-            date: null,
-            subject: 'No interactions have been recorded',
-          },
-        },
-        {
-          company: {
-            name: 'Zebra clothing',
-            id: 'b89b1db3-7140-44ca-ad7a-9824c3c2gh74',
-            isArchived: false,
-          },
-          latestInteraction: {
-            id: '86f92719-7402-45b6-b3d7-eff559d6b678',
-            displayDate: '21 Feb 2019',
-            date: '2019-02-21',
-            subject:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-          },
-        },
-      ]
-      const alphabetical = getSortedCompanies(companies, 'alphabetical')
-      expect(alphabetical).toEqual(expected)
-    })
-  })
   describe('filterCompanyName()', () => {
     test('Filters list of companies by name', () => {
       const expected = [
@@ -169,7 +26,6 @@ describe('Store', () => {
             isArchived: false,
           },
           latestInteraction: {
-            displayDate: '-',
             date: null,
             subject: 'No interactions have been recorded',
           },
@@ -183,31 +39,109 @@ describe('Store', () => {
       expect(recent).toEqual(companies)
     })
   })
+
   describe('reducer()', () => {
-    test('sortBy', () => {
-      const action = { type: 'sortBy', sortType: 'recent' }
-      const reduceWithSortByRecent = reducer(companies, action)
-      expect(reduceWithSortByRecent.sortType).toEqual('recent')
+    test('List change', () => {
+      expect(
+        reducer(initialState, {
+          type: LIST_CHANGE,
+          idx: 1,
+        })
+      ).toEqual({ ...initialState, selectedIdx: 1 })
+      expect(
+        reducer(initialState, {
+          type: LIST_CHANGE,
+          idx: 2,
+        })
+      ).toEqual({ ...initialState, selectedIdx: 2 })
+      expect(
+        reducer(initialState, {
+          type: LIST_CHANGE,
+          idx: 0,
+        })
+      ).toEqual({ ...initialState, selectedIdx: 0 })
     })
-    test('filterBy', () => {
-      const action = { type: 'filterBy', filterText: 'abc' }
-      const reduceWithFilterByRecent = reducer(
-        { companiesInitial: companies },
-        action
-      )
-      expect(reduceWithFilterByRecent.filterText).toEqual('abc')
+
+    test('Order by change', () => {
+      expect(
+        reducer(initialState, {
+          type: ORDER_CHANGE,
+          sortBy: 'recent',
+        })
+      ).toEqual({ ...initialState, sortBy: 'recent' })
+      expect(
+        reducer(initialState, {
+          type: ORDER_CHANGE,
+          sortBy: 'least-recent',
+        })
+      ).toEqual({ ...initialState, sortBy: 'least-recent' })
+      expect(
+        reducer(initialState, {
+          type: ORDER_CHANGE,
+          sortBy: 'alphabetical',
+        })
+      ).toEqual({ ...initialState, sortBy: 'alphabetical' })
     })
-    test('No action type so return original state', () => {
-      const action = { type: '', filterText: 'abc' }
-      const reduceWithNoAction = reducer(companies, action)
-      expect(reduceWithNoAction).toEqual(companies)
+
+    test('Filter change', () => {
+      expect(
+        reducer(initialState, {
+          type: FILTER_CHANGE,
+          filter: 'foo',
+        })
+      ).toEqual({ ...initialState, filter: 'foo' })
+      expect(
+        reducer(initialState, {
+          type: FILTER_CHANGE,
+          filter: 'bar',
+        })
+      ).toEqual({ ...initialState, filter: 'bar' })
+      expect(
+        reducer(initialState, {
+          type: FILTER_CHANGE,
+          filter: '',
+        })
+      ).toEqual({ ...initialState, filter: '' })
     })
   })
 
   describe('useMyCompaniesContext()', () => {
-    test('Provider matches snapshot', () => {
-      const wrapper = mount(<useMyCompaniesContext.Provider />)
-      expect(wrapper).toMatchSnapshot()
+    test('Default state', () => {
+      let actual
+      const Mock = () => {
+        const { state } = useMyCompaniesContext()
+        actual = state
+        return null
+      }
+      mount(
+        <useMyCompaniesContext.Provider>
+          <Mock />
+        </useMyCompaniesContext.Provider>
+      )
+      expect(actual).toEqual({
+        lists: [],
+        filter: '',
+        sortBy: 'recent',
+        selectedIdx: 0,
+      })
+    })
+
+    test('Provided state', () => {
+      let actual
+      const Mock = () => {
+        const { state } = useMyCompaniesContext()
+        actual = state
+        return null
+      }
+      mount(
+        <useMyCompaniesContext.Provider {...initialState}>
+          <Mock />
+        </useMyCompaniesContext.Provider>
+      )
+      expect(actual).toEqual({
+        ...initialState,
+        lists: orderBy(initialState.lists, 'name'),
+      })
     })
   })
 })
