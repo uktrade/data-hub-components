@@ -5,6 +5,7 @@ import { mount } from 'enzyme'
 import Details from '@govuk-react/details'
 
 import Checkbox from '@govuk-react/checkbox'
+import Select from '@govuk-react/select'
 import ActivityFeed from '../ActivityFeed'
 import interactionActivityFixture from '../__fixtures__/interactions/interaction'
 
@@ -125,6 +126,40 @@ describe('ActivityFeed', () => {
       test('should close details for all cards', () => {
         const openDetails = wrapper.find(Details).map((d) => d.prop('open'))
         expect(openDetails).not.toContainEqual(true)
+      })
+    })
+  })
+
+  describe('when the Activity Feed has activity type filters', () => {
+    let wrapper
+
+    beforeAll(() => {
+      wrapper = mount(
+        <ActivityFeed
+          totalActivities={1}
+          activities={[interactionActivityFixture]}
+        />
+      )
+    })
+
+    test('should display the dropdown in the default state, showing all activity', () => {
+      expect(
+        wrapper
+          .render()
+          .find('select')
+          .val()
+      ).toEqual('all')
+    })
+
+    describe('when the dropdown is changed', () => {
+      beforeAll(() => {
+        wrapper.find('select').simulate('change', {
+          target: { value: 'hello,hello' },
+        })
+      })
+
+      test('should display the dropdown with the selected value', () => {
+        expect(wrapper.find(Select).prop('value')).toEqual(['hello', 'hello'])
       })
     })
   })

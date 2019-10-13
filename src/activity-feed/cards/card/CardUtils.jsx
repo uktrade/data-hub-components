@@ -50,15 +50,6 @@ export default class CardUtils {
     return some(types, (type) => includes(activityTypes, type))
   }
 
-  static transform(activity) {
-    return {
-      url: get(activity, 'object.url'),
-      subject: get(activity, 'object.dit:subject'),
-      service: get(activity, 'object.dit:service.name'),
-      startTime: get(activity, 'object.startTime'),
-    }
-  }
-
   static getAdvisers(activity) {
     return getAdvisers(activity)
   }
@@ -75,5 +66,14 @@ export default class CardUtils {
     }
 
     return adviser.name && adviser.emailAddress ? adviser : null
+  }
+
+  static transform(activity) {
+    return {
+      url: get(activity, 'object.url'),
+      subject: get(activity, 'object.dit:subject'),
+      service: get(activity, 'object.dit:service.name'),
+      startTime: get(activity, 'object.startTime'),
+    }
   }
 }

@@ -1,10 +1,10 @@
-import Select from '@govuk-react/select'
 import React from 'react'
 import styled from 'styled-components'
 import { MEDIA_QUERIES, SPACING } from '@govuk-react/constants'
-import { GREY_2, GREY_3, GREY_4 } from 'govuk-colours'
+import { GREY_2, GREY_3 } from 'govuk-colours'
 import Checkbox from '@govuk-react/checkbox'
 import PropTypes from 'prop-types'
+import SelectFilter from './SelectFilter'
 
 const StyledBasicFiltersContainer = styled('div')`
   padding: ${SPACING.SCALE_2};
@@ -30,44 +30,6 @@ const StyledHr = styled('hr')`
   margin: ${SPACING.SCALE_2} 0;
   border-style: double;
   border-color: ${GREY_2};
-`
-
-const StyledDropdownContainer = styled('div')`
-  background: ${GREY_4};
-  padding: ${SPACING.SCALE_1}
-  display: block;
-  
-  ${MEDIA_QUERIES.DESKTOP} {
-    display: inline-flex;
-  }
-  
-  label {
-    display: block;
-    
-    ${MEDIA_QUERIES.DESKTOP} {
-      display: inline-block;
-    }
-    
-    span {
-      display: inline-block;
-      margin: 0 ${SPACING.SCALE_2}
-      width: auto;
-      margin: 0;
-
-      
-      ${MEDIA_QUERIES.DESKTOP} {
-        margin: 0 10px;
-      }
-    }
-    
-    select {
-      width: 100%;
-      
-      ${MEDIA_QUERIES.DESKTOP} {
-        width: auto;
-      }
-    }
-  } 
 `
 
 const StyledCheckbox = styled(Checkbox)`
@@ -103,27 +65,32 @@ const StyledCheckbox = styled(Checkbox)`
 
 export default class BasicActivityTypeFilter extends React.PureComponent {
   static propTypes = {
+    activityTypeFilters: PropTypes.array.isRequired,
+    filteredActivity: PropTypes.array.isRequired,
+    onActivityTypeFilterChange: PropTypes.func.isRequired,
     onShowDetailsClick: PropTypes.func.isRequired,
     showDetails: PropTypes.bool.isRequired,
   }
 
   render() {
-    const { onShowDetailsClick, showDetails } = this.props
+    const {
+      activityTypeFilters,
+      filteredActivity,
+      onActivityTypeFilterChange,
+      onShowDetailsClick,
+      showDetails,
+    } = this.props
 
     return (
       <StyledBasicFiltersContainer>
         <StyledActivityFeedFilterTitle>
           <StyledTitle>Filter by</StyledTitle>
         </StyledActivityFeedFilterTitle>
-        <StyledDropdownContainer>
-          <Select name="activity-types-filter" label="Activity types">
-            <option value="All Data Hub & external activity">
-              All Data Hub & external activity
-            </option>
-            <option value="All Data Hub activity">All Data Hub activity</option>
-            <option value="All external activity">All external activity</option>
-          </Select>
-        </StyledDropdownContainer>
+        <SelectFilter
+          filters={activityTypeFilters}
+          onActivityTypeFilterChange={onActivityTypeFilterChange}
+          value={filteredActivity}
+        />
         <StyledHr />
         <StyledCheckbox onChange={onShowDetailsClick} checked={showDetails}>
           Show details for all activities

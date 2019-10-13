@@ -1,18 +1,20 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import ActivityFeedFilters from '../ActivityFeedFilters'
+import BasicActivityTypeFilter from '../BasicActivityTypeFilter'
 
-describe('ActivityFeedFilters', () => {
+describe('BasicActivityTypeFilter', () => {
   describe('when the details for all activities are hidden', () => {
     test('renders filters', () => {
       const tree = renderer
         .create(
-          <ActivityFeedFilters
+          <BasicActivityTypeFilter
             activityTypeFilters={[]}
-            isActivityTypeFilterEnabled={false}
+            filteredActivity={[]}
+            onActivityTypeFilterChange={() => {}}
             onShowDetailsClick={() => {}}
             showDetails={false}
+            value={[]}
           />
         )
         .toJSON()
