@@ -4,6 +4,9 @@ import styled from 'styled-components'
 import { SPACING, MEDIA_QUERIES, FONT_SIZE } from '@govuk-react/constants'
 import { GREY_4, LINK_COLOUR, GREY_3, TEXT_COLOUR, GREY_1 } from 'govuk-colours'
 
+import truncatePages from './truncatePages'
+import getNumberParam from './getNumberParam'
+
 const StyledNav = styled('nav')`
   text-align: center;
   line-height: 1;
@@ -26,9 +29,8 @@ const StyledAnchor = styled('a')`
   color: ${LINK_COLOUR};
   text-decoration: none;
 
-    :hover {
-      background-color: ${GREY_3};
-    }
+  :hover {
+    background-color: ${GREY_3};
   }
 `
 
@@ -75,16 +77,31 @@ const StyledSpan = styled('span')`
 
 function CollectionPagination({
   totalPages,
-  currentPage,
   previous,
   next,
-  pages,
+  apiEndpoint,
+  pageLimit,
 }) {
+  const currentPage = next
+    ? getNumberParam(next, 'offset=', '&') / pageLimit
+    : totalPages
+
+  const untruncatedPages = []
+
+  for (let page = 1; page <= totalPages; page += 1) {
+    untruncatedPages.push({
+      label: page,
+      url: `${apiEndpoint}&offset=${page * pageLimit}`,
+    })
+  }
+
+  const pages = truncatePages(untruncatedPages, currentPage)
+
   function getPage(page, current) {
     if (!page.url) {
       return <StyledSpan>{page.label}</StyledSpan>
     }
-    if (page.label === String(current)) {
+    if (page.label === current) {
       return <StyledCurrentAnchor>{page.label}</StyledCurrentAnchor>
     }
     return <StyledAnchor href={page.url}>{page.label}</StyledAnchor>
@@ -95,7 +112,9 @@ function CollectionPagination({
       {previous && <StyledPrevious href={previous}>Previous</StyledPrevious>}
       <StyledList>
         {pages.map((page) => (
-          <StyledListItem>{getPage(page, currentPage)}</StyledListItem>
+          <StyledListItem key={page.label}>
+            {getPage(page, currentPage)}
+          </StyledListItem>
         ))}
       </StyledList>
       {next && <StyledNext href={next}>Next</StyledNext>}
@@ -105,16 +124,15 @@ function CollectionPagination({
 
 CollectionPagination.propTypes = {
   totalPages: PropTypes.number.isRequired,
-  currentPage: PropTypes.number.isRequired,
   previous: PropTypes.string,
   next: PropTypes.string,
-  pages: PropTypes.array,
+  apiEndpoint: PropTypes.string.isRequired,
+  pageLimit: PropTypes.number.isRequired,
 }
 
 CollectionPagination.defaultProps = {
   previous: null,
   next: null,
-  pages: null,
 }
 
 export default CollectionPagination

@@ -18,15 +18,15 @@ function CollectionItem({ headingUrl, headingText, badges, metadata }) {
         {badges && (
           <ItemBadgeWrapper>
             {badges.map((text) => (
-              <ItemBadge>{text}</ItemBadge>
+              <ItemBadge key={text}>{text}</ItemBadge>
             ))}
           </ItemBadgeWrapper>
         )}
       </CardHeader>
       {metadata && (
         <ItemMetaWrapper>
-          {metadata.map((data) => (
-            <ItemMeta label={data.label} value={data.value} />
+          {metadata.map(({ label, value }) => (
+            <ItemMeta key={label} label={label} value={value} />
           ))}
         </ItemMetaWrapper>
       )}

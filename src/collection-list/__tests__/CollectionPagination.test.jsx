@@ -6,15 +6,15 @@ import paginationProps from '../__fixtures__/paginationProps'
 describe('CollectionPagination', () => {
   let wrapper
 
-  describe('when 7 pages are passed', () => {
+  describe('when 7 pages are passed and the current page is 3', () => {
     beforeAll(() => {
       wrapper = mount(
         <CollectionPagination
           totalPages={paginationProps.totalPages}
-          currentPage={paginationProps.currentPage}
           previous={paginationProps.previous}
           next={paginationProps.next}
-          pages={paginationProps.pages}
+          apiEndpoint={paginationProps.apiEndpoint}
+          pageLimit={paginationProps.pageLimit}
         />
       )
     })
@@ -45,8 +45,12 @@ describe('CollectionPagination', () => {
       expect(wrapper.find('li')).toHaveLength(6)
     })
 
+    test('should render the truncated page link', () => {
+      expect(wrapper.find('li span')).toHaveLength(1)
+    })
+
     test('should render the current page link without href', () => {
-      expect(wrapper.find("a[href='#']")).toHaveLength(6)
+      expect(wrapper.find('a').every('[href]')).toBe(false)
     })
   })
 
@@ -55,23 +59,10 @@ describe('CollectionPagination', () => {
       wrapper = mount(
         <CollectionPagination
           totalPages={3}
-          currentPage={2}
-          previous="#"
-          next="#"
-          pages={[
-            {
-              label: '1',
-              url: '#',
-            },
-            {
-              label: '2',
-              url: '#',
-            },
-            {
-              label: '3',
-              url: '#',
-            },
-          ]}
+          previous="http://localhost:8000/v4/large-investor-profile?limit=10"
+          next="http://localhost:8000/v4/large-investor-profile?limit=10&offset=20"
+          apiEndpoint="http://localhost:8000/v4/large-investor-profile?limit=10"
+          pageLimit={10}
         />
       )
     })
@@ -103,7 +94,7 @@ describe('CollectionPagination', () => {
     })
 
     test('should render the current page link without href', () => {
-      expect(wrapper.find("a[href='#']")).toHaveLength(4)
+      expect(wrapper.find('a').every('[href]')).toBe(false)
     })
   })
 
@@ -112,15 +103,10 @@ describe('CollectionPagination', () => {
       wrapper = mount(
         <CollectionPagination
           totalPages={1}
-          currentPage={1}
           previous={null}
           next={null}
-          pages={[
-            {
-              label: '1',
-              url: '#',
-            },
-          ]}
+          apiEndpoint="http://localhost:8000/v4/large-investor-profile?limit=10"
+          pageLimit={10}
         />
       )
     })
@@ -135,19 +121,10 @@ describe('CollectionPagination', () => {
       wrapper = mount(
         <CollectionPagination
           totalPages={2}
-          currentPage={1}
           previous={null}
-          next="#"
-          pages={[
-            {
-              label: '1',
-              url: '#',
-            },
-            {
-              label: '2',
-              url: '#',
-            },
-          ]}
+          next="http://localhost:8000/v4/large-investor-profile?limit=10&offset=10"
+          apiEndpoint="http://localhost:8000/v4/large-investor-profile?limit=10"
+          pageLimit={10}
         />
       )
     })
@@ -175,19 +152,10 @@ describe('CollectionPagination', () => {
       wrapper = mount(
         <CollectionPagination
           totalPages={2}
-          currentPage={2}
-          previous="#"
+          previous="http://localhost:8000/v4/large-investor-profile?limit=10"
           next={null}
-          pages={[
-            {
-              label: '1',
-              url: '#',
-            },
-            {
-              label: '2',
-              url: '#',
-            },
-          ]}
+          apiEndpoint="http://localhost:8000/v4/large-investor-profile?limit=10"
+          pageLimit={10}
         />
       )
     })
@@ -207,6 +175,102 @@ describe('CollectionPagination', () => {
           .first()
           .text()
       ).toBe('Previous')
+    })
+  })
+
+  describe('when 1000 pages are passed and the current page is 99', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <CollectionPagination
+          totalPages={1000}
+          previous="http://localhost:8000/v4/large-investor-profile?limit=10&offset=980"
+          next="http://localhost:8000/v4/large-investor-profile?limit=10&offset=990"
+          apiEndpoint="http://localhost:8000/v4/large-investor-profile?limit=10"
+          pageLimit={10}
+        />
+      )
+    })
+
+    test('should render the component', () => {
+      expect(wrapper.find(CollectionPagination).exists()).toBe(true)
+    })
+
+    test('should render the previous button', () => {
+      expect(
+        wrapper
+          .find('a')
+          .first()
+          .text()
+      ).toBe('Previous')
+    })
+
+    test('should render the next button', () => {
+      expect(
+        wrapper
+          .find('a')
+          .last()
+          .text()
+      ).toBe('Next')
+    })
+
+    test('should render all the page links (including two truncated ones)', () => {
+      expect(wrapper.find('li')).toHaveLength(8)
+    })
+
+    test('should render two truncated page links', () => {
+      expect(wrapper.find('li span')).toHaveLength(2)
+    })
+
+    test('should render the current page link without href', () => {
+      expect(wrapper.find('a').every('[href]')).toBe(false)
+    })
+  })
+
+  describe('when 1000 pages are passed and the current page is 999', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <CollectionPagination
+          totalPages={1000}
+          previous="http://localhost:8000/v4/large-investor-profile?limit=10&offset=9980"
+          next="http://localhost:8000/v4/large-investor-profile?limit=10&offset=9990"
+          apiEndpoint="http://localhost:8000/v4/large-investor-profile?limit=10"
+          pageLimit={10}
+        />
+      )
+    })
+
+    test('should render the component', () => {
+      expect(wrapper.find(CollectionPagination).exists()).toBe(true)
+    })
+
+    test('should render the previous button', () => {
+      expect(
+        wrapper
+          .find('a')
+          .first()
+          .text()
+      ).toBe('Previous')
+    })
+
+    test('should render the next button', () => {
+      expect(
+        wrapper
+          .find('a')
+          .last()
+          .text()
+      ).toBe('Next')
+    })
+
+    test('should render all the page links', () => {
+      expect(wrapper.find('li')).toHaveLength(6)
+    })
+
+    test('should render one truncated page link', () => {
+      expect(wrapper.find('li span')).toHaveLength(1)
+    })
+
+    test('should render the current page link without href', () => {
+      expect(wrapper.find('a').every('[href]')).toBe(false)
     })
   })
 })
