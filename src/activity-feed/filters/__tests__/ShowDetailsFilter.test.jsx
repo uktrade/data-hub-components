@@ -1,32 +1,44 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
-import { shallow } from 'enzyme'
+import { mount, shallow } from 'enzyme'
 
 import ShowDetailsFilter from '../ShowDetailsFilter'
 
 describe('ShowDetailsFilter', () => {
+  let wrapper
+
   describe('when the details for all activities are hidden', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <ShowDetailsFilter onShowDetailsClick={() => {}} showDetails={false} />
+      )
+    })
+
     test('renders filters', () => {
-      const tree = renderer
-        .create(
-          <ShowDetailsFilter
-            onShowDetailsClick={() => {}}
-            showDetails={false}
-          />
-        )
-        .toJSON()
-      expect(tree).toMatchSnapshot()
+      expect(wrapper.find(ShowDetailsFilter).exists()).toBe(true)
     })
   })
 
   describe('when the details for all activities are shown', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <ShowDetailsFilter onShowDetailsClick={() => {}} showDetails={true} />
+      )
+    })
+
     test('renders filters', () => {
-      const tree = renderer
-        .create(
-          <ShowDetailsFilter onShowDetailsClick={() => {}} showDetails={true} />
-        )
-        .toJSON()
-      expect(tree).toMatchSnapshot()
+      expect(wrapper.find(ShowDetailsFilter).exists()).toBe(true)
+    })
+  })
+
+  describe('when the details for all activities are shown', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <ShowDetailsFilter onShowDetailsClick={() => {}} showDetails={true} />
+      )
+    })
+
+    test('renders filters', () => {
+      expect(wrapper.find(ShowDetailsFilter).exists()).toBe(true)
     })
   })
 
@@ -34,12 +46,13 @@ describe('ShowDetailsFilter', () => {
     const onShowDetailsClickMock = jest.fn()
 
     beforeEach(() => {
-      const wrapper = shallow(
+      wrapper = shallow(
         <ShowDetailsFilter
           onShowDetailsClick={onShowDetailsClickMock}
           showDetails={false}
         />
       )
+
       wrapper.find('Checkbox').simulate('change', {
         target: { checked: true },
       })
