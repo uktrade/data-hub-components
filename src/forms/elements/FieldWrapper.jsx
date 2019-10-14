@@ -88,7 +88,7 @@ const FieldWrapper = ({
   showBorder,
   children,
 }) => (
-  <FormGroup>
+  <FormGroup id={`field-${name}`}>
     <FieldInner legend={legend} error={error} showBorder={showBorder}>
       {label && (
         <StyledLabel error={error} htmlFor={name}>

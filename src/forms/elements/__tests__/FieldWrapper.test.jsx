@@ -23,6 +23,10 @@ describe('FieldWrapper', () => {
       expect(wrapper.text()).toContain('Test default')
     })
 
+    test('should set the ID', () => {
+      expect(wrapper.children().prop('id')).toEqual('field-testName')
+    })
+
     test('should not add a label', () => {
       expect(wrapper.find(Label).exists()).toBeFalsy()
     })
