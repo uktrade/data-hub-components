@@ -38,6 +38,7 @@ const FieldRadios = ({
                 checked={value === optionValue}
                 onChange={onChange}
                 onBlur={onBlur}
+                name={name}
                 {...optionProps}
               >
                 {optionLabel}

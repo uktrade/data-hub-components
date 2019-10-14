@@ -89,13 +89,18 @@ describe('FieldRadios', () => {
     })
 
     test('should render a label for each option', () => {
-      expect(radios.first().text()).toEqual('testOptionLabel1')
+      expect(radios.at(0).text()).toEqual('testOptionLabel1')
       expect(radios.at(1).text()).toEqual('testOptionLabel2')
     })
 
     test('should render a value for each option', () => {
-      expect(radios.first().prop('value')).toEqual('testOptionValue1')
+      expect(radios.at(0).prop('value')).toEqual('testOptionValue1')
       expect(radios.at(1).prop('value')).toEqual('testOptionValue2')
+    })
+
+    test('should render with a name attribute for each option', () => {
+      expect(radios.at(0).prop('name')).toEqual('testField')
+      expect(radios.at(1).prop('name')).toEqual('testField')
     })
   })
 
@@ -140,7 +145,7 @@ describe('FieldRadios', () => {
 
       wrapper
         .find('input')
-        .first()
+        .at(0)
         .simulate('change', {
           target: {
             checked: true,
@@ -157,7 +162,7 @@ describe('FieldRadios', () => {
       expect(
         wrapper
           .find('input')
-          .first()
+          .at(0)
           .prop('checked')
       ).toBeTruthy()
     })
