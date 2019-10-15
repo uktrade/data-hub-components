@@ -11,6 +11,10 @@ export const ACTIVITY_TYPE = {
   Omis: ['dit:OMISOrder'],
 }
 
+/**
+ * To disable the Basic Activity Type filter, just return an empty array
+ * ACTIVITY_TYPE_FILTERS = []
+ */
 export const ACTIVITY_TYPE_FILTERS = [
   {
     label: 'All Data Hub & external activity',
