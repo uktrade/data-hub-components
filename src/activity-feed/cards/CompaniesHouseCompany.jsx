@@ -72,7 +72,7 @@ export default class CompaniesHouseCompany extends React.PureComponent {
           <CardHeading
             blockText="Companies House"
             sourceType={SOURCE_TYPES.external}
-            subHeading="Company records show that"
+            subHeading="Company records"
             summary={summary}
           />
           <CardMeta startTime={startTime} />

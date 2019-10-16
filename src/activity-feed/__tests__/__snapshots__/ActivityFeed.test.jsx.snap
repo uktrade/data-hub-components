@@ -79,57 +79,6 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
   opacity: 0;
 }
 
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  box-sizing: border-box;
-  margin-bottom: 0;
-}
-
-.c9:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.c10 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  display: block;
-  clear: none;
-  padding-bottom: 2px;
-  margin-bottom: 0;
-}
-
-.c11 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  box-sizing: border-box;
-  width: 100%;
-  height: 33px;
-  padding: 5px 4px 4px;
-  border: 2px solid #0b0c0c;
-}
-
-.c11:focus {
-  outline: 3px solid #ffbf47;
-  outline-offset: 0;
-}
-
 .c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
@@ -269,6 +218,57 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
 
 .c4 > button {
   margin-bottom: 0;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.c9:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  display: block;
+  clear: none;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+}
+
+.c11 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  box-sizing: border-box;
+  width: 100%;
+  height: 33px;
+  padding: 5px 4px 4px;
+  border: 2px solid #0b0c0c;
+}
+
+.c11:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
 }
 
 .c8 {
@@ -496,59 +496,6 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
   }
 }
 
-@media only screen and (min-width:641px) {
-  .c9 {
-    margin-bottom: 0;
-  }
-}
-
-@media print {
-  .c10 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c10 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c10 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c10 {
-    margin-bottom: 0;
-  }
-}
-
-@media print {
-  .c11 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c11 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c11 {
-    width: 50%;
-    height: 38px;
-  }
-}
-
 @media print {
   .c3 {
     color: #000;
@@ -614,6 +561,59 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  .c11 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c11 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c11 {
+    width: 50%;
+    height: 38px;
   }
 }
 
@@ -687,10 +687,8 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
     >
       <label
         className="c9"
-        defaultValue="all"
         name="activity-types-filter"
         onChange={[Function]}
-        value={Array []}
       >
         <span
           className="c10"
@@ -699,6 +697,7 @@ exports[`ActivityFeed when activities are being loaded should display a loader 1
         </span>
         <select
           className="c11"
+          defaultValue="dit:Interaction,dit:ServiceDelivery,dit:InvestmentProject,dit:OMISOrder"
         >
           <option
             value="all"
@@ -1055,6 +1054,55 @@ exports[`ActivityFeed when the activity feed has child elements should render th
   opacity: 0;
 }
 
+.c3 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.0416666666666667;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.c1 > div {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.c2 {
+  margin-top: 5px;
+}
+
+.c2 > h2 {
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.c4 {
+  text-align: right;
+}
+
+.c4 > button {
+  margin-bottom: 0;
+}
+
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1104,55 +1152,6 @@ exports[`ActivityFeed when the activity feed has child elements should render th
 .c11:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
-}
-
-.c3 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.0416666666666667;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  border-bottom: 2px solid #000;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-}
-
-.c1 > div {
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.c2 {
-  margin-top: 5px;
-}
-
-.c2 > h2 {
-  font-weight: normal;
-  font-size: 28px;
-  margin-bottom: 0;
-}
-
-.c4 {
-  text-align: right;
-}
-
-.c4 > button {
-  margin-bottom: 0;
 }
 
 .c8 {
@@ -1263,6 +1262,42 @@ exports[`ActivityFeed when the activity feed has child elements should render th
   }
 }
 
+@media print {
+  .c3 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c3 {
+    font-size: 24px;
+    line-height: 1.05;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c1 > div {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
 @media only screen and (min-width:641px) {
   .c9 {
     margin-bottom: 0;
@@ -1313,42 +1348,6 @@ exports[`ActivityFeed when the activity feed has child elements should render th
   .c11 {
     width: 50%;
     height: 38px;
-  }
-}
-
-@media print {
-  .c3 {
-    color: #000;
-  }
-}
-
-@media print {
-  .c3 {
-    font-size: 24px;
-    line-height: 1.05;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c3 {
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c3 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c1 > div {
-    width: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
   }
 }
 
@@ -1422,10 +1421,8 @@ exports[`ActivityFeed when the activity feed has child elements should render th
     >
       <label
         className="c9"
-        defaultValue="all"
         name="activity-types-filter"
         onChange={[Function]}
-        value={Array []}
       >
         <span
           className="c10"
@@ -1434,6 +1431,7 @@ exports[`ActivityFeed when the activity feed has child elements should render th
         </span>
         <select
           className="c11"
+          defaultValue="dit:Interaction,dit:ServiceDelivery,dit:InvestmentProject,dit:OMISOrder"
         >
           <option
             value="all"
@@ -1573,6 +1571,55 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
   opacity: 0;
 }
 
+.c3 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.0416666666666667;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.c1 > div {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.c2 {
+  margin-top: 5px;
+}
+
+.c2 > h2 {
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.c4 {
+  text-align: right;
+}
+
+.c4 > button {
+  margin-bottom: 0;
+}
+
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1622,55 +1669,6 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
 .c11:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
-}
-
-.c3 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.0416666666666667;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  border-bottom: 2px solid #000;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-}
-
-.c1 > div {
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.c2 {
-  margin-top: 5px;
-}
-
-.c2 > h2 {
-  font-weight: normal;
-  font-size: 28px;
-  margin-bottom: 0;
-}
-
-.c4 {
-  text-align: right;
-}
-
-.c4 > button {
-  margin-bottom: 0;
 }
 
 .c8 {
@@ -1781,6 +1779,42 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
   }
 }
 
+@media print {
+  .c3 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c3 {
+    font-size: 24px;
+    line-height: 1.05;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    font-size: 36px;
+    line-height: 1.1111111111111112;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c1 > div {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
 @media only screen and (min-width:641px) {
   .c9 {
     margin-bottom: 0;
@@ -1831,42 +1865,6 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
   .c11 {
     width: 50%;
     height: 38px;
-  }
-}
-
-@media print {
-  .c3 {
-    color: #000;
-  }
-}
-
-@media print {
-  .c3 {
-    font-size: 24px;
-    line-height: 1.05;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c3 {
-    font-size: 36px;
-    line-height: 1.1111111111111112;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c3 {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c1 > div {
-    width: 0;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
   }
 }
 
@@ -1940,10 +1938,8 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
     >
       <label
         className="c9"
-        defaultValue="all"
         name="activity-types-filter"
         onChange={[Function]}
-        value={Array []}
       >
         <span
           className="c10"
@@ -1952,6 +1948,7 @@ exports[`ActivityFeed when the feed is empty should render empty feed 1`] = `
         </span>
         <select
           className="c11"
+          defaultValue="dit:Interaction,dit:ServiceDelivery,dit:InvestmentProject,dit:OMISOrder"
         >
           <option
             value="all"
@@ -2173,57 +2170,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
   border-top-color: transparent;
   background: transparent;
   opacity: 0;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  box-sizing: border-box;
-  margin-bottom: 0;
-}
-
-.c9:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.c10 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  display: block;
-  clear: none;
-  padding-bottom: 2px;
-  margin-bottom: 0;
-}
-
-.c11 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  box-sizing: border-box;
-  width: 100%;
-  height: 33px;
-  padding: 5px 4px 4px;
-  border: 2px solid #0b0c0c;
-}
-
-.c11:focus {
-  outline: 3px solid #ffbf47;
-  outline-offset: 0;
 }
 
 .c18 {
@@ -2536,6 +2482,57 @@ exports[`ActivityFeed when there are more activities to load should render with 
   margin-bottom: 0;
 }
 
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.c9:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  display: block;
+  clear: none;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+}
+
+.c11 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  box-sizing: border-box;
+  width: 100%;
+  height: 33px;
+  padding: 5px 4px 4px;
+  border: 2px solid #0b0c0c;
+}
+
+.c11:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+}
+
 .c8 {
   background: #f8f8f8;
   padding: 5px;
@@ -2787,59 +2784,6 @@ exports[`ActivityFeed when there are more activities to load should render with 
   }
 }
 
-@media only screen and (min-width:641px) {
-  .c9 {
-    margin-bottom: 0;
-  }
-}
-
-@media print {
-  .c10 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c10 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c10 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c10 {
-    margin-bottom: 0;
-  }
-}
-
-@media print {
-  .c11 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c11 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c11 {
-    width: 50%;
-    height: 38px;
-  }
-}
-
 @media print {
   .c23 {
     font-family: sans-serif;
@@ -3011,6 +2955,59 @@ exports[`ActivityFeed when there are more activities to load should render with 
   }
 }
 
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  .c11 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c11 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c11 {
+    width: 50%;
+    height: 38px;
+  }
+}
+
 @media only screen and (min-width:769px) {
   .c8 {
     display: -webkit-inline-box;
@@ -3081,10 +3078,8 @@ exports[`ActivityFeed when there are more activities to load should render with 
     >
       <label
         className="c9"
-        defaultValue="all"
         name="activity-types-filter"
         onChange={[Function]}
-        value={Array []}
       >
         <span
           className="c10"
@@ -3093,6 +3088,7 @@ exports[`ActivityFeed when there are more activities to load should render with 
         </span>
         <select
           className="c11"
+          defaultValue="dit:Interaction,dit:ServiceDelivery,dit:InvestmentProject,dit:OMISOrder"
         >
           <option
             value="all"
@@ -8477,57 +8473,6 @@ exports[`ActivityFeed when there is a single activity should render single activ
   opacity: 0;
 }
 
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  box-sizing: border-box;
-  margin-bottom: 0;
-}
-
-.c9:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.c10 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #0b0c0c;
-  display: block;
-  clear: none;
-  padding-bottom: 2px;
-  margin-bottom: 0;
-}
-
-.c11 {
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  box-sizing: border-box;
-  width: 100%;
-  height: 33px;
-  padding: 5px 4px 4px;
-  border: 2px solid #0b0c0c;
-}
-
-.c11:focus {
-  outline: 3px solid #ffbf47;
-  outline-offset: 0;
-}
-
 .c18 {
   border: 1px solid #bfc1c3;
   padding: 15px;
@@ -8746,6 +8691,57 @@ exports[`ActivityFeed when there is a single activity should render single activ
   margin-bottom: 0;
 }
 
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.c9:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  display: block;
+  clear: none;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+}
+
+.c11 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  box-sizing: border-box;
+  width: 100%;
+  height: 33px;
+  padding: 5px 4px 4px;
+  border: 2px solid #0b0c0c;
+}
+
+.c11:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+}
+
 .c8 {
   background: #f8f8f8;
   padding: 5px;
@@ -8877,59 +8873,6 @@ exports[`ActivityFeed when there is a single activity should render single activ
 @media only screen and (min-width:641px) {
   .c14 {
     margin-bottom: 10px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c9 {
-    margin-bottom: 0;
-  }
-}
-
-@media print {
-  .c10 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c10 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media print {
-  .c10 {
-    color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c10 {
-    margin-bottom: 0;
-  }
-}
-
-@media print {
-  .c11 {
-    font-size: 14px;
-    line-height: 1.15;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c11 {
-    font-size: 19px;
-    line-height: 1.3157894736842106;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c11 {
-    width: 50%;
-    height: 38px;
   }
 }
 
@@ -9072,6 +9015,59 @@ exports[`ActivityFeed when there is a single activity should render single activ
   }
 }
 
+@media only screen and (min-width:641px) {
+  .c9 {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 0;
+  }
+}
+
+@media print {
+  .c11 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c11 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c11 {
+    width: 50%;
+    height: 38px;
+  }
+}
+
 @media only screen and (min-width:769px) {
   .c8 {
     display: -webkit-inline-box;
@@ -9142,10 +9138,8 @@ exports[`ActivityFeed when there is a single activity should render single activ
     >
       <label
         className="c9"
-        defaultValue="all"
         name="activity-types-filter"
         onChange={[Function]}
-        value={Array []}
       >
         <span
           className="c10"
@@ -9154,6 +9148,7 @@ exports[`ActivityFeed when there is a single activity should render single activ
         </span>
         <select
           className="c11"
+          defaultValue="dit:Interaction,dit:ServiceDelivery,dit:InvestmentProject,dit:OMISOrder"
         >
           <option
             value="all"

@@ -59,7 +59,7 @@ export default class CompaniesHouseAccount extends React.PureComponent {
             link={{ taxonomy, text: reference }}
             blockText="Companies House"
             sourceType={SOURCE_TYPES.external}
-            subHeading="Accounts records show that"
+            subHeading="Accounts records"
             summary={summary}
           />
 

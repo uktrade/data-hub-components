@@ -46,7 +46,7 @@ export default class HmrcExporter extends React.PureComponent {
           <CardHeading
             blockText="HMRC"
             sourceType={SOURCE_TYPES.external}
-            subHeading="Exporters records show that"
+            subHeading="Exporters records"
             summary={summary}
           />
           <CardMeta startTime={startTime} />

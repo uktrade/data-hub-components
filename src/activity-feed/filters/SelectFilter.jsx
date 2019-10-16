@@ -57,8 +57,7 @@ export default class SelectFilter extends React.PureComponent {
     return (
       <StyledDropdownContainer>
         <Select
-          value={value}
-          defaultValue="all"
+          input={{ defaultValue: value.join(',') }}
           name="activity-types-filter"
           label="Activity types"
           onChange={onActivityTypeFilterChange}

@@ -5837,7 +5837,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
       <span
         className="c5"
       >
-        Accounts records show that
+        Accounts records
       </span>
       <h3
         className="c6 c4"
@@ -6367,7 +6367,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
       <span
         className="c5"
       >
-        Company records show that
+        Company records
       </span>
       <h3
         className="c6 c4"
@@ -6950,7 +6950,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
       <span
         className="c5"
       >
-        Exporters records show that
+        Exporters records
       </span>
       <h3
         className="c6 c4"
