@@ -1,7 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MEDIA_QUERIES, SPACING } from '@govuk-react/constants'
-import { GREY_2, GREY_3 } from 'govuk-colours'
+import {
+  MEDIA_QUERIES,
+  SPACING,
+  BORDER_WIDTH_MOBILE,
+} from '@govuk-react/constants'
+import { GREY_2, GREY_3, WHITE } from 'govuk-colours'
 import Checkbox from '@govuk-react/checkbox'
 import PropTypes from 'prop-types'
 import SelectFilter from './SelectFilter'
@@ -41,17 +45,17 @@ const StyledCheckbox = styled(Checkbox)`
     padding: 0;
 
     &::before {
-      background: white;
+      background: ${WHITE};
       width: 26px;
       height: 26px;
     }
 
     &::after {
       top: 6px;
-      left: 5px;
+      left: ${SPACING.SCALE_1};
       width: 12px;
       height: 6px;
-      border-width: 0 0 4px 4px;
+      border-width: 0 0 ${BORDER_WIDTH_MOBILE} ${BORDER_WIDTH_MOBILE};
     }
   }
 
