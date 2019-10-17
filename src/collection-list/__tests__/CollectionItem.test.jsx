@@ -2,6 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import CollectionItem from '../CollectionItem'
 import capitalProfileItem from '../__fixtures__/capitalProfileItem'
+import interactionItem from '../__fixtures__/interactionItem'
 
 describe('CollectionItem', () => {
   let wrapper
@@ -10,8 +11,10 @@ describe('CollectionItem', () => {
     beforeAll(() => {
       wrapper = mount(
         <CollectionItem
-          headingUrl={capitalProfileItem.headerUrl}
+          itemId={capitalProfileItem.itemId}
           headingText={capitalProfileItem.headerText}
+          basePath={capitalProfileItem.basePath}
+          subPath={capitalProfileItem.subPath}
           badges={capitalProfileItem.badges}
           metadata={capitalProfileItem.metadata}
         />
@@ -27,7 +30,9 @@ describe('CollectionItem', () => {
     })
 
     test('should render the headingUrl', () => {
-      expect(wrapper.find('a[href="#"]')).toHaveLength(1)
+      expect(
+        wrapper.find('a[href="/companies/1/investments/large-capital-profile"]')
+      ).toHaveLength(1)
     })
 
     test('should render the badge', () => {
@@ -52,8 +57,10 @@ describe('CollectionItem', () => {
     beforeAll(() => {
       wrapper = mount(
         <CollectionItem
-          headingUrl={capitalProfileItem.headerUrl}
-          headingText={capitalProfileItem.headerText}
+          itemId={interactionItem.itemId}
+          headingText={interactionItem.headerText}
+          basePath={interactionItem.basePath}
+          subPath={null}
         />
       )
     })
@@ -63,11 +70,11 @@ describe('CollectionItem', () => {
     })
 
     test('should render the headingText', () => {
-      expect(wrapper.find('h3').text()).toBe('Mars Exports Ltd')
+      expect(wrapper.find('h3').text()).toBe('Leadership Academy')
     })
 
-    test('should render the headingUrl', () => {
-      expect(wrapper.find('a[href="#"]')).toHaveLength(1)
+    test('should render the headingUrl without subPath', () => {
+      expect(wrapper.find('a[href="/interactions/1"]')).toHaveLength(1)
     })
 
     test('should not render the badge component', () => {

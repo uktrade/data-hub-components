@@ -23,6 +23,8 @@ storiesOf('Collection', module).add('Collection', () => (
     previous={capitalProfileCollectionList1.previous}
     next={capitalProfileCollectionList1.next}
     apiEndpoint={capitalProfileCollectionList1.apiEndpoint}
+    basePath={capitalProfileCollectionList1.basePath}
+    subPath={capitalProfileCollectionList1.subPath}
   />
 ))
 
@@ -70,16 +72,6 @@ storiesOf('Collection', module).add(
   )
 )
 
-storiesOf('Collection', module).add('Capital Profile item', () => (
-  <CollectionItem
-    id={capitalProfileItem.id}
-    headingUrl={capitalProfileItem.headerUrl}
-    headingText={capitalProfileItem.headerText}
-    badges={capitalProfileItem.badges}
-    metadata={capitalProfileItem.metadata}
-  />
-))
-
 storiesOf('Collection', module).add('Collection Header', () => (
   <CollectionHeader
     totalItems={capitalProfileHeading.totalItems}
@@ -91,9 +83,10 @@ storiesOf('Collection', module).add('Collection Header', () => (
 
 storiesOf('Collection', module).add('Capital Profile item', () => (
   <CollectionItem
-    id={capitalProfileItem.id}
-    headingUrl={capitalProfileItem.headerUrl}
+    itemId={capitalProfileItem.itemId}
     headingText={capitalProfileItem.headerText}
+    basePath={capitalProfileItem.basePath}
+    subPath={capitalProfileItem.subPath}
     badges={capitalProfileItem.badges}
     metadata={capitalProfileItem.metadata}
   />
@@ -101,9 +94,10 @@ storiesOf('Collection', module).add('Capital Profile item', () => (
 
 storiesOf('Collection', module).add('Interaction item', () => (
   <CollectionItem
-    id={interactionItem.id}
-    headingUrl={interactionItem.headerUrl}
+    itemId={interactionItem.itemId}
     headingText={interactionItem.headerText}
+    basePath={interactionItem.basePath}
+    subPath={null}
     badges={interactionItem.badges}
     metadata={interactionItem.metadata}
   />

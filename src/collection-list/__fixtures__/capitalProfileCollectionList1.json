@@ -4,13 +4,14 @@
   "addItemUrl": "#",
   "downloadUrl": "#",
   "apiEndpoint": "http://localhost:8000/v4/large-investor-profile?limit=10",
+  "basePath": "/companies/",
+  "subPath": "/investments/large-capital-profile",
   "previous": null,
   "next": "http://localhost:8000/v4/large-investor-profile?limit=10&offset=10",
   "profiles": [
     {
       "headingText": "Mars Exports Ltd",
-      "companyId": "1",
-      "headingUrl": "#",
+      "itemId": "1",
       "metadata": [
         {
           "label": "Updated on",
@@ -23,8 +24,7 @@
     },
     {
       "headingText": "Stage One Boutique",
-      "companyId": "2",
-      "headingUrl": "#",
+      "itemId": "2",
       "metadata": [
         {
           "label": "Updated on",
@@ -37,8 +37,7 @@
     },
     {
       "headingText": "Onet Technologies",
-      "companyId": "3",
-      "headingUrl": "#",
+      "itemId": "3",
       "metadata": [
         {
           "label": "Updated on",
@@ -51,8 +50,7 @@
     },
     {
       "headingText": "Lambda plc",
-      "companyId": "4",
-      "headingUrl": "#",
+      "itemId": "4",
       "metadata": [
         {
           "label": "Updated on",
@@ -65,8 +63,7 @@
     },
     {
       "headingText": "One List Corp",
-      "companyId": "5",
-      "headingUrl": "#",
+      "itemId": "5",
       "metadata": [
         {
           "label": "Updated on",
@@ -79,8 +76,7 @@
     },
     {
       "headingText": "Angel syndicate",
-      "companyId": "6",
-      "headingUrl": "#",
+      "itemId": "6",
       "metadata": [
         {
           "label": "Updated on",
@@ -93,8 +89,7 @@
     },
     {
       "headingText": "Venus Ltd",
-      "companyId": "7",
-      "headingUrl": "#",
+      "itemId": "7",
       "metadata": [
         {
           "label": "Updated on",
@@ -107,8 +102,7 @@
     },
     {
       "headingText": "A1 BMW LTD",
-      "companyId": "8",
-      "headingUrl": "#",
+      "itemId": "8",
       "metadata": [
         {
           "label": "Updated on",
@@ -121,8 +115,7 @@
     },
     {
       "headingText": "Bargainworld",
-      "companyId": "9",
-      "headingUrl": "#",
+      "itemId": "9",
       "metadata": [
         {
           "label": "Updated on",
@@ -135,8 +128,7 @@
     },
     {
       "headingText": "JOHN LEWIS PLC",
-      "companyId": "10",
-      "headingUrl": "#",
+      "itemId": "10",
       "metadata": [
         {
           "label": "Updated on",

@@ -19,6 +19,8 @@ function CollectionList({
   next,
   profiles,
   apiEndpoint,
+  basePath,
+  subPath,
 }) {
   const pageLimit = getNumberParam(apiEndpoint, 'limit=')
 
@@ -38,13 +40,15 @@ function CollectionList({
       />
       {profiles
         .slice(0, pageLimit)
-        .map(({ companyId, headingUrl, headingText, badges, metadata }) => (
+        .map(({ itemId, headingText, badges, metadata }) => (
           <CollectionItem
-            key={companyId}
-            headingUrl={headingUrl}
+            key={itemId}
+            itemId={itemId}
             headingText={headingText}
             badges={badges}
             metadata={metadata}
+            basePath={basePath}
+            subPath={subPath}
           />
         ))}
       <CollectionPagination
@@ -67,6 +71,8 @@ CollectionList.propTypes = {
   previous: PropTypes.string,
   next: PropTypes.string,
   apiEndpoint: PropTypes.string.isRequired,
+  basePath: PropTypes.string.isRequired,
+  subPath: PropTypes.string,
 }
 
 CollectionList.defaultProps = {
@@ -75,6 +81,7 @@ CollectionList.defaultProps = {
   profiles: null,
   previous: null,
   next: null,
+  subPath: null,
 }
 
 export default CollectionList

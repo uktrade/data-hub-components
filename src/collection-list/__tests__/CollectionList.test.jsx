@@ -18,6 +18,8 @@ describe('CollectionItem', () => {
           previous={capitalProfileCollectionList1.previous}
           next={capitalProfileCollectionList1.next}
           apiEndpoint={capitalProfileCollectionList1.apiEndpoint}
+          basePath={capitalProfileCollectionList1.basePath}
+          subPath={capitalProfileCollectionList1.subPath}
         />
       )
     })
@@ -39,6 +41,8 @@ describe('CollectionItem', () => {
           previous={capitalProfileCollectionList1.previous}
           next={capitalProfileCollectionList1.next}
           apiEndpoint="http://localhost:8000/v4/large-investor-profile"
+          basePath={capitalProfileCollectionList1.basePath}
+          subPath={capitalProfileCollectionList1.subPath}
         />
       )
     })
