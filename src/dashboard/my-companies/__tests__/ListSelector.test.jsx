@@ -11,7 +11,7 @@ describe('ListSelector', () => {
         <ListSelector />
       </useMyCompaniesContext.Provider>
     )
-    expect(wrapper.text()).toBe('My companies list')
+    expect(wrapper.text()).toBe('My Companies Lists')
   })
 
   test('One list', () => {
@@ -20,7 +20,7 @@ describe('ListSelector', () => {
         <ListSelector />
       </useMyCompaniesContext.Provider>
     )
-    expect(wrapper.text()).toBe('My companies listFooEdit lists')
+    expect(wrapper.text()).toBe('My Companies ListsFooEdit lists')
   })
 
   describe('Three lists', () => {
@@ -33,7 +33,7 @@ describe('ListSelector', () => {
         </useMyCompaniesContext.Provider>
       )
       expect(wrapper.text()).toBe(
-        'My companies listView listBarBazFooEdit lists'
+        'My Companies ListsView listBarBazFooEdit lists'
       )
       expect(
         wrapper.containsAllMatchingElements([

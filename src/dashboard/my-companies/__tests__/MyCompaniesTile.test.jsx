@@ -17,7 +17,7 @@ describe('My companies dashboard', () => {
     const wrapper = fixture([])
     expect(wrapper.find(MyCompaniesTable)).toHaveLength(0)
     expect(wrapper.text()).toBe(
-      'My companies list' +
+      'My Companies Lists' +
         'You have not yet created any lists with companies.' +
         'You can add companies to lists from a company page, ' +
         'and only you can see these lists.'
@@ -28,7 +28,7 @@ describe('My companies dashboard', () => {
     const wrapper = fixture([{ name: 'Foo', companies: [] }])
     expect(wrapper.find(MyCompaniesTable)).toHaveLength(0)
     expect(wrapper.text()).toBe(
-      'My companies list' +
+      'My Companies Lists' +
         'Foo' +
         'Edit lists' +
         'You have not added any companies to your list.' +
@@ -46,7 +46,7 @@ describe('My companies dashboard', () => {
       ])
       expect(wrapper.find(MyCompaniesTable)).toHaveLength(0)
       expect(wrapper.text()).toBe(
-        'My companies list' +
+        'My Companies Lists' +
           'View list' +
           'Bar' +
           'Baz' +

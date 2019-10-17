@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { H2, H3 } from '@govuk-react/heading'
 import Link from '@govuk-react/link'
 import Select from '@govuk-react/select'
-import { SPACING } from '@govuk-react/constants'
+import { SPACING, LEVEL_SIZE } from '@govuk-react/constants'
 import useMyCompaniesContext from './useMyCompaniesContext'
 import { LIST_CHANGE } from './constants'
 
@@ -12,7 +12,7 @@ const StyledRoot = styled.div({
   alignItems: 'baseline',
 })
 
-const StyledHedline = styled(H2)({
+const StyledHeadline = styled(H2)({
   flexGrow: 1,
 })
 
@@ -43,7 +43,7 @@ export default () => {
   } = useMyCompaniesContext()
   return (
     <StyledRoot>
-      <StyledHedline>My companies list</StyledHedline>
+      <StyledHeadline size={LEVEL_SIZE[3]}>My Companies Lists</StyledHeadline>
       {lists.length ? (
         <>
           {lists.length === 1 ? (
