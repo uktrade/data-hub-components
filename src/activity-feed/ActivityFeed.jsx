@@ -49,9 +49,7 @@ export default class ActivityFeed extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      filteredActivity: ACTIVITY_TYPE_FILTERS.length
-        ? ACTIVITY_TYPE_FILTERS[2].value
-        : [],
+      filteredActivity: ACTIVITY_TYPE_FILTERS[2].value || [],
       showDetails: false,
       isActivityTypeFilterEnabled: !!ACTIVITY_TYPE_FILTERS.length,
       activityTypeFilters: ACTIVITY_TYPE_FILTERS,
