@@ -22,7 +22,7 @@ export const ACTIVITY_TYPE_FILTERS = [
   },
   {
     label: 'My activity',
-    value: ['my-activity'],
+    value: ['hello@whoami.com', 'hi@whatami.com', 'Jane Doe', '123'],
   },
   {
     label: 'All external activity',

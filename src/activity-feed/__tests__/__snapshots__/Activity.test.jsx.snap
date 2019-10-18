@@ -2791,7 +2791,7 @@ exports[`Activity when the interaction does not have a service should render int
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Invited to Technology Roundtable
+          I Was Invited to Technology Roundtable
         </a>
       </h3>
     </div>
@@ -3305,7 +3305,7 @@ exports[`Activity when the interaction is a draft and archived should render int
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Invited to Technology Roundtable
+          I Was Invited to Technology Roundtable
         </a>
       </h3>
     </div>
@@ -3440,6 +3440,22 @@ exports[`Activity when the interaction is a draft and archived should render int
               <ul
                 className="c18"
               >
+                <li
+                  className="c19"
+                >
+                  <span>
+                    Jane Doe
+                  </span>
+                  , 
+                  <a
+                    className="c5"
+                    href="mailto:hi@whatami.com"
+                    muted={false}
+                  >
+                     
+                    hi@whatami.com
+                  </a>
+                </li>
                 <li
                   className="c19"
                 >
@@ -3938,7 +3954,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Invited to Technology Roundtable
+          I Was Invited to Technology Roundtable
         </a>
       </h3>
     </div>
@@ -4073,6 +4089,22 @@ exports[`Activity when the interaction is a draft and upcoming should render int
               <ul
                 className="c18"
               >
+                <li
+                  className="c19"
+                >
+                  <span>
+                    Jane Doe
+                  </span>
+                  , 
+                  <a
+                    className="c5"
+                    href="mailto:hi@whatami.com"
+                    muted={false}
+                  >
+                     
+                    hi@whatami.com
+                  </a>
+                </li>
                 <li
                   className="c19"
                 >
@@ -4571,7 +4603,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Invited to Technology Roundtable
+          I Was Invited to Technology Roundtable
         </a>
       </h3>
     </div>
@@ -4706,6 +4738,22 @@ exports[`Activity when the interaction is a draft in the past should render inte
               <ul
                 className="c18"
               >
+                <li
+                  className="c19"
+                >
+                  <span>
+                    Jane Doe
+                  </span>
+                  , 
+                  <a
+                    className="c5"
+                    href="mailto:hi@whatami.com"
+                    muted={false}
+                  >
+                     
+                    hi@whatami.com
+                  </a>
+                </li>
                 <li
                   className="c19"
                 >
@@ -5204,7 +5252,7 @@ exports[`Activity when the interaction is complete should render interaction act
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Invited to Technology Roundtable
+          I Was Invited to Technology Roundtable
         </a>
       </h3>
     </div>
@@ -5339,6 +5387,22 @@ exports[`Activity when the interaction is complete should render interaction act
               <ul
                 className="c18"
               >
+                <li
+                  className="c19"
+                >
+                  <span>
+                    Jane Doe
+                  </span>
+                  , 
+                  <a
+                    className="c5"
+                    href="mailto:hi@whatami.com"
+                    muted={false}
+                  >
+                     
+                    hi@whatami.com
+                  </a>
+                </li>
                 <li
                   className="c19"
                 >
@@ -8034,7 +8098,7 @@ exports[`Activity when there is an interaction should render interaction activit
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Invited to Technology Roundtable
+          I Was Invited to Technology Roundtable
         </a>
       </h3>
     </div>
@@ -8169,6 +8233,22 @@ exports[`Activity when there is an interaction should render interaction activit
               <ul
                 className="c18"
               >
+                <li
+                  className="c19"
+                >
+                  <span>
+                    Jane Doe
+                  </span>
+                  , 
+                  <a
+                    className="c5"
+                    href="mailto:hi@whatami.com"
+                    muted={false}
+                  >
+                     
+                    hi@whatami.com
+                  </a>
+                </li>
                 <li
                   className="c19"
                 >
@@ -8663,7 +8743,7 @@ exports[`Activity when there is an interaction without any people involved shoul
           href="https://example.com/companies/a4ead59f-dfc8-e511-a5e6-e4115bead28a/interactions/a066cc49-b679-4cbe-93c5-3ceba2f067ec"
           muted={false}
         >
-          Invited to Technology Roundtable
+          I Was Invited to Technology Roundtable
         </a>
       </h3>
     </div>

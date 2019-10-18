@@ -21,7 +21,7 @@
     "dit:communicationChannel": {
       "name": "Email/Website"
     },
-    "dit:subject": "Invited to Technology Roundtable",
+    "dit:subject": "I Was Invited to Technology Roundtable",
     "dit:service": {
       "name": "Account Management"
     },
@@ -46,6 +46,15 @@
         "dit:emailAddress": "john@example.com",
         "name": "John Doe",
         "url": "https://www.datahub.dev.uktrade.io/contacts/04cadecd-2de4-4cda-9fda-59db93495dba"
+      },{
+        "id": "123",
+        "type": [
+          "Person",
+          "dit:Adviser"
+        ],
+        "dit:emailAddress": "hi@whatami.com",
+        "name": "Jane Doe",
+        "url": "https://www.datahub.dev.uktrade.io/contacts/123"
       },
       {
         "id": "dit:DataHubContact:c7327882-86f2-40e9-b1bd-81daa28f1603",

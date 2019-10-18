@@ -47,7 +47,36 @@ export default class CardUtils {
   static canRenderByTypes(activity, types) {
     const activityTypes = get(activity, 'object.type')
 
-    return some(types, (type) => includes(activityTypes, type))
+    return (
+      some(types, (type) => includes(activityTypes, type)) ||
+      CardUtils.canRenderByMyActivity(activity, types)
+    )
+  }
+
+  /*
+   * TODO(jf): This is only a prototype, need to check the business rules for the right properties
+   *  NB: needs thorough optimisation, as it might affect performance
+   */
+  static canRenderByMyActivity(activity, myDetails) {
+    const types = ['dit:Adviser']
+    const activityTypes = get(activity, 'object.attributedTo')
+
+    return activityTypes
+      ? some(
+          activityTypes.map((item) => {
+            return includes(item.type, types[0])
+              ? some(myDetails, (detail) => {
+                  return (
+                    includes(item.email, detail) ||
+                    includes(item.name, detail) ||
+                    includes(item.id, detail)
+                  )
+                })
+              : false
+          }),
+          (myActivity) => myActivity === true
+        )
+      : false
   }
 
   static getAdvisers(activity) {

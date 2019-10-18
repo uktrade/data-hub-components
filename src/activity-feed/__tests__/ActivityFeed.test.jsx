@@ -190,6 +190,8 @@ describe('ActivityFeed', () => {
     const defaultFilterValue = activityTypeFilterPropsFixture.defaultValue
     const showAllActivitiesFilterValue =
       activityTypeFilterPropsFixture.values[0].value
+    const showMyActivitiesFilterValue =
+      activityTypeFilterPropsFixture.values[1].value
 
     beforeAll(() => {
       wrapper = mount(
@@ -238,6 +240,27 @@ describe('ActivityFeed', () => {
 
       test('should show all activities', () => {
         expect(wrapper.find('ol li details').length).toBe(activities.length)
+      })
+    })
+
+    describe('when the filter that should list my activities is selected', () => {
+      beforeAll(() => {
+        wrapper.find('select').simulate('change', {
+          target: { value: showMyActivitiesFilterValue.join(',') },
+        })
+      })
+
+      test('should have the "My Activities" value active', () => {
+        expect(
+          wrapper.find(BasicActivityTypeFilter).props().filteredActivity
+        ).toStrictEqual(showMyActivitiesFilterValue)
+      })
+
+      test('should show all activities', () => {
+        expect(wrapper.find('ol li details').length).toBe(1)
+        expect(
+          wrapper.find('ol li h3').getElement().props.children.props.children
+        ).toBe('I Was Invited to Technology Roundtable')
       })
     })
   })
