@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
-import { ACTIVITY_TYPE_FILTERS } from './constants'
 
 import Activity from './Activity'
 import ActivityFeedHeader from './ActivityFeedHeader'
@@ -49,14 +48,24 @@ export default class ActivityFeed extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      filteredActivity: ACTIVITY_TYPE_FILTERS[2].value || [],
+      filteredActivity: ActivityFeed.getActivityTypeFilter(
+        props,
+        'defaultValue'
+      ),
       showDetails: false,
-      isActivityTypeFilterEnabled: !!ACTIVITY_TYPE_FILTERS.length,
-      activityTypeFilters: ACTIVITY_TYPE_FILTERS,
+      isActivityTypeFilterEnabled: !!ActivityFeed.getActivityTypeFilter(
+        props,
+        'values'
+      ).length,
+      activityTypeFilters: ActivityFeed.getActivityTypeFilter(props, 'values'),
     }
 
     this.onActivityTypeFilterChange = this.onActivityTypeFilterChange.bind(this)
     this.onShowDetailsClick = this.onShowDetailsClick.bind(this)
+  }
+
+  static getActivityTypeFilter({ addActivityTypeFilter = null }, key) {
+    return addActivityTypeFilter ? addActivityTypeFilter[key] : []
   }
 
   onActivityTypeFilterChange(e) {

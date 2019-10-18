@@ -21,6 +21,10 @@ export const ACTIVITY_TYPE_FILTERS = [
     value: 'all',
   },
   {
+    label: 'My activity',
+    value: ['my-activity'],
+  },
+  {
     label: 'All external activity',
     value: [].concat(
       ...[

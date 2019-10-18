@@ -6,14 +6,10 @@ import BasicActivityTypeFilter from '../BasicActivityTypeFilter'
 import ActivityFeed from '../../ActivityFeed'
 import interactionActivityFixture from '../../__fixtures__/interactions/interaction'
 import SelectFilter from '../SelectFilter'
-import { ACTIVITY_TYPE_FILTERS } from '../../constants'
+import { activityTypeFilterPropsFixture } from '../../__fixtures__/filters'
 
-const defaultFilterValue = ACTIVITY_TYPE_FILTERS.length
-  ? ACTIVITY_TYPE_FILTERS[2].value
-  : ''
-const testFilterValue = ACTIVITY_TYPE_FILTERS.length
-  ? ACTIVITY_TYPE_FILTERS[1].value
-  : ''
+const defaultFilterValue = activityTypeFilterPropsFixture.values[3].value
+const testFilterValue = activityTypeFilterPropsFixture.values[1].value
 
 describe('BasicActivityTypeFilter', () => {
   let wrapper
@@ -42,6 +38,7 @@ describe('BasicActivityTypeFilter', () => {
       wrapper = mount(
         <ActivityFeed
           totalActivities={1}
+          addActivityTypeFilter={activityTypeFilterPropsFixture}
           activities={[interactionActivityFixture]}
         />
       )

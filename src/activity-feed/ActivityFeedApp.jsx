@@ -9,6 +9,7 @@ export default class ActivityFeedApp extends React.Component {
     queryParams: PropTypes.object,
     addContentText: PropTypes.string,
     addContentLink: PropTypes.string,
+    addActivityTypeFilter: PropTypes.object,
     render: PropTypes.func,
   }
 
@@ -16,6 +17,7 @@ export default class ActivityFeedApp extends React.Component {
     queryParams: {},
     addContentText: null,
     addContentLink: null,
+    addActivityTypeFilter: {},
     render: null,
   }
 
@@ -92,7 +94,12 @@ export default class ActivityFeedApp extends React.Component {
 
   render() {
     const { activities, isLoading, hasMore, total, error } = this.state
-    const { addContentText, addContentLink, render } = this.props
+    const {
+      addContentText,
+      addContentLink,
+      addActivityTypeFilter,
+      render,
+    } = this.props
 
     const isEmptyFeed = activities.length === 0 && !hasMore
 
@@ -101,6 +108,7 @@ export default class ActivityFeedApp extends React.Component {
         totalActivities={total}
         addContentText={addContentText}
         addContentLink={addContentLink}
+        addActivityTypeFilters={addActivityTypeFilter}
         activities={activities}
         hasMore={hasMore}
         onLoadMore={this.onLoadMore}
