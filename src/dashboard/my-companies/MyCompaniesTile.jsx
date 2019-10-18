@@ -1,6 +1,6 @@
 import React from 'react'
 import HintText from '@govuk-react/hint-text'
-import { SPACING } from '@govuk-react/constants'
+import { SPACING, BORDER_WIDTH_MOBILE } from '@govuk-react/constants'
 import { GREY_2 } from 'govuk-colours'
 import styled from 'styled-components'
 
@@ -9,7 +9,7 @@ import MyCompaniesTable from './MyCompaniesTable'
 import ListSelector from './ListSelector'
 
 const StyledDiv = styled.div({
-  borderTop: `4px solid ${GREY_2}`,
+  borderTop: `${BORDER_WIDTH_MOBILE} solid ${GREY_2}`,
   paddingTop: SPACING.SCALE_3,
 })
 
