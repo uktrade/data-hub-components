@@ -3,7 +3,6 @@ import { uniqueId } from 'lodash'
 import { mount } from 'enzyme'
 import Details from '@govuk-react/details'
 import Checkbox from '@govuk-react/checkbox'
-import { ACTIVITY_TYPE_FILTERS } from '../constants'
 import Activity from '../Activity'
 import ActivityFeed from '../ActivityFeed'
 import ActivityFeedHeader from '../ActivityFeedHeader'
@@ -15,6 +14,7 @@ import companiesHouseAccountsDueFixture from '../__fixtures__/companies_house/ac
 import hmrcExportOfGoodsFixture from '../__fixtures__/hmrc/export_of_goods'
 import interactionActivityFixture from '../__fixtures__/interactions/interaction'
 import omisOrderAddedFixture from '../__fixtures__/omis/order_added'
+import { activityTypeFilterPropsFixture } from '../__fixtures__/filters'
 
 function generateActivities(total) {
   return Array.from({ length: total }, () => ({
@@ -187,18 +187,15 @@ describe('ActivityFeed', () => {
       ]
     )
 
-    const defaultFilterValue = ACTIVITY_TYPE_FILTERS.length
-      ? ACTIVITY_TYPE_FILTERS[2].value
-      : ''
-
-    const showAllActivitiesFilterValue = ACTIVITY_TYPE_FILTERS.length
-      ? ACTIVITY_TYPE_FILTERS[0].value
-      : ''
+    const defaultFilterValue = activityTypeFilterPropsFixture.defaultValue
+    const showAllActivitiesFilterValue =
+      activityTypeFilterPropsFixture.values[0].value
 
     beforeAll(() => {
       wrapper = mount(
         <ActivityFeed
           totalActivities={activities.length}
+          addActivityTypeFilter={activityTypeFilterPropsFixture}
           activities={activities}
         />
       )

@@ -8,6 +8,7 @@ import { SPACING } from '@govuk-react/constants'
 
 import ActivityFeed from '../ActivityFeed'
 import activityFeedFixtures from '../__fixtures__'
+import { activityTypeFilterPropsFixture } from '../__fixtures__/filters'
 import datahubBackground from './images/data-hub-one-list-corp.png'
 
 addDecorator(withKnobs)
@@ -87,6 +88,7 @@ class ActivityFeedDemoApp extends React.Component {
           isLoading={isLoading}
           addContentText="Add interaction"
           addContentLink="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create"
+          addActivityTypeFilter={activityTypeFilterPropsFixture}
         >
           {isEmptyFeed && !error && <div>There are no activities to show.</div>}
           {error && <div>Error occurred while loading activities.</div>}
