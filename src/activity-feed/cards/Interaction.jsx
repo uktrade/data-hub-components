@@ -12,6 +12,7 @@ import {
 } from './card'
 
 import { ContactItemRenderer, AdviserItemRenderer } from './card/item-renderers'
+import { ACTIVITY_TYPE } from '../constants'
 
 import CardUtils from './card/CardUtils'
 import InteractionUtils from './InteractionUtils'
@@ -23,10 +24,7 @@ export default class Interaction extends React.PureComponent {
   }
 
   static canRender(activity) {
-    return CardUtils.canRenderByTypes(activity, [
-      'dit:Interaction',
-      'dit:ServiceDelivery',
-    ])
+    return CardUtils.canRenderByTypes(activity, ACTIVITY_TYPE.Interaction)
   }
 
   render() {

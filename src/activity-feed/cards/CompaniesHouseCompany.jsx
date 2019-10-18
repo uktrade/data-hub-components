@@ -16,7 +16,7 @@ import { DefaultItemRenderer } from './card/item-renderers'
 
 import CardUtils from './card/CardUtils'
 import DateUtils from '../../utils/DateUtils'
-import { SOURCE_TYPES } from '../constants'
+import { ACTIVITY_TYPE, SOURCE_TYPES } from '../constants'
 
 export default class CompaniesHouseCompany extends React.PureComponent {
   static propTypes = {
@@ -25,7 +25,10 @@ export default class CompaniesHouseCompany extends React.PureComponent {
   }
 
   static canRender(activity) {
-    return CardUtils.canRenderByTypes(activity, ['dit:Company'])
+    return CardUtils.canRenderByTypes(
+      activity,
+      ACTIVITY_TYPE.CompaniesHouseCompany
+    )
   }
 
   render() {
@@ -69,7 +72,7 @@ export default class CompaniesHouseCompany extends React.PureComponent {
           <CardHeading
             blockText="Companies House"
             sourceType={SOURCE_TYPES.external}
-            subHeading="Company records show that"
+            subHeading="Company records"
             summary={summary}
           />
           <CardMeta startTime={startTime} />

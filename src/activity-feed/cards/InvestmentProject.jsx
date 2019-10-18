@@ -13,6 +13,7 @@ import {
 } from './card'
 
 import { ContactItemRenderer, AdviserItemRenderer } from './card/item-renderers'
+import { ACTIVITY_TYPE } from '../constants'
 
 import CardUtils from './card/CardUtils'
 import DateUtils from '../../utils/DateUtils'
@@ -29,7 +30,7 @@ export default class InvestmentProject extends React.PureComponent {
   }
 
   static canRender(activity) {
-    return CardUtils.canRenderByTypes(activity, ['dit:InvestmentProject'])
+    return CardUtils.canRenderByTypes(activity, ACTIVITY_TYPE.InvestmentProject)
   }
 
   render() {

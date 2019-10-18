@@ -1,59 +1,58 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
-import { shallow } from 'enzyme'
-
+import { mount } from 'enzyme'
 import ActivityFeedFilters from '../ActivityFeedFilters'
+import BasicActivityTypeFilter from '../filters/BasicActivityTypeFilter'
+import ShowDetailsFilter from '../filters/ShowDetailsFilter'
 
-describe('ActivityFeedFilters', () => {
-  describe('when the details for all activities are hidden', () => {
-    test('renders filters', () => {
-      const tree = renderer
-        .create(
-          <ActivityFeedFilters
-            onShowDetailsClick={() => {}}
-            showDetails={false}
-          />
-        )
-        .toJSON()
-      expect(tree).toMatchSnapshot()
-    })
-  })
+describe('ActivityFeedFilters without BasicActivityTypeFilter', () => {
+  let wrapper
 
-  describe('when the details for all activities are shown', () => {
-    test('renders filters', () => {
-      const tree = renderer
-        .create(
-          <ActivityFeedFilters
-            onShowDetailsClick={() => {}}
-            showDetails={true}
-          />
-        )
-        .toJSON()
-      expect(tree).toMatchSnapshot()
-    })
-  })
-
-  describe('when the "Show details for all activities" checkbox is clicked', () => {
-    const onShowDetailsClickMock = jest.fn()
-
-    beforeEach(() => {
-      const wrapper = shallow(
+  describe('when no activity type filters exist', () => {
+    beforeAll(() => {
+      wrapper = mount(
         <ActivityFeedFilters
-          onShowDetailsClick={onShowDetailsClickMock}
+          activityTypeFilters={[]}
+          isActivityTypeFilterEnabled={false}
+          onShowDetailsClick={() => {}}
           showDetails={false}
         />
       )
-      wrapper.find('Checkbox').simulate('change', {
-        target: { checked: true },
-      })
     })
 
-    afterEach(() => {
-      onShowDetailsClickMock.mockReset()
+    test('renders the ShowDetailsFilter filters', () => {
+      expect(wrapper.find(ActivityFeedFilters).exists()).toBe(true)
+      expect(wrapper.find(BasicActivityTypeFilter).exists()).toBe(false)
+      expect(wrapper.find(ShowDetailsFilter).exists()).toBe(true)
+    })
+  })
+
+  describe('when activity type filters do exist', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <ActivityFeedFilters
+          activityTypeFilters={[
+            {
+              label: 'hello',
+              value: 'hello',
+            },
+            {
+              label: 'hello',
+              value: 'hello',
+            },
+          ]}
+          filteredActivity={['hello']}
+          isActivityTypeFilterEnabled={true}
+          onShowDetailsClick={() => {}}
+          onActivityTypeFilterChange={() => {}}
+          showDetails={false}
+        />
+      )
     })
 
-    test('should call onShowDetailsClick', () => {
-      expect(onShowDetailsClickMock.mock.calls.length).toEqual(1)
+    test('renders the BasicActivityTypeFilter filters', () => {
+      expect(wrapper.find(ActivityFeedFilters).exists()).toBe(true)
+      expect(wrapper.find(BasicActivityTypeFilter).exists()).toBe(true)
+      expect(wrapper.find(ShowDetailsFilter).exists()).toBe(false)
     })
   })
 })

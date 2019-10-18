@@ -1,29 +1,21 @@
 import React from 'react'
-import styled from 'styled-components'
-import { SPACING } from '@govuk-react/constants'
-import Checkbox from '@govuk-react/checkbox'
 import PropTypes from 'prop-types'
 
-const StyledActivityFeedFilters = styled('div')`
-  padding: ${SPACING.SCALE_2};
-  padding-left: 0;
-`
+import BasicActivityTypeFilter from './filters/BasicActivityTypeFilter'
+import ShowDetailsFilter from './filters/ShowDetailsFilter'
 
 export default class ActivityFeedFilters extends React.PureComponent {
   static propTypes = {
-    onShowDetailsClick: PropTypes.func.isRequired,
-    showDetails: PropTypes.bool.isRequired,
+    isActivityTypeFilterEnabled: PropTypes.bool.isRequired,
   }
 
   render() {
-    const { onShowDetailsClick, showDetails } = this.props
+    const { isActivityTypeFilterEnabled } = this.props
 
-    return (
-      <StyledActivityFeedFilters>
-        <Checkbox onChange={onShowDetailsClick} checked={showDetails}>
-          Show details for all activities
-        </Checkbox>
-      </StyledActivityFeedFilters>
-    )
+    if (isActivityTypeFilterEnabled) {
+      return <BasicActivityTypeFilter {...this.props} />
+    } else {
+      return <ShowDetailsFilter {...this.props} />
+    }
   }
 }

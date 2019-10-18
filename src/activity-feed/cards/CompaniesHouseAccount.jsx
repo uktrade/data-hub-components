@@ -14,7 +14,7 @@ import {
 import CardUtils from './card/CardUtils'
 import DateUtils from '../../utils/DateUtils'
 import NumberUtils from '../../utils/NumberUtils'
-import { SOURCE_TYPES } from '../constants'
+import { ACTIVITY_TYPE, SOURCE_TYPES } from '../constants'
 
 export default class CompaniesHouseAccount extends React.PureComponent {
   static propTypes = {
@@ -23,7 +23,10 @@ export default class CompaniesHouseAccount extends React.PureComponent {
   }
 
   static canRender(activity) {
-    return CardUtils.canRenderByTypes(activity, ['dit:Accounts'])
+    return CardUtils.canRenderByTypes(
+      activity,
+      ACTIVITY_TYPE.CompaniesHouseAccount
+    )
   }
 
   render() {
@@ -56,7 +59,7 @@ export default class CompaniesHouseAccount extends React.PureComponent {
             link={{ taxonomy, text: reference }}
             blockText="Companies House"
             sourceType={SOURCE_TYPES.external}
-            subHeading="Accounts records show that"
+            subHeading="Accounts records"
             summary={summary}
           />
 

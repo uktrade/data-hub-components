@@ -13,6 +13,7 @@ import {
 } from './card'
 
 import { AdviserItemRenderer, ContactItemRenderer } from './card/item-renderers'
+import { ACTIVITY_TYPE } from '../constants'
 
 import CardUtils from './card/CardUtils'
 
@@ -23,7 +24,7 @@ export default class Omis extends React.PureComponent {
   }
 
   static canRender(activity) {
-    return CardUtils.canRenderByTypes(activity, ['dit:OMISOrder'])
+    return CardUtils.canRenderByTypes(activity, ACTIVITY_TYPE.Omis)
   }
 
   render() {

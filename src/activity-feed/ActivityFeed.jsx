@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
+import { ACTIVITY_TYPE_FILTERS } from './constants'
 
 import Activity from './Activity'
 import ActivityFeedHeader from './ActivityFeedHeader'
@@ -48,10 +49,22 @@ export default class ActivityFeed extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      filteredActivity: ACTIVITY_TYPE_FILTERS[2].value || [],
       showDetails: false,
+      isActivityTypeFilterEnabled: !!ACTIVITY_TYPE_FILTERS.length,
+      activityTypeFilters: ACTIVITY_TYPE_FILTERS,
     }
 
+    this.onActivityTypeFilterChange = this.onActivityTypeFilterChange.bind(this)
     this.onShowDetailsClick = this.onShowDetailsClick.bind(this)
+  }
+
+  onActivityTypeFilterChange(e) {
+    const value = e.target.value.split(',')
+
+    this.setState({
+      filteredActivity: e.target.value === 'all' ? [] : value,
+    })
   }
 
   onShowDetailsClick(e) {
@@ -71,7 +84,12 @@ export default class ActivityFeed extends React.Component {
       totalActivities,
       children,
     } = this.props
-    const { showDetails } = this.state
+    const {
+      activityTypeFilters,
+      filteredActivity,
+      isActivityTypeFilterEnabled,
+      showDetails,
+    } = this.state
 
     return (
       <ActivityFeedContainer>
@@ -81,13 +99,21 @@ export default class ActivityFeed extends React.Component {
           addContentLink={addContentLink}
         />
         <ActivityFeedFilters
+          activityTypeFilters={activityTypeFilters}
+          filteredActivity={filteredActivity}
+          isActivityTypeFilterEnabled={isActivityTypeFilterEnabled}
+          onActivityTypeFilterChange={this.onActivityTypeFilterChange}
           onShowDetailsClick={this.onShowDetailsClick}
           showDetails={showDetails}
         />
         <ActivityFeedCardList>
           {activities.map((activity) => (
             <li key={activity.id}>
-              <Activity activity={activity} showDetails={showDetails} />
+              <Activity
+                activity={activity}
+                filter={filteredActivity}
+                showDetails={showDetails}
+              />
             </li>
           ))}
         </ActivityFeedCardList>
