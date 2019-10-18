@@ -1,9 +1,17 @@
 import React from 'react'
 import HintText from '@govuk-react/hint-text'
+import { SPACING, BORDER_WIDTH_MOBILE } from '@govuk-react/constants'
+import { GREY_2 } from 'govuk-colours'
+import styled from 'styled-components'
 
 import useMyCompaniesContext from './useMyCompaniesContext'
 import MyCompaniesTable from './MyCompaniesTable'
 import ListSelector from './ListSelector'
+
+const StyledDiv = styled.div({
+  borderTop: `${BORDER_WIDTH_MOBILE} solid ${GREY_2}`,
+  paddingTop: SPACING.SCALE_3,
+})
 
 const EmptyListMsg = () => (
   <HintText>
@@ -32,7 +40,7 @@ function MyCompaniesTile() {
   const hasCompanies = list && list.companies && list.companies.length
 
   return (
-    <div>
+    <StyledDiv>
       <ListSelector />
       {/* eslint-disable no-nested-ternary */}
       {hasLists ? (
@@ -44,7 +52,7 @@ function MyCompaniesTile() {
       ) : (
         <NoListsMsg />
       )}
-    </div>
+    </StyledDiv>
   )
 }
 
