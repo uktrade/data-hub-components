@@ -30,7 +30,7 @@ describe('My companies dashboard', () => {
     expect(wrapper.text()).toBe(
       'My Companies Lists' +
         'Foo' +
-        'Edit lists' +
+        'Delete this list' +
         'You have not added any companies to your list.' +
         'You can add companies to this list from a company page, ' +
         'and only you can see this list.'
@@ -51,7 +51,7 @@ describe('My companies dashboard', () => {
           'Bar' +
           'Baz' +
           'Foo' +
-          'Edit lists' +
+          'Delete this list' +
           'You have not added any companies to your list.' +
           'You can add companies to this list from a company page, ' +
           'and only you can see this list.'
