@@ -9,7 +9,11 @@ import companies from '../../__fixtures__/companies'
 import { LIST_CHANGE, FILTER_CHANGE, ORDER_CHANGE } from '../constants'
 
 const initialState = {
-  lists: [{ name: 'Foo' }, { name: 'Bar' }, { name: 'Baz' }],
+  lists: [
+    { id: 'foo', name: 'Foo' },
+    { id: 'bar', name: 'Bar' },
+    { id: 'baz', name: 'Baz' },
+  ],
   selectedIdx: 0,
   sortBy: 'alphabetical',
   filter: 'foobarbaz',

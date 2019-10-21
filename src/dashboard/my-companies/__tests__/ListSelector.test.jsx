@@ -24,21 +24,25 @@ describe('ListSelector', () => {
   test('One list', () => {
     const wrapper = mount(
       <useMyCompaniesContext.Provider
-        lists={[{ name: 'Foo' }]}
+        lists={[{ id: 'foo', name: 'Foo' }]}
         deleteListPropsAccessor={deleteListPropAccessor}
       >
         <ListSelector />
       </useMyCompaniesContext.Provider>
     )
     expect(wrapper.text()).toBe('My Companies ListsFooDelete this list')
-    assertDeleteListLinkProps(wrapper, { name: 'Foo' })
+    assertDeleteListLinkProps(wrapper, { id: 'foo', name: 'Foo' })
   })
 
   describe('Three lists', () => {
     test('Render', () => {
       const wrapper = mount(
         <useMyCompaniesContext.Provider
-          lists={[{ name: 'Foo' }, { name: 'Bar' }, { name: 'Baz' }]}
+          lists={[
+            { id: 'foo', name: 'Foo' },
+            { id: 'bar', name: 'Bar' },
+            { id: 'bar', name: 'Baz' },
+          ]}
           deleteListPropsAccessor={deleteListPropAccessor}
         >
           <ListSelector />
@@ -54,7 +58,7 @@ describe('ListSelector', () => {
           <option value={2}>Foo</option>,
         ])
       ).toBe(true)
-      assertDeleteListLinkProps(wrapper, { name: 'Bar' })
+      assertDeleteListLinkProps(wrapper, { id: 'bar', name: 'Bar' })
     })
 
     test('Interaction to state', () => {
@@ -67,7 +71,11 @@ describe('ListSelector', () => {
 
       const wrapper = mount(
         <useMyCompaniesContext.Provider
-          lists={[{ name: 'Foo' }, { name: 'Bar' }, { name: 'Baz' }]}
+          lists={[
+            { id: 'foo', name: 'Foo' },
+            { id: 'bar', name: 'Bar' },
+            { id: 'baz', name: 'Baz' },
+          ]}
           deleteListPropsAccessor={deleteListPropAccessor}
         >
           <ListSelector />
@@ -75,24 +83,24 @@ describe('ListSelector', () => {
         </useMyCompaniesContext.Provider>
       )
 
-      assertDeleteListLinkProps(wrapper, { name: 'Bar' })
+      assertDeleteListLinkProps(wrapper, { id: 'bar', name: 'Bar' })
 
       const select = wrapper.find('select')
 
       select.simulate('change', withTargetValue(2))
-      assertDeleteListLinkProps(wrapper, { name: 'Foo' })
+      assertDeleteListLinkProps(wrapper, { id: 'foo', name: 'Foo' })
 
       select.simulate('change', withTargetValue(1))
-      assertDeleteListLinkProps(wrapper, { name: 'Baz' })
+      assertDeleteListLinkProps(wrapper, { id: 'baz', name: 'Baz' })
 
       select.simulate('change', withTargetValue(0))
-      assertDeleteListLinkProps(wrapper, { name: 'Bar' })
+      assertDeleteListLinkProps(wrapper, { id: 'bar', name: 'Bar' })
 
       select.simulate('change', withTargetValue(1))
-      assertDeleteListLinkProps(wrapper, { name: 'Baz' })
+      assertDeleteListLinkProps(wrapper, { id: 'baz', name: 'Baz' })
 
       select.simulate('change', withTargetValue(2))
-      assertDeleteListLinkProps(wrapper, { name: 'Foo' })
+      assertDeleteListLinkProps(wrapper, { id: 'foo', name: 'Foo' })
 
       expect(stateHistory).toEqual([0, 2, 1, 0, 1, 2])
     })

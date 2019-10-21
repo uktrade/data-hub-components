@@ -1,5 +1,6 @@
 import { orderBy, pick } from 'lodash'
 import { useReducer } from 'react'
+import PropTypes from 'prop-types'
 import createUseContext from 'constate'
 import { FILTER_CHANGE, LIST_CHANGE, ORDER_CHANGE } from './constants'
 
@@ -53,5 +54,14 @@ const useMyCompaniesContext = createUseContext(
     }
   }
 )
+
+useMyCompaniesContext.Provider.propTypes = {
+  lists: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+    })
+  ),
+}
 
 export default useMyCompaniesContext
