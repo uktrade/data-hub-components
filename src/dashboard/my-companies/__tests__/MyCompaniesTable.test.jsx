@@ -11,7 +11,7 @@ const getTableRowTexts = (wrapper) =>
 const fixture = (companies) =>
   mount(
     <useMyCompaniesContext.Provider
-      lists={[{ name: 'Lonely list', companies }]}
+      lists={[{ id: 'foo', name: 'Lonely list', companies }]}
     >
       <MyCompaniesTable />
     </useMyCompaniesContext.Provider>

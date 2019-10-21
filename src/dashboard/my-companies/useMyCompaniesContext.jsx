@@ -1,5 +1,6 @@
 import { orderBy, pick } from 'lodash'
 import { useReducer } from 'react'
+import PropTypes from 'prop-types'
 import createUseContext from 'constate'
 import { FILTER_CHANGE, LIST_CHANGE, ORDER_CHANGE } from './constants'
 
@@ -32,7 +33,7 @@ export const reducer = (state, { type, ...action }) => {
 
 // We are unpacking children here just to remove them from initialState.
 const useMyCompaniesContext = createUseContext(
-  ({ children, editListsLinkProps, ...rest }) => {
+  ({ children, deleteListPropsAccessor, ...rest }) => {
     const initialState = pick(rest, [
       'lists',
       'selectedIdx',
@@ -49,9 +50,34 @@ const useMyCompaniesContext = createUseContext(
     return {
       state,
       dispatch,
-      editListsLinkProps,
+      deleteListPropsAccessor,
     }
   }
 )
+
+const idNameShape = {
+  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+}
+
+useMyCompaniesContext.Provider.propTypes = {
+  lists: PropTypes.arrayOf(
+    PropTypes.shape({
+      ...idNameShape,
+      companies: PropTypes.arrayOf(
+        PropTypes.shape({
+          company: PropTypes.shape({
+            ...idNameShape,
+          }).isRequired,
+          latestInteraction: PropTypes.shape({
+            id: PropTypes.string,
+            date: PropTypes.string,
+            subject: PropTypes.string,
+          }),
+        })
+      ),
+    })
+  ),
+}
 
 export default useMyCompaniesContext

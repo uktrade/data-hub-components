@@ -37,9 +37,9 @@ const StyledSelect = styled(Select)({
 
 export default () => {
   const {
-    state: { lists },
+    state: { lists, selectedIdx },
     dispatch,
-    editListsLinkProps,
+    deleteListPropsAccessor = () => ({}),
   } = useMyCompaniesContext()
   return (
     <StyledRoot>
@@ -69,7 +69,9 @@ export default () => {
               </StyledSelect>
             </>
           )}
-          <Link {...editListsLinkProps}>Edit lists</Link>
+          <Link {...deleteListPropsAccessor(lists[selectedIdx])}>
+            Delete this list
+          </Link>
         </>
       ) : null}
     </StyledRoot>
