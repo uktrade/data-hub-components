@@ -55,11 +55,27 @@ const useMyCompaniesContext = createUseContext(
   }
 )
 
+const idNameShape = {
+  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+}
+
 useMyCompaniesContext.Provider.propTypes = {
   lists: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      id: PropTypes.string.isRequired,
+      ...idNameShape,
+      companies: PropTypes.arrayOf(
+        PropTypes.shape({
+          company: PropTypes.shape({
+            ...idNameShape,
+          }).isRequired,
+          latestInteraction: PropTypes.shape({
+            id: PropTypes.string,
+            date: PropTypes.string,
+            subject: PropTypes.string,
+          }),
+        })
+      ),
     })
   ),
 }
