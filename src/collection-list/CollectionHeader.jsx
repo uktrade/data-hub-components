@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Button from '@govuk-react/button'
 import styled from 'styled-components'
-import pluralise from 'pluralise'
+import pluralize from 'pluralize'
 import { H2 } from '@govuk-react/heading'
 import { BLACK, GREY_3 } from 'govuk-colours'
 import { SPACING, MEDIA_QUERIES, FONT_SIZE } from '@govuk-react/constants'
@@ -41,7 +41,7 @@ const StyledLink = styled.a`
 `
 
 function CollectionHeader({ totalItems, itemName, addItemUrl }) {
-  const headerText = pluralise.withCount(totalItems, `% ${itemName}`)
+  const headerText = pluralize(itemName, totalItems, true)
 
   return (
     <StyledSummary>

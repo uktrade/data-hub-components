@@ -75,7 +75,7 @@
     "govuk-colours": "^1.0.3",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
-    "pluralise": "^1.0.1",
+    "pluralize": "^8.0.0",
     "prop-types": "^15.7.2",
     "react-lines-ellipsis": "^0.14.1",
     "react-markdown": "^4.0.8",

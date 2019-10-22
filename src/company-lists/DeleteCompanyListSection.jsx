@@ -8,7 +8,7 @@ import Link from '@govuk-react/link'
 import ListItem from '@govuk-react/list-item'
 import Paragraph from '@govuk-react/paragraph'
 import UnorderedList from '@govuk-react/unordered-list'
-import pluralise from 'pluralise'
+import pluralize from 'pluralize'
 
 import FormActions from '../forms/elements/FormActions'
 
@@ -18,11 +18,7 @@ const DeleteCompanyListSection = ({
   onDelete,
   returnUrl,
 }) => {
-  const companyCountText = pluralise.withCount(
-    companyList.item_count,
-    '% company',
-    '% companies'
-  )
+  const companyCountText = pluralize('company', companyList.item_count, true)
 
   return (
     <div>

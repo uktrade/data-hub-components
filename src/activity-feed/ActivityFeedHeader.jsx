@@ -4,7 +4,7 @@ import Button from '@govuk-react/button'
 import { H2 } from '@govuk-react/heading'
 import styled from 'styled-components'
 import { SPACING, MEDIA_QUERIES } from '@govuk-react/constants'
-import pluralise from 'pluralise'
+import pluralize from 'pluralize'
 
 const HeaderSummary = styled('div')`
   display: flex;
@@ -61,12 +61,10 @@ export default class ActivityFeedHeader extends React.Component {
 
   render() {
     const { totalActivities, addContentText, addContentLink } = this.props
-    const headerText = pluralise.withCount(
-      totalActivities,
-      '% activity',
-      '% activities',
-      'Activities'
-    )
+    const headerText = totalActivities
+      ? pluralize('activity', totalActivities, true)
+      : 'Activities'
+
     const showAddContentButton = addContentText && addContentLink
 
     return (
