@@ -25,6 +25,21 @@ storiesOf('Collection', module).add('Collection', () => (
     apiEndpoint={capitalProfileCollectionList1.apiEndpoint}
     basePath={capitalProfileCollectionList1.basePath}
     subPath={capitalProfileCollectionList1.subPath}
+    isLoading={false}
+  />
+))
+
+storiesOf('Collection', module).add('Collection - isLoading', () => (
+  <CollectionList
+    totalItems={capitalProfileCollectionList1.totalItems}
+    itemName={capitalProfileCollectionList1.itemName}
+    addItemUrl={capitalProfileCollectionList1.addItemUrl}
+    downloadUrl={capitalProfileCollectionList1.downloadUrl}
+    profiles={capitalProfileCollectionList1.profiles}
+    previous={capitalProfileCollectionList1.previous}
+    next={capitalProfileCollectionList1.next}
+    apiEndpoint={capitalProfileCollectionList1.apiEndpoint}
+    isLoading={true}
   />
 ))
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import LoadingBox from '@govuk-react/loading-box'
 import getNumberParam from './getNumberParam'
 
 import {
@@ -21,13 +22,14 @@ function CollectionList({
   apiEndpoint,
   basePath,
   subPath,
+  isLoading,
 }) {
   const pageLimit = getNumberParam(apiEndpoint, 'limit=')
 
   const totalPages = Math.floor(totalItems / pageLimit) + 1
 
   return (
-    <>
+    <LoadingBox loading={isLoading}>
       <CollectionHeader
         totalItems={totalItems}
         itemName={itemName}
@@ -61,7 +63,7 @@ function CollectionList({
         apiEndpoint={apiEndpoint}
         pageLimit={pageLimit}
       />
-    </>
+    </LoadingBox>
   )
 }
 
@@ -76,6 +78,7 @@ CollectionList.propTypes = {
   apiEndpoint: PropTypes.string.isRequired,
   basePath: PropTypes.string.isRequired,
   subPath: PropTypes.string,
+  isLoading: PropTypes.bool.isRequired,
 }
 
 CollectionList.defaultProps = {
