@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import pluralise from 'pluralise'
+import pluralize from 'pluralize'
 import {
   SPACING,
   MEDIA_QUERIES,
@@ -46,8 +46,8 @@ const StyledButton = styled(Button)`
 `
 
 function CollectionDownload({ totalItems, itemName, downloadUrl }) {
-  const itemPlural = pluralise(2, `${itemName}`)
-  const itemPluralWithCount = pluralise.withCount(totalItems, `% ${itemName}`)
+  const itemPlural = pluralize.plural(itemName)
+  const itemPluralWithCount = pluralize(itemName, totalItems, true)
 
   const SingularText = `You can download this ${itemName}`
   const PluralText = `You can download these ${itemPluralWithCount}`

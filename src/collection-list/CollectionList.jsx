@@ -33,11 +33,13 @@ function CollectionList({
         itemName={itemName}
         addItemUrl={addItemUrl}
       />
+
       <CollectionDownload
         totalItems={totalItems}
         itemName={itemName}
         downloadUrl={downloadUrl}
       />
+
       {profiles
         .slice(0, pageLimit)
         .map(({ itemId, headingText, badges, metadata }) => (
@@ -51,6 +53,7 @@ function CollectionList({
             subPath={subPath}
           />
         ))}
+
       <CollectionPagination
         totalPages={totalPages}
         previous={previous}
