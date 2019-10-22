@@ -1,6 +1,7 @@
 {
   "headerText": "Leadership Academy",
-  "headerUrl": "#",
+  "basePath": "/interactions/",
+  "itemId": "1",
   "metadata": [
     {
       "label": "Date",

@@ -1,6 +1,8 @@
 {
   "headerText": "Mars Exports Ltd",
-  "headerUrl": "#",
+  "itemId": "1",
+  "basePath": "/companies/",
+  "subPath": "/investments/large-capital-profile",
   "metadata": [
     {
       "label": "Updated on",

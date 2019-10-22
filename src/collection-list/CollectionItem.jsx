@@ -10,7 +10,16 @@ import {
   ItemMeta,
 } from './items'
 
-function CollectionItem({ headingUrl, headingText, badges, metadata }) {
+function CollectionItem({
+  itemId,
+  basePath,
+  subPath,
+  headingText,
+  badges,
+  metadata,
+}) {
+  const headingUrl = subPath ? basePath + itemId + subPath : basePath + itemId
+
   return (
     <Item>
       <CardHeader>
@@ -35,7 +44,9 @@ function CollectionItem({ headingUrl, headingText, badges, metadata }) {
 }
 
 CollectionItem.propTypes = {
-  headingUrl: PropTypes.string.isRequired,
+  itemId: PropTypes.string.isRequired,
+  basePath: PropTypes.string.isRequired,
+  subPath: PropTypes.string,
   headingText: PropTypes.string.isRequired,
   badges: PropTypes.array,
   metadata: PropTypes.array,
@@ -44,6 +55,7 @@ CollectionItem.propTypes = {
 CollectionItem.defaultProps = {
   badges: null,
   metadata: null,
+  subPath: null,
 }
 
 export default CollectionItem
