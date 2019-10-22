@@ -1,31 +1,7 @@
 {
     "totalPages": 7,
-    "currentPage": 2,
-    "previous": "#",
-    "next": "#",
-    "pages": [
-        {
-            "label": "1",
-            "url": "#"
-        },
-        {
-            "label": "2",
-            "url": "#"
-        },
-        {
-            "label": "3",
-            "url": "#"
-        },
-        {
-            "label": "4",
-            "url": "#"
-        },
-        {
-            "label": "..."
-        },
-        {
-            "label": "7",
-            "url": "#"
-        }
-    ]
+    "previous": "http://localhost:8000/v4/large-investor-profile?limit=10&offset=20",
+    "next": "http://localhost:8000/v4/large-investor-profile?limit=10&offset=30",
+    "apiEndpoint": "http://localhost:8000/v4/large-investor-profile?limit=10",
+    "pageLimit": 10
 }

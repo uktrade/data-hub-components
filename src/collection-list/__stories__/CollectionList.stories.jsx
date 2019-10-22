@@ -1,45 +1,29 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-
 import {
   capitalProfileItem,
   interactionItem,
   capitalProfileHeading,
   paginationProps,
+  capitalProfileCollectionList1,
 } from '../__fixtures__'
 import CollectionItem from '../CollectionItem'
 import CollectionHeader from '../CollectionHeader'
 import CollectionDownload from '../CollectionDownload'
 import CollectionPagination from '../CollectionPagination'
+import CollectionList from '../CollectionList'
 
 storiesOf('Collection', module).add('Collection', () => (
-  <>
-    <CollectionHeader
-      totalItems={capitalProfileHeading.totalItems}
-      itemName={capitalProfileHeading.itemName}
-      addItemText={capitalProfileHeading.addItemText}
-      addItemUrl={capitalProfileHeading.addItemUrl}
-    />
-    <CollectionDownload
-      totalItems={capitalProfileHeading.totalItems}
-      itemName={capitalProfileHeading.itemName}
-      downloadUrl={capitalProfileHeading.downloadUrl}
-    />
-    <CollectionItem
-      id={capitalProfileItem.id}
-      headingUrl={capitalProfileItem.headerLink}
-      headingText={capitalProfileItem.headerText}
-      badges={capitalProfileItem.badges}
-      metadata={capitalProfileItem.metadata}
-    />
-    <CollectionPagination
-      totalPages={paginationProps.totalPages}
-      currentPage={paginationProps.currentPage}
-      previous={paginationProps.previous}
-      next={paginationProps.next}
-      pages={paginationProps.pages}
-    />
-  </>
+  <CollectionList
+    totalItems={capitalProfileCollectionList1.totalItems}
+    itemName={capitalProfileCollectionList1.itemName}
+    addItemUrl={capitalProfileCollectionList1.addItemUrl}
+    downloadUrl={capitalProfileCollectionList1.downloadUrl}
+    profiles={capitalProfileCollectionList1.profiles}
+    previous={capitalProfileCollectionList1.previous}
+    next={capitalProfileCollectionList1.next}
+    apiEndpoint={capitalProfileCollectionList1.apiEndpoint}
+  />
 ))
 
 storiesOf('Collection', module).add('Collection Header', () => (
@@ -128,9 +112,9 @@ storiesOf('Collection', module).add('Interaction item', () => (
 storiesOf('Collection', module).add('Collection pagination', () => (
   <CollectionPagination
     totalPages={paginationProps.totalPages}
-    currentPage={paginationProps.currentPage}
     previous={paginationProps.previous}
     next={paginationProps.next}
-    pages={paginationProps.pages}
+    apiEndpoint={paginationProps.apiEndpoint}
+    pageLimit={paginationProps.pageLimit}
   />
 ))
