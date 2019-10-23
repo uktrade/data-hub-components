@@ -14,10 +14,6 @@
     "type": "git",
     "url": "git@github.com:uktrade/data-hub-components.git"
   },
-  "release": {
-    "branch": "master",
-    "npmPublish": true
-  },
   "scripts": {
     "start": "yarn storybook",
     "build": "rimraf dist && NODE_ENV=production babel src --out-dir dist --ignore **/*.stories.jsx,**/*.test.jsx,**/*.test.js,**/__snapshots__,**/__tests__,**/__mocks__,**/__fixtures__",

@@ -95,10 +95,10 @@ When committing please always use the following pattern for you messages (scope,
 |--------------------------------------------------------------------------------------------------------------------|---------------------------|----------------------------------------------------------|
 | **feat**: A new feature                                                                                            | Minor release (0.**1**.0) | `feat: Add "Investment project" activity card`           |
 | **fix**: A bug fix                                                                                                 | Patch release (0.0.**1**) | `fix: Remove default activity card`                      |
+| **refactor**: A code change that neither fixes a bug nor adds a feature                                            | Patch release (0.0.**1**) | `refactor: Add missing props validation to ActivityFeed` |
+| **perf**: A code change that improves performance                                                                  | Patch release (0.0.**1**) | `perf: Improve rendering speed of ActivityFeed`          |
 | **docs**: Documentation only changes                                                                               | None                      | `docs(README): Add testing instructions`                 |
 | **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)  | None                      | `style: Use tabs instead of spaces`                      |
-| **refactor**: A code change that neither fixes a bug nor adds a feature                                            | None                      | `refactor: Add missing props validation to ActivityFeed` |
-| **perf**: A code change that improves performance                                                                  | None                      | `perf: Improve rendering speed of ActivityFeed`          |
 | **test**: Adding missing or correcting existing tests                                                              | None                      | `test: Add integration tests to ActivityFeedCard`        |
 | **build** Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)      | None                      | `build: Update webpack config`                           |
 | **ci** Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs) | None                      | `ci: Update CircleCI config`                             |
