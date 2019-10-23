@@ -20,9 +20,7 @@ describe('CardHeading', () => {
       expect(tree).toMatchSnapshot()
     })
   })
-})
 
-describe('CardHeading', () => {
   describe('when sourceType is missing', () => {
     test('should render the default card heading', () => {
       const tree = renderer
@@ -37,9 +35,7 @@ describe('CardHeading', () => {
       expect(tree).toMatchSnapshot()
     })
   })
-})
 
-describe('CardHeading', () => {
   describe('when link is missing', () => {
     test('should render the heading without a link', () => {
       const tree = renderer

@@ -74,7 +74,7 @@ describe('CreateListForm', () => {
     })
 
     test('should fire a onSubmit handler', () => {
-      expect(onSubmitSpy).toBeCalledTimes(1)
+      expect(onSubmitSpy).toHaveBeenCalledTimes(1)
     })
   })
 
@@ -92,7 +92,7 @@ describe('CreateListForm', () => {
 
     test('should prompt for a list name', () => {
       wrapper.simulate('submit')
-      expect(onSubmitSpy).toBeCalledTimes(0)
+      expect(onSubmitSpy).toHaveBeenCalledTimes(0)
       expect(wrapper.find(ErrorText).text()).toEqual(
         'Enter a name for your list'
       )
@@ -106,7 +106,7 @@ describe('CreateListForm', () => {
         },
       })
       wrapper.simulate('submit')
-      expect(onSubmitSpy).toBeCalledTimes(0)
+      expect(onSubmitSpy).toHaveBeenCalledTimes(0)
       expect(wrapper.find(ErrorText).text()).toEqual(
         'Enter list name which is no longer than 30 characters'
       )

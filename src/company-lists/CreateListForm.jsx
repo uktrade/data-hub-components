@@ -6,12 +6,6 @@ import Form from '../forms/elements/Form'
 import FieldInput from '../forms/elements/FieldInput'
 import FormActions from '../forms/elements/FormActions'
 
-const test = (hello) => {
-  return `${hello} world`
-}
-
-test('lol')
-
 const CreateListForm = ({
   name,
   label,

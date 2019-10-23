@@ -276,8 +276,8 @@ describe('useForm', () => {
     })
 
     test('should scroll to the top of the page', () => {
-      expect(window.scrollTo).toBeCalledTimes(1)
-      expect(window.scrollTo).toBeCalledWith(0, 0)
+      expect(window.scrollTo).toHaveBeenCalledTimes(1)
+      expect(window.scrollTo).toHaveBeenCalledWith(0, 0)
     })
   })
 
@@ -340,8 +340,8 @@ describe('useForm', () => {
     })
 
     test('should scroll to the top of the page', () => {
-      expect(window.scrollTo).toBeCalledTimes(1)
-      expect(window.scrollTo).toBeCalledWith(0, 0)
+      expect(window.scrollTo).toHaveBeenCalledTimes(1)
+      expect(window.scrollTo).toHaveBeenCalledWith(0, 0)
     })
   })
 
@@ -354,28 +354,7 @@ describe('useForm', () => {
     })
 
     test('should throw an exception', () => {
-      expect(callback).toThrowError('Field madeUpField does not exist')
-    })
-  })
-
-  describe('when deregisterField() is called', () => {
-    beforeAll(async () => {
-      const hook = renderHook(() => useForm())
-
-      await act(async () => {
-        await hook.result.current.registerField(testField1)
-        await hook.result.current.deregisterField(['testField1'])
-
-        formState = hook.result.current
-      })
-    })
-
-    test('should remove fields from the form state', () => {
-      expect(formState.fields).toEqual({})
-    })
-
-    test('should remove touched', () => {
-      expect(formState.touched).toEqual({})
+      expect(callback).toThrow('Field madeUpField does not exist')
     })
   })
 
@@ -577,8 +556,8 @@ describe('useForm', () => {
     })
 
     test('should scroll to the top of the page', () => {
-      expect(window.scrollTo).toBeCalledTimes(1)
-      expect(window.scrollTo).toBeCalledWith(0, 0)
+      expect(window.scrollTo).toHaveBeenCalledTimes(1)
+      expect(window.scrollTo).toHaveBeenCalledWith(0, 0)
     })
   })
 
@@ -604,8 +583,8 @@ describe('useForm', () => {
     })
 
     test('should scroll to the top of the page', () => {
-      expect(window.scrollTo).toBeCalledTimes(1)
-      expect(window.scrollTo).toBeCalledWith(0, 0)
+      expect(window.scrollTo).toHaveBeenCalledTimes(1)
+      expect(window.scrollTo).toHaveBeenCalledWith(0, 0)
     })
   })
 
@@ -630,8 +609,8 @@ describe('useForm', () => {
     })
 
     test('should scroll to the top of the page', () => {
-      expect(window.scrollTo).toBeCalledTimes(1)
-      expect(window.scrollTo).toBeCalledWith(0, 0)
+      expect(window.scrollTo).toHaveBeenCalledTimes(1)
+      expect(window.scrollTo).toHaveBeenCalledWith(0, 0)
     })
   })
 
@@ -656,8 +635,8 @@ describe('useForm', () => {
     })
 
     test('should scroll to the top of the page', () => {
-      expect(window.scrollTo).toBeCalledTimes(1)
-      expect(window.scrollTo).toBeCalledWith(0, 0)
+      expect(window.scrollTo).toHaveBeenCalledTimes(1)
+      expect(window.scrollTo).toHaveBeenCalledWith(0, 0)
     })
   })
 

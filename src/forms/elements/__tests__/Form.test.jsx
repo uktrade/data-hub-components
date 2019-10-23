@@ -101,7 +101,7 @@ describe('Form', () => {
     })
 
     test('should call onSubmit function', () => {
-      expect(onSubmitSpy).toBeCalledTimes(1)
+      expect(onSubmitSpy).toHaveBeenCalledTimes(1)
     })
   })
 
