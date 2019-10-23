@@ -78,7 +78,7 @@ CollectionList.propTypes = {
   apiEndpoint: PropTypes.string.isRequired,
   basePath: PropTypes.string.isRequired,
   subPath: PropTypes.string,
-  isLoading: PropTypes.bool.isRequired,
+  isLoading: PropTypes.bool,
 }
 
 CollectionList.defaultProps = {
@@ -88,6 +88,7 @@ CollectionList.defaultProps = {
   previous: null,
   next: null,
   subPath: null,
+  isLoading: false,
 }
 
 export default CollectionList
