@@ -30,18 +30,6 @@ describe('ShowDetailsFilter', () => {
     })
   })
 
-  describe('when the details for all activities are shown', () => {
-    beforeAll(() => {
-      wrapper = mount(
-        <ShowDetailsFilter onShowDetailsClick={() => {}} showDetails={true} />
-      )
-    })
-
-    test('renders filters', () => {
-      expect(wrapper.find(ShowDetailsFilter).exists()).toBe(true)
-    })
-  })
-
   describe('when the "Show details for all activities" checkbox is clicked', () => {
     const onShowDetailsClickMock = jest.fn()
 

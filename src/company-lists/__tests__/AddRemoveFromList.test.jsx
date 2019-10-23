@@ -84,7 +84,7 @@ describe('AddRemoveFromList', () => {
     })
 
     test('should fire a onSubmit handler', () => {
-      expect(onSubmitSpy).toBeCalledTimes(1)
+      expect(onSubmitSpy).toHaveBeenCalledTimes(1)
     })
   })
 })

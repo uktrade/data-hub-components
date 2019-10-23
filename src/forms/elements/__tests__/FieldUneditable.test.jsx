@@ -104,7 +104,7 @@ describe('FieldUneditable', () => {
       })
 
       test('should call callback defined in the "onChangeClick" prop', () => {
-        expect(onChangeClickSpy).toBeCalledTimes(1)
+        expect(onChangeClickSpy).toHaveBeenCalledTimes(1)
       })
     })
   })
