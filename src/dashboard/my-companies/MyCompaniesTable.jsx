@@ -23,7 +23,6 @@ const StyledCellHeader = styled(Table.CellHeader)(
 
 const StyledDateCell = styled(Table.Cell)(typography.font({ size: 14 }), {
   color: GREY_1,
-  'text-align': 'center',
 })
 
 function sortCompanies(companies, sortType) {
@@ -71,7 +70,7 @@ function MyCompaniesTable() {
   const rows = filteredSortedCompanies.map(({ company, latestInteraction }) => {
     return (
       <Table.Row key={company.id}>
-        <Table.Cell>
+        <Table.Cell setWidth="25%">
           <Link href={`companies/${company.id}`}>
             <LinesEllipsis
               text={company.name}
@@ -82,12 +81,12 @@ function MyCompaniesTable() {
             />
           </Link>
         </Table.Cell>
-        <StyledDateCell>
+        <StyledDateCell setWidth="15%">
           {latestInteraction.date
             ? moment(latestInteraction.date).format('D MMM YYYY')
             : '-'}
         </StyledDateCell>
-        <Table.Cell>
+        <Table.Cell setWidth="60%">
           {latestInteraction.id ? (
             <Link href={`interactions/${latestInteraction.id}`}>
               <LinesEllipsis
