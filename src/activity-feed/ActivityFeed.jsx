@@ -1,9 +1,7 @@
-import { intersection } from 'lodash'
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { SPACING } from '@govuk-react/constants'
-import { ACTIVITY_TYPE_FILTERS } from './constants'
 
 import Activity from './Activity'
 import ActivityFeedHeader from './ActivityFeedHeader'
@@ -28,30 +26,36 @@ export default class ActivityFeed extends React.Component {
   static propTypes = {
     children: PropTypes.node,
     activities: PropTypes.arrayOf(PropTypes.object),
+    activityTypeFilters: PropTypes.array,
     onLoadMore: PropTypes.func,
     hasMore: PropTypes.bool,
     isLoading: PropTypes.bool,
     addContentText: PropTypes.string,
     addContentLink: PropTypes.string,
+    totalActivities: PropTypes.number,
   }
 
   static defaultProps = {
     children: null,
     activities: [],
+    activityTypeFilters: [],
     onLoadMore: () => {},
     hasMore: false,
     isLoading: false,
     addContentText: null,
     addContentLink: null,
+    totalActivities: 0,
   }
 
   constructor(props) {
     super(props)
     this.state = {
-      filteredActivity: ACTIVITY_TYPE_FILTERS[2].value || [],
+      filteredActivity: props.activityTypeFilters.length
+        ? props.activityTypeFilters[2].value
+        : [],
       showDetails: false,
-      isActivityTypeFilterEnabled: !!ACTIVITY_TYPE_FILTERS.length,
-      activityTypeFilters: ACTIVITY_TYPE_FILTERS,
+      isActivityTypeFilterEnabled: !!props.activityTypeFilters.length,
+      activityTypeFilters: props.activityTypeFilters,
     }
 
     this.onActivityTypeFilterChange = this.onActivityTypeFilterChange.bind(this)
@@ -82,6 +86,7 @@ export default class ActivityFeed extends React.Component {
       addContentText,
       addContentLink,
       children,
+      totalActivities,
     } = this.props
     const {
       activityTypeFilters,
@@ -90,18 +95,10 @@ export default class ActivityFeed extends React.Component {
       showDetails,
     } = this.state
 
-    const count = activities.filter((activity) => {
-      if (filteredActivity.length) {
-        return intersection(activity.object.type, filteredActivity).length
-      } else {
-        return true
-      }
-    }).length
-
     return (
       <ActivityFeedContainer>
         <ActivityFeedHeader
-          totalActivities={count}
+          totalActivities={totalActivities}
           addContentText={addContentText}
           addContentLink={addContentLink}
         />

@@ -42,6 +42,7 @@ describe('BasicActivityTypeFilter', () => {
       wrapper = mount(
         <ActivityFeed
           totalActivities={1}
+          activityTypeFilters={ACTIVITY_TYPE_FILTERS}
           activities={[interactionActivityFixture]}
         />
       )

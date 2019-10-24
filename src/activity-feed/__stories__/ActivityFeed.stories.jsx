@@ -81,6 +81,7 @@ class ActivityFeedDemoApp extends React.Component {
       <div>
         <ActivityFeed
           activities={activities}
+          activityTypeFilters={[]}
           totalActivities={total}
           hasMore={hasMore}
           onLoadMore={this.onLoadMore}
