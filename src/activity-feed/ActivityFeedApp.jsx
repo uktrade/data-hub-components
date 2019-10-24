@@ -91,14 +91,12 @@ export default class ActivityFeedApp extends React.Component {
   }
 
   render() {
-    const { activities, isLoading, hasMore, total, error } = this.state
+    const { activities, isLoading, hasMore, error } = this.state
     const { addContentText, addContentLink, render } = this.props
 
     const isEmptyFeed = activities.length === 0 && !hasMore
-
     return (
       <ActivityFeed
-        totalActivities={total}
         addContentText={addContentText}
         addContentLink={addContentLink}
         activities={activities}

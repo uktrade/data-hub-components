@@ -1,3 +1,4 @@
+import { intersection } from 'lodash'
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
@@ -32,7 +33,6 @@ export default class ActivityFeed extends React.Component {
     isLoading: PropTypes.bool,
     addContentText: PropTypes.string,
     addContentLink: PropTypes.string,
-    totalActivities: PropTypes.number,
   }
 
   static defaultProps = {
@@ -43,7 +43,6 @@ export default class ActivityFeed extends React.Component {
     isLoading: false,
     addContentText: null,
     addContentLink: null,
-    totalActivities: 0,
   }
 
   constructor(props) {
@@ -61,9 +60,10 @@ export default class ActivityFeed extends React.Component {
 
   onActivityTypeFilterChange(e) {
     const value = e.target.value.split(',')
+    const filteredActivity = e.target.value === 'all' ? [] : value
 
     this.setState({
-      filteredActivity: e.target.value === 'all' ? [] : value,
+      filteredActivity,
     })
   }
 
@@ -81,7 +81,6 @@ export default class ActivityFeed extends React.Component {
       isLoading,
       addContentText,
       addContentLink,
-      totalActivities,
       children,
     } = this.props
     const {
@@ -91,10 +90,18 @@ export default class ActivityFeed extends React.Component {
       showDetails,
     } = this.state
 
+    const count = activities.filter((activity) => {
+      if (filteredActivity.length) {
+        return intersection(activity.object.type, filteredActivity).length
+      } else {
+        return true
+      }
+    }).length
+
     return (
       <ActivityFeedContainer>
         <ActivityFeedHeader
-          totalActivities={totalActivities}
+          totalActivities={count}
           addContentText={addContentText}
           addContentLink={addContentLink}
         />
