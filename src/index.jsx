@@ -21,6 +21,9 @@ export {
 // Button Link
 export { default as ButtonLink } from './button-link/ButtonLink'
 
+// Collection list
+export { default as CollectionList } from './collection-list/CollectionList'
+
 // Company lists
 export {
   default as DeleteCompanyListSection,
