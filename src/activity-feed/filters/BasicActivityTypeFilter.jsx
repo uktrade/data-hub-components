@@ -56,6 +56,7 @@ const StyledCheckbox = styled(Checkbox)`
       width: 12px;
       height: 6px;
       border-width: 0 0 ${BORDER_WIDTH_MOBILE} ${BORDER_WIDTH_MOBILE};
+      box-sizing: unset;
     }
   }
 
