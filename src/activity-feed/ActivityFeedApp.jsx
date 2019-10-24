@@ -100,6 +100,7 @@ export default class ActivityFeedApp extends React.Component {
         addContentText={addContentText}
         addContentLink={addContentLink}
         activities={activities}
+        activityTypeFilters={[]}
         hasMore={hasMore}
         onLoadMore={this.onLoadMore}
         isLoading={isLoading}
