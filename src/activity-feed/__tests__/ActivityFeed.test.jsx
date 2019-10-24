@@ -46,6 +46,7 @@ describe('ActivityFeed', () => {
           <ActivityFeed
             totalActivities={[interactionActivityFixture].length}
             activities={[interactionActivityFixture]}
+            activityTypeFiltersList={ACTIVITY_TYPE_FILTERS}
           />
         )
       })
@@ -91,6 +92,7 @@ describe('ActivityFeed', () => {
             totalActivities={activities.length}
             activities={activities}
             hasMore={activities.length > 20}
+            activityTypeFiltersList={ACTIVITY_TYPE_FILTERS}
           />
         )
       })
@@ -198,8 +200,9 @@ describe('ActivityFeed', () => {
     beforeAll(() => {
       wrapper = mount(
         <ActivityFeed
-          totalActivities={activities.length}
           activities={activities}
+          totalActivities={activities.length}
+          activityTypeFiltersList={ACTIVITY_TYPE_FILTERS}
         />
       )
     })

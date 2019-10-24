@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import PropTypes from 'prop-types'
 import ActivityFeed from './ActivityFeed'
+import { ACTIVE_ACTIVITY_TYPE_FILTERS } from './constants'
 
 export default class ActivityFeedApp extends React.Component {
   static propTypes = {
@@ -98,6 +99,7 @@ export default class ActivityFeedApp extends React.Component {
     return (
       <ActivityFeed
         addContentText={addContentText}
+        activityTypeFiltersList={ACTIVE_ACTIVITY_TYPE_FILTERS}
         addContentLink={addContentLink}
         activities={activities}
         hasMore={hasMore}
