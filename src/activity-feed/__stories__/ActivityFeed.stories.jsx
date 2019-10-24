@@ -5,7 +5,6 @@ import GridCol from '@govuk-react/grid-col'
 import GridRow from '@govuk-react/grid-row'
 import Main from '@govuk-react/main'
 import { SPACING } from '@govuk-react/constants'
-import { ACTIVE_ACTIVITY_TYPE_FILTERS } from '../constants'
 
 import ActivityFeed from '../ActivityFeed'
 import activityFeedFixtures from '../__fixtures__'
@@ -82,7 +81,7 @@ class ActivityFeedDemoApp extends React.Component {
       <div>
         <ActivityFeed
           activities={activities}
-          activityTypeFiltersList={ACTIVE_ACTIVITY_TYPE_FILTERS}
+          activityTypeFilters={[]}
           totalActivities={total}
           hasMore={hasMore}
           onLoadMore={this.onLoadMore}

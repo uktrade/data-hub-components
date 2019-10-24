@@ -26,7 +26,7 @@ export default class ActivityFeed extends React.Component {
   static propTypes = {
     children: PropTypes.node,
     activities: PropTypes.arrayOf(PropTypes.object),
-    activityTypeFiltersList: PropTypes.array,
+    activityTypeFilters: PropTypes.array,
     onLoadMore: PropTypes.func,
     hasMore: PropTypes.bool,
     isLoading: PropTypes.bool,
@@ -38,7 +38,7 @@ export default class ActivityFeed extends React.Component {
   static defaultProps = {
     children: null,
     activities: [],
-    activityTypeFiltersList: [],
+    activityTypeFilters: [],
     onLoadMore: () => {},
     hasMore: false,
     isLoading: false,
@@ -50,12 +50,12 @@ export default class ActivityFeed extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      filteredActivity: props.activityTypeFiltersList.length
-        ? props.activityTypeFiltersList[2].value
+      filteredActivity: props.activityTypeFilters.length
+        ? props.activityTypeFilters[2].value
         : [],
       showDetails: false,
-      isActivityTypeFilterEnabled: !!props.activityTypeFiltersList.length,
-      activityTypeFilters: props.activityTypeFiltersList,
+      isActivityTypeFilterEnabled: !!props.activityTypeFilters.length,
+      activityTypeFilters: props.activityTypeFilters,
     }
 
     this.onActivityTypeFilterChange = this.onActivityTypeFilterChange.bind(this)

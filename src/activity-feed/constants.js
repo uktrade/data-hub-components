@@ -11,8 +11,6 @@ export const ACTIVITY_TYPE = {
   Omis: ['dit:OMISOrder'],
 }
 
-export const ACTIVE_ACTIVITY_TYPE_FILTERS = []
-
 export const ACTIVITY_TYPE_FILTERS = [
   {
     label: 'All Data Hub & external activity',
@@ -42,7 +40,6 @@ export const ACTIVITY_TYPE_FILTERS = [
 
 export default {
   ACTIVITY_TYPE,
-  ACTIVE_ACTIVITY_TYPE_FILTERS,
   ACTIVITY_TYPE_FILTERS,
   SOURCE_TYPES,
 }
