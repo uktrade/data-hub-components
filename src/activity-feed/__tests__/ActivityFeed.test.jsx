@@ -189,12 +189,12 @@ describe('ActivityFeed', () => {
       ]
     )
 
-    const defaultFilterValue = ACTIVITY_TYPE_FILTERS.length
-      ? ACTIVITY_TYPE_FILTERS[2].value
+    const defaultFilterValue = ACTIVITY_TYPE_FILTERS.default
+      ? ACTIVITY_TYPE_FILTERS.default.value
       : ''
 
-    const showAllActivitiesFilterValue = ACTIVITY_TYPE_FILTERS.length
-      ? ACTIVITY_TYPE_FILTERS[0].value
+    const showAllActivitiesFilterValue = ACTIVITY_TYPE_FILTERS.values.length
+      ? ACTIVITY_TYPE_FILTERS.values[0].value
       : ''
 
     beforeAll(() => {
@@ -203,6 +203,7 @@ describe('ActivityFeed', () => {
           activities={activities}
           totalActivities={activities.length}
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
+          isFilterEnabled={true}
         />
       )
     })
@@ -222,10 +223,6 @@ describe('ActivityFeed', () => {
         expect(
           wrapper.find(BasicActivityTypeFilter).props().filteredActivity
         ).toBe(defaultFilterValue)
-      })
-
-      test('should only show the relevant activities', () => {
-        expect(wrapper.find('ol li details').length).toBe(2)
       })
     })
 

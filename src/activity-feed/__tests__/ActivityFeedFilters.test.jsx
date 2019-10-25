@@ -12,7 +12,7 @@ describe('ActivityFeedFilters without BasicActivityTypeFilter', () => {
       wrapper = mount(
         <ActivityFeedFilters
           activityTypeFilters={[]}
-          isActivityTypeFilterEnabled={false}
+          isFilterEnabled={false}
           onShowDetailsClick={() => {}}
           showDetails={false}
         />
@@ -41,7 +41,7 @@ describe('ActivityFeedFilters without BasicActivityTypeFilter', () => {
             },
           ]}
           filteredActivity={['hello']}
-          isActivityTypeFilterEnabled={true}
+          isFilterEnabled={true}
           onShowDetailsClick={() => {}}
           onActivityTypeFilterChange={() => {}}
           showDetails={false}

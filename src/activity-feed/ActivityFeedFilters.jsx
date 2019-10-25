@@ -6,13 +6,13 @@ import ShowDetailsFilter from './filters/ShowDetailsFilter'
 
 export default class ActivityFeedFilters extends React.PureComponent {
   static propTypes = {
-    isActivityTypeFilterEnabled: PropTypes.bool.isRequired,
+    isFilterEnabled: PropTypes.bool.isRequired,
   }
 
   render() {
-    const { isActivityTypeFilterEnabled } = this.props
+    const { isFilterEnabled } = this.props
 
-    if (isActivityTypeFilterEnabled) {
+    if (isFilterEnabled) {
       return <BasicActivityTypeFilter {...this.props} />
     } else {
       return <ShowDetailsFilter {...this.props} />

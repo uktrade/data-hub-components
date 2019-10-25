@@ -5,23 +5,36 @@ import GridCol from '@govuk-react/grid-col'
 import GridRow from '@govuk-react/grid-row'
 import Main from '@govuk-react/main'
 import { SPACING } from '@govuk-react/constants'
+import { ACTIVITY_TYPE_FILTERS } from '../constants'
 
 import ActivityFeed from '../ActivityFeed'
 import activityFeedFixtures from '../__fixtures__'
 import datahubBackground from './images/data-hub-one-list-corp.png'
+import accountsAreDueFixture from '../__fixtures__/companies_house/accounts_are_due'
+import incorporatedFixture from '../__fixtures__/companies_house/incorporated'
+import exportOfGoodsFixture from '../__fixtures__/hmrc/export_of_goods'
+import interactionFixture from '../__fixtures__/interactions/interaction'
 
 addDecorator(withKnobs)
 
+/**
+ * This component is used only for Storybook - to productionize your feature you'll also need to update
+ * `ActivityFeedApp.jsx to reflect the changes.
+ */
 class ActivityFeedDemoApp extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {
+      filterQueryParams: {},
       activities: [],
       isLoading: false,
       hasMore: true,
       offset: 0,
       error: false,
     }
+
+    this.setFilterQueryParams = this.setFilterQueryParams.bind(this)
   }
 
   async componentDidMount() {
@@ -30,27 +43,38 @@ class ActivityFeedDemoApp extends React.Component {
 
   fetchActivities = () =>
     new Promise((resolve) => {
+      const items = [
+        activityFeedFixtures,
+        [accountsAreDueFixture, incorporatedFixture, exportOfGoodsFixture],
+        interactionFixture,
+      ]
+      const fixture = items[Math.floor(Math.random() * items.length)]
+
       // Simulate delay.
       setTimeout(() => {
         resolve({
-          activities: activityFeedFixtures,
+          activities: fixture,
           total: 1000,
         })
       }, 1500)
     })
 
   onLoadMore = async () => {
-    const { activities, offset } = this.state
+    const { activities, offset, filterQueryParams } = this.state
     const limit = 20
 
     this.setState({
       isLoading: true,
     })
+    // TODO(jf): remove when done
+    // eslint-disable-next-line no-console
+    console.log(offset, filterQueryParams)
 
     try {
       const { activities: newActivities, total } = await this.fetchActivities(
         offset,
-        limit
+        limit,
+        filterQueryParams
       )
       const allActivities = activities.concat(newActivities)
 
@@ -73,6 +97,10 @@ class ActivityFeedDemoApp extends React.Component {
     }
   }
 
+  setFilterQueryParams(filterQueryParams) {
+    this.setState({ filterQueryParams }, this.onLoadMore)
+  }
+
   render() {
     const { activities, isLoading, hasMore, error, total } = this.state
     const isEmptyFeed = activities.length === 0 && !hasMore
@@ -80,14 +108,16 @@ class ActivityFeedDemoApp extends React.Component {
     return (
       <div>
         <ActivityFeed
+          sendFilterQueryParams={this.setFilterQueryParams}
           activities={activities}
-          activityTypeFilters={[]}
+          activityTypeFilters={ACTIVITY_TYPE_FILTERS}
           totalActivities={total}
           hasMore={hasMore}
           onLoadMore={this.onLoadMore}
           isLoading={isLoading}
           addContentText="Add interaction"
           addContentLink="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create"
+          isFilterEnabled={true}
         >
           {isEmptyFeed && !error && <div>There are no activities to show.</div>}
           {error && <div>Error occurred while loading activities.</div>}

@@ -26,36 +26,39 @@ export default class ActivityFeed extends React.Component {
   static propTypes = {
     children: PropTypes.node,
     activities: PropTypes.arrayOf(PropTypes.object),
-    activityTypeFilters: PropTypes.array,
+    activityTypeFilters: PropTypes.object,
     onLoadMore: PropTypes.func,
     hasMore: PropTypes.bool,
+    isFilterEnabled: PropTypes.bool,
     isLoading: PropTypes.bool,
     addContentText: PropTypes.string,
     addContentLink: PropTypes.string,
     totalActivities: PropTypes.number,
+    sendFilterQueryParams: PropTypes.func,
   }
 
   static defaultProps = {
     children: null,
     activities: [],
-    activityTypeFilters: [],
+    activityTypeFilters: {},
     onLoadMore: () => {},
     hasMore: false,
+    isFilterEnabled: false,
     isLoading: false,
     addContentText: null,
     addContentLink: null,
     totalActivities: 0,
+    sendFilterQueryParams: () => {},
   }
 
   constructor(props) {
     super(props)
     this.state = {
-      filteredActivity: props.activityTypeFilters.length
-        ? props.activityTypeFilters[2].value
-        : [],
+      filteredActivity: props.activityTypeFilters.default
+        ? props.activityTypeFilters.default.value
+        : '',
       showDetails: false,
-      isActivityTypeFilterEnabled: !!props.activityTypeFilters.length,
-      activityTypeFilters: props.activityTypeFilters,
+      activityTypeFilters: props.activityTypeFilters.values || [],
     }
 
     this.onActivityTypeFilterChange = this.onActivityTypeFilterChange.bind(this)
@@ -69,6 +72,15 @@ export default class ActivityFeed extends React.Component {
     this.setState({
       filteredActivity,
     })
+
+    /**
+     * the `key` param is used for building the query to ES
+     * "object.attributedTo.id" - for companies or advisers
+     * "object.type" - for activity types
+     */
+    this.sendFilterQueryParams({
+      'object.type': filteredActivity,
+    })
   }
 
   onShowDetailsClick(e) {
@@ -77,23 +89,24 @@ export default class ActivityFeed extends React.Component {
     })
   }
 
+  sendFilterQueryParams(filteredActivity) {
+    const { sendFilterQueryParams } = this.props
+    sendFilterQueryParams(filteredActivity)
+  }
+
   render() {
     const {
       activities,
       onLoadMore,
       hasMore,
+      isFilterEnabled,
       isLoading,
       addContentText,
       addContentLink,
       children,
       totalActivities,
     } = this.props
-    const {
-      activityTypeFilters,
-      filteredActivity,
-      isActivityTypeFilterEnabled,
-      showDetails,
-    } = this.state
+    const { activityTypeFilters, filteredActivity, showDetails } = this.state
 
     return (
       <ActivityFeedContainer>
@@ -105,7 +118,7 @@ export default class ActivityFeed extends React.Component {
         <ActivityFeedFilters
           activityTypeFilters={activityTypeFilters}
           filteredActivity={filteredActivity}
-          isActivityTypeFilterEnabled={isActivityTypeFilterEnabled}
+          isFilterEnabled={isFilterEnabled}
           onActivityTypeFilterChange={this.onActivityTypeFilterChange}
           onShowDetailsClick={this.onShowDetailsClick}
           showDetails={showDetails}
@@ -113,11 +126,7 @@ export default class ActivityFeed extends React.Component {
         <ActivityFeedCardList>
           {activities.map((activity) => (
             <li key={activity.id}>
-              <Activity
-                activity={activity}
-                filter={filteredActivity}
-                showDetails={showDetails}
-              />
+              <Activity activity={activity} showDetails={showDetails} />
             </li>
           ))}
         </ActivityFeedCardList>

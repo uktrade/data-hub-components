@@ -3,19 +3,27 @@ import axios from 'axios'
 import PropTypes from 'prop-types'
 import ActivityFeed from './ActivityFeed'
 
+/**
+ * This component is not visible in Storybook - remember to also port your changes here,
+ * as this one is going into production.
+ */
 export default class ActivityFeedApp extends React.Component {
   static propTypes = {
-    apiEndpoint: PropTypes.string.isRequired,
-    queryParams: PropTypes.object,
-    addContentText: PropTypes.string,
+    addActivityTypeFilter: PropTypes.object,
     addContentLink: PropTypes.string,
+    addContentText: PropTypes.string,
+    apiEndpoint: PropTypes.string.isRequired,
+    isFilterEnabled: PropTypes.bool,
+    queryParams: PropTypes.object,
     render: PropTypes.func,
   }
 
   static defaultProps = {
-    queryParams: {},
-    addContentText: null,
+    addActivityTypeFilter: {},
     addContentLink: null,
+    addContentText: null,
+    isFilterEnabled: false,
+    queryParams: {},
     render: null,
   }
 
@@ -54,7 +62,7 @@ export default class ActivityFeedApp extends React.Component {
         apiEndpoint,
         offset,
         limit,
-        queryParams
+        queryParams // TODO(jf): confirm the assumption that in this case this is the company ID
       )
       const allActivities = activities.concat(newActivities)
 
@@ -92,7 +100,13 @@ export default class ActivityFeedApp extends React.Component {
 
   render() {
     const { activities, isLoading, hasMore, error, total } = this.state
-    const { addContentText, addContentLink, render } = this.props
+    const {
+      addActivityTypeFilter,
+      addContentText,
+      addContentLink,
+      isFilterEnabled,
+      render,
+    } = this.props
 
     const isEmptyFeed = activities.length === 0 && !hasMore
     return (
@@ -101,10 +115,11 @@ export default class ActivityFeedApp extends React.Component {
         addContentText={addContentText}
         addContentLink={addContentLink}
         activities={activities}
-        activityTypeFilters={[]}
+        activityTypeFilters={addActivityTypeFilter} // TODO(jf): this should be coming from DH   `addActivityTypeFilter`
         hasMore={hasMore}
         onLoadMore={this.onLoadMore}
         isLoading={isLoading}
+        isFilterEnabled={isFilterEnabled}
       >
         {isEmptyFeed && !error && <div>There are no activities to show.</div>}
         {error && <div>Error occurred while loading activities.</div>}
