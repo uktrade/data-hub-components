@@ -197,6 +197,10 @@ describe('ActivityFeed', () => {
       ? ACTIVITY_TYPE_FILTERS.values[0].value
       : ''
 
+    const myActivityFilterValue = ACTIVITY_TYPE_FILTERS.values.length
+      ? ACTIVITY_TYPE_FILTERS.values[1].value
+      : ''
+
     beforeAll(() => {
       wrapper = mount(
         <ActivityFeed
@@ -229,18 +233,50 @@ describe('ActivityFeed', () => {
     describe('when the filter that should list all activities is selected', () => {
       beforeAll(() => {
         wrapper.find('select').simulate('change', {
-          target: { value: showAllActivitiesFilterValue },
+          target: { value: showAllActivitiesFilterValue.join() },
         })
-      })
-
-      test('should have the "all" value active', () => {
-        expect(
-          wrapper.find(BasicActivityTypeFilter).props().filteredActivity
-        ).toStrictEqual([])
       })
 
       test('should show all activities', () => {
         expect(wrapper.find('ol li details').length).toBe(activities.length)
+      })
+    })
+
+    describe('when the filter is My Activity', () => {
+      const spySendQueryParams = jest.spyOn(
+        ActivityFeed.prototype,
+        'sendQueryParams'
+      )
+
+      beforeAll(() => {
+        wrapper.find('select').simulate('change', {
+          target: { value: myActivityFilterValue },
+        })
+      })
+
+      test('set the query params to have an "object.attributedTo.id" key', () => {
+        expect(spySendQueryParams).toHaveBeenCalledWith([
+          { 'object.attributedTo.id': ['dit:DataHubAdviser:123-456'] },
+        ])
+      })
+    })
+
+    describe('when the filter is DH Activity', () => {
+      const spySendQueryParams = jest.spyOn(
+        ActivityFeed.prototype,
+        'sendQueryParams'
+      )
+
+      beforeAll(() => {
+        wrapper.find('select').simulate('change', {
+          target: { value: defaultFilterValue.join() },
+        })
+      })
+
+      test('set the query params to have an "object.type" key', () => {
+        expect(spySendQueryParams).toHaveBeenCalledWith([
+          { 'object.type': defaultFilterValue },
+        ])
       })
     })
   })

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { startsWith } from 'lodash'
 import { SPACING } from '@govuk-react/constants'
 
 import Activity from './Activity'
@@ -34,7 +35,7 @@ export default class ActivityFeed extends React.Component {
     addContentText: PropTypes.string,
     addContentLink: PropTypes.string,
     totalActivities: PropTypes.number,
-    sendFilterQueryParams: PropTypes.func,
+    sendQueryParams: PropTypes.func,
   }
 
   static defaultProps = {
@@ -48,7 +49,7 @@ export default class ActivityFeed extends React.Component {
     addContentText: null,
     addContentLink: null,
     totalActivities: 0,
-    sendFilterQueryParams: () => {},
+    sendQueryParams: () => {},
   }
 
   constructor(props) {
@@ -66,8 +67,7 @@ export default class ActivityFeed extends React.Component {
   }
 
   onActivityTypeFilterChange(e) {
-    const value = e.target.value.split(',')
-    const filteredActivity = e.target.value === 'all' ? [] : value
+    const filteredActivity = e.target.value.split(',')
 
     this.setState({
       filteredActivity,
@@ -78,9 +78,23 @@ export default class ActivityFeed extends React.Component {
      * "object.attributedTo.id" - for companies or advisers
      * "object.type" - for activity types
      */
-    this.sendFilterQueryParams({
-      'object.type': filteredActivity,
-    })
+
+    if (
+      startsWith(filteredActivity[0], 'dit:DataHubAdviser:') ||
+      startsWith(filteredActivity[0], 'dit:DataHubCompany:')
+    ) {
+      this.sendQueryParams([
+        {
+          'object.attributedTo.id': filteredActivity,
+        },
+      ])
+    } else {
+      this.sendQueryParams([
+        {
+          'object.type': filteredActivity,
+        },
+      ])
+    }
   }
 
   onShowDetailsClick(e) {
@@ -89,9 +103,9 @@ export default class ActivityFeed extends React.Component {
     })
   }
 
-  sendFilterQueryParams(filteredActivity) {
-    const { sendFilterQueryParams } = this.props
-    sendFilterQueryParams(filteredActivity)
+  sendQueryParams(filteredActivity) {
+    const { sendQueryParams } = this.props
+    sendQueryParams(filteredActivity)
   }
 
   render() {

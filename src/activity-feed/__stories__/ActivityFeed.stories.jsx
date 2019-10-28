@@ -10,10 +10,6 @@ import { ACTIVITY_TYPE_FILTERS } from '../constants'
 import ActivityFeed from '../ActivityFeed'
 import activityFeedFixtures from '../__fixtures__'
 import datahubBackground from './images/data-hub-one-list-corp.png'
-import accountsAreDueFixture from '../__fixtures__/companies_house/accounts_are_due'
-import incorporatedFixture from '../__fixtures__/companies_house/incorporated'
-import exportOfGoodsFixture from '../__fixtures__/hmrc/export_of_goods'
-import interactionFixture from '../__fixtures__/interactions/interaction'
 
 addDecorator(withKnobs)
 
@@ -26,8 +22,8 @@ class ActivityFeedDemoApp extends React.Component {
     super(props)
 
     this.state = {
-      filterQueryParams: {},
       activities: [],
+      queryParams: {},
       isLoading: false,
       hasMore: true,
       offset: 0,
@@ -43,38 +39,28 @@ class ActivityFeedDemoApp extends React.Component {
 
   fetchActivities = () =>
     new Promise((resolve) => {
-      const items = [
-        activityFeedFixtures,
-        [accountsAreDueFixture, incorporatedFixture, exportOfGoodsFixture],
-        interactionFixture,
-      ]
-      const fixture = items[Math.floor(Math.random() * items.length)]
-
       // Simulate delay.
       setTimeout(() => {
         resolve({
-          activities: fixture,
+          activities: activityFeedFixtures,
           total: 1000,
         })
       }, 1500)
     })
 
   onLoadMore = async () => {
-    const { activities, offset, filterQueryParams } = this.state
+    const { activities, offset, queryParams } = this.state
     const limit = 20
 
     this.setState({
       isLoading: true,
     })
-    // TODO(jf): remove when done
-    // eslint-disable-next-line no-console
-    console.log(offset, filterQueryParams)
 
     try {
       const { activities: newActivities, total } = await this.fetchActivities(
         offset,
         limit,
-        filterQueryParams
+        queryParams
       )
       const allActivities = activities.concat(newActivities)
 
@@ -97,8 +83,8 @@ class ActivityFeedDemoApp extends React.Component {
     }
   }
 
-  setFilterQueryParams(filterQueryParams) {
-    this.setState({ filterQueryParams }, this.onLoadMore)
+  setFilterQueryParams(queryParams) {
+    this.setState({ queryParams }, this.onLoadMore)
   }
 
   render() {
@@ -108,7 +94,7 @@ class ActivityFeedDemoApp extends React.Component {
     return (
       <div>
         <ActivityFeed
-          sendFilterQueryParams={this.setFilterQueryParams}
+          sendQueryParams={this.setFilterQueryParams}
           activities={activities}
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
           totalActivities={total}

@@ -15,11 +15,20 @@ export const ACTIVITY_TYPE_FILTERS = {
   values: [
     {
       label: 'All Data Hub & external activity',
-      value: 'all',
+      value: [].concat(
+        ...[
+          ACTIVITY_TYPE.CompaniesHouseAccount,
+          ACTIVITY_TYPE.CompaniesHouseCompany,
+          ACTIVITY_TYPE.HmrcExporter,
+          ACTIVITY_TYPE.Interaction,
+          ACTIVITY_TYPE.InvestmentProject,
+          ACTIVITY_TYPE.Omis,
+        ]
+      ),
     },
     {
       label: 'My activity',
-      value: 'dit:DataHubAdviser:8415301d-756b-4bf9-8826-cfdbf9e9a4e2',
+      value: 'dit:DataHubAdviser:123-456',
     },
     {
       label: 'All external activity',

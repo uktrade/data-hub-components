@@ -14,7 +14,6 @@ export default class ActivityFeedApp extends React.Component {
     addContentText: PropTypes.string,
     apiEndpoint: PropTypes.string.isRequired,
     isFilterEnabled: PropTypes.bool,
-    queryParams: PropTypes.object,
     render: PropTypes.func,
   }
 
@@ -23,7 +22,6 @@ export default class ActivityFeedApp extends React.Component {
     addContentLink: null,
     addContentText: null,
     isFilterEnabled: false,
-    queryParams: {},
     render: null,
   }
 
@@ -31,14 +29,18 @@ export default class ActivityFeedApp extends React.Component {
     super(props)
     this.state = {
       activities: [],
-      isLoading: true,
+      error: false,
+      queryParams: props.addActivityTypeFilter.default
+        ? { 'object.type': props.addActivityTypeFilter.default.value }
+        : {},
       hasMore: true,
+      isLoading: true,
       offset: 0,
       total: 0,
-      error: false,
     }
 
     this.onLoadMore = this.onLoadMore.bind(this)
+    this.setFilterQueryParams = this.setFilterQueryParams.bind(this)
   }
 
   async componentDidMount() {
@@ -46,12 +48,19 @@ export default class ActivityFeedApp extends React.Component {
   }
 
   async onLoadMore() {
-    const { activities, offset } = this.state
-    const { apiEndpoint, queryParams } = this.props
+    const { offset } = this.state
+    this.getActivities(offset)
+  }
+
+  async getActivities(offset = 0) {
+    const { activities, queryParams } = this.state
+    const { apiEndpoint } = this.props
     const limit = 20
+    const filterParams = { queryParams }
 
     this.setState({
       isLoading: true,
+      activities: offset ? activities : [],
     })
 
     try {
@@ -62,15 +71,13 @@ export default class ActivityFeedApp extends React.Component {
         apiEndpoint,
         offset,
         limit,
-        queryParams // TODO(jf): confirm the assumption that in this case this is the company ID
+        filterParams
       )
-      const allActivities = activities.concat(newActivities)
 
-      this.setState({
-        activities: allActivities,
-        isLoading: false,
-        hasMore: total > allActivities.length,
-        offset: offset + limit,
+      this.setActivityState({
+        activities: offset ? activities.concat(newActivities) : newActivities,
+        limit,
+        offset,
         total,
       })
     } catch (e) {
@@ -80,6 +87,20 @@ export default class ActivityFeedApp extends React.Component {
         error: true,
       })
     }
+  }
+
+  setActivityState({ activities, limit, offset, total }) {
+    this.setState({
+      activities,
+      isLoading: false,
+      hasMore: total > activities.length,
+      offset: offset + limit,
+      total,
+    })
+  }
+
+  async onFilterActivity() {
+    this.getActivities()
   }
 
   static async fetchActivities(apiEndpoint, offset, limit, queryParams = {}) {
@@ -98,6 +119,10 @@ export default class ActivityFeedApp extends React.Component {
     }
   }
 
+  setFilterQueryParams(queryParams) {
+    this.setState({ queryParams }, this.onFilterActivity)
+  }
+
   render() {
     const { activities, isLoading, hasMore, error, total } = this.state
     const {
@@ -111,15 +136,16 @@ export default class ActivityFeedApp extends React.Component {
     const isEmptyFeed = activities.length === 0 && !hasMore
     return (
       <ActivityFeed
-        totalActivities={total}
+        activities={activities}
+        activityTypeFilters={addActivityTypeFilter}
         addContentText={addContentText}
         addContentLink={addContentLink}
-        activities={activities}
-        activityTypeFilters={addActivityTypeFilter} // TODO(jf): this should be coming from DH   `addActivityTypeFilter`
+        isFilterEnabled={isFilterEnabled}
+        isLoading={isLoading}
         hasMore={hasMore}
         onLoadMore={this.onLoadMore}
-        isLoading={isLoading}
-        isFilterEnabled={isFilterEnabled}
+        sendQueryParams={this.setFilterQueryParams}
+        totalActivities={total}
       >
         {isEmptyFeed && !error && <div>There are no activities to show.</div>}
         {error && <div>Error occurred while loading activities.</div>}
