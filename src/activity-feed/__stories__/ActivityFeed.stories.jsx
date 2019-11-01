@@ -10,6 +10,16 @@ import { ACTIVITY_TYPE_FILTERS } from '../constants'
 import ActivityFeed from '../ActivityFeed'
 import activityFeedFixtures from '../__fixtures__'
 import datahubBackground from './images/data-hub-one-list-corp.png'
+import accountsAreDueFixture from '../__fixtures__/companies_house/accounts_are_due'
+import incorporatedFixture from '../__fixtures__/companies_house/incorporated'
+import exportOfGoodsFixture from '../__fixtures__/hmrc/export_of_goods'
+import interactionFixture from '../__fixtures__/interactions/interaction'
+import investmentProjectFixture from '../__fixtures__/interactions/investment_project'
+import serviceDeliveryFixture from '../__fixtures__/interactions/service_delivery'
+import projectAddedFdiFixture from '../__fixtures__/investment_projects/project_added_fdi'
+import projectAddedNonFdiFixture from '../__fixtures__/investment_projects/project_added_non_fdi'
+import projectAddedCtiFixture from '../__fixtures__/investment_projects/project_added_cti'
+import orderAddedFixture from '../__fixtures__/omis/order_added'
 
 addDecorator(withKnobs)
 
@@ -23,7 +33,7 @@ class ActivityFeedDemoApp extends React.Component {
 
     this.state = {
       activities: [],
-      queryParams: {},
+      queryParams: [{ 'object.type': ACTIVITY_TYPE_FILTERS.default.value }],
       isLoading: false,
       hasMore: true,
       offset: 0,
@@ -31,25 +41,57 @@ class ActivityFeedDemoApp extends React.Component {
     }
 
     this.setFilterQueryParams = this.setFilterQueryParams.bind(this)
+    this.onLoadMore = this.onLoadMore.bind(this)
   }
 
   async componentDidMount() {
     await this.onLoadMore()
   }
 
-  fetchActivities = () =>
-    new Promise((resolve) => {
+  fetchActivities = (offset = 0, limit = 20, queryParams) => {
+    const allActivities = ACTIVITY_TYPE_FILTERS.values[0].value.join()
+    const myActivities = ACTIVITY_TYPE_FILTERS.values[1].value
+    const externalActivities = ACTIVITY_TYPE_FILTERS.values[2].value.join()
+    const dhActivities = ACTIVITY_TYPE_FILTERS.values[3].value.join()
+    const items = {
+      [allActivities]: activityFeedFixtures,
+      [externalActivities]: [
+        accountsAreDueFixture,
+        incorporatedFixture,
+        exportOfGoodsFixture,
+      ],
+      [myActivities]: [interactionFixture],
+      [dhActivities]: [
+        interactionFixture,
+        investmentProjectFixture,
+        serviceDeliveryFixture,
+        projectAddedFdiFixture,
+        projectAddedNonFdiFixture,
+        projectAddedCtiFixture,
+        orderAddedFixture,
+      ],
+    }
+
+    return new Promise((resolve) => {
       // Simulate delay.
       setTimeout(() => {
         resolve({
-          activities: activityFeedFixtures,
+          activities: items[queryParams[0][Object.keys(queryParams[0])].join()],
+          offset,
+          limit,
           total: 1000,
         })
       }, 1500)
     })
+  }
 
-  onLoadMore = async () => {
-    const { activities, offset, queryParams } = this.state
+  async onLoadMore() {
+    const { offset } = this.state
+    this.getActivities(offset)
+  }
+
+  getActivities = async (offset = 0) => {
+    const { activities, queryParams } = this.state
     const limit = 20
 
     this.setState({
@@ -62,7 +104,9 @@ class ActivityFeedDemoApp extends React.Component {
         limit,
         queryParams
       )
-      const allActivities = activities.concat(newActivities)
+      const allActivities = offset
+        ? activities.concat(newActivities)
+        : newActivities
 
       this.setState({
         isLoading: false,
@@ -84,7 +128,11 @@ class ActivityFeedDemoApp extends React.Component {
   }
 
   setFilterQueryParams(queryParams) {
-    this.setState({ queryParams }, this.onLoadMore)
+    this.setState({ queryParams }, this.onFilterActivity)
+  }
+
+  async onFilterActivity() {
+    this.getActivities()
   }
 
   render() {
