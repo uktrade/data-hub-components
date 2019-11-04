@@ -63,5 +63,8 @@ export { default as FieldUneditable } from './forms/elements/FieldUneditable'
 export { default as Metadata } from './metadata/Metadata'
 export { default as MetadataItem } from './metadata/MetadataItem'
 
+// Pagination
+export { default as Pagination } from './pagination/Pagination'
+
 // Status message
 export { default as StatusMessage } from './status-message/StatusMessage'
