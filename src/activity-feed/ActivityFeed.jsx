@@ -68,6 +68,8 @@ export default class ActivityFeed extends React.Component {
 
   onActivityTypeFilterChange(e) {
     const filteredActivity = e.target.value.split(',')
+    const queryParams = {}
+    const { sendQueryParams } = this.props
 
     this.setState({
       filteredActivity,
@@ -83,29 +85,18 @@ export default class ActivityFeed extends React.Component {
       startsWith(filteredActivity[0], 'dit:DataHubAdviser:') ||
       startsWith(filteredActivity[0], 'dit:DataHubCompany:')
     ) {
-      this.sendQueryParams([
-        {
-          'object.attributedTo.id': filteredActivity,
-        },
-      ])
+      queryParams['object.attributedTo.id'] = filteredActivity
     } else {
-      this.sendQueryParams([
-        {
-          'object.type': filteredActivity,
-        },
-      ])
+      queryParams['object.type'] = filteredActivity
     }
+
+    sendQueryParams([queryParams])
   }
 
   onShowDetailsClick(e) {
     this.setState({
       showDetails: e.target.checked,
     })
-  }
-
-  sendQueryParams(filteredActivity) {
-    const { sendQueryParams } = this.props
-    sendQueryParams(filteredActivity)
   }
 
   render() {

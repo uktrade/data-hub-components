@@ -244,7 +244,7 @@ describe('ActivityFeed', () => {
 
     describe('when the filter is My Activity', () => {
       const spySendQueryParams = jest.spyOn(
-        ActivityFeed.prototype,
+        ActivityFeed.defaultProps,
         'sendQueryParams'
       )
 
@@ -263,7 +263,7 @@ describe('ActivityFeed', () => {
 
     describe('when the filter is DH Activity', () => {
       const spySendQueryParams = jest.spyOn(
-        ActivityFeed.prototype,
+        ActivityFeed.defaultProps,
         'sendQueryParams'
       )
 
