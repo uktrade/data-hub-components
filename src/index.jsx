@@ -59,5 +59,9 @@ export { default as FieldRadios } from './forms/elements/FieldRadios'
 export { default as FieldSelect } from './forms/elements/FieldSelect'
 export { default as FieldUneditable } from './forms/elements/FieldUneditable'
 
+// Metadata
+export { default as Metadata } from './metadata/Metadata'
+export { default as MetadataItem } from './metadata/MetadataItem'
+
 // Status message
 export { default as StatusMessage } from './status-message/StatusMessage'
