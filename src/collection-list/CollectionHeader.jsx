@@ -5,62 +5,49 @@ import styled from 'styled-components'
 import pluralize from 'pluralize'
 import { H2 } from '@govuk-react/heading'
 import { BLACK, GREY_3 } from 'govuk-colours'
-import { SPACING, MEDIA_QUERIES, FONT_SIZE } from '@govuk-react/constants'
+import { HEADING_SIZES } from '@govuk-react/constants'
+import CollectionHeaderRow from './CollectionHeaderRow'
+import NumberUtils from '../utils/NumberUtils'
 
-const StyledSummary = styled('div')`
-  display: flex;
-  flex-flow: row wrap;
-  border-bottom: ${SPACING.SCALE_1} solid ${BLACK};
-  margin-bottom: ${SPACING.SCALE_2};
-  padding-bottom: ${SPACING.SCALE_1};
-`
-
-const StyledCount = styled('div')`
-  margin-top: ${SPACING.SCALE_1};
-`
-
-const StyledH2 = styled(H2)`
+const StyledHeaderText = styled(H2)`
+  margin-top: 0;
   font-weight: normal;
-  font-size: ${FONT_SIZE.SIZE_27};
+  font-size: ${HEADING_SIZES.MEDIUM}px;
   margin-bottom: 0;
-`
-
-const StyledActions = styled('div')`
-  text-align: right;
-  width: 100%;
-  margin: ${SPACING.SCALE_1} 0;
-
-  ${MEDIA_QUERIES.TABLET} {
-    width: 0;
-    flex-grow: 1;
-  }
 `
 
 const StyledLink = styled.a`
   margin-bottom: 0;
 `
 
+const StyledResultCount = styled('span')`
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+`
+
 function CollectionHeader({ totalItems, itemName, addItemUrl }) {
-  const headerText = pluralize(itemName, totalItems, true)
+  const formattedTotal = NumberUtils.decimal(totalItems)
+  const counterSuffix = pluralize(itemName, totalItems)
+
+  const actions = addItemUrl && (
+    <Button
+      as={StyledLink}
+      href={addItemUrl}
+      buttonColour={GREY_3}
+      buttonTextColour={BLACK}
+    >
+      Add {itemName}
+    </Button>
+  )
 
   return (
-    <StyledSummary>
-      <StyledCount>
-        <StyledH2>{headerText}</StyledH2>
-      </StyledCount>
-      <StyledActions>
-        {addItemUrl && (
-          <Button
-            as={StyledLink}
-            href={addItemUrl}
-            buttonColour={GREY_3}
-            buttonTextColour={BLACK}
-          >
-            Add {itemName}
-          </Button>
-        )}
-      </StyledActions>
-    </StyledSummary>
+    <CollectionHeaderRow primary={true} actions={actions}>
+      <StyledHeaderText>
+        <StyledResultCount>{formattedTotal}</StyledResultCount>
+        {` ${counterSuffix}`}
+      </StyledHeaderText>
+    </CollectionHeaderRow>
   )
 }
 

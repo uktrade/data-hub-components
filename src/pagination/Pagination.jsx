@@ -95,10 +95,9 @@ function Pagination({ totalPages, activePage, onPageClick, getPageUrl }) {
             }
 
             return (
-              <StyledPaginationPiece>
+              <StyledPaginationPiece key={key}>
                 {type === PAGINATION_PIECE_PREVIOUS && (
                   <StyledPaginationLink
-                    key={key}
                     data-test="prev"
                     onClick={onClick}
                     href={getPageUrl(pageNumber)}
@@ -108,14 +107,13 @@ function Pagination({ totalPages, activePage, onPageClick, getPageUrl }) {
                 )}
 
                 {type === PAGINATION_PIECE_ELLIPSIS && (
-                  <StyledPagesTruncation key={key} data-test="ellipsis">
+                  <StyledPagesTruncation data-test="ellipsis">
                     …
                   </StyledPagesTruncation>
                 )}
 
                 {type === PAGINATION_PIECE_PAGE_NUMBER && (
                   <PageNumberLink
-                    key={key}
                     data-test={isActive ? 'page-number-active' : 'page-number'}
                     onClick={onClick}
                     href={getPageUrl(pageNumber)}
@@ -126,7 +124,6 @@ function Pagination({ totalPages, activePage, onPageClick, getPageUrl }) {
 
                 {type === PAGINATION_PIECE_NEXT && (
                   <StyledPaginationLink
-                    key={key}
                     data-test="next"
                     onClick={onClick}
                     href={getPageUrl(pageNumber)}

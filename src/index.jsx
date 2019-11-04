@@ -26,6 +26,7 @@ export { default as ButtonLink } from './button-link/ButtonLink'
 
 // Collection list
 export { default as CollectionList } from './collection-list/CollectionList'
+export { default as CollectionItem } from './collection-list/CollectionItem'
 
 // Company lists
 export {

@@ -1,8 +1,12 @@
 import React from 'react'
 import { mount } from 'enzyme'
+
 import CollectionItem from '../CollectionItem'
+import Metadata from '../../metadata/Metadata'
+import Badge from '../../badge/Badge'
+import MetadataItem from '../../metadata/MetadataItem'
+
 import capitalProfileItem from '../__fixtures__/capitalProfileItem'
-import interactionItem from '../__fixtures__/interactionItem'
 
 describe('CollectionItem', () => {
   let wrapper
@@ -11,10 +15,8 @@ describe('CollectionItem', () => {
     beforeAll(() => {
       wrapper = mount(
         <CollectionItem
-          itemId={capitalProfileItem.itemId}
-          headingText={capitalProfileItem.headerText}
-          basePath={capitalProfileItem.basePath}
-          subPath={capitalProfileItem.subPath}
+          headingUrl={capitalProfileItem.headingUrl}
+          headingText={capitalProfileItem.headingText}
           badges={capitalProfileItem.badges}
           metadata={capitalProfileItem.metadata}
         />
@@ -31,25 +33,18 @@ describe('CollectionItem', () => {
 
     test('should render the headingUrl', () => {
       expect(
-        wrapper.find('a[href="/companies/1/investments/large-capital-profile"]')
+        wrapper.find('a[href="https://example.com/profile/1"]')
       ).toHaveLength(1)
     })
 
     test('should render the badge', () => {
-      expect(
-        wrapper
-          .find('span')
-          .at(0)
-          .text()
-      ).toBe('United States')
+      expect(wrapper.find(Badge).text()).toBe('United States')
     })
+
     test('should render the metadata', () => {
-      expect(
-        wrapper
-          .find('span')
-          .at(1)
-          .text()
-      ).toBe('Updated on 5 September 2019')
+      const sectorMeta = 'Sector Finance'
+      const addressMeta = 'Address 123 Random Street, Lucky City'
+      expect(wrapper.find(Metadata).text()).toBe(sectorMeta + addressMeta)
     })
   })
 
@@ -57,10 +52,8 @@ describe('CollectionItem', () => {
     beforeAll(() => {
       wrapper = mount(
         <CollectionItem
-          itemId={interactionItem.itemId}
-          headingText={interactionItem.headerText}
-          basePath={interactionItem.basePath}
-          subPath={null}
+          headingUrl={capitalProfileItem.headingUrl}
+          headingText={capitalProfileItem.headingText}
         />
       )
     })
@@ -70,28 +63,20 @@ describe('CollectionItem', () => {
     })
 
     test('should render the headingText', () => {
-      expect(wrapper.find('h3').text()).toBe('Leadership Academy')
+      expect(wrapper.find('h3').text()).toBe('Mars Exports Ltd')
     })
 
-    test('should render the headingUrl without subPath', () => {
-      expect(wrapper.find('a[href="/interactions/1"]')).toHaveLength(1)
+    test('should render the headingUrl', () => {
+      expect(
+        wrapper.find('a[href="https://example.com/profile/1"]')
+      ).toHaveLength(1)
     })
 
     test('should not render the badge component', () => {
-      expect(
-        wrapper
-          .find('span')
-          .at(0)
-          .exists()
-      ).toBe(false)
+      expect(wrapper.find(Badge)).toHaveLength(0)
     })
     test('should not render the metadata component', () => {
-      expect(
-        wrapper
-          .find('span')
-          .at(1)
-          .exists()
-      ).toBe(false)
+      expect(wrapper.find(MetadataItem)).toHaveLength(0)
     })
   })
 })
