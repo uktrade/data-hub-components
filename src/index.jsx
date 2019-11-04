@@ -18,6 +18,9 @@ export {
   default as usePostcodeLookup,
 } from './address-search/usePostcodeLookup'
 
+// Badge
+export { default as Badge } from './badge/Badge'
+
 // Button Link
 export { default as ButtonLink } from './button-link/ButtonLink'
 
