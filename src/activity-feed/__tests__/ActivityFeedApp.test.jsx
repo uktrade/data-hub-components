@@ -102,9 +102,7 @@ describe('ActivityFeedApp', () => {
   })
 
   describe('when the filter is changed', () => {
-    const testFilterValue = ACTIVITY_TYPE_FILTERS.values.length
-      ? ACTIVITY_TYPE_FILTERS.values[2].value // All external activity
-      : ''
+    const testFilterValue = ACTIVITY_TYPE_FILTERS.externalActivity.value
 
     const spyGetActivities = jest.spyOn(
       ActivityFeedApp.prototype,

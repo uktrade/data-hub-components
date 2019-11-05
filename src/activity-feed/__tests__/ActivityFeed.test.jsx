@@ -189,17 +189,10 @@ describe('ActivityFeed', () => {
       ]
     )
 
-    const defaultFilterValue = ACTIVITY_TYPE_FILTERS.default
-      ? ACTIVITY_TYPE_FILTERS.default.value
-      : ''
-
-    const showAllActivitiesFilterValue = ACTIVITY_TYPE_FILTERS.values.length
-      ? ACTIVITY_TYPE_FILTERS.values[0].value
-      : ''
-
-    const myActivityFilterValue = ACTIVITY_TYPE_FILTERS.values.length
-      ? ACTIVITY_TYPE_FILTERS.values[1].value
-      : ''
+    const { allActivity, myActivity, dataHubActivity } = ACTIVITY_TYPE_FILTERS
+    const defaultFilterValue = dataHubActivity ? dataHubActivity.value : ''
+    const showAllActivitiesFilterValue = allActivity ? allActivity.value : ''
+    const myActivityFilterValue = myActivity ? myActivity.value : ''
 
     beforeAll(() => {
       wrapper = mount(

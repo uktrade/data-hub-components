@@ -8,12 +8,9 @@ import interactionActivityFixture from '../../__fixtures__/interactions/interact
 import SelectFilter from '../SelectFilter'
 import { ACTIVITY_TYPE_FILTERS } from '../../constants'
 
-const defaultFilterValue = ACTIVITY_TYPE_FILTERS.default
-  ? ACTIVITY_TYPE_FILTERS.default.value
-  : ''
-const testFilterValue = ACTIVITY_TYPE_FILTERS.values.length
-  ? ACTIVITY_TYPE_FILTERS.values[2].value
-  : ''
+const { allActivity, dataHubActivity } = ACTIVITY_TYPE_FILTERS
+const defaultFilterValue = dataHubActivity ? dataHubActivity.value : ''
+const testFilterValue = allActivity ? allActivity.value : ''
 
 describe('BasicActivityTypeFilter', () => {
   let wrapper

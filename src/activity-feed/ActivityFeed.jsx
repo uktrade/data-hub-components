@@ -53,13 +53,23 @@ export default class ActivityFeed extends React.Component {
   }
 
   constructor(props) {
+    const {
+      allActivity,
+      myActivity,
+      externalActivity,
+      dataHubActivity,
+    } = props.activityTypeFilters
+
     super(props)
     this.state = {
-      filteredActivity: props.activityTypeFilters.default
-        ? props.activityTypeFilters.default.value
-        : '',
+      filteredActivity: dataHubActivity ? dataHubActivity.value : '',
       showDetails: false,
-      activityTypeFilters: props.activityTypeFilters.values || [],
+      activityTypeFilters: [
+        allActivity,
+        myActivity,
+        externalActivity,
+        dataHubActivity,
+      ],
     }
 
     this.onActivityTypeFilterChange = this.onActivityTypeFilterChange.bind(this)

@@ -12,54 +12,36 @@ export const ACTIVITY_TYPE = {
 }
 
 export const ACTIVITY_TYPE_FILTERS = {
-  values: [
-    {
-      label: 'All Data Hub & external activity',
-      value: [].concat(
-        ...[
-          ACTIVITY_TYPE.CompaniesHouseAccount,
-          ACTIVITY_TYPE.CompaniesHouseCompany,
-          ACTIVITY_TYPE.HmrcExporter,
-          ACTIVITY_TYPE.Interaction,
-          ACTIVITY_TYPE.InvestmentProject,
-          ACTIVITY_TYPE.Omis,
-        ]
-      ),
-    },
-    {
-      label: 'My activity',
-      value: 'dit:DataHubAdviser:123-456',
-    },
-    {
-      label: 'All external activity',
-      value: [].concat(
-        ...[
-          ACTIVITY_TYPE.CompaniesHouseAccount,
-          ACTIVITY_TYPE.CompaniesHouseCompany,
-          ACTIVITY_TYPE.HmrcExporter,
-        ]
-      ),
-    },
-    {
-      label: 'All Data Hub activity',
-      value: [].concat(
-        ...[
-          ACTIVITY_TYPE.Interaction,
-          ACTIVITY_TYPE.InvestmentProject,
-          ACTIVITY_TYPE.Omis,
-        ]
-      ),
-    },
-  ],
-  default: {
+  allActivity: {
+    label: 'All Data Hub & external activity',
+    value: [
+      ...ACTIVITY_TYPE.CompaniesHouseAccount,
+      ...ACTIVITY_TYPE.CompaniesHouseCompany,
+      ...ACTIVITY_TYPE.HmrcExporter,
+      ...ACTIVITY_TYPE.Interaction,
+      ...ACTIVITY_TYPE.InvestmentProject,
+      ...ACTIVITY_TYPE.Omis,
+    ],
+  },
+  myActivity: {
+    label: 'My activity',
+    value: 'dit:DataHubAdviser:123-456',
+  },
+  externalActivity: {
+    label: 'All external activity',
+    value: [
+      ...ACTIVITY_TYPE.CompaniesHouseAccount,
+      ...ACTIVITY_TYPE.CompaniesHouseCompany,
+      ...ACTIVITY_TYPE.HmrcExporter,
+    ],
+  },
+  dataHubActivity: {
     label: 'All Data Hub activity',
-    value: [].concat(
-      ...[
-        ACTIVITY_TYPE.Interaction,
-        ACTIVITY_TYPE.InvestmentProject,
-        ACTIVITY_TYPE.Omis,
-      ]
-    ),
+    value: [
+      ...ACTIVITY_TYPE.Interaction,
+      ...ACTIVITY_TYPE.InvestmentProject,
+      ...ACTIVITY_TYPE.Omis,
+    ],
   },
 }
 

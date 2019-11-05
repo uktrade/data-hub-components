@@ -33,7 +33,9 @@ class ActivityFeedDemoApp extends React.Component {
 
     this.state = {
       activities: [],
-      queryParams: [{ 'object.type': ACTIVITY_TYPE_FILTERS.default.value }],
+      queryParams: [
+        { 'object.type': ACTIVITY_TYPE_FILTERS.dataHubActivity.value },
+      ],
       isLoading: false,
       hasMore: true,
       offset: 0,
@@ -49,19 +51,22 @@ class ActivityFeedDemoApp extends React.Component {
   }
 
   fetchActivities = (offset = 0, limit = 20, queryParams) => {
-    const allActivities = ACTIVITY_TYPE_FILTERS.values[0].value.join()
-    const myActivities = ACTIVITY_TYPE_FILTERS.values[1].value
-    const externalActivities = ACTIVITY_TYPE_FILTERS.values[2].value.join()
-    const dhActivities = ACTIVITY_TYPE_FILTERS.values[3].value.join()
+    const {
+      allActivity,
+      myActivity,
+      externalActivity,
+      dataHubActivity,
+    } = ACTIVITY_TYPE_FILTERS
+
     const items = {
-      [allActivities]: activityFeedFixtures,
-      [externalActivities]: [
+      [allActivity.value.join()]: activityFeedFixtures,
+      [myActivity.value]: [interactionFixture],
+      [externalActivity.value.join()]: [
         accountsAreDueFixture,
         incorporatedFixture,
         exportOfGoodsFixture,
       ],
-      [myActivities]: [interactionFixture],
-      [dhActivities]: [
+      [dataHubActivity.value.join()]: [
         interactionFixture,
         investmentProjectFixture,
         serviceDeliveryFixture,

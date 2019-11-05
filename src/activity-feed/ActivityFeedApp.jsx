@@ -30,8 +30,8 @@ export default class ActivityFeedApp extends React.Component {
     this.state = {
       activities: [],
       error: false,
-      queryParams: props.addActivityTypeFilter.default
-        ? { 'object.type': props.addActivityTypeFilter.default.value }
+      queryParams: props.addActivityTypeFilter.dataHubActivity
+        ? { 'object.type': props.addActivityTypeFilter.dataHubActivity.value }
         : {},
       hasMore: true,
       isLoading: true,
