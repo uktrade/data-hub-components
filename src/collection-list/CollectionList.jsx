@@ -1,30 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import getNumberParam from './getNumberParam'
-
-import {
-  CollectionHeader,
-  CollectionDownload,
-  CollectionItem,
-  CollectionPagination,
-} from '.'
+import { DEFAULT_ITEMS_PER_PAGE } from './constants'
+import Pagination from '../pagination/Pagination'
+import CollectionHeader from './CollectionHeader'
+import CollectionDownload from './CollectionDownload'
+import CollectionItem from './CollectionItem'
 
 function CollectionList({
   totalItems,
   itemName,
   addItemUrl,
   downloadUrl,
-  previous,
-  next,
-  profiles,
-  apiEndpoint,
-  basePath,
-  subPath,
+  items,
+  onPageClick,
+  getPageUrl,
+  activePage,
 }) {
-  const pageLimit = getNumberParam(apiEndpoint, 'limit=')
-
-  const totalPages = Math.floor(totalItems / pageLimit) + 1
+  const totalPages = Math.floor(totalItems / DEFAULT_ITEMS_PER_PAGE) + 1
 
   return (
     <>
@@ -40,26 +33,24 @@ function CollectionList({
         downloadUrl={downloadUrl}
       />
 
-      {profiles
-        .slice(0, pageLimit)
-        .map(({ itemId, headingText, badges, metadata }) => (
+      {items.map(
+        ({ headingText, headingUrl, subheading, badges, metadata }) => (
           <CollectionItem
-            key={itemId}
-            itemId={itemId}
+            key={headingText + headingUrl}
+            headingUrl={headingUrl}
             headingText={headingText}
+            subheading={subheading}
             badges={badges}
             metadata={metadata}
-            basePath={basePath}
-            subPath={subPath}
           />
-        ))}
+        )
+      )}
 
-      <CollectionPagination
+      <Pagination
         totalPages={totalPages}
-        previous={previous}
-        next={next}
-        apiEndpoint={apiEndpoint}
-        pageLimit={pageLimit}
+        activePage={activePage}
+        onPageClick={onPageClick}
+        getPageUrl={getPageUrl}
       />
     </>
   )
@@ -70,21 +61,19 @@ CollectionList.propTypes = {
   itemName: PropTypes.string.isRequired,
   addItemUrl: PropTypes.string,
   downloadUrl: PropTypes.string,
-  profiles: PropTypes.array,
-  previous: PropTypes.string,
-  next: PropTypes.string,
-  apiEndpoint: PropTypes.string.isRequired,
-  basePath: PropTypes.string.isRequired,
-  subPath: PropTypes.string,
+  items: PropTypes.array,
+  onPageClick: PropTypes.func,
+  getPageUrl: PropTypes.func,
+  activePage: PropTypes.number,
 }
 
 CollectionList.defaultProps = {
   addItemUrl: null,
   downloadUrl: null,
-  profiles: null,
-  previous: null,
-  next: null,
-  subPath: null,
+  items: null,
+  onPageClick: null,
+  getPageUrl: (page) => `#page-${page}`,
+  activePage: 1,
 }
 
 export default CollectionList

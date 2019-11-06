@@ -2,39 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import pluralize from 'pluralize'
-import {
-  SPACING,
-  MEDIA_QUERIES,
-  BORDER_WIDTH_FORM_ELEMENT,
-} from '@govuk-react/constants'
+import { MEDIA_QUERIES } from '@govuk-react/constants'
 import Button from '@govuk-react/button'
-import Paragraph from '@govuk-react/paragraph'
-import { BLACK } from 'govuk-colours'
+import CollectionHeaderRow from './CollectionHeaderRow'
+import { MAX_ITEMS_TO_DOWNLOAD } from './constants'
 
-const StyledWrapper = styled('div')`
-  display: flex;
-  flex-flow: row wrap;
-  border-bottom: ${BORDER_WIDTH_FORM_ELEMENT} solid ${BLACK};
-  margin-bottom: ${SPACING.SCALE_2};
-  padding-bottom: ${SPACING.SCALE_1};
-  align-items: center;
-`
-
-const StyledParagraph = styled(Paragraph)`
+const StyledInnerText = styled('div')`
   width: 100%;
-  margin-bottom: ${SPACING.SCALE_1};
-
-  ${MEDIA_QUERIES.TABLET} {
-    width: 0;
-    flex-grow: 1;
-  }
-`
-
-const StyledActions = styled('div')`
-  text-align: right;
-  width: 100%;
-  margin-bottom: ${SPACING.SCALE_1};
-
+  line-height: 36px;
   ${MEDIA_QUERIES.TABLET} {
     width: 0;
     flex-grow: 1;
@@ -45,40 +20,35 @@ const StyledButton = styled(Button)`
   margin-bottom: 0;
 `
 
-function CollectionDownload({ totalItems, itemName, downloadUrl }) {
+function getInnerText(totalItems, itemName) {
   const itemPlural = pluralize.plural(itemName)
   const itemPluralWithCount = pluralize(itemName, totalItems, true)
 
-  const SingularText = `You can download this ${itemName}`
-  const PluralText = `You can download these ${itemPluralWithCount}`
-
-  const NoItemsText = `There are no ${itemPlural} to download`
-  const DownloadText = totalItems > 1 ? PluralText : SingularText
-  const NeedToFilterText = `Filter to fewer than 5000 ${itemPlural} to download`
-
   if (totalItems === 0) {
-    return (
-      <StyledWrapper>
-        <StyledParagraph>{NoItemsText}</StyledParagraph>
-        <StyledActions />
-      </StyledWrapper>
-    )
-  } else if (totalItems <= 5000) {
-    return (
-      <StyledWrapper>
-        <StyledParagraph>{DownloadText}</StyledParagraph>
-        <StyledActions>
-          <StyledButton href={downloadUrl}>Download</StyledButton>
-        </StyledActions>
-      </StyledWrapper>
-    )
+    return `There are no ${itemPlural} to download`
+  } else if (totalItems <= MAX_ITEMS_TO_DOWNLOAD) {
+    return `You can now download ${itemPluralWithCount}`
   } else {
-    return (
-      <StyledWrapper>
-        <StyledParagraph>{NeedToFilterText}</StyledParagraph>
-      </StyledWrapper>
-    )
+    return `Filter to fewer than ${MAX_ITEMS_TO_DOWNLOAD} ${itemPlural} to download`
   }
+}
+
+function CollectionDownload({ totalItems, itemName, downloadUrl }) {
+  if (!downloadUrl) {
+    return null
+  }
+
+  const canDownload = totalItems > 0 && totalItems <= MAX_ITEMS_TO_DOWNLOAD
+  const innerText = getInnerText(totalItems, itemName)
+  const actions = canDownload && (
+    <StyledButton href={downloadUrl}>Download</StyledButton>
+  )
+
+  return (
+    <CollectionHeaderRow actions={actions}>
+      <StyledInnerText>{innerText}</StyledInnerText>
+    </CollectionHeaderRow>
+  )
 }
 
 CollectionDownload.propTypes = {

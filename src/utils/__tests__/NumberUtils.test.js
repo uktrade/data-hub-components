@@ -9,5 +9,9 @@ describe('NumberUtils.js', () => {
     test('should add 2 commas to 1 million', () => {
       expect(NumberUtils.decimal(1000000)).toEqual('1,000,000')
     })
+
+    test('should handle value with 0', () => {
+      expect(NumberUtils.decimal(0)).toEqual('0')
+    })
   })
 })

@@ -1,7 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import CollectionHeader from '../CollectionHeader'
-import capitalProfileHeading from '../__fixtures__/capitalProfileHeading'
 
 describe('CollectionHeader', () => {
   let wrapper
@@ -9,12 +8,7 @@ describe('CollectionHeader', () => {
   describe('when props are passed', () => {
     beforeAll(() => {
       wrapper = mount(
-        <CollectionHeader
-          totalItems={capitalProfileHeading.totalItems}
-          itemName={capitalProfileHeading.itemName}
-          addItemText={capitalProfileHeading.addItemText}
-          addItemUrl={capitalProfileHeading.addItemUrl}
-        />
+        <CollectionHeader totalItems={1} itemName="profile" addItemUrl="#" />
       )
     })
 
@@ -37,12 +31,7 @@ describe('CollectionHeader', () => {
 
   describe('when the totalItems is > 1 and no addItemText and addItemUrl are passed', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <CollectionHeader
-          totalItems={2}
-          itemName={capitalProfileHeading.itemName}
-        />
-      )
+      wrapper = mount(<CollectionHeader totalItems={2} itemName="profile" />)
     })
 
     test('should render the component', () => {

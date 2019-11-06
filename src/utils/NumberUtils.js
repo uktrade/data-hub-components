@@ -1,6 +1,6 @@
 export default class NumberUtils {
   static decimal(number) {
-    if (!number) {
+    if (!number && number !== 0) {
       return null
     }
 
@@ -12,7 +12,7 @@ export default class NumberUtils {
   }
 
   static currency(number) {
-    if (!number) {
+    if (!number && number !== 0) {
       return null
     }
 

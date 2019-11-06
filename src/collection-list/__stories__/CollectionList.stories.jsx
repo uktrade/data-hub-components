@@ -1,114 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
-import {
-  capitalProfileItem,
-  interactionItem,
-  capitalProfileHeading,
-  paginationProps,
-  capitalProfileCollectionList1,
-} from '../__fixtures__'
-import CollectionItem from '../CollectionItem'
-import CollectionHeader from '../CollectionHeader'
-import CollectionDownload from '../CollectionDownload'
-import CollectionPagination from '../CollectionPagination'
 import CollectionList from '../CollectionList'
 
-storiesOf('Collection', module).add('Collection', () => (
-  <CollectionList
-    totalItems={capitalProfileCollectionList1.totalItems}
-    itemName={capitalProfileCollectionList1.itemName}
-    addItemUrl={capitalProfileCollectionList1.addItemUrl}
-    downloadUrl={capitalProfileCollectionList1.downloadUrl}
-    profiles={capitalProfileCollectionList1.profiles}
-    previous={capitalProfileCollectionList1.previous}
-    next={capitalProfileCollectionList1.next}
-    apiEndpoint={capitalProfileCollectionList1.apiEndpoint}
-    basePath={capitalProfileCollectionList1.basePath}
-    subPath={capitalProfileCollectionList1.subPath}
-  />
-))
+import { DEFAULT_ITEMS_PER_PAGE } from '../constants'
+import profilesFixture from '../__fixtures__/capitalProfiles'
 
-storiesOf('Collection', module).add('Collection Header', () => (
-  <CollectionHeader
-    totalItems={capitalProfileHeading.totalItems}
-    itemName={capitalProfileHeading.itemName}
-    addItemText={capitalProfileHeading.addItemText}
-    addItemUrl={capitalProfileHeading.addItemUrl}
-  />
-))
+const collectionStories = storiesOf('Collection', module)
 
-storiesOf('Collection', module).add('Collection Download - no items', () => (
-  <CollectionDownload
-    totalItems={0}
-    itemName={capitalProfileHeading.itemName}
-    downloadUrl={null}
-  />
-))
+const CollectionWithState = () => {
+  const [activePage, setActivePage] = useState(1)
 
-storiesOf('Collection', module).add('Collection Download - 1 item', () => (
-  <CollectionDownload
-    totalItems={1}
-    itemName={capitalProfileHeading.itemName}
-    downloadUrl={null}
-  />
-))
+  const index = activePage - 1
+  const offset = index * DEFAULT_ITEMS_PER_PAGE
+  const limit = (index + 1) * DEFAULT_ITEMS_PER_PAGE
 
-storiesOf('Collection', module).add('Collection Download - 101 items', () => (
-  <CollectionDownload
-    totalItems={101}
-    itemName={capitalProfileHeading.itemName}
-    downloadUrl={null}
-  />
-))
+  const items = profilesFixture.slice(offset, limit)
 
-storiesOf('Collection', module).add(
-  'Collection Download - need to filter',
-  () => (
-    <CollectionDownload
-      totalItems={5001}
-      itemName={capitalProfileHeading.itemName}
-      downloadUrl={capitalProfileHeading.downloadUrl}
+  return (
+    <CollectionList
+      items={items}
+      onPageClick={(page, event) => {
+        setActivePage(page)
+        event.preventDefault()
+      }}
+      activePage={activePage}
+      totalItems={profilesFixture.length}
+      itemName="profile"
+      addItemUrl="http://example.com"
+      downloadUrl="http://example.com"
     />
   )
-)
+}
 
-storiesOf('Collection', module).add('Collection Header', () => (
-  <CollectionHeader
-    totalItems={capitalProfileHeading.totalItems}
-    itemName={capitalProfileHeading.itemName}
-    addItemText={capitalProfileHeading.addItemText}
-    addItemUrl={capitalProfileHeading.addItemUrl}
-  />
-))
-
-storiesOf('Collection', module).add('Capital Profile item', () => (
-  <CollectionItem
-    itemId={capitalProfileItem.itemId}
-    headingText={capitalProfileItem.headerText}
-    basePath={capitalProfileItem.basePath}
-    subPath={capitalProfileItem.subPath}
-    badges={capitalProfileItem.badges}
-    metadata={capitalProfileItem.metadata}
-  />
-))
-
-storiesOf('Collection', module).add('Interaction item', () => (
-  <CollectionItem
-    itemId={interactionItem.itemId}
-    headingText={interactionItem.headerText}
-    basePath={interactionItem.basePath}
-    subPath={null}
-    badges={interactionItem.badges}
-    metadata={interactionItem.metadata}
-  />
-))
-
-storiesOf('Collection', module).add('Collection pagination', () => (
-  <CollectionPagination
-    totalPages={paginationProps.totalPages}
-    previous={paginationProps.previous}
-    next={paginationProps.next}
-    apiEndpoint={paginationProps.apiEndpoint}
-    pageLimit={paginationProps.pageLimit}
-  />
-))
+collectionStories.add('Collection List', () => <CollectionWithState />)

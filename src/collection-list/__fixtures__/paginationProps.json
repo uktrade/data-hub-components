@@ -1,7 +1,0 @@
-{
-    "totalPages": 7,
-    "previous": "http://localhost:8000/v4/large-investor-profile?limit=10&offset=20",
-    "next": "http://localhost:8000/v4/large-investor-profile?limit=10&offset=30",
-    "apiEndpoint": "http://localhost:8000/v4/large-investor-profile?limit=10",
-    "pageLimit": 10
-}

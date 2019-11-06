@@ -1,7 +1,6 @@
 {
-  "headerText": "Leadership Academy",
-  "basePath": "/interactions/",
-  "itemId": "1",
+  "headingText": "Leadership Academy",
+  "headingUrl": "https://example.com/interaction/1",
   "metadata": [
     {
       "label": "Date",
