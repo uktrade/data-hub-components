@@ -20,7 +20,7 @@ describe('BasicActivityTypeFilter', () => {
       wrapper = mount(
         <BasicActivityTypeFilter
           activityTypeFilters={[]}
-          filteredActivity={[]}
+          filteredActivity=""
           onActivityTypeFilterChange={() => {}}
           onShowDetailsClick={() => {}}
           showDetails={false}
@@ -41,7 +41,7 @@ describe('BasicActivityTypeFilter', () => {
           totalActivities={1}
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
           activities={[interactionActivityFixture]}
-          isFilterEnabled={true}
+          isTypeFilterEnabled={true}
         />
       )
     })
@@ -52,13 +52,13 @@ describe('BasicActivityTypeFilter', () => {
           .render()
           .find('select')
           .val()
-      ).toEqual(defaultFilterValue.join(','))
+      ).toEqual(defaultFilterValue)
     })
 
     describe('when the dropdown is changed', () => {
       beforeAll(() => {
         wrapper.find('select').simulate('change', {
-          target: { value: testFilterValue.join(',') },
+          target: { value: testFilterValue },
         })
       })
 
@@ -68,7 +68,7 @@ describe('BasicActivityTypeFilter', () => {
         )
 
         expect(wrapper.find(Select).prop('input')).toEqual({
-          defaultValue: testFilterValue.join(','),
+          defaultValue: testFilterValue,
         })
       })
     })

@@ -33,9 +33,7 @@ class ActivityFeedDemoApp extends React.Component {
 
     this.state = {
       activities: [],
-      queryParams: [
-        { 'object.type': ACTIVITY_TYPE_FILTERS.dataHubActivity.value },
-      ],
+      queryParams: ACTIVITY_TYPE_FILTERS.dataHubActivity.value,
       isLoading: false,
       hasMore: true,
       offset: 0,
@@ -59,14 +57,14 @@ class ActivityFeedDemoApp extends React.Component {
     } = ACTIVITY_TYPE_FILTERS
 
     const items = {
-      [allActivity.value.join()]: activityFeedFixtures,
+      [allActivity.value]: activityFeedFixtures,
       [myActivity.value]: [interactionFixture],
-      [externalActivity.value.join()]: [
+      [externalActivity.value]: [
         accountsAreDueFixture,
         incorporatedFixture,
         exportOfGoodsFixture,
       ],
-      [dataHubActivity.value.join()]: [
+      [dataHubActivity.value]: [
         interactionFixture,
         investmentProjectFixture,
         serviceDeliveryFixture,
@@ -81,7 +79,7 @@ class ActivityFeedDemoApp extends React.Component {
       // Simulate delay.
       setTimeout(() => {
         resolve({
-          activities: items[queryParams[0][Object.keys(queryParams[0])].join()],
+          activities: items[queryParams],
           offset,
           limit,
           total: 1000,
@@ -156,7 +154,7 @@ class ActivityFeedDemoApp extends React.Component {
           isLoading={isLoading}
           addContentText="Add interaction"
           addContentLink="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create"
-          isFilterEnabled={true}
+          isTypeFilterEnabled={true}
         >
           {isEmptyFeed && !error && <div>There are no activities to show.</div>}
           {error && <div>Error occurred while loading activities.</div>}

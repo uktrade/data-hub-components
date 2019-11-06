@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { startsWith } from 'lodash'
 import { SPACING } from '@govuk-react/constants'
 
 import Activity from './Activity'
@@ -30,7 +29,7 @@ export default class ActivityFeed extends React.Component {
     activityTypeFilters: PropTypes.object,
     onLoadMore: PropTypes.func,
     hasMore: PropTypes.bool,
-    isFilterEnabled: PropTypes.bool,
+    isTypeFilterEnabled: PropTypes.bool,
     isLoading: PropTypes.bool,
     addContentText: PropTypes.string,
     addContentLink: PropTypes.string,
@@ -44,7 +43,7 @@ export default class ActivityFeed extends React.Component {
     activityTypeFilters: {},
     onLoadMore: () => {},
     hasMore: false,
-    isFilterEnabled: false,
+    isTypeFilterEnabled: false,
     isLoading: false,
     addContentText: null,
     addContentLink: null,
@@ -77,30 +76,14 @@ export default class ActivityFeed extends React.Component {
   }
 
   onActivityTypeFilterChange(e) {
-    const filteredActivity = e.target.value.split(',')
-    const queryParams = {}
+    const filteredActivity = e.target.value
     const { sendQueryParams } = this.props
 
     this.setState({
       filteredActivity,
     })
 
-    /**
-     * the `key` param is used for building the query to ES
-     * "object.attributedTo.id" - for companies or advisers
-     * "object.type" - for activity types
-     */
-
-    if (
-      startsWith(filteredActivity[0], 'dit:DataHubAdviser:') ||
-      startsWith(filteredActivity[0], 'dit:DataHubCompany:')
-    ) {
-      queryParams['object.attributedTo.id'] = filteredActivity
-    } else {
-      queryParams['object.type'] = filteredActivity
-    }
-
-    sendQueryParams([queryParams])
+    sendQueryParams(filteredActivity)
   }
 
   onShowDetailsClick(e) {
@@ -114,7 +97,7 @@ export default class ActivityFeed extends React.Component {
       activities,
       onLoadMore,
       hasMore,
-      isFilterEnabled,
+      isTypeFilterEnabled,
       isLoading,
       addContentText,
       addContentLink,
@@ -133,7 +116,7 @@ export default class ActivityFeed extends React.Component {
         <ActivityFeedFilters
           activityTypeFilters={activityTypeFilters}
           filteredActivity={filteredActivity}
-          isFilterEnabled={isFilterEnabled}
+          isTypeFilterEnabled={isTypeFilterEnabled}
           onActivityTypeFilterChange={this.onActivityTypeFilterChange}
           onShowDetailsClick={this.onShowDetailsClick}
           showDetails={showDetails}

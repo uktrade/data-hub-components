@@ -71,7 +71,7 @@ const StyledCheckbox = styled(Checkbox)`
 export default class BasicActivityTypeFilter extends React.PureComponent {
   static propTypes = {
     activityTypeFilters: PropTypes.array.isRequired,
-    filteredActivity: PropTypes.array.isRequired,
+    filteredActivity: PropTypes.string.isRequired,
     onActivityTypeFilterChange: PropTypes.func.isRequired,
     onShowDetailsClick: PropTypes.func.isRequired,
     showDetails: PropTypes.bool.isRequired,

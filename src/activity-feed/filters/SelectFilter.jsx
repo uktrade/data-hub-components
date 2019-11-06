@@ -48,7 +48,7 @@ export default class SelectFilter extends React.PureComponent {
   static propTypes = {
     filters: PropTypes.array.isRequired,
     onActivityTypeFilterChange: PropTypes.func.isRequired,
-    value: PropTypes.array.isRequired,
+    value: PropTypes.string.isRequired,
   }
 
   render() {
@@ -57,7 +57,7 @@ export default class SelectFilter extends React.PureComponent {
     return (
       <StyledDropdownContainer>
         <Select
-          input={{ defaultValue: value.join(',') }}
+          input={{ defaultValue: value }}
           name="activity-types-filter"
           label="Activity types"
           onChange={onActivityTypeFilterChange}

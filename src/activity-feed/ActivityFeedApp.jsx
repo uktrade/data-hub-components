@@ -13,7 +13,7 @@ export default class ActivityFeedApp extends React.Component {
     addContentLink: PropTypes.string,
     addContentText: PropTypes.string,
     apiEndpoint: PropTypes.string.isRequired,
-    isFilterEnabled: PropTypes.bool,
+    isTypeFilterEnabled: PropTypes.bool,
     render: PropTypes.func,
   }
 
@@ -21,7 +21,7 @@ export default class ActivityFeedApp extends React.Component {
     addActivityTypeFilter: {},
     addContentLink: null,
     addContentText: null,
-    isFilterEnabled: false,
+    isTypeFilterEnabled: false,
     render: null,
   }
 
@@ -31,8 +31,8 @@ export default class ActivityFeedApp extends React.Component {
       activities: [],
       error: false,
       queryParams: props.addActivityTypeFilter.dataHubActivity
-        ? { 'object.type': props.addActivityTypeFilter.dataHubActivity.value }
-        : {},
+        ? props.addActivityTypeFilter.dataHubActivity.value
+        : '',
       hasMore: true,
       isLoading: true,
       offset: 0,
@@ -129,7 +129,7 @@ export default class ActivityFeedApp extends React.Component {
       addActivityTypeFilter,
       addContentText,
       addContentLink,
-      isFilterEnabled,
+      isTypeFilterEnabled,
       render,
     } = this.props
 
@@ -140,7 +140,7 @@ export default class ActivityFeedApp extends React.Component {
         activityTypeFilters={addActivityTypeFilter}
         addContentText={addContentText}
         addContentLink={addContentLink}
-        isFilterEnabled={isFilterEnabled}
+        isTypeFilterEnabled={isTypeFilterEnabled}
         isLoading={isLoading}
         hasMore={hasMore}
         onLoadMore={this.onLoadMore}

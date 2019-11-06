@@ -82,7 +82,7 @@ describe('ActivityFeedApp', () => {
           addContentText="Add interaction"
           addContentLink={addContentLink}
           apiEndpoint={apiEndpoint}
-          isFilterEnabled={true}
+          isTypeFilterEnabled={true}
           render={(state) => {
             if (state.error) {
               throw Error('Exception raised.')
@@ -127,7 +127,7 @@ describe('ActivityFeedApp', () => {
           addContentText="Add interaction"
           addContentLink={addContentLink}
           apiEndpoint={apiEndpoint}
-          isFilterEnabled={true}
+          isTypeFilterEnabled={true}
           render={(state) => {
             if (state.error) {
               throw Error('Exception raised.')
@@ -137,21 +137,19 @@ describe('ActivityFeedApp', () => {
       )
 
       wrapper.find('select').simulate('change', {
-        target: { value: testFilterValue.join(',') },
+        target: { value: testFilterValue },
       })
     })
 
     test('should display the selectFilter component with the selected value', () => {
       expect(wrapper.find(SelectFilter).prop('value')).toEqual(testFilterValue)
       expect(wrapper.find(Select).prop('input')).toEqual({
-        defaultValue: testFilterValue.join(','),
+        defaultValue: testFilterValue,
       })
     })
 
     test('should pass the filter parameters up to this parent', () => {
-      expect(wrapper.state().queryParams[0]['object.type']).toEqual(
-        testFilterValue
-      )
+      expect(wrapper.state().queryParams).toEqual(testFilterValue)
     })
 
     test('should call the getActivities method with offset=0 ', () => {
@@ -160,7 +158,7 @@ describe('ActivityFeedApp', () => {
 
     test('should fetch activities with the given filter params ', () => {
       expect(spyFetchActivities).toHaveBeenCalledWith(apiEndpoint, 0, 20, {
-        queryParams: [{ 'object.type': testFilterValue }],
+        queryParams: testFilterValue,
       })
     })
 

@@ -200,7 +200,7 @@ describe('ActivityFeed', () => {
           activities={activities}
           totalActivities={activities.length}
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
-          isFilterEnabled={true}
+          isTypeFilterEnabled={true}
         />
       )
     })
@@ -226,7 +226,7 @@ describe('ActivityFeed', () => {
     describe('when the filter that should list all activities is selected', () => {
       beforeAll(() => {
         wrapper.find('select').simulate('change', {
-          target: { value: showAllActivitiesFilterValue.join() },
+          target: { value: showAllActivitiesFilterValue },
         })
       })
 
@@ -247,10 +247,8 @@ describe('ActivityFeed', () => {
         })
       })
 
-      test('set the query params to have an "object.attributedTo.id" key', () => {
-        expect(spySendQueryParams).toHaveBeenCalledWith([
-          { 'object.attributedTo.id': ['dit:DataHubAdviser:123-456'] },
-        ])
+      test('set the query params to the value selected', () => {
+        expect(spySendQueryParams).toHaveBeenCalledWith(myActivityFilterValue)
       })
     })
 
@@ -262,14 +260,12 @@ describe('ActivityFeed', () => {
 
       beforeAll(() => {
         wrapper.find('select').simulate('change', {
-          target: { value: defaultFilterValue.join() },
+          target: { value: defaultFilterValue },
         })
       })
 
-      test('set the query params to have an "object.type" key', () => {
-        expect(spySendQueryParams).toHaveBeenCalledWith([
-          { 'object.type': defaultFilterValue },
-        ])
+      test('set the query params to the value selected', () => {
+        expect(spySendQueryParams).toHaveBeenCalledWith(defaultFilterValue)
       })
     })
   })
