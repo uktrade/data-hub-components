@@ -8,12 +8,9 @@ import interactionActivityFixture from '../../__fixtures__/interactions/interact
 import SelectFilter from '../SelectFilter'
 import { ACTIVITY_TYPE_FILTERS } from '../../constants'
 
-const defaultFilterValue = ACTIVITY_TYPE_FILTERS.length
-  ? ACTIVITY_TYPE_FILTERS[2].value
-  : ''
-const testFilterValue = ACTIVITY_TYPE_FILTERS.length
-  ? ACTIVITY_TYPE_FILTERS[1].value
-  : ''
+const { allActivity, dataHubActivity } = ACTIVITY_TYPE_FILTERS
+const defaultFilterValue = dataHubActivity ? dataHubActivity.value : ''
+const testFilterValue = allActivity ? allActivity.value : ''
 
 describe('BasicActivityTypeFilter', () => {
   let wrapper
@@ -23,7 +20,7 @@ describe('BasicActivityTypeFilter', () => {
       wrapper = mount(
         <BasicActivityTypeFilter
           activityTypeFilters={[]}
-          filteredActivity={[]}
+          filteredActivity=""
           onActivityTypeFilterChange={() => {}}
           onShowDetailsClick={() => {}}
           showDetails={false}
@@ -44,6 +41,7 @@ describe('BasicActivityTypeFilter', () => {
           totalActivities={1}
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
           activities={[interactionActivityFixture]}
+          isTypeFilterEnabled={true}
         />
       )
     })
@@ -54,13 +52,13 @@ describe('BasicActivityTypeFilter', () => {
           .render()
           .find('select')
           .val()
-      ).toEqual(defaultFilterValue.join(','))
+      ).toEqual(defaultFilterValue)
     })
 
     describe('when the dropdown is changed', () => {
       beforeAll(() => {
         wrapper.find('select').simulate('change', {
-          target: { value: testFilterValue.join(',') },
+          target: { value: testFilterValue },
         })
       })
 
@@ -70,7 +68,7 @@ describe('BasicActivityTypeFilter', () => {
         )
 
         expect(wrapper.find(Select).prop('input')).toEqual({
-          defaultValue: testFilterValue.join(','),
+          defaultValue: testFilterValue,
         })
       })
     })

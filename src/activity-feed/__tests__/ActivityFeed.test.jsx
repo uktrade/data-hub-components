@@ -189,13 +189,10 @@ describe('ActivityFeed', () => {
       ]
     )
 
-    const defaultFilterValue = ACTIVITY_TYPE_FILTERS.length
-      ? ACTIVITY_TYPE_FILTERS[2].value
-      : ''
-
-    const showAllActivitiesFilterValue = ACTIVITY_TYPE_FILTERS.length
-      ? ACTIVITY_TYPE_FILTERS[0].value
-      : ''
+    const { allActivity, myActivity, dataHubActivity } = ACTIVITY_TYPE_FILTERS
+    const defaultFilterValue = dataHubActivity ? dataHubActivity.value : ''
+    const showAllActivitiesFilterValue = allActivity ? allActivity.value : ''
+    const myActivityFilterValue = myActivity ? myActivity.value : ''
 
     beforeAll(() => {
       wrapper = mount(
@@ -203,6 +200,7 @@ describe('ActivityFeed', () => {
           activities={activities}
           totalActivities={activities.length}
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
+          isTypeFilterEnabled={true}
         />
       )
     })
@@ -223,10 +221,6 @@ describe('ActivityFeed', () => {
           wrapper.find(BasicActivityTypeFilter).props().filteredActivity
         ).toBe(defaultFilterValue)
       })
-
-      test('should only show the relevant activities', () => {
-        expect(wrapper.find('ol li details').length).toBe(2)
-      })
     })
 
     describe('when the filter that should list all activities is selected', () => {
@@ -236,14 +230,42 @@ describe('ActivityFeed', () => {
         })
       })
 
-      test('should have the "all" value active', () => {
-        expect(
-          wrapper.find(BasicActivityTypeFilter).props().filteredActivity
-        ).toStrictEqual([])
-      })
-
       test('should show all activities', () => {
         expect(wrapper.find('ol li details').length).toBe(activities.length)
+      })
+    })
+
+    describe('when the filter is My Activity', () => {
+      const spySendQueryParams = jest.spyOn(
+        ActivityFeed.defaultProps,
+        'sendQueryParams'
+      )
+
+      beforeAll(() => {
+        wrapper.find('select').simulate('change', {
+          target: { value: myActivityFilterValue },
+        })
+      })
+
+      test('set the query params to the value selected', () => {
+        expect(spySendQueryParams).toHaveBeenCalledWith(myActivityFilterValue)
+      })
+    })
+
+    describe('when the filter is DH Activity', () => {
+      const spySendQueryParams = jest.spyOn(
+        ActivityFeed.defaultProps,
+        'sendQueryParams'
+      )
+
+      beforeAll(() => {
+        wrapper.find('select').simulate('change', {
+          target: { value: defaultFilterValue },
+        })
+      })
+
+      test('set the query params to the value selected', () => {
+        expect(spySendQueryParams).toHaveBeenCalledWith(defaultFilterValue)
       })
     })
   })

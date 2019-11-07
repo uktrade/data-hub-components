@@ -3,19 +3,25 @@ import axios from 'axios'
 import PropTypes from 'prop-types'
 import ActivityFeed from './ActivityFeed'
 
+/**
+ * This component is not visible in Storybook - remember to also port your changes here,
+ * as this one is going into production.
+ */
 export default class ActivityFeedApp extends React.Component {
   static propTypes = {
-    apiEndpoint: PropTypes.string.isRequired,
-    queryParams: PropTypes.object,
-    addContentText: PropTypes.string,
+    addActivityTypeFilter: PropTypes.object,
     addContentLink: PropTypes.string,
+    addContentText: PropTypes.string,
+    apiEndpoint: PropTypes.string.isRequired,
+    isTypeFilterEnabled: PropTypes.bool,
     render: PropTypes.func,
   }
 
   static defaultProps = {
-    queryParams: {},
-    addContentText: null,
+    addActivityTypeFilter: {},
     addContentLink: null,
+    addContentText: null,
+    isTypeFilterEnabled: false,
     render: null,
   }
 
@@ -23,14 +29,18 @@ export default class ActivityFeedApp extends React.Component {
     super(props)
     this.state = {
       activities: [],
-      isLoading: true,
+      error: false,
+      queryParams: props.addActivityTypeFilter.dataHubActivity
+        ? props.addActivityTypeFilter.dataHubActivity.value
+        : '',
       hasMore: true,
+      isLoading: true,
       offset: 0,
       total: 0,
-      error: false,
     }
 
     this.onLoadMore = this.onLoadMore.bind(this)
+    this.setFilterQueryParams = this.setFilterQueryParams.bind(this)
   }
 
   async componentDidMount() {
@@ -38,12 +48,19 @@ export default class ActivityFeedApp extends React.Component {
   }
 
   async onLoadMore() {
-    const { activities, offset } = this.state
-    const { apiEndpoint, queryParams } = this.props
+    const { offset } = this.state
+    this.getActivities(offset)
+  }
+
+  async getActivities(offset = 0) {
+    const { activities, queryParams } = this.state
+    const { apiEndpoint } = this.props
     const limit = 20
+    const filterParams = { queryParams }
 
     this.setState({
       isLoading: true,
+      activities: offset ? activities : [],
     })
 
     try {
@@ -54,15 +71,13 @@ export default class ActivityFeedApp extends React.Component {
         apiEndpoint,
         offset,
         limit,
-        queryParams
+        filterParams
       )
-      const allActivities = activities.concat(newActivities)
 
-      this.setState({
-        activities: allActivities,
-        isLoading: false,
-        hasMore: total > allActivities.length,
-        offset: offset + limit,
+      this.setActivityState({
+        activities: offset ? activities.concat(newActivities) : newActivities,
+        limit,
+        offset,
         total,
       })
     } catch (e) {
@@ -72,6 +87,20 @@ export default class ActivityFeedApp extends React.Component {
         error: true,
       })
     }
+  }
+
+  setActivityState({ activities, limit, offset, total }) {
+    this.setState({
+      activities,
+      isLoading: false,
+      hasMore: total > activities.length,
+      offset: offset + limit,
+      total,
+    })
+  }
+
+  async onFilterActivity() {
+    this.getActivities()
   }
 
   static async fetchActivities(apiEndpoint, offset, limit, queryParams = {}) {
@@ -90,21 +119,33 @@ export default class ActivityFeedApp extends React.Component {
     }
   }
 
+  setFilterQueryParams(queryParams) {
+    this.setState({ queryParams }, this.onFilterActivity)
+  }
+
   render() {
     const { activities, isLoading, hasMore, error, total } = this.state
-    const { addContentText, addContentLink, render } = this.props
+    const {
+      addActivityTypeFilter,
+      addContentText,
+      addContentLink,
+      isTypeFilterEnabled,
+      render,
+    } = this.props
 
     const isEmptyFeed = activities.length === 0 && !hasMore
     return (
       <ActivityFeed
-        totalActivities={total}
+        activities={activities}
+        activityTypeFilters={addActivityTypeFilter}
         addContentText={addContentText}
         addContentLink={addContentLink}
-        activities={activities}
-        activityTypeFilters={[]}
+        isTypeFilterEnabled={isTypeFilterEnabled}
+        isLoading={isLoading}
         hasMore={hasMore}
         onLoadMore={this.onLoadMore}
-        isLoading={isLoading}
+        sendQueryParams={this.setFilterQueryParams}
+        totalActivities={total}
       >
         {isEmptyFeed && !error && <div>There are no activities to show.</div>}
         {error && <div>Error occurred while loading activities.</div>}

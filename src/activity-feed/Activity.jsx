@@ -3,7 +3,6 @@ import { find } from 'lodash'
 
 import PropTypes from 'prop-types'
 import cards from './cards'
-import CardUtils from './cards/card/CardUtils'
 
 export default class Activity extends React.PureComponent {
   static propTypes = {
@@ -28,9 +27,7 @@ export default class Activity extends React.PureComponent {
     const { activity, filter, showDetails } = this.props
     const { Card } = this
 
-    return Card &&
-      ((filter && !filter.length) ||
-        CardUtils.canRenderByTypes(activity, filter)) ? (
+    return Card ? (
       <Card activity={activity} filter={filter} showDetails={showDetails} />
     ) : null
   }

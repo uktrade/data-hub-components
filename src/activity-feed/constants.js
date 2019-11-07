@@ -11,32 +11,24 @@ export const ACTIVITY_TYPE = {
   Omis: ['dit:OMISOrder'],
 }
 
-export const ACTIVITY_TYPE_FILTERS = [
-  {
+export const ACTIVITY_TYPE_FILTERS = {
+  allActivity: {
     label: 'All Data Hub & external activity',
     value: 'all',
   },
-  {
+  myActivity: {
+    label: 'My activity',
+    value: 'my-activity',
+  },
+  externalActivity: {
     label: 'All external activity',
-    value: [].concat(
-      ...[
-        ACTIVITY_TYPE.CompaniesHouseAccount,
-        ACTIVITY_TYPE.CompaniesHouseCompany,
-        ACTIVITY_TYPE.HmrcExporter,
-      ]
-    ),
+    value: 'external-activity',
   },
-  {
+  dataHubActivity: {
     label: 'All Data Hub activity',
-    value: [].concat(
-      ...[
-        ACTIVITY_TYPE.Interaction,
-        ACTIVITY_TYPE.InvestmentProject,
-        ACTIVITY_TYPE.Omis,
-      ]
-    ),
+    value: 'datahub-activity',
   },
-]
+}
 
 export default {
   ACTIVITY_TYPE,
