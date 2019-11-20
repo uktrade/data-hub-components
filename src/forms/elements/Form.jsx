@@ -4,16 +4,15 @@ import LoadingBox from '@govuk-react/loading-box'
 
 import useFormContext from '../hooks/useFormContext'
 
-function Form(props) {
-  const { initialValues, initialStep, onSubmit } = props
-
+function Form({ initialValues, initialStep, onSubmit, scrollToTop, children }) {
   return (
     <useFormContext.Provider
       initialValues={initialValues}
       initialStep={initialStep}
       onSubmit={onSubmit}
+      scrollToTop={scrollToTop}
     >
-      <FormWrapper {...props} />
+      <FormWrapper>{children}</FormWrapper>
     </useFormContext.Provider>
   )
 }
@@ -22,6 +21,7 @@ Form.propTypes = {
   initialValues: PropTypes.shape({}),
   initialStep: PropTypes.number,
   onSubmit: PropTypes.func,
+  scrollToTop: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
 }
 
@@ -29,12 +29,12 @@ Form.defaultProps = {
   initialValues: {},
   initialStep: 0,
   onSubmit: null,
+  scrollToTop: true,
   children: null,
 }
 
-function FormWrapper(props) {
-  const { children, ...rest } = props
-  const formContextProps = useFormContext(rest)
+function FormWrapper({ children }) {
+  const formContextProps = useFormContext()
 
   const renderChildren = () => {
     if (typeof children === 'function') {

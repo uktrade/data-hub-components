@@ -6,6 +6,7 @@ function useForm({
   initialValues = {},
   initialStep = 0,
   onSubmit = null,
+  scrollToTop = true,
 } = {}) {
   const [values, setValues] = useState(initialValues)
   const [touched, setTouched] = useState({})
@@ -45,7 +46,9 @@ function useForm({
   }, [redirectUrl])
 
   useDeepCompareEffect(() => {
-    window.scrollTo(0, 0)
+    if (scrollToTop) {
+      window.scrollTo(0, 0)
+    }
   }, [currentStep, errors])
 
   const getFieldState = (name) => {

@@ -614,6 +614,21 @@ describe('useForm', () => {
     })
   })
 
+  describe('when goForward() is called but "scrollToTop" is set to false', () => {
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm({ scrollToTop: false }))
+
+      await act(async () => {
+        window.scrollTo = jest.fn()
+        hook.result.current.goForward()
+      })
+    })
+
+    test('should not scroll to the top of the page', () => {
+      expect(window.scrollTo).not.toHaveBeenCalled()
+    })
+  })
+
   describe('when goBack() is called', () => {
     beforeAll(async () => {
       const hook = renderHook(() => useForm({ initialStep: 1 }))
