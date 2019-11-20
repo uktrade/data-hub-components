@@ -31,8 +31,10 @@ const StyledCellList = styled('ul')`
   margin: 0;
 `
 
-const SummaryTable = ({ caption, actions, children }) => (
-  <StyledTable caption={[caption, actions]}>{children}</StyledTable>
+const SummaryTable = ({ caption, actions, children, ...rest }) => (
+  <StyledTable caption={[caption, actions]} {...rest}>
+    {children}
+  </StyledTable>
 )
 
 const StyledTableRow = styled(Table.Row)`
