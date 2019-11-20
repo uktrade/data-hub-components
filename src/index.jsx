@@ -67,8 +67,14 @@ export { default as FieldUneditable } from './forms/elements/FieldUneditable'
 export { default as Metadata } from './metadata/Metadata'
 export { default as MetadataItem } from './metadata/MetadataItem'
 
+// New window link
+export { default as NewWindowLink } from './new-window-link/NewWindowLink'
+
 // Pagination
 export { default as Pagination } from './pagination/Pagination'
 
 // Status message
 export { default as StatusMessage } from './status-message/StatusMessage'
+
+// Summary table
+export { default as SummaryTable } from './summary-table/SummaryTable'
