@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import PropTypes from 'prop-types'
+
 import ActivityFeed from './ActivityFeed'
 
 /**
@@ -9,58 +10,72 @@ import ActivityFeed from './ActivityFeed'
  */
 export default class ActivityFeedApp extends React.Component {
   static propTypes = {
-    addActivityTypeFilter: PropTypes.object,
-    addContentLink: PropTypes.string,
-    addContentText: PropTypes.string,
+    contentLink: PropTypes.string,
+    contentText: PropTypes.string,
+    activityTypeFilter: PropTypes.string,
+    activityTypeFilters: PropTypes.object,
     apiEndpoint: PropTypes.string.isRequired,
-    isTypeFilterEnabled: PropTypes.bool,
-    render: PropTypes.func,
+    isGlobalUltimate: PropTypes.bool,
+    dnbHierachyCount: PropTypes.number,
+    isTypeFilterFlagEnabled: PropTypes.bool,
+    isGlobalUltimateFlagEnabled: PropTypes.bool,
   }
 
   static defaultProps = {
-    addActivityTypeFilter: {},
-    addContentLink: null,
-    addContentText: null,
-    isTypeFilterEnabled: false,
-    render: null,
+    activityTypeFilter: null,
+    activityTypeFilters: {},
+    contentLink: null,
+    contentText: null,
+    isGlobalUltimate: false,
+    dnbHierachyCount: null,
+    isTypeFilterFlagEnabled: false,
+    isGlobalUltimateFlagEnabled: false,
   }
 
   constructor(props) {
     super(props)
+
+    const { activityTypeFilter } = props
+
     this.state = {
       activities: [],
       error: false,
-      queryParams: props.addActivityTypeFilter.dataHubActivity
-        ? props.addActivityTypeFilter.dataHubActivity.value
-        : '',
       hasMore: true,
       isLoading: true,
-      offset: 0,
+      from: 0,
       total: 0,
+      queryParams: {
+        activityTypeFilter,
+        showDnbHierarchy: false,
+      },
     }
 
     this.onLoadMore = this.onLoadMore.bind(this)
-    this.setFilterQueryParams = this.setFilterQueryParams.bind(this)
+    this.setQueryParams = this.setQueryParams.bind(this)
   }
 
   async componentDidMount() {
     await this.onLoadMore()
   }
 
-  async onLoadMore() {
-    const { offset } = this.state
-    this.getActivities(offset)
+  setQueryParams(queryParams) {
+    this.setState(
+      {
+        from: 0,
+        activities: [],
+        queryParams,
+      },
+      this.onLoadMore
+    )
   }
 
-  async getActivities(offset = 0) {
-    const { activities, queryParams } = this.state
+  async onLoadMore() {
+    const { activities, queryParams, from } = this.state
     const { apiEndpoint } = this.props
-    const limit = 20
-    const filterParams = { queryParams }
+    const size = 20
 
     this.setState({
       isLoading: true,
-      activities: offset ? activities : [],
     })
 
     try {
@@ -69,15 +84,18 @@ export default class ActivityFeedApp extends React.Component {
         total,
       } = await ActivityFeedApp.fetchActivities(
         apiEndpoint,
-        offset,
-        limit,
-        filterParams
+        from,
+        size,
+        queryParams
       )
 
-      this.setActivityState({
-        activities: offset ? activities.concat(newActivities) : newActivities,
-        limit,
-        offset,
+      const allActivities = activities.concat(newActivities)
+
+      this.setState({
+        activities: allActivities,
+        isLoading: false,
+        hasMore: total > allActivities.length,
+        from: from + size,
         total,
       })
     } catch (e) {
@@ -89,28 +107,18 @@ export default class ActivityFeedApp extends React.Component {
     }
   }
 
-  setActivityState({ activities, limit, offset, total }) {
-    this.setState({
-      activities,
-      isLoading: false,
-      hasMore: total > activities.length,
-      offset: offset + limit,
-      total,
-    })
-  }
+  static async fetchActivities(apiEndpoint, from, size, queryParams) {
+    const { activityTypeFilter, showDnbHierarchy } = queryParams
 
-  async onFilterActivity() {
-    this.getActivities()
-  }
-
-  static async fetchActivities(apiEndpoint, offset, limit, queryParams = {}) {
     const params = {
-      size: limit,
-      from: offset,
-      ...queryParams,
+      from,
+      size,
+      activityTypeFilter,
+      showDnbHierarchy,
     }
 
     const { data } = await axios.get(apiEndpoint, { params })
+
     const { total, hits } = data.hits
 
     return {
@@ -119,37 +127,37 @@ export default class ActivityFeedApp extends React.Component {
     }
   }
 
-  setFilterQueryParams(queryParams) {
-    this.setState({ queryParams }, this.onFilterActivity)
-  }
-
   render() {
     const { activities, isLoading, hasMore, error, total } = this.state
     const {
-      addActivityTypeFilter,
-      addContentText,
-      addContentLink,
-      isTypeFilterEnabled,
-      render,
+      activityTypeFilters,
+      contentText,
+      contentLink,
+      isGlobalUltimate,
+      dnbHierachyCount,
+      isTypeFilterFlagEnabled,
+      isGlobalUltimateFlagEnabled,
     } = this.props
 
     const isEmptyFeed = activities.length === 0 && !hasMore
     return (
       <ActivityFeed
         activities={activities}
-        activityTypeFilters={addActivityTypeFilter}
-        addContentText={addContentText}
-        addContentLink={addContentLink}
-        isTypeFilterEnabled={isTypeFilterEnabled}
+        activityTypeFilters={activityTypeFilters}
+        contentText={contentText}
+        contentLink={contentLink}
         isLoading={isLoading}
         hasMore={hasMore}
         onLoadMore={this.onLoadMore}
-        sendQueryParams={this.setFilterQueryParams}
+        sendQueryParams={this.setQueryParams}
         totalActivities={total}
+        isGlobalUltimate={isGlobalUltimate}
+        dnbHierachyCount={dnbHierachyCount}
+        isTypeFilterFlagEnabled={isTypeFilterFlagEnabled}
+        isGlobalUltimateFlagEnabled={isGlobalUltimateFlagEnabled}
       >
         {isEmptyFeed && !error && <div>There are no activities to show.</div>}
         {error && <div>Error occurred while loading activities.</div>}
-        {render && render(this.state, this.props)}
       </ActivityFeed>
     )
   }

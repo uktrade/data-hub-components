@@ -1,58 +1,71 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import ActivityFeedFilters from '../ActivityFeedFilters'
-import BasicActivityTypeFilter from '../filters/BasicActivityTypeFilter'
-import ShowDetailsFilter from '../filters/ShowDetailsFilter'
 
-describe('ActivityFeedFilters without BasicActivityTypeFilter', () => {
+import ActivityFeedFilters from '../ActivityFeedFilters'
+import ActivityFeedCheckbox from '../ActivityFeedCheckbox'
+import SelectFilter from '../filters/SelectFilter'
+import { ACTIVITY_TYPE_FILTERS } from '../constants'
+
+const {
+  allActivity,
+  myActivity,
+  externalActivity,
+  dataHubActivity,
+} = ACTIVITY_TYPE_FILTERS
+
+const activityTypeFilters = [
+  allActivity,
+  myActivity,
+  externalActivity,
+  dataHubActivity,
+]
+
+const activityTypeFilter = allActivity.value
+
+describe('ActivityFeedFilters', () => {
   let wrapper
 
-  describe('when no activity type filters exist', () => {
+  describe('when the filters are hidden', () => {
     beforeAll(() => {
       wrapper = mount(
         <ActivityFeedFilters
           activityTypeFilters={[]}
-          isTypeFilterEnabled={false}
-          onShowDetailsClick={() => {}}
-          showDetails={false}
+          activityTypeFilter=""
+          onActivityTypeFilterChange={() => {}}
+          showActivitiesFromAllCompanies={() => {}}
+          dnbHierachyCount={null}
+          isGlobalUltimate={false}
+          isGlobalUltimateFlagEnabled={false}
+          isTypeFilterFlagEnabled={false}
         />
       )
     })
 
-    test('renders the ShowDetailsFilter filters', () => {
-      expect(wrapper.find(ActivityFeedFilters).exists()).toBe(true)
-      expect(wrapper.find(BasicActivityTypeFilter).exists()).toBe(false)
-      expect(wrapper.find(ShowDetailsFilter).exists()).toBe(true)
+    test('should not render either filter components', () => {
+      expect(wrapper.find(ActivityFeedCheckbox).exists()).toBe(false)
+      expect(wrapper.find(SelectFilter).exists()).toBe(false)
     })
   })
 
-  describe('when activity type filters do exist', () => {
+  describe('when the filters are shown', () => {
     beforeAll(() => {
       wrapper = mount(
         <ActivityFeedFilters
-          activityTypeFilters={[
-            {
-              label: 'hello',
-              value: 'hello',
-            },
-            {
-              label: 'hello',
-              value: 'hello',
-            },
-          ]}
-          filteredActivity="hello"
-          isTypeFilterEnabled={true}
-          onShowDetailsClick={() => {}}
+          activityTypeFilters={activityTypeFilters}
+          activityTypeFilter={activityTypeFilter}
           onActivityTypeFilterChange={() => {}}
-          showDetails={false}
+          showActivitiesFromAllCompanies={() => {}}
+          dnbHierachyCount={3}
+          isGlobalUltimate={true}
+          isGlobalUltimateFlagEnabled={true}
+          isTypeFilterFlagEnabled={true}
         />
       )
     })
 
-    test('renders the BasicActivityTypeFilter filters', () => {
-      expect(wrapper.find(ActivityFeedFilters).exists()).toBe(true)
-      expect(wrapper.find(BasicActivityTypeFilter).exists()).toBe(true)
-      expect(wrapper.find(ShowDetailsFilter).exists()).toBe(false)
+    test('should render both filter components', () => {
+      expect(wrapper.find(ActivityFeedCheckbox).exists()).toBe(true)
+      expect(wrapper.find(SelectFilter).exists()).toBe(true)
     })
   })
 })

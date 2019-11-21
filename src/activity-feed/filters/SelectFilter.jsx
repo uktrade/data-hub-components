@@ -27,7 +27,6 @@ const StyledDropdownContainer = styled('div')`
       margin: 0 ${SPACING.SCALE_2}
       width: auto;
       margin: 0;
-
       
       ${MEDIA_QUERIES.DESKTOP} {
         margin: 0 10px;
@@ -44,33 +43,31 @@ const StyledDropdownContainer = styled('div')`
   } 
 `
 
-export default class SelectFilter extends React.PureComponent {
-  static propTypes = {
-    filters: PropTypes.array.isRequired,
-    onActivityTypeFilterChange: PropTypes.func.isRequired,
-    value: PropTypes.string.isRequired,
-  }
-
-  render() {
-    const { filters, onActivityTypeFilterChange, value } = this.props
-
-    return (
-      <StyledDropdownContainer>
-        <Select
-          input={{ defaultValue: value }}
-          name="activity-types-filter"
-          label="Activity types"
-          onChange={onActivityTypeFilterChange}
-        >
-          {map(filters, (item, index) => {
-            return (
-              <option key={`selectFilterKey_${index}`} value={item.value}>
-                {item.label}
-              </option>
-            )
-          })}
-        </Select>
-      </StyledDropdownContainer>
-    )
-  }
+const SelectFilter = ({ filters, onActivityTypeFilterChange, value }) => {
+  return (
+    <StyledDropdownContainer>
+      <Select
+        input={{ defaultValue: value }}
+        name="activity-types-filter"
+        label="Activity types"
+        onChange={onActivityTypeFilterChange}
+      >
+        {map(filters, (item, index) => {
+          return (
+            <option key={`selectFilterKey_${index}`} value={item.value}>
+              {item.label}
+            </option>
+          )
+        })}
+      </Select>
+    </StyledDropdownContainer>
+  )
 }
+
+SelectFilter.propTypes = {
+  filters: PropTypes.array.isRequired,
+  onActivityTypeFilterChange: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired,
+}
+
+export default SelectFilter

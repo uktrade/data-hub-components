@@ -6,6 +6,7 @@ import { SPACING } from '@govuk-react/constants'
 import Activity from './Activity'
 import ActivityFeedHeader from './ActivityFeedHeader'
 import ActivityFeedFilters from './ActivityFeedFilters'
+import ActivityFeedShowAll from './ActivityFeedShowAll'
 import ActivityFeedPagination from './ActivityFeedPagination'
 
 const ActivityFeedContainer = styled('div')`
@@ -24,31 +25,37 @@ const ActivityFeedCardList = styled('ol')`
 
 export default class ActivityFeed extends React.Component {
   static propTypes = {
+    onLoadMore: PropTypes.func,
+    sendQueryParams: PropTypes.func,
     children: PropTypes.node,
     activities: PropTypes.arrayOf(PropTypes.object),
     activityTypeFilters: PropTypes.object,
-    onLoadMore: PropTypes.func,
     hasMore: PropTypes.bool,
-    isTypeFilterEnabled: PropTypes.bool,
     isLoading: PropTypes.bool,
-    addContentText: PropTypes.string,
-    addContentLink: PropTypes.string,
+    contentText: PropTypes.string,
+    contentLink: PropTypes.string,
     totalActivities: PropTypes.number,
-    sendQueryParams: PropTypes.func,
+    isGlobalUltimate: PropTypes.bool,
+    dnbHierachyCount: PropTypes.number,
+    isTypeFilterFlagEnabled: PropTypes.bool,
+    isGlobalUltimateFlagEnabled: PropTypes.bool,
   }
 
   static defaultProps = {
+    onLoadMore: () => {},
+    sendQueryParams: () => {},
     children: null,
     activities: [],
     activityTypeFilters: {},
-    onLoadMore: () => {},
     hasMore: false,
-    isTypeFilterEnabled: false,
     isLoading: false,
-    addContentText: null,
-    addContentLink: null,
+    contentText: null,
+    contentLink: null,
     totalActivities: 0,
-    sendQueryParams: () => {},
+    isGlobalUltimate: false,
+    dnbHierachyCount: null,
+    isTypeFilterFlagEnabled: false,
+    isGlobalUltimateFlagEnabled: false,
   }
 
   constructor(props) {
@@ -60,8 +67,10 @@ export default class ActivityFeed extends React.Component {
     } = props.activityTypeFilters
 
     super(props)
+
     this.state = {
-      filteredActivity: dataHubActivity ? dataHubActivity.value : '',
+      activityTypeFilter: dataHubActivity ? dataHubActivity.value : '',
+      showDnbHierarchy: false,
       showDetails: false,
       activityTypeFilters: [
         allActivity,
@@ -73,17 +82,39 @@ export default class ActivityFeed extends React.Component {
 
     this.onActivityTypeFilterChange = this.onActivityTypeFilterChange.bind(this)
     this.onShowDetailsClick = this.onShowDetailsClick.bind(this)
+    this.showActivitiesFromAllCompanies = this.showActivitiesFromAllCompanies.bind(
+      this
+    )
   }
 
   onActivityTypeFilterChange(e) {
-    const filteredActivity = e.target.value
+    const activityTypeFilter = e.target.value
     const { sendQueryParams } = this.props
+    const { showDnbHierarchy } = this.state
 
-    this.setState({
-      filteredActivity,
+    sendQueryParams({
+      activityTypeFilter,
+      showDnbHierarchy,
     })
 
-    sendQueryParams(filteredActivity)
+    this.setState({
+      activityTypeFilter,
+    })
+  }
+
+  showActivitiesFromAllCompanies(e) {
+    const showDnbHierarchy = e.target.checked
+    const { sendQueryParams } = this.props
+    const { activityTypeFilter } = this.state
+
+    sendQueryParams({
+      activityTypeFilter,
+      showDnbHierarchy,
+    })
+
+    this.setState({
+      showDnbHierarchy,
+    })
   }
 
   onShowDetailsClick(e) {
@@ -97,30 +128,49 @@ export default class ActivityFeed extends React.Component {
       activities,
       onLoadMore,
       hasMore,
-      isTypeFilterEnabled,
       isLoading,
-      addContentText,
-      addContentLink,
+      contentText,
+      contentLink,
       children,
       totalActivities,
+      isGlobalUltimate,
+      dnbHierachyCount,
+      isTypeFilterFlagEnabled,
+      isGlobalUltimateFlagEnabled,
     } = this.props
-    const { activityTypeFilters, filteredActivity, showDetails } = this.state
+    const { activityTypeFilters, activityTypeFilter, showDetails } = this.state
+    const hasFilters = isTypeFilterFlagEnabled || isGlobalUltimateFlagEnabled
 
     return (
       <ActivityFeedContainer>
         <ActivityFeedHeader
           totalActivities={totalActivities}
-          addContentText={addContentText}
-          addContentLink={addContentLink}
+          contentText={contentText}
+          contentLink={contentLink}
         />
-        <ActivityFeedFilters
-          activityTypeFilters={activityTypeFilters}
-          filteredActivity={filteredActivity}
-          isTypeFilterEnabled={isTypeFilterEnabled}
-          onActivityTypeFilterChange={this.onActivityTypeFilterChange}
-          onShowDetailsClick={this.onShowDetailsClick}
-          showDetails={showDetails}
-        />
+
+        {hasFilters && (
+          <ActivityFeedFilters
+            activityTypeFilters={activityTypeFilters}
+            activityTypeFilter={activityTypeFilter}
+            onActivityTypeFilterChange={this.onActivityTypeFilterChange}
+            showActivitiesFromAllCompanies={this.showActivitiesFromAllCompanies}
+            isGlobalUltimate={isGlobalUltimate}
+            dnbHierachyCount={dnbHierachyCount}
+            isTypeFilterFlagEnabled={isTypeFilterFlagEnabled}
+            isGlobalUltimateFlagEnabled={isGlobalUltimateFlagEnabled}
+          />
+        )}
+
+        {activities.length > 0 && (
+          <ActivityFeedShowAll
+            onChange={this.onShowDetailsClick}
+            checked={showDetails}
+          >
+            Show details for all activities
+          </ActivityFeedShowAll>
+        )}
+
         <ActivityFeedCardList>
           {activities.map((activity) => (
             <li key={activity.id}>
