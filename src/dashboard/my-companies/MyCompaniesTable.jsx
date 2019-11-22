@@ -6,8 +6,9 @@ import LinesEllipsis from 'react-lines-ellipsis'
 import { typography } from '@govuk-react/lib'
 import Table from '@govuk-react/table'
 import Link from '@govuk-react/link'
-import { GREY_1 } from 'govuk-colours'
+import { GREY_1, GREY_3, TEXT_COLOUR } from 'govuk-colours'
 import { MEDIA_QUERIES } from '@govuk-react/constants'
+import Button from '@govuk-react/button'
 import useMyCompaniesContext from './useMyCompaniesContext'
 import Filters from './MyCompaniesFilters'
 
@@ -21,9 +22,17 @@ const StyledCellHeader = styled(Table.CellHeader)(
   }
 )
 
+const StyledButtonTableCell = styled(Table.CellHeader)`
+  white-space: nowrap;
+`
+
 const StyledDateCell = styled(Table.Cell)(typography.font({ size: 14 }), {
   color: GREY_1,
 })
+
+const StyledLink = styled.a`
+  margin-bottom: 0;
+`
 
 function sortCompanies(companies, sortType) {
   const sort = {
@@ -52,7 +61,9 @@ const filterCompanyName = (companies, filterText) =>
 function MyCompaniesTable() {
   const {
     state: { lists, selectedIdx, sortBy, filter },
+    addInteractionPropsAccessor = () => ({}),
   } = useMyCompaniesContext()
+
   const list = lists[selectedIdx]
   const filteredSortedCompanies = sortCompanies(
     filterCompanyName(list.companies, filter),
@@ -63,7 +74,7 @@ function MyCompaniesTable() {
     <Table.Row>
       <StyledCellHeader>Company name</StyledCellHeader>
       <StyledCellHeader>Last interaction</StyledCellHeader>
-      <StyledCellHeader>&nbsp;</StyledCellHeader>
+      <StyledCellHeader colSpan="2">&nbsp;</StyledCellHeader>
     </Table.Row>
   )
 
@@ -86,7 +97,7 @@ function MyCompaniesTable() {
             ? moment(latestInteraction.date).format('D MMM YYYY')
             : '-'}
         </StyledDateCell>
-        <Table.Cell setWidth="60%">
+        <Table.Cell setWidth="50%">
           {latestInteraction.id ? (
             <Link href={`interactions/${latestInteraction.id}`}>
               <LinesEllipsis
@@ -101,6 +112,16 @@ function MyCompaniesTable() {
             latestInteraction.subject
           )}
         </Table.Cell>
+        <StyledButtonTableCell>
+          <Button
+            as={StyledLink}
+            buttonColour={GREY_3}
+            buttonTextColour={TEXT_COLOUR}
+            {...addInteractionPropsAccessor(company)}
+          >
+            Add interaction
+          </Button>
+        </StyledButtonTableCell>
       </Table.Row>
     )
   })

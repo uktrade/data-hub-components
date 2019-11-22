@@ -52,14 +52,14 @@ describe('MyCompaniesTable', () => {
 
     test('Should display a single row', () => {
       expect(getTableRowTexts(wrapper)).toEqual([
-        'Company A foo6 Jan 2019Interaction A',
+        'Company A foo6 Jan 2019Interaction AAdd interaction',
       ])
     })
 
     test('Should not display filters', () => {
       expect(wrapper.find(MyCompaniesFilters)).toHaveLength(0)
       expect(wrapper.text()).toBe(
-        'Company nameLast interaction Company A foo6 Jan 2019Interaction A'
+        'Company nameLast interaction Company A foo6 Jan 2019Interaction AAdd interaction'
       )
     })
   })
@@ -73,27 +73,27 @@ describe('MyCompaniesTable', () => {
 
       test('Should order by recent interaction by default', () => {
         expect(getTableRowTexts(wrapper)).toEqual([
-          'Company A foo6 Jan 2019Interaction A',
-          'Company C foooo5 Jan 2019Interaction C',
-          'Company B fooo4 Jan 2019Interaction B',
+          'Company A foo6 Jan 2019Interaction AAdd interaction',
+          'Company C foooo5 Jan 2019Interaction CAdd interaction',
+          'Company B fooo4 Jan 2019Interaction BAdd interaction',
         ])
       })
 
       test('Should reorder on selecting the least recent order', () => {
         changeSelectAndUpdate(wrapper, 'Least recent interaction')
         expect(getTableRowTexts(wrapper)).toEqual([
-          'Company B fooo4 Jan 2019Interaction B',
-          'Company C foooo5 Jan 2019Interaction C',
-          'Company A foo6 Jan 2019Interaction A',
+          'Company B fooo4 Jan 2019Interaction BAdd interaction',
+          'Company C foooo5 Jan 2019Interaction CAdd interaction',
+          'Company A foo6 Jan 2019Interaction AAdd interaction',
         ])
       })
 
       test('Should reorder on selecting alphabetical sort option', () => {
         changeSelectAndUpdate(wrapper, 'Company name A-Z')
         expect(getTableRowTexts(wrapper)).toEqual([
-          'Company A foo6 Jan 2019Interaction A',
-          'Company B fooo4 Jan 2019Interaction B',
-          'Company C foooo5 Jan 2019Interaction C',
+          'Company A foo6 Jan 2019Interaction AAdd interaction',
+          'Company B fooo4 Jan 2019Interaction BAdd interaction',
+          'Company C foooo5 Jan 2019Interaction CAdd interaction',
         ])
       })
     })
@@ -103,18 +103,18 @@ describe('MyCompaniesTable', () => {
 
       test('Should not apply any filters by default', () => {
         expect(getTableRowTexts(wrapper)).toEqual([
-          'Company A foo6 Jan 2019Interaction A',
-          'Company C foooo5 Jan 2019Interaction C',
-          'Company B fooo4 Jan 2019Interaction B',
+          'Company A foo6 Jan 2019Interaction AAdd interaction',
+          'Company C foooo5 Jan 2019Interaction CAdd interaction',
+          'Company B fooo4 Jan 2019Interaction BAdd interaction',
         ])
       })
 
       test('Should apply filters on filter input change', () => {
         changeAndUpdate(wrapper.find('input'), 'foo')
         expect(getTableRowTexts(wrapper)).toEqual([
-          'Company A foo6 Jan 2019Interaction A',
-          'Company C foooo5 Jan 2019Interaction C',
-          'Company B fooo4 Jan 2019Interaction B',
+          'Company A foo6 Jan 2019Interaction AAdd interaction',
+          'Company C foooo5 Jan 2019Interaction CAdd interaction',
+          'Company B fooo4 Jan 2019Interaction BAdd interaction',
         ])
       })
     })

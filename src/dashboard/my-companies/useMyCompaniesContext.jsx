@@ -33,7 +33,12 @@ export const reducer = (state, { type, ...action }) => {
 
 // We are unpacking children here just to remove them from initialState.
 const useMyCompaniesContext = createUseContext(
-  ({ children, deleteListPropsAccessor, ...rest }) => {
+  ({
+    children,
+    deleteListPropsAccessor,
+    addInteractionPropsAccessor,
+    ...rest
+  }) => {
     const initialState = pick(rest, [
       'lists',
       'selectedIdx',
@@ -51,6 +56,7 @@ const useMyCompaniesContext = createUseContext(
       state,
       dispatch,
       deleteListPropsAccessor,
+      addInteractionPropsAccessor,
     }
   }
 )
