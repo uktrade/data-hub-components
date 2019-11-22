@@ -143,6 +143,10 @@
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/.history/", 
+      "<rootDir>/node_modules/"
     ]
   },
   "jest-junit": {
