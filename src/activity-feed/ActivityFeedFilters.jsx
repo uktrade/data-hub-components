@@ -1,21 +1,86 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { GREY_3, GREY_4 } from 'govuk-colours'
+import { SPACING, MEDIA_QUERIES } from '@govuk-react/constants'
+import styled from 'styled-components'
 
-import BasicActivityTypeFilter from './filters/BasicActivityTypeFilter'
-import ShowDetailsFilter from './filters/ShowDetailsFilter'
+import SelectFilter from './filters/SelectFilter'
+import ActivityFeedCheckbox from './ActivityFeedCheckbox'
 
-export default class ActivityFeedFilters extends React.PureComponent {
-  static propTypes = {
-    isTypeFilterEnabled: PropTypes.bool.isRequired,
+const ActivityFeedFiltersRow = styled('div')`
+  padding: ${SPACING.SCALE_2};
+  background: ${GREY_3};
+  display: block;
+  align-items: center;
+
+  ${MEDIA_QUERIES.DESKTOP} {
+    display: flex;
   }
+`
 
-  render() {
-    const { isTypeFilterEnabled } = this.props
+const StyledCheckboxContainer = styled('div')`
+  background: ${GREY_4};
+  align-items: center;
+  padding: 11px;
 
-    if (isTypeFilterEnabled) {
-      return <BasicActivityTypeFilter {...this.props} />
-    } else {
-      return <ShowDetailsFilter {...this.props} />
-    }
+  ${MEDIA_QUERIES.DESKTOP} {
+    margin-right: ${SPACING.SCALE_5};
   }
+`
+
+const StyledTitle = styled('h4')`
+  margin-right: ${SPACING.SCALE_4};
+  white-space: nowrap;
+`
+
+const ActivityFeedFilters = ({
+  activityTypeFilters,
+  activityTypeFilter,
+  onActivityTypeFilterChange,
+  showActivitiesFromAllCompanies,
+  isGlobalUltimate,
+  dnbHierachyCount,
+  isGlobalUltimateFlagEnabled,
+  isTypeFilterFlagEnabled,
+}) => {
+  const showUltimateHQFilter = isGlobalUltimate && isGlobalUltimateFlagEnabled
+  return (
+    <ActivityFeedFiltersRow>
+      <StyledTitle>Filter by</StyledTitle>
+      {showUltimateHQFilter && (
+        <StyledCheckboxContainer>
+          <ActivityFeedCheckbox
+            name="ultimateHQSubsidiariesFilter"
+            onChange={showActivitiesFromAllCompanies}
+          >
+            Activity across all {dnbHierachyCount} companies
+          </ActivityFeedCheckbox>
+        </StyledCheckboxContainer>
+      )}
+      {isTypeFilterFlagEnabled && (
+        <SelectFilter
+          filters={activityTypeFilters}
+          onActivityTypeFilterChange={onActivityTypeFilterChange}
+          value={activityTypeFilter}
+        />
+      )}
+    </ActivityFeedFiltersRow>
+  )
 }
+
+ActivityFeedFilters.propTypes = {
+  activityTypeFilters: PropTypes.array.isRequired,
+  activityTypeFilter: PropTypes.string.isRequired,
+  onActivityTypeFilterChange: PropTypes.func.isRequired,
+  showActivitiesFromAllCompanies: PropTypes.func.isRequired,
+  dnbHierachyCount: PropTypes.number,
+  isGlobalUltimate: PropTypes.bool.isRequired,
+  isGlobalUltimateFlagEnabled: PropTypes.bool.isRequired,
+  isTypeFilterFlagEnabled: PropTypes.bool.isRequired,
+}
+
+ActivityFeedFilters.defaultProps = {
+  dnbHierachyCount: null,
+}
+
+export default ActivityFeedFilters

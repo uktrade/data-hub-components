@@ -14,19 +14,19 @@ export const ACTIVITY_TYPE = {
 export const ACTIVITY_TYPE_FILTERS = {
   allActivity: {
     label: 'All Data Hub & external activity',
-    value: 'all',
+    value: 'allActivity',
   },
   myActivity: {
     label: 'My activity',
-    value: 'my-activity',
+    value: 'myActivity',
   },
   externalActivity: {
     label: 'All external activity',
-    value: 'external-activity',
+    value: 'externalActivity',
   },
   dataHubActivity: {
     label: 'All Data Hub activity',
-    value: 'datahub-activity',
+    value: 'dataHubActivity',
   },
 }
 

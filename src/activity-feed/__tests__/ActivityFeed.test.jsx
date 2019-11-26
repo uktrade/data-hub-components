@@ -9,7 +9,6 @@ import ActivityFeed from '../ActivityFeed'
 import ActivityFeedHeader from '../ActivityFeedHeader'
 import ActivityFeedFilters from '../ActivityFeedFilters'
 import ActivityFeedPagination from '../ActivityFeedPagination'
-import BasicActivityTypeFilter from '../filters/BasicActivityTypeFilter'
 
 import companiesHouseAccountsDueFixture from '../__fixtures__/companies_house/accounts_are_due'
 import hmrcExportOfGoodsFixture from '../__fixtures__/hmrc/export_of_goods'
@@ -34,7 +33,7 @@ describe('ActivityFeed', () => {
 
       test('should render empty feed', () => {
         expect(wrapper.find(ActivityFeedHeader).exists()).toBe(true)
-        expect(wrapper.find(ActivityFeedFilters).exists()).toBe(true)
+        expect(wrapper.find(ActivityFeedFilters).exists()).toBe(false)
         expect(wrapper.find(ActivityFeed).exists()).toBe(true)
         expect(wrapper.find(Activity).exists()).toBe(false)
       })
@@ -119,6 +118,19 @@ describe('ActivityFeed', () => {
         )
       })
     })
+
+    describe('when calling onLoadMore', () => {
+      const onLoadMoreSpy = jest.spyOn(ActivityFeed.defaultProps, 'onLoadMore')
+
+      beforeAll(() => {
+        wrapper = mount(<ActivityFeed isLoading={false} hasMore={true} />)
+      })
+
+      test('should call onLoadMore after pagination button click', () => {
+        wrapper.find('button').simulate('click')
+        expect(onLoadMoreSpy).toHaveBeenCalledTimes(1)
+      })
+    })
   })
 
   describe('when the "Show details for all activities" checkbox is mounted', () => {
@@ -177,7 +189,7 @@ describe('ActivityFeed', () => {
     })
   })
 
-  describe('when the "Basic Activities Filter" is mounted', () => {
+  describe('the Activity Type filters"', () => {
     let wrapper
 
     const activities = [].concat(
@@ -190,43 +202,43 @@ describe('ActivityFeed', () => {
     )
 
     const { allActivity, myActivity, dataHubActivity } = ACTIVITY_TYPE_FILTERS
-    const defaultFilterValue = dataHubActivity ? dataHubActivity.value : ''
-    const showAllActivitiesFilterValue = allActivity ? allActivity.value : ''
-    const myActivityFilterValue = myActivity ? myActivity.value : ''
 
     beforeAll(() => {
       wrapper = mount(
         <ActivityFeed
           activities={activities}
+          hasMore={true}
           totalActivities={activities.length}
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
-          isTypeFilterEnabled={true}
+          dnbHierachyCount={3}
+          isTypeFilterFlagEnabled={true}
+          isGlobalUltimateFlagEnabled={true}
         />
       )
     })
 
-    describe('when filter is enabled', () => {
+    describe('when activity type select filter is enabled', () => {
       test('should render the filter', () => {
-        expect(wrapper.find(BasicActivityTypeFilter).exists()).toBe(true)
+        expect(wrapper.find(ActivityFeedFilters).exists()).toBe(true)
       })
 
       test('should receive the default filter value', () => {
-        expect(wrapper.find(ActivityFeed).state().filteredActivity).toBe(
-          defaultFilterValue
+        expect(wrapper.find(ActivityFeed).state().activityTypeFilter).toBe(
+          dataHubActivity.value
         )
       })
 
       test('should have a default value active', () => {
         expect(
-          wrapper.find(BasicActivityTypeFilter).props().filteredActivity
-        ).toBe(defaultFilterValue)
+          wrapper.find(ActivityFeedFilters).props().activityTypeFilter
+        ).toBe(dataHubActivity.value)
       })
     })
 
     describe('when the filter that should list all activities is selected', () => {
       beforeAll(() => {
         wrapper.find('select').simulate('change', {
-          target: { value: showAllActivitiesFilterValue },
+          target: { value: allActivity.value },
         })
       })
 
@@ -243,12 +255,15 @@ describe('ActivityFeed', () => {
 
       beforeAll(() => {
         wrapper.find('select').simulate('change', {
-          target: { value: myActivityFilterValue },
+          target: { value: myActivity.value },
         })
       })
 
       test('set the query params to the value selected', () => {
-        expect(spySendQueryParams).toHaveBeenCalledWith(myActivityFilterValue)
+        expect(spySendQueryParams).toHaveBeenCalledWith({
+          activityTypeFilter: 'myActivity',
+          showDnbHierarchy: false,
+        })
       })
     })
 
@@ -260,12 +275,76 @@ describe('ActivityFeed', () => {
 
       beforeAll(() => {
         wrapper.find('select').simulate('change', {
-          target: { value: defaultFilterValue },
+          target: { value: dataHubActivity.value },
         })
       })
 
       test('set the query params to the value selected', () => {
-        expect(spySendQueryParams).toHaveBeenCalledWith(defaultFilterValue)
+        expect(spySendQueryParams).toHaveBeenCalledWith({
+          activityTypeFilter: dataHubActivity.value,
+          showDnbHierarchy: false,
+        })
+      })
+    })
+  })
+
+  describe('the D&B Ultimate HQ subsidiaries filter', () => {
+    const sendQueryParamsSpy = jest.fn()
+    let wrapper
+
+    beforeAll(() => {
+      wrapper = mount(
+        <ActivityFeed
+          activities={[]}
+          sendQueryParams={sendQueryParamsSpy}
+          activityTypeFilters={ACTIVITY_TYPE_FILTERS}
+          dnbHierachyCount={3}
+          isGlobalUltimate={true}
+          isTypeFilterFlagEnabled={true}
+          isGlobalUltimateFlagEnabled={true}
+        />
+      )
+    })
+
+    afterEach(() => sendQueryParamsSpy.mockClear())
+
+    describe('selecting the checkbox', () => {
+      beforeEach(() => {
+        wrapper
+          .find('input[name="ultimateHQSubsidiariesFilter"]')
+          .simulate('change', { target: { checked: true } })
+      })
+
+      test('should send the correct query params', () => {
+        expect(sendQueryParamsSpy).toHaveBeenCalledWith({
+          activityTypeFilter: 'dataHubActivity',
+          showDnbHierarchy: true,
+        })
+      })
+
+      test('should update the state', () => {
+        const state = wrapper.find(ActivityFeed).state()
+        expect(state.showDnbHierarchy).toBe(true)
+      })
+    })
+
+    describe('deselecting the checkbox', () => {
+      beforeEach(() => {
+        wrapper
+          .find('input[name="ultimateHQSubsidiariesFilter"]')
+          .simulate('change', { target: { checked: false } })
+      })
+
+      test('should send the correct query params', () => {
+        expect(sendQueryParamsSpy).toHaveBeenCalledWith({
+          activityTypeFilter: 'dataHubActivity',
+          showDnbHierarchy: false,
+        })
+      })
+
+      test('should update the state', () => {
+        const state = wrapper.find(ActivityFeed).state()
+        expect(state.showDnbHierarchy).toBe(false)
       })
     })
   })

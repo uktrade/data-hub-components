@@ -14,8 +14,8 @@ describe('ActivityFeedHeader', () => {
       .create(
         <ActivityFeedHeader
           totalActivities={999}
-          addContentText="Test button"
-          addContentLink="http://testing.example.com"
+          contentText="Test button"
+          contentLink="http://testing.example.com"
         />
       )
       .toJSON()

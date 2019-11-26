@@ -33,7 +33,10 @@ class ActivityFeedDemoApp extends React.Component {
 
     this.state = {
       activities: [],
-      queryParams: ACTIVITY_TYPE_FILTERS.dataHubActivity.value,
+      queryParams: {
+        activityTypeFilter: ACTIVITY_TYPE_FILTERS.dataHubActivity.value,
+        showDnbHierarchy: false,
+      },
       isLoading: false,
       hasMore: true,
       offset: 0,
@@ -55,6 +58,8 @@ class ActivityFeedDemoApp extends React.Component {
       externalActivity,
       dataHubActivity,
     } = ACTIVITY_TYPE_FILTERS
+
+    const { activityTypeFilter } = queryParams
 
     const items = {
       [allActivity.value]: activityFeedFixtures,
@@ -79,7 +84,7 @@ class ActivityFeedDemoApp extends React.Component {
       // Simulate delay.
       setTimeout(() => {
         resolve({
-          activities: items[queryParams],
+          activities: items[activityTypeFilter],
           offset,
           limit,
           total: 1000,
@@ -152,9 +157,12 @@ class ActivityFeedDemoApp extends React.Component {
           hasMore={hasMore}
           onLoadMore={this.onLoadMore}
           isLoading={isLoading}
-          addContentText="Add interaction"
-          addContentLink="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create"
-          isTypeFilterEnabled={true}
+          contentText="Add interaction"
+          contentLink="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create"
+          dnbHierachyCount={8}
+          isGlobalUltimate={true}
+          isTypeFilterFlagEnabled={true}
+          isGlobalUltimateFlagEnabled={true}
         >
           {isEmptyFeed && !error && <div>There are no activities to show.</div>}
           {error && <div>Error occurred while loading activities.</div>}

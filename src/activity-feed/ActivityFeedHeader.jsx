@@ -49,23 +49,23 @@ const Link = styled.a`
 export default class ActivityFeedHeader extends React.Component {
   static propTypes = {
     totalActivities: PropTypes.number,
-    addContentText: PropTypes.string,
-    addContentLink: PropTypes.string,
+    contentText: PropTypes.string,
+    contentLink: PropTypes.string,
   }
 
   static defaultProps = {
     totalActivities: 0,
-    addContentText: null,
-    addContentLink: null,
+    contentText: null,
+    contentLink: null,
   }
 
   render() {
-    const { totalActivities, addContentText, addContentLink } = this.props
+    const { totalActivities, contentText, contentLink } = this.props
     const headerText = totalActivities
       ? pluralize('activity', totalActivities, true)
       : 'Activities'
 
-    const showAddContentButton = addContentText && addContentLink
+    const showAddContentButton = contentText && contentLink
 
     return (
       <HeaderSummary>
@@ -76,11 +76,11 @@ export default class ActivityFeedHeader extends React.Component {
           {showAddContentButton && (
             <Button
               as={Link}
-              href={addContentLink}
+              href={contentLink}
               buttonColour="#dee0e2"
               buttonTextColour="#000"
             >
-              {addContentText}
+              {contentText}
             </Button>
           )}
         </HeaderActions>
