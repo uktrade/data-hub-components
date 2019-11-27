@@ -21,6 +21,9 @@ storiesOf('Dashboard')
   .add('One full list', () => (
     <WithData
       deleteListPropsAccessor={({ id }) => ({ href: id })}
+      addInteractionPropsAccessor={(company) => ({
+        href: `/companies/${company.id}/interactions/create`,
+      })}
       lists={[{ id: 'foo', name: 'Foo', companies: allCompanies }]}
     />
   ))
@@ -37,6 +40,9 @@ storiesOf('Dashboard')
   .add('Three lists, first with single company', () => (
     <WithData
       deleteListPropsAccessor={({ id }) => ({ href: id })}
+      addInteractionPropsAccessor={(company) => ({
+        href: `/companies/${company.id}/interactions/create`,
+      })}
       lists={[
         { id: 'foo', name: 'Foo', companies: allCompanies },
         { id: 'bar', name: 'Bar', companies: allCompanies.slice(1, 2) },
@@ -47,6 +53,9 @@ storiesOf('Dashboard')
   .add('Three company lists', () => (
     <WithData
       deleteListPropsAccessor={({ id }) => ({ href: id })}
+      addInteractionPropsAccessor={(company) => ({
+        href: `/companies/${company.id}/interactions/create`,
+      })}
       lists={[
         {
           id: 'foo',
