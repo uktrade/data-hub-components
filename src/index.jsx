@@ -78,3 +78,7 @@ export { default as StatusMessage } from './status-message/StatusMessage'
 
 // Summary table
 export { default as SummaryTable } from './summary-table/SummaryTable'
+
+// Utils
+export { default as DateUtils } from './utils/DateUtils'
+export { default as NumberUtils } from './utils/NumberUtils'
