@@ -36,7 +36,7 @@ export default class ActivityFeed extends React.Component {
     contentLink: PropTypes.string,
     totalActivities: PropTypes.number,
     isGlobalUltimate: PropTypes.bool,
-    dnbHierachyCount: PropTypes.number,
+    dnbHierarchyCount: PropTypes.number,
     isTypeFilterFlagEnabled: PropTypes.bool,
     isGlobalUltimateFlagEnabled: PropTypes.bool,
   }
@@ -53,7 +53,7 @@ export default class ActivityFeed extends React.Component {
     contentLink: null,
     totalActivities: 0,
     isGlobalUltimate: false,
-    dnbHierachyCount: null,
+    dnbHierarchyCount: null,
     isTypeFilterFlagEnabled: false,
     isGlobalUltimateFlagEnabled: false,
   }
@@ -134,7 +134,7 @@ export default class ActivityFeed extends React.Component {
       children,
       totalActivities,
       isGlobalUltimate,
-      dnbHierachyCount,
+      dnbHierarchyCount,
       isTypeFilterFlagEnabled,
       isGlobalUltimateFlagEnabled,
     } = this.props
@@ -156,7 +156,7 @@ export default class ActivityFeed extends React.Component {
             onActivityTypeFilterChange={this.onActivityTypeFilterChange}
             showActivitiesFromAllCompanies={this.showActivitiesFromAllCompanies}
             isGlobalUltimate={isGlobalUltimate}
-            dnbHierachyCount={dnbHierachyCount}
+            dnbHierarchyCount={dnbHierarchyCount}
             isTypeFilterFlagEnabled={isTypeFilterFlagEnabled}
             isGlobalUltimateFlagEnabled={isGlobalUltimateFlagEnabled}
           />

@@ -39,21 +39,22 @@ const ActivityFeedFilters = ({
   onActivityTypeFilterChange,
   showActivitiesFromAllCompanies,
   isGlobalUltimate,
-  dnbHierachyCount,
+  dnbHierarchyCount,
   isGlobalUltimateFlagEnabled,
   isTypeFilterFlagEnabled,
 }) => {
-  const showUltimateHQFilter = isGlobalUltimate && isGlobalUltimateFlagEnabled
+  const isGlobalAndEnabled = isGlobalUltimate && isGlobalUltimateFlagEnabled
+  const showDnbHeirarchyFilter = isGlobalAndEnabled && dnbHierarchyCount > 1
   return (
     <ActivityFeedFiltersRow>
       <StyledTitle>Filter by</StyledTitle>
-      {showUltimateHQFilter && (
+      {showDnbHeirarchyFilter && (
         <StyledCheckboxContainer>
           <ActivityFeedCheckbox
             name="ultimateHQSubsidiariesFilter"
             onChange={showActivitiesFromAllCompanies}
           >
-            Activity across all {dnbHierachyCount} companies
+            Activity across all {dnbHierarchyCount} companies
           </ActivityFeedCheckbox>
         </StyledCheckboxContainer>
       )}
@@ -73,14 +74,14 @@ ActivityFeedFilters.propTypes = {
   activityTypeFilter: PropTypes.string.isRequired,
   onActivityTypeFilterChange: PropTypes.func.isRequired,
   showActivitiesFromAllCompanies: PropTypes.func.isRequired,
-  dnbHierachyCount: PropTypes.number,
+  dnbHierarchyCount: PropTypes.number,
   isGlobalUltimate: PropTypes.bool.isRequired,
   isGlobalUltimateFlagEnabled: PropTypes.bool.isRequired,
   isTypeFilterFlagEnabled: PropTypes.bool.isRequired,
 }
 
 ActivityFeedFilters.defaultProps = {
-  dnbHierachyCount: null,
+  dnbHierarchyCount: null,
 }
 
 export default ActivityFeedFilters

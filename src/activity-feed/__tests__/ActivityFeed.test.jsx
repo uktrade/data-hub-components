@@ -210,7 +210,7 @@ describe('ActivityFeed', () => {
           hasMore={true}
           totalActivities={activities.length}
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
-          dnbHierachyCount={3}
+          dnbHierarchyCount={3}
           isTypeFilterFlagEnabled={true}
           isGlobalUltimateFlagEnabled={true}
         />
@@ -298,7 +298,7 @@ describe('ActivityFeed', () => {
           activities={[]}
           sendQueryParams={sendQueryParamsSpy}
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
-          dnbHierachyCount={3}
+          dnbHierarchyCount={3}
           isGlobalUltimate={true}
           isTypeFilterFlagEnabled={true}
           isGlobalUltimateFlagEnabled={true}

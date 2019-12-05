@@ -33,7 +33,7 @@ describe('ActivityFeedFilters', () => {
           activityTypeFilter=""
           onActivityTypeFilterChange={() => {}}
           showActivitiesFromAllCompanies={() => {}}
-          dnbHierachyCount={null}
+          dnbHierarchyCount={null}
           isGlobalUltimate={false}
           isGlobalUltimateFlagEnabled={false}
           isTypeFilterFlagEnabled={false}
@@ -55,7 +55,7 @@ describe('ActivityFeedFilters', () => {
           activityTypeFilter={activityTypeFilter}
           onActivityTypeFilterChange={() => {}}
           showActivitiesFromAllCompanies={() => {}}
-          dnbHierachyCount={3}
+          dnbHierarchyCount={3}
           isGlobalUltimate={true}
           isGlobalUltimateFlagEnabled={true}
           isTypeFilterFlagEnabled={true}

@@ -16,7 +16,7 @@ export default class ActivityFeedApp extends React.Component {
     activityTypeFilters: PropTypes.object,
     apiEndpoint: PropTypes.string.isRequired,
     isGlobalUltimate: PropTypes.bool,
-    dnbHierachyCount: PropTypes.number,
+    dnbHierarchyCount: PropTypes.number,
     isTypeFilterFlagEnabled: PropTypes.bool,
     isGlobalUltimateFlagEnabled: PropTypes.bool,
   }
@@ -27,7 +27,7 @@ export default class ActivityFeedApp extends React.Component {
     contentLink: null,
     contentText: null,
     isGlobalUltimate: false,
-    dnbHierachyCount: null,
+    dnbHierarchyCount: null,
     isTypeFilterFlagEnabled: false,
     isGlobalUltimateFlagEnabled: false,
   }
@@ -134,7 +134,7 @@ export default class ActivityFeedApp extends React.Component {
       contentText,
       contentLink,
       isGlobalUltimate,
-      dnbHierachyCount,
+      dnbHierarchyCount,
       isTypeFilterFlagEnabled,
       isGlobalUltimateFlagEnabled,
     } = this.props
@@ -152,7 +152,7 @@ export default class ActivityFeedApp extends React.Component {
         sendQueryParams={this.setQueryParams}
         totalActivities={total}
         isGlobalUltimate={isGlobalUltimate}
-        dnbHierachyCount={dnbHierachyCount}
+        dnbHierarchyCount={dnbHierarchyCount}
         isTypeFilterFlagEnabled={isTypeFilterFlagEnabled}
         isGlobalUltimateFlagEnabled={isGlobalUltimateFlagEnabled}
       >
