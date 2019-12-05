@@ -159,7 +159,7 @@ class ActivityFeedDemoApp extends React.Component {
           isLoading={isLoading}
           contentText="Add interaction"
           contentLink="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create"
-          dnbHierachyCount={8}
+          dnbHierarchyCount={8}
           isGlobalUltimate={true}
           isTypeFilterFlagEnabled={true}
           isGlobalUltimateFlagEnabled={true}
