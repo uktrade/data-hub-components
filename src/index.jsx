@@ -37,14 +37,6 @@ export {
   default as AddRemoveFromListForm,
 } from './company-lists/AddRemoveFromListForm'
 
-// Dashboard
-export {
-  default as MyCompaniesTile,
-} from './dashboard/my-companies/MyCompaniesTile'
-export {
-  default as useMyCompaniesContext,
-} from './dashboard/my-companies/useMyCompaniesContext'
-
 // Entity search
 export { default as useDnbSearch } from './entity-search/useDnbSearch'
 export { default as useEntitySearch } from './entity-search/useEntitySearch'
