@@ -48,13 +48,13 @@ export default class InvestmentProject extends React.PureComponent {
     const contacts = CardUtils.getContacts(activity)
 
     // Specific to Foreign direct investment (FDI) only
-    const totalInvestment = NumberUtils.currency(
+    const totalInvestment = NumberUtils.currencyGBP(
       get(activity, 'object.dit:totalInvestment')
     )
-    const foreignEquityInvestment = NumberUtils.currency(
+    const foreignEquityInvestment = NumberUtils.currencyGBP(
       get(activity, 'object.dit:foreignEquityInvestment')
     )
-    const grossValueAdded = NumberUtils.currency(
+    const grossValueAdded = NumberUtils.currencyGBP(
       get(activity, 'object.dit:grossValueAdded')
     )
     const numberNewJobs = NumberUtils.decimal(

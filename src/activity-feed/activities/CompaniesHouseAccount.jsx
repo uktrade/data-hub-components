@@ -38,7 +38,7 @@ export default class CompaniesHouseAccount extends React.PureComponent {
     const balanceSheetDate = DateUtils.format(
       get(activity, 'object.dit:balanceSheetDate')
     )
-    const netAssetsLiabilities = NumberUtils.currency(
+    const netAssetsLiabilities = NumberUtils.currencyGBP(
       get(
         activity,
         'object.dit:netAssetsLiabilitiesIncludingPensionAssetLiability'
@@ -48,7 +48,7 @@ export default class CompaniesHouseAccount extends React.PureComponent {
     const periodStart = DateUtils.format(
       get(activity, 'object.dit:periodStart')
     )
-    const shareholderFunds = NumberUtils.currency(
+    const shareholderFunds = NumberUtils.currencyGBP(
       get(activity, 'object.dit:shareholderFunds')
     )
 
