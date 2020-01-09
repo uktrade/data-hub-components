@@ -20,6 +20,7 @@ export default class Interaction extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
     showDetails: PropTypes.bool.isRequired,
+    showDnbHierarchy: PropTypes.bool.isRequired,
   }
 
   static canRender(activity) {
@@ -27,18 +28,20 @@ export default class Interaction extends React.PureComponent {
   }
 
   render() {
-    const { activity, showDetails } = this.props
+    const { activity, showDetails, showDnbHierarchy } = this.props
     const transformed = {
       ...CardUtils.transform(activity),
       ...InteractionUtils.transform(activity),
     }
 
+    const company = showDnbHierarchy && CardUtils.getCompany(activity)
     const contacts = CardUtils.getContacts(activity)
     const advisers = CardUtils.getAdvisers(activity)
 
     return (
       <Card isUpcoming={transformed.isUpcoming}>
         <CardHeader
+          company={showDnbHierarchy ? company : null}
           heading={<Link href={transformed.url}>{transformed.subject}</Link>}
           startTime={transformed.startTime}
           badge={transformed.badge}

@@ -32,6 +32,12 @@ const StyledCardHeader = styled('div')`
   flex-flow: row wrap;
 `
 
+const StyledCompanyName = styled('div')`
+  margin: -${SPACING.SCALE_3} -${SPACING.SCALE_3} ${SPACING.SCALE_4} -${SPACING.SCALE_3};
+  padding: ${SPACING.SCALE_2} ${SPACING.SCALE_3};
+  background: ${GREY_4};
+  font-size: initial;
+`
 
 const StyledHeadingWrapper = styled('div')`
   width: 100%;
@@ -93,6 +99,9 @@ const CardHeader = ({
   badge,
 }) => (
   <>
+    {company && company.name && (
+      <StyledCompanyName>{company.name}</StyledCompanyName>
+    )}
     <StyledCardHeader>
       <StyledHeadingWrapper>
         {blockText && (
@@ -122,6 +131,9 @@ CardHeader.propTypes = {
   heading: PropTypes.node,
   blockText: PropTypes.string,
   subHeading: PropTypes.string,
+  company: PropTypes.shape({
+    name: PropTypes.string,
+  }),
   sourceType: PropTypes.oneOf(Object.values(SOURCE_TYPES)),
   badge: PropTypes.shape({
     text: PropTypes.string,
@@ -134,6 +146,7 @@ CardHeader.defaultProps = {
   heading: null,
   blockText: null,
   subHeading: null,
+  company: null,
   badge: null,
   sourceType: null,
 }

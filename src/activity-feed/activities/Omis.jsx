@@ -20,6 +20,7 @@ export default class Omis extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
     showDetails: PropTypes.bool.isRequired,
+    showDnbHierarchy: PropTypes.bool.isRequired,
   }
 
   static canRender(activity) {
@@ -27,8 +28,9 @@ export default class Omis extends React.PureComponent {
   }
 
   render() {
-    const { activity, showDetails } = this.props
+    const { activity, showDetails, showDnbHierarchy } = this.props
 
+    const company = CardUtils.getCompany(activity)
     const published = get(activity, 'published')
     const reference = get(activity, 'object.name')
     const country = get(activity, 'object.dit:country.name')
@@ -40,6 +42,7 @@ export default class Omis extends React.PureComponent {
     return (
       <Card>
         <CardHeader
+          company={showDnbHierarchy ? company : null}
           heading={<Link href={url}>{reference}</Link>}
           startTime={published}
           blockText="New Order (OMIS) added"

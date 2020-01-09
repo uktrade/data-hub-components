@@ -19,6 +19,7 @@ export default class HmrcExporter extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
     showDetails: PropTypes.bool.isRequired,
+    showDnbHierarchy: PropTypes.bool.isRequired,
   }
 
   static canRender(activity) {
@@ -26,7 +27,9 @@ export default class HmrcExporter extends React.PureComponent {
   }
 
   render() {
-    const { activity, showDetails } = this.props
+    const { activity, showDetails, showDnbHierarchy } = this.props
+
+    const company = CardUtils.getCompany(activity)
     const startTime = get(activity, 'object.startTime')
     const reference = get(activity, 'object.attributedTo.name')
     const summary = get(activity, 'summary')
@@ -41,6 +44,7 @@ export default class HmrcExporter extends React.PureComponent {
     return (
       <Card>
         <CardHeader
+          company={showDnbHierarchy ? company : null}
           blockText="HMRC"
           subHeading="Exporters records"
           heading={summary}

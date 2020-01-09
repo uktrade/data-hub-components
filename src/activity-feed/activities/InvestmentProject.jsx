@@ -26,6 +26,7 @@ export default class InvestmentProject extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
     showDetails: PropTypes.bool.isRequired,
+    showDnbHierarchy: PropTypes.bool.isRequired,
   }
 
   static canRender(activity) {
@@ -33,8 +34,9 @@ export default class InvestmentProject extends React.PureComponent {
   }
 
   render() {
-    const { activity, showDetails } = this.props
+    const { activity, showDetails, showDnbHierarchy } = this.props
 
+    const company = CardUtils.getCompany(activity)
     const type = get(activity, 'type')
     const title = TITLES[type.toLowerCase()]
     const url = get(activity, 'object.url')
@@ -65,6 +67,7 @@ export default class InvestmentProject extends React.PureComponent {
     return (
       <Card>
         <CardHeader
+          company={showDnbHierarchy ? company : null}
           heading={<Link href={url}>{name}</Link>}
           startTime={published}
           blockText={`${title} - ${investmentType}`}

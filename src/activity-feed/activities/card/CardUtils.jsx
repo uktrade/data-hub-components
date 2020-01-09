@@ -26,6 +26,13 @@ const getContacts = (activity) => {
   )
 }
 
+const getCompany = (activity) => {
+  return get(activity, 'object.attributedTo', [])
+    .filter(({ type }) => type !== 'dit:Company')
+    .map(({ name }) => ({ name }))
+    .shift()
+}
+
 const getAdvisers = (activity) => {
   return mapPeople(
     activity,
@@ -69,6 +76,7 @@ export default {
   canRenderByTypes,
   getAdvisers,
   getContacts,
+  getCompany,
   getAdviser,
   transform,
 }
