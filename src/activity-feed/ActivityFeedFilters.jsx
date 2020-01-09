@@ -44,11 +44,11 @@ const ActivityFeedFilters = ({
   isTypeFilterFlagEnabled,
 }) => {
   const isGlobalAndEnabled = isGlobalUltimate && isGlobalUltimateFlagEnabled
-  const showDnbHeirarchyFilter = isGlobalAndEnabled && dnbHierarchyCount > 1
+  const showDnbHierarchyFilter = isGlobalAndEnabled && dnbHierarchyCount > 1
   return (
     <ActivityFeedFiltersRow>
       <StyledTitle>Filter by</StyledTitle>
-      {showDnbHeirarchyFilter && (
+      {showDnbHierarchyFilter && (
         <StyledCheckboxContainer>
           <ActivityFeedCheckbox
             name="ultimateHQSubsidiariesFilter"

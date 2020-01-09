@@ -7,8 +7,6 @@ import {
   CardDetails,
   CardDetailsList,
   CardHeader,
-  CardHeading,
-  CardMeta,
   CardTable,
 } from './card'
 
@@ -21,6 +19,7 @@ export default class HmrcExporter extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
     showDetails: PropTypes.bool.isRequired,
+    showDnbHierarchy: PropTypes.bool.isRequired,
   }
 
   static canRender(activity) {
@@ -28,7 +27,9 @@ export default class HmrcExporter extends React.PureComponent {
   }
 
   render() {
-    const { activity, showDetails } = this.props
+    const { activity, showDetails, showDnbHierarchy } = this.props
+
+    const company = CardUtils.getCompany(activity)
     const startTime = get(activity, 'object.startTime')
     const reference = get(activity, 'object.attributedTo.name')
     const summary = get(activity, 'summary')
@@ -42,15 +43,14 @@ export default class HmrcExporter extends React.PureComponent {
 
     return (
       <Card>
-        <CardHeader>
-          <CardHeading
-            blockText="HMRC"
-            sourceType={SOURCE_TYPES.external}
-            subHeading="Exporters records"
-            summary={summary}
-          />
-          <CardMeta startTime={startTime} />
-        </CardHeader>
+        <CardHeader
+          company={showDnbHierarchy ? company : null}
+          blockText="HMRC"
+          subHeading="Exporters records"
+          heading={summary}
+          sourceType={SOURCE_TYPES.external}
+          startTime={startTime}
+        />
 
         <CardDetails
           summary="View key export details"

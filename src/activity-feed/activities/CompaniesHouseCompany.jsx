@@ -7,8 +7,6 @@ import {
   CardDetails,
   CardDetailsList,
   CardHeader,
-  CardHeading,
-  CardMeta,
   CardTable,
 } from './card'
 
@@ -22,6 +20,7 @@ export default class CompaniesHouseCompany extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
     showDetails: PropTypes.bool.isRequired,
+    showDnbHierarchy: PropTypes.bool.isRequired,
   }
 
   static canRender(activity) {
@@ -32,8 +31,9 @@ export default class CompaniesHouseCompany extends React.PureComponent {
   }
 
   render() {
-    const { activity, showDetails } = this.props
+    const { activity, showDetails, showDnbHierarchy } = this.props
 
+    const company = CardUtils.getCompany(activity)
     const startTime = get(activity, 'object.startTime')
     const reference = get(activity, 'object.name')
 
@@ -68,15 +68,14 @@ export default class CompaniesHouseCompany extends React.PureComponent {
 
     return (
       <Card>
-        <CardHeader>
-          <CardHeading
-            blockText="Companies House"
-            sourceType={SOURCE_TYPES.external}
-            subHeading="Company records"
-            summary={summary}
-          />
-          <CardMeta startTime={startTime} />
-        </CardHeader>
+        <CardHeader
+          company={showDnbHierarchy ? company : null}
+          heading={summary}
+          blockText="Companies House"
+          sourceType={SOURCE_TYPES.external}
+          subHeading="Company records"
+          startTime={startTime}
+        />
 
         <CardDetails
           summary="View key details for this company"

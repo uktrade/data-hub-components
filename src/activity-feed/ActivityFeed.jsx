@@ -138,7 +138,14 @@ export default class ActivityFeed extends React.Component {
       isTypeFilterFlagEnabled,
       isGlobalUltimateFlagEnabled,
     } = this.props
-    const { activityTypeFilters, activityTypeFilter, showDetails } = this.state
+
+    const {
+      activityTypeFilters,
+      activityTypeFilter,
+      showDetails,
+      showDnbHierarchy,
+    } = this.state
+
     const hasFilters = isTypeFilterFlagEnabled || isGlobalUltimateFlagEnabled
 
     return (
@@ -174,7 +181,11 @@ export default class ActivityFeed extends React.Component {
         <ActivityFeedCardList>
           {activities.map((activity) => (
             <li key={activity.id}>
-              <Activity activity={activity} showDetails={showDetails} />
+              <Activity
+                activity={activity}
+                showDetails={showDetails}
+                showDnbHierarchy={showDnbHierarchy}
+              />
             </li>
           ))}
         </ActivityFeedCardList>

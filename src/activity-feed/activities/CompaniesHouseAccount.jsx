@@ -2,14 +2,7 @@ import React from 'react'
 import { get } from 'lodash'
 
 import PropTypes from 'prop-types'
-import {
-  Card,
-  CardDetails,
-  CardHeader,
-  CardHeading,
-  CardMeta,
-  CardTable,
-} from './card'
+import { Card, CardDetails, CardHeader, CardTable } from './card'
 
 import CardUtils from './card/CardUtils'
 import DateUtils from '../../utils/DateUtils'
@@ -20,6 +13,7 @@ export default class CompaniesHouseAccount extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
     showDetails: PropTypes.bool.isRequired,
+    showDnbHierarchy: PropTypes.bool.isRequired,
   }
 
   static canRender(activity) {
@@ -30,11 +24,11 @@ export default class CompaniesHouseAccount extends React.PureComponent {
   }
 
   render() {
-    const { activity, showDetails } = this.props
+    const { activity, showDetails, showDnbHierarchy } = this.props
     const startTime = get(activity, 'object.startTime')
-    const reference = get(activity, 'object.name')
     const taxonomy = get(activity, 'dit:taxonomy')
     const summary = get(activity, 'summary')
+    const company = CardUtils.getCompany(activity)
     const balanceSheetDate = DateUtils.format(
       get(activity, 'object.dit:balanceSheetDate')
     )
@@ -54,17 +48,14 @@ export default class CompaniesHouseAccount extends React.PureComponent {
 
     return (
       <Card>
-        <CardHeader>
-          <CardHeading
-            link={{ taxonomy, text: reference }}
-            blockText="Companies House"
-            sourceType={SOURCE_TYPES.external}
-            subHeading="Accounts records"
-            summary={summary}
-          />
-
-          <CardMeta startTime={startTime} />
-        </CardHeader>
+        <CardHeader
+          company={showDnbHierarchy ? company : null}
+          heading={summary}
+          blockText="Companies House"
+          sourceType={SOURCE_TYPES.external}
+          subHeading="Accounts records"
+          startTime={startTime}
+        />
 
         <CardDetails
           summary="View key details for this account"

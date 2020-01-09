@@ -1,18 +1,17 @@
 import React from 'react'
 import { get } from 'lodash'
 import PropTypes from 'prop-types'
+import Link from '@govuk-react/link'
 
 import {
   Card,
   CardDetails,
-  CardHeader,
-  CardHeading,
-  CardMeta,
-  CardTable,
   CardDetailsList,
+  CardHeader,
+  CardTable,
 } from './card'
 
-import { ContactItemRenderer, AdviserItemRenderer } from './card/item-renderers'
+import { AdviserItemRenderer, ContactItemRenderer } from './card/item-renderers'
 import { ACTIVITY_TYPE } from '../constants'
 
 import CardUtils from './card/CardUtils'
@@ -27,6 +26,7 @@ export default class InvestmentProject extends React.PureComponent {
   static propTypes = {
     activity: PropTypes.object.isRequired,
     showDetails: PropTypes.bool.isRequired,
+    showDnbHierarchy: PropTypes.bool.isRequired,
   }
 
   static canRender(activity) {
@@ -34,8 +34,9 @@ export default class InvestmentProject extends React.PureComponent {
   }
 
   render() {
-    const { activity, showDetails } = this.props
+    const { activity, showDetails, showDnbHierarchy } = this.props
 
+    const company = CardUtils.getCompany(activity)
     const type = get(activity, 'type')
     const title = TITLES[type.toLowerCase()]
     const url = get(activity, 'object.url')
@@ -65,13 +66,13 @@ export default class InvestmentProject extends React.PureComponent {
 
     return (
       <Card>
-        <CardHeader>
-          <CardHeading
-            link={{ url, text: name }}
-            blockText={`${title} - ${investmentType}`}
-          />
-          <CardMeta startTime={published} />
-        </CardHeader>
+        <CardHeader
+          company={showDnbHierarchy ? company : null}
+          heading={<Link href={url}>{name}</Link>}
+          startTime={published}
+          blockText={`${title} - ${investmentType}`}
+        />
+
         <CardDetails
           summary="Key details and people for this project"
           link={{ url, text: 'Go to the investment project detail page' }}

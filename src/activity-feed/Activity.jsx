@@ -4,28 +4,35 @@ import PropTypes from 'prop-types'
 
 import activities from './activities'
 
-function Activity({ activity, showDetails, filter }) {
+function Activity({ activity, showDetails, showDnbHierarchy, filter }) {
   const ActivityToRender = find(activities, (a) =>
     a.canRender(activity, filter)
   )
 
-  return ActivityToRender ? (
+  if (!ActivityToRender) {
+    return null
+  }
+
+  return (
     <ActivityToRender
       activity={activity}
       filter={filter}
       showDetails={showDetails}
+      showDnbHierarchy={showDnbHierarchy}
     />
-  ) : null
+  )
 }
 
 Activity.propTypes = {
   activity: PropTypes.object.isRequired,
   showDetails: PropTypes.bool,
+  showDnbHierarchy: PropTypes.bool,
   filter: PropTypes.array,
 }
 
 Activity.defaultProps = {
   showDetails: false,
+  showDnbHierarchy: false,
   filter: [],
 }
 
