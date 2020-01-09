@@ -1,7 +1,5 @@
 export { default as Card } from './Card'
 export { default as CardDetails } from './CardDetails'
 export { default as CardHeader } from './CardHeader'
-export { default as CardHeading } from './CardHeading'
-export { default as CardMeta } from './CardMeta'
 export { default as CardTable } from './CardTable'
 export { default as CardDetailsList } from './CardDetailsList'

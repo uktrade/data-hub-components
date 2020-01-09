@@ -7,8 +7,6 @@ import {
   CardDetails,
   CardDetailsList,
   CardHeader,
-  CardHeading,
-  CardMeta,
   CardTable,
 } from './card'
 
@@ -68,15 +66,13 @@ export default class CompaniesHouseCompany extends React.PureComponent {
 
     return (
       <Card>
-        <CardHeader>
-          <CardHeading
-            blockText="Companies House"
-            sourceType={SOURCE_TYPES.external}
-            subHeading="Company records"
-            summary={summary}
-          />
-          <CardMeta startTime={startTime} />
-        </CardHeader>
+        <CardHeader
+          heading={summary}
+          blockText="Companies House"
+          sourceType={SOURCE_TYPES.external}
+          subHeading="Company records"
+          startTime={startTime}
+        />
 
         <CardDetails
           summary="View key details for this company"

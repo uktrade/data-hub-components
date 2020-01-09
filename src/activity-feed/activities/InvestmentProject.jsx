@@ -1,18 +1,17 @@
 import React from 'react'
 import { get } from 'lodash'
 import PropTypes from 'prop-types'
+import Link from '@govuk-react/link'
 
 import {
   Card,
   CardDetails,
-  CardHeader,
-  CardHeading,
-  CardMeta,
-  CardTable,
   CardDetailsList,
+  CardHeader,
+  CardTable,
 } from './card'
 
-import { ContactItemRenderer, AdviserItemRenderer } from './card/item-renderers'
+import { AdviserItemRenderer, ContactItemRenderer } from './card/item-renderers'
 import { ACTIVITY_TYPE } from '../constants'
 
 import CardUtils from './card/CardUtils'
@@ -65,13 +64,12 @@ export default class InvestmentProject extends React.PureComponent {
 
     return (
       <Card>
-        <CardHeader>
-          <CardHeading
-            link={{ url, text: name }}
-            blockText={`${title} - ${investmentType}`}
-          />
-          <CardMeta startTime={published} />
-        </CardHeader>
+        <CardHeader
+          heading={<Link href={url}>{name}</Link>}
+          startTime={published}
+          blockText={`${title} - ${investmentType}`}
+        />
+
         <CardDetails
           summary="Key details and people for this project"
           link={{ url, text: 'Go to the investment project detail page' }}

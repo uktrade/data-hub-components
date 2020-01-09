@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { filter, get, includes, map, some, pickBy } from 'lodash'
 
 const mapPeople = (activity, personType, mapper) => {
@@ -43,37 +42,33 @@ const getAdvisers = (activity) => {
   )
 }
 
-export default class CardUtils {
-  static canRenderByTypes(activity, types) {
-    const activityTypes = get(activity, 'object.type')
+const canRenderByTypes = (activity, types) => {
+  const activityTypes = get(activity, 'object.type')
 
-    return some(types, (type) => includes(activityTypes, type))
+  return some(types, (type) => includes(activityTypes, type))
+}
+
+const getAdviser = (activity) => {
+  const adviser = {
+    id: get(activity, 'actor.id'),
+    name: get(activity, 'actor.name'),
+    emailAddress: get(activity, 'actor.dit:emailAddress'),
   }
 
-  static getAdvisers(activity) {
-    return getAdvisers(activity)
-  }
+  return adviser.name && adviser.emailAddress ? adviser : null
+}
 
-  static getContacts(activity) {
-    return getContacts(activity)
-  }
+const transform = (activity) => ({
+  url: get(activity, 'object.url'),
+  subject: get(activity, 'object.dit:subject'),
+  service: get(activity, 'object.dit:service.name'),
+  startTime: get(activity, 'object.startTime'),
+})
 
-  static getAdviser = (activity) => {
-    const adviser = {
-      id: get(activity, 'actor.id'),
-      name: get(activity, 'actor.name'),
-      emailAddress: get(activity, 'actor.dit:emailAddress'),
-    }
-
-    return adviser.name && adviser.emailAddress ? adviser : null
-  }
-
-  static transform(activity) {
-    return {
-      url: get(activity, 'object.url'),
-      subject: get(activity, 'object.dit:subject'),
-      service: get(activity, 'object.dit:service.name'),
-      startTime: get(activity, 'object.startTime'),
-    }
-  }
+export default {
+  canRenderByTypes,
+  getAdvisers,
+  getContacts,
+  getAdviser,
+  transform,
 }

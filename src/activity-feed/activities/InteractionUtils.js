@@ -53,7 +53,7 @@ const isServiceDelivery = (activity) => {
   return includes(activityTypes, 'dit:ServiceDelivery')
 }
 
-export default class CardUtils {
+export default class InteractionUtils {
   static transform(activity) {
     const status = getStatus(activity)
 

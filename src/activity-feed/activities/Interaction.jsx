@@ -1,12 +1,11 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
+import Link from '@govuk-react/link'
+
 import {
   Card,
   CardDetails,
   CardHeader,
-  CardHeading,
-  CardMeta,
   CardTable,
   CardDetailsList,
 } from './card'
@@ -39,15 +38,12 @@ export default class Interaction extends React.PureComponent {
 
     return (
       <Card isUpcoming={transformed.isUpcoming}>
-        <CardHeader>
-          <CardHeading
-            link={{ url: transformed.url, text: transformed.subject }}
-          />
-          <CardMeta
-            startTime={transformed.startTime}
-            badge={transformed.badge}
-          />
-        </CardHeader>
+        <CardHeader
+          heading={<Link href={transformed.url}>{transformed.subject}</Link>}
+          startTime={transformed.startTime}
+          badge={transformed.badge}
+        />
+
         <CardDetails
           summary={`View ${transformed.typeText} details`}
           link={{

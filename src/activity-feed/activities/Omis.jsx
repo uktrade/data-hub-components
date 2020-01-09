@@ -1,13 +1,12 @@
 import React from 'react'
 import { get } from 'lodash'
-
 import PropTypes from 'prop-types'
+import Link from '@govuk-react/link'
+
 import {
   Card,
   CardDetails,
   CardHeader,
-  CardHeading,
-  CardMeta,
   CardTable,
   CardDetailsList,
 } from './card'
@@ -40,13 +39,12 @@ export default class Omis extends React.PureComponent {
 
     return (
       <Card>
-        <CardHeader>
-          <CardHeading
-            link={{ url, text: reference }}
-            blockText="New Order (OMIS) added"
-          />
-          <CardMeta startTime={published} />
-        </CardHeader>
+        <CardHeader
+          heading={<Link href={url}>{reference}</Link>}
+          startTime={published}
+          blockText="New Order (OMIS) added"
+        />
+
         <CardDetails
           summary="View key details and people for this order"
           link={{ url, text: 'Go to the order detail page' }}

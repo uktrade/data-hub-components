@@ -2,14 +2,7 @@ import React from 'react'
 import { get } from 'lodash'
 
 import PropTypes from 'prop-types'
-import {
-  Card,
-  CardDetails,
-  CardHeader,
-  CardHeading,
-  CardMeta,
-  CardTable,
-} from './card'
+import { Card, CardDetails, CardHeader, CardTable } from './card'
 
 import CardUtils from './card/CardUtils'
 import DateUtils from '../../utils/DateUtils'
@@ -32,7 +25,6 @@ export default class CompaniesHouseAccount extends React.PureComponent {
   render() {
     const { activity, showDetails } = this.props
     const startTime = get(activity, 'object.startTime')
-    const reference = get(activity, 'object.name')
     const taxonomy = get(activity, 'dit:taxonomy')
     const summary = get(activity, 'summary')
     const balanceSheetDate = DateUtils.format(
@@ -54,17 +46,13 @@ export default class CompaniesHouseAccount extends React.PureComponent {
 
     return (
       <Card>
-        <CardHeader>
-          <CardHeading
-            link={{ taxonomy, text: reference }}
-            blockText="Companies House"
-            sourceType={SOURCE_TYPES.external}
-            subHeading="Accounts records"
-            summary={summary}
-          />
-
-          <CardMeta startTime={startTime} />
-        </CardHeader>
+        <CardHeader
+          heading={summary}
+          blockText="Companies House"
+          sourceType={SOURCE_TYPES.external}
+          subHeading="Accounts records"
+          startTime={startTime}
+        />
 
         <CardDetails
           summary="View key details for this account"
