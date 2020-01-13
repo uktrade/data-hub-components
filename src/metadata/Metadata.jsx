@@ -36,7 +36,7 @@ Metadata.propTypes = {
 }
 
 Metadata.defaultProps = {
-  children: null,
+  rows: null,
 }
 
 export default Metadata
