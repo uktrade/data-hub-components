@@ -79,4 +79,28 @@ describe('CollectionItem', () => {
       expect(wrapper.find(MetadataItem)).toHaveLength(0)
     })
   })
+
+  describe('when no heading URL is passed', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <CollectionItem
+          headingText={capitalProfileItem.headingText}
+          badges={capitalProfileItem.badges}
+          metadata={capitalProfileItem.metadata}
+        />
+      )
+    })
+
+    test('should render the component', () => {
+      expect(wrapper.find(CollectionItem).exists()).toBe(true)
+    })
+
+    test('should render the headingText', () => {
+      expect(wrapper.find('h3').text()).toBe('Mars Exports Ltd')
+    })
+
+    test('should not render the headingUrl', () => {
+      expect(wrapper.find('a').exists()).toBe(false)
+    })
+  })
 })
