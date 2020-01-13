@@ -100,7 +100,7 @@ describe('CollectionItem', () => {
     })
 
     test('should not render the headingUrl', () => {
-      expect(wrapper.find('a').exists()).toBe(false)
+      expect(wrapper.find('a')).toHaveLength(0)
     })
   })
 })
