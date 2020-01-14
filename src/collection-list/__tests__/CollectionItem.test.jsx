@@ -7,6 +7,7 @@ import Badge from '../../badge/Badge'
 import MetadataItem from '../../metadata/MetadataItem'
 
 import capitalProfileItem from '../__fixtures__/capitalProfileItem'
+import interactionItem from '../__fixtures__/interactionItem'
 
 describe('CollectionItem', () => {
   let wrapper
@@ -101,6 +102,67 @@ describe('CollectionItem', () => {
 
     test('should not render the headingUrl', () => {
       expect(wrapper.find('a')).toHaveLength(0)
+    })
+
+    describe('when five or more metadata items are passed', () => {
+      beforeAll(() => {
+        wrapper = mount(
+          <CollectionItem
+            headingUrl={interactionItem.headingUrl}
+            headingText={interactionItem.headingText}
+            badges={interactionItem.badges}
+            metadata={interactionItem.metadata}
+          />
+        )
+      })
+
+      test('should render the component', () => {
+        expect(wrapper.find(CollectionItem).exists()).toBe(true)
+      })
+
+      test('the items should be hidden behind a details dropdown', () => {
+        expect(wrapper.find('details').exists()).toBe(true)
+      })
+
+      test('the details summary should display the default text', () => {
+        expect(
+          wrapper
+            .find('summary span')
+            .first()
+            .text()
+        ).toBe('View details')
+      })
+    })
+
+    describe('when five or more metadata items are passed and a type is passed', () => {
+      beforeAll(() => {
+        wrapper = mount(
+          <CollectionItem
+            headingUrl={interactionItem.headingUrl}
+            headingText={interactionItem.headingText}
+            badges={interactionItem.badges}
+            metadata={interactionItem.metadata}
+            type="interaction"
+          />
+        )
+      })
+
+      test('should render the component', () => {
+        expect(wrapper.find(CollectionItem).exists()).toBe(true)
+      })
+
+      test('the items should be hidden behind a details dropdown', () => {
+        expect(wrapper.find('details').exists()).toBe(true)
+      })
+
+      test('the details summary should display the type', () => {
+        expect(
+          wrapper
+            .find('summary span')
+            .first()
+            .text()
+        ).toBe('View interaction details')
+      })
     })
   })
 })

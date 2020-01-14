@@ -6,6 +6,7 @@ import { H3 } from '@govuk-react/heading'
 import Link from '@govuk-react/link'
 import { HEADING_SIZES, SPACING } from '@govuk-react/constants'
 import { GREY_2 } from 'govuk-colours'
+import Details from '@govuk-react/details'
 
 import Metadata from '../metadata/Metadata'
 import Badge from '../badge/Badge'
@@ -46,13 +47,20 @@ const StyledSubheading = styled('h4')`
   margin: -${SPACING.SCALE_3} 0 ${SPACING.SCALE_2} 0;
 `
 
+const StyledDetails = styled(Details)`
+  margin: 50px 0 0 0;
+`
+
 function CollectionItem({
   headingUrl,
   headingText,
   subheading,
   badges,
   metadata,
+  type,
 }) {
+  const summaryMessage = type ? `View ${type} details` : 'View details'
+
   return (
     <ItemWrapper>
       {badges && (
@@ -73,7 +81,15 @@ function CollectionItem({
 
       <StyledSubheading>{subheading}</StyledSubheading>
 
-      <Metadata rows={metadata} />
+      {metadata && metadata.length > 4 ? (
+        <>
+          <StyledDetails summary={summaryMessage}>
+            <Metadata rows={metadata} />
+          </StyledDetails>
+        </>
+      ) : (
+        <Metadata rows={metadata} />
+      )}
     </ItemWrapper>
   )
 }
@@ -89,6 +105,7 @@ CollectionItem.propTypes = {
       value: PropTypes.node.isRequired,
     })
   ),
+  type: PropTypes.string,
 }
 
 CollectionItem.defaultProps = {
@@ -96,6 +113,7 @@ CollectionItem.defaultProps = {
   subheading: null,
   metadata: null,
   headingUrl: null,
+  type: null,
 }
 
 export default CollectionItem

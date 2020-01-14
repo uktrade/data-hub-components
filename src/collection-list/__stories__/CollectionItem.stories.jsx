@@ -13,7 +13,7 @@ collectionStories.add('Capital Profile item', () => (
 ))
 
 collectionStories.add('Interaction item', () => (
-  <CollectionItem {...interactionItem} />
+  <CollectionItem {...interactionItem} type="interaction" />
 ))
 
 collectionStories.add('Item without link', () => (
