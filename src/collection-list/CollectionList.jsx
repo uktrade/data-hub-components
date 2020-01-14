@@ -34,7 +34,7 @@ function CollectionList({
       />
 
       {items.map(
-        ({ headingText, headingUrl, subheading, badges, metadata }) => (
+        ({ headingText, headingUrl, subheading, badges, metadata, type }) => (
           <CollectionItem
             key={headingText + headingUrl}
             headingUrl={headingUrl}
@@ -42,6 +42,7 @@ function CollectionList({
             subheading={subheading}
             badges={badges}
             metadata={metadata}
+            type={type}
           />
         )
       )}
