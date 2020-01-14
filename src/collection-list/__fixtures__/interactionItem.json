@@ -24,6 +24,9 @@
     }
   ],
   "badges": [
-    "Interaction"
+    {
+      "text": "Interaction",
+      "borderColour": "rgb(0, 100, 53)"
+    }
   ]
 }
