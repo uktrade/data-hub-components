@@ -15,3 +15,12 @@ collectionStories.add('Capital Profile item', () => (
 collectionStories.add('Interaction item', () => (
   <CollectionItem {...interactionItem} />
 ))
+
+collectionStories.add('Item without link', () => (
+  <CollectionItem
+    headingText={capitalProfileItem.headingText}
+    subheading={capitalProfileItem.subheading}
+    badges={capitalProfileItem.badges}
+    metadata={capitalProfileItem.metadata}
+  />
+))

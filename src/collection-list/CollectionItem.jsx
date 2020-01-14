@@ -27,7 +27,9 @@ const StyledBadgesWrapper = styled('div')`
 
 const StyledHeader = styled(H3)`
   font-size: ${HEADING_SIZES.SMALL}px;
+`
 
+const StyledLinkHeader = styled(StyledHeader)`
   & > a:link,
   a:visited,
   a:hover,
@@ -61,9 +63,13 @@ function CollectionItem({
         </StyledBadgesWrapper>
       )}
 
-      <StyledHeader>
-        <Link href={headingUrl}>{headingText}</Link>
-      </StyledHeader>
+      {headingUrl ? (
+        <StyledLinkHeader>
+          <Link href={headingUrl}>{headingText}</Link>
+        </StyledLinkHeader>
+      ) : (
+        <StyledHeader>{headingText}</StyledHeader>
+      )}
 
       <StyledSubheading>{subheading}</StyledSubheading>
 
