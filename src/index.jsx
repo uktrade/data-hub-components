@@ -76,6 +76,9 @@ export { default as Pagination } from './pagination/Pagination'
 // Status message
 export { default as StatusMessage } from './status-message/StatusMessage'
 
+// Summary list
+export { default as SummaryList } from './summary-list/SummaryList'
+
 // Summary table
 export { default as SummaryTable } from './summary-table/SummaryTable'
 
