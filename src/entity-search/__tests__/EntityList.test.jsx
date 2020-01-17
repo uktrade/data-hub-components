@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React from 'react'
 import { mount } from 'enzyme'
 import EntityList from '../EntityList'
@@ -23,42 +25,30 @@ const entitiesFixture = [
 ]
 
 describe('EntityList', () => {
-  let wrapper
-  const onEntityClickSpy = jest.fn()
-
   describe('when there are entities', () => {
-    beforeAll(() => {
-      wrapper = mount(
-        <EntityList
-          onEntityClick={onEntityClickSpy}
-          entities={entitiesFixture}
-        />
-      )
-    })
-
     test('should display the entity list', () => {
+      const wrapper = mount(<EntityList entities={entitiesFixture} />)
       expect(wrapper.find(EntityListItem).length).toEqual(2)
-    })
-
-    test('should pass the click callback to the "EntityListItem"', () => {
-      expect(
-        wrapper
-          .find(EntityListItem)
-          .first()
-          .prop('onEntityClick')
-      ).toEqual(onEntityClickSpy)
     })
   })
 
   describe('when there are 0 entities', () => {
-    beforeAll(() => {
-      wrapper = mount(
-        <EntityList onEntityClick={onEntityClickSpy} entities={[]} />
-      )
-    })
-
     test('should not show the entity list items', () => {
+      const wrapper = mount(<EntityList entities={[]} />)
       expect(wrapper.find(EntityListItem).exists()).toBeFalsy()
+    })
+  })
+
+  describe('when custom "entityRenderer" is passed', () => {
+    test('should render the entities "our way"', () => {
+      const CustomEntityRenderer = ({ id }) => <div>_{id}_</div>
+      const wrapper = mount(
+        <EntityList
+          entityRenderer={CustomEntityRenderer}
+          entities={entitiesFixture}
+        />
+      )
+      expect(wrapper.text()).toEqual('_1__2_')
     })
   })
 })

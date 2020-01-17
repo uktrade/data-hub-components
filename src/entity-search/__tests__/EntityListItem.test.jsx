@@ -5,7 +5,7 @@ import { H3 } from '@govuk-react/heading'
 import InsetText from '@govuk-react/inset-text'
 
 import EntityListItem from '../EntityListItem'
-import EntityListItemMetaList from '../EntityListItemMetaList'
+import Metadata from '../../metadata/Metadata'
 
 describe('EntityListItem', () => {
   let wrapper
@@ -26,7 +26,7 @@ describe('EntityListItem', () => {
     })
 
     test('should not display the meta information', () => {
-      expect(wrapper.find(EntityListItemMetaList).exists()).toBeFalsy()
+      expect(wrapper.find(Metadata).exists()).toBeFalsy()
     })
 
     test('should not display the inset text', () => {
@@ -92,13 +92,7 @@ describe('EntityListItem', () => {
 
   describe('when a non-clickable entity is mounted', () => {
     beforeAll(() => {
-      wrapper = mount(
-        <EntityListItem
-          id="test"
-          canHandleClick={false}
-          onEntityClick={onEntityClickSpy}
-        />
-      )
+      wrapper = mount(<EntityListItem id="test" onEntityClick={null} />)
       entityContainer = wrapper.find('div')
     })
 
@@ -158,13 +152,24 @@ describe('EntityListItem', () => {
       and: 'more meta',
     }
 
+    const expectedMeta = [
+      {
+        label: 'some',
+        value: 'meta',
+      },
+      {
+        label: 'and',
+        value: 'more meta',
+      },
+    ]
+
     beforeAll(() => {
       wrapper = mount(<EntityListItem id="test" meta={meta} />)
     })
 
-    test('should render "EntityListItemMetaList" component', () => {
-      const metaList = wrapper.find(EntityListItemMetaList)
-      expect(metaList.prop('meta')).toEqual(meta)
+    test('should render "Metadata" component', () => {
+      const metaList = wrapper.find(Metadata)
+      expect(metaList.prop('rows')).toEqual(expectedMeta)
     })
   })
 })

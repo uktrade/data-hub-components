@@ -48,6 +48,8 @@ export {
 // Entity search
 export { default as useDnbSearch } from './entity-search/useDnbSearch'
 export { default as useEntitySearch } from './entity-search/useEntitySearch'
+export { default as EntityList } from './entity-search/EntityList'
+export { default as EntityListItem } from './entity-search/EntityListItem'
 
 // Forms
 export { default as useField } from './forms/hooks/useField'

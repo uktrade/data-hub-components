@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React from 'react'
 import { mount } from 'enzyme'
 import { act } from 'react-dom/test-utils'
@@ -5,7 +7,6 @@ import Details from '@govuk-react/details'
 
 import ButtonLink from '../../../button-link/ButtonLink'
 import EntityList from '../../../entity-search/EntityList'
-import EntityListItem from '../../../entity-search/EntityListItem'
 import FieldUneditable from '../FieldUneditable'
 import FieldInput from '../FieldInput'
 import FormActions from '../FormActions'
@@ -18,7 +19,6 @@ import {
   setupNoResultsMocks,
   setupSuccessMocks,
 } from '../../../entity-search/__mocks__/company-search'
-import entitySearchFixtures from '../../../entity-search/__fixtures__'
 
 const API_ENDPOINT = 'http://localhost:3010/v4/dnb/company-search'
 
@@ -28,7 +28,22 @@ const flushPromises = () => {
   })
 }
 
-const wrapFieldDnbCompanyForm = () => {
+const performSearch = async (wrapper, companyName = 'test value') => {
+  wrapper
+    .find('input[name="dnbCompanyName"]')
+    .simulate('change', { target: { value: companyName } })
+
+  wrapper
+    .find(FormActions)
+    .find('button')
+    .simulate('click')
+
+  await act(flushPromises)
+
+  wrapper.update()
+}
+
+const wrapFieldDnbCompanyForm = (fieldProps) => {
   return mount(
     <Form initialStep={1}>
       {({ currentStep, values }) => (
@@ -47,6 +62,7 @@ const wrapFieldDnbCompanyForm = () => {
               label="testLabel"
               country="UK"
               apiEndpoint={API_ENDPOINT}
+              {...fieldProps}
             />
           </Step>
 
@@ -197,19 +213,7 @@ describe('FieldDnbCompany', () => {
       axiosMock = setupSuccessMocks(API_ENDPOINT)
 
       wrapper = wrapFieldDnbCompanyForm()
-
-      wrapper
-        .find('input[name="dnbCompanyName"]')
-        .simulate('change', { target: { value: 'test value' } })
-
-      wrapper
-        .find(FormActions)
-        .find('button')
-        .simulate('click')
-
-      await act(flushPromises)
-
-      wrapper.update()
+      await performSearch(wrapper)
     })
 
     afterAll(() => {
@@ -230,156 +234,11 @@ describe('FieldDnbCompany', () => {
     })
   })
 
-  describe('when an entity is clicked', () => {
-    let axiosMock
-
-    beforeAll(async () => {
-      axiosMock = setupSuccessMocks(API_ENDPOINT)
-
-      wrapper = wrapFieldDnbCompanyForm()
-
-      wrapper
-        .find('input[name="dnbCompanyName"]')
-        .simulate('change', { target: { value: 'test value' } })
-
-      wrapper
-        .find(FormActions)
-        .find('button')
-        .simulate('click')
-
-      await act(flushPromises)
-
-      wrapper.update()
-
-      wrapper
-        .find(EntityListItem)
-        .at(1)
-        .simulate('click')
-    })
-
-    afterAll(() => {
-      axiosMock.restore()
-    })
-
-    test('should set the field value', () => {
-      const expected = JSON.stringify(
-        entitySearchFixtures.companySearch.results[1].dnb_company
-      )
-      expect(wrapper.find('.field-value').text()).toEqual(expected)
-    })
-
-    test('should go to the third step', () => {
-      expect(
-        wrapper
-          .find(Step)
-          .at(2)
-          .text()
-      ).toContain('third')
-    })
-  })
-
-  describe('when the "I still cannot find the company" link is clicked', () => {
-    let axiosMock
-
-    beforeAll(async () => {
-      axiosMock = setupSuccessMocks(API_ENDPOINT)
-
-      wrapper = wrapFieldDnbCompanyForm()
-
-      wrapper
-        .find('input[name="dnbCompanyName"]')
-        .simulate('change', { target: { value: 'test value' } })
-
-      wrapper
-        .find(FormActions)
-        .find('button')
-        .simulate('click')
-
-      await act(flushPromises)
-
-      wrapper.update()
-
-      wrapper
-        .find(Details)
-        .find('button')
-        .simulate('click')
-    })
-
-    afterAll(() => {
-      axiosMock.restore()
-    })
-
-    test('should set the field cannot find to "true"', () => {
-      expect(wrapper.find('.field-cannot-find').text()).toEqual('true')
-    })
-
-    test('should go to the fourth step', () => {
-      expect(
-        wrapper
-          .find(Step)
-          .at(2)
-          .text()
-      ).toContain('fourth')
-    })
-
-    describe('when the "Back" button is clicked and a company is selected', () => {
-      beforeAll(async () => {
-        wrapper.find(ButtonLink).simulate('click')
-
-        wrapper.update()
-
-        wrapper.find('Search').simulate('click')
-
-        await act(flushPromises)
-
-        wrapper.update()
-
-        wrapper
-          .find(EntityListItem)
-          .at(1)
-          .simulate('click')
-      })
-
-      test('should set the field cannot find to "false"', () => {
-        expect(wrapper.find('.field-cannot-find').text()).toEqual('false')
-      })
-
-      test('should go to the fourth step', () => {
-        expect(
-          wrapper
-            .find(Step)
-            .at(2)
-            .text()
-        ).toContain('third')
-      })
-
-      test('should set the field value', () => {
-        const expected = JSON.stringify(
-          entitySearchFixtures.companySearch.results[1].dnb_company
-        )
-        expect(wrapper.find('.field-value').text()).toEqual(expected)
-      })
-    })
-  })
-
   describe('when an error is returned while searching for company', () => {
     beforeAll(async () => {
       setupErrorMocks(API_ENDPOINT)
-
       wrapper = wrapFieldDnbCompanyForm()
-
-      wrapper
-        .find('input[name="dnbCompanyName"]')
-        .simulate('change', { target: { value: 'test value' } })
-
-      wrapper
-        .find(FormActions)
-        .find('button')
-        .simulate('click')
-
-      await act(flushPromises)
-
-      wrapper.update()
+      await performSearch(wrapper)
     })
 
     test('should not show the entities', () => {
@@ -402,21 +261,8 @@ describe('FieldDnbCompany', () => {
   describe('when no companies were returned while searching for company', () => {
     beforeAll(async () => {
       setupNoResultsMocks(API_ENDPOINT)
-
       wrapper = wrapFieldDnbCompanyForm()
-
-      wrapper
-        .find('input[name="dnbCompanyName"]')
-        .simulate('change', { target: { value: 'test value' } })
-
-      wrapper
-        .find(FormActions)
-        .find('button')
-        .simulate('click')
-
-      await act(flushPromises)
-
-      wrapper.update()
+      await performSearch(wrapper)
     })
 
     test('should not show the entities', () => {
@@ -433,6 +279,78 @@ describe('FieldDnbCompany', () => {
       expect(wrapper.find(Details).prop('summary')).toEqual(
         'I cannot find the company I am looking for'
       )
+    })
+  })
+
+  describe('when custom "entityRenderer" is passed', () => {
+    test('should render the entities "our way"', async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
+      const CustomEntityRenderer = ({ id }) => <div>_{id}_</div>
+
+      const customEntityWrapper = wrapFieldDnbCompanyForm({
+        entityRenderer: CustomEntityRenderer,
+      })
+
+      await performSearch(customEntityWrapper)
+
+      expect(customEntityWrapper.find(EntityList).text()).toEqual(
+        '_12345678__219999999__219999996_'
+      )
+    })
+  })
+
+  describe('when "I still cannot find the company" link is clicked', () => {
+    test('should call callback defined in the "onChangeClickSpy" prop', async () => {
+      setupSuccessMocks(API_ENDPOINT)
+      const onCannotFindSpy = jest.fn()
+      const fieldWrapper = wrapFieldDnbCompanyForm({
+        onCannotFind: onCannotFindSpy,
+      })
+      await performSearch(fieldWrapper)
+      fieldWrapper
+        .find(Details)
+        .find('button')
+        .simulate('click')
+
+      expect(fieldWrapper.text()).not.toContain('fourth')
+      expect(fieldWrapper.text()).toContain('I still cannot find the company')
+      expect(onCannotFindSpy).toHaveBeenCalledTimes(1)
+    })
+  })
+
+  describe('when the "country" prop is NOT empty and the search yields results', () => {
+    test('should render "making sure you selected the correct country" tip for search', async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
+      const fieldWrapper = wrapFieldDnbCompanyForm({
+        country: undefined,
+      })
+
+      await performSearch(fieldWrapper)
+
+      expect(fieldWrapper.find('ul').text()).not.toContain(
+        'making sure you selected the correct country'
+      )
+    })
+  })
+
+  describe('when the "country" prop is empty and the search yields results', () => {
+    test('should render "making sure you selected the correct country" tip for search', async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
+      const fieldWrapper = wrapFieldDnbCompanyForm({
+        country: 'Test country',
+        onCannotFind: jest.fn(),
+      })
+
+      await performSearch(fieldWrapper)
+
+      expect(fieldWrapper.find('ul').text()).toContain(
+        'making sure you selected the correct country'
+      )
+
+      expect(fieldWrapper.text()).toContain('I still cannot find the company')
     })
   })
 })

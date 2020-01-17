@@ -14,35 +14,30 @@ const StyledEntityListItem = styled('li')`
   list-style-type: none;
 `
 
-const EntityList = ({ entities, onEntityClick }) => {
-  return (
-    <StyledEntityList>
-      {entities.map((entity) => {
-        return (
-          <StyledEntityListItem key={`entity-list-item_${entity.id}`}>
-            <EntityListItem onEntityClick={onEntityClick} {...entity} />
-          </StyledEntityListItem>
-        )
-      })}
-    </StyledEntityList>
-  )
-}
+const EntityList = ({ entities, entityRenderer: EntityRenderer }) => (
+  <StyledEntityList>
+    {entities.map((entity) => (
+      <StyledEntityListItem key={`entity-list-item_${entity.id}`}>
+        <EntityRenderer {...entity} />
+      </StyledEntityListItem>
+    ))}
+  </StyledEntityList>
+)
 
 EntityList.propTypes = {
   entities: PropTypes.arrayOf(
     PropTypes.shape({
-      data: PropTypes.object.isRequired,
-      canHandleClick: PropTypes.bool.isRequired,
-      text: PropTypes.node,
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
       heading: PropTypes.string.isRequired,
       meta: PropTypes.object.isRequired,
+      data: PropTypes.object.isRequired,
     })
-  ),
-  onEntityClick: PropTypes.func.isRequired,
+  ).isRequired,
+  entityRenderer: PropTypes.func,
 }
 
 EntityList.defaultProps = {
-  entities: null,
+  entityRenderer: EntityListItem,
 }
 
 export default EntityList
