@@ -66,7 +66,9 @@ function CollectionItem({
       {badges && (
         <StyledBadgesWrapper>
           {badges.map((badge) => (
-            <Badge key={badge}>{badge}</Badge>
+            <Badge key={badge.text} borderColour={badge.borderColour}>
+              {badge.text}
+            </Badge>
           ))}
         </StyledBadgesWrapper>
       )}
@@ -98,7 +100,12 @@ CollectionItem.propTypes = {
   headingUrl: PropTypes.string,
   headingText: PropTypes.string.isRequired,
   subheading: PropTypes.string,
-  badges: PropTypes.arrayOf(PropTypes.string),
+  badges: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string,
+      borderColour: PropTypes.string,
+    })
+  ),
   metadata: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,

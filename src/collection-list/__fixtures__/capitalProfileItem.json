@@ -13,6 +13,6 @@
     }
   ],
   "badges": [
-    "United States"
+    {"text": "United States"}
   ]
 }

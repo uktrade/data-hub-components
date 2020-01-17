@@ -14,8 +14,12 @@
       }
     ],
     "badges": [
-      "United Kingdom",
-      "Global HQ"
+      {
+        "text": "United Kingdom"
+      },
+      {
+        "text": "Global HQ"
+      }
     ]
   },
   {
@@ -33,7 +37,9 @@
       }
     ],
     "badges": [
-      "United States"
+      {
+        "text": "United States"
+      }
     ]
   },
   {
@@ -51,7 +57,9 @@
       }
     ],
     "badges": [
-      "United States"
+      {
+        "text": "United States"
+      }
     ]
   },
   {
@@ -69,7 +77,9 @@
       }
     ],
     "badges": [
-      "United Kingdom"
+      {
+        "text": "United Kingdom"
+      }
     ]
   },
   {
@@ -87,8 +97,12 @@
       }
     ],
     "badges": [
-      "United Kingdom",
-      "Global HQ"
+      {
+        "text": "United Kingdom"
+      },
+      {
+        "text": "Global HQ"
+      }
     ]
   },
   {
@@ -106,7 +120,9 @@
       }
     ],
     "badges": [
-      "United Kingdom"
+      {
+        "text": "United Kingdom"
+      }
     ]
   },
   {
@@ -124,7 +140,9 @@
       }
     ],
     "badges": [
-      "United Kingdom"
+      {
+        "text": "United Kingdom"
+      }
     ]
   },
   {
@@ -142,7 +160,9 @@
       }
     ],
     "badges": [
-      "United Kingdom"
+      {
+        "text": "United Kingdom"
+      }
     ]
   },
   {
@@ -160,7 +180,9 @@
       }
     ],
     "badges": [
-      "United Kingdom"
+      {
+        "text": "United Kingdom"
+      }
     ]
   },
   {
@@ -178,7 +200,9 @@
       }
     ],
     "badges": [
-      "United Kingdom"
+      {
+        "text": "United Kingdom"
+      }
     ]
   },
   {
@@ -196,7 +220,9 @@
       }
     ],
     "badges": [
-      "United Kingdom"
+      {
+        "text": "United Kingdom"
+      }
     ]
   },
   {
@@ -214,7 +240,9 @@
       }
     ],
     "badges": [
-      "United Kingdom"
+      {
+        "text": "United Kingdom"
+      }
     ]
   }
 ]

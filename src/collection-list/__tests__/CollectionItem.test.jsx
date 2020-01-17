@@ -165,4 +165,23 @@ describe('CollectionItem', () => {
       })
     })
   })
+
+  describe('when a colour is specified in the badge object', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <CollectionItem
+          headingText={interactionItem.headingText}
+          badges={interactionItem.badges}
+        />
+      )
+    })
+
+    test('should render the component', () => {
+      expect(wrapper.find(CollectionItem).exists()).toBe(true)
+    })
+
+    test('should pass the borderColour to the Badge component', () => {
+      expect(wrapper.find(Badge).prop('borderColour')).toBe('rgb(0, 100, 53)')
+    })
+  })
 })
