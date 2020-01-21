@@ -35,15 +35,10 @@ const FieldDnbCompany = ({
   country,
   apiEndpoint,
   queryParams,
+  entityRenderer,
+  onCannotFind,
 }) => {
-  const {
-    values,
-    goBack,
-    goForward,
-    validateForm,
-    setFieldValue,
-    setIsLoading,
-  } = useFormContext()
+  const { values, goBack, validateForm, setIsLoading } = useFormContext()
   const { findCompany } = useDnbSearch(apiEndpoint)
   const {
     onEntitySearch,
@@ -67,14 +62,6 @@ const FieldDnbCompany = ({
   }
 
   useEffect(() => setIsLoading(searching), [searching])
-
-  function onEntityClick(entity) {
-    if (!entity.datahub_company) {
-      setFieldValue('cannotFind', false)
-      setFieldValue(name, entity.dnb_company)
-      goForward()
-    }
-  }
 
   return (
     <FieldWrapper {...{ name, label, legend, hint }}>
@@ -124,7 +111,7 @@ const FieldDnbCompany = ({
                 information.
               </StatusMessage>
 
-              <EntityList entities={entities} onEntityClick={onEntityClick} />
+              <EntityList entities={entities} entityRenderer={entityRenderer} />
             </>
           )}
 
@@ -143,7 +130,11 @@ const FieldDnbCompany = ({
 
             <StyledUnorderedList>
               <ListItem>checking the company name for spelling errors</ListItem>
-              <ListItem>making sure you selected the correct country</ListItem>
+              {country && (
+                <ListItem>
+                  making sure you selected the correct country
+                </ListItem>
+              )}
               <ListItem>
                 adding a postcode to your search to narrow down the results
               </ListItem>
@@ -152,14 +143,11 @@ const FieldDnbCompany = ({
               </ListItem>
             </StyledUnorderedList>
 
-            <ButtonLink
-              onClick={() => {
-                setFieldValue('cannotFind', true)
-                goForward()
-              }}
-            >
-              I still cannot find the company
-            </ButtonLink>
+            {onCannotFind && (
+              <ButtonLink onClick={onCannotFind}>
+                I still cannot find the company
+              </ButtonLink>
+            )}
           </Details>
         </>
       )}
@@ -175,6 +163,8 @@ FieldDnbCompany.propTypes = {
   country: PropTypes.string,
   apiEndpoint: PropTypes.string.isRequired,
   queryParams: PropTypes.shape({}),
+  entityRenderer: PropTypes.func,
+  onCannotFind: PropTypes.func,
 }
 
 FieldDnbCompany.defaultProps = {
@@ -183,6 +173,8 @@ FieldDnbCompany.defaultProps = {
   hint: null,
   country: null,
   queryParams: {},
+  entityRenderer: undefined,
+  onCannotFind: null,
 }
 
 export default FieldDnbCompany

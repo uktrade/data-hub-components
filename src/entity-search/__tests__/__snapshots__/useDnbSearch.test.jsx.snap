@@ -3,7 +3,6 @@
 exports[`useDnbSearch when findCompany() is called with "search_term" filter should return only "Some company name" company 1`] = `
 Array [
   Object {
-    "canHandleClick": true,
     "data": Object {
       "datahub_company": null,
       "dnb_company": Object {
@@ -51,7 +50,6 @@ Array [
     "meta": Object {
       "Address": "123 ABC Road, Brighton, BN2 9QB",
     },
-    "text": null,
   },
 ]
 `;
@@ -59,7 +57,6 @@ Array [
 exports[`useDnbSearch when findCompany() is called without any filters should return all DNB search results 1`] = `
 Array [
   Object {
-    "canHandleClick": false,
     "data": Object {
       "datahub_company": Object {
         "id": "0fb3379c-341c-4da4-b825-bf8d47b26baa",
@@ -117,23 +114,8 @@ Array [
     "meta": Object {
       "Address": "123 Fake Street, Brighton, BN1 4SE",
     },
-    "text": <React.Fragment>
-      This company is already on Data Hub.
-       
-      <ForwardRef
-        href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
-        muted={false}
-        noVisitedState={false}
-        textColour={false}
-      >
-        Go to the company page
-      </ForwardRef>
-       
-      to record activity.
-    </React.Fragment>,
   },
   Object {
-    "canHandleClick": true,
     "data": Object {
       "datahub_company": null,
       "dnb_company": Object {
@@ -181,10 +163,8 @@ Array [
     "meta": Object {
       "Address": "123 ABC Road, Brighton, BN2 9QB",
     },
-    "text": null,
   },
   Object {
-    "canHandleClick": true,
     "data": Object {
       "datahub_company": null,
       "dnb_company": Object {
@@ -220,14 +200,12 @@ Array [
     "meta": Object {
       "Address": "20 New Fake Road, Bristol, B11 9QC",
     },
-    "text": "This company has stopped trading and is no longer in business.",
   },
 ]
 `;
 
 exports[`useDnbSearch when transformCompanyRecord() is called on a company which is in Data Hub should return transformed company record 1`] = `
 Object {
-  "canHandleClick": false,
   "data": Object {
     "datahub_company": Object {
       "id": "0fb3379c-341c-4da4-b825-bf8d47b26baa",
@@ -285,26 +263,11 @@ Object {
   "meta": Object {
     "Address": "123 Fake Street, Brighton, BN1 4SE",
   },
-  "text": <React.Fragment>
-    This company is already on Data Hub.
-     
-    <ForwardRef
-      href="/companies/0fb3379c-341c-4da4-b825-bf8d47b26baa"
-      muted={false}
-      noVisitedState={false}
-      textColour={false}
-    >
-      Go to the company page
-    </ForwardRef>
-     
-    to record activity.
-  </React.Fragment>,
 }
 `;
 
 exports[`useDnbSearch when transformCompanyRecord() is called on a company which is not in Data Hub should return transformed company record 1`] = `
 Object {
-  "canHandleClick": true,
   "data": Object {
     "datahub_company": null,
     "dnb_company": Object {
@@ -352,13 +315,11 @@ Object {
   "meta": Object {
     "Address": "123 ABC Road, Brighton, BN2 9QB",
   },
-  "text": null,
 }
 `;
 
 exports[`useDnbSearch when transformCompanyRecord() is called on a dissolved company should return transformed company record 1`] = `
 Object {
-  "canHandleClick": true,
   "data": Object {
     "datahub_company": null,
     "dnb_company": Object {
@@ -394,6 +355,5 @@ Object {
   "meta": Object {
     "Address": "20 New Fake Road, Bristol, B11 9QC",
   },
-  "text": "This company has stopped trading and is no longer in business.",
 }
 `;

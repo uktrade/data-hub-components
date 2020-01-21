@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { isEmpty } from 'lodash'
 import styled from 'styled-components'
 import {
   FOCUSABLE,
@@ -9,11 +11,10 @@ import {
 import { GREY_2, GREY_4, LINK_COLOUR, LINK_HOVER_COLOUR } from 'govuk-colours'
 import { H3 } from '@govuk-react/heading'
 import InsetText from '@govuk-react/inset-text'
-import PropTypes from 'prop-types'
 
-import { isEmpty } from 'lodash'
+import Metadata from '../metadata/Metadata'
 
-import EntityListItemMetaList from './EntityListItemMetaList'
+const KEY_ENTER = 13
 
 const StyledEntity = styled('div')`
   margin-bottom: ${SPACING.SCALE_2};
@@ -21,10 +22,14 @@ const StyledEntity = styled('div')`
   border: 1px solid ${GREY_2};
   ${FOCUSABLE};
 
-  ${({ canHandleClick }) =>
-    canHandleClick &&
+  ${({ isClickable }) =>
+    isClickable &&
     `
     cursor: pointer;
+    
+    h3 {
+      color: ${LINK_COLOUR};
+    }
 
     &:hover {
       border: 1px solid ${LINK_HOVER_COLOUR};
@@ -38,9 +43,8 @@ const StyledEntity = styled('div')`
 `
 
 const StyledHeading = styled(H3)`
-  margin: 0;
-  color: ${LINK_COLOUR};
   font-size: ${FONT_SIZE.SIZE_16};
+  margin: 0 0 ${SPACING.SCALE_2};
   ${MEDIA_QUERIES.TABLET} {
     font-size: ${FONT_SIZE.SIZE_19};
   }
@@ -52,28 +56,26 @@ const StyledInsetText = styled(InsetText)`
   }
 `
 
-const EntityListItem = ({
-  id,
-  canHandleClick,
-  onEntityClick,
-  data,
-  text,
-  heading,
-  meta,
-}) => {
+const EntityListItem = ({ id, onEntityClick, data, text, heading, meta }) => {
+  const metaAsArray = isEmpty(meta)
+    ? null
+    : Object.keys(meta).map((key) => ({
+        label: key,
+        value: meta[key],
+      }))
   return (
     <StyledEntity
       key={`entity_${id}`}
-      tabIndex={canHandleClick ? 0 : undefined}
-      onClick={() => canHandleClick && onEntityClick(data)}
+      tabIndex={onEntityClick ? 0 : undefined}
+      onClick={() => onEntityClick && onEntityClick(data)}
       onKeyDown={(e) =>
-        canHandleClick && e.keyCode === 13 && onEntityClick(data)
+        onEntityClick && e.keyCode === KEY_ENTER && onEntityClick(data)
       }
-      canHandleClick={canHandleClick}
+      isClickable={onEntityClick}
     >
       {heading && <StyledHeading>{heading}</StyledHeading>}
 
-      {!isEmpty(meta) && <EntityListItemMetaList meta={meta} />}
+      {!isEmpty(meta) && <Metadata rows={metaAsArray} />}
 
       {text && <StyledInsetText>{text}</StyledInsetText>}
     </StyledEntity>
@@ -82,7 +84,6 @@ const EntityListItem = ({
 
 EntityListItem.propTypes = {
   id: PropTypes.string.isRequired,
-  canHandleClick: PropTypes.bool,
   onEntityClick: PropTypes.func,
   data: PropTypes.shape({}),
   text: PropTypes.node,
@@ -92,7 +93,6 @@ EntityListItem.propTypes = {
 
 EntityListItem.defaultProps = {
   text: null,
-  canHandleClick: false,
   onEntityClick: null,
   data: {},
   heading: null,

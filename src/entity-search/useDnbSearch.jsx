@@ -1,33 +1,11 @@
 /* eslint-disable camelcase */
 
-import React from 'react'
-import axios from 'axios/index'
+import axios from 'axios'
 import { compact } from 'lodash'
-import Link from '@govuk-react/link'
 
 function useDnbSearch(apiEndpoint) {
-  function getText(dnb_company, datahub_company) {
-    if (dnb_company.is_out_of_business) {
-      return 'This company has stopped trading and is no longer in business.'
-    }
-
-    if (datahub_company) {
-      return (
-        <>
-          This company is already on Data Hub.{' '}
-          <Link href={`/companies/${datahub_company.id}`}>
-            Go to the company page
-          </Link>{' '}
-          to record activity.
-        </>
-      )
-    }
-
-    return null
-  }
-
   function transformCompanyRecord(record) {
-    const { dnb_company, datahub_company } = record
+    const { dnb_company } = record
 
     return {
       id: dnb_company.duns_number,
@@ -41,8 +19,6 @@ function useDnbSearch(apiEndpoint) {
           dnb_company.address_postcode,
         ]).join(', '),
       },
-      text: getText(dnb_company, datahub_company),
-      canHandleClick: !datahub_company,
       data: record,
     }
   }
