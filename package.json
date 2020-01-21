@@ -26,7 +26,7 @@
     "storybook:release": "yarn storybook:build && cp -R ./.circleci ./storybook-static/.circleci && git-directory-deploy --directory storybook-static --branch gh-pages",
     "prepack": "yarn build",
     "release": "semantic-release --debug",
-    "postpublish": "[ \"${npm_config_tag:-latest}\" != latest ] || yarn storybook:release"
+    "postpublish2": "[ \"${npm_config_tag:-latest}\" != latest ] || yarn storybook:release"
   },
   "husky": {
     "hooks": {
@@ -145,7 +145,7 @@
       "enzyme-to-json/serializer"
     ],
     "testPathIgnorePatterns": [
-      "<rootDir>/.history/", 
+      "<rootDir>/.history/",
       "<rootDir>/node_modules/"
     ]
   },

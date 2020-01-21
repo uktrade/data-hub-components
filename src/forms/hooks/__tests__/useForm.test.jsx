@@ -14,6 +14,13 @@ const testField2 = {
   label: 'testLabel2',
 }
 
+const triggerOnBeforeUnload = () => {
+  const event = document.createEvent('HTMLEvents')
+  event.initEvent('beforeunload', true)
+  event.eventName = 'beforeunload'
+  document.dispatchEvent(event)
+}
+
 describe('useForm', () => {
   let formState
 
@@ -278,6 +285,40 @@ describe('useForm', () => {
     test('should scroll to the top of the page', () => {
       expect(window.scrollTo).toHaveBeenCalledTimes(1)
       expect(window.scrollTo).toHaveBeenCalledWith(0, 0)
+    })
+  })
+
+  describe('when form is left prematurely and onExit is specified', () => {
+    const onExitSpy = jest.fn().mockReturnValue('Exit prompt message')
+
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm({ onExit: onExitSpy }))
+
+      await act(async () => {
+        await hook.result.current.setFieldTouched('testField', true)
+        triggerOnBeforeUnload()
+      })
+    })
+
+    test('should show a confirmation prompt', () => {
+      expect(onExitSpy).toHaveBeenCalledTimes(1)
+    })
+  })
+
+  describe('when form is left prematurely and onExit is not specified', () => {
+    const onExitSpy = jest.fn()
+
+    beforeAll(async () => {
+      const hook = renderHook(() => useForm())
+
+      await act(async () => {
+        await hook.result.current.setFieldTouched('testField', true)
+        triggerOnBeforeUnload()
+      })
+    })
+
+    test('should not show a confirmation prompt', () => {
+      expect(onExitSpy).not.toHaveBeenCalled()
     })
   })
 
