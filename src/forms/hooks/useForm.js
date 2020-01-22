@@ -1,12 +1,33 @@
 import { useEffect, useState } from 'react'
 import { isEmpty, isEqual, omit } from 'lodash'
-import { useBeforeUnload, useDeepCompareEffect } from 'react-use'
+import { useDeepCompareEffect } from 'react-use'
+
+// Based on react-use/useBeforeUnload but can handle custom handlers (for tests).
+function useBeforeUnload(enabled, onExit) {
+  useEffect(() => {
+    const handler = (event) => {
+      event.preventDefault()
+      const callbackReturnValue =
+        typeof onExit === 'function' ? onExit() : false
+      if (callbackReturnValue) {
+        // eslint-disable-next-line no-param-reassign
+        event.returnValue = callbackReturnValue
+      }
+      return callbackReturnValue
+    }
+
+    window.addEventListener('beforeunload', handler)
+
+    return () => window.removeEventListener('beforeunload', handler)
+  }, [onExit, enabled])
+}
 
 function useForm({
   initialValues = {},
   initialStep = 0,
   onSubmit = null,
   scrollToTop = true,
+  onExit,
 } = {}) {
   const [values, setValues] = useState(initialValues)
   const [touched, setTouched] = useState({})
@@ -36,7 +57,7 @@ function useForm({
 
   useBeforeUnload(
     isDirty && !isSubmitted && !submissionError && !redirectUrl,
-    'Changes that you made will not be saved.'
+    onExit
   )
 
   useEffect(() => {
