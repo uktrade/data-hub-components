@@ -8,6 +8,7 @@ import FieldUneditable from '../FieldUneditable'
 import FieldAddress from '../FieldAddress'
 import FieldInput from '../FieldInput'
 import Form from '../Form'
+import { flushPromises } from '../../../utils/enzyme'
 
 import {
   setupPostcodeMock200,
@@ -21,12 +22,6 @@ const ENDPOINT_WITH_POSTCODE = `http://localhost:3000/api/postcode/${POSTCODE}`
 const country = {
   id: '123',
   name: 'United Kingdom',
-}
-
-const flushPromises = () => {
-  return new Promise((resolve) => {
-    setTimeout(resolve, 0)
-  })
 }
 
 describe('FieldAddress', () => {

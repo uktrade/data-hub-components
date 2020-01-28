@@ -1,6 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks'
 
 import useForm from '../useForm'
+import { flushPromises } from '../../../utils/enzyme'
 
 const validate = (value) => (value !== 'correctValue' ? 'testError1' : null)
 const testField1 = {
@@ -290,18 +291,38 @@ describe('useForm', () => {
 
   describe('when form is left prematurely and onExit is specified', () => {
     const onExitSpy = jest.fn().mockReturnValue('Exit prompt message')
-
     beforeAll(async () => {
-      const hook = renderHook(() => useForm({ onExit: onExitSpy }))
-
       await act(async () => {
-        await hook.result.current.setFieldTouched('testField', true)
+        const hook = await renderHook(() => useForm({ onExit: onExitSpy }))
+        hook.result.current.setFieldTouched('testField', true)
+        await flushPromises()
         triggerOnBeforeUnload()
       })
     })
 
     test('should show a confirmation prompt', () => {
       expect(onExitSpy).toHaveBeenCalledTimes(1)
+    })
+  })
+
+  describe('when form is redirected after the submission and onExit is specified', () => {
+    const onExitSpy = jest.fn().mockReturnValue('Exit prompt message')
+    const onSubmitRedirect = () => 'http://example.com'
+
+    beforeAll(async () => {
+      const hook = renderHook(() =>
+        useForm({ onExit: onExitSpy, onSubmit: onSubmitRedirect })
+      )
+
+      await act(async () => {
+        await hook.result.current.setFieldTouched('testField', true)
+        await hook.result.current.goForward()
+        triggerOnBeforeUnload()
+      })
+    })
+
+    test('should NOT show a confirmation prompt', () => {
+      expect(onExitSpy).not.toHaveBeenCalled()
     })
   })
 
@@ -343,6 +364,10 @@ describe('useForm', () => {
 
     test('should not set any errors', () => {
       expect(formState.errors).toEqual({})
+    })
+
+    test('should set "isDirty" to true', () => {
+      expect(formState.isDirty).toBeTruthy()
     })
   })
 
@@ -527,7 +552,7 @@ describe('useForm', () => {
             validate: validatorUsingFormState,
           },
         },
-        isDirty: false,
+        isDirty: true,
         isLoading: false,
         isSubmitted: false,
         steps: [],

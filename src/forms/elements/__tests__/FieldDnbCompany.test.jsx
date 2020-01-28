@@ -19,14 +19,9 @@ import {
   setupNoResultsMocks,
   setupSuccessMocks,
 } from '../../../entity-search/__mocks__/company-search'
+import { flushPromises } from '../../../utils/enzyme'
 
 const API_ENDPOINT = 'http://localhost:3010/v4/dnb/company-search'
-
-const flushPromises = () => {
-  return new Promise((resolve) => {
-    setTimeout(resolve, 0)
-  })
-}
 
 const performSearch = async (wrapper, companyName = 'test value') => {
   wrapper

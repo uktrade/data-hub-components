@@ -8,12 +8,7 @@ import ActivityFeedApp from '../ActivityFeedApp'
 import SelectFilter from '../filters/SelectFilter'
 import esResults from '../__fixtures__/activity-feed-from-es'
 import { ACTIVITY_TYPE_FILTERS } from '../constants'
-
-const flushPromises = () => {
-  return new Promise((resolve) => {
-    setTimeout(resolve, 0)
-  })
-}
+import { flushPromises } from '../../utils/enzyme'
 
 describe('ActivityFeedApp', () => {
   const companyId = '0f5216e0-849f-11e6-ae22-56b6b6499611'
