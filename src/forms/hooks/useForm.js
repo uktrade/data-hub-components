@@ -16,10 +16,12 @@ function useBeforeUnload(enabled, onExit) {
       return callbackReturnValue
     }
 
-    window.addEventListener('beforeunload', handler)
+    if (enabled) {
+      window.addEventListener('beforeunload', handler)
+    }
 
     return () => window.removeEventListener('beforeunload', handler)
-  }, [onExit, enabled])
+  }, [enabled, onExit])
 }
 
 function useForm({
@@ -38,7 +40,8 @@ function useForm({
   const [isLoading, setIsLoading] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [submissionError, setSubmissionError] = useState(null)
-  const isDirty = !isEmpty(values) && !isEqual(values, initialValues)
+  const isDirty =
+    !isEmpty(touched) || (!isEmpty(values) && !isEqual(values, initialValues))
 
   const [redirectUrl, setRedirectUrl] = useState(null)
 

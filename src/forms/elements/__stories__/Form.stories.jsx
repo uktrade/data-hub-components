@@ -10,6 +10,7 @@ import FieldSelect from '../FieldSelect'
 import FieldDnbCompany from '../FieldDnbCompany'
 import { setupSuccessMocks } from '../../../entity-search/__mocks__/company-search'
 import StatusMessage from '../../../status-message/StatusMessage'
+import EntityListItem from '../../../entity-search/EntityListItem'
 
 addDecorator(withKnobs)
 
@@ -43,8 +44,11 @@ storiesOf('Forms', module).add('Form - Full example', () => {
   const ENTITY_SEARCH_ENDPOINT = 'http://localhost:3010/v4/dnb/company-search'
   setupSuccessMocks(ENTITY_SEARCH_ENDPOINT)
   return (
-    <Form onSubmit={onSubmitHandler}>
-      {({ values, submissionError }) => (
+    <Form
+      onSubmit={onSubmitHandler}
+      onExit={() => 'Changes that you made will not be saved.'}
+    >
+      {({ values, submissionError, goForward }) => (
         <>
           <StepHeader />
 
@@ -112,6 +116,12 @@ storiesOf('Forms', module).add('Form - Full example', () => {
               legend={<H3>Find the company</H3>}
               country={values.country || values.companyLocation}
               apiEndpoint={ENTITY_SEARCH_ENDPOINT}
+              entityRenderer={(props) => (
+                <EntityListItem onEntityClick={goForward} {...props} />
+              )}
+              onCannotFind={() => {
+                goForward()
+              }}
             />
           </Step>
 

@@ -40,3 +40,9 @@ export const changeSelectAndUpdate = (wrapper, text) => {
   changeAndUpdate(wrapper.find('select'), getOptionValueByText(wrapper, text))
   wrapper.update()
 }
+
+export const flushPromises = () => {
+  return new Promise((resolve) => {
+    setTimeout(resolve, 0)
+  })
+}
