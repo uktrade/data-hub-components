@@ -106,9 +106,8 @@ const FieldDnbCompany = ({
           {entities.length > 0 && (
             <>
               <StatusMessage>
-                The search results below are verified company records from Dun &
-                Bradstreet, an external and up to date source of company
-                information.
+                The search results below are verified company records from an
+                external and verified source of company information.
               </StatusMessage>
 
               <EntityList entities={entities} entityRenderer={entityRenderer} />
