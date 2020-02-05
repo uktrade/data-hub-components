@@ -200,4 +200,14 @@ describe('Pagination', () => {
       )
     })
   })
+
+  describe('when there are 5 total pages', () => {
+    beforeAll(() => {
+      wrapper = mount(<Pagination totalPages={5} activePage={1} />)
+    })
+
+    test('should not render the ellipsis', () => {
+      expect(wrapper.find('li span[data-test="ellipsis"]')).toHaveLength(0)
+    })
+  })
 })
