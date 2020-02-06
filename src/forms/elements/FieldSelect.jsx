@@ -55,7 +55,10 @@ FieldSelect.propTypes = {
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   hint: PropTypes.string,
-  validate: PropTypes.func,
+  validate: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.arrayOf(PropTypes.func),
+  ]),
   required: PropTypes.string,
   options: PropTypes.arrayOf(
     PropTypes.shape({
