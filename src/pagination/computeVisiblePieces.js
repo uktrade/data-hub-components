@@ -50,7 +50,7 @@ function computeVisiblePieces(
     })
   }
 
-  if (activePage < numberOfPages - 2) {
+  if (activePage < numberOfPages - 2 && numberOfPages > maxPageNumbers) {
     visiblePieces.push({ type: PAGINATION_PIECE_ELLIPSIS })
     visiblePieces.push({
       type: PAGINATION_PIECE_PAGE_NUMBER,
