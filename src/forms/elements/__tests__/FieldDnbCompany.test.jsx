@@ -225,7 +225,7 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should render cannot find actions', () => {
-      expect(wrapper.text()).toContain('Try improving your search by')
+      expect(wrapper.text()).toContain('Try:')
     })
   })
 
@@ -248,7 +248,7 @@ describe('FieldDnbCompany', () => {
 
     test('should display details for "unhappy path"', () => {
       expect(wrapper.find(Details).prop('summary')).toEqual(
-        'I cannot find the company I am looking for'
+        "I can't find what I'm looking for"
       )
     })
   })
@@ -272,7 +272,7 @@ describe('FieldDnbCompany', () => {
 
     test('should display details for "unhappy path"', () => {
       expect(wrapper.find(Details).prop('summary')).toEqual(
-        'I cannot find the company I am looking for'
+        "I can't find what I'm looking for"
       )
     })
   })
@@ -295,7 +295,7 @@ describe('FieldDnbCompany', () => {
     })
   })
 
-  describe('when "I still cannot find the company" link is clicked', () => {
+  describe(`when "I still can't find what I'm looking for" link is clicked`, () => {
     test('should call callback defined in the "onChangeClickSpy" prop', async () => {
       setupSuccessMocks(API_ENDPOINT)
       const onCannotFindSpy = jest.fn()
@@ -309,7 +309,9 @@ describe('FieldDnbCompany', () => {
         .simulate('click')
 
       expect(fieldWrapper.text()).not.toContain('fourth')
-      expect(fieldWrapper.text()).toContain('I still cannot find the company')
+      expect(fieldWrapper.text()).toContain(
+        "I still can't find what I'm looking for"
+      )
       expect(onCannotFindSpy).toHaveBeenCalledTimes(1)
     })
   })
@@ -324,8 +326,11 @@ describe('FieldDnbCompany', () => {
 
       await performSearch(fieldWrapper)
 
-      expect(fieldWrapper.find('ul').text()).not.toContain(
-        'making sure you selected the correct country'
+      expect(fieldWrapper.find('ul').text()).toEqual(
+        'checking for spelling errors' +
+          "check you're using the company's registered name" +
+          'checking or removing the postcode' +
+          'removing "limited" or "ltd"'
       )
     })
   })
@@ -341,11 +346,13 @@ describe('FieldDnbCompany', () => {
 
       await performSearch(fieldWrapper)
 
-      expect(fieldWrapper.find('ul').text()).toContain(
-        'making sure you selected the correct country'
+      expect(fieldWrapper.find('ul').text()).toEqual(
+        'checking for spelling errors' +
+          'checking if the right country was selected' +
+          "check you're using the company's registered name" +
+          'checking or removing the postcode' +
+          'removing "limited" or "ltd"'
       )
-
-      expect(fieldWrapper.text()).toContain('I still cannot find the company')
     })
   })
 })

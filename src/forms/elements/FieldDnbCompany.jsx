@@ -124,27 +124,26 @@ const FieldDnbCompany = ({
             </StatusMessage>
           )}
 
-          <Details summary="I cannot find the company I am looking for">
-            <Paragraph>Try improving your search by:</Paragraph>
+          <Details summary="I can't find what I'm looking for">
+            <Paragraph>Try:</Paragraph>
 
             <StyledUnorderedList>
-              <ListItem>checking the company name for spelling errors</ListItem>
+              <ListItem>checking for spelling errors</ListItem>
               {country && (
-                <ListItem>
-                  making sure you selected the correct country
-                </ListItem>
+                <ListItem>checking if the right country was selected</ListItem>
               )}
               <ListItem>
-                adding a postcode to your search to narrow down the results
+                check you&apos;re using the company&apos;s registered name
               </ListItem>
+              <ListItem>checking or removing the postcode</ListItem>
               <ListItem>
-                removing the words &quot;limited&quot; or &quot;ltd&quot;
+                removing &quot;limited&quot; or &quot;ltd&quot;
               </ListItem>
             </StyledUnorderedList>
 
             {onCannotFind && (
               <ButtonLink onClick={onCannotFind}>
-                I still cannot find the company
+                I still can&apos;t find what I&apos;m looking for
               </ButtonLink>
             )}
           </Details>
