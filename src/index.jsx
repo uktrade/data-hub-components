@@ -87,3 +87,6 @@ export { default as SummaryTable } from './summary-table/SummaryTable'
 // Utils
 export { default as DateUtils } from './utils/DateUtils'
 export { default as NumberUtils } from './utils/NumberUtils'
+// Typeahead
+export { default as Typeahead } from './typeahead/Typeahead'
+export { default as SmallTypeahead } from './typeahead/SmallTypeahead'

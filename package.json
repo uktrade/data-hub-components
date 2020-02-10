@@ -75,6 +75,8 @@
     "prop-types": "^15.7.2",
     "react-lines-ellipsis": "^0.14.1",
     "react-markdown": "^4.0.8",
+    "react-select": "^3.0.8",
+    "react-string-replace": "^0.4.4",
     "react-use": "^12.2.0",
     "styled-components": "^4.2.0"
   },
