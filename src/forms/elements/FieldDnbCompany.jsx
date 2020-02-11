@@ -37,6 +37,7 @@ const FieldDnbCompany = ({
   queryParams,
   entityRenderer,
   onCannotFind,
+  searchResultsMessage,
 }) => {
   const { values, goBack, validateForm, setIsLoading } = useFormContext()
   const { findCompany } = useDnbSearch(apiEndpoint)
@@ -105,10 +106,9 @@ const FieldDnbCompany = ({
         <>
           {entities.length > 0 && (
             <>
-              <StatusMessage>
-                The search results below are verified company records from an
-                external and verified source of company information.
-              </StatusMessage>
+              {searchResultsMessage && (
+                <StatusMessage>{searchResultsMessage}</StatusMessage>
+              )}
 
               <EntityList entities={entities} entityRenderer={entityRenderer} />
             </>
@@ -163,6 +163,7 @@ FieldDnbCompany.propTypes = {
   queryParams: PropTypes.shape({}),
   entityRenderer: PropTypes.func,
   onCannotFind: PropTypes.func,
+  searchResultsMessage: PropTypes.string,
 }
 
 FieldDnbCompany.defaultProps = {
@@ -173,6 +174,8 @@ FieldDnbCompany.defaultProps = {
   queryParams: {},
   entityRenderer: undefined,
   onCannotFind: null,
+  searchResultsMessage:
+    'The search results below are verified company records from an external and verified source of company information.',
 }
 
 export default FieldDnbCompany

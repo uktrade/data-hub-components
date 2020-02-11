@@ -355,4 +355,38 @@ describe('FieldDnbCompany', () => {
       )
     })
   })
+
+  describe('when the "searchResultsMessage" prop is passed and the search yields results', () => {
+    test('should display the CUSTOM message above the search results', async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
+      const fieldWrapper = wrapFieldDnbCompanyForm({
+        country: 'Test country',
+        searchResultsMessage: 'Some custom message',
+      })
+
+      await performSearch(fieldWrapper)
+
+      expect(fieldWrapper.find(StatusMessage).text()).toEqual(
+        'Some custom message'
+      )
+    })
+  })
+
+  describe('when the "searchResultsMessage" prop is NOT passed and the search yields results', () => {
+    test('should display the DEFAULT message above the search results', async () => {
+      setupSuccessMocks(API_ENDPOINT)
+
+      const fieldWrapper = wrapFieldDnbCompanyForm({
+        country: 'Test country',
+      })
+
+      await performSearch(fieldWrapper)
+
+      expect(fieldWrapper.find(StatusMessage).text()).toEqual(
+        'The search results below are verified company records from an external and verified source of' +
+          ' company information.'
+      )
+    })
+  })
 })
