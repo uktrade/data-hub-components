@@ -21,7 +21,7 @@
     "test:update": "jest --updateSnapshot",
     "lint": "eslint './src/**/*.{js,jsx}'",
     "lint:fix": "yarn lint --fix",
-    "storybook": "start-storybook",
+    "storybook": "start-storybook -p ${PORT:-9001}",
     "storybook:build": "rimraf storybook-static && build-storybook --quiet",
     "storybook:release": "yarn storybook:build && cp -R ./.circleci ./storybook-static/.circleci && git-directory-deploy --directory storybook-static --branch gh-pages",
     "prepack": "yarn build",
