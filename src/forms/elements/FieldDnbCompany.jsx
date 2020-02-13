@@ -22,10 +22,23 @@ import useDnbSearch from '../../entity-search/useDnbSearch'
 import FormActions from './FormActions'
 import EntityList from '../../entity-search/EntityList'
 
+const COMPANY_NAME_MIN_LENGTH = 2
+const COMPANY_NAME_MAX_LENGTH = 30
+
 const StyledUnorderedList = styled(UnorderedList)`
   list-style-type: disc;
   padding-left: ${SPACING.SCALE_5};
 `
+
+const validateMinLength = (minLength) => (value) =>
+  value && value.length < minLength
+    ? `Enter company name that is ${minLength} characters long or more`
+    : null
+
+const validateMaxLength = (maxLength) => (value) =>
+  value && value.length > maxLength
+    ? `Enter company name that is no longer than ${maxLength} characters`
+    : null
 
 const FieldDnbCompany = ({
   name,
@@ -81,12 +94,10 @@ const FieldDnbCompany = ({
         name="dnbCompanyName"
         type="search"
         required="Enter company name"
-        validate={(value) =>
-          value && value.length < 2
-            ? 'Enter company name that is 2 characters long or more'
-            : null
-        }
-        maxLength={30}
+        validate={[
+          validateMinLength(COMPANY_NAME_MIN_LENGTH),
+          validateMaxLength(COMPANY_NAME_MAX_LENGTH),
+        ]}
       />
 
       <FieldInput

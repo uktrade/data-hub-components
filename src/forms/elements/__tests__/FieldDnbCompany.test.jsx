@@ -103,15 +103,6 @@ describe('FieldDnbCompany', () => {
       ).toEqual('Company name')
     })
 
-    test('should limit the number of characters in the company name filter to 30', () => {
-      expect(
-        wrapper
-          .find(FieldInput)
-          .at(0)
-          .prop('maxLength')
-      ).toEqual(30)
-    })
-
     test('should render the company postcode filter', () => {
       expect(
         wrapper
@@ -197,6 +188,31 @@ describe('FieldDnbCompany', () => {
     test('should show an error', () => {
       expect(wrapper.text()).toContain(
         'Enter company name that is 2 characters long or more'
+      )
+    })
+  })
+
+  describe('when the search button is clicked with company name longer than the maximum of 30 characters', () => {
+    beforeAll(async () => {
+      wrapper = wrapFieldDnbCompanyForm()
+
+      wrapper.find('input[name="dnbCompanyName"]').simulate('change', {
+        target: { value: '0-------10--------20--------30+++' },
+      })
+
+      wrapper
+        .find(FormActions)
+        .find('button')
+        .simulate('click')
+
+      await act(flushPromises)
+
+      wrapper.update()
+    })
+
+    test('should show an error', () => {
+      expect(wrapper.text()).toContain(
+        'Enter company name that is no longer than 30 characters'
       )
     })
   })

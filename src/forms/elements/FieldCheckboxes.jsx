@@ -69,7 +69,10 @@ const FieldCheckboxes = ({
 
 FieldCheckboxes.propTypes = {
   name: PropTypes.string.isRequired,
-  validate: PropTypes.func,
+  validate: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.arrayOf(PropTypes.func),
+  ]),
   required: PropTypes.string,
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
