@@ -11,9 +11,7 @@ const StyledSpan = styled('span')`
 const Highlighter = ({ optionLabel = null, searchStr }) =>
   optionLabel &&
   reactStringReplace(optionLabel, searchStr, (matchedTxt, i) => (
-    <StyledSpan key={i} data-test-id={`test-${i}`}>
-      {matchedTxt}
-    </StyledSpan>
+    <StyledSpan key={i}>{matchedTxt}</StyledSpan>
   ))
 
 Highlighter.propTypes = {

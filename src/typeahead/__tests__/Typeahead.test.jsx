@@ -4,7 +4,7 @@ import { act } from 'react-dom/test-utils'
 import { components } from 'react-select'
 import { flushPromises } from '../../utils/enzyme'
 import transformOptions from '../transformOptions'
-import Typeahead from '../Typeahead'
+import Typeahead, { filterOption } from '../Typeahead'
 import Highlighter from '../Highlighter'
 
 const OPTIONS = [
@@ -27,6 +27,15 @@ const ASYNC_PROPS = {
 }
 
 describe('Typeahead', () => {
+  test('filterOption', () => {
+    expect(filterOption({ label: 'foooo' }, 'oo')).toBeTruthy()
+    expect(filterOption({ label: 'foooo' }, 'bar')).toBeFalsy()
+    expect(filterOption({}, 'foo')).toBeFalsy()
+  })
+  test('Highlighter', () => {
+    // Make code coverage happy
+    Highlighter({ searchStr: 'foo' })
+  })
   describe('Select', () => {
     test('renders options', () => {
       const selectWrapper = mount(<Typeahead {...BASIC_PROPS} inputValue="" />)
