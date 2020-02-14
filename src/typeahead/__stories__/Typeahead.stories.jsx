@@ -2,27 +2,24 @@
 
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import transformOptions from '../transformOptions'
 
 import Typeahead from '../Typeahead'
 import SmallTypeahead from '../SmallTypeahead'
 
 const options = [
-  { value: '1234', label: 'Chocolate', subLabel: 'mint' },
-  { value: '5678', label: 'Strawberry', subLabel: 'Cream' },
-  { value: '9876', label: 'Vanilla', subLabel: 'Vanilla' },
+  { value: '1234', label: 'Chocolate - mint' },
+  { value: '5678', label: 'Strawberry - Cream' },
+  { value: '9876', label: 'Vanilla - Vanilla' },
 ]
 
 const asyncOptions = [
   {
     value: '379f390a-e083-4a2c-9cea-e3b9a08606a7',
-    label: 'Holly Collins',
-    subLabel: 'Heart of the South West LEP',
+    label: 'Holly Clins - olHeart of the South West LEP',
   },
   {
     value: '8dcd2bb8-dc73-4a42-8655-4ae42d4d3c5a',
-    label: 'Bernard Harris-Patel',
-    subLabel: 'Welsh Government (Investment)',
+    label: 'Bernard Harris-Patelc - Welsh Government (Investment)',
   },
   {
     value: 'a6f39399-5bf4-46cb-a686-826f73e9f0ca',
@@ -31,9 +28,7 @@ const asyncOptions = [
 ]
 
 const getOptions = () =>
-  new Promise((resolve) =>
-    setTimeout(resolve, 1000, transformOptions(asyncOptions))
-  )
+  new Promise((resolve) => setTimeout(resolve, 1000, asyncOptions))
 
 storiesOf('Typeahead/Single select', module)
   .add('Standard options', () => (
@@ -41,7 +36,7 @@ storiesOf('Typeahead/Single select', module)
       isMulti={false}
       closeMenuOnSelect={false}
       name="test_1"
-      options={transformOptions(options)}
+      options={options}
       placeholder="Search..."
     />
   ))
@@ -61,7 +56,7 @@ storiesOf('Typeahead/Single select', module)
       isMulti={false}
       closeMenuOnSelect={false}
       name="test_2"
-      options={transformOptions(options)}
+      options={options}
       placeholder="Search..."
     />
   ))
@@ -73,7 +68,7 @@ storiesOf('Typeahead/Multiple select', module)
       closeMenuOnSelect={false}
       label="Standard options"
       name="test_1"
-      options={transformOptions(options)}
+      options={options}
       placeholder="Search..."
     />
   ))
@@ -82,7 +77,7 @@ storiesOf('Typeahead/Multiple select', module)
       isMulti={true}
       closeMenuOnSelect={false}
       name="test_1"
-      options={transformOptions(options)}
+      options={options}
       placeholder="Search..."
       value={options[2].value}
     />

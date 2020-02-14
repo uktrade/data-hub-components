@@ -3,20 +3,19 @@ import { mount } from 'enzyme'
 import { act } from 'react-dom/test-utils'
 import { components } from 'react-select'
 import { flushPromises } from '../../utils/enzyme'
-import transformOptions from '../transformOptions'
 import Typeahead, { filterOption } from '../Typeahead'
 import Highlighter from '../Highlighter'
 
 const OPTIONS = [
-  { value: '1234', label: 'Chocolate', subLabel: 'mint' },
-  { value: '5678', label: 'Strawberry', subLabel: 'Cream' },
-  { value: '9876', label: 'Vanilla', subLabel: 'Vanilla' },
+  { value: '1234', label: 'Chocolate - mint' },
+  { value: '5678', label: 'Strawberry - Cream' },
+  { value: '9876', label: 'Vanilla - Vanilla' },
 ]
 const BASIC_PROPS = {
   name: 'test',
   label: 'Advisers',
   hint: 'Some hint',
-  options: transformOptions(OPTIONS),
+  options: OPTIONS,
   menuIsOpen: true,
   noOptions: () => 'No options message',
 }
@@ -86,7 +85,7 @@ describe('Typeahead', () => {
           .find('Select')
           .state()
           .menuOptions.render.map((o) => o.label)
-      ).toEqual(['Chocolate', 'Strawberry', 'Vanilla'])
+      ).toEqual(['Chocolate - mint', 'Strawberry - Cream', 'Vanilla - Vanilla'])
     })
   })
 })
