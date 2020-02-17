@@ -7,6 +7,7 @@ import {
   GREY_2,
   GREY_3,
   GREY_4,
+  ERROR_COLOUR,
 } from 'govuk-colours'
 import {
   SPACING,
@@ -75,6 +76,14 @@ const defaultStyles = {
       backgroundColor: GREY_2,
       cursor: 'pointer',
     },
+  }),
+}
+
+export const errorStyles = {
+  ...defaultStyles,
+  control: (...args) => ({
+    ...defaultStyles.control(...args),
+    border: `4px solid ${ERROR_COLOUR}`,
   }),
 }
 
