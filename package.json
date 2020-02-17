@@ -26,7 +26,7 @@
     "storybook:release": "yarn storybook:build && cp -R ./.circleci ./storybook-static/.circleci && git-directory-deploy --directory storybook-static --branch gh-pages",
     "prepack": "yarn build",
     "release": "semantic-release --debug",
-    "postpublish2": "[ \"${npm_config_tag:-latest}\" != latest ] || yarn storybook:release"
+    "postpublish": "[ \"${npm_config_tag:-latest}\" != latest ] || yarn storybook:release"
   },
   "husky": {
     "hooks": {
