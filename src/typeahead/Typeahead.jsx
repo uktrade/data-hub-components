@@ -1,82 +1,43 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import Select, { components } from 'react-select'
+import Select, { components as comps } from 'react-select'
 import AsyncSelect from 'react-select/async'
 import defaultStyles from './styles'
 import Highlighter from './Highlighter'
 
-const Option = ({ inputValue, ...props }) => {
-  const {
-    data: { label: optionLabel },
-  } = props
+const Option = ({ selectProps: { inputValue }, data: { label }, ...props }) => (
+  <comps.Option {...props}>
+    <Highlighter searchStr={inputValue} optionLabel={label} />
+  </comps.Option>
+)
 
-  return (
-    <components.Option {...props}>
-      {inputValue ? (
-        <Highlighter searchStr={inputValue} optionLabel={optionLabel} />
-      ) : (
-        optionLabel
-      )}
-    </components.Option>
-  )
-}
+Option.propTypes = comps.Option.propTypes
 
-const Typeahead = ({ name, value, options, inputValue, styles, ...rest }) => {
-  const commonProps = {
+export const filterOption = ({ label = '' }, query) =>
+  label.toLowerCase().includes(query)
+
+const Typeahead = ({ options, styles, components, ...props }) => {
+  const customisedProps = {
     styles: {
       ...defaultStyles,
       ...styles,
     },
-    components: {
-      Option: (props) => <Option {...props} inputValue={inputValue} />,
-    },
+    components: { Option },
+    noOptionsMessage: () => 'No options found',
+    filterOption,
+    ...props,
   }
-
-  const filterOptions = ({ label: labelToFilter }) =>
-    labelToFilter ? labelToFilter.toLowerCase().includes(inputValue) : false
 
   return (
     <>
       {options ? (
-        <Select
-          {...commonProps}
-          defaultValue={options.filter((option) => option.value === value)}
-          options={options}
-          {...rest}
-        />
+        <Select {...customisedProps} options={options} />
       ) : (
-        <AsyncSelect
-          {...commonProps}
-          filterOption={filterOptions}
-          defaultValue={value}
-          {...rest}
-        />
+        <AsyncSelect {...customisedProps} />
       )}
     </>
   )
 }
 
-Typeahead.propTypes = {
-  name: PropTypes.string.isRequired,
-  inputValue: PropTypes.string.isRequired,
-  value: PropTypes.string,
-  noOptionsMessage: PropTypes.func,
-  options: PropTypes.array,
-  styles: PropTypes.object,
-}
-
-Typeahead.defaultProps = {
-  value: '',
-  options: null,
-  styles: {},
-  noOptionsMessage: () => 'No options found',
-}
-
-Option.propTypes = {
-  inputValue: PropTypes.string.isRequired,
-  data: PropTypes.shape({
-    label: PropTypes.string,
-  }).isRequired,
-}
+Typeahead.propTypes = Select.propTypes
 
 export default Typeahead
