@@ -1,7 +1,7 @@
 import React from 'react'
 import Select, { components as comps } from 'react-select'
 import AsyncSelect from 'react-select/async'
-import defaultStyles from './styles'
+import defaultStyles, { errorStyles } from './styles'
 import Highlighter from './Highlighter'
 
 const Option = ({ selectProps: { inputValue }, data: { label }, ...props }) => (
@@ -15,10 +15,10 @@ Option.propTypes = comps.Option.propTypes
 export const filterOption = ({ label = '' }, query) =>
   label.toLowerCase().includes(query)
 
-const Typeahead = ({ options, styles, components, ...props }) => {
+const Typeahead = ({ options, styles, components, error, ...props }) => {
   const customisedProps = {
     styles: {
-      ...defaultStyles,
+      ...(error ? errorStyles : defaultStyles),
       ...styles,
     },
     components: { Option },

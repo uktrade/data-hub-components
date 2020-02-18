@@ -40,6 +40,16 @@ storiesOf('Typeahead/Single select', module)
       placeholder="Search..."
     />
   ))
+  .add('Error', () => (
+    <Typeahead
+      error={true}
+      isMulti={false}
+      closeMenuOnSelect={false}
+      name="test_1"
+      options={options}
+      placeholder="Search..."
+    />
+  ))
   .add('Options - pre-selected option', () => (
     <Typeahead
       isMulti={false}
