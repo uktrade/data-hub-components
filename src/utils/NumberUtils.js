@@ -11,7 +11,7 @@ export default class NumberUtils {
     return formatter.format(number)
   }
 
-  static currencyGBP(number) {
+  static currencyGBP(number, options = { maximumSignificantDigits: 21 }) {
     if (!number && number !== 0) {
       return null
     }
@@ -19,13 +19,13 @@ export default class NumberUtils {
     const formatter = new Intl.NumberFormat('en-GB', {
       style: 'currency',
       currency: 'GBP',
-      maximumSignificantDigits: 21,
+      ...options,
     })
 
     return formatter.format(number)
   }
 
-  static currencyUSD(number) {
+  static currencyUSD(number, options = { maximumSignificantDigits: 21 }) {
     if (!number && number !== 0) {
       return null
     }
@@ -33,7 +33,7 @@ export default class NumberUtils {
     const formatter = new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',
-      maximumSignificantDigits: 21,
+      ...options,
     })
 
     return formatter.format(number)

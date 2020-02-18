@@ -42,4 +42,22 @@ describe('NumberUtils.js', () => {
       expect(NumberUtils.currencyUSD(1000000)).toEqual('$1,000,000')
     })
   })
+
+  describe('passing an options object to currencyGBP()', () => {
+    test('should format to 2 significant digits', () => {
+      const expected = NumberUtils.currencyGBP(1234567.89, {
+        maximumSignificantDigits: 2,
+      })
+      expect('£1,200,000').toEqual(expected)
+    })
+  })
+
+  describe('passing an options object to currencyUSD()', () => {
+    test('should format to 2 significant digits', () => {
+      const expected = NumberUtils.currencyUSD(1234567.89, {
+        maximumSignificantDigits: 2,
+      })
+      expect('$1,200,000').toEqual(expected)
+    })
+  })
 })
