@@ -1,1 +1,0 @@
-{"version":3,"file":"main.b67ea63e00587f74aae4.bundle.js","sources":["webpack:///./src/dashboard/my-companies/constants.js"],"sourcesContent":["export const LIST_CHANGE = 'LIST_CHANGE'\nexport const FILTER_CHANGE = 'FILTER_CHANGE'\nexport const ORDER_CHANGE = 'ORDER_CHANGE'\n"],"mappings":"AAAA","sourceRoot":""}
