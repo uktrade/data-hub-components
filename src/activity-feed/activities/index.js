@@ -4,6 +4,7 @@ import HmrcExporter from './HmrcExporter'
 import InvestmentProject from './InvestmentProject'
 import Interaction from './Interaction'
 import Omis from './Omis'
+import Referral from './Referral'
 
 export default [
   CompaniesHouseAccount,
@@ -12,4 +13,5 @@ export default [
   Interaction,
   InvestmentProject,
   Omis,
+  Referral,
 ]

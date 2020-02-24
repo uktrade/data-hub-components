@@ -65,6 +65,35 @@ const getAdviser = (activity) => {
   return adviser.name && adviser.emailAddress ? adviser : null
 }
 
+const getRoleDetails = (activity, role) => {
+  return activity.object.attributedTo.filter(
+    (attr) => attr['dit:DataHubCompanyReferral:role'] === role
+  )
+}
+
+const transformReferral = (activity) => {
+  const [sender] = getRoleDetails(activity, 'sender')
+  const [recipient] = getRoleDetails(activity, 'recipient')
+
+  return {
+    id: get(activity, 'id'),
+    startTime: get(activity, 'object.startTime'),
+    subject: get(activity, 'object.dit:subject'),
+    status: get(activity, 'object.dit:status'),
+    sender: {
+      name: get(sender, 'name'),
+      email: get(sender, 'dit:emailAddress'),
+      team: get(sender, 'dit:team[name]'),
+    },
+    recipient: {
+      name: get(recipient, 'name'),
+      email: get(recipient, 'dit:emailAddress'),
+      team: get(recipient, 'dit:team[name]'),
+    },
+    completedOn: get(activity, 'object.dit:completedOn'),
+  }
+}
+
 const transform = (activity) => ({
   url: get(activity, 'object.url'),
   subject: get(activity, 'object.dit:subject'),
@@ -78,5 +107,6 @@ export default {
   getContacts,
   getCompany,
   getAdviser,
+  transformReferral,
   transform,
 }
