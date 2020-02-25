@@ -6,7 +6,7 @@ import Button from '@govuk-react/button'
 import { H1 } from '@govuk-react/heading'
 
 import FieldRadios from '../FieldRadios'
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldSelect from '../FieldSelect'
 
 addDecorator(withKnobs)
@@ -33,7 +33,7 @@ const options = [
 ]
 
 storiesOf('Forms', module).add('FieldRadios', () => (
-  <Form onSubmit={action('onSubmit')}>
+  <FormStateful onSubmit={action('onSubmit')}>
     {(form) => (
       <>
         <FieldRadios
@@ -55,5 +55,5 @@ storiesOf('Forms', module).add('FieldRadios', () => (
         <pre>{JSON.stringify(form, null, 2)}</pre>
       </>
     )}
-  </Form>
+  </FormStateful>
 ))

@@ -5,12 +5,12 @@ import { withKnobs } from '@storybook/addon-knobs'
 import Button from '@govuk-react/button'
 
 import FieldTextarea from '../FieldTextarea'
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 
 addDecorator(withKnobs)
 
 storiesOf('Forms', module).add('FieldTextarea', () => (
-  <Form onSubmit={action('onSubmit')}>
+  <FormStateful onSubmit={action('onSubmit')}>
     {(state) => (
       <>
         <FieldTextarea
@@ -24,5 +24,5 @@ storiesOf('Forms', module).add('FieldTextarea', () => (
         <pre>{JSON.stringify(state, null, 2)}</pre>
       </>
     )}
-  </Form>
+  </FormStateful>
 ))

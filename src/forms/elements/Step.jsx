@@ -64,7 +64,7 @@ function Step({ name, backButton, forwardButton, children }) {
 
   return (
     <>
-      {children}
+      {typeof children === 'function' ? children() : children}
 
       <FormActions>
         {renderForwardButton()}
@@ -79,7 +79,7 @@ Step.propTypes = {
   name: PropTypes.string.isRequired,
   backButton: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   forwardButton: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  children: PropTypes.node,
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
 }
 
 Step.defaultProps = {

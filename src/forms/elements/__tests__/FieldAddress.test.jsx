@@ -7,7 +7,7 @@ import StatusMessage from '../../../status-message/StatusMessage'
 import FieldUneditable from '../FieldUneditable'
 import FieldAddress from '../FieldAddress'
 import FieldInput from '../FieldInput'
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import { flushPromises } from '../../../utils/enzyme'
 
 import {
@@ -30,13 +30,13 @@ describe('FieldAddress', () => {
   describe('when the component is mounted and the country is UK', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldAddress
             name="address"
             country={country}
             apiEndpoint={ENDPOINT}
           />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -101,13 +101,13 @@ describe('FieldAddress', () => {
   describe('when clicking the "Find UK address" button without a postcode', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldAddress
             name="address"
             country={country}
             apiEndpoint={ENDPOINT}
           />
-        </Form>
+        </FormStateful>
       )
 
       wrapper.find('button').simulate('click')
@@ -125,13 +125,13 @@ describe('FieldAddress', () => {
     beforeAll(async () => {
       axiosMock = setupPostcodeMock200(ENDPOINT_WITH_POSTCODE)
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldAddress
             name="address"
             country={country}
             apiEndpoint={ENDPOINT}
           />
-        </Form>
+        </FormStateful>
       )
 
       afterAll(() => axiosMock.restore())
@@ -169,13 +169,13 @@ describe('FieldAddress', () => {
     beforeAll(async () => {
       axiosMock = setupPostcodeMock200(ENDPOINT_WITH_POSTCODE)
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldAddress
             name="address"
             country={country}
             apiEndpoint={ENDPOINT}
           />
-        </Form>
+        </FormStateful>
       )
 
       afterAll(() => axiosMock.restore())
@@ -215,7 +215,7 @@ describe('FieldAddress', () => {
   describe('when the component is mounted and the country is not UK', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldAddress
             name="address"
             country={{
@@ -224,7 +224,7 @@ describe('FieldAddress', () => {
             }}
             apiEndpoint={ENDPOINT}
           />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -253,13 +253,13 @@ describe('FieldAddress', () => {
     beforeAll(async () => {
       axiosMock = setupPostcodeMock400(ENDPOINT_WITH_POSTCODE)
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldAddress
             name="address"
             country={country}
             apiEndpoint={ENDPOINT}
           />
-        </Form>
+        </FormStateful>
       )
 
       afterAll(() => axiosMock.restore())

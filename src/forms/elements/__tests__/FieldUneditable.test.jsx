@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 import HintText from '@govuk-react/hint-text'
 import Label from '@govuk-react/label'
 
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldUneditable from '../FieldUneditable'
 import ButtonLink from '../../../button-link/ButtonLink'
 
@@ -13,11 +13,11 @@ describe('FieldUneditable', () => {
   describe('when the field does specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldUneditable name="testField" label="testLabel">
             testValue
           </FieldUneditable>
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -33,9 +33,9 @@ describe('FieldUneditable', () => {
   describe('when the field does not specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldUneditable name="testField">testValue</FieldUneditable>
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -47,11 +47,11 @@ describe('FieldUneditable', () => {
   describe('when the field does specify a legend', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldUneditable type="text" name="testField" legend="testLegend">
             testValue
           </FieldUneditable>
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -63,11 +63,11 @@ describe('FieldUneditable', () => {
   describe('when the field does specify a hint', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldUneditable type="text" name="testField" hint="testHint">
             testValue
           </FieldUneditable>
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -81,7 +81,7 @@ describe('FieldUneditable', () => {
 
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldUneditable
             type="text"
             name="testField"
@@ -90,7 +90,7 @@ describe('FieldUneditable', () => {
           >
             testValue
           </FieldUneditable>
-        </Form>
+        </FormStateful>
       )
     })
 

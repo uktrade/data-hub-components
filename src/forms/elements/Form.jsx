@@ -1,78 +1,68 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import LoadingBox from '@govuk-react/loading-box'
 
 import useFormContext from '../hooks/useFormContext'
 
-function Form({
-  initialValues,
-  initialStep,
-  onSubmit,
-  scrollToTop,
-  onExit,
-  children,
-}) {
+function Form({ formAttributes, children, ...contextProps }) {
   return (
-    <useFormContext.Provider
-      initialValues={initialValues}
-      initialStep={initialStep}
-      onSubmit={onSubmit}
-      scrollToTop={scrollToTop}
-      onExit={onExit}
-    >
-      <FormWrapper>{children}</FormWrapper>
+    <useFormContext.Provider {...contextProps}>
+      <form
+        {...formAttributes}
+        noValidate={true}
+        onSubmit={(e) => {
+          e.preventDefault()
+          contextProps.goForward()
+        }}
+      >
+        {children}
+      </form>
     </useFormContext.Provider>
   )
 }
 
 Form.propTypes = {
-  initialValues: PropTypes.shape({}),
-  initialStep: PropTypes.number,
-  onSubmit: PropTypes.func,
-  scrollToTop: PropTypes.bool,
-  onExit: PropTypes.func,
-  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
+  values: PropTypes.object,
+  touched: PropTypes.object,
+  errors: PropTypes.object,
+  fields: PropTypes.objectOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      initialValue: PropTypes.any,
+      validate: PropTypes.arrayOf(PropTypes.func),
+    })
+  ),
+  steps: PropTypes.arrayOf(PropTypes.string),
+  currentStep: PropTypes.number,
+  isDirty: PropTypes.bool,
+  registerField: PropTypes.func.isRequired,
+  deregisterField: PropTypes.func.isRequired,
+  setFieldValue: PropTypes.func.isRequired,
+  setFieldTouched: PropTypes.func.isRequired,
+  setFieldError: PropTypes.func.isRequired,
+  validateForm: PropTypes.func.isRequired,
+  registerStep: PropTypes.func.isRequired,
+  deregisterStep: PropTypes.func.isRequired,
+  setCurrentStep: PropTypes.func.isRequired,
+  goForward: PropTypes.func.isRequired,
+  goBack: PropTypes.func.isRequired,
+  goToStepByName: PropTypes.func.isRequired,
+  getStepIndex: PropTypes.func.isRequired,
+  isLastStep: PropTypes.func.isRequired,
+  isFirstStep: PropTypes.func.isRequired,
+  getFieldState: PropTypes.func.isRequired,
+  formAttributes: PropTypes.object,
+  children: PropTypes.node,
 }
 
 Form.defaultProps = {
-  initialValues: {},
-  initialStep: 0,
-  onSubmit: null,
-  scrollToTop: true,
-  onExit: null,
-  children: null,
-}
-
-function FormWrapper({ children }) {
-  const formContextProps = useFormContext()
-
-  const renderChildren = () => {
-    if (typeof children === 'function') {
-      return children(formContextProps)
-    }
-    return children
-  }
-
-  return (
-    <form
-      noValidate={true}
-      onSubmit={(e) => {
-        e.preventDefault()
-        formContextProps.goForward()
-      }}
-    >
-      <LoadingBox loading={formContextProps.isLoading}>
-        {renderChildren()}
-      </LoadingBox>
-    </form>
-  )
-}
-
-FormWrapper.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
-}
-
-FormWrapper.defaultProps = {
+  values: {},
+  touched: {},
+  errors: {},
+  fields: {},
+  steps: [],
+  currentStep: 0,
+  isDirty: false,
+  formAttributes: {},
   children: null,
 }
 

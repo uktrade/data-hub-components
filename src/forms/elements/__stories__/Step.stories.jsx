@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
-import { Form, Step, useFormContext } from '../../../index'
+import { FormStateful, Step, useFormContext } from '../../../index'
 
 function Values() {
   const form = useFormContext()
@@ -30,7 +30,7 @@ function StepHeader() {
 
 storiesOf('Forms', module).add('Step', () => {
   return (
-    <Form onSubmit={action('onSubmit')}>
+    <FormStateful onSubmit={action('onSubmit')}>
       <StepHeader />
 
       <Step name="first">
@@ -52,6 +52,6 @@ storiesOf('Forms', module).add('Step', () => {
       <Step name="fourth">
         <Values />
       </Step>
-    </Form>
+    </FormStateful>
   )
 })

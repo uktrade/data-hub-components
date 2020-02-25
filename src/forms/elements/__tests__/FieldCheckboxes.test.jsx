@@ -4,7 +4,7 @@ import Label from '@govuk-react/label'
 import HintText from '@govuk-react/hint-text'
 import Checkbox from '@govuk-react/checkbox'
 
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldCheckboxes from '../FieldCheckboxes'
 
 describe('FieldCheckboxes', () => {
@@ -13,9 +13,9 @@ describe('FieldCheckboxes', () => {
   describe('when the field does specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldCheckboxes name="testField" label="testLabel" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -27,9 +27,9 @@ describe('FieldCheckboxes', () => {
   describe('when the field does not specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldCheckboxes name="testField" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -41,9 +41,9 @@ describe('FieldCheckboxes', () => {
   describe('when the field does specify a legend', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldCheckboxes name="testField" legend="testLegend" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -55,9 +55,9 @@ describe('FieldCheckboxes', () => {
   describe('when the field does specify a hint', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldCheckboxes name="testField" hint="testHint" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -71,7 +71,7 @@ describe('FieldCheckboxes', () => {
 
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldCheckboxes
             name="testField"
             options={[
@@ -79,7 +79,7 @@ describe('FieldCheckboxes', () => {
               { label: 'testOptionLabel2', value: 'testOptionValue2' },
             ]}
           />
-        </Form>
+        </FormStateful>
       )
       checkboxes = wrapper.find(Checkbox)
     })
@@ -102,9 +102,9 @@ describe('FieldCheckboxes', () => {
   describe('when the field validation fails', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldCheckboxes name="testField" validate={() => 'testError'} />
-        </Form>
+        </FormStateful>
       )
       wrapper.find('form').simulate('submit')
     })
@@ -122,7 +122,7 @@ describe('FieldCheckboxes', () => {
   describe('when a checkbox is checked', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           {(form) => (
             <>
               <FieldCheckboxes
@@ -135,7 +135,7 @@ describe('FieldCheckboxes', () => {
               <div id="values">{JSON.stringify(form.values.testField)}</div>
             </>
           )}
-        </Form>
+        </FormStateful>
       )
 
       wrapper

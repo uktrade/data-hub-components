@@ -5,7 +5,7 @@ import Button from '@govuk-react/button'
 import { SPACING } from '@govuk-react/constants'
 import styled from 'styled-components'
 
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldAddress from '../FieldAddress'
 import { setupPostcodeMock200 } from '../../../address-search/__mocks__/postcode-lookup'
 
@@ -19,7 +19,7 @@ const StyledButton = styled(Button)`
 storiesOf('Forms', module).add('FieldAddress', () => {
   setupPostcodeMock200(`${API_ENDPOINT}/${POSTCODE}`, { delayResponse: 750 })
   return (
-    <Form onSubmit={action('onSubmit')}>
+    <FormStateful onSubmit={action('onSubmit')}>
       {(form) => (
         <>
           <FieldAddress
@@ -36,6 +36,6 @@ storiesOf('Forms', module).add('FieldAddress', () => {
           <pre>{JSON.stringify(form, null, 2)}</pre>
         </>
       )}
-    </Form>
+    </FormStateful>
   )
 })

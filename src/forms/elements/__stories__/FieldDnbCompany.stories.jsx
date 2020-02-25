@@ -4,7 +4,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { H3 } from '@govuk-react/heading'
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import Step from '../Step'
 import useFormContext from '../../hooks/useFormContext'
 import FieldDnbCompany from '../FieldDnbCompany'
@@ -18,8 +18,8 @@ import EntityListItem from '../../../entity-search/EntityListItem'
 const API_ENDPOINT = 'http://localhost:3010/v4/dnb/company-search'
 
 function Values() {
-  const form = useFormContext()
-  return <pre>{JSON.stringify(form, null, 2)}</pre>
+  const { values } = useFormContext()
+  return <pre>{JSON.stringify(values, null, 2)}</pre>
 }
 
 storiesOf('Forms', module)
@@ -31,7 +31,7 @@ storiesOf('Forms', module)
     setupSuccessMocks(API_ENDPOINT, { delayResponse: 750 }, queryParams)
 
     return (
-      <Form onSubmit={action('onSubmit')}>
+      <FormStateful onSubmit={action('onSubmit')}>
         {({ values }) => (
           <>
             <Step name="first" forwardButton={null}>
@@ -60,14 +60,14 @@ storiesOf('Forms', module)
             <Values />
           </>
         )}
-      </Form>
+      </FormStateful>
     )
   })
   .add('FieldDnbCompany - error', () => {
     setupErrorMocks(API_ENDPOINT)
 
     return (
-      <Form onSubmit={action('onSubmit')}>
+      <FormStateful onSubmit={action('onSubmit')}>
         <>
           <Step name="first" forwardButton={null}>
             <FieldDnbCompany
@@ -80,14 +80,14 @@ storiesOf('Forms', module)
 
           <Values />
         </>
-      </Form>
+      </FormStateful>
     )
   })
   .add('FieldDnbCompany - no results', () => {
     setupNoResultsMocks(API_ENDPOINT)
 
     return (
-      <Form onSubmit={action('onSubmit')}>
+      <FormStateful onSubmit={action('onSubmit')}>
         <>
           <Step name="first" forwardButton={null}>
             <FieldDnbCompany
@@ -100,7 +100,7 @@ storiesOf('Forms', module)
 
           <Values />
         </>
-      </Form>
+      </FormStateful>
     )
   })
   .add('FieldDnbCompany - custom entity renderer', () => {
@@ -128,7 +128,7 @@ storiesOf('Forms', module)
     }
 
     return (
-      <Form onSubmit={action('onSubmit')}>
+      <FormStateful onSubmit={action('onSubmit')}>
         <>
           <Step name="first" forwardButton={null}>
             <FieldDnbCompany
@@ -142,6 +142,6 @@ storiesOf('Forms', module)
 
           <Values />
         </>
-      </Form>
+      </FormStateful>
     )
   })

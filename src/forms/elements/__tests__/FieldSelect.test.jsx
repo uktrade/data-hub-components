@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 import Label from '@govuk-react/label'
 import HintText from '@govuk-react/hint-text'
 
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldSelect from '../FieldSelect'
 
 describe('FieldSelect', () => {
@@ -12,9 +12,9 @@ describe('FieldSelect', () => {
   describe('when the field does specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldSelect name="testField" label="testLabel" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -31,9 +31,9 @@ describe('FieldSelect', () => {
   describe('when the field does not specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldSelect name="testField" emptyOption="" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -50,9 +50,9 @@ describe('FieldSelect', () => {
   describe('when the field does specify a legend', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldSelect name="testField" legend="testLegend" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -64,9 +64,9 @@ describe('FieldSelect', () => {
   describe('when the field does specify a hint', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldSelect name="testField" hint="testHint" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -80,7 +80,7 @@ describe('FieldSelect', () => {
 
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldSelect
             name="testField"
             options={[
@@ -88,7 +88,7 @@ describe('FieldSelect', () => {
               { label: 'testOptionLabel2', value: 'testOptionValue2' },
             ]}
           />
-        </Form>
+        </FormStateful>
       )
       options = wrapper.find('option')
     })
@@ -116,9 +116,9 @@ describe('FieldSelect', () => {
   describe('when the field validation fails', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldSelect name="testField" validate={() => 'testError'} />
-        </Form>
+        </FormStateful>
       )
       wrapper.find('form').simulate('submit')
     })
@@ -132,9 +132,9 @@ describe('FieldSelect', () => {
   describe('when an "emptyOption" prop is specified', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldSelect name="testField" emptyOption="testEmptyOption" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -151,7 +151,7 @@ describe('FieldSelect', () => {
   describe('when one of the options is selected', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           {(form) => (
             <>
               <FieldSelect
@@ -164,7 +164,7 @@ describe('FieldSelect', () => {
               <div id="values">{form.values.testField}</div>
             </>
           )}
-        </Form>
+        </FormStateful>
       )
       wrapper
         .find('select')

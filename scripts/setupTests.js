@@ -27,4 +27,5 @@ console.error = (message, params) => {
   originalConsoleError(message, params)
 }
 
+window.location.assign = jest.fn()
 window.scrollTo = jest.fn()

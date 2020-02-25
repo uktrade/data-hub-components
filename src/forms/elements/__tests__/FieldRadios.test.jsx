@@ -4,7 +4,7 @@ import Radio from '@govuk-react/radio'
 import Label from '@govuk-react/label'
 import HintText from '@govuk-react/hint-text'
 
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldRadios from '../FieldRadios'
 
 describe('FieldRadios', () => {
@@ -13,9 +13,9 @@ describe('FieldRadios', () => {
   describe('when the field does specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldRadios name="testField" label="testLabel" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -27,9 +27,9 @@ describe('FieldRadios', () => {
   describe('when the field does not specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldRadios name="testField" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -41,9 +41,9 @@ describe('FieldRadios', () => {
   describe('when the field does specify a legend', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldRadios name="testField" legend="testLegend" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -55,9 +55,9 @@ describe('FieldRadios', () => {
   describe('when the field does specify a hint', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldRadios name="testField" hint="testHint" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -71,7 +71,7 @@ describe('FieldRadios', () => {
 
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldRadios
             name="testField"
             options={[
@@ -79,7 +79,7 @@ describe('FieldRadios', () => {
               { label: 'testOptionLabel2', value: 'testOptionValue2' },
             ]}
           />
-        </Form>
+        </FormStateful>
       )
       radios = wrapper.find(Radio)
     })
@@ -107,9 +107,9 @@ describe('FieldRadios', () => {
   describe('when the field validation fails', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldRadios name="testField" validate={() => 'testError'} />
-        </Form>
+        </FormStateful>
       )
       wrapper.find('form').simulate('submit')
     })
@@ -127,7 +127,7 @@ describe('FieldRadios', () => {
   describe('when a radio is checked', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           {(form) => (
             <>
               <FieldRadios
@@ -140,7 +140,7 @@ describe('FieldRadios', () => {
               <div id="values">{form.values.testField}</div>
             </>
           )}
-        </Form>
+        </FormStateful>
       )
 
       wrapper

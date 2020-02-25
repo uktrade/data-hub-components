@@ -4,7 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs'
 import { H1, H2, H3 } from '@govuk-react/heading'
 import Button from '@govuk-react/button'
 
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldWrapper from '../FieldWrapper'
 import FieldInput from '../FieldInput'
 
@@ -16,7 +16,7 @@ const testInput = (
 
 storiesOf('Forms', module)
   .add('FieldWrapper - Label', () => (
-    <Form>
+    <FormStateful>
       {(form) => (
         <>
           <FieldWrapper
@@ -31,10 +31,10 @@ storiesOf('Forms', module)
           <Button>Click to show error</Button>
         </>
       )}
-    </Form>
+    </FormStateful>
   ))
   .add('FieldWrapper - Legend', () => (
-    <Form>
+    <FormStateful>
       {(form) => (
         <>
           <FieldWrapper
@@ -76,5 +76,5 @@ storiesOf('Forms', module)
           <Button>Click to show error</Button>
         </>
       )}
-    </Form>
+    </FormStateful>
   ))

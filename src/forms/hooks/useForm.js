@@ -27,7 +27,7 @@ function useBeforeUnload(enabled, onExit) {
 function useForm({
   initialValues = {},
   initialStep = 0,
-  onSubmit = null,
+  onSubmit,
   scrollToTop = true,
   onExit,
 } = {}) {

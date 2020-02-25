@@ -4,15 +4,15 @@ import { action } from '@storybook/addon-actions/dist/index'
 import { withKnobs } from '@storybook/addon-knobs'
 import Button from '@govuk-react/button'
 
-import Form from '../Form'
 import FieldInput from '../FieldInput'
+import FormStateful from '../FormStateful'
 
 addDecorator(withKnobs)
 
 storiesOf('Forms', module)
   .add('FieldInput - Text', () => (
-    <Form onSubmit={action('onSubmit')}>
-      {(form) => (
+    <FormStateful onSubmit={action('onSubmit')}>
+      {(state) => (
         <>
           <FieldInput
             label="Text"
@@ -22,14 +22,14 @@ storiesOf('Forms', module)
             type="text"
           />
           <Button>Submit</Button>
-          <pre>{JSON.stringify(form, null, 2)}</pre>
+          <pre>{JSON.stringify(state, null, 2)}</pre>
         </>
       )}
-    </Form>
+    </FormStateful>
   ))
   .add('FieldInput - Number', () => (
-    <Form onSubmit={action('onSubmit')}>
-      {(form) => (
+    <FormStateful onSubmit={action('onSubmit')}>
+      {(state) => (
         <>
           <FieldInput
             label="Number"
@@ -39,8 +39,8 @@ storiesOf('Forms', module)
             type="number"
           />
           <Button>Submit</Button>
-          <pre>{JSON.stringify(form, null, 2)}</pre>
+          <pre>{JSON.stringify(state, null, 2)}</pre>
         </>
       )}
-    </Form>
+    </FormStateful>
   ))
