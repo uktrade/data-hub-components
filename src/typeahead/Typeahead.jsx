@@ -13,7 +13,7 @@ const Option = ({ selectProps: { inputValue }, data: { label }, ...props }) => (
 Option.propTypes = comps.Option.propTypes
 
 export const filterOption = ({ label = '' }, query) =>
-  label.toLowerCase().includes(query)
+  label.toLowerCase().includes(query.toLowerCase())
 
 const Typeahead = ({ options, styles, components, error, ...props }) => {
   const customisedProps = {
