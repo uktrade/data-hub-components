@@ -15,6 +15,8 @@ import investmentProjectsCTIFixture from '../__fixtures__/investment_projects/pr
 import investmentProjectsFDIFixture from '../__fixtures__/investment_projects/project_added_fdi'
 import investmentProjectsNonFDIFixture from '../__fixtures__/investment_projects/project_added_non_fdi'
 import orderAddedFixture from '../__fixtures__/omis/order_added'
+import completeReferralFixture from '../__fixtures__/referrals/completeReferral'
+import outstandingReferralFixture from '../__fixtures__/referrals/outstandingReferral'
 
 // Lock the date so moment's relative date doesn't break our deterministic tests.
 MockDate.set(1559750582706)
@@ -240,6 +242,23 @@ describe('Activity', () => {
         .create(
           <Activity activity={hmrcExportersFixture} showDetails={false} />
         )
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('when there is a completed referral', () => {
+    test('should render an complete referral card', () => {
+      const tree = renderer
+        .create(<Activity activity={completeReferralFixture} />)
+        .toJSON()
+      expect(tree).toMatchSnapshot()
+    })
+  })
+  describe('when there is a outstanding referral', () => {
+    test('should render an outstanding referral card', () => {
+      const tree = renderer
+        .create(<Activity activity={outstandingReferralFixture} />)
         .toJSON()
       expect(tree).toMatchSnapshot()
     })

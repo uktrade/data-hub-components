@@ -1,4 +1,5 @@
 import CardUtils from '../CardUtils'
+import completeReferral from '../../../__fixtures__/referrals/completeReferral'
 
 describe('CardUtils.js', () => {
   describe('#canRenderByTypes', () => {
@@ -51,6 +52,29 @@ describe('CardUtils.js', () => {
         subject: 'subject',
         service: 'service',
         startTime: '2019-06-17T15:44:27.298Z',
+      })
+    })
+  })
+  describe('#transformReferral', () => {
+    test('should transform', () => {
+      const actual = CardUtils.transformReferral(completeReferral)
+      expect(actual).toEqual({
+        id:
+          'dit:DataHubCompanyReferral:74755dbd-c394-4c09-885b-1ca90ace5fcf:Announce',
+        startTime: '2020-02-18T15:52:58.713189Z',
+        subject: 'A complete referral',
+        status: 'complete',
+        sender: {
+          name: 'Danny Scott',
+          email: 'smithdonald@yahoo.com',
+          team: 'Team 12',
+        },
+        recipient: {
+          name: 'David Parry',
+          email: 'richardsonlinda@baker.com',
+          team: 'Team 11',
+        },
+        completedOn: '2020-01-27T06:34:16Z',
       })
     })
   })

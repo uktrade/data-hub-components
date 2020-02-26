@@ -1,36 +1,5 @@
 import { get, includes } from 'lodash'
-import { RED, GREEN, BLUE } from 'govuk-colours'
-
-const STATUS = {
-  DRAFT: 'draft',
-  COMPLETE: 'complete',
-  UPCOMING: 'upcoming',
-  INCOMPLETE: 'incomplete',
-  CANCELLED: 'cancelled',
-}
-
-const BADGES = {
-  COMPLETE: {
-    text: 'Interaction',
-    borderColour: GREEN,
-  },
-  UPCOMING: {
-    text: 'Upcoming interaction',
-    borderColour: BLUE,
-  },
-  INCOMPLETE: {
-    text: 'Incomplete interaction',
-    borderColour: BLUE,
-  },
-  CANCELLED: {
-    text: 'Cancelled interaction',
-    borderColour: RED,
-  },
-  SERVICE_DELIVERY: {
-    text: 'Service delivery',
-    borderColour: GREEN,
-  },
-}
+import { STATUS, BADGES } from '../constants'
 
 const getStatus = (activity) => {
   const apiStatus = get(activity, 'object.dit:status')
@@ -58,8 +27,8 @@ export default class InteractionUtils {
     const status = getStatus(activity)
 
     const badge = isServiceDelivery(activity)
-      ? BADGES.SERVICE_DELIVERY
-      : BADGES[status.toUpperCase()]
+      ? BADGES.INTERACTION.SERVICE_DELIVERY
+      : BADGES.INTERACTION[status.toUpperCase()]
 
     const isUpcoming = status === STATUS.UPCOMING
     const typeText = isServiceDelivery(activity)

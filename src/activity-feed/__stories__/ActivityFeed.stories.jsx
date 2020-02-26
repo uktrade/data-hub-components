@@ -20,6 +20,8 @@ import projectAddedFdiFixture from '../__fixtures__/investment_projects/project_
 import projectAddedNonFdiFixture from '../__fixtures__/investment_projects/project_added_non_fdi'
 import projectAddedCtiFixture from '../__fixtures__/investment_projects/project_added_cti'
 import orderAddedFixture from '../__fixtures__/omis/order_added'
+import completeReferralFixture from '../__fixtures__/referrals/completeReferral'
+import outstandingReferralFixture from '../__fixtures__/referrals/outstandingReferral'
 
 addDecorator(withKnobs)
 
@@ -63,13 +65,19 @@ class ActivityFeedDemoApp extends React.Component {
 
     const items = {
       [allActivity.value]: activityFeedFixtures,
-      [myActivity.value]: [interactionFixture],
+      [myActivity.value]: [
+        interactionFixture,
+        completeReferralFixture,
+        outstandingReferralFixture,
+      ],
       [externalActivity.value]: [
         accountsAreDueFixture,
         incorporatedFixture,
         exportOfGoodsFixture,
       ],
       [dataHubActivity.value]: [
+        completeReferralFixture,
+        outstandingReferralFixture,
         interactionFixture,
         investmentProjectFixture,
         serviceDeliveryFixture,

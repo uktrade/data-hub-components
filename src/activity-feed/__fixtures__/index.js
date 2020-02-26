@@ -8,6 +8,8 @@ import projectAddedFdiFixture from './investment_projects/project_added_fdi'
 import projectAddedNonFdiFixture from './investment_projects/project_added_non_fdi'
 import projectAddedCtiFixture from './investment_projects/project_added_cti'
 import orderAddedFixture from './omis/order_added'
+import completeReferralFixture from './referrals/completeReferral'
+import outstandingReferralFixture from './referrals/outstandingReferral'
 
 export default [
   accountsAreDueFixture,
@@ -20,4 +22,6 @@ export default [
   projectAddedNonFdiFixture,
   projectAddedCtiFixture,
   orderAddedFixture,
+  completeReferralFixture,
+  outstandingReferralFixture,
 ]

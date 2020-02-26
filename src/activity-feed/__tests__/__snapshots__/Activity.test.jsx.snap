@@ -7393,6 +7393,791 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
 </div>
 `;
 
+exports[`Activity when there is a completed referral should render an complete referral card 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c5 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c5:link {
+  color: #005ea5;
+}
+
+.c5:visited {
+  color: #4c2c92;
+}
+
+.c5:hover {
+  color: #2b8cc4;
+}
+
+.c5:active {
+  color: #2b8cc4;
+}
+
+.c5:focus {
+  color: #0b0c0c;
+}
+
+.c5:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c7 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
+.c8 {
+  border: 2px solid #006435;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c3 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.c3 > a:link,
+.c3 a:visited,
+.c3 a:hover,
+.c3 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #005ea5;
+}
+
+.c6 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c6 li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: right;
+  display: inline;
+}
+
+.c11 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c11:last-child {
+  padding-right: 0;
+}
+
+.c12 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c12:last-child {
+  padding-right: 0;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  margin-bottom: 10px;
+}
+
+.c9 > tbody > tr > th,
+.c9 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+@media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c7 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 li {
+    display: block;
+  }
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 30px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3 c4"
+        size="MEDIUM"
+      >
+        <a
+          className="c5"
+          href="/referral/74755dbd-c394-4c09-885b-1ca90ace5fcf"
+          muted={false}
+        >
+          A complete referral
+        </a>
+      </h3>
+    </div>
+    <ul
+      className="c6"
+    >
+      <li
+        className="c7"
+      >
+        18 Feb 2020
+      </li>
+      <li
+        className="c7"
+      >
+        <span
+          className="c8"
+        >
+          Completed referral
+        </span>
+      </li>
+    </ul>
+  </div>
+  <table
+    className="c9 c10"
+  >
+    <tbody
+      className=""
+    >
+      <tr
+        className=""
+      >
+        <th
+          className="c11"
+          style={
+            Object {
+              "border": 0,
+              "fontWeight": "normal",
+            }
+          }
+        >
+          Sending adviser
+        </th>
+        <td
+          className="c12"
+          style={
+            Object {
+              "border": 0,
+            }
+          }
+        >
+          Danny Scott
+          , 
+          <a
+            href="mailto:smithdonald@yahoo.com"
+          >
+            smithdonald@yahoo.com
+          </a>
+          , 
+          Team 12
+        </td>
+      </tr>
+      <tr
+        className=""
+      >
+        <th
+          className="c11"
+          style={
+            Object {
+              "border": 0,
+              "fontWeight": "normal",
+            }
+          }
+        >
+          Receiving adviser
+        </th>
+        <td
+          className="c12"
+          style={
+            Object {
+              "border": 0,
+            }
+          }
+        >
+          David Parry
+          , 
+          <a
+            href="mailto:richardsonlinda@baker.com"
+          >
+            richardsonlinda@baker.com
+          </a>
+          , 
+          Team 11
+        </td>
+      </tr>
+      <tr
+        className=""
+      >
+        <th
+          className="c11"
+          style={
+            Object {
+              "border": 0,
+              "fontWeight": "normal",
+            }
+          }
+        >
+          Completed on
+        </th>
+        <td
+          className="c12"
+          style={
+            Object {
+              "border": 0,
+            }
+          }
+        >
+          27 Jan 2020
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Activity when there is a outstanding referral should render an outstanding referral card 1`] = `
+.c0 {
+  border: 1px solid #bfc1c3;
+  padding: 15px;
+}
+
+.c5 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c5:link {
+  color: #005ea5;
+}
+
+.c5:visited {
+  color: #4c2c92;
+}
+
+.c5:hover {
+  color: #2b8cc4;
+}
+
+.c5:active {
+  color: #2b8cc4;
+}
+
+.c5:focus {
+  color: #0b0c0c;
+}
+
+.c5:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+  background-color: #ffbf47;
+}
+
+.c4 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111111112;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.c7 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
+.c8 {
+  border: 2px solid #005ea5;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c3 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.c3 > a:link,
+.c3 a:visited,
+.c3 a:hover,
+.c3 a:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #005ea5;
+}
+
+.c6 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c6 li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: right;
+  display: inline;
+}
+
+.c11 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+  font-weight: 700;
+}
+
+.c11:last-child {
+  padding-right: 0;
+}
+
+.c12 {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid #bfc1c3;
+  text-align: left;
+}
+
+.c12:last-child {
+  padding-right: 0;
+}
+
+.c10 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.c9 {
+  margin-bottom: 10px;
+}
+
+.c9 > tbody > tr > th,
+.c9 td {
+  font-weight: normal;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+@media print {
+  .c5 {
+    font-family: sans-serif;
+  }
+}
+
+@media print {
+  .c5[href^="/"]::after,
+  .c5[href^="http://"]::after,
+  .c5[href^="https://"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    word-wrap: break-word;
+  }
+}
+
+@media print {
+  .c4 {
+    color: #000;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c7 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c7 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c2 {
+    width: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c6 li {
+    display: block;
+  }
+}
+
+@media print {
+  .c10 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c10 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 30px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h3
+        className="c3 c4"
+        size="MEDIUM"
+      >
+        <a
+          className="c5"
+          href="/referral/74755dbd-c394-4c09-885b-1ca90ace5fdf"
+          muted={false}
+        >
+          An outstanding referral
+        </a>
+      </h3>
+    </div>
+    <ul
+      className="c6"
+    >
+      <li
+        className="c7"
+      >
+        15 Feb 2020
+      </li>
+      <li
+        className="c7"
+      >
+        <span
+          className="c8"
+        >
+          Outstanding referral
+        </span>
+      </li>
+    </ul>
+  </div>
+  <table
+    className="c9 c10"
+  >
+    <tbody
+      className=""
+    >
+      <tr
+        className=""
+      >
+        <th
+          className="c11"
+          style={
+            Object {
+              "border": 0,
+              "fontWeight": "normal",
+            }
+          }
+        >
+          Sending adviser
+        </th>
+        <td
+          className="c12"
+          style={
+            Object {
+              "border": 0,
+            }
+          }
+        >
+          Peter Jones
+          , 
+          <a
+            href="mailto:pjones@yahoo.com"
+          >
+            pjones@yahoo.com
+          </a>
+          , 
+          Team 12
+        </td>
+      </tr>
+      <tr
+        className=""
+      >
+        <th
+          className="c11"
+          style={
+            Object {
+              "border": 0,
+              "fontWeight": "normal",
+            }
+          }
+        >
+          Receiving adviser
+        </th>
+        <td
+          className="c12"
+          style={
+            Object {
+              "border": 0,
+            }
+          }
+        >
+          David Parry
+          , 
+          <a
+            href="mailto:richardsonlinda@baker.com"
+          >
+            richardsonlinda@baker.com
+          </a>
+          , 
+          Team 11
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Activity when there is a service delivery should render service delivery activity 1`] = `
 .c0 {
   border: 1px solid #bfc1c3;
