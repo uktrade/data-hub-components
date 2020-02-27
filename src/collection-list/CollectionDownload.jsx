@@ -5,7 +5,7 @@ import pluralize from 'pluralize'
 import { MEDIA_QUERIES } from '@govuk-react/constants'
 import Button from '@govuk-react/button'
 import CollectionHeaderRow from './CollectionHeaderRow'
-import { MAX_ITEMS_TO_DOWNLOAD } from './constants'
+import MAX_ITEMS_TO_DOWNLOAD from './constants'
 
 const StyledInnerText = styled('div')`
   width: 100%;

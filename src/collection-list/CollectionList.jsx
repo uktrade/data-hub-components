@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { DEFAULT_ITEMS_PER_PAGE } from './constants'
 import Pagination from '../pagination/Pagination'
 import CollectionHeader from './CollectionHeader'
 import CollectionDownload from './CollectionDownload'
@@ -16,8 +15,9 @@ function CollectionList({
   onPageClick,
   getPageUrl,
   activePage,
+  itemsPerPage,
 }) {
-  const totalPages = Math.floor(totalItems / DEFAULT_ITEMS_PER_PAGE) + 1
+  const totalPages = Math.ceil(totalItems / itemsPerPage)
 
   return (
     <>
@@ -66,6 +66,7 @@ CollectionList.propTypes = {
   onPageClick: PropTypes.func,
   getPageUrl: PropTypes.func,
   activePage: PropTypes.number,
+  itemsPerPage: PropTypes.number,
 }
 
 CollectionList.defaultProps = {
@@ -75,6 +76,7 @@ CollectionList.defaultProps = {
   onPageClick: null,
   getPageUrl: (page) => `#page-${page}`,
   activePage: 1,
+  itemsPerPage: 10,
 }
 
 export default CollectionList
