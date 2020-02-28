@@ -24,6 +24,7 @@ describe('CollectionItem', () => {
           getPageUrl={getPageUrl}
           onPageClick={onPageClick}
           activePage={2}
+          itemsPerPage={10}
         />
       )
     })

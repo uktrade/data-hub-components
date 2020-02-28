@@ -1,2 +1,3 @@
-export const MAX_ITEMS_TO_DOWNLOAD = 5000
-export const DEFAULT_ITEMS_PER_PAGE = 10
+const MAX_ITEMS_TO_DOWNLOAD = 5000
+
+export default MAX_ITEMS_TO_DOWNLOAD

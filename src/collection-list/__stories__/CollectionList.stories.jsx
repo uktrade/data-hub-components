@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
 import CollectionList from '../CollectionList'
 
-import { DEFAULT_ITEMS_PER_PAGE } from '../constants'
 import profilesFixture from '../__fixtures__/capitalProfiles'
 
 const collectionStories = storiesOf('Collection', module)
@@ -11,8 +10,8 @@ const CollectionWithState = () => {
   const [activePage, setActivePage] = useState(1)
 
   const index = activePage - 1
-  const offset = index * DEFAULT_ITEMS_PER_PAGE
-  const limit = (index + 1) * DEFAULT_ITEMS_PER_PAGE
+  const offset = index * 10
+  const limit = (index + 1) * 10
 
   const items = profilesFixture.slice(offset, limit)
 
