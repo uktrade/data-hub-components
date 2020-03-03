@@ -4,6 +4,8 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.16.0
+        environment:
+          CI: true
     steps:
       - checkout
       - restore_cache:
