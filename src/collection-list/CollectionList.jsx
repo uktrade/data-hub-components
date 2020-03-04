@@ -1,3 +1,6 @@
+/* eslint-disable react/no-array-index-key */
+// this is because there isn't necessarily a unique id to use as the key
+
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -34,9 +37,12 @@ function CollectionList({
       />
 
       {items.map(
-        ({ headingText, headingUrl, subheading, badges, metadata, type }) => (
+        (
+          { headingText, headingUrl, subheading, badges, metadata, type },
+          index
+        ) => (
           <CollectionItem
-            key={headingText + headingUrl}
+            key={index}
             headingUrl={headingUrl}
             headingText={headingText}
             subheading={subheading}
