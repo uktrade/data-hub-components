@@ -33,6 +33,12 @@ describe('CollectionItem', () => {
       expect(wrapper.find(CollectionItem)).toHaveLength(12)
     })
 
+    test('each item should have a key corresponding to its index', () => {
+      wrapper.find(CollectionItem).forEach((item, index) => {
+        expect(item.key()).toEqual(String(index))
+      })
+    })
+
     test('should render the header', () => {
       const header = wrapper.find(CollectionHeader)
       expect(header.exists()).toBe(true)
