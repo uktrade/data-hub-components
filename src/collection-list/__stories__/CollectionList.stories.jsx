@@ -32,3 +32,7 @@ const CollectionWithState = () => {
 }
 
 collectionStories.add('Collection List', () => <CollectionWithState />)
+
+collectionStories.add('Collection List with 0 items', () => (
+  <CollectionList totalItems={0} itemName="results" />
+))

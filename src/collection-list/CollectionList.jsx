@@ -64,8 +64,8 @@ function CollectionList({
 }
 
 CollectionList.propTypes = {
-  totalItems: PropTypes.number.isRequired,
-  itemName: PropTypes.string.isRequired,
+  totalItems: PropTypes.number,
+  itemName: PropTypes.string,
   addItemUrl: PropTypes.string,
   downloadUrl: PropTypes.string,
   items: PropTypes.array,
@@ -76,9 +76,11 @@ CollectionList.propTypes = {
 }
 
 CollectionList.defaultProps = {
+  totalItems: 0,
+  itemName: 'result',
   addItemUrl: null,
   downloadUrl: null,
-  items: null,
+  items: [],
   onPageClick: null,
   getPageUrl: (page) => `#page-${page}`,
   activePage: 1,
