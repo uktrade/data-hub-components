@@ -42,7 +42,7 @@ function CollectionList({
           index
         ) => (
           <CollectionItem
-            key={index}
+            key={[totalItems, activePage, index].join('-')}
             headingUrl={headingUrl}
             headingText={headingText}
             subheading={subheading}
