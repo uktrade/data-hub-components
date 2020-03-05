@@ -13,6 +13,7 @@ describe('CollectionItem', () => {
   const onPageClick = () => {}
 
   describe('when all props are passed', () => {
+    const activePage = 2
     beforeAll(() => {
       wrapper = mount(
         <CollectionList
@@ -23,7 +24,7 @@ describe('CollectionItem', () => {
           downloadUrl="http://example.com"
           getPageUrl={getPageUrl}
           onPageClick={onPageClick}
-          activePage={2}
+          activePage={activePage}
           itemsPerPage={10}
         />
       )
@@ -33,9 +34,11 @@ describe('CollectionItem', () => {
       expect(wrapper.find(CollectionItem)).toHaveLength(12)
     })
 
-    test('each item should have a key corresponding to its index', () => {
+    test('each item should have a unique key created', () => {
       wrapper.find(CollectionItem).forEach((item, index) => {
-        expect(item.key()).toEqual(String(index))
+        expect(item.key()).toEqual(
+          [profilesFixture.length, activePage, index].join('-')
+        )
       })
     })
 
