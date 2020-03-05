@@ -7,7 +7,7 @@ import CollectionHeader from '../CollectionHeader'
 import CollectionItem from '../CollectionItem'
 import CollectionDownload from '../CollectionDownload'
 
-describe('CollectionItem', () => {
+describe('CollectionList', () => {
   let wrapper
   const getPageUrl = (page) => `#page-${page}`
   const onPageClick = () => {}
@@ -87,6 +87,16 @@ describe('CollectionItem', () => {
 
     test('should use the default "getPageUrl" prop', () => {
       expect(wrapper.find(Pagination).prop('getPageUrl')).not.toBeNull()
+    })
+  })
+
+  describe('when no items are passed', () => {
+    beforeAll(() => {
+      wrapper = mount(<CollectionList />)
+    })
+
+    test('should not render pagination', () => {
+      expect(wrapper.find(Pagination).isEmptyRender()).toBe(true)
     })
   })
 })
