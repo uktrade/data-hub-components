@@ -63,6 +63,7 @@ export { default as FieldDnbCompany } from './forms/elements/FieldDnbCompany'
 export { default as FieldInput } from './forms/elements/FieldInput'
 export { default as FieldRadios } from './forms/elements/FieldRadios'
 export { default as FieldSelect } from './forms/elements/FieldSelect'
+export { default as FieldTextarea } from './forms/elements/FieldTextarea'
 export { default as FieldUneditable } from './forms/elements/FieldUneditable'
 
 // Metadata
@@ -87,6 +88,7 @@ export { default as SummaryTable } from './summary-table/SummaryTable'
 // Utils
 export { default as DateUtils } from './utils/DateUtils'
 export { default as NumberUtils } from './utils/NumberUtils'
+
 // Typeahead
 export { default as Typeahead } from './typeahead/Typeahead'
 export { default as SmallTypeahead } from './typeahead/SmallTypeahead'
