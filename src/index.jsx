@@ -64,6 +64,7 @@ export { default as FieldInput } from './forms/elements/FieldInput'
 export { default as FieldRadios } from './forms/elements/FieldRadios'
 export { default as FieldSelect } from './forms/elements/FieldSelect'
 export { default as FieldTextarea } from './forms/elements/FieldTextarea'
+export { default as FieldTypeahead } from './forms/elements/FieldTypeahead'
 export { default as FieldUneditable } from './forms/elements/FieldUneditable'
 
 // Metadata
