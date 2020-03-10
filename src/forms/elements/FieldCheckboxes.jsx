@@ -76,7 +76,7 @@ FieldCheckboxes.propTypes = {
   required: PropTypes.string,
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  hint: PropTypes.string,
+  hint: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,

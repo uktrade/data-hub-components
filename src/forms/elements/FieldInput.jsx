@@ -69,7 +69,7 @@ FieldInput.propTypes = {
   required: PropTypes.string,
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  hint: PropTypes.string,
+  hint: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
 }
 
 FieldInput.defaultProps = {

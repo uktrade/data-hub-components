@@ -148,7 +148,7 @@ FieldAddress.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  hint: PropTypes.string,
+  hint: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   country: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
