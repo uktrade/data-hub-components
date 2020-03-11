@@ -1,11 +1,10 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { spacing } from '@govuk-react/lib'
 import { BLUE } from 'govuk-colours'
 import { FOCUSABLE, SPACING } from '@govuk-react/constants'
 
-const StyledStatusMessage = styled('div')`
+const StatusMessage = styled('div')`
   border: ${({ colour }) => `${SPACING.SCALE_1} solid ${colour}`};
   color: ${({ colour }) => colour};
   font-weight: bold;
@@ -14,10 +13,6 @@ const StyledStatusMessage = styled('div')`
   ${spacing.withWhiteSpace({ marginBottom: 6 })};
   ${FOCUSABLE};
 `
-
-const StatusMessage = ({ colour, children }) => {
-  return <StyledStatusMessage colour={colour}>{children}</StyledStatusMessage>
-}
 
 StatusMessage.propTypes = {
   colour: PropTypes.string,
