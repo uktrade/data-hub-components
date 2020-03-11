@@ -160,6 +160,21 @@ describe('FieldWrapper', () => {
     })
   })
 
+  describe('When the hint prop contains JSX', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <FieldWrapper name="testName" hint={<strong>Some JSX</strong>}>
+          Test hint
+        </FieldWrapper>
+      )
+    })
+
+    test('should render the hint as HTML', () => {
+      expect(wrapper.find(HintText).text()).toEqual('Some JSX')
+      expect(wrapper.find(HintText).find('strong').length).toEqual(1)
+    })
+  })
+
   describe('When the label and error props are specified', () => {
     beforeAll(() => {
       wrapper = mount(
