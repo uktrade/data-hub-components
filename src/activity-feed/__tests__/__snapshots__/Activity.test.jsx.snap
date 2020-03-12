@@ -6,7 +6,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,7 +23,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -32,10 +32,10 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -100,7 +100,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 .c6:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6:visited {
@@ -120,27 +120,27 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 .c6:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -163,12 +163,12 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   margin-bottom: 5px;
 }
 
-.c3 {
+.c4 {
   display: inline-block;
   font-weight: normal;
   color: white;
   padding: 2px 5px;
-  background-color: #005ea5;
+  background-color: #1d70b8;
   margin-bottom: 10px;
 }
 
@@ -197,7 +197,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 .c5 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c7 {
@@ -234,7 +234,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -248,12 +248,12 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -271,27 +271,27 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -313,33 +313,33 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -381,27 +381,27 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -422,7 +422,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
         New Order (OMIS) added
       </h3>
       <h3
-        className="c5 c4"
+        className="c3 c5"
         size="MEDIUM"
       >
         <a
@@ -625,7 +625,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -642,7 +642,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -651,10 +651,10 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -719,7 +719,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 .c6:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6:visited {
@@ -739,27 +739,27 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 .c6:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -782,12 +782,12 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   margin-bottom: 5px;
 }
 
-.c3 {
+.c4 {
   display: inline-block;
   font-weight: normal;
   color: white;
   padding: 2px 5px;
-  background-color: #005ea5;
+  background-color: #1d70b8;
   margin-bottom: 10px;
 }
 
@@ -816,7 +816,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 .c5 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c7 {
@@ -853,7 +853,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -867,12 +867,12 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -890,27 +890,27 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -932,33 +932,33 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -1000,27 +1000,27 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -1041,7 +1041,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
         New investment project added - Commitment to invest
       </h3>
       <h3
-        className="c5 c4"
+        className="c3 c5"
         size="MEDIUM"
       >
         <a
@@ -1200,7 +1200,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1217,7 +1217,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -1226,10 +1226,10 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -1294,7 +1294,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 .c6:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6:visited {
@@ -1314,27 +1314,27 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 .c6:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1357,12 +1357,12 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   margin-bottom: 5px;
 }
 
-.c3 {
+.c4 {
   display: inline-block;
   font-weight: normal;
   color: white;
   padding: 2px 5px;
-  background-color: #005ea5;
+  background-color: #1d70b8;
   margin-bottom: 10px;
 }
 
@@ -1391,7 +1391,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 .c5 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c7 {
@@ -1428,7 +1428,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1442,12 +1442,12 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -1465,27 +1465,27 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -1507,33 +1507,33 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -1575,27 +1575,27 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -1616,7 +1616,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
         New investment project added - FDI
       </h3>
       <h3
-        className="c5 c4"
+        className="c3 c5"
         size="MEDIUM"
       >
         <a
@@ -1909,7 +1909,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1926,7 +1926,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -1935,10 +1935,10 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -2003,7 +2003,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 .c6:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6:visited {
@@ -2023,27 +2023,27 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 .c6:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -2066,12 +2066,12 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   margin-bottom: 5px;
 }
 
-.c3 {
+.c4 {
   display: inline-block;
   font-weight: normal;
   color: white;
   padding: 2px 5px;
-  background-color: #005ea5;
+  background-color: #1d70b8;
   margin-bottom: 10px;
 }
 
@@ -2100,7 +2100,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 .c5 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c7 {
@@ -2137,7 +2137,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2151,12 +2151,12 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -2174,27 +2174,27 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -2216,33 +2216,33 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -2284,27 +2284,27 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -2325,7 +2325,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
         New investment project added - Non-FDI
       </h3>
       <h3
-        className="c5 c4"
+        className="c3 c5"
         size="MEDIUM"
       >
         <a
@@ -2528,7 +2528,7 @@ exports[`Activity when the interaction does not have a service should render int
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2545,7 +2545,7 @@ exports[`Activity when the interaction does not have a service should render int
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -2554,10 +2554,10 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -2622,7 +2622,7 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -2642,27 +2642,27 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -2707,18 +2707,18 @@ exports[`Activity when the interaction does not have a service should render int
   width: 100%;
 }
 
-.c3 {
+.c4 {
   font-weight: normal;
   font-size: 24px;
 }
 
-.c3 > a:link,
-.c3 a:visited,
-.c3 a:hover,
-.c3 a:active {
+.c4 > a:link,
+.c4 a:visited,
+.c4 a:hover,
+.c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -2755,7 +2755,7 @@ exports[`Activity when the interaction does not have a service should render int
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2769,12 +2769,12 @@ exports[`Activity when the interaction does not have a service should render int
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -2788,27 +2788,27 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -2830,33 +2830,33 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -2886,7 +2886,7 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 @media only screen and (min-width:641px) {
-  .c3 {
+  .c4 {
     margin-bottom: 30px;
   }
 }
@@ -2898,27 +2898,27 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -3060,7 +3060,7 @@ exports[`Activity when the interaction is a draft and archived should render int
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3077,7 +3077,7 @@ exports[`Activity when the interaction is a draft and archived should render int
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -3086,10 +3086,10 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -3154,7 +3154,7 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -3174,27 +3174,27 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -3218,7 +3218,7 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 .c8 {
-  border: 2px solid #b10e1e;
+  border: 2px solid #d4351c;
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
@@ -3239,18 +3239,18 @@ exports[`Activity when the interaction is a draft and archived should render int
   width: 100%;
 }
 
-.c3 {
+.c4 {
   font-weight: normal;
   font-size: 24px;
 }
 
-.c3 > a:link,
-.c3 a:visited,
-.c3 a:hover,
-.c3 a:active {
+.c4 > a:link,
+.c4 a:visited,
+.c4 a:hover,
+.c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -3287,7 +3287,7 @@ exports[`Activity when the interaction is a draft and archived should render int
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3301,12 +3301,12 @@ exports[`Activity when the interaction is a draft and archived should render int
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -3324,27 +3324,27 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -3366,33 +3366,33 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -3422,7 +3422,7 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 @media only screen and (min-width:641px) {
-  .c3 {
+  .c4 {
     margin-bottom: 30px;
   }
 }
@@ -3434,27 +3434,27 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -3715,7 +3715,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3732,7 +3732,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -3741,10 +3741,10 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -3809,7 +3809,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -3829,27 +3829,27 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -3873,7 +3873,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 .c8 {
-  border: 2px solid #005ea5;
+  border: 2px solid #1d70b8;
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
@@ -3894,18 +3894,18 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   width: 100%;
 }
 
-.c3 {
+.c4 {
   font-weight: normal;
   font-size: 24px;
 }
 
-.c3 > a:link,
-.c3 a:visited,
-.c3 a:hover,
-.c3 a:active {
+.c4 > a:link,
+.c4 a:visited,
+.c4 a:hover,
+.c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -3942,7 +3942,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3956,12 +3956,12 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -3979,27 +3979,27 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -4021,33 +4021,33 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -4077,7 +4077,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 @media only screen and (min-width:641px) {
-  .c3 {
+  .c4 {
     margin-bottom: 30px;
   }
 }
@@ -4089,27 +4089,27 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -4370,7 +4370,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4387,7 +4387,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -4396,10 +4396,10 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -4464,7 +4464,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -4484,27 +4484,27 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -4528,7 +4528,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 .c8 {
-  border: 2px solid #005ea5;
+  border: 2px solid #1d70b8;
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
@@ -4549,18 +4549,18 @@ exports[`Activity when the interaction is a draft in the past should render inte
   width: 100%;
 }
 
-.c3 {
+.c4 {
   font-weight: normal;
   font-size: 24px;
 }
 
-.c3 > a:link,
-.c3 a:visited,
-.c3 a:hover,
-.c3 a:active {
+.c4 > a:link,
+.c4 a:visited,
+.c4 a:hover,
+.c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -4597,7 +4597,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4611,12 +4611,12 @@ exports[`Activity when the interaction is a draft in the past should render inte
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -4634,27 +4634,27 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -4676,33 +4676,33 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -4732,7 +4732,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 @media only screen and (min-width:641px) {
-  .c3 {
+  .c4 {
     margin-bottom: 30px;
   }
 }
@@ -4744,27 +4744,27 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -5025,7 +5025,7 @@ exports[`Activity when the interaction is complete should render interaction act
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5042,7 +5042,7 @@ exports[`Activity when the interaction is complete should render interaction act
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -5051,10 +5051,10 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -5119,7 +5119,7 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -5139,27 +5139,27 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5204,18 +5204,18 @@ exports[`Activity when the interaction is complete should render interaction act
   width: 100%;
 }
 
-.c3 {
+.c4 {
   font-weight: normal;
   font-size: 24px;
 }
 
-.c3 > a:link,
-.c3 a:visited,
-.c3 a:hover,
-.c3 a:active {
+.c4 > a:link,
+.c4 a:visited,
+.c4 a:hover,
+.c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -5252,7 +5252,7 @@ exports[`Activity when the interaction is complete should render interaction act
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5266,12 +5266,12 @@ exports[`Activity when the interaction is complete should render interaction act
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -5289,27 +5289,27 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -5331,33 +5331,33 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -5387,7 +5387,7 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 @media only screen and (min-width:641px) {
-  .c3 {
+  .c4 {
     margin-bottom: 30px;
   }
 }
@@ -5399,27 +5399,27 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -5680,7 +5680,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5697,7 +5697,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -5706,10 +5706,10 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -5774,7 +5774,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 .c18:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c18:visited {
@@ -5794,27 +5794,27 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 .c18:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5837,7 +5837,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
   margin-bottom: 5px;
 }
 
-.c3 {
+.c4 {
   display: inline-block;
   font-weight: normal;
   color: white;
@@ -5871,7 +5871,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
 .c6 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5 {
@@ -5915,7 +5915,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5929,12 +5929,12 @@ exports[`Activity when there is a Companies House Accounts record should render 
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -5943,27 +5943,27 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -5985,33 +5985,33 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -6053,27 +6053,27 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -6099,7 +6099,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
         Accounts records
       </span>
       <h3
-        className="c6 c4"
+        className="c3 c6"
         size="MEDIUM"
       >
         Company officially incorporated in Companies House.
@@ -6281,7 +6281,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6298,7 +6298,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -6307,10 +6307,10 @@ exports[`Activity when there is a Companies House Company incorporation record s
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -6368,22 +6368,22 @@ exports[`Activity when there is a Companies House Company incorporation record s
   margin-bottom: 0;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -6406,7 +6406,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
   margin-bottom: 5px;
 }
 
-.c3 {
+.c4 {
   display: inline-block;
   font-weight: normal;
   color: white;
@@ -6440,7 +6440,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
 .c6 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5 {
@@ -6484,7 +6484,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6498,12 +6498,12 @@ exports[`Activity when there is a Companies House Company incorporation record s
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -6521,59 +6521,59 @@ exports[`Activity when there is a Companies House Company incorporation record s
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c10 {
-    margin-bottom: 30px;
   }
 }
 
 @media only screen and (min-width:641px) {
   .c9 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -6615,27 +6615,27 @@ exports[`Activity when there is a Companies House Company incorporation record s
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -6661,7 +6661,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
         Company records
       </span>
       <h3
-        className="c6 c4"
+        className="c3 c6"
         size="MEDIUM"
       >
         SULTRAX officially did action number 10.
@@ -6905,7 +6905,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6922,7 +6922,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -6931,10 +6931,10 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -6992,22 +6992,22 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   margin-bottom: 0;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -7030,7 +7030,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   margin-bottom: 5px;
 }
 
-.c3 {
+.c4 {
   display: inline-block;
   font-weight: normal;
   color: white;
@@ -7064,7 +7064,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
 .c6 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5 {
@@ -7108,7 +7108,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7122,12 +7122,12 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -7145,59 +7145,59 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c10 {
-    margin-bottom: 30px;
   }
 }
 
 @media only screen and (min-width:641px) {
   .c9 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -7239,27 +7239,27 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -7285,7 +7285,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
         Exporters records
       </span>
       <h3
-        className="c6 c4"
+        className="c3 c6"
         size="MEDIUM"
       >
         The Water Company officially did action number 5.
@@ -7406,7 +7406,7 @@ exports[`Activity when there is a completed referral should render an complete r
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -7426,12 +7426,12 @@ exports[`Activity when there is a completed referral should render an complete r
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -7476,18 +7476,18 @@ exports[`Activity when there is a completed referral should render an complete r
   width: 100%;
 }
 
-.c3 {
+.c4 {
   font-weight: normal;
   font-size: 24px;
 }
 
-.c3 > a:link,
-.c3 a:visited,
-.c3 a:hover,
-.c3 a:active {
+.c4 > a:link,
+.c4 a:visited,
+.c4 a:hover,
+.c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -7524,7 +7524,7 @@ exports[`Activity when there is a completed referral should render an complete r
   padding-right: 0;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7538,12 +7538,12 @@ exports[`Activity when there is a completed referral should render an complete r
   margin-bottom: 20px;
 }
 
-.c9 {
+.c10 {
   margin-bottom: 10px;
 }
 
-.c9 > tbody > tr > th,
-.c9 td {
+.c10 > tbody > tr > th,
+.c10 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -7568,27 +7568,27 @@ exports[`Activity when there is a completed referral should render an complete r
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -7618,7 +7618,7 @@ exports[`Activity when there is a completed referral should render an complete r
 }
 
 @media only screen and (min-width:641px) {
-  .c3 {
+  .c4 {
     margin-bottom: 30px;
   }
 }
@@ -7630,27 +7630,27 @@ exports[`Activity when there is a completed referral should render an complete r
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -7811,7 +7811,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -7831,12 +7831,12 @@ exports[`Activity when there is a outstanding referral should render an outstand
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -7860,7 +7860,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
 }
 
 .c8 {
-  border: 2px solid #005ea5;
+  border: 2px solid #1d70b8;
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
@@ -7881,18 +7881,18 @@ exports[`Activity when there is a outstanding referral should render an outstand
   width: 100%;
 }
 
-.c3 {
+.c4 {
   font-weight: normal;
   font-size: 24px;
 }
 
-.c3 > a:link,
-.c3 a:visited,
-.c3 a:hover,
-.c3 a:active {
+.c4 > a:link,
+.c4 a:visited,
+.c4 a:hover,
+.c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -7929,7 +7929,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
   padding-right: 0;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7943,12 +7943,12 @@ exports[`Activity when there is a outstanding referral should render an outstand
   margin-bottom: 20px;
 }
 
-.c9 {
+.c10 {
   margin-bottom: 10px;
 }
 
-.c9 > tbody > tr > th,
-.c9 td {
+.c10 > tbody > tr > th,
+.c10 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -7973,27 +7973,27 @@ exports[`Activity when there is a outstanding referral should render an outstand
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -8023,7 +8023,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
 }
 
 @media only screen and (min-width:641px) {
-  .c3 {
+  .c4 {
     margin-bottom: 30px;
   }
 }
@@ -8035,27 +8035,27 @@ exports[`Activity when there is a outstanding referral should render an outstand
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -8184,7 +8184,7 @@ exports[`Activity when there is a service delivery should render service deliver
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8201,7 +8201,7 @@ exports[`Activity when there is a service delivery should render service deliver
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -8210,10 +8210,10 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -8278,7 +8278,7 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -8298,27 +8298,27 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8363,18 +8363,18 @@ exports[`Activity when there is a service delivery should render service deliver
   width: 100%;
 }
 
-.c3 {
+.c4 {
   font-weight: normal;
   font-size: 24px;
 }
 
-.c3 > a:link,
-.c3 a:visited,
-.c3 a:hover,
-.c3 a:active {
+.c4 > a:link,
+.c4 a:visited,
+.c4 a:hover,
+.c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -8411,7 +8411,7 @@ exports[`Activity when there is a service delivery should render service deliver
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8425,12 +8425,12 @@ exports[`Activity when there is a service delivery should render service deliver
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -8448,27 +8448,27 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -8490,33 +8490,33 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -8546,7 +8546,7 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 @media only screen and (min-width:641px) {
-  .c3 {
+  .c4 {
     margin-bottom: 30px;
   }
 }
@@ -8558,27 +8558,27 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -8778,7 +8778,7 @@ exports[`Activity when there is an interaction should render interaction activit
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8795,7 +8795,7 @@ exports[`Activity when there is an interaction should render interaction activit
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -8804,10 +8804,10 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -8872,7 +8872,7 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -8892,27 +8892,27 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8957,18 +8957,18 @@ exports[`Activity when there is an interaction should render interaction activit
   width: 100%;
 }
 
-.c3 {
+.c4 {
   font-weight: normal;
   font-size: 24px;
 }
 
-.c3 > a:link,
-.c3 a:visited,
-.c3 a:hover,
-.c3 a:active {
+.c4 > a:link,
+.c4 a:visited,
+.c4 a:hover,
+.c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -9005,7 +9005,7 @@ exports[`Activity when there is an interaction should render interaction activit
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9019,12 +9019,12 @@ exports[`Activity when there is an interaction should render interaction activit
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -9042,27 +9042,27 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -9084,33 +9084,33 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -9140,7 +9140,7 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 @media only screen and (min-width:641px) {
-  .c3 {
+  .c4 {
     margin-bottom: 30px;
   }
 }
@@ -9152,27 +9152,27 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }
@@ -9433,7 +9433,7 @@ exports[`Activity when there is an interaction without any people involved shoul
   padding: 15px;
 }
 
-.c10 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9450,7 +9450,7 @@ exports[`Activity when there is an interaction without any people involved shoul
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -9459,10 +9459,10 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 .c11:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c11::-webkit-details-marker {
@@ -9527,7 +9527,7 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -9547,27 +9547,27 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
-.c4 {
+.c3 {
   color: #0b0c0c;
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -9612,18 +9612,18 @@ exports[`Activity when there is an interaction without any people involved shoul
   width: 100%;
 }
 
-.c3 {
+.c4 {
   font-weight: normal;
   font-size: 24px;
 }
 
-.c3 > a:link,
-.c3 a:visited,
-.c3 a:hover,
-.c3 a:active {
+.c4 > a:link,
+.c4 a:visited,
+.c4 a:hover,
+.c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -9660,7 +9660,7 @@ exports[`Activity when there is an interaction without any people involved shoul
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9674,12 +9674,12 @@ exports[`Activity when there is an interaction without any people involved shoul
   margin-bottom: 20px;
 }
 
-.c14 {
+.c15 {
   margin-bottom: 10px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 > tbody > tr > th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -9693,27 +9693,27 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 @media print {
-  .c10 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c9 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c9 {
     margin-bottom: 30px;
   }
 }
@@ -9735,33 +9735,33 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     color: #000;
   }
 }
 
 @media print {
-  .c4 {
+  .c3 {
     font-size: 18px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c3 {
     margin-bottom: 20px;
   }
 }
@@ -9791,7 +9791,7 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 @media only screen and (min-width:641px) {
-  .c3 {
+  .c4 {
     margin-bottom: 30px;
   }
 }
@@ -9803,27 +9803,27 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 @media print {
-  .c15 {
+  .c14 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c14 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c14 {
     margin-bottom: 30px;
   }
 }

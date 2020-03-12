@@ -1,9 +1,8 @@
-import completeReferral from '../../__fixtures__/referrals/completeReferral'
 import outstandingReferral from '../../__fixtures__/referrals/outstandingReferral'
-
+import completeReferral from '../../__fixtures__/referrals/completeReferral.json'
 import ReferralUtils from '../ReferralUtils'
 
-describe('referralUtils.js', () => {
+describe('ReferralUtils.js', () => {
   describe('#getStatus', () => {
     describe('when the referral is completed', () => {
       test('should set the badge as "Completed referral"', () => {
@@ -19,8 +18,31 @@ describe('referralUtils.js', () => {
         const status = ReferralUtils.getStatus(outstandingReferral)
         expect(status).toEqual({
           text: 'Outstanding referral',
-          borderColour: '#005ea5',
+          borderColour: '#1d70b8',
         })
+      })
+    })
+  })
+  describe('#transformReferral', () => {
+    test('should transform', () => {
+      const actual = ReferralUtils.transformReferral(completeReferral)
+      expect(actual).toEqual({
+        id:
+          'dit:DataHubCompanyReferral:74755dbd-c394-4c09-885b-1ca90ace5fcf:Announce',
+        startTime: '2020-02-18T15:52:58.713189Z',
+        subject: 'A complete referral',
+        status: 'complete',
+        sender: {
+          name: 'Danny Scott',
+          email: 'smithdonald@yahoo.com',
+          team: 'Team 12',
+        },
+        recipient: {
+          name: 'David Parry',
+          email: 'richardsonlinda@baker.com',
+          team: 'Team 11',
+        },
+        completedOn: '2020-01-27T06:34:16Z',
       })
     })
   })

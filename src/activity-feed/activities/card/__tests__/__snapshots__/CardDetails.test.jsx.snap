@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardDetails when link provided should render the card 1`] = `
-.c1 {
+.c0 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,7 +18,7 @@ exports[`CardDetails when link provided should render the card 1`] = `
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -27,10 +27,10 @@ exports[`CardDetails when link provided should render the card 1`] = `
 }
 
 .c2:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c2::-webkit-details-marker {
@@ -95,7 +95,7 @@ exports[`CardDetails when link provided should render the card 1`] = `
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -115,48 +115,48 @@ exports[`CardDetails when link provided should render the card 1`] = `
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c0 {
+.c1 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c0 > div {
+.c1 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c0 > div > a {
+.c1 > div > a {
   padding: 20px 0 10px 10px;
 }
 
 @media print {
-  .c1 {
+  .c0 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c1 {
+  .c0 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     margin-bottom: 30px;
   }
 }
@@ -178,7 +178,7 @@ exports[`CardDetails when link provided should render the card 1`] = `
 }
 
 @media only screen and (min-width:641px) {
-  .c0 {
+  .c1 {
     margin-top: -15px;
   }
 }
@@ -214,7 +214,7 @@ exports[`CardDetails when link provided should render the card 1`] = `
 `;
 
 exports[`CardDetails when no link provided should still render the card 1`] = `
-.c1 {
+.c0 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -231,7 +231,7 @@ exports[`CardDetails when no link provided should still render the card 1`] = `
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -240,10 +240,10 @@ exports[`CardDetails when no link provided should still render the card 1`] = `
 }
 
 .c2:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c2::-webkit-details-marker {
@@ -301,49 +301,49 @@ exports[`CardDetails when no link provided should still render the card 1`] = `
   margin-bottom: 0;
 }
 
-.c0 {
+.c1 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c0 > div {
+.c1 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c0 > div > a {
+.c1 > div > a {
   padding: 20px 0 10px 10px;
 }
 
 @media print {
-  .c1 {
+  .c0 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c1 {
+  .c0 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     margin-bottom: 30px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c0 {
+  .c1 {
     margin-top: -15px;
   }
 }
@@ -372,7 +372,7 @@ exports[`CardDetails when no link provided should still render the card 1`] = `
 `;
 
 exports[`CardDetails when the details for all activities are hidden should open the card details 1`] = `
-.c1 {
+.c0 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -389,7 +389,7 @@ exports[`CardDetails when the details for all activities are hidden should open 
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -398,10 +398,10 @@ exports[`CardDetails when the details for all activities are hidden should open 
 }
 
 .c2:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c2::-webkit-details-marker {
@@ -466,7 +466,7 @@ exports[`CardDetails when the details for all activities are hidden should open 
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -486,48 +486,48 @@ exports[`CardDetails when the details for all activities are hidden should open 
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c0 {
+.c1 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c0 > div {
+.c1 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c0 > div > a {
+.c1 > div > a {
   padding: 20px 0 10px 10px;
 }
 
 @media print {
-  .c1 {
+  .c0 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c1 {
+  .c0 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     margin-bottom: 30px;
   }
 }
@@ -549,7 +549,7 @@ exports[`CardDetails when the details for all activities are hidden should open 
 }
 
 @media only screen and (min-width:641px) {
-  .c0 {
+  .c1 {
     margin-top: -15px;
   }
 }
@@ -585,7 +585,7 @@ exports[`CardDetails when the details for all activities are hidden should open 
 `;
 
 exports[`CardDetails when the details for all activities are shown should open the card details 1`] = `
-.c1 {
+.c0 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -602,7 +602,7 @@ exports[`CardDetails when the details for all activities are shown should open t
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -611,10 +611,10 @@ exports[`CardDetails when the details for all activities are shown should open t
 }
 
 .c2:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c2::-webkit-details-marker {
@@ -679,7 +679,7 @@ exports[`CardDetails when the details for all activities are shown should open t
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -699,48 +699,48 @@ exports[`CardDetails when the details for all activities are shown should open t
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
-.c0 {
+.c1 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c0 > div {
+.c1 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c0 > div > a {
+.c1 > div > a {
   padding: 20px 0 10px 10px;
 }
 
 @media print {
-  .c1 {
+  .c0 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c1 {
+  .c0 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     margin-bottom: 30px;
   }
 }
@@ -762,7 +762,7 @@ exports[`CardDetails when the details for all activities are shown should open t
 }
 
 @media only screen and (min-width:641px) {
-  .c0 {
+  .c1 {
     margin-top: -15px;
   }
 }
