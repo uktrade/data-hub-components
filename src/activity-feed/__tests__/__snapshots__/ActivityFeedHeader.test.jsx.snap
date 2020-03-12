@@ -1,6 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActivityFeedHeader renders header with all props defined 1`] = `
+.c2 {
+  color: #0b0c0c;
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.0416666666666667;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.c0 > div {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.c1 {
+  margin-top: 5px;
+}
+
+.c1 > h2 {
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.c3 {
+  text-align: right;
+  min-width: 60%;
+}
+
+.c3 > button {
+  margin-bottom: 0;
+}
+
 .c4 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -93,89 +143,9 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
   max-width: 15px;
 }
 
-.c2 {
-  color: #0b0c0c;
-  font-family: "nta",Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.0416666666666667;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  border-bottom: 2px solid #000;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-}
-
-.c0 > div {
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.c1 {
-  margin-top: 5px;
-}
-
-.c1 > h2 {
-  font-weight: normal;
-  font-size: 28px;
-  margin-bottom: 0;
-}
-
-.c3 {
-  text-align: right;
-}
-
-.c3 > button {
-  margin-bottom: 0;
-}
-
 .c5 {
   margin-bottom: 0;
-}
-
-@media print {
-  .c4 {
-    font-size: 14px;
-    line-height: 19px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c4 {
-    font-size: 19px;
-    line-height: 19px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c4 {
-    width: auto;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c4 svg {
-    margin-left: 10px;
-  }
-}
-
-@media only screen and (min-width:641px) {
-  .c4 {
-    margin-bottom: 32px;
-  }
+  margin-top: 15px;
 }
 
 @media print {
@@ -211,6 +181,45 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+  }
+}
+
+@media print {
+  .c4 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 svg {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c4 {
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c5 {
+    margin-left: 15px;
+    margin-top: 0;
   }
 }
 
@@ -283,14 +292,6 @@ exports[`ActivityFeedHeader renders header with one activity 1`] = `
   margin-bottom: 0;
 }
 
-.c3 {
-  text-align: right;
-}
-
-.c3 > button {
-  margin-bottom: 0;
-}
-
 @media print {
   .c2 {
     color: #000;
@@ -340,9 +341,6 @@ exports[`ActivityFeedHeader renders header with one activity 1`] = `
       1 activity
     </h2>
   </div>
-  <div
-    className="c3"
-  />
 </div>
 `;
 
@@ -385,14 +383,6 @@ exports[`ActivityFeedHeader renders header without props 1`] = `
 .c1 > h2 {
   font-weight: normal;
   font-size: 28px;
-  margin-bottom: 0;
-}
-
-.c3 {
-  text-align: right;
-}
-
-.c3 > button {
   margin-bottom: 0;
 }
 
@@ -445,8 +435,5 @@ exports[`ActivityFeedHeader renders header without props 1`] = `
       Activities
     </h2>
   </div>
-  <div
-    className="c3"
-  />
 </div>
 `;

@@ -5,6 +5,7 @@ import Select from '@govuk-react/select'
 import { act } from 'react-dom/test-utils'
 
 import ActivityFeedApp from '../ActivityFeedApp'
+import ActivityFeedAction from '../ActivityFeedAction'
 import SelectFilter from '../filters/SelectFilter'
 import esResults from '../__fixtures__/activity-feed-from-es'
 import { ACTIVITY_TYPE_FILTERS } from '../constants'
@@ -14,13 +15,21 @@ describe('ActivityFeedApp', () => {
   const companyId = '0f5216e0-849f-11e6-ae22-56b6b6499611'
   const basePath = 'http://localhost:3000'
   const endpoint = `/companies/${companyId}/activity-feed/data`
-  const contentLink = `/companies/${companyId}/interactions/create`
   const query = {
     from: 0,
     size: 20,
     activityTypeFilter: 'dataHubActivity',
     showDnbHierarchy: false,
   }
+  const ActivityFeedButtons = (
+    <>
+      <ActivityFeedAction text="Refer this company" link="/referral" />
+      <ActivityFeedAction
+        text="Add interaction"
+        link="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create"
+      />
+    </>
+  )
 
   let wrapper
   let scope
@@ -36,8 +45,7 @@ describe('ActivityFeedApp', () => {
         <ActivityFeedApp
           activityTypeFilter="dataHubActivity"
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
-          contentLink={contentLink}
-          contentText="Add interaction"
+          actions={ActivityFeedButtons}
           apiEndpoint={`${basePath}${endpoint}`}
           isGlobalUltimateFlagEnabled={true}
           isTypeFilterFlagEnabled={true}
@@ -89,8 +97,7 @@ describe('ActivityFeedApp', () => {
         <ActivityFeedApp
           activityTypeFilter="dataHubActivity"
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
-          contentLink={contentLink}
-          contentText="Add interaction"
+          actions={ActivityFeedButtons}
           apiEndpoint={`${basePath}${endpoint}`}
           isGlobalUltimateFlagEnabled={true}
           isTypeFilterFlagEnabled={true}
@@ -136,8 +143,7 @@ describe('ActivityFeedApp', () => {
         <ActivityFeedApp
           activityTypeFilter="dataHubActivity"
           activityTypeFilters={ACTIVITY_TYPE_FILTERS}
-          contentLink={contentLink}
-          contentText="Add interaction"
+          actions={ActivityFeedButtons}
           apiEndpoint={`${basePath}${endpoint}`}
           isGlobalUltimateFlagEnabled={true}
           isTypeFilterFlagEnabled={true}

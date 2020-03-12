@@ -10,8 +10,7 @@ import ActivityFeed from './ActivityFeed'
  */
 export default class ActivityFeedApp extends React.Component {
   static propTypes = {
-    contentLink: PropTypes.string,
-    contentText: PropTypes.string,
+    actions: PropTypes.node,
     activityTypeFilter: PropTypes.string,
     activityTypeFilters: PropTypes.object,
     apiEndpoint: PropTypes.string.isRequired,
@@ -24,8 +23,7 @@ export default class ActivityFeedApp extends React.Component {
   static defaultProps = {
     activityTypeFilter: null,
     activityTypeFilters: {},
-    contentLink: null,
-    contentText: null,
+    actions: null,
     isGlobalUltimate: false,
     dnbHierarchyCount: null,
     isTypeFilterFlagEnabled: false,
@@ -131,8 +129,7 @@ export default class ActivityFeedApp extends React.Component {
     const { activities, isLoading, hasMore, error, total } = this.state
     const {
       activityTypeFilters,
-      contentText,
-      contentLink,
+      actions,
       isGlobalUltimate,
       dnbHierarchyCount,
       isTypeFilterFlagEnabled,
@@ -140,12 +137,12 @@ export default class ActivityFeedApp extends React.Component {
     } = this.props
 
     const isEmptyFeed = activities.length === 0 && !hasMore
+
     return (
       <ActivityFeed
         activities={activities}
         activityTypeFilters={activityTypeFilters}
-        contentText={contentText}
-        contentLink={contentLink}
+        actions={actions}
         isLoading={isLoading}
         hasMore={hasMore}
         onLoadMore={this.onLoadMore}

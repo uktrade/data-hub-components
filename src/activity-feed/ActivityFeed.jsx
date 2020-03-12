@@ -32,8 +32,7 @@ export default class ActivityFeed extends React.Component {
     activityTypeFilters: PropTypes.object,
     hasMore: PropTypes.bool,
     isLoading: PropTypes.bool,
-    contentText: PropTypes.string,
-    contentLink: PropTypes.string,
+    actions: PropTypes.node,
     totalActivities: PropTypes.number,
     isGlobalUltimate: PropTypes.bool,
     dnbHierarchyCount: PropTypes.number,
@@ -49,8 +48,7 @@ export default class ActivityFeed extends React.Component {
     activityTypeFilters: {},
     hasMore: false,
     isLoading: false,
-    contentText: null,
-    contentLink: null,
+    actions: null,
     totalActivities: 0,
     isGlobalUltimate: false,
     dnbHierarchyCount: null,
@@ -129,8 +127,7 @@ export default class ActivityFeed extends React.Component {
       onLoadMore,
       hasMore,
       isLoading,
-      contentText,
-      contentLink,
+      actions,
       children,
       totalActivities,
       isGlobalUltimate,
@@ -152,8 +149,7 @@ export default class ActivityFeed extends React.Component {
       <ActivityFeedContainer>
         <ActivityFeedHeader
           totalActivities={totalActivities}
-          contentText={contentText}
-          contentLink={contentLink}
+          actions={actions}
         />
 
         {hasFilters && (

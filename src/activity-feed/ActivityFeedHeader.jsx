@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Button from '@govuk-react/button'
 import { H2 } from '@govuk-react/heading'
 import styled from 'styled-components'
 import { SPACING, MEDIA_QUERIES } from '@govuk-react/constants'
@@ -36,55 +35,36 @@ const HeaderCount = styled('div')`
 
 const HeaderActions = styled('div')`
   text-align: right;
+  min-width: 60%;
 
   & > button {
     margin-bottom: 0;
   }
 `
 
-const Link = styled.a`
-  margin-bottom: 0;
-`
+const ActivityFeedHeader = ({ totalActivities, actions }) => {
+  const headerText = totalActivities
+    ? pluralize('activity', totalActivities, true)
+    : 'Activities'
 
-export default class ActivityFeedHeader extends React.Component {
-  static propTypes = {
-    totalActivities: PropTypes.number,
-    contentText: PropTypes.string,
-    contentLink: PropTypes.string,
-  }
-
-  static defaultProps = {
-    totalActivities: 0,
-    contentText: null,
-    contentLink: null,
-  }
-
-  render() {
-    const { totalActivities, contentText, contentLink } = this.props
-    const headerText = totalActivities
-      ? pluralize('activity', totalActivities, true)
-      : 'Activities'
-
-    const showAddContentButton = contentText && contentLink
-
-    return (
-      <HeaderSummary>
-        <HeaderCount>
-          <H2>{headerText}</H2>
-        </HeaderCount>
-        <HeaderActions>
-          {showAddContentButton && (
-            <Button
-              as={Link}
-              href={contentLink}
-              buttonColour="#dee0e2"
-              buttonTextColour="#000"
-            >
-              {contentText}
-            </Button>
-          )}
-        </HeaderActions>
-      </HeaderSummary>
-    )
-  }
+  return (
+    <HeaderSummary>
+      <HeaderCount>
+        <H2>{headerText}</H2>
+      </HeaderCount>
+      {actions && <HeaderActions>{actions}</HeaderActions>}
+    </HeaderSummary>
+  )
 }
+
+ActivityFeedHeader.propTypes = {
+  totalActivities: PropTypes.number,
+  actions: PropTypes.node,
+}
+
+ActivityFeedHeader.defaultProps = {
+  totalActivities: 0,
+  actions: null,
+}
+
+export default ActivityFeedHeader

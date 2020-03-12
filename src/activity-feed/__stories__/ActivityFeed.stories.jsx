@@ -8,6 +8,7 @@ import { SPACING } from '@govuk-react/constants'
 import { ACTIVITY_TYPE_FILTERS } from '../constants'
 
 import ActivityFeed from '../ActivityFeed'
+import ActivityFeedAction from '../ActivityFeedAction'
 import activityFeedFixtures from '../__fixtures__'
 import datahubBackground from './images/data-hub-one-list-corp.png'
 import accountsAreDueFixture from '../__fixtures__/companies_house/accounts_are_due'
@@ -155,6 +156,16 @@ class ActivityFeedDemoApp extends React.Component {
     const { activities, isLoading, hasMore, error, total } = this.state
     const isEmptyFeed = activities.length === 0 && !hasMore
 
+    const ActivityFeedActions = (
+      <>
+        <ActivityFeedAction text="Refer this company" link="/referral" />
+        <ActivityFeedAction
+          text="Add interaction"
+          link="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create"
+        />
+      </>
+    )
+
     return (
       <div>
         <ActivityFeed
@@ -165,8 +176,7 @@ class ActivityFeedDemoApp extends React.Component {
           hasMore={hasMore}
           onLoadMore={this.onLoadMore}
           isLoading={isLoading}
-          contentText="Add interaction"
-          contentLink="/companies/3335a773-a098-e211-a939-e4115bead28a/interactions/create"
+          actions={ActivityFeedActions}
           dnbHierarchyCount={8}
           isGlobalUltimate={true}
           isTypeFilterFlagEnabled={true}
