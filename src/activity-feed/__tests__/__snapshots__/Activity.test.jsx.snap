@@ -7670,7 +7670,7 @@ exports[`Activity when there is a completed referral should render an complete r
       >
         <a
           className="c5"
-          href="/referral/74755dbd-c394-4c09-885b-1ca90ace5fcf"
+          href="/companies/08d11412-67b2-4b86-87e2-2cb0ef71f5c6/referrals/74755dbd-c394-4c09-885b-1ca90ace5fcf"
           muted={false}
         >
           A complete referral
@@ -8075,7 +8075,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
       >
         <a
           className="c5"
-          href="/referral/74755dbd-c394-4c09-885b-1ca90ace5fdf"
+          href="/companies/08d11412-67b2-4b86-87e2-2cb0ef71f5c6/referrals/74755dbd-c394-4c09-885b-1ca90ace5fdf"
           muted={false}
         >
           An outstanding referral

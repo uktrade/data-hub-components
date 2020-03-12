@@ -20,13 +20,14 @@ export default class Referral extends React.PureComponent {
     const { activity } = this.props
     const {
       id,
+      companyId,
       subject,
       startTime,
       sender,
       recipient,
       completedOn,
-    } = CardUtils.transformReferral(activity)
-    const url = `/referral/${id.split(':')[2]}`
+    } = ReferralUtils.transformReferral(activity)
+    const url = `/companies/${companyId}/referrals/${id.split(':')[2]}`
     const badge = ReferralUtils.getStatus(activity)
     const AdviserDetails = ({ name, email, team }) => (
       <>
