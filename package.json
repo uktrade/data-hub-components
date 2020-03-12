@@ -89,6 +89,7 @@
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
     "@babel/plugin-syntax-flow": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.3",
@@ -155,15 +156,5 @@
   "jest-junit": {
     "outputDirectory": "test-results/jest",
     "outputName": "results.xml"
-  },
-  "babel": {
-    "presets": [
-      "@babel/env",
-      "@babel/react"
-    ],
-    "plugins": [
-      "@babel/plugin-proposal-class-properties",
-      "@babel/plugin-transform-runtime"
-    ]
   }
 }
