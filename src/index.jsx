@@ -11,6 +11,9 @@ export {
 export {
   default as ActivityFeedPagination,
 } from './activity-feed/ActivityFeedPagination'
+export {
+  default as ActivityFeedAction,
+} from './activity-feed/ActivityFeedAction'
 
 // Address search
 export { default as useAddressSearch } from './address-search/useAddressSearch'

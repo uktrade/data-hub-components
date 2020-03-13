@@ -2,6 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 
 import ActivityFeedHeader from '../ActivityFeedHeader'
+import ActivityFeedAction from '../ActivityFeedAction'
 
 describe('ActivityFeedHeader', () => {
   test('renders header without props', () => {
@@ -14,8 +15,12 @@ describe('ActivityFeedHeader', () => {
       .create(
         <ActivityFeedHeader
           totalActivities={999}
-          contentText="Test button"
-          contentLink="http://testing.example.com"
+          actions={
+            <ActivityFeedAction
+              text="Test button"
+              link="http://testing.example.com"
+            />
+          }
         />
       )
       .toJSON()
