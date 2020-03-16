@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Button from '@govuk-react/button'
 import { H1 } from '@govuk-react/heading'
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldCheckboxes from '../FieldCheckboxes'
 
 const options = [
@@ -26,7 +26,7 @@ const options = [
 ]
 
 storiesOf('Forms', module).add('FieldCheckboxes', () => (
-  <Form>
+  <FormStateful>
     {(form) => (
       <>
         <FieldCheckboxes
@@ -49,5 +49,5 @@ storiesOf('Forms', module).add('FieldCheckboxes', () => (
         <pre>{JSON.stringify(form, null, 2)}</pre>
       </>
     )}
-  </Form>
+  </FormStateful>
 ))

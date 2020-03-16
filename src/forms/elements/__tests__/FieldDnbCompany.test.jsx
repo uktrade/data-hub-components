@@ -11,7 +11,7 @@ import FieldUneditable from '../FieldUneditable'
 import FieldInput from '../FieldInput'
 import FormActions from '../FormActions'
 import FieldDnbCompany from '../FieldDnbCompany'
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import Step from '../Step'
 import StatusMessage from '../../../status-message/StatusMessage'
 import {
@@ -40,7 +40,7 @@ const performSearch = async (wrapper, companyName = 'test value') => {
 
 const wrapFieldDnbCompanyForm = (fieldProps) => {
   return mount(
-    <Form initialStep={1}>
+    <FormStateful initialStep={1}>
       {({ currentStep, values }) => (
         <>
           <div className="current-step">{currentStep}</div>
@@ -66,7 +66,7 @@ const wrapFieldDnbCompanyForm = (fieldProps) => {
           {values.cannotFind && <Step name="fourth">fourth</Step>}
         </>
       )}
-    </Form>
+    </FormStateful>
   )
 }
 

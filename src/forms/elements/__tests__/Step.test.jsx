@@ -2,7 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { act } from 'react-dom/test-utils'
 
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import Step from '../Step'
 import useField from '../../hooks/useField'
 
@@ -20,7 +20,7 @@ describe('Step', () => {
 
     beforeAll(() => {
       wrapper = mount(
-        <Form onSubmit={onSubmitSpy}>
+        <FormStateful onSubmit={onSubmitSpy}>
           {(form) => (
             <>
               <div className="form-state">{JSON.stringify(form)}</div>
@@ -29,7 +29,7 @@ describe('Step', () => {
               </Step>
             </>
           )}
-        </Form>
+        </FormStateful>
       )
       formState = JSON.parse(wrapper.find('.form-state').text())
     })
@@ -77,7 +77,7 @@ describe('Step', () => {
   describe('when there is a form with two steps but one is hidden', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           {(form) => (
             <>
               <div className="form-state">{JSON.stringify(form)}</div>
@@ -91,7 +91,7 @@ describe('Step', () => {
               )}
             </>
           )}
-        </Form>
+        </FormStateful>
       )
       formState = JSON.parse(wrapper.find('.form-state').text())
     })
@@ -137,7 +137,7 @@ describe('Step', () => {
   describe('when there is a form with many steps', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           {(form) => (
             <>
               <div className="form-state">{JSON.stringify(form)}</div>
@@ -162,7 +162,7 @@ describe('Step', () => {
               </Step>
             </>
           )}
-        </Form>
+        </FormStateful>
       )
       formState = JSON.parse(wrapper.find('.form-state').text())
     })
@@ -274,10 +274,10 @@ describe('Step', () => {
   describe('when the "forwardButton" prop is passed as a string', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <Step name="testStep1" forwardButton="testForwardButtonText" />
           <Step name="testStep2" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -291,10 +291,10 @@ describe('Step', () => {
   describe('when the "backButton" prop is passed as a string', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form initialStep={1}>
+        <FormStateful initialStep={1}>
           <Step name="testStep1" />
           <Step name="testStep2" backButton="testBackButtonText" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -308,10 +308,10 @@ describe('Step', () => {
   describe('when the "forwardButton" prop is passed as "null"', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <Step name="testStep1" forwardButton={null} />
           <Step name="testStep2" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -323,10 +323,10 @@ describe('Step', () => {
   describe('when the "backButton" prop is passed as "null"', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form initialStep={1}>
+        <FormStateful initialStep={1}>
           <Step name="testStep1" />
           <Step name="testStep2" backButton={null} />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -338,10 +338,10 @@ describe('Step', () => {
   describe('when a component is passed to the "forwardButton" prop', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <Step name="testStep1" forwardButton={<a href="/">Go to form A</a>} />
           <Step name="testStep2" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -354,13 +354,13 @@ describe('Step', () => {
   describe('when a component is passed to the "backButton" prop', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form initialStep={1}>
+        <FormStateful initialStep={1}>
           <Step name="testStep1" />
           <Step
             name="testStep2"
             backButton={<a href="/">Back to homepage</a>}
           />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -373,10 +373,10 @@ describe('Step', () => {
   describe('when there is a next step and the "forwardButton" prop was not specified', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <Step name="testStep1" />
           <Step name="testStep2" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -388,10 +388,10 @@ describe('Step', () => {
   describe('when there is a previous step and the "backButton" prop was not specified', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form initialStep={1}>
+        <FormStateful initialStep={1}>
           <Step name="testStep1" />
           <Step name="testStep2" />
-        </Form>
+        </FormStateful>
       )
     })
 

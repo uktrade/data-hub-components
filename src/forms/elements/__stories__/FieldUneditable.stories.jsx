@@ -3,13 +3,13 @@ import { addDecorator, storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withKnobs } from '@storybook/addon-knobs'
 
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldUneditable from '../FieldUneditable'
 
 addDecorator(withKnobs)
 
 storiesOf('Forms', module).add('FieldUneditable', () => (
-  <Form>
+  <FormStateful>
     <FieldUneditable
       name="testField"
       label="Country"
@@ -18,5 +18,5 @@ storiesOf('Forms', module).add('FieldUneditable', () => (
     >
       United Kingdom
     </FieldUneditable>
-  </Form>
+  </FormStateful>
 ))

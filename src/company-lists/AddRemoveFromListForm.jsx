@@ -4,7 +4,7 @@ import Link from '@govuk-react/link'
 import PropTypes from 'prop-types'
 import { GREY_3, TEXT_COLOUR } from 'govuk-colours'
 
-import Form from '../forms/elements/Form'
+import FormStateful from '../forms/elements/FormStateful'
 import FieldRadios from '../forms/elements/FieldRadios'
 import FieldInput from '../forms/elements/FieldInput'
 import FormActions from '../forms/elements/FormActions'
@@ -20,7 +20,7 @@ const AddRemoveFromListForm = ({
     return { ...obj, [listId]: isAdded }
   }, {})
   return (
-    <Form initialValues={initState} onSubmit={onSubmitHandler}>
+    <FormStateful initialValues={initState} onSubmit={onSubmitHandler}>
       <FieldInput name="company" type="hidden" value={companyId} />
       {companyLists.map(({ listId, listName }) => (
         <div key={listId}>
@@ -56,7 +56,7 @@ const AddRemoveFromListForm = ({
         <Button>Save</Button>
         <Link href={cancelLinkUrl}>Cancel</Link>
       </FormActions>
-    </Form>
+    </FormStateful>
   )
 }
 

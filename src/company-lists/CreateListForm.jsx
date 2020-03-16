@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '@govuk-react/button'
 import Link from '@govuk-react/link'
 import PropTypes from 'prop-types'
-import Form from '../forms/elements/Form'
+import FormStateful from '../forms/elements/FormStateful'
 import FieldInput from '../forms/elements/FieldInput'
 import FormActions from '../forms/elements/FormActions'
 
@@ -16,7 +16,7 @@ const CreateListForm = ({
 }) => {
   const cancelLink = `${cancelUrl}`
   return (
-    <Form onSubmit={onSubmitHandler}>
+    <FormStateful onSubmit={onSubmitHandler}>
       <FieldInput
         name={name}
         type="text"
@@ -33,7 +33,7 @@ const CreateListForm = ({
         <Button>Create list</Button>
         <Link href={cancelLink}>Cancel</Link>
       </FormActions>
-    </Form>
+    </FormStateful>
   )
 }
 

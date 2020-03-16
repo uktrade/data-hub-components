@@ -1,7 +1,5 @@
 import createUseContext from 'constate'
 
-import useForm from './useForm'
-
-const useFormContext = createUseContext(useForm)
+const useFormContext = createUseContext((state) => state)
 
 export default useFormContext

@@ -2,16 +2,16 @@ import React from 'react'
 import { mount } from 'enzyme'
 import LoadingBox from '@govuk-react/loading-box'
 import { act } from 'react-dom/test-utils'
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldInput from '../FieldInput'
 
-describe('Form', () => {
+describe('FormStateful', () => {
   let wrapper
 
   describe('when a form has many fields', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldInput type="text" name="foo" />
           <FieldInput type="text" name="bar" />
           <FieldInput type="text" name="baz" />
@@ -26,7 +26,7 @@ describe('Form', () => {
           <FieldInput type="text" name="faa" />
           <FieldInput type="text" name="laa" />
           <FieldInput type="text" name="bru" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -40,11 +40,11 @@ describe('Form', () => {
 
     beforeAll(() => {
       wrapper = mount(
-        <Form>
-          {(form) => {
-            formState = form
+        <FormStateful>
+          {(state) => {
+            formState = state
           }}
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -88,9 +88,9 @@ describe('Form', () => {
 
     beforeAll(async () => {
       wrapper = mount(
-        <Form onSubmit={onSubmitSpy}>
+        <FormStateful onSubmit={onSubmitSpy}>
           <FieldInput name="testField" type="text" />
-        </Form>
+        </FormStateful>
       )
 
       await act(async () => {
@@ -110,10 +110,10 @@ describe('Form', () => {
 
     beforeAll(async () => {
       wrapper = mount(
-        <Form>
-          {(form) => (
+        <FormStateful>
+          {(state) => (
             <>
-              <div className="form-state">{JSON.stringify(form)}</div>
+              <div className="form-state">{JSON.stringify(state)}</div>
               <FieldInput
                 type="text"
                 name="testField1"
@@ -127,13 +127,13 @@ describe('Form', () => {
               <button
                 type="submit"
                 className="submit"
-                onClick={form.validateForm}
+                onClick={state.validateForm}
               >
                 Submit
               </button>
             </>
           )}
-        </Form>
+        </FormStateful>
       )
 
       await act(async () => {
@@ -162,11 +162,13 @@ describe('Form', () => {
   describe('when form is in loading state', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
-          {(form) => {
-            form.setIsLoading(true)
+        <FormStateful>
+          {({ isLoading, setIsLoading }) => {
+            if (!isLoading) {
+              setIsLoading(true)
+            }
           }}
-        </Form>
+        </FormStateful>
       )
     })
 

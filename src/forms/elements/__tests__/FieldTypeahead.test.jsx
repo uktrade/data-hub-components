@@ -5,7 +5,7 @@ import Label from '@govuk-react/label'
 import ErrorText from '@govuk-react/error-text'
 import { act } from 'react-dom/test-utils'
 
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldTypeahead from '../FieldTypeahead'
 import FieldWrapper from '../FieldWrapper'
 import Typeahead from '../../../typeahead/Typeahead'
@@ -15,9 +15,11 @@ describe('FieldTypeahead', () => {
   describe('when the field is mounted', () => {
     test('should set default attributes on the typeahead element', () => {
       const wrapper = mount(
-        <Form initialValues={{ testField: { label: 'someValueLabel' } }}>
+        <FormStateful
+          initialValues={{ testField: { label: 'someValueLabel' } }}
+        >
           <FieldTypeahead name="testField" />
-        </Form>
+        </FormStateful>
       )
       const typeahead = wrapper.find(Typeahead)
       expect(typeahead.prop('inputId')).toEqual('testField')
@@ -32,9 +34,9 @@ describe('FieldTypeahead', () => {
   describe('when the field does specify a label', () => {
     test('should render the typeahead and a label', () => {
       const wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldTypeahead name="testField" label="testLabel" />
-        </Form>
+        </FormStateful>
       )
       expect(wrapper.find(Label).exists()).toBe(true)
       expect(wrapper.find(Typeahead).prop('aria-label')).toEqual('testLabel')
@@ -44,9 +46,9 @@ describe('FieldTypeahead', () => {
   describe('when the field does not specify a label', () => {
     test('should render the field without a label', () => {
       const wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldTypeahead name="testField" />
-        </Form>
+        </FormStateful>
       )
       expect(wrapper.find(Label).exists()).toBe(false)
       expect(wrapper.find(Typeahead).prop('aria-label')).toEqual(null)
@@ -56,9 +58,9 @@ describe('FieldTypeahead', () => {
   describe('when the field does specify a legend', () => {
     test('should render the field with a legend', () => {
       const wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldTypeahead name="testField" legend="testLegend" />
-        </Form>
+        </FormStateful>
       )
       expect(wrapper.find('legend').text()).toEqual('testLegend')
       expect(wrapper.find(Typeahead).prop('aria-label')).toEqual('testLegend')
@@ -68,9 +70,9 @@ describe('FieldTypeahead', () => {
   describe('when the field does specify a hint', () => {
     test('should render the field with a legend', () => {
       const wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldTypeahead name="testField" hint="testHint" />
-        </Form>
+        </FormStateful>
       )
       expect(wrapper.find(HintText).text()).toEqual('testHint')
     })
@@ -79,9 +81,9 @@ describe('FieldTypeahead', () => {
   describe('when the validation fails', () => {
     test('should render error message', () => {
       const wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldTypeahead name="testField" validate={() => 'testError'} />
-        </Form>
+        </FormStateful>
       )
       wrapper.find('form').simulate('submit')
 
@@ -109,7 +111,7 @@ describe('FieldTypeahead', () => {
         { label: '2', value: 'two' },
       ]
       const wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldTypeahead
             name="testField"
             options={options}
@@ -117,7 +119,7 @@ describe('FieldTypeahead', () => {
             classNamePrefix="react-select"
           />
           <Value />
-        </Form>
+        </FormStateful>
       )
 
       act(() => {
@@ -132,13 +134,13 @@ describe('FieldTypeahead', () => {
   describe('when extra props are passed to the component', () => {
     test('should render typeahead with all the extra props', () => {
       const wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldTypeahead
             name="testField"
             placeholder="Type to search"
             isMulti={false}
           />
-        </Form>
+        </FormStateful>
       )
       const typeahead = wrapper.find(Typeahead)
       expect(typeahead.prop('placeholder')).toEqual('Type to search')

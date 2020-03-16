@@ -26,7 +26,7 @@
     "storybook:release": "yarn storybook:build && cp -R ./.circleci ./storybook-static/.circleci && git-directory-deploy --directory storybook-static --branch gh-pages",
     "prepack": "yarn build",
     "release": "semantic-release --debug",
-    "postpublish": "\"$CI\" == true && yarn storybook:release"
+    "postpublish": "[[ $CI == true ]] && yarn storybook:release || echo 'Not on CI, skipping deployment to GH pages'"
   },
   "husky": {
     "hooks": {

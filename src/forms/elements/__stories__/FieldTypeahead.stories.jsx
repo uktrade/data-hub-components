@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions'
 import { withKnobs } from '@storybook/addon-knobs'
 import Button from '@govuk-react/button'
 
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 import FieldTypeahead from '../FieldTypeahead'
 
 addDecorator(withKnobs)
@@ -28,7 +28,7 @@ const getOptions = () =>
   new Promise((resolve) => setTimeout(resolve, 1000, asyncOptions))
 
 storiesOf('Forms', module).add('FieldTypeahead', () => (
-  <Form onSubmit={action('onSubmit')}>
+  <FormStateful onSubmit={action('onSubmit')}>
     {(state) => (
       <>
         <FieldTypeahead
@@ -42,5 +42,5 @@ storiesOf('Forms', module).add('FieldTypeahead', () => (
         <pre>{JSON.stringify(state, null, 2)}</pre>
       </>
     )}
-  </Form>
+  </FormStateful>
 ))

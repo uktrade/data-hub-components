@@ -4,9 +4,9 @@ import HintText from '@govuk-react/hint-text'
 import Label from '@govuk-react/label'
 import ErrorText from '@govuk-react/error-text'
 
-import Form from '../Form'
 import FieldInput from '../FieldInput'
 import FieldWrapper from '../FieldWrapper'
+import FormStateful from '../FormStateful'
 
 describe('FieldInput', () => {
   let wrapper
@@ -14,9 +14,9 @@ describe('FieldInput', () => {
   describe('when the field is mounted', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldInput type="text" name="testField" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -34,9 +34,9 @@ describe('FieldInput', () => {
   describe('when the field does specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldInput type="text" name="testField" label="testLabel" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -52,9 +52,9 @@ describe('FieldInput', () => {
   describe('when the field does not specify a label', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldInput type="text" name="testField" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -66,9 +66,9 @@ describe('FieldInput', () => {
   describe('when the field does specify a legend', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldInput type="text" name="testField" legend="testLegend" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -80,9 +80,9 @@ describe('FieldInput', () => {
   describe('when the field does specify a hint', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldInput type="text" name="testField" hint="testHint" />
-        </Form>
+        </FormStateful>
       )
     })
 
@@ -94,13 +94,13 @@ describe('FieldInput', () => {
   describe('when the validation fails', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldInput
             type="text"
             name="testField"
             validate={() => 'testError'}
           />
-        </Form>
+        </FormStateful>
       )
       wrapper.find('form').simulate('submit')
     })
@@ -123,14 +123,14 @@ describe('FieldInput', () => {
   describe('when the text is typed to the field', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
-          {(form) => (
+        <FormStateful>
+          {(state) => (
             <>
               <FieldInput type="text" name="testField" />
-              <div id="values">{form.values.testField}</div>
+              <div id="values">{state.values.testField}</div>
             </>
           )}
-        </Form>
+        </FormStateful>
       )
       const testField1 = wrapper.find('input')
       testField1.simulate('change', { target: { value: 'testValue' } })
@@ -148,14 +148,14 @@ describe('FieldInput', () => {
   describe('when extra props are passed to the component', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <FieldInput
             type="text"
             name="testField"
             minLength={3}
             maxLength={10}
           />
-        </Form>
+        </FormStateful>
       )
     })
 

@@ -5,12 +5,12 @@ import { object, text, withKnobs } from '@storybook/addon-knobs'
 import Button from '@govuk-react/button'
 
 import FieldSelect from '../FieldSelect'
-import Form from '../Form'
+import FormStateful from '../FormStateful'
 
 addDecorator(withKnobs)
 
 storiesOf('Forms', module).add('FieldSelect', () => (
-  <Form onSubmit={action('onSubmit')}>
+  <FormStateful onSubmit={action('onSubmit')}>
     {(form) => (
       <>
         <FieldSelect
@@ -33,5 +33,5 @@ storiesOf('Forms', module).add('FieldSelect', () => (
         <pre>{JSON.stringify(form, null, 2)}</pre>
       </>
     )}
-  </Form>
+  </FormStateful>
 ))

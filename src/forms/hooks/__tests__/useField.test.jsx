@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import Form from '../../elements/Form'
+import FormStateful from '../../elements/FormStateful'
 import useField from '../useField'
 
 const TestField = (props) => {
@@ -38,12 +38,12 @@ describe('useField', () => {
   describe('when field is mounted with `initialValue`', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <TestField
             initialValue="testInitialValue"
             validate={() => 'testError'}
           />
-        </Form>
+        </FormStateful>
       )
       value = wrapper.find('.value')
       input = wrapper.find('.field')
@@ -90,9 +90,9 @@ describe('useField', () => {
   describe('when form is submitted without filling the required field', () => {
     beforeAll(() => {
       wrapper = mount(
-        <Form>
+        <FormStateful>
           <TestField required="testRequiredError" />
-        </Form>
+        </FormStateful>
       )
       error = wrapper.find('.error')
       wrapper.simulate('submit')

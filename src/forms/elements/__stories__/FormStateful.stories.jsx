@@ -4,7 +4,7 @@ import { boolean, withKnobs } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 import { H3 } from '@govuk-react/heading'
 
-import { FieldInput, Form, Step, useFormContext } from '../../../index'
+import { FieldInput, FormStateful, Step, useFormContext } from '../../../index'
 import FieldRadios from '../FieldRadios'
 import FieldSelect from '../FieldSelect'
 import FieldDnbCompany from '../FieldDnbCompany'
@@ -28,7 +28,7 @@ function StepHeader() {
   )
 }
 
-storiesOf('Forms', module).add('Form - Full example', () => {
+storiesOf('Forms', module).add('FormStateful - Full example', () => {
   const showError = boolean('Show error', false)
 
   async function onSubmitHandler(values) {
@@ -44,7 +44,7 @@ storiesOf('Forms', module).add('Form - Full example', () => {
   const ENTITY_SEARCH_ENDPOINT = 'http://localhost:3010/v4/dnb/company-search'
   setupSuccessMocks(ENTITY_SEARCH_ENDPOINT)
   return (
-    <Form
+    <FormStateful
       onSubmit={onSubmitHandler}
       onExit={() => 'Changes that you made will not be saved.'}
     >
@@ -132,6 +132,6 @@ storiesOf('Forms', module).add('Form - Full example', () => {
           <Values />
         </>
       )}
-    </Form>
+    </FormStateful>
   )
 })
