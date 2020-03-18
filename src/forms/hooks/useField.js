@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { isEmpty } from 'lodash'
+import { isEmpty, castArray } from 'lodash'
 
 import useFormContext from './useFormContext'
 
@@ -18,9 +18,7 @@ function useField({
   } = useFormContext()
 
   function prepareValidators() {
-    const validators = Array.isArray(validate)
-      ? validate
-      : [validate].filter((v) => v)
+    const validators = castArray(validate).filter((v) => v)
 
     if (required) {
       validators.unshift((value) => (isEmpty(value) ? required : null))
@@ -37,7 +35,7 @@ function useField({
     }
   }, [name])
 
-  const fieldState = getFieldState(name)
+  const fieldState = getFieldState(name, initialValue)
 
   return {
     name,
