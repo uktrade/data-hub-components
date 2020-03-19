@@ -77,8 +77,8 @@ function Step({ name, backButton, forwardButton, children }) {
 
 Step.propTypes = {
   name: PropTypes.string.isRequired,
-  backButton: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  forwardButton: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  backButton: PropTypes.node,
+  forwardButton: PropTypes.node,
   children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
 }
 

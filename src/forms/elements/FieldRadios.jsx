@@ -60,9 +60,9 @@ FieldRadios.propTypes = {
     PropTypes.arrayOf(PropTypes.func),
   ]),
   required: PropTypes.string,
-  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  hint: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  label: PropTypes.node,
+  legend: PropTypes.node,
+  hint: PropTypes.node,
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,

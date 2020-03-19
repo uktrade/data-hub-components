@@ -47,6 +47,16 @@ storiesOf('Forms', module)
           </FieldWrapper>
 
           <FieldWrapper
+            legend="Legend with border"
+            name="testField"
+            hint="Some hint"
+            showBorder={true}
+            error={form.errors.testField}
+          >
+            {testInput}
+          </FieldWrapper>
+
+          <FieldWrapper
             legend={<H1>Legend as H1</H1>}
             name="testField"
             hint="Some hint"

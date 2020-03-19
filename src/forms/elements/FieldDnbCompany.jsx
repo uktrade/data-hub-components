@@ -166,9 +166,9 @@ const FieldDnbCompany = ({
 
 FieldDnbCompany.propTypes = {
   name: PropTypes.string.isRequired,
-  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  hint: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  label: PropTypes.node,
+  legend: PropTypes.node,
+  hint: PropTypes.node,
   country: PropTypes.string,
   apiEndpoint: PropTypes.string.isRequired,
   queryParams: PropTypes.shape({}),

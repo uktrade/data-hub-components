@@ -146,9 +146,9 @@ const FieldAddress = ({ name, label, legend, hint, country, apiEndpoint }) => {
 
 FieldAddress.propTypes = {
   name: PropTypes.string.isRequired,
-  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  hint: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  label: PropTypes.node,
+  legend: PropTypes.node,
+  hint: PropTypes.node,
   country: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

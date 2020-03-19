@@ -52,9 +52,9 @@ const FieldSelect = ({
 
 FieldSelect.propTypes = {
   name: PropTypes.string.isRequired,
-  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  hint: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  label: PropTypes.node,
+  legend: PropTypes.node,
+  hint: PropTypes.node,
   validate: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.arrayOf(PropTypes.func),
