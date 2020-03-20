@@ -3,6 +3,7 @@ import { addDecorator, storiesOf } from '@storybook/react'
 import { boolean, withKnobs } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 import { H3 } from '@govuk-react/heading'
+import { pick } from 'lodash'
 
 import { FieldInput, FormStateful, Step, useFormContext } from '../../../index'
 import FieldRadios from '../FieldRadios'
@@ -16,7 +17,15 @@ addDecorator(withKnobs)
 
 function Values() {
   const form = useFormContext()
-  return <pre>{JSON.stringify(form, null, 2)}</pre>
+  return (
+    <pre>
+      {JSON.stringify(
+        pick(form, ['values', 'touched', 'errors', 'fields', 'steps']),
+        null,
+        2
+      )}
+    </pre>
+  )
 }
 
 function StepHeader() {

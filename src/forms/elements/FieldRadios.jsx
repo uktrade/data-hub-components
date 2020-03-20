@@ -2,9 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Radio from '@govuk-react/radio'
 import MultiChoice from '@govuk-react/multi-choice'
+import styled from 'styled-components'
 
 import useField from '../hooks/useField'
 import FieldWrapper from './FieldWrapper'
+
+const StyledChildField = styled('div')`
+  margin-left: 55px;
+`
 
 const FieldRadios = ({
   name,
@@ -28,7 +33,7 @@ const FieldRadios = ({
           ({
             label: optionLabel,
             value: optionValue,
-            children,
+            children: optionChildren,
             ...optionProps
           }) => (
             <div key={optionValue}>
@@ -44,7 +49,9 @@ const FieldRadios = ({
                 {optionLabel}
               </Radio>
 
-              {value === optionValue && !!children ? children : null}
+              {value === optionValue && (
+                <StyledChildField>{optionChildren}</StyledChildField>
+              )}
             </div>
           )
         )}
@@ -60,9 +67,9 @@ FieldRadios.propTypes = {
     PropTypes.arrayOf(PropTypes.func),
   ]),
   required: PropTypes.string,
-  label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  legend: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-  hint: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  label: PropTypes.node,
+  legend: PropTypes.node,
+  hint: PropTypes.node,
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
