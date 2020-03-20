@@ -9,7 +9,7 @@ import FieldTypeahead from '../FieldTypeahead'
 
 addDecorator(withKnobs)
 
-const asyncOptions = [
+const options = [
   {
     value: '379f390a-e083-4a2c-9cea-e3b9a08606a7',
     label: 'Holly Clins - olHeart of the South West LEP',
@@ -25,18 +25,41 @@ const asyncOptions = [
 ]
 
 const getOptions = () =>
-  new Promise((resolve) => setTimeout(resolve, 1000, asyncOptions))
+  new Promise((resolve) => setTimeout(resolve, 1000, options))
 
 storiesOf('Forms', module).add('FieldTypeahead', () => (
   <FormStateful onSubmit={action('onSubmit')}>
     {(state) => (
       <>
         <FieldTypeahead
-          label="Typeahead"
+          label="Typeahead - sync single value"
           hint="Some hint"
-          name="testField"
+          name="sync_single"
+          required="Chose value"
+          options={options}
+        />
+        <FieldTypeahead
+          label="Typeahead - sync multi value"
+          hint="Some hint"
+          name="sync_multi"
+          required="Chose value"
+          options={options}
+          isMulti={true}
+        />
+        <FieldTypeahead
+          label="Typeahead - async single value"
+          hint="Some hint"
+          name="async_single"
           required="Chose value"
           loadOptions={getOptions}
+        />
+        <FieldTypeahead
+          label="Typeahead - async multi value"
+          hint="Some hint"
+          name="async_multi"
+          required="Chose value"
+          loadOptions={getOptions}
+          isMulti={true}
         />
         <Button>Submit</Button>
         <pre>{JSON.stringify(state, null, 2)}</pre>

@@ -50,14 +50,9 @@ const FieldTypeahead = ({
           inputId={name}
           aria-label={label || legend}
           onBlur={onBlur}
-          onChange={(event) =>
-            setFieldValue(name, {
-              label: event.label,
-              value: event.value,
-            })
-          }
+          onChange={(newValue) => setFieldValue(name, newValue)}
           error={error}
-          defaultValue={value && { label: value.label }}
+          defaultValue={value}
           {...rest}
         />
       </StyledWrapper>
