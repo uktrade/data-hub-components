@@ -15,10 +15,15 @@ describe('NewWindowLink', () => {
 
     test('should render the link', () => {
       const linkAttrs = wrapper.find('a').props()
-      expect(linkAttrs).toHaveProperty('aria-label', 'Opens in a new window')
+      expect(linkAttrs).toHaveProperty(
+        'aria-label',
+        'Opens in a new window or tab'
+      )
       expect(linkAttrs).toHaveProperty('href', 'https://example.com')
       expect(linkAttrs).toHaveProperty('target', '_blank')
-      expect(wrapper.text()).toEqual('testChildren (Opens in a new window)')
+      expect(wrapper.text()).toEqual(
+        'testChildren (opens in a new window or tab)'
+      )
     })
   })
 })
