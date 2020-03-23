@@ -15,7 +15,7 @@ import {
 
 import FieldWrapper from './FieldWrapper'
 import useField from '../hooks/useField'
-import { useFormContext } from '../..'
+import useFormContext from '../hooks/useFormContext'
 
 const VALIDATION_DATE_FORMAT = 'YYYY-MM-DD'
 const DAY = 'day'
