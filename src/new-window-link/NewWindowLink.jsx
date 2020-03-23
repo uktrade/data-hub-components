@@ -2,7 +2,7 @@ import React from 'react'
 import Link from '@govuk-react/link'
 import PropTypes from 'prop-types'
 
-const NewWindowLink = ({ href, children, ...rest }) => (
+const NewWindowLink = ({ href, showHelpText, children, ...rest }) => (
   <>
     <Link
       href={href}
@@ -18,7 +18,12 @@ const NewWindowLink = ({ href, children, ...rest }) => (
 
 NewWindowLink.propTypes = {
   href: PropTypes.string.isRequired,
+  showHelpText: PropTypes.bool,
   children: PropTypes.node.isRequired,
+}
+
+NewWindowLink.defaultProps = {
+  showHelpText: true,
 }
 
 export default NewWindowLink
