@@ -9,6 +9,16 @@ import FieldWrapper from './FieldWrapper'
 
 const StyledChildField = styled('div')`
   margin-left: 55px;
+  clear: both;
+`
+
+const StyledRadio = styled(Radio)`
+  ${(props) =>
+    props.inline &&
+    `
+      float: left;
+      clear: none;
+    `}
 `
 
 const FieldRadios = ({
@@ -18,6 +28,7 @@ const FieldRadios = ({
   label,
   legend,
   hint,
+  inline,
   options,
 }) => {
   const { value, error, touched, onChange, onBlur } = useField({
@@ -36,9 +47,9 @@ const FieldRadios = ({
             children: optionChildren,
             ...optionProps
           }) => (
-            <div key={optionValue}>
-              <Radio
-                key={optionValue}
+            <React.Fragment key={optionValue}>
+              <StyledRadio
+                inline={inline}
                 value={optionValue}
                 checked={value === optionValue}
                 onChange={onChange}
@@ -47,12 +58,12 @@ const FieldRadios = ({
                 {...optionProps}
               >
                 {optionLabel}
-              </Radio>
+              </StyledRadio>
 
-              {value === optionValue && (
+              {value === optionValue && optionChildren && (
                 <StyledChildField>{optionChildren}</StyledChildField>
               )}
-            </div>
+            </React.Fragment>
           )
         )}
       </MultiChoice>
@@ -70,10 +81,12 @@ FieldRadios.propTypes = {
   label: PropTypes.node,
   legend: PropTypes.node,
   hint: PropTypes.node,
+  inline: PropTypes.bool,
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
       value: PropTypes.string.isRequired,
+      hint: PropTypes.node,
       children: PropTypes.node,
     })
   ),
@@ -85,6 +98,7 @@ FieldRadios.defaultProps = {
   label: null,
   legend: null,
   hint: null,
+  inline: false,
   options: [],
 }
 

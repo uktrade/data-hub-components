@@ -45,6 +45,15 @@ storiesOf('Forms', module).add('FieldRadios', () => (
         />
 
         <FieldRadios
+          inline={true}
+          name="inline"
+          label="Inline radios"
+          hint="Some hint"
+          required="Specify where the company is based"
+          options={options.map((o) => ({ ...o, hint: null }))}
+        />
+
+        <FieldRadios
           name="companyLocation2"
           legend={<H1>Using H1 as legend</H1>}
           hint="Some hint"

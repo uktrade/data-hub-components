@@ -7,6 +7,18 @@ import HintText from '@govuk-react/hint-text'
 import FormStateful from '../FormStateful'
 import FieldRadios from '../FieldRadios'
 
+const options = [
+  {
+    label: 'testOptionLabel1',
+    value: 'testOptionValue1',
+    children: 'testChildren',
+  },
+  {
+    label: 'testOptionLabel2',
+    value: 'testOptionValue2',
+  },
+]
+
 describe('FieldRadios', () => {
   let wrapper
 
@@ -72,13 +84,7 @@ describe('FieldRadios', () => {
     beforeAll(() => {
       wrapper = mount(
         <FormStateful>
-          <FieldRadios
-            name="testField"
-            options={[
-              { label: 'testOptionLabel1', value: 'testOptionValue1' },
-              { label: 'testOptionLabel2', value: 'testOptionValue2' },
-            ]}
-          />
+          <FieldRadios name="testField" options={options} />
         </FormStateful>
       )
       radios = wrapper.find(Radio)
@@ -130,13 +136,7 @@ describe('FieldRadios', () => {
         <FormStateful>
           {(form) => (
             <>
-              <FieldRadios
-                name="testField"
-                options={[
-                  { label: 'testOptionLabel1', value: 'testOptionValue1' },
-                  { label: 'testOptionLabel2', value: 'testOptionValue2' },
-                ]}
-              />
+              <FieldRadios name="testField" options={options} />
               <div id="values">{form.values.testField}</div>
             </>
           )}
@@ -165,6 +165,38 @@ describe('FieldRadios', () => {
           .at(0)
           .prop('checked')
       ).toBeTruthy()
+    })
+
+    test('should render children', () => {
+      expect(wrapper.text()).toContain('testChildren')
+    })
+  })
+
+  describe('when the field pass inline prop as TRUE', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <FormStateful>
+          <FieldRadios name="testField" inline={true} options={options} />
+        </FormStateful>
+      )
+    })
+
+    test('should render the radios inline', () => {
+      expect(wrapper.find(Radio)).toHaveStyleRule('float', 'left')
+    })
+  })
+
+  describe('when the field pass inline prop as FALSE', () => {
+    beforeAll(() => {
+      wrapper = mount(
+        <FormStateful>
+          <FieldRadios name="testField" options={options} />
+        </FormStateful>
+      )
+    })
+
+    test('should render the radios NOT inline', () => {
+      expect(wrapper.find(Radio)).not.toHaveStyleRule('float', 'left')
     })
   })
 })

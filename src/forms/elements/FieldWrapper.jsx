@@ -107,7 +107,7 @@ const FieldWrapper = ({
 )
 
 FieldInner.propTypes = {
-  legend: PropTypes.string,
+  legend: PropTypes.node,
   error: PropTypes.string,
   showBorder: PropTypes.bool,
   children: PropTypes.node,
