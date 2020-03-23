@@ -145,7 +145,7 @@ function useForm({
     setFields((prevFields) => {
       const { name, initialValue } = field
 
-      if (initialValue) {
+      if (initialValue && values[name] === undefined) {
         setFieldValue(name, initialValue)
       }
 
