@@ -7,12 +7,12 @@ const NewWindowLink = ({ href, children, ...rest }) => (
     <Link
       href={href}
       target="_blank"
-      aria-label="Opens in a new window"
+      aria-label="Opens in a new window or tab"
       {...rest}
     >
       {children}
     </Link>{' '}
-    (Opens in a new window)
+    {showHelpText && '(opens in a new window or tab)'}
   </>
 )
 
