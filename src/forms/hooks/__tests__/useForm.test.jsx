@@ -174,6 +174,25 @@ describe('useForm', () => {
     })
   })
 
+  describe('when registerField() is called and the value for that field already exists', () => {
+    beforeAll(async () => {
+      const hook = renderHook(() =>
+        useForm({ initialValues: { testField1: 'testPreExistingValue' } })
+      )
+
+      await act(async () => {
+        await hook.result.current.registerField(testField1)
+        formState = hook.result.current
+      })
+    })
+
+    test('should not override the pre-existing value', () => {
+      expect(formState.values).toEqual({
+        testField1: 'testPreExistingValue',
+      })
+    })
+  })
+
   describe('when deregisterField() is called', () => {
     beforeAll(async () => {
       const hook = renderHook(() => useForm())
