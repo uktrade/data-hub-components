@@ -121,7 +121,7 @@ describe('useForm', () => {
       const hook = renderHook(() => useForm())
 
       act(() => {
-        fieldState = hook.result.current.getFieldState('testField1')
+        fieldState = hook.result.current.getFieldState('testField1', '')
       })
     })
 

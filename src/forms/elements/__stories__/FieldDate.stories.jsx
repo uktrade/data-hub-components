@@ -1,0 +1,57 @@
+import React from 'react'
+import { addDecorator, storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions/dist/index'
+import { withKnobs } from '@storybook/addon-knobs'
+import Button from '@govuk-react/button'
+
+import FieldDate from '../FieldDate'
+import FormStateful from '../FormStateful'
+
+addDecorator(withKnobs)
+
+const ERRORS = {
+  DAY: 'Enter a valid Epoch day',
+  MONTH: 'Enter a valid Epoch month',
+  YEAR: 'Enter a valid Epoch year',
+}
+
+storiesOf('Forms', module)
+  .add('FieldDate - default validation', () => (
+    <FormStateful onSubmit={action('onSubmit')}>
+      {(form) => (
+        <>
+          <FieldDate
+            name="date"
+            label="What is your date of birth?"
+            hint="For example, 01 09 2019"
+            required="Enter a valid date of birth"
+          />
+          <Button>Submit</Button>
+          <pre>{JSON.stringify(form, null, 2)}</pre>
+        </>
+      )}
+    </FormStateful>
+  ))
+  .add('FieldDate - custom validation', () => (
+    <FormStateful onSubmit={action('onSubmit')}>
+      {(form) => (
+        <>
+          <FieldDate
+            name="date"
+            label="What date is Unix epoch?"
+            hint="For example, 01 09 2019"
+            required="Enter a valid Unix epoch date"
+            validate={({ day, month, year }) => {
+              // Contrived example
+              const dayErr = day === '01' ? null : ERRORS.DAY
+              const monthErr = month === '01' ? null : ERRORS.MONTH
+              const yearErr = year === '1970' ? null : ERRORS.YEAR
+              return dayErr || monthErr || yearErr
+            }}
+          />
+          <Button>Submit</Button>
+          <pre>{JSON.stringify(form, null, 2)}</pre>
+        </>
+      )}
+    </FormStateful>
+  ))

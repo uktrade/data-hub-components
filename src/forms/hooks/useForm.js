@@ -75,9 +75,9 @@ function useForm({
     }
   }, [currentStep, errors])
 
-  const getFieldState = (name) => {
+  const getFieldState = (name, initialState) => {
     return {
-      value: values[name] || '',
+      value: values[name] ?? initialState,
       touched: touched[name] || false,
       error: errors[name] || null,
     }
