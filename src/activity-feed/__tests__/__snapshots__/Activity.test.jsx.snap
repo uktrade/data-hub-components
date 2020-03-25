@@ -6,7 +6,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,7 +18,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -27,22 +27,22 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -60,7 +60,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -72,24 +72,24 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -125,18 +125,18 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -153,7 +153,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   margin-bottom: 15px;
 }
 
-.c8 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -213,28 +213,28 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -248,12 +248,12 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -261,37 +261,64 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c8 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -313,7 +340,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -345,14 +372,14 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 @media print {
-  .c8 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c8 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -381,28 +408,80 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -438,30 +517,30 @@ exports[`Activity when a New OMIS order is added should render an activity card 
       className="c7"
     >
       <li
-        className="c8"
+        className="c8 c9"
       >
         20 Jul 2017
       </li>
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View key details and people for this order
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -470,7 +549,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -481,7 +560,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
               Country
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -495,7 +574,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -506,7 +585,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
               UK region
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -520,7 +599,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -531,7 +610,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
               Added by
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -539,10 +618,10 @@ exports[`Activity when a New OMIS order is added should render an activity card 
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   <span>
                     Test CMU 1
@@ -564,7 +643,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -575,7 +654,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -583,10 +662,10 @@ exports[`Activity when a New OMIS order is added should render an activity card 
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   <a
                     className="c6"
@@ -625,7 +704,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -637,7 +716,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -646,22 +725,22 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -679,7 +758,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -691,24 +770,24 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -744,18 +823,18 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -772,7 +851,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   margin-bottom: 15px;
 }
 
-.c8 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -832,28 +911,28 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -867,12 +946,12 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -880,37 +959,64 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c8 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -932,7 +1038,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -964,14 +1070,14 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 @media print {
-  .c8 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c8 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -1000,28 +1106,80 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -1057,30 +1215,30 @@ exports[`Activity when an investment project is CTI should render the CTI invest
       className="c7"
     >
       <li
-        className="c8"
+        className="c8 c9"
       >
         23 May 2017
       </li>
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         Key details and people for this project
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -1089,7 +1247,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1100,7 +1258,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
               Investment Type
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -1114,7 +1272,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1125,7 +1283,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
               Estimated land date
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -1139,7 +1297,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1150,7 +1308,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -1158,10 +1316,10 @@ exports[`Activity when an investment project is CTI should render the CTI invest
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   <a
                     className="c6"
@@ -1200,7 +1358,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1212,7 +1370,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -1221,22 +1379,22 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1254,7 +1412,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -1266,24 +1424,24 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -1319,18 +1477,18 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -1347,7 +1505,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   margin-bottom: 15px;
 }
 
-.c8 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1407,28 +1565,28 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1442,12 +1600,12 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -1455,37 +1613,64 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c8 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -1507,7 +1692,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -1539,14 +1724,14 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 @media print {
-  .c8 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c8 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -1575,28 +1760,80 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -1632,30 +1869,30 @@ exports[`Activity when an investment project is FDI should render the FDI invest
       className="c7"
     >
       <li
-        className="c8"
+        className="c8 c9"
       >
         05 Mar 2017
       </li>
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         Key details and people for this project
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -1664,7 +1901,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1675,7 +1912,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
               Investment Type
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -1689,7 +1926,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1700,7 +1937,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
               Estimated land date
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -1714,7 +1951,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1725,7 +1962,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -1733,10 +1970,10 @@ exports[`Activity when an investment project is FDI should render the FDI invest
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   <a
                     className="c6"
@@ -1753,7 +1990,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
                   </span>
                 </li>
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   <a
                     className="c6"
@@ -1770,7 +2007,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
                   </span>
                 </li>
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   <a
                     className="c6"
@@ -1793,7 +2030,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1804,7 +2041,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
               Total Investment
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -1818,7 +2055,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1829,7 +2066,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
               Capital expenditure value
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -1843,7 +2080,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1854,7 +2091,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
               Gross value added (GVA)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -1868,7 +2105,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -1879,7 +2116,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
               Number of new jobs
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -1909,7 +2146,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1921,7 +2158,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -1930,22 +2167,22 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1963,7 +2200,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -1975,24 +2212,24 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -2028,18 +2265,18 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -2056,7 +2293,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   margin-bottom: 15px;
 }
 
-.c8 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2116,28 +2353,28 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2151,12 +2388,12 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -2164,37 +2401,64 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c8 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -2216,7 +2480,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -2248,14 +2512,14 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 @media print {
-  .c8 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c8 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -2284,28 +2548,80 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -2341,30 +2657,30 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
       className="c7"
     >
       <li
-        className="c8"
+        className="c8 c9"
       >
         03 Oct 2017
       </li>
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         Key details and people for this project
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -2373,7 +2689,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2384,7 +2700,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
               Investment Type
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -2398,7 +2714,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2409,7 +2725,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
               Added by
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -2417,10 +2733,10 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   <span>
                     Test CMU 1
@@ -2442,7 +2758,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2453,7 +2769,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
               Estimated land date
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -2467,7 +2783,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -2478,7 +2794,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -2486,10 +2802,10 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   <a
                     className="c6"
@@ -2528,7 +2844,7 @@ exports[`Activity when the interaction does not have a service should render int
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2540,7 +2856,7 @@ exports[`Activity when the interaction does not have a service should render int
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -2549,22 +2865,22 @@ exports[`Activity when the interaction does not have a service should render int
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -2582,7 +2898,7 @@ exports[`Activity when the interaction does not have a service should render int
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -2594,24 +2910,24 @@ exports[`Activity when the interaction does not have a service should render int
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -2647,18 +2963,18 @@ exports[`Activity when the interaction does not have a service should render int
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -2675,7 +2991,7 @@ exports[`Activity when the interaction does not have a service should render int
   margin-bottom: 15px;
 }
 
-.c7 {
+.c8 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2685,7 +3001,7 @@ exports[`Activity when the interaction does not have a service should render int
   margin-bottom: 5px;
 }
 
-.c8 {
+.c9 {
   border: 2px solid #006435;
   border-radius: 4px;
   padding: 2px 4px;
@@ -2734,28 +3050,28 @@ exports[`Activity when the interaction does not have a service should render int
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2769,12 +3085,12 @@ exports[`Activity when the interaction does not have a service should render int
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -2782,33 +3098,54 @@ exports[`Activity when the interaction does not have a service should render int
   vertical-align: top;
 }
 
-.c18 {
-  margin: 0;
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
+  list-style-type: none;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c7 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -2830,7 +3167,7 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -2862,14 +3199,14 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 @media print {
-  .c7 {
+  .c8 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c7 {
+  .c8 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -2898,28 +3235,60 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
   }
 }
 
@@ -2949,15 +3318,15 @@ exports[`Activity when the interaction does not have a service should render int
       className="c6"
     >
       <li
-        className="c7"
+        className="c7 c8"
       >
         06 Jun 2019
       </li>
       <li
-        className="c7"
+        className="c7 c8"
       >
         <span
-          className="c8"
+          className="c9"
         >
           Interaction
         </span>
@@ -2965,23 +3334,23 @@ exports[`Activity when the interaction does not have a service should render int
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -2990,7 +3359,7 @@ exports[`Activity when the interaction does not have a service should render int
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -3001,7 +3370,7 @@ exports[`Activity when the interaction does not have a service should render int
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -3009,7 +3378,7 @@ exports[`Activity when the interaction does not have a service should render int
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               />
             </td>
           </tr>
@@ -3017,7 +3386,7 @@ exports[`Activity when the interaction does not have a service should render int
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -3028,7 +3397,7 @@ exports[`Activity when the interaction does not have a service should render int
               Adviser(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -3036,7 +3405,7 @@ exports[`Activity when the interaction does not have a service should render int
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               />
             </td>
           </tr>
@@ -3060,7 +3429,7 @@ exports[`Activity when the interaction is a draft and archived should render int
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3072,7 +3441,7 @@ exports[`Activity when the interaction is a draft and archived should render int
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -3081,22 +3450,22 @@ exports[`Activity when the interaction is a draft and archived should render int
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3114,7 +3483,7 @@ exports[`Activity when the interaction is a draft and archived should render int
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -3126,24 +3495,24 @@ exports[`Activity when the interaction is a draft and archived should render int
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -3179,18 +3548,18 @@ exports[`Activity when the interaction is a draft and archived should render int
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -3207,7 +3576,7 @@ exports[`Activity when the interaction is a draft and archived should render int
   margin-bottom: 15px;
 }
 
-.c7 {
+.c8 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3217,7 +3586,7 @@ exports[`Activity when the interaction is a draft and archived should render int
   margin-bottom: 5px;
 }
 
-.c8 {
+.c9 {
   border: 2px solid #b10e1e;
   border-radius: 4px;
   padding: 2px 4px;
@@ -3266,28 +3635,28 @@ exports[`Activity when the interaction is a draft and archived should render int
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3301,12 +3670,12 @@ exports[`Activity when the interaction is a draft and archived should render int
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -3314,37 +3683,64 @@ exports[`Activity when the interaction is a draft and archived should render int
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c7 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -3366,7 +3762,7 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -3398,14 +3794,14 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 @media print {
-  .c7 {
+  .c8 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c7 {
+  .c8 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -3434,28 +3830,80 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -3485,15 +3933,15 @@ exports[`Activity when the interaction is a draft and archived should render int
       className="c6"
     >
       <li
-        className="c7"
+        className="c7 c8"
       >
         06 Jun 2019
       </li>
       <li
-        className="c7"
+        className="c7 c8"
       >
         <span
-          className="c8"
+          className="c9"
         >
           Cancelled interaction
         </span>
@@ -3501,23 +3949,23 @@ exports[`Activity when the interaction is a draft and archived should render int
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -3526,7 +3974,7 @@ exports[`Activity when the interaction is a draft and archived should render int
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -3537,7 +3985,7 @@ exports[`Activity when the interaction is a draft and archived should render int
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -3545,10 +3993,10 @@ exports[`Activity when the interaction is a draft and archived should render int
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -3560,7 +4008,7 @@ exports[`Activity when the interaction is a draft and archived should render int
                    
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -3572,7 +4020,7 @@ exports[`Activity when the interaction is a draft and archived should render int
                    
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -3595,7 +4043,7 @@ exports[`Activity when the interaction is a draft and archived should render int
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -3606,7 +4054,7 @@ exports[`Activity when the interaction is a draft and archived should render int
               Adviser(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -3614,10 +4062,10 @@ exports[`Activity when the interaction is a draft and archived should render int
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     Mario Bros
@@ -3634,7 +4082,7 @@ exports[`Activity when the interaction is a draft and archived should render int
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     John Hammond
@@ -3651,7 +4099,7 @@ exports[`Activity when the interaction is a draft and archived should render int
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     Luke Moon
@@ -3674,7 +4122,7 @@ exports[`Activity when the interaction is a draft and archived should render int
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -3685,7 +4133,7 @@ exports[`Activity when the interaction is a draft and archived should render int
               Services
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -3715,7 +4163,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3727,7 +4175,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -3736,22 +4184,22 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3769,7 +4217,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -3781,24 +4229,24 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -3834,18 +4282,18 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -3862,7 +4310,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   margin-bottom: 15px;
 }
 
-.c7 {
+.c8 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3872,7 +4320,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   margin-bottom: 5px;
 }
 
-.c8 {
+.c9 {
   border: 2px solid #005ea5;
   border-radius: 4px;
   padding: 2px 4px;
@@ -3921,28 +4369,28 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3956,12 +4404,12 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -3969,37 +4417,64 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c7 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -4021,7 +4496,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -4053,14 +4528,14 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 @media print {
-  .c7 {
+  .c8 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c7 {
+  .c8 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -4089,28 +4564,80 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -4140,15 +4667,15 @@ exports[`Activity when the interaction is a draft and upcoming should render int
       className="c6"
     >
       <li
-        className="c7"
+        className="c7 c8"
       >
         06 Jun 2019
       </li>
       <li
-        className="c7"
+        className="c7 c8"
       >
         <span
-          className="c8"
+          className="c9"
         >
           Upcoming interaction
         </span>
@@ -4156,23 +4683,23 @@ exports[`Activity when the interaction is a draft and upcoming should render int
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -4181,7 +4708,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -4192,7 +4719,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -4200,10 +4727,10 @@ exports[`Activity when the interaction is a draft and upcoming should render int
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -4215,7 +4742,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
                    
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -4227,7 +4754,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
                    
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -4250,7 +4777,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -4261,7 +4788,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
               Adviser(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -4269,10 +4796,10 @@ exports[`Activity when the interaction is a draft and upcoming should render int
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     Mario Bros
@@ -4289,7 +4816,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     John Hammond
@@ -4306,7 +4833,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     Luke Moon
@@ -4329,7 +4856,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -4340,7 +4867,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
               Services
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -4370,7 +4897,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4382,7 +4909,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -4391,22 +4918,22 @@ exports[`Activity when the interaction is a draft in the past should render inte
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -4424,7 +4951,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -4436,24 +4963,24 @@ exports[`Activity when the interaction is a draft in the past should render inte
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -4489,18 +5016,18 @@ exports[`Activity when the interaction is a draft in the past should render inte
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -4517,7 +5044,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
   margin-bottom: 15px;
 }
 
-.c7 {
+.c8 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4527,7 +5054,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
   margin-bottom: 5px;
 }
 
-.c8 {
+.c9 {
   border: 2px solid #005ea5;
   border-radius: 4px;
   padding: 2px 4px;
@@ -4576,28 +5103,28 @@ exports[`Activity when the interaction is a draft in the past should render inte
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4611,12 +5138,12 @@ exports[`Activity when the interaction is a draft in the past should render inte
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -4624,37 +5151,64 @@ exports[`Activity when the interaction is a draft in the past should render inte
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c7 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -4676,7 +5230,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -4708,14 +5262,14 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 @media print {
-  .c7 {
+  .c8 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c7 {
+  .c8 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -4744,28 +5298,80 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -4795,15 +5401,15 @@ exports[`Activity when the interaction is a draft in the past should render inte
       className="c6"
     >
       <li
-        className="c7"
+        className="c7 c8"
       >
         05 Jun 2018
       </li>
       <li
-        className="c7"
+        className="c7 c8"
       >
         <span
-          className="c8"
+          className="c9"
         >
           Incomplete interaction
         </span>
@@ -4811,23 +5417,23 @@ exports[`Activity when the interaction is a draft in the past should render inte
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -4836,7 +5442,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -4847,7 +5453,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -4855,10 +5461,10 @@ exports[`Activity when the interaction is a draft in the past should render inte
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -4870,7 +5476,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
                    
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -4882,7 +5488,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
                    
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -4905,7 +5511,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -4916,7 +5522,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
               Adviser(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -4924,10 +5530,10 @@ exports[`Activity when the interaction is a draft in the past should render inte
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     Mario Bros
@@ -4944,7 +5550,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     John Hammond
@@ -4961,7 +5567,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     Luke Moon
@@ -4984,7 +5590,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -4995,7 +5601,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
               Services
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -5025,7 +5631,7 @@ exports[`Activity when the interaction is complete should render interaction act
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5037,7 +5643,7 @@ exports[`Activity when the interaction is complete should render interaction act
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -5046,22 +5652,22 @@ exports[`Activity when the interaction is complete should render interaction act
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -5079,7 +5685,7 @@ exports[`Activity when the interaction is complete should render interaction act
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -5091,24 +5697,24 @@ exports[`Activity when the interaction is complete should render interaction act
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -5144,18 +5750,18 @@ exports[`Activity when the interaction is complete should render interaction act
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -5172,7 +5778,7 @@ exports[`Activity when the interaction is complete should render interaction act
   margin-bottom: 15px;
 }
 
-.c7 {
+.c8 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5182,7 +5788,7 @@ exports[`Activity when the interaction is complete should render interaction act
   margin-bottom: 5px;
 }
 
-.c8 {
+.c9 {
   border: 2px solid #006435;
   border-radius: 4px;
   padding: 2px 4px;
@@ -5231,28 +5837,28 @@ exports[`Activity when the interaction is complete should render interaction act
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5266,12 +5872,12 @@ exports[`Activity when the interaction is complete should render interaction act
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -5279,37 +5885,64 @@ exports[`Activity when the interaction is complete should render interaction act
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c7 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -5331,7 +5964,7 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -5363,14 +5996,14 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 @media print {
-  .c7 {
+  .c8 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c7 {
+  .c8 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -5399,28 +6032,80 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -5450,15 +6135,15 @@ exports[`Activity when the interaction is complete should render interaction act
       className="c6"
     >
       <li
-        className="c7"
+        className="c7 c8"
       >
         06 Jun 2019
       </li>
       <li
-        className="c7"
+        className="c7 c8"
       >
         <span
-          className="c8"
+          className="c9"
         >
           Interaction
         </span>
@@ -5466,23 +6151,23 @@ exports[`Activity when the interaction is complete should render interaction act
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -5491,7 +6176,7 @@ exports[`Activity when the interaction is complete should render interaction act
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -5502,7 +6187,7 @@ exports[`Activity when the interaction is complete should render interaction act
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -5510,10 +6195,10 @@ exports[`Activity when the interaction is complete should render interaction act
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -5525,7 +6210,7 @@ exports[`Activity when the interaction is complete should render interaction act
                    
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -5537,7 +6222,7 @@ exports[`Activity when the interaction is complete should render interaction act
                    
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -5560,7 +6245,7 @@ exports[`Activity when the interaction is complete should render interaction act
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -5571,7 +6256,7 @@ exports[`Activity when the interaction is complete should render interaction act
               Adviser(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -5579,10 +6264,10 @@ exports[`Activity when the interaction is complete should render interaction act
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     Mario Bros
@@ -5599,7 +6284,7 @@ exports[`Activity when the interaction is complete should render interaction act
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     John Hammond
@@ -5616,7 +6301,7 @@ exports[`Activity when the interaction is complete should render interaction act
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     Luke Moon
@@ -5639,7 +6324,7 @@ exports[`Activity when the interaction is complete should render interaction act
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -5650,7 +6335,7 @@ exports[`Activity when the interaction is complete should render interaction act
               Services
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -5680,7 +6365,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5692,7 +6377,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -5701,22 +6386,22 @@ exports[`Activity when there is a Companies House Accounts record should render 
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -5734,7 +6419,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -5746,71 +6431,71 @@ exports[`Activity when there is a Companies House Accounts record should render 
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
-.c18 {
+.c19 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.c18:link {
+.c19:link {
   color: #005ea5;
 }
 
-.c18:visited {
+.c19:visited {
   color: #4c2c92;
 }
 
-.c18:hover {
+.c19:hover {
   color: #2b8cc4;
 }
 
-.c18:active {
+.c19:active {
   color: #2b8cc4;
 }
 
-.c18:focus {
+.c19:focus {
   color: #0b0c0c;
 }
 
-.c18:focus {
+.c19:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -5827,7 +6512,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
   margin-bottom: 15px;
 }
 
-.c8 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5894,28 +6579,28 @@ exports[`Activity when there is a Companies House Accounts record should render 
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5929,12 +6614,12 @@ exports[`Activity when there is a Companies House Accounts record should render 
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -5942,42 +6627,46 @@ exports[`Activity when there is a Companies House Accounts record should render 
   vertical-align: top;
 }
 
+.c20 > .c8 {
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
 
 @media print {
-  .c18 {
+  .c19 {
     font-family: sans-serif;
   }
 }
 
 @media print {
-  .c18[href^="/"]::after,
-  .c18[href^="http://"]::after,
-  .c18[href^="https://"]::after {
+  .c19[href^="/"]::after,
+  .c19[href^="http://"]::after,
+  .c19[href^="https://"]::after {
     content: " (" attr(href) ")";
     font-size: 90%;
     word-wrap: break-word;
@@ -5985,7 +6674,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -6017,14 +6706,14 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 @media print {
-  .c8 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c8 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -6053,28 +6742,34 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
   }
 }
 
@@ -6109,30 +6804,30 @@ exports[`Activity when there is a Companies House Accounts record should render 
       className="c7"
     >
       <li
-        className="c8"
+        className="c8 c9"
       >
         13 Dec 2020
       </li>
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View key details for this account
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -6141,7 +6836,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6152,7 +6847,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
               Balance sheet date
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6166,7 +6861,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6177,7 +6872,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
               Net assets liabilities including pension asset liability
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6191,7 +6886,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6202,7 +6897,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
               Period start
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6216,7 +6911,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6227,7 +6922,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
               Period end
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6241,7 +6936,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6252,7 +6947,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
               Shareholder funds
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6265,7 +6960,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
         </tbody>
       </table>
       <a
-        className="c18"
+        className="c19"
         muted={false}
       >
         Go to the Companies House accounts page
@@ -6281,7 +6976,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6293,7 +6988,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -6302,22 +6997,22 @@ exports[`Activity when there is a Companies House Company incorporation record s
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -6335,7 +7030,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -6347,39 +7042,39 @@ exports[`Activity when there is a Companies House Company incorporation record s
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -6396,7 +7091,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
   margin-bottom: 15px;
 }
 
-.c8 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6463,28 +7158,28 @@ exports[`Activity when there is a Companies House Company incorporation record s
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6498,12 +7193,12 @@ exports[`Activity when there is a Companies House Company incorporation record s
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -6511,43 +7206,70 @@ exports[`Activity when there is a Companies House Company incorporation record s
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c8 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -6579,14 +7301,14 @@ exports[`Activity when there is a Companies House Company incorporation record s
 }
 
 @media print {
-  .c8 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c8 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -6615,28 +7337,80 @@ exports[`Activity when there is a Companies House Company incorporation record s
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -6671,30 +7445,30 @@ exports[`Activity when there is a Companies House Company incorporation record s
       className="c7"
     >
       <li
-        className="c8"
+        className="c8 c9"
       >
         03 Oct 1970
       </li>
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View key details for this company
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -6703,7 +7477,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6714,7 +7488,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
               Confirmation Statement last made up date
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6728,7 +7502,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6739,7 +7513,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
               Confirmation Statement next due date
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6753,7 +7527,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6764,7 +7538,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
               Incorporation date
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6778,7 +7552,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6789,7 +7563,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
               Next due date
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6803,7 +7577,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6814,7 +7588,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
               Returns last made up date
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6828,7 +7602,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6839,7 +7613,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
               Returns next due date
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6853,7 +7627,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -6864,7 +7638,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
               SIC code(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -6872,20 +7646,20 @@ exports[`Activity when there is a Companies House Company incorporation record s
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   74990 - Non-trading company
                 </li>
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   03110 - Marine fishing
                 </li>
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   99000 - Activities of extraterritorial organisations and bodies
                 </li>
@@ -6905,7 +7679,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6917,7 +7691,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -6926,22 +7700,22 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -6959,7 +7733,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -6971,39 +7745,39 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -7020,7 +7794,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   margin-bottom: 15px;
 }
 
-.c8 {
+.c9 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7087,28 +7861,28 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7122,12 +7896,12 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -7135,43 +7909,70 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c8 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -7203,14 +8004,14 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
 }
 
 @media print {
-  .c8 {
+  .c9 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c8 {
+  .c9 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -7239,28 +8040,80 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -7295,30 +8148,30 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
       className="c7"
     >
       <li
-        className="c8"
+        className="c8 c9"
       >
         05 Jan 1879
       </li>
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View key export details
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -7327,7 +8180,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -7338,7 +8191,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
               Export Item code(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -7346,40 +8199,40 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   2803406
                 </li>
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   7252793
                 </li>
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   5163497
                 </li>
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   6477617
                 </li>
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   3158924
                 </li>
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   5735446
                 </li>
                 <li
-                  className="c19"
+                  className="c8 c22"
                 >
                   4517493
                 </li>
@@ -7444,7 +8297,7 @@ exports[`Activity when there is a completed referral should render an complete r
   margin-bottom: 15px;
 }
 
-.c7 {
+.c8 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7454,7 +8307,7 @@ exports[`Activity when there is a completed referral should render an complete r
   margin-bottom: 5px;
 }
 
-.c8 {
+.c9 {
   border: 2px solid #006435;
   border-radius: 4px;
   padding: 2px 4px;
@@ -7503,28 +8356,28 @@ exports[`Activity when there is a completed referral should render an complete r
   display: inline;
 }
 
-.c11 {
+.c12 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c11:last-child {
+.c12:last-child {
   padding-right: 0;
 }
 
-.c12 {
+.c13 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c12:last-child {
+.c13:last-child {
   padding-right: 0;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7538,17 +8391,21 @@ exports[`Activity when there is a completed referral should render an complete r
   margin-bottom: 20px;
 }
 
-.c9 {
-  margin-bottom: 10px;
+.c10 th {
+  width: 284px;
 }
 
-.c9 > tbody > tr > th,
-.c9 td {
+.c10 th,
+.c10 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
   font-size: 16px;
   vertical-align: top;
+}
+
+.c14 > .c7 {
+  margin-bottom: 5px;
 }
 
 @media print {
@@ -7594,14 +8451,14 @@ exports[`Activity when there is a completed referral should render an complete r
 }
 
 @media print {
-  .c7 {
+  .c8 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c7 {
+  .c8 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -7630,28 +8487,34 @@ exports[`Activity when there is a completed referral should render an complete r
 }
 
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 0;
   }
 }
 
@@ -7681,15 +8544,15 @@ exports[`Activity when there is a completed referral should render an complete r
       className="c6"
     >
       <li
-        className="c7"
+        className="c7 c8"
       >
         18 Feb 2020
       </li>
       <li
-        className="c7"
+        className="c7 c8"
       >
         <span
-          className="c8"
+          className="c9"
         >
           Completed referral
         </span>
@@ -7697,7 +8560,7 @@ exports[`Activity when there is a completed referral should render an complete r
     </ul>
   </div>
   <table
-    className="c9 c10"
+    className="c10 c11"
   >
     <tbody
       className=""
@@ -7706,7 +8569,7 @@ exports[`Activity when there is a completed referral should render an complete r
         className=""
       >
         <th
-          className="c11"
+          className="c12"
           style={
             Object {
               "border": 0,
@@ -7717,7 +8580,7 @@ exports[`Activity when there is a completed referral should render an complete r
           Sending adviser
         </th>
         <td
-          className="c12"
+          className="c13"
           style={
             Object {
               "border": 0,
@@ -7739,7 +8602,7 @@ exports[`Activity when there is a completed referral should render an complete r
         className=""
       >
         <th
-          className="c11"
+          className="c12"
           style={
             Object {
               "border": 0,
@@ -7750,7 +8613,7 @@ exports[`Activity when there is a completed referral should render an complete r
           Receiving adviser
         </th>
         <td
-          className="c12"
+          className="c13"
           style={
             Object {
               "border": 0,
@@ -7772,7 +8635,7 @@ exports[`Activity when there is a completed referral should render an complete r
         className=""
       >
         <th
-          className="c11"
+          className="c12"
           style={
             Object {
               "border": 0,
@@ -7783,7 +8646,7 @@ exports[`Activity when there is a completed referral should render an complete r
           Completed on
         </th>
         <td
-          className="c12"
+          className="c13"
           style={
             Object {
               "border": 0,
@@ -7849,7 +8712,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
   margin-bottom: 15px;
 }
 
-.c7 {
+.c8 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7859,7 +8722,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
   margin-bottom: 5px;
 }
 
-.c8 {
+.c9 {
   border: 2px solid #005ea5;
   border-radius: 4px;
   padding: 2px 4px;
@@ -7908,28 +8771,28 @@ exports[`Activity when there is a outstanding referral should render an outstand
   display: inline;
 }
 
-.c11 {
+.c12 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c11:last-child {
+.c12:last-child {
   padding-right: 0;
 }
 
-.c12 {
+.c13 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c12:last-child {
+.c13:last-child {
   padding-right: 0;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7943,17 +8806,21 @@ exports[`Activity when there is a outstanding referral should render an outstand
   margin-bottom: 20px;
 }
 
-.c9 {
-  margin-bottom: 10px;
+.c10 th {
+  width: 284px;
 }
 
-.c9 > tbody > tr > th,
-.c9 td {
+.c10 th,
+.c10 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
   font-size: 16px;
   vertical-align: top;
+}
+
+.c14 > .c7 {
+  margin-bottom: 5px;
 }
 
 @media print {
@@ -7999,14 +8866,14 @@ exports[`Activity when there is a outstanding referral should render an outstand
 }
 
 @media print {
-  .c7 {
+  .c8 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c7 {
+  .c8 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -8035,28 +8902,34 @@ exports[`Activity when there is a outstanding referral should render an outstand
 }
 
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c10 {
+    margin-bottom: 0;
   }
 }
 
@@ -8086,15 +8959,15 @@ exports[`Activity when there is a outstanding referral should render an outstand
       className="c6"
     >
       <li
-        className="c7"
+        className="c7 c8"
       >
         15 Feb 2020
       </li>
       <li
-        className="c7"
+        className="c7 c8"
       >
         <span
-          className="c8"
+          className="c9"
         >
           Outstanding referral
         </span>
@@ -8102,7 +8975,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
     </ul>
   </div>
   <table
-    className="c9 c10"
+    className="c10 c11"
   >
     <tbody
       className=""
@@ -8111,7 +8984,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
         className=""
       >
         <th
-          className="c11"
+          className="c12"
           style={
             Object {
               "border": 0,
@@ -8122,7 +8995,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
           Sending adviser
         </th>
         <td
-          className="c12"
+          className="c13"
           style={
             Object {
               "border": 0,
@@ -8144,7 +9017,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
         className=""
       >
         <th
-          className="c11"
+          className="c12"
           style={
             Object {
               "border": 0,
@@ -8155,7 +9028,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
           Receiving adviser
         </th>
         <td
-          className="c12"
+          className="c13"
           style={
             Object {
               "border": 0,
@@ -8184,7 +9057,7 @@ exports[`Activity when there is a service delivery should render service deliver
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8196,7 +9069,7 @@ exports[`Activity when there is a service delivery should render service deliver
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -8205,22 +9078,22 @@ exports[`Activity when there is a service delivery should render service deliver
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -8238,7 +9111,7 @@ exports[`Activity when there is a service delivery should render service deliver
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -8250,24 +9123,24 @@ exports[`Activity when there is a service delivery should render service deliver
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -8303,18 +9176,18 @@ exports[`Activity when there is a service delivery should render service deliver
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -8331,7 +9204,7 @@ exports[`Activity when there is a service delivery should render service deliver
   margin-bottom: 15px;
 }
 
-.c7 {
+.c8 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8341,7 +9214,7 @@ exports[`Activity when there is a service delivery should render service deliver
   margin-bottom: 5px;
 }
 
-.c8 {
+.c9 {
   border: 2px solid #006435;
   border-radius: 4px;
   padding: 2px 4px;
@@ -8390,28 +9263,28 @@ exports[`Activity when there is a service delivery should render service deliver
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8425,12 +9298,12 @@ exports[`Activity when there is a service delivery should render service deliver
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -8438,37 +9311,64 @@ exports[`Activity when there is a service delivery should render service deliver
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c7 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -8490,7 +9390,7 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -8522,14 +9422,14 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 @media print {
-  .c7 {
+  .c8 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c7 {
+  .c8 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -8558,28 +9458,80 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -8609,15 +9561,15 @@ exports[`Activity when there is a service delivery should render service deliver
       className="c6"
     >
       <li
-        className="c7"
+        className="c7 c8"
       >
         29 Apr 2019
       </li>
       <li
-        className="c7"
+        className="c7 c8"
       >
         <span
-          className="c8"
+          className="c9"
         >
           Service delivery
         </span>
@@ -8625,23 +9577,23 @@ exports[`Activity when there is a service delivery should render service deliver
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View service delivery details
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -8650,7 +9602,7 @@ exports[`Activity when there is a service delivery should render service deliver
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -8661,7 +9613,7 @@ exports[`Activity when there is a service delivery should render service deliver
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -8669,10 +9621,10 @@ exports[`Activity when there is a service delivery should render service deliver
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -8690,7 +9642,7 @@ exports[`Activity when there is a service delivery should render service deliver
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -8701,7 +9653,7 @@ exports[`Activity when there is a service delivery should render service deliver
               Adviser(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -8709,10 +9661,10 @@ exports[`Activity when there is a service delivery should render service deliver
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     Mario Bros
@@ -8735,7 +9687,7 @@ exports[`Activity when there is a service delivery should render service deliver
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -8746,7 +9698,7 @@ exports[`Activity when there is a service delivery should render service deliver
               Services
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -8778,7 +9730,7 @@ exports[`Activity when there is an interaction should render interaction activit
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8790,7 +9742,7 @@ exports[`Activity when there is an interaction should render interaction activit
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -8799,22 +9751,22 @@ exports[`Activity when there is an interaction should render interaction activit
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -8832,7 +9784,7 @@ exports[`Activity when there is an interaction should render interaction activit
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -8844,24 +9796,24 @@ exports[`Activity when there is an interaction should render interaction activit
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -8897,18 +9849,18 @@ exports[`Activity when there is an interaction should render interaction activit
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -8925,7 +9877,7 @@ exports[`Activity when there is an interaction should render interaction activit
   margin-bottom: 15px;
 }
 
-.c7 {
+.c8 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8935,7 +9887,7 @@ exports[`Activity when there is an interaction should render interaction activit
   margin-bottom: 5px;
 }
 
-.c8 {
+.c9 {
   border: 2px solid #006435;
   border-radius: 4px;
   padding: 2px 4px;
@@ -8984,28 +9936,28 @@ exports[`Activity when there is an interaction should render interaction activit
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9019,12 +9971,12 @@ exports[`Activity when there is an interaction should render interaction activit
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -9032,37 +9984,64 @@ exports[`Activity when there is an interaction should render interaction activit
   vertical-align: top;
 }
 
-.c19 {
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
   list-style-type: none;
-}
-
-.c18 {
-  margin: 0;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c7 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
+.c22 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -9084,7 +10063,7 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -9116,14 +10095,14 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 @media print {
-  .c7 {
+  .c8 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c7 {
+  .c8 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -9152,28 +10131,80 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  .c22 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c22 {
+    font-size: 16px;
   }
 }
 
@@ -9203,15 +10234,15 @@ exports[`Activity when there is an interaction should render interaction activit
       className="c6"
     >
       <li
-        className="c7"
+        className="c7 c8"
       >
         02 May 2019
       </li>
       <li
-        className="c7"
+        className="c7 c8"
       >
         <span
-          className="c8"
+          className="c9"
         >
           Interaction
         </span>
@@ -9219,23 +10250,23 @@ exports[`Activity when there is an interaction should render interaction activit
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -9244,7 +10275,7 @@ exports[`Activity when there is an interaction should render interaction activit
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -9255,7 +10286,7 @@ exports[`Activity when there is an interaction should render interaction activit
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -9263,10 +10294,10 @@ exports[`Activity when there is an interaction should render interaction activit
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -9278,7 +10309,7 @@ exports[`Activity when there is an interaction should render interaction activit
                    
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -9290,7 +10321,7 @@ exports[`Activity when there is an interaction should render interaction activit
                    
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <a
                     className="c5"
@@ -9313,7 +10344,7 @@ exports[`Activity when there is an interaction should render interaction activit
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -9324,7 +10355,7 @@ exports[`Activity when there is an interaction should render interaction activit
               Adviser(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -9332,10 +10363,10 @@ exports[`Activity when there is an interaction should render interaction activit
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               >
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     Mario Bros
@@ -9352,7 +10383,7 @@ exports[`Activity when there is an interaction should render interaction activit
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     John Hammond
@@ -9369,7 +10400,7 @@ exports[`Activity when there is an interaction should render interaction activit
                   , (Digital Data Hub - Live Service)
                 </li>
                 <li
-                  className="c19"
+                  className="c7 c22"
                 >
                   <span>
                     Luke Moon
@@ -9392,7 +10423,7 @@ exports[`Activity when there is an interaction should render interaction activit
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -9403,7 +10434,7 @@ exports[`Activity when there is an interaction should render interaction activit
               Services
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -9433,7 +10464,7 @@ exports[`Activity when there is an interaction without any people involved shoul
   padding: 15px;
 }
 
-.c10 {
+.c11 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9445,7 +10476,7 @@ exports[`Activity when there is an interaction without any people involved shoul
   display: block;
 }
 
-.c11 {
+.c12 {
   display: inline-block;
   position: relative;
   margin-bottom: 5px;
@@ -9454,22 +10485,22 @@ exports[`Activity when there is an interaction without any people involved shoul
   cursor: pointer;
 }
 
-.c11:hover {
+.c12:hover {
   color: #2b8cc4;
 }
 
-.c11:focus {
+.c12:focus {
   outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
   background: #ffbf47;
 }
 
-.c11::-webkit-details-marker {
+.c12::-webkit-details-marker {
   display: none;
 }
 
-.c11:before {
+.c12:before {
   content: "";
   position: absolute;
   top: 0;
@@ -9487,7 +10518,7 @@ exports[`Activity when there is an interaction without any people involved shoul
   border-left-color: inherit;
 }
 
-[open] > .c11:before {
+[open] > .c12:before {
   display: block;
   width: 0;
   height: 0;
@@ -9499,24 +10530,24 @@ exports[`Activity when there is an interaction without any people involved shoul
   border-top-color: inherit;
 }
 
-.c12 {
+.c13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c13 {
+.c14 {
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
 
-.c13 p {
+.c14 p {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.c13 > :last-child,
-.c13 p:last-child {
+.c14 > :last-child,
+.c14 p:last-child {
   margin-bottom: 0;
 }
 
@@ -9552,18 +10583,18 @@ exports[`Activity when there is an interaction without any people involved shoul
   background-color: #ffbf47;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c9 > div {
+.c10 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c9 > div > a {
+.c10 > div > a {
   padding: 20px 0 10px 10px;
 }
 
@@ -9580,7 +10611,7 @@ exports[`Activity when there is an interaction without any people involved shoul
   margin-bottom: 15px;
 }
 
-.c7 {
+.c8 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9590,7 +10621,7 @@ exports[`Activity when there is an interaction without any people involved shoul
   margin-bottom: 5px;
 }
 
-.c8 {
+.c9 {
   border: 2px solid #006435;
   border-radius: 4px;
   padding: 2px 4px;
@@ -9639,28 +10670,28 @@ exports[`Activity when there is an interaction without any people involved shoul
   display: inline;
 }
 
-.c16 {
+.c17 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
   font-weight: 700;
 }
 
-.c16:last-child {
+.c17:last-child {
   padding-right: 0;
 }
 
-.c17 {
+.c18 {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.c17:last-child {
+.c18:last-child {
   padding-right: 0;
 }
 
-.c15 {
+.c16 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9674,12 +10705,12 @@ exports[`Activity when there is an interaction without any people involved shoul
   margin-bottom: 20px;
 }
 
-.c14 {
-  margin-bottom: 10px;
+.c15 th {
+  width: 270px;
 }
 
-.c14 > tbody > tr > th,
-.c14 td {
+.c15 th,
+.c15 td {
   font-weight: normal;
   border: 0;
   padding: 10px;
@@ -9687,33 +10718,54 @@ exports[`Activity when there is an interaction without any people involved shoul
   vertical-align: top;
 }
 
-.c18 {
-  margin: 0;
+.c21 {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0b0c0c;
+  margin-top: 0;
+  margin-bottom: 15px;
+  list-style-type: none;
   padding-left: 0;
 }
 
+.c21 .c20 {
+  margin-top: 10px;
+}
+
+.c21 > .c7 {
+  margin-bottom: 5px;
+}
+
+.c19 {
+  margin-bottom: 0;
+}
+
 @media print {
-  .c10 {
+  .c11 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c10 {
+  .c11 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c10 {
+  .c11 {
     margin-bottom: 30px;
   }
 }
@@ -9735,7 +10787,7 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 @media only screen and (min-width:641px) {
-  .c9 {
+  .c10 {
     margin-top: -15px;
   }
 }
@@ -9767,14 +10819,14 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 @media print {
-  .c7 {
+  .c8 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c7 {
+  .c8 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
@@ -9803,28 +10855,60 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 @media print {
-  .c15 {
+  .c16 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c15 {
+  .c16 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c15 {
+  .c16 {
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c15 {
+    margin-bottom: 10px;
+  }
+}
+
+@media print {
+  .c21 {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 1.3157894736842106;
+  }
+}
+
+@media print {
+  .c21 {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width:641px) {
+  .c21 {
+    margin-bottom: 20px;
   }
 }
 
@@ -9854,15 +10938,15 @@ exports[`Activity when there is an interaction without any people involved shoul
       className="c6"
     >
       <li
-        className="c7"
+        className="c7 c8"
       >
         06 Jun 2019
       </li>
       <li
-        className="c7"
+        className="c7 c8"
       >
         <span
-          className="c8"
+          className="c9"
         >
           Interaction
         </span>
@@ -9870,23 +10954,23 @@ exports[`Activity when there is an interaction without any people involved shoul
     </ul>
   </div>
   <details
-    className="c9 c10"
+    className="c10 c11"
     open={false}
   >
     <summary
-      className="c11"
+      className="c12"
     >
       <span
-        className="c12"
+        className="c13"
       >
         View interaction details
       </span>
     </summary>
     <div
-      className="c13"
+      className="c14"
     >
       <table
-        className="c14 c15"
+        className="c15 c16"
       >
         <tbody
           className=""
@@ -9895,7 +10979,7 @@ exports[`Activity when there is an interaction without any people involved shoul
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -9906,7 +10990,7 @@ exports[`Activity when there is an interaction without any people involved shoul
               Company contact(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -9914,7 +10998,7 @@ exports[`Activity when there is an interaction without any people involved shoul
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               />
             </td>
           </tr>
@@ -9922,7 +11006,7 @@ exports[`Activity when there is an interaction without any people involved shoul
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -9933,7 +11017,7 @@ exports[`Activity when there is an interaction without any people involved shoul
               Adviser(s)
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,
@@ -9941,7 +11025,7 @@ exports[`Activity when there is an interaction without any people involved shoul
               }
             >
               <ul
-                className="c18"
+                className="c19 c20 c21"
               />
             </td>
           </tr>
@@ -9949,7 +11033,7 @@ exports[`Activity when there is an interaction without any people involved shoul
             className=""
           >
             <th
-              className="c16"
+              className="c17"
               style={
                 Object {
                   "border": 0,
@@ -9960,7 +11044,7 @@ exports[`Activity when there is an interaction without any people involved shoul
               Services
             </th>
             <td
-              className="c17"
+              className="c18"
               style={
                 Object {
                   "border": 0,

@@ -50,6 +50,7 @@ export default class Referral extends React.PureComponent {
         />
 
         <CardTable
+          isWideCard={true}
           rows={[
             { header: 'Sending adviser', content: AdviserDetails(sender) },
             {
