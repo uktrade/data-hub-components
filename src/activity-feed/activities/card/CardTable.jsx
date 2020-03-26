@@ -7,11 +7,13 @@ import { SPACING, MEDIA_QUERIES } from '@govuk-react/constants'
 
 const GovUkTable = styled(Table)`
   ${MEDIA_QUERIES.TABLET} {
-    margin-bottom: ${({ isWideCard }) => (isWideCard ? '0' : SPACING.SCALE_2)};
+    margin-bottom: ${({ isNotWrappedInDetails }) =>
+      isNotWrappedInDetails ? '0' : SPACING.SCALE_2};
   }
 
   th {
-    width: ${({ isWideCard }) => (isWideCard ? '284px' : '270px')};
+    width: ${({ isNotWrappedInDetails }) =>
+      isNotWrappedInDetails ? '284px' : '270px'};
   }
 
   th,
@@ -54,7 +56,7 @@ class DetailsRow extends React.PureComponent {
 
 export default class CardTable extends React.Component {
   static propTypes = {
-    isWideCard: PropTypes.bool,
+    isNotWrappedInDetails: PropTypes.bool,
     rows: PropTypes.arrayOf(
       PropTypes.shape({
         header: PropTypes.string,
@@ -64,13 +66,13 @@ export default class CardTable extends React.Component {
   }
 
   static defaultProps = {
-    isWideCard: false,
+    isNotWrappedInDetails: false,
   }
 
   render() {
-    const { rows, isWideCard } = this.props
+    const { rows, isNotWrappedInDetails } = this.props
     return (
-      <GovUkTable isWideCard={isWideCard}>
+      <GovUkTable isNotWrappedInDetails={isNotWrappedInDetails}>
         {rows.map(({ header, content }) => (
           <DetailsRow header={header} key={header}>
             {content}
