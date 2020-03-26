@@ -3,12 +3,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Table from '@govuk-react/table'
 import styled from 'styled-components'
-import { SPACING } from '@govuk-react/constants'
+import { SPACING, MEDIA_QUERIES } from '@govuk-react/constants'
 
 const GovUkTable = styled(Table)`
-  margin-bottom: ${SPACING.SCALE_2};
+  ${MEDIA_QUERIES.TABLET} {
+    margin-bottom: ${({ isNotWrappedInDetails }) =>
+      isNotWrappedInDetails ? '0' : SPACING.SCALE_2};
+  }
 
-  & > tbody > tr > th,
+  th {
+    width: ${({ isNotWrappedInDetails }) =>
+      isNotWrappedInDetails ? '284px' : '270px'};
+  }
+
+  th,
   td {
     font-weight: normal;
     border: 0;
@@ -48,6 +56,7 @@ class DetailsRow extends React.PureComponent {
 
 export default class CardTable extends React.Component {
   static propTypes = {
+    isNotWrappedInDetails: PropTypes.bool,
     rows: PropTypes.arrayOf(
       PropTypes.shape({
         header: PropTypes.string,
@@ -56,11 +65,14 @@ export default class CardTable extends React.Component {
     ).isRequired,
   }
 
-  render() {
-    const { rows } = this.props
+  static defaultProps = {
+    isNotWrappedInDetails: false,
+  }
 
+  render() {
+    const { rows, isNotWrappedInDetails } = this.props
     return (
-      <GovUkTable>
+      <GovUkTable isNotWrappedInDetails={isNotWrappedInDetails}>
         {rows.map(({ header, content }) => (
           <DetailsRow header={header} key={header}>
             {content}
