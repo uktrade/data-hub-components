@@ -47,6 +47,14 @@ storiesOf('Forms', module).add('FieldTypeahead', () => (
           isMulti={true}
         />
         <FieldTypeahead
+          label="Typeahead - initial value"
+          hint="Some hint"
+          name="sync_single"
+          required="Chose value"
+          initialValue={options[1]}
+          options={options}
+        />
+        <FieldTypeahead
           label="Typeahead - async single value"
           hint="Some hint"
           name="async_single"

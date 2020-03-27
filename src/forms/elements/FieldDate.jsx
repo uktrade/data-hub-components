@@ -59,14 +59,19 @@ const getValidator = (required) => ({ day, month, year }) => {
     : null
 }
 
-const FieldDate = ({ name, label, hint, validate, labels, required }) => {
+const FieldDate = ({
+  name,
+  label,
+  legend,
+  hint,
+  validate,
+  initialValue,
+  labels,
+  required,
+}) => {
   const { value, error, touched, onBlur } = useField({
     name,
-    initialValue: {
-      day: '',
-      month: '',
-      year: '',
-    },
+    initialValue,
     validate: [getValidator(required), ...castArray(validate)],
   })
 
@@ -80,7 +85,7 @@ const FieldDate = ({ name, label, hint, validate, labels, required }) => {
   }
 
   return (
-    <FieldWrapper {...{ name, label, hint, error }}>
+    <FieldWrapper {...{ name, label, legend, hint, error }}>
       <StyledInputWrapper error={error}>
         {error && <ErrorText>{error}</ErrorText>}
         <StyledList>
@@ -129,12 +134,18 @@ const FieldDate = ({ name, label, hint, validate, labels, required }) => {
 FieldDate.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.node,
+  legend: PropTypes.node,
   hint: PropTypes.string,
   required: PropTypes.string,
   validate: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.arrayOf(PropTypes.func),
   ]),
+  initialValue: PropTypes.shape({
+    day: PropTypes.string,
+    month: PropTypes.string,
+    year: PropTypes.string,
+  }),
   labels: PropTypes.shape({
     day: PropTypes.string,
     month: PropTypes.string,
@@ -144,9 +155,15 @@ FieldDate.propTypes = {
 
 FieldDate.defaultProps = {
   label: null,
+  legend: null,
   hint: null,
   required: null,
   validate: null,
+  initialValue: {
+    day: '',
+    month: '',
+    year: '',
+  },
   labels: {
     day: 'Day',
     month: 'Month',

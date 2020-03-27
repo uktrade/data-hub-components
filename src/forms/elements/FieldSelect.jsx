@@ -12,6 +12,7 @@ const FieldSelect = ({
   hint,
   validate,
   required,
+  initialValue,
   options,
   emptyOption,
   ...rest
@@ -20,6 +21,7 @@ const FieldSelect = ({
     name,
     validate,
     required,
+    initialValue,
   })
 
   return (
@@ -60,6 +62,7 @@ FieldSelect.propTypes = {
     PropTypes.arrayOf(PropTypes.func),
   ]),
   required: PropTypes.string,
+  initialValue: PropTypes.string,
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
@@ -75,6 +78,7 @@ FieldSelect.defaultProps = {
   label: null,
   legend: null,
   hint: null,
+  initialValue: '',
   options: [],
   emptyOption: 'Please select',
 }

@@ -31,12 +31,14 @@ const FieldInput = ({
   label,
   legend,
   hint,
+  initialValue,
   ...rest
 }) => {
   const { value, error, touched, onChange, onBlur } = useField({
     name,
     validate,
     required,
+    initialValue,
   })
 
   return (
@@ -70,6 +72,7 @@ FieldInput.propTypes = {
   label: PropTypes.node,
   legend: PropTypes.node,
   hint: PropTypes.node,
+  initialValue: PropTypes.string,
 }
 
 FieldInput.defaultProps = {
@@ -78,6 +81,7 @@ FieldInput.defaultProps = {
   label: null,
   legend: null,
   hint: null,
+  initialValue: '',
 }
 
 export default FieldInput

@@ -15,11 +15,13 @@ const FieldCheckboxes = ({
   legend,
   hint,
   options,
+  initialValue,
 }) => {
   const { value, error, touched, onBlur } = useField({
     name,
     validate,
     required,
+    initialValue,
   })
   const { setFieldValue } = useFormContext()
 
@@ -77,6 +79,7 @@ FieldCheckboxes.propTypes = {
   label: PropTypes.node,
   legend: PropTypes.node,
   hint: PropTypes.node,
+  initialValue: PropTypes.arrayOf(PropTypes.string),
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
@@ -92,6 +95,7 @@ FieldCheckboxes.defaultProps = {
   label: null,
   legend: null,
   hint: null,
+  initialValue: [],
   options: [],
 }
 

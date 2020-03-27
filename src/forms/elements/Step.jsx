@@ -24,7 +24,11 @@ function Step({ name, backButton, forwardButton, children }) {
 
   const index = getStepIndex(name)
 
-  if (index !== currentStep) {
+  if (
+    index !== currentStep ||
+    index === undefined ||
+    currentStep === undefined
+  ) {
     return null
   }
 
