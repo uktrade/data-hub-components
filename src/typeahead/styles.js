@@ -44,6 +44,7 @@ const defaultStyles = {
   control: (styles, { isFocused }) => ({
     ...styles,
     borderRadius: 0,
+    'input:focus': { boxShadow: 'none' },
     outline: isFocused ? `3px solid ${YELLOW}` : styles.outline,
     border: `2px solid ${BLACK}`,
     '&:hover': {
