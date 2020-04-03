@@ -99,3 +99,6 @@ export { default as NumberUtils } from './utils/NumberUtils'
 // Typeahead
 export { default as Typeahead } from './typeahead/Typeahead'
 export { default as SmallTypeahead } from './typeahead/SmallTypeahead'
+
+// Panel
+export { default as Panel } from './panel/Panel'
