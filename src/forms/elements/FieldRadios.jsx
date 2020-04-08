@@ -29,12 +29,14 @@ const FieldRadios = ({
   legend,
   hint,
   inline,
+  initialValue,
   options,
 }) => {
   const { value, error, touched, onChange, onBlur } = useField({
     name,
     validate,
     required,
+    initialValue,
   })
 
   return (
@@ -82,6 +84,7 @@ FieldRadios.propTypes = {
   legend: PropTypes.node,
   hint: PropTypes.node,
   inline: PropTypes.bool,
+  initialValue: PropTypes.string,
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
@@ -99,6 +102,7 @@ FieldRadios.defaultProps = {
   legend: null,
   hint: null,
   inline: false,
+  initialValue: '',
   options: [],
 }
 

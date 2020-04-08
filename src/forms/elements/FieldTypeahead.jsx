@@ -33,12 +33,14 @@ const FieldTypeahead = ({
   label,
   legend,
   hint,
+  initialValue,
   ...rest
 }) => {
   const { value, error, touched, onBlur } = useField({
     name,
     validate,
     required,
+    initialValue,
   })
   const { setFieldValue } = useFormContext()
 
@@ -61,6 +63,7 @@ const FieldTypeahead = ({
 }
 
 FieldTypeahead.propTypes = {
+  ...Typeahead.propTypes,
   name: PropTypes.string.isRequired,
   validate: PropTypes.oneOfType([
     PropTypes.func,
@@ -70,6 +73,10 @@ FieldTypeahead.propTypes = {
   label: PropTypes.node,
   legend: PropTypes.node,
   hint: PropTypes.string,
+  initialValue: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.arrayOf(PropTypes.object),
+  ]),
 }
 
 FieldTypeahead.defaultProps = {
@@ -78,6 +85,7 @@ FieldTypeahead.defaultProps = {
   label: null,
   legend: null,
   hint: null,
+  initialValue: null,
 }
 
 export default FieldTypeahead

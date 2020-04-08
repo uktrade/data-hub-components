@@ -33,12 +33,14 @@ const FieldTextarea = ({
   label,
   legend,
   hint,
+  initialValue,
   ...rest
 }) => {
   const { value, error, touched, onChange, onBlur } = useField({
     name,
     validate,
     required,
+    initialValue,
   })
 
   return (
@@ -71,6 +73,7 @@ FieldTextarea.propTypes = {
   label: PropTypes.node,
   legend: PropTypes.node,
   hint: PropTypes.node,
+  initialValue: PropTypes.string,
 }
 
 FieldTextarea.defaultProps = {
@@ -79,6 +82,7 @@ FieldTextarea.defaultProps = {
   label: null,
   legend: null,
   hint: null,
+  initialValue: '',
 }
 
 export default FieldTextarea
