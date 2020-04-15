@@ -23,7 +23,7 @@ describe('FieldTypeahead', () => {
       )
       const typeahead = wrapper.find(Typeahead)
       expect(typeahead.prop('inputId')).toEqual('testField')
-      expect(typeahead.prop('defaultValue')).toEqual({
+      expect(typeahead.prop('value')).toEqual({
         label: 'someValueLabel',
       })
       expect(typeahead.prop('onBlur')).toBeInstanceOf(Function)
