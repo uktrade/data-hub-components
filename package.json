@@ -78,12 +78,12 @@
     "react-markdown": "^4.0.8",
     "react-select": "^3.0.8",
     "react-string-replace": "^0.4.4",
-    "react-use": "^12.2.0",
-    "styled-components": "^4.2.0"
+    "react-use": "^12.2.0"
   },
   "peerDependencies": {
     "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "styled-components": "*"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
@@ -133,6 +133,7 @@
     "react-test-renderer": "^16.9.0",
     "rimraf": "^2.6.3",
     "semantic-release": "^15.13.18",
+    "styled-components": "^4.2.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   },
