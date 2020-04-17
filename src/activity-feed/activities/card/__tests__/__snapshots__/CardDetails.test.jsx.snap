@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardDetails when link provided should render the card 1`] = `
-.c1 {
+.c0 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -120,43 +120,43 @@ exports[`CardDetails when link provided should render the card 1`] = `
   background-color: #ffbf47;
 }
 
-.c0 {
+.c1 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c0 > div {
+.c1 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c0 > div > a {
+.c1 > div > a {
   padding: 20px 0 10px 10px;
 }
 
 @media print {
-  .c1 {
+  .c0 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c1 {
+  .c0 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     margin-bottom: 30px;
   }
 }
@@ -178,7 +178,7 @@ exports[`CardDetails when link provided should render the card 1`] = `
 }
 
 @media only screen and (min-width:641px) {
-  .c0 {
+  .c1 {
     margin-top: -15px;
   }
 }
@@ -214,7 +214,7 @@ exports[`CardDetails when link provided should render the card 1`] = `
 `;
 
 exports[`CardDetails when no link provided should still render the card 1`] = `
-.c1 {
+.c0 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -301,49 +301,49 @@ exports[`CardDetails when no link provided should still render the card 1`] = `
   margin-bottom: 0;
 }
 
-.c0 {
+.c1 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c0 > div {
+.c1 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c0 > div > a {
+.c1 > div > a {
   padding: 20px 0 10px 10px;
 }
 
 @media print {
-  .c1 {
+  .c0 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c1 {
+  .c0 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     margin-bottom: 30px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c0 {
+  .c1 {
     margin-top: -15px;
   }
 }
@@ -372,7 +372,7 @@ exports[`CardDetails when no link provided should still render the card 1`] = `
 `;
 
 exports[`CardDetails when the details for all activities are hidden should open the card details 1`] = `
-.c1 {
+.c0 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -491,43 +491,43 @@ exports[`CardDetails when the details for all activities are hidden should open 
   background-color: #ffbf47;
 }
 
-.c0 {
+.c1 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c0 > div {
+.c1 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c0 > div > a {
+.c1 > div > a {
   padding: 20px 0 10px 10px;
 }
 
 @media print {
-  .c1 {
+  .c0 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c1 {
+  .c0 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     margin-bottom: 30px;
   }
 }
@@ -549,7 +549,7 @@ exports[`CardDetails when the details for all activities are hidden should open 
 }
 
 @media only screen and (min-width:641px) {
-  .c0 {
+  .c1 {
     margin-top: -15px;
   }
 }
@@ -585,7 +585,7 @@ exports[`CardDetails when the details for all activities are hidden should open 
 `;
 
 exports[`CardDetails when the details for all activities are shown should open the card details 1`] = `
-.c1 {
+.c0 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -704,43 +704,43 @@ exports[`CardDetails when the details for all activities are shown should open t
   background-color: #ffbf47;
 }
 
-.c0 {
+.c1 {
   font-size: 16px;
   margin: 10px 0 0;
 }
 
-.c0 > div {
+.c1 > div {
   padding: 5px;
   padding-bottom: 15px;
   margin: 5px 0 5px 4px;
 }
 
-.c0 > div > a {
+.c1 > div > a {
   padding: 20px 0 10px 10px;
 }
 
 @media print {
-  .c1 {
+  .c0 {
     font-size: 14px;
     line-height: 1.15;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     font-size: 19px;
     line-height: 1.3157894736842106;
   }
 }
 
 @media print {
-  .c1 {
+  .c0 {
     color: #000;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c1 {
+  .c0 {
     margin-bottom: 30px;
   }
 }
@@ -762,7 +762,7 @@ exports[`CardDetails when the details for all activities are shown should open t
 }
 
 @media only screen and (min-width:641px) {
-  .c0 {
+  .c1 {
     margin-top: -15px;
   }
 }

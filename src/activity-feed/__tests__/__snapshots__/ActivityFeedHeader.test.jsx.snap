@@ -51,7 +51,7 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
   margin-bottom: 0;
 }
 
-.c4 {
+.c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -76,36 +76,36 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
   margin-bottom: 22px;
 }
 
-.c4:focus {
+.c5:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
-.c4:link,
-.c4:visited,
-.c4:active,
-.c4:hover {
+.c5:link,
+.c5:visited,
+.c5:active,
+.c5:hover {
   color: #000;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c4::-moz-focus-inner {
+.c5::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-.c4:hover,
-.c4:focus {
+.c5:hover,
+.c5:focus {
   background-color: #d0d3d6;
 }
 
-.c4:active {
+.c5:active {
   top: 2px;
   box-shadow: none;
 }
 
-.c4::before {
+.c5::before {
   content: "";
   display: block;
   position: absolute;
@@ -116,34 +116,34 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
   background: transparent;
 }
 
-.c4:active::before {
+.c5:active::before {
   top: -4px;
 }
 
-.c4:disabled {
+.c5:disabled {
   opacity: 0.5;
   background: #dee0e2;
 }
 
-.c4:disabled:hover {
+.c5:disabled:hover {
   background-color: #dee0e2;
   cursor: default;
 }
 
-.c4:disabled:focus {
+.c5:disabled:focus {
   outline: none;
 }
 
-.c4:disabled:active {
+.c5:disabled:active {
   top: 0;
   box-shadow: 0 2px 0 #b5babe;
 }
 
-.c4 svg {
+.c5 svg {
   max-width: 15px;
 }
 
-.c5 {
+.c4 {
   margin-bottom: 0;
   margin-top: 15px;
 }
@@ -185,39 +185,39 @@ exports[`ActivityFeedHeader renders header with all props defined 1`] = `
 }
 
 @media print {
-  .c4 {
+  .c5 {
     font-size: 14px;
     line-height: 19px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c5 {
     font-size: 19px;
     line-height: 19px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c5 {
     width: auto;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 svg {
+  .c5 svg {
     margin-left: 10px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c4 {
+  .c5 {
     margin-bottom: 32px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c5 {
+  .c4 {
     margin-left: 15px;
     margin-top: 0;
   }
