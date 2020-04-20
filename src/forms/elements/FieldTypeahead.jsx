@@ -54,7 +54,7 @@ const FieldTypeahead = ({
           onBlur={onBlur}
           onChange={(newValue) => setFieldValue(name, newValue)}
           error={error}
-          defaultValue={value}
+          value={value}
           {...rest}
         />
       </StyledWrapper>
