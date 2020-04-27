@@ -34,6 +34,7 @@ const FieldTypeahead = ({
   legend,
   hint,
   initialValue,
+  errorMessage,
   ...rest
 }) => {
   const { value, error, touched, onBlur } = useField({
@@ -43,17 +44,20 @@ const FieldTypeahead = ({
     initialValue,
   })
   const { setFieldValue } = useFormContext()
+  const hasError = !!(error || errorMessage)
 
   return (
     <FieldWrapper {...{ name, label, legend, hint, error }}>
-      <StyledWrapper error={error}>
-        {touched && error && <ErrorText>{error}</ErrorText>}
+      <StyledWrapper error={hasError}>
+        {(errorMessage || (touched && error)) && (
+          <ErrorText>{errorMessage || error}</ErrorText>
+        )}
         <Typeahead
           inputId={name}
           aria-label={label || legend}
           onBlur={onBlur}
           onChange={(newValue) => setFieldValue(name, newValue)}
-          error={error}
+          error={hasError}
           value={value}
           {...rest}
         />
