@@ -47,9 +47,12 @@ Array [
     },
     "heading": "Some other company",
     "id": "219999999",
-    "meta": Object {
-      "Address": "123 ABC Road, Brighton, BN2 9QB",
-    },
+    "meta": Array [
+      Object {
+        "label": "Location at",
+        "value": "123 ABC Road, Brighton, BN2 9QB",
+      },
+    ],
   },
 ]
 `;
@@ -111,9 +114,16 @@ Array [
     },
     "heading": "Some company name",
     "id": "12345678",
-    "meta": Object {
-      "Address": "123 Fake Street, Brighton, BN1 4SE",
-    },
+    "meta": Array [
+      Object {
+        "label": "Trading name(s)",
+        "value": "Some trading name",
+      },
+      Object {
+        "label": "Location at",
+        "value": "123 Fake Street, Brighton, BN1 4SE",
+      },
+    ],
   },
   Object {
     "data": Object {
@@ -160,9 +170,12 @@ Array [
     },
     "heading": "Some other company",
     "id": "219999999",
-    "meta": Object {
-      "Address": "123 ABC Road, Brighton, BN2 9QB",
-    },
+    "meta": Array [
+      Object {
+        "label": "Location at",
+        "value": "123 ABC Road, Brighton, BN2 9QB",
+      },
+    ],
   },
   Object {
     "data": Object {
@@ -197,9 +210,12 @@ Array [
     },
     "heading": "Dissolvex",
     "id": "219999996",
-    "meta": Object {
-      "Address": "20 New Fake Road, Bristol, B11 9QC",
-    },
+    "meta": Array [
+      Object {
+        "label": "Location at",
+        "value": "20 New Fake Road, Bristol, B11 9QC",
+      },
+    ],
   },
 ]
 `;
@@ -260,9 +276,16 @@ Object {
   },
   "heading": "Some company name",
   "id": "12345678",
-  "meta": Object {
-    "Address": "123 Fake Street, Brighton, BN1 4SE",
-  },
+  "meta": Array [
+    Object {
+      "label": "Trading name(s)",
+      "value": "Some trading name",
+    },
+    Object {
+      "label": "Location at",
+      "value": "123 Fake Street, Brighton, BN1 4SE",
+    },
+  ],
 }
 `;
 
@@ -312,9 +335,12 @@ Object {
   },
   "heading": "Some other company",
   "id": "219999999",
-  "meta": Object {
-    "Address": "123 ABC Road, Brighton, BN2 9QB",
-  },
+  "meta": Array [
+    Object {
+      "label": "Location at",
+      "value": "123 ABC Road, Brighton, BN2 9QB",
+    },
+  ],
 }
 `;
 
@@ -352,8 +378,11 @@ Object {
   },
   "heading": "Dissolvex",
   "id": "219999996",
-  "meta": Object {
-    "Address": "20 New Fake Road, Bristol, B11 9QC",
-  },
+  "meta": Array [
+    Object {
+      "label": "Location at",
+      "value": "20 New Fake Road, Bristol, B11 9QC",
+    },
+  ],
 }
 `;
