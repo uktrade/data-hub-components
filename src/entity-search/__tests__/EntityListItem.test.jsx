@@ -147,12 +147,7 @@ describe('EntityListItem', () => {
   })
 
   describe('when the "meta" prop was passed', () => {
-    const meta = {
-      some: 'meta',
-      and: 'more meta',
-    }
-
-    const expectedMeta = [
+    const meta = [
       {
         label: 'some',
         value: 'meta',
@@ -169,7 +164,7 @@ describe('EntityListItem', () => {
 
     test('should render "Metadata" component', () => {
       const metaList = wrapper.find(Metadata)
-      expect(metaList.prop('rows')).toEqual(expectedMeta)
+      expect(metaList.prop('rows')).toEqual(meta)
     })
   })
 })

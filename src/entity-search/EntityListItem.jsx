@@ -26,7 +26,7 @@ const StyledEntity = styled('div')`
     isClickable &&
     `
     cursor: pointer;
-    
+
     h3 {
       color: ${LINK_COLOUR};
     }
@@ -34,7 +34,7 @@ const StyledEntity = styled('div')`
     &:hover {
       border: 1px solid ${LINK_HOVER_COLOUR};
       background-color: ${GREY_4};
-      
+
       & > h3 {
         color: ${LINK_HOVER_COLOUR};
       }
@@ -57,12 +57,6 @@ const StyledInsetText = styled(InsetText)`
 `
 
 const EntityListItem = ({ id, onEntityClick, data, text, heading, meta }) => {
-  const metaAsArray = isEmpty(meta)
-    ? null
-    : Object.keys(meta).map((key) => ({
-        label: key,
-        value: meta[key],
-      }))
   return (
     <StyledEntity
       key={`entity_${id}`}
@@ -75,7 +69,7 @@ const EntityListItem = ({ id, onEntityClick, data, text, heading, meta }) => {
     >
       {heading && <StyledHeading>{heading}</StyledHeading>}
 
-      {!isEmpty(meta) && <Metadata rows={metaAsArray} />}
+      {!isEmpty(meta) && <Metadata rows={meta} />}
 
       {text && <StyledInsetText>{text}</StyledInsetText>}
     </StyledEntity>
@@ -88,7 +82,7 @@ EntityListItem.propTypes = {
   data: PropTypes.shape({}),
   text: PropTypes.node,
   heading: PropTypes.string,
-  meta: PropTypes.shape({}),
+  meta: PropTypes.array,
 }
 
 EntityListItem.defaultProps = {
@@ -96,7 +90,7 @@ EntityListItem.defaultProps = {
   onEntityClick: null,
   data: {},
   heading: null,
-  meta: null,
+  meta: [],
 }
 
 export default EntityListItem

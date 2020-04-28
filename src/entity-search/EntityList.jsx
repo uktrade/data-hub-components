@@ -29,7 +29,7 @@ EntityList.propTypes = {
     PropTypes.shape({
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
       heading: PropTypes.string.isRequired,
-      meta: PropTypes.object.isRequired,
+      meta: PropTypes.array.isRequired,
       data: PropTypes.object.isRequired,
     })
   ).isRequired,
