@@ -48,7 +48,7 @@ const StyledSubheading = styled('h4')`
 `
 
 const StyledDetails = styled(Details)`
-  margin: 50px 0 0 0;
+  margin: ${SPACING.SCALE_3} 0 0 0;
 `
 
 function CollectionItem({
