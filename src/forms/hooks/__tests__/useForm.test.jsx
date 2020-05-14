@@ -278,12 +278,12 @@ describe('useForm', () => {
       })
     })
 
-    test('should unset the field value', () => {
-      expect(formState.values).toEqual({})
+    test('should set the field value', () => {
+      expect(formState.values).toEqual({ testField: '' })
     })
 
-    test('should set "isDirty" to false', () => {
-      expect(formState.isDirty).toBeFalsy()
+    test('should set "isDirty" to true', () => {
+      expect(formState.isDirty).toBeTruthy()
     })
   })
 
