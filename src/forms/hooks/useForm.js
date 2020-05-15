@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { isEmpty, isEqual, omit } from 'lodash'
+import { isEmpty, isEqual } from 'lodash'
 import { useDeepCompareEffect } from 'react-use'
 
 // Based on react-use/useBeforeUnload but can handle custom handlers (for tests).
@@ -129,10 +129,6 @@ function useForm({
 
   const setFieldValue = (name, fieldValue) =>
     setValues((prevValues) => {
-      if (fieldValue === '') {
-        return omit(prevValues, name)
-      }
-
       return { ...prevValues, [name]: fieldValue }
     })
   const setFieldTouched = (name, fieldTouched) => {
