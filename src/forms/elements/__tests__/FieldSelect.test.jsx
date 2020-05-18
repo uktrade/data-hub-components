@@ -158,7 +158,11 @@ describe('FieldSelect', () => {
                 name="testField"
                 options={[
                   { label: 'testOptionLabel1', value: 'testOptionValue1' },
-                  { label: 'testOptionLabel2', value: 'testOptionValue2' },
+                  {
+                    label: 'testOptionLabel2',
+                    value: 'testOptionValue2',
+                    children: 'testChildren',
+                  },
                 ]}
               />
               <div id="values">{form.values.testField}</div>
@@ -179,6 +183,10 @@ describe('FieldSelect', () => {
 
     test('should update value in form state', () => {
       expect(wrapper.find('#values').text()).toEqual('testOptionValue2')
+    })
+
+    test('should render children', () => {
+      expect(wrapper.text()).toContain('testChildren')
     })
   })
 })

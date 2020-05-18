@@ -23,7 +23,6 @@ const FieldSelect = ({
     required,
     initialValue,
   })
-
   return (
     <FieldWrapper {...{ name, label, legend, hint, error }}>
       <Select
@@ -48,6 +47,7 @@ const FieldSelect = ({
           </option>
         ))}
       </Select>
+      {options.find((o) => o.value === value)?.children}
     </FieldWrapper>
   )
 }
