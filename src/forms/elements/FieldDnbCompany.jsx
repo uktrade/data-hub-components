@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
-import { isEmpty } from 'lodash'
+import { isEmpty, omitBy } from 'lodash'
 import styled from 'styled-components'
 
 import { WIDTHS, SPACING } from '@govuk-react/constants'
@@ -66,11 +66,16 @@ const FieldDnbCompany = ({
     e.preventDefault()
     const noValidationErrors = isEmpty(validateForm())
     if (noValidationErrors) {
-      return onEntitySearch({
-        ...queryParams,
-        search_term: values.dnbCompanyName,
-        postal_code: values.dnbPostalCode,
-      })
+      return onEntitySearch(
+        omitBy(
+          {
+            ...queryParams,
+            search_term: values.dnbCompanyName,
+            postal_code: values.dnbPostalCode,
+          },
+          isEmpty
+        )
+      )
     }
     return null
   }
