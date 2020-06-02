@@ -17,7 +17,8 @@ import FieldWrapper from './FieldWrapper'
 import useField from '../hooks/useField'
 import useFormContext from '../hooks/useFormContext'
 
-const VALIDATION_DATE_FORMAT = 'YYYY-MM-DD'
+const DATE_FORMAT_LONG = 'YYYY-MM-DD'
+const DATE_FORMAT_SHORT = 'YYYY-MM'
 const DAY = 'day'
 const MONTH = 'month'
 const YEAR = 'year'
@@ -46,13 +47,18 @@ const StyledList = styled('div')({
   display: 'flex',
 })
 
-const getValidator = (required) => ({ day, month, year }) => {
-  const isDateValid = moment(
-    `${year}-${month}-${day}`,
-    VALIDATION_DATE_FORMAT,
-    true
-  ).isValid()
-  const isDateEmpty = !day && !month && !year
+const isDateStrValid = (dateStr, format) => {
+  return moment(dateStr, format, true).isValid()
+}
+
+const getValidator = (required, format) => ({ day, month, year }) => {
+  const isLong = format === 'long'
+
+  const isDateValid = isLong
+    ? isDateStrValid(`${year}-${month}-${day}`, DATE_FORMAT_LONG)
+    : isDateStrValid(`${year}-${month}`, DATE_FORMAT_SHORT)
+
+  const isDateEmpty = isLong ? !day && !month && !year : !month && !year
 
   return !isDateValid && (!isDateEmpty || required)
     ? required || 'Enter a valid date'
@@ -68,11 +74,12 @@ const FieldDate = ({
   initialValue,
   labels,
   required,
+  format,
 }) => {
   const { value, error, touched, onBlur } = useField({
     name,
     initialValue,
-    validate: [getValidator(required), ...castArray(validate)],
+    validate: [getValidator(required, format), ...castArray(validate)],
   })
 
   const { setFieldValue } = useFormContext()
@@ -89,18 +96,21 @@ const FieldDate = ({
       <StyledInputWrapper error={error}>
         {error && <ErrorText>{error}</ErrorText>}
         <StyledList>
-          <StyledLabel>
-            <LabelText>{labels.day}</LabelText>
-            <Input
-              id={`${name}.day`}
-              name={`${name}.day`}
-              error={touched && error}
-              type="number"
-              value={value.day}
-              onChange={(e) => onChange(DAY, e)}
-              onBlur={onBlur}
-            />
-          </StyledLabel>
+          {format === 'long' && (
+            <StyledLabel>
+              <LabelText>{labels.day}</LabelText>
+              <Input
+                id={`${name}.day`}
+                name={`${name}.day`}
+                error={touched && error}
+                type="number"
+                value={value.day}
+                onChange={(e) => onChange(DAY, e)}
+                onBlur={onBlur}
+              />
+            </StyledLabel>
+          )}
+
           <StyledLabel>
             <LabelText>{labels.month}</LabelText>
             <Input
@@ -137,6 +147,7 @@ FieldDate.propTypes = {
   legend: PropTypes.node,
   hint: PropTypes.string,
   required: PropTypes.string,
+  format: PropTypes.string,
   validate: PropTypes.oneOfType([
     PropTypes.func,
     PropTypes.arrayOf(PropTypes.func),
@@ -159,6 +170,7 @@ FieldDate.defaultProps = {
   hint: null,
   required: null,
   validate: null,
+  format: 'long',
   initialValue: {
     day: '',
     month: '',
