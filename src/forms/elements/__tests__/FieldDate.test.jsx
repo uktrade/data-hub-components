@@ -289,4 +289,196 @@ describe('FieldDate', () => {
       })
     })
   })
+
+  describe('when the date format is short', () => {
+    describe('when the date is mounted', () => {
+      beforeAll(() => {
+        wrapper = mount(
+          <FormStateful>
+            <FieldDate name="date" format="short" />
+          </FormStateful>
+        )
+      })
+
+      test('should contain 2 inputs', () => {
+        const input = wrapper.find('input[type="number"]')
+        expect(input.length).toEqual(2)
+      })
+
+      test('should set the default attributes on the "month" input', () => {
+        const dayInput = wrapper.find('input[type="number"]').at(0)
+        assertDefaultAttributes(dayInput, 'month')
+      })
+
+      test('should set the default attributes on the "year" input', () => {
+        const dayInput = wrapper.find('input[type="number"]').at(1)
+        assertDefaultAttributes(dayInput, 'year')
+      })
+    })
+
+    describe('when the date labels are user defined', () => {
+      beforeAll(() => {
+        wrapper = mount(
+          <FormStateful>
+            <FieldDate
+              name="date"
+              format="short"
+              labels={{ month: 'MM', year: 'YYYY' }}
+            />
+          </FormStateful>
+        )
+      })
+
+      test('should render the month label', () => {
+        const label = wrapper.find(Label).at(0)
+        expect(label.text()).toEqual('MM')
+      })
+
+      test('should render the year label', () => {
+        const label = wrapper.find(Label).at(1)
+        expect(label.text()).toEqual('YYYY')
+      })
+    })
+
+    describe('when custom validation passes', () => {
+      beforeAll(() => {
+        wrapper = mount(
+          <FormStateful>
+            <FieldDate
+              format="short"
+              name="date"
+              // eslint-disable-next-line no-unused-vars
+              validate={(date) => {
+                // Validate the date by returning null
+                return null
+              }}
+            />
+          </FormStateful>
+        )
+        wrapper.find('form').simulate('submit')
+      })
+
+      test('should not render an error message', () => {
+        expect(wrapper.find(ErrorText).exists()).toBe(false)
+      })
+    })
+
+    describe('when custom validation fails', () => {
+      beforeAll(() => {
+        wrapper = mount(
+          <FormStateful>
+            <FieldDate
+              format="short"
+              name="date"
+              // eslint-disable-next-line no-unused-vars
+              validate={(date) => {
+                // Invalidate the date by returning an error String
+                return 'Enter a valid date (custom)'
+              }}
+            />
+          </FormStateful>
+        )
+        wrapper.find('form').simulate('submit')
+      })
+
+      test('should render an error message', () => {
+        expect(wrapper.find(ErrorText).text()).toEqual(
+          'Enter a valid date (custom)'
+        )
+      })
+
+      test('should render error styles', () => {
+        const inputWrapper = wrapper
+          .find(FieldWrapper)
+          .find('div')
+          .at(1)
+        expect(inputWrapper).toHaveStyleRule('border-left', '4px solid #b10e1e')
+        expect(inputWrapper).toHaveStyleRule('margin-right', '15px')
+        expect(inputWrapper).toHaveStyleRule('padding-left', '10px')
+      })
+    })
+
+    describe('when default validation fails', () => {
+      beforeAll(() => {
+        wrapper = mount(
+          <FormStateful>
+            <FieldDate name="date" format="short" />
+          </FormStateful>
+        )
+
+        const monthInput = wrapper.find('input[type="number"]').at(0)
+        const yearInput = wrapper.find('input[type="number"]').at(1)
+
+        monthInput.simulate('change', { target: { value: '13' } })
+        yearInput.simulate('change', { target: { value: '2019' } })
+
+        wrapper.find('form').simulate('submit')
+      })
+
+      test('should render an error message', () => {
+        expect(wrapper.find(ErrorText).text()).toEqual('Enter a valid date')
+      })
+    })
+
+    describe('when Month and Year is typed into the date fields', () => {
+      beforeAll(() => {
+        wrapper = mount(
+          <FormStateful>
+            {(state) => (
+              <>
+                <FieldDate name="date" format="short" />
+                <div id="values">{JSON.stringify(state.values.date)}</div>
+              </>
+            )}
+          </FormStateful>
+        )
+
+        const monthInput = wrapper.find('input[type="number"]').at(0)
+        const yearInput = wrapper.find('input[type="number"]').at(1)
+
+        monthInput.simulate('change', { target: { value: '6' } })
+        yearInput.simulate('change', { target: { value: '2019' } })
+      })
+
+      test('should update the month value', () => {
+        const monthInput = wrapper.find('input[type="number"]').at(0)
+        expect(monthInput.prop('value')).toEqual('6')
+      })
+
+      test('should update year value', () => {
+        const yearInput = wrapper.find('input[type="number"]').at(1)
+        expect(yearInput.prop('value')).toEqual('2019')
+      })
+
+      test('should update value in form state', () => {
+        const values = wrapper.find('#values')
+        const date = JSON.parse(values.text())
+        expect(date).toEqual({
+          month: '6',
+          year: '2019',
+        })
+      })
+    })
+
+    describe('when default validation passes', () => {
+      beforeAll(() => {
+        wrapper = mount(
+          <FormStateful>
+            <FieldDate format="short" name="date" />
+          </FormStateful>
+        )
+
+        const monthInput = wrapper.find('input[type="number"]').at(0)
+        const yearInput = wrapper.find('input[type="number"]').at(1)
+
+        monthInput.simulate('change', { target: { value: '09' } })
+        yearInput.simulate('change', { target: { value: '2019' } })
+        wrapper.find('form').simulate('submit')
+      })
+
+      test('should not render an error message', () => {
+        expect(wrapper.find(ErrorText).exists()).toEqual(false)
+      })
+    })
+  })
 })
