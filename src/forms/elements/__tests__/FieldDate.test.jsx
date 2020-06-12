@@ -482,3 +482,79 @@ describe('FieldDate', () => {
     })
   })
 })
+
+describe('normalising FieldDate value', () => {
+  let fieldDate
+
+  function setUpComponent(wrapper, long = true) {
+    const dayInput = long && wrapper.find('input[type="number"]').at(0)
+    const monthInput = wrapper.find('input[type="number"]').at(long ? 1 : 0)
+    const yearInput = wrapper.find('input[type="number"]').at(long ? 2 : 1)
+    return {
+      day(value) {
+        dayInput.simulate('change', { target: { value } })
+      },
+      month(value) {
+        monthInput.simulate('change', { target: { value } })
+      },
+      year(value) {
+        yearInput.simulate('change', { target: { value } })
+      },
+      submit() {
+        wrapper.find('form').simulate('submit')
+      },
+      wrapper,
+    }
+  }
+  describe('normalising long date formats', () => {
+    beforeAll(() => {
+      const wrapper = mount(
+        <FormStateful>
+          <FieldDate name="date" />
+        </FormStateful>
+      )
+      fieldDate = setUpComponent(wrapper)
+    })
+
+    test('without leading 0 should not render an error message', () => {
+      fieldDate.day('9')
+      fieldDate.month('9')
+      fieldDate.year('2019')
+      fieldDate.submit()
+      expect(fieldDate.wrapper.find(ErrorText).exists()).toEqual(false)
+    })
+
+    test('with leading 0 should not render an error message', () => {
+      fieldDate.day('09')
+      fieldDate.month('09')
+      fieldDate.year('2019')
+      fieldDate.submit()
+      expect(fieldDate.wrapper.find(ErrorText).exists()).toEqual(false)
+    })
+  })
+
+  describe('normalising short date formats', () => {
+    beforeAll(() => {
+      const wrapper = mount(
+        <FormStateful>
+          <FieldDate name="date" format="short" />
+        </FormStateful>
+      )
+      fieldDate = setUpComponent(wrapper, false)
+    })
+
+    test('without leading 0 should not render an error message', () => {
+      fieldDate.month('9')
+      fieldDate.year('2019')
+      fieldDate.submit()
+      expect(fieldDate.wrapper.find(ErrorText).exists()).toEqual(false)
+    })
+
+    test('with leading 0 should not render an error message', () => {
+      fieldDate.month('09')
+      fieldDate.year('2019')
+      fieldDate.submit()
+      expect(fieldDate.wrapper.find(ErrorText).exists()).toEqual(false)
+    })
+  })
+})

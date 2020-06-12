@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import moment from 'moment'
 import { castArray } from 'lodash'
 import styled from 'styled-components'
 import { ERROR_COLOUR } from 'govuk-colours'
@@ -16,9 +15,8 @@ import {
 import FieldWrapper from './FieldWrapper'
 import useField from '../hooks/useField'
 import useFormContext from '../hooks/useFormContext'
+import DateUtils from '../../utils/DateUtils'
 
-const DATE_FORMAT_LONG = 'YYYY-MM-DD'
-const DATE_FORMAT_SHORT = 'YYYY-MM'
 const DAY = 'day'
 const MONTH = 'month'
 const YEAR = 'year'
@@ -48,16 +46,11 @@ const StyledList = styled('div')({
   display: 'flex',
 })
 
-const isDateStrValid = (dateStr, format) => {
-  return moment(dateStr, format, true).isValid()
-}
-
 const getValidator = (required, format) => ({ day, month, year }) => {
   const isLong = format === FORMAT_LONG
-
   const isDateValid = isLong
-    ? isDateStrValid(`${year}-${month}-${day}`, DATE_FORMAT_LONG)
-    : isDateStrValid(`${year}-${month}`, DATE_FORMAT_SHORT)
+    ? DateUtils.isDateValid(year, month, day)
+    : DateUtils.isShortDateValid(year, month)
 
   const isDateEmpty = isLong ? !day && !month && !year : !month && !year
 
