@@ -25,4 +25,84 @@ describe('DateUtils.js', () => {
       expect(formattedDateAndTime).toEqual('10 Dec 2019, 6:12pm')
     })
   })
+
+  describe('the isDateValid() function', () => {
+    test('should return true if valid', () => {
+      expect(DateUtils.isDateValid('2020', '1', '1')).toEqual(true)
+      expect(DateUtils.isDateValid('2020', '01', '01')).toEqual(true)
+      expect(DateUtils.isDateValid(2020, 1, 1)).toEqual(true)
+    })
+
+    test('should return false if invalid', () => {
+      expect(DateUtils.isDateValid('2020', '0', '1')).toEqual(false)
+      expect(DateUtils.isDateValid('2020', '0', '01')).toEqual(false)
+      expect(DateUtils.isDateValid(2020, 0, 1)).toEqual(false)
+    })
+  })
+
+  describe('the isShortDateValid() function', () => {
+    test('should return true if valid', () => {
+      expect(DateUtils.isShortDateValid('2020', '1')).toEqual(true)
+      expect(DateUtils.isShortDateValid('2020', '01')).toEqual(true)
+      expect(DateUtils.isShortDateValid(2020, 1)).toEqual(true)
+    })
+
+    test('should return false if invalid', () => {
+      expect(DateUtils.isShortDateValid('2020', '0')).toEqual(false)
+      expect(DateUtils.isShortDateValid('2020', '13')).toEqual(false)
+      expect(DateUtils.isShortDateValid(2020, 0)).toEqual(false)
+    })
+  })
+
+  describe('transform value to DD-MM-YYYY', () => {
+    test('empty or incomplete date should return null', () => {
+      expect(DateUtils.transformValueForAPI({})).toEqual(null)
+      expect(
+        DateUtils.transformValueForAPI({ day: '', month: '', year: '' })
+      ).toEqual(null)
+      expect(
+        DateUtils.transformValueForAPI({ day: '', month: '04', year: '2020' })
+      ).toEqual(null)
+    })
+    describe('transforming long date formats', () => {
+      test('with leading 0 should render YYYY-MM-DD', () => {
+        expect(
+          DateUtils.transformValueForAPI({
+            year: '2020',
+            month: '09',
+            day: '09',
+          })
+        ).toEqual('2020-09-09')
+      })
+
+      test('without leading 0 should render YYYY-MM-DD', () => {
+        expect(
+          DateUtils.transformValueForAPI({
+            year: '2020',
+            month: '9',
+            day: '9',
+          })
+        ).toEqual('2020-09-09')
+      })
+    })
+
+    describe('transforming short date formats', () => {
+      test('with leading 0 should render YYYY-MM-DD', () => {
+        expect(
+          DateUtils.transformValueForAPI({
+            year: '2020',
+            month: '09',
+          })
+        ).toEqual('2020-09-01')
+      })
+      test('without leading 0 should render YYYY-MM-DD', () => {
+        expect(
+          DateUtils.transformValueForAPI({
+            year: '2020',
+            month: '9',
+          })
+        ).toEqual('2020-09-01')
+      })
+    })
+  })
 })
