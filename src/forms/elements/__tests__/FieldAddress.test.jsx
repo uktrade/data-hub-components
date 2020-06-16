@@ -165,7 +165,9 @@ describe('FieldAddress', () => {
   })
 
   describe('when selecting an address', () => {
+    const onSelectUKAddressSpy = jest.fn()
     let axiosMock
+
     beforeAll(async () => {
       axiosMock = setupPostcodeMock200(ENDPOINT_WITH_POSTCODE)
       wrapper = mount(
@@ -174,6 +176,7 @@ describe('FieldAddress', () => {
             name="address"
             country={country}
             apiEndpoint={ENDPOINT}
+            onSelectUKAddress={onSelectUKAddressSpy}
           />
         </FormStateful>
       )
@@ -209,6 +212,18 @@ describe('FieldAddress', () => {
       expect(address.at(2).props().value).toBe('Westminster')
       expect(address.at(3).props().value).toBe('London')
       expect(address.at(4).props().value).toBe('Greater London')
+    })
+
+    test('should call the onSelectUKAddress callback with an address', () => {
+      expect(onSelectUKAddressSpy).toHaveBeenCalledTimes(1)
+      expect(onSelectUKAddressSpy).toHaveBeenCalledWith({
+        address1: 'D S D Ltd -  102 Petty France',
+        address2: 'Westminster',
+        city: 'London',
+        county: 'Greater London',
+        postcode: 'SW1H 9AJ',
+        country: '80756b9a-5d95-e211-a939-e4115bead28a',
+      })
     })
   })
 
