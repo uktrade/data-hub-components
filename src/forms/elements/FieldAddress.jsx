@@ -25,7 +25,15 @@ const StyledFieldPostcode = styled(FieldInput)`
   }
 `
 
-const FieldAddress = ({ name, label, legend, hint, country, apiEndpoint }) => {
+const FieldAddress = ({
+  name,
+  label,
+  legend,
+  hint,
+  country,
+  apiEndpoint,
+  onSelectUKAddress,
+}) => {
   const findAddress = usePostcodeLookup(apiEndpoint)
   const {
     onAddressSearch,
@@ -65,6 +73,10 @@ const FieldAddress = ({ name, label, legend, hint, country, apiEndpoint }) => {
     setFieldValue('city', address.city)
     setFieldValue('county', address.county)
     setFieldValue('country', country.id)
+
+    if (onSelectUKAddress) {
+      onSelectUKAddress(address)
+    }
   }
 
   return (
@@ -154,12 +166,14 @@ FieldAddress.propTypes = {
     name: PropTypes.string.isRequired,
   }).isRequired,
   apiEndpoint: PropTypes.string.isRequired,
+  onSelectUKAddress: PropTypes.func,
 }
 
 FieldAddress.defaultProps = {
   label: null,
   legend: null,
   hint: null,
+  onSelectUKAddress: null,
 }
 
 export default FieldAddress
