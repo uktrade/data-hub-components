@@ -113,6 +113,31 @@ describe('FieldSelect', () => {
     })
   })
 
+  describe('when the field specifies a preselected option', () => {
+    let options
+
+    beforeAll(() => {
+      wrapper = mount(
+        <FormStateful>
+          <FieldSelect
+            name="testField"
+            initialValue="testOptionValue2"
+            options={[
+              { label: 'testOptionLabel1', value: 'testOptionValue1' },
+              { label: 'testOptionLabel2', value: 'testOptionValue2' },
+              { label: 'testOptionLabel3', value: 'testOptionValue3' },
+            ]}
+          />
+        </FormStateful>
+      )
+      options = wrapper.find('option')
+    })
+
+    test('should preselect the second option', () => {
+      expect(options.at(2).prop('selected')).toEqual('selected')
+    })
+  })
+
   describe('when the field validation fails', () => {
     beforeAll(() => {
       wrapper = mount(
