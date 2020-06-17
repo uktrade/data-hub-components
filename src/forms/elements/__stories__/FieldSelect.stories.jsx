@@ -18,6 +18,7 @@ storiesOf('Forms', module).add('FieldSelect', () => (
           name="testField"
           label="Test select"
           hint="Some hint"
+          initialValue={text('Initial value', 'testOptionValue2')}
           emptyOption={text('emptyOption', 'Please select')}
           options={object('options', [
             { label: 'testOptionLabel1', value: 'testOptionValue1' },
@@ -32,7 +33,7 @@ storiesOf('Forms', module).add('FieldSelect', () => (
         />
 
         <FieldSelect
-          name="testField"
+          name="testField2"
           label="Test select with children"
           hint="Some hint"
           emptyOption={text('emptyOption', 'Please select')}
