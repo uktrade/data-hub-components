@@ -30,9 +30,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint",
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint"
   },
   "dependencies": {
     "@babel/runtime": "^7.4.5",
@@ -125,6 +128,7 @@
     "jest": "^24.8.0",
     "jest-junit": "^6.4.0",
     "jest-styled-components": "^6.3.3",
+    "lint-staged": "^10.2.11",
     "mockdate": "^2.0.2",
     "nock": "^10.0.6",
     "prettier": "^1.18.2",
