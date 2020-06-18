@@ -14,7 +14,7 @@ function padZero(value) {
 function normaliseAndFormatDate(year, month, day) {
   const y = padZero(year)
   const m = padZero(month)
-  const yearAndMonth = `${padZero(y)}-${padZero(m)}`
+  const yearAndMonth = `${y}-${m}`
   return day ? `${yearAndMonth}-${padZero(day)}` : yearAndMonth
 }
 
@@ -34,13 +34,5 @@ export default class DateUtils {
 
   static isShortDateValid(year, month) {
     return DateUtils.isDateValid(year, month, null, DATE_FORMAT_SHORT)
-  }
-
-  static transformValueForAPI({ year, month, day = 1 }) {
-    if (year && month && day) {
-      return normaliseAndFormatDate(year, month, day)
-    }
-
-    return null
   }
 }
