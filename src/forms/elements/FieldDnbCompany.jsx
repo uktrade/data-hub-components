@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { isEmpty, omitBy } from 'lodash'
 import styled from 'styled-components'
+import pluralize from 'pluralize'
 
 import { WIDTHS, SPACING } from '@govuk-react/constants'
 import { Search } from '@govuk-react/icons'
@@ -32,12 +33,12 @@ const StyledUnorderedList = styled(UnorderedList)`
 
 const validateMinLength = (minLength) => (value) =>
   value && value.length < minLength
-    ? `Enter company name that is ${minLength} characters long or more`
+    ? `Enter at least ${pluralize('character', minLength, true)}`
     : null
 
 const validateMaxLength = (maxLength) => (value) =>
   value && value.length > maxLength
-    ? `Enter company name that is no longer than ${maxLength} characters`
+    ? `${pluralize('character', value.length - maxLength, true)} too long`
     : null
 
 const FieldDnbCompany = ({

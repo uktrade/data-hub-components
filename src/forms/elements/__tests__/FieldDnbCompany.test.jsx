@@ -186,8 +186,8 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should show an error', () => {
-      expect(wrapper.text()).toContain(
-        'Enter company name that is 2 characters long or more'
+      expect(wrapper.find('ErrorText').text()).toEqual(
+        'Enter at least 2 characters'
       )
     })
   })
@@ -211,9 +211,7 @@ describe('FieldDnbCompany', () => {
     })
 
     test('should show an error', () => {
-      expect(wrapper.text()).toContain(
-        'Enter company name that is no longer than 30 characters'
-      )
+      expect(wrapper.find('ErrorText').text()).toEqual('3 characters too long')
     })
   })
 
