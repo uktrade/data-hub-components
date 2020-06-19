@@ -32,7 +32,8 @@ const FieldSelect = ({
         meta={{ error, touched }}
         input={{
           id: name,
-          defaultValue: value,
+          value,
+          readOnly: true,
           ...rest,
         }}
       >
@@ -41,17 +42,11 @@ const FieldSelect = ({
             {emptyOption}
           </option>
         )}
-        {options.map(({ label: optionLabel, value: optionValue }) => {
-          const additionalProps = {}
-          if (value === optionValue) {
-            additionalProps.selected = 'selected'
-          }
-          return (
-            <option key={optionValue} value={optionValue} {...additionalProps}>
-              {optionLabel}
-            </option>
-          )
-        })}
+        {options.map(({ label: optionLabel, value: optionValue }) => (
+          <option key={optionValue} value={optionValue}>
+            {optionLabel}
+          </option>
+        ))}
       </Select>
       {options.find((o) => o.value === value)?.children}
     </FieldWrapper>
