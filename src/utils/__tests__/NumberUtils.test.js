@@ -60,4 +60,16 @@ describe('NumberUtils.js', () => {
       expect('$1,200,000').toEqual(expected)
     })
   })
+
+  describe('the roundToSignificantDigits() function', () => {
+    test('should return null when the value is null', () => {
+      expect(NumberUtils.roundToSignificantDigits(null, 2)).toEqual(null)
+    })
+
+    test('should round to 2 significant digits (not scientific notation)', () => {
+      expect(NumberUtils.roundToSignificantDigits(104, 2)).toEqual(100)
+      expect(NumberUtils.roundToSignificantDigits(105, 2)).toEqual(110)
+      expect(NumberUtils.roundToSignificantDigits(106, 2)).toEqual(110)
+    })
+  })
 })
