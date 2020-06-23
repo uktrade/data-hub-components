@@ -38,4 +38,12 @@ export default class NumberUtils {
 
     return formatter.format(number)
   }
+
+  static roundToSignificantDigits(number, sigDig) {
+    if (!number && number !== 0) {
+      return null
+    }
+
+    return Number(number.toPrecision(sigDig))
+  }
 }
