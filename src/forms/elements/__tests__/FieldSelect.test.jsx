@@ -175,12 +175,19 @@ describe('FieldSelect', () => {
         .simulate('change', { target: { value: 'testOptionValue2' } })
     })
 
-    test('should update the field value', () => {
-      expect(wrapper.find('select').prop('value')).toEqual('testOptionValue2')
+    test('should update the defaultValue', () => {
+      expect(wrapper.find('select').prop('defaultValue')).toEqual(
+        'testOptionValue2'
+      )
     })
 
-    test('should set the readonly flag', () => {
-      expect(wrapper.find('select').prop('readOnly')).toEqual(true)
+    test('should have a selected attribute', () => {
+      expect(
+        wrapper
+          .find('select option')
+          .first()
+          .html()
+      ).toContain('selected')
     })
 
     test('should update value in form state', () => {
