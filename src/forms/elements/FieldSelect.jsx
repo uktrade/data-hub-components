@@ -32,8 +32,7 @@ const FieldSelect = ({
         meta={{ error, touched }}
         input={{
           id: name,
-          value,
-          readOnly: true,
+          defaultValue: value,
           ...rest,
         }}
       >
