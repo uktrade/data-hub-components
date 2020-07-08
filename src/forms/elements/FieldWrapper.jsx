@@ -7,6 +7,7 @@ import HintText from '@govuk-react/hint-text'
 import { ERROR_COLOUR, GREY_2 } from 'govuk-colours'
 import {
   BORDER_WIDTH_FORM_ELEMENT_ERROR,
+  FONT_WEIGHTS,
   SPACING,
 } from '@govuk-react/constants'
 import Paragraph from '@govuk-react/paragraph'
@@ -51,6 +52,7 @@ const StyledLegend = styled('legend')`
 
 const StyledLabel = styled(Label)`
   padding-bottom: ${SPACING.SCALE_1};
+  font-weight: ${FONT_WEIGHTS.bold};
 `
 
 const StyledHint = styled(HintText)`
