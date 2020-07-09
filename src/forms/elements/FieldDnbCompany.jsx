@@ -132,7 +132,9 @@ const FieldDnbCompany = ({
           )}
 
           {!error && entities.length === 0 && (
-            <StatusMessage>There are no companies to show.</StatusMessage>
+            <StatusMessage>
+              No match found. Try one of the options below.
+            </StatusMessage>
           )}
 
           {error && (
@@ -145,16 +147,16 @@ const FieldDnbCompany = ({
             <Paragraph>Try:</Paragraph>
 
             <StyledUnorderedList>
+              <ListItem>checking or removing the postcode</ListItem>
+              <ListItem>
+                removing &quot;limited&quot; or &quot;ltd&quot;
+              </ListItem>
               <ListItem>checking for spelling errors</ListItem>
               {country && (
                 <ListItem>checking if the right country was selected</ListItem>
               )}
               <ListItem>
                 check you&apos;re using the company&apos;s registered name
-              </ListItem>
-              <ListItem>checking or removing the postcode</ListItem>
-              <ListItem>
-                removing &quot;limited&quot; or &quot;ltd&quot;
               </ListItem>
             </StyledUnorderedList>
 
