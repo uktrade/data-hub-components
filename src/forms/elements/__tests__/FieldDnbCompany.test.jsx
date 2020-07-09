@@ -280,7 +280,7 @@ describe('FieldDnbCompany', () => {
 
     test('should show a warning', () => {
       expect(wrapper.find(StatusMessage).text()).toEqual(
-        'There are no companies to show.'
+        'No match found. Try one of the options below.'
       )
     })
 
@@ -341,10 +341,10 @@ describe('FieldDnbCompany', () => {
       await performSearch(fieldWrapper)
 
       expect(fieldWrapper.find('ul').text()).toEqual(
-        'checking for spelling errors' +
-          "check you're using the company's registered name" +
-          'checking or removing the postcode' +
-          'removing "limited" or "ltd"'
+        'checking or removing the postcode' +
+          'removing "limited" or "ltd"' +
+          'checking for spelling errors' +
+          "check you're using the company's registered name"
       )
     })
   })
@@ -361,11 +361,11 @@ describe('FieldDnbCompany', () => {
       await performSearch(fieldWrapper)
 
       expect(fieldWrapper.find('ul').text()).toEqual(
-        'checking for spelling errors' +
+        'checking or removing the postcode' +
+          'removing "limited" or "ltd"' +
+          'checking for spelling errors' +
           'checking if the right country was selected' +
-          "check you're using the company's registered name" +
-          'checking or removing the postcode' +
-          'removing "limited" or "ltd"'
+          "check you're using the company's registered name"
       )
     })
   })
