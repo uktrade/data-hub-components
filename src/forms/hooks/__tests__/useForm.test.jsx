@@ -801,7 +801,7 @@ describe('useForm', () => {
 
   describe('when form was submitted and redirection URL was set', () => {
     beforeAll(async () => {
-      window.location.assign = jest.fn()
+      window.location = { assign: jest.fn() }
 
       const onSubmit = () => 'http://example.com'
 

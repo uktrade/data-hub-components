@@ -15,22 +15,23 @@
     "url": "git@github.com:uktrade/data-hub-components.git"
   },
   "scripts": {
-    "start": "yarn storybook",
+    "start": "npm run storybook",
     "build": "rimraf dist && NODE_ENV=production babel src --out-dir dist --ignore '**/*.stories.jsx,**/*.test.jsx,**/*.test.js,**/__snapshots__,**/__tests__,**/__mocks__,**/__fixtures__'",
     "test": "jest",
     "test:update": "jest --updateSnapshot",
     "lint": "eslint './src/**/*.{js,jsx}'",
-    "lint:fix": "yarn lint --fix",
+    "lint:fix": "npm run lint --fix",
     "storybook": "start-storybook -p ${PORT:-9001}",
     "storybook:build": "rimraf storybook-static && build-storybook --quiet",
-    "storybook:release": "yarn storybook:build && cp -R ./.circleci ./storybook-static/.circleci && git-directory-deploy --directory storybook-static --branch gh-pages",
-    "prepack": "yarn build",
+    "storybook:release": "npm run storybook:build && cp -R ./.circleci ./storybook-static/.circleci && git-directory-deploy --directory storybook-static --branch gh-pages",
+    "prepack": "npm run build",
     "release": "semantic-release --debug",
-    "postpublish": "[[ $CI == true ]] && yarn storybook:release || echo 'Not on CI, skipping deployment to GH pages'"
+    "postpublish": "[[ $CI == true ]] && npm run storybook:release || echo 'Not on CI, skipping deployment to GH pages'",
+    "preinstall": "npx npm-force-resolutions"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint",
+      "pre-commit": "npm run lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -69,7 +70,7 @@
     "@govuk-react/visually-hidden": "^0.7.1",
     "axios": "^0.19.0",
     "constate": "^1.2.0",
-    "govuk-colours": "^1.0.3",
+    "govuk-colours": "^1.1.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "pluralize": "^8.0.0",
@@ -122,7 +123,7 @@
     "eslint-plugin-react-hooks": "^1.6.1",
     "git-directory-deploy": "^1.5.1",
     "husky": "^3.0.2",
-    "jest": "^24.8.0",
+    "jest": "^26.1.0",
     "jest-junit": "^6.4.0",
     "jest-styled-components": "^6.3.3",
     "mockdate": "^2.0.2",
@@ -158,5 +159,8 @@
   "jest-junit": {
     "outputDirectory": "test-results/jest",
     "outputName": "results.xml"
+  },
+  "resolutions": {
+    "kind-of": "^6.0.3"
   }
 }

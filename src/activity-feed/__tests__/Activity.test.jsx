@@ -6,17 +6,17 @@ import MockDate from 'mockdate'
 
 import Activity from '../Activity'
 
-import companiesHouseAccountsDueFixture from '../__fixtures__/companies_house/accounts_are_due'
-import companiesHouseCompaniesFixture from '../__fixtures__/companies_house/incorporated'
-import hmrcExportersFixture from '../__fixtures__/hmrc/export_of_goods'
-import interactionActivityFixture from '../__fixtures__/interactions/interaction'
-import serviceDeliveryActivityFixture from '../__fixtures__/interactions/service_delivery'
-import investmentProjectsCTIFixture from '../__fixtures__/investment_projects/project_added_cti'
-import investmentProjectsFDIFixture from '../__fixtures__/investment_projects/project_added_fdi'
-import investmentProjectsNonFDIFixture from '../__fixtures__/investment_projects/project_added_non_fdi'
-import orderAddedFixture from '../__fixtures__/omis/order_added'
-import completeReferralFixture from '../__fixtures__/referrals/completeReferral'
-import outstandingReferralFixture from '../__fixtures__/referrals/outstandingReferral'
+import companiesHouseAccountsDueFixture from '../__fixtures__/companies_house/accounts_are_due.json'
+import companiesHouseCompaniesFixture from '../__fixtures__/companies_house/incorporated.json'
+import hmrcExportersFixture from '../__fixtures__/hmrc/export_of_goods.json'
+import interactionActivityFixture from '../__fixtures__/interactions/interaction.json'
+import serviceDeliveryActivityFixture from '../__fixtures__/interactions/service_delivery.json'
+import investmentProjectsCTIFixture from '../__fixtures__/investment_projects/project_added_cti.json'
+import investmentProjectsFDIFixture from '../__fixtures__/investment_projects/project_added_fdi.json'
+import investmentProjectsNonFDIFixture from '../__fixtures__/investment_projects/project_added_non_fdi.json'
+import orderAddedFixture from '../__fixtures__/omis/order_added.json'
+import completeReferralFixture from '../__fixtures__/referrals/completeReferral.json'
+import outstandingReferralFixture from '../__fixtures__/referrals/outstandingReferral.json'
 
 // Lock the date so moment's relative date doesn't break our deterministic tests.
 MockDate.set(1559750582706)

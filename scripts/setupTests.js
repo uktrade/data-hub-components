@@ -11,13 +11,20 @@ configure({ adapter: new Adapter() })
 // See: https://github.com/reactjs/react-transition-group/issues/436
 const reactTransitionGroup = {
   ...jest.requireActual('react-transition-group'),
-  CSSTransition: ({ children }) => <>{children}</>
+  CSSTransition: ({ children }) => <>{children}</>,
 }
 jest.setMock('react-transition-group', reactTransitionGroup)
 
+// As jsdom does not support window.navigation, window.scrollTo or window.assign we need
+// to remove any methods globally and spy on them using jest.fn().
+delete window.scrollTo
+delete window.location
+window.scrollTo = jest.fn()
+window.location = { assign: jest.fn() }
 
 // Type checking with prop-types in Jest
 // See: https://medium.com/shark-bytes/type-checking-with-prop-types-in-jest-e0cd0dc92d5
+
 const originalConsoleError = console.error
 console.error = (message, params) => {
   if (/(Failed prop type)/.test(message)) {
@@ -26,6 +33,3 @@ console.error = (message, params) => {
 
   originalConsoleError(message, params)
 }
-
-window.location.assign = jest.fn()
-window.scrollTo = jest.fn()

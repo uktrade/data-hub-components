@@ -1,4 +1,4 @@
-import outstandingReferral from '../../__fixtures__/referrals/outstandingReferral'
+import outstandingReferral from '../../__fixtures__/referrals/outstandingReferral.json'
 import completeReferral from '../../__fixtures__/referrals/completeReferral.json'
 import ReferralUtils from '../ReferralUtils'
 
@@ -18,7 +18,7 @@ describe('ReferralUtils.js', () => {
         const status = ReferralUtils.getStatus(outstandingReferral)
         expect(status).toEqual({
           text: 'Outstanding referral',
-          borderColour: '#005ea5',
+          borderColour: '#1d70b8',
         })
       })
     })

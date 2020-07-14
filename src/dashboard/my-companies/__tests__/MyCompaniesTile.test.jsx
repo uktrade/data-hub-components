@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 import MyCompaniesTile from '../MyCompaniesTile'
 import MyCompaniesTable from '../MyCompaniesTable'
 import useMyCompaniesContext from '../useMyCompaniesContext'
-import companies from '../../__fixtures__/companies'
+import companies from '../../__fixtures__/companies.json'
 
 const fixture = (lists) =>
   mount(

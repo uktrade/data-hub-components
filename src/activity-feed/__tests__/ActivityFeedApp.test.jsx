@@ -1,26 +1,23 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import nock from 'nock'
+import axios from 'axios'
 import Select from '@govuk-react/select'
 import { act } from 'react-dom/test-utils'
 
 import ActivityFeedApp from '../ActivityFeedApp'
 import ActivityFeedAction from '../ActivityFeedAction'
 import SelectFilter from '../filters/SelectFilter'
-import esResults from '../__fixtures__/activity-feed-from-es'
+import esResults from '../__fixtures__/activity-feed-from-es.json'
 import { ACTIVITY_TYPE_FILTERS } from '../constants'
 import { flushPromises } from '../../utils/enzyme'
+
+jest.mock('axios')
 
 describe('ActivityFeedApp', () => {
   const companyId = '0f5216e0-849f-11e6-ae22-56b6b6499611'
   const basePath = 'http://localhost:3000'
   const endpoint = `/companies/${companyId}/activity-feed/data`
-  const query = {
-    from: 0,
-    size: 20,
-    activityTypeFilter: 'dataHubActivity',
-    showDnbHierarchy: false,
-  }
+
   const ActivityFeedButtons = (
     <>
       <ActivityFeedAction text="Refer this company" link="/referral" />
@@ -32,15 +29,10 @@ describe('ActivityFeedApp', () => {
   )
 
   let wrapper
-  let scope
 
   describe('when retrieveing the activities - success', () => {
     beforeAll(async () => {
-      scope = nock(basePath)
-        .get(endpoint)
-        .query(query)
-        .reply(200, esResults)
-
+      axios.get.mockResolvedValue({ data: esResults })
       wrapper = mount(
         <ActivityFeedApp
           activityTypeFilter="dataHubActivity"
@@ -51,13 +43,9 @@ describe('ActivityFeedApp', () => {
           isTypeFilterFlagEnabled={true}
         />
       )
-
       await act(flushPromises)
-
       wrapper.update()
     })
-
-    afterAll(() => scope.done)
 
     test('it should update the activities state', () => {
       const expected = esResults.hits.hits.map((hit) => hit._source)
@@ -88,11 +76,7 @@ describe('ActivityFeedApp', () => {
 
   describe('when retrieveing the activities - failure', () => {
     beforeAll(async () => {
-      scope = nock(basePath)
-        .get(endpoint)
-        .query(query)
-        .reply(400)
-
+      axios.get.mockResolvedValue({ status: 400 })
       wrapper = mount(
         <ActivityFeedApp
           activityTypeFilter="dataHubActivity"
@@ -108,8 +92,6 @@ describe('ActivityFeedApp', () => {
 
       wrapper.update()
     })
-
-    afterAll(() => scope.done)
 
     test('it should update the activities state', () => {
       const state = wrapper.find(ActivityFeedApp).state()
@@ -134,10 +116,7 @@ describe('ActivityFeedApp', () => {
 
   describe('when the Activity Type filter is changed to "externalActivity"', () => {
     beforeAll(async () => {
-      scope = nock(basePath)
-        .get(endpoint)
-        .query(query)
-        .reply(200, esResults)
+      axios.get.mockResolvedValue({ data: esResults })
 
       wrapper = mount(
         <ActivityFeedApp
@@ -158,8 +137,6 @@ describe('ActivityFeedApp', () => {
 
       wrapper.update()
     })
-
-    afterAll(() => scope.done)
 
     test('should display the SelectFilter component with the selected value', () => {
       const selectFilter = wrapper.find(SelectFilter)

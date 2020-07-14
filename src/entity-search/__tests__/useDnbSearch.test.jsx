@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks'
 
 import useDnbSearch from '../useDnbSearch'
-import searchResultsFixture from '../__fixtures__/company-search'
+import searchResultsFixture from '../__fixtures__/company-search.json'
 import { setupErrorMocks, setupSuccessMocks } from '../__mocks__/company-search'
 
 const API_ENDPOINT = 'http://localhost:8000/v4/dnb/company-search'
