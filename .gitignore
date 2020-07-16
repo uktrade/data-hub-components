@@ -83,3 +83,4 @@ storybook-static/
 # Yarn config
 .yarn/
 .yarnrc
+yarn.lock
