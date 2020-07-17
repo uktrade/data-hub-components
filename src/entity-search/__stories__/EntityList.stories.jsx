@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import useDnbSearch from '../useDnbSearch'
-import companySearchFixture from '../__fixtures__/company-search'
+import companySearchFixture from '../__fixtures__/company-search.json'
 import EntityList from '../EntityList'
 
 const { transformCompanyRecord } = useDnbSearch(

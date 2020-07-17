@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
 import CollectionList from '../CollectionList'
 
-import profilesFixture from '../__fixtures__/capitalProfiles'
+import profilesFixture from '../__fixtures__/capitalProfiles.json'
 
 const collectionStories = storiesOf('Collection', module)
 

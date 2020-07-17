@@ -119,7 +119,7 @@ describe('FieldAddress', () => {
     })
   })
 
-  describe(`when clicking the "Find UK address" button with the postcode ${POSTCODE}`, () => {
+  describe('when clicking the "Find UK address" button with the postcode', () => {
     let axiosMock
     let listItems
     beforeAll(async () => {

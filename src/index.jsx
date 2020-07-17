@@ -2,24 +2,14 @@
 export { default as ActivityFeed } from './activity-feed/ActivityFeed'
 export { default as ActivityFeedApp } from './activity-feed/ActivityFeedApp'
 export { default as Activity } from './activity-feed/Activity'
-export {
-  default as ActivityFeedFilters,
-} from './activity-feed/ActivityFeedFilters'
-export {
-  default as ActivityFeedHeader,
-} from './activity-feed/ActivityFeedHeader'
-export {
-  default as ActivityFeedPagination,
-} from './activity-feed/ActivityFeedPagination'
-export {
-  default as ActivityFeedAction,
-} from './activity-feed/ActivityFeedAction'
+export { default as ActivityFeedFilters } from './activity-feed/ActivityFeedFilters'
+export { default as ActivityFeedHeader } from './activity-feed/ActivityFeedHeader'
+export { default as ActivityFeedPagination } from './activity-feed/ActivityFeedPagination'
+export { default as ActivityFeedAction } from './activity-feed/ActivityFeedAction'
 
 // Address search
 export { default as useAddressSearch } from './address-search/useAddressSearch'
-export {
-  default as usePostcodeLookup,
-} from './address-search/usePostcodeLookup'
+export { default as usePostcodeLookup } from './address-search/usePostcodeLookup'
 
 // Badge
 export { default as Badge } from './badge/Badge'
@@ -32,21 +22,13 @@ export { default as CollectionList } from './collection-list/CollectionList'
 export { default as CollectionItem } from './collection-list/CollectionItem'
 
 // Company lists
-export {
-  default as DeleteCompanyListSection,
-} from './company-lists/DeleteCompanyListSection'
+export { default as DeleteCompanyListSection } from './company-lists/DeleteCompanyListSection'
 export { default as CreateListForm } from './company-lists/CreateListForm'
-export {
-  default as AddRemoveFromListForm,
-} from './company-lists/AddRemoveFromListForm'
+export { default as AddRemoveFromListForm } from './company-lists/AddRemoveFromListForm'
 
 // Dashboard
-export {
-  default as MyCompaniesTile,
-} from './dashboard/my-companies/MyCompaniesTile'
-export {
-  default as useMyCompaniesContext,
-} from './dashboard/my-companies/useMyCompaniesContext'
+export { default as MyCompaniesTile } from './dashboard/my-companies/MyCompaniesTile'
+export { default as useMyCompaniesContext } from './dashboard/my-companies/useMyCompaniesContext'
 
 // Entity search
 export { default as useDnbSearch } from './entity-search/useDnbSearch'

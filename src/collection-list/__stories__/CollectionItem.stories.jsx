@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react'
 
 import CollectionItem from '../CollectionItem'
 
-import capitalProfileItem from '../__fixtures__/capitalProfileItem'
-import interactionItem from '../__fixtures__/interactionItem'
+import capitalProfileItem from '../__fixtures__/capitalProfileItem.json'
+import interactionItem from '../__fixtures__/interactionItem.json'
 
 const collectionStories = storiesOf('Collection', module)
 

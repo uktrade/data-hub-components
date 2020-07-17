@@ -1,7 +1,7 @@
 import MockAdapter from 'axios-mock-adapter'
 import axios from 'axios'
 
-import addressSearch from '../__fixtures__/address-search-SW1H 9AJ'
+import addressSearch from '../__fixtures__/address-search-SW1H 9AJ.json'
 
 export function setupPostcodeMock200(apiEndpoint, adapterOptions = {}) {
   const mock = new MockAdapter(axios, adapterOptions)

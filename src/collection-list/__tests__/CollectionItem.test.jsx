@@ -6,8 +6,8 @@ import Metadata from '../../metadata/Metadata'
 import Badge from '../../badge/Badge'
 import MetadataItem from '../../metadata/MetadataItem'
 
-import capitalProfileItem from '../__fixtures__/capitalProfileItem'
-import interactionItem from '../__fixtures__/interactionItem'
+import capitalProfileItem from '../__fixtures__/capitalProfileItem.json'
+import interactionItem from '../__fixtures__/interactionItem.json'
 
 describe('CollectionItem', () => {
   let wrapper

@@ -8,23 +8,15 @@ jobs:
           CI: true
     steps:
       - checkout
-      - restore_cache:
-          name: Restore downloaded packages from cache
-          key: yarn-dependency-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
       - run:
           name: Install node packages
-          command: yarn install --frozen-lockfile
-      - save_cache:
-          name: Save downloaded packages to cache
-          key: yarn-dependency-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
-          paths:
-            - node_modules
+          command: npm ci
       - run:
           name: Run linter
-          command: yarn lint
+          command: npm run lint
       - run:
           name: Run tests
-          command: yarn test --verbose --logHeapUsage --maxWorkers=2
+          command: npm run test --verbose --logHeapUsage --maxWorkers=2
       - store_artifacts:
           path: test-results
       - store_test_results:
@@ -34,7 +26,7 @@ jobs:
           command: bash <(curl -s https://codecov.io/bash) -f test-results/coverage/coverage-final.json
       - run:
           name: Release to npm (only on master)
-          command: yarn release
+          command: npm run release
 
 workflows:
   version: 2

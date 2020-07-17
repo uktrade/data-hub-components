@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import CollectionList from '../CollectionList'
-import profilesFixture from '../__fixtures__/capitalProfiles'
+import profilesFixture from '../__fixtures__/capitalProfiles.json'
 import Pagination from '../../pagination/Pagination'
 import CollectionHeader from '../CollectionHeader'
 import CollectionItem from '../CollectionItem'

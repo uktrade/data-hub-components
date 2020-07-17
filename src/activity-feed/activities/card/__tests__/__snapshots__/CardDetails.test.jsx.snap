@@ -18,7 +18,7 @@ exports[`CardDetails when link provided should render the card 1`] = `
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -27,10 +27,10 @@ exports[`CardDetails when link provided should render the card 1`] = `
 }
 
 .c2:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c2::-webkit-details-marker {
@@ -95,7 +95,7 @@ exports[`CardDetails when link provided should render the card 1`] = `
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -115,9 +115,9 @@ exports[`CardDetails when link provided should render the card 1`] = `
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c1 {
@@ -231,7 +231,7 @@ exports[`CardDetails when no link provided should still render the card 1`] = `
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -240,10 +240,10 @@ exports[`CardDetails when no link provided should still render the card 1`] = `
 }
 
 .c2:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c2::-webkit-details-marker {
@@ -389,7 +389,7 @@ exports[`CardDetails when the details for all activities are hidden should open 
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -398,10 +398,10 @@ exports[`CardDetails when the details for all activities are hidden should open 
 }
 
 .c2:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c2::-webkit-details-marker {
@@ -466,7 +466,7 @@ exports[`CardDetails when the details for all activities are hidden should open 
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -486,9 +486,9 @@ exports[`CardDetails when the details for all activities are hidden should open 
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c1 {
@@ -602,7 +602,7 @@ exports[`CardDetails when the details for all activities are shown should open t
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -611,10 +611,10 @@ exports[`CardDetails when the details for all activities are shown should open t
 }
 
 .c2:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c2::-webkit-details-marker {
@@ -679,7 +679,7 @@ exports[`CardDetails when the details for all activities are shown should open t
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -699,9 +699,9 @@ exports[`CardDetails when the details for all activities are shown should open t
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c1 {

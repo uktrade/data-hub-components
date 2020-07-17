@@ -23,7 +23,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -32,10 +32,10 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -100,7 +100,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 .c6:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6:visited {
@@ -120,9 +120,9 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 }
 
 .c6:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -168,7 +168,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
   font-weight: normal;
   color: white;
   padding: 2px 5px;
-  background-color: #005ea5;
+  background-color: #1d70b8;
   margin-bottom: 10px;
 }
 
@@ -197,7 +197,7 @@ exports[`Activity when a New OMIS order is added should render an activity card 
 .c5 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c7 {
@@ -721,7 +721,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -730,10 +730,10 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -798,7 +798,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 .c6:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6:visited {
@@ -818,9 +818,9 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 }
 
 .c6:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -866,7 +866,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
   font-weight: normal;
   color: white;
   padding: 2px 5px;
-  background-color: #005ea5;
+  background-color: #1d70b8;
   margin-bottom: 10px;
 }
 
@@ -895,7 +895,7 @@ exports[`Activity when an investment project is CTI should render the CTI invest
 .c5 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c7 {
@@ -1375,7 +1375,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -1384,10 +1384,10 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -1452,7 +1452,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 .c6:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6:visited {
@@ -1472,9 +1472,9 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 }
 
 .c6:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -1520,7 +1520,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
   font-weight: normal;
   color: white;
   padding: 2px 5px;
-  background-color: #005ea5;
+  background-color: #1d70b8;
   margin-bottom: 10px;
 }
 
@@ -1549,7 +1549,7 @@ exports[`Activity when an investment project is FDI should render the FDI invest
 .c5 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c7 {
@@ -2163,7 +2163,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -2172,10 +2172,10 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -2240,7 +2240,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 .c6:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6:visited {
@@ -2260,9 +2260,9 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 }
 
 .c6:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -2308,7 +2308,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
   font-weight: normal;
   color: white;
   padding: 2px 5px;
-  background-color: #005ea5;
+  background-color: #1d70b8;
   margin-bottom: 10px;
 }
 
@@ -2337,7 +2337,7 @@ exports[`Activity when an investment project is Non-FDI should render the Non-FD
 .c5 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c7 {
@@ -2861,7 +2861,7 @@ exports[`Activity when the interaction does not have a service should render int
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -2870,10 +2870,10 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -2938,7 +2938,7 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -2958,9 +2958,9 @@ exports[`Activity when the interaction does not have a service should render int
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -3034,7 +3034,7 @@ exports[`Activity when the interaction does not have a service should render int
 .c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -3446,7 +3446,7 @@ exports[`Activity when the interaction is a draft and archived should render int
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -3455,10 +3455,10 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -3523,7 +3523,7 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -3543,9 +3543,9 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -3587,7 +3587,7 @@ exports[`Activity when the interaction is a draft and archived should render int
 }
 
 .c9 {
-  border: 2px solid #b10e1e;
+  border: 2px solid #d4351c;
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
@@ -3619,7 +3619,7 @@ exports[`Activity when the interaction is a draft and archived should render int
 .c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -4180,7 +4180,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -4189,10 +4189,10 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -4257,7 +4257,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -4277,9 +4277,9 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -4321,7 +4321,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 }
 
 .c9 {
-  border: 2px solid #005ea5;
+  border: 2px solid #1d70b8;
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
@@ -4353,7 +4353,7 @@ exports[`Activity when the interaction is a draft and upcoming should render int
 .c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -4914,7 +4914,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -4923,10 +4923,10 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -4991,7 +4991,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -5011,9 +5011,9 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -5055,7 +5055,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
 }
 
 .c9 {
-  border: 2px solid #005ea5;
+  border: 2px solid #1d70b8;
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
@@ -5087,7 +5087,7 @@ exports[`Activity when the interaction is a draft in the past should render inte
 .c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -5648,7 +5648,7 @@ exports[`Activity when the interaction is complete should render interaction act
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -5657,10 +5657,10 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -5725,7 +5725,7 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -5745,9 +5745,9 @@ exports[`Activity when the interaction is complete should render interaction act
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -5821,7 +5821,7 @@ exports[`Activity when the interaction is complete should render interaction act
 .c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -6382,7 +6382,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -6391,10 +6391,10 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -6459,7 +6459,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 .c19:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c19:visited {
@@ -6479,9 +6479,9 @@ exports[`Activity when there is a Companies House Accounts record should render 
 }
 
 .c19:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -6556,7 +6556,7 @@ exports[`Activity when there is a Companies House Accounts record should render 
 .c6 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5 {
@@ -6993,7 +6993,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -7002,10 +7002,10 @@ exports[`Activity when there is a Companies House Company incorporation record s
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -7135,7 +7135,7 @@ exports[`Activity when there is a Companies House Company incorporation record s
 .c6 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5 {
@@ -7696,7 +7696,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -7705,10 +7705,10 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -7838,7 +7838,7 @@ exports[`Activity when there is a HMRC Exporter record should render an activity
 .c6 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5 {
@@ -8259,7 +8259,7 @@ exports[`Activity when there is a completed referral should render an complete r
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -8279,9 +8279,9 @@ exports[`Activity when there is a completed referral should render an complete r
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c3 {
@@ -8340,7 +8340,7 @@ exports[`Activity when there is a completed referral should render an complete r
 .c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -8674,7 +8674,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -8694,9 +8694,9 @@ exports[`Activity when there is a outstanding referral should render an outstand
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c3 {
@@ -8723,7 +8723,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
 }
 
 .c9 {
-  border: 2px solid #005ea5;
+  border: 2px solid #1d70b8;
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 14px;
@@ -8755,7 +8755,7 @@ exports[`Activity when there is a outstanding referral should render an outstand
 .c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -9074,7 +9074,7 @@ exports[`Activity when there is a service delivery should render service deliver
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -9083,10 +9083,10 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -9151,7 +9151,7 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -9171,9 +9171,9 @@ exports[`Activity when there is a service delivery should render service deliver
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -9247,7 +9247,7 @@ exports[`Activity when there is a service delivery should render service deliver
 .c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -9747,7 +9747,7 @@ exports[`Activity when there is an interaction should render interaction activit
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -9756,10 +9756,10 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -9824,7 +9824,7 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -9844,9 +9844,9 @@ exports[`Activity when there is an interaction should render interaction activit
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -9920,7 +9920,7 @@ exports[`Activity when there is an interaction should render interaction activit
 .c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {
@@ -10481,7 +10481,7 @@ exports[`Activity when there is an interaction without any people involved shoul
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: #005ea5;
+  color: #1d70b8;
   cursor: pointer;
 }
 
@@ -10490,10 +10490,10 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 .c12:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #ffdd00;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #ffdd00;
 }
 
 .c12::-webkit-details-marker {
@@ -10558,7 +10558,7 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 .c5:link {
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c5:visited {
@@ -10578,9 +10578,9 @@ exports[`Activity when there is an interaction without any people involved shoul
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #ffdd00;
 }
 
 .c11 {
@@ -10654,7 +10654,7 @@ exports[`Activity when there is an interaction without any people involved shoul
 .c4 a:active {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #005ea5;
+  color: #1d70b8;
 }
 
 .c6 {

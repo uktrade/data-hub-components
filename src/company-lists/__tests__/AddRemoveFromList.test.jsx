@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 import { act } from 'react-dom/test-utils'
 
 import AddRemoveFromListForm from '../AddRemoveFromListForm'
-import listsWithCompany from '../__fixtures__/lists-with-company'
+import listsWithCompany from '../__fixtures__/lists-with-company.json'
 
 describe('AddRemoveFromList', () => {
   describe('When passing props', () => {

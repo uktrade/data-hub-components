@@ -114,7 +114,7 @@ describe('FieldInput', () => {
         .find(FieldWrapper)
         .find('div')
         .at(1)
-      expect(inputWrapper).toHaveStyleRule('border-left', '4px solid #b10e1e')
+      expect(inputWrapper).toHaveStyleRule('border-left', '4px solid #d4351c')
       expect(inputWrapper).toHaveStyleRule('margin-right', '15px')
       expect(inputWrapper).toHaveStyleRule('padding-left', '10px')
     })

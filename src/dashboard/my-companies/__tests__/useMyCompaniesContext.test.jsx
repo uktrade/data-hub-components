@@ -5,7 +5,7 @@ import useMyCompaniesContext, {
   reducer,
   filterCompanyName,
 } from '../useMyCompaniesContext'
-import companies from '../../__fixtures__/companies'
+import companies from '../../__fixtures__/companies.json'
 import { LIST_CHANGE, FILTER_CHANGE, ORDER_CHANGE } from '../constants'
 
 const initialState = {

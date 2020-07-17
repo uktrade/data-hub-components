@@ -10,10 +10,10 @@ import ActivityFeedHeader from '../ActivityFeedHeader'
 import ActivityFeedFilters from '../ActivityFeedFilters'
 import ActivityFeedPagination from '../ActivityFeedPagination'
 
-import companiesHouseAccountsDueFixture from '../__fixtures__/companies_house/accounts_are_due'
-import hmrcExportOfGoodsFixture from '../__fixtures__/hmrc/export_of_goods'
-import interactionActivityFixture from '../__fixtures__/interactions/interaction'
-import omisOrderAddedFixture from '../__fixtures__/omis/order_added'
+import companiesHouseAccountsDueFixture from '../__fixtures__/companies_house/accounts_are_due.json'
+import hmrcExportOfGoodsFixture from '../__fixtures__/hmrc/export_of_goods.json'
+import interactionActivityFixture from '../__fixtures__/interactions/interaction.json'
+import omisOrderAddedFixture from '../__fixtures__/omis/order_added.json'
 
 function generateActivities(total) {
   return Array.from({ length: total }, () => ({

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActivityFeedPagination renders default pagination 1`] = `
-.c2 {
+.c5 {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,36 +26,36 @@ exports[`ActivityFeedPagination renders default pagination 1`] = `
   margin-bottom: 22px;
 }
 
-.c2:focus {
-  outline: 3px solid #ffbf47;
+.c5:focus {
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
 }
 
-.c2:link,
-.c2:visited,
-.c2:active,
-.c2:hover {
+.c5:link,
+.c5:visited,
+.c5:active,
+.c5:hover {
   color: #000;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2::-moz-focus-inner {
+.c5::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-.c2:hover,
-.c2:focus {
+.c5:hover,
+.c5:focus {
   background-color: #d0d3d6;
 }
 
-.c2:active {
+.c5:active {
   top: 2px;
   box-shadow: none;
 }
 
-.c2::before {
+.c5::before {
   content: "";
   display: block;
   position: absolute;
@@ -66,37 +66,142 @@ exports[`ActivityFeedPagination renders default pagination 1`] = `
   background: transparent;
 }
 
-.c2:active::before {
+.c5:active::before {
   top: -4px;
 }
 
-.c2:disabled {
+.c5:disabled {
   opacity: 0.5;
   background: #dee0e2;
 }
 
-.c2:disabled:hover {
+.c5:disabled:hover {
   background-color: #dee0e2;
   cursor: default;
 }
 
-.c2:disabled:focus {
+.c5:disabled:focus {
   outline: none;
 }
 
-.c2:disabled:active {
+.c5:disabled:active {
   top: 0;
   box-shadow: 0 2px 0 #b5babe;
 }
 
-.c2 svg {
+.c5 svg {
   max-width: 15px;
+}
+
+.c3 {
+  -webkit-animation: caisTa 1s infinite linear;
+  animation: caisTa 1s infinite linear;
 }
 
 .c1 {
   position: relative;
   padding-bottom: 2px;
   min-height: 10px;
+}
+
+.c2 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 .icon-loading {
+  position: absolute;
+  z-index: 101;
+  opacity: 1;
+  display: block;
+  height: 100%;
+  max-height: calc(50vh + 100px);
+  -webkit-transition: opacity 800ms ease-in-out;
+  transition: opacity 800ms ease-in-out;
+  will-change: opacity;
+}
+
+.c2 .overlay {
+  z-index: 100;
+  -webkit-transition: background-color 800ms ease-in-out;
+  transition: background-color 800ms ease-in-out;
+  will-change: background-color;
+  background-color: rgba( 255, 255, 255, 1);
+}
+
+.c2 .fade-enter .overlay {
+  background-color: rgba( 255, 255, 255, 0);
+  -webkit-transition-duration: 800ms;
+  transition-duration: 800ms;
+}
+
+.c2 .fade-enter .icon-loading {
+  opacity: 0;
+  -webkit-transition-duration: 800ms;
+  transition-duration: 800ms;
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.c2 .fade-enter-active .overlay {
+  background-color: rgba( 255, 255, 255, 1);
+  -webkit-transition-duration: 800ms;
+  transition-duration: 800ms;
+}
+
+.c2 .fade-enter-active .icon-loading {
+  opacity: 1;
+  -webkit-transition-duration: 800ms;
+  transition-duration: 800ms;
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.c2 .fade-exit .overlay {
+  background-color: rgba( 255, 255, 255, 1);
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+}
+
+.c2 .fade-exit .icon-loading {
+  opacity: 1;
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+}
+
+.c2 .fade-exit-active .overlay {
+  background-color: rgba( 255, 255, 255, 0);
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+}
+
+.c2 .fade-exit-active .icon-loading {
+  opacity: 0;
+  -webkit-transition-duration: 0ms;
+  transition-duration: 0ms;
+}
+
+.c4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 .c0 {
@@ -106,33 +211,33 @@ exports[`ActivityFeedPagination renders default pagination 1`] = `
 }
 
 @media print {
-  .c2 {
+  .c5 {
     font-size: 14px;
     line-height: 19px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c2 {
+  .c5 {
     font-size: 19px;
     line-height: 19px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c2 {
+  .c5 {
     width: auto;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c2 svg {
+  .c5 svg {
     margin-left: 10px;
   }
 }
 
 @media only screen and (min-width:641px) {
-  .c2 {
+  .c5 {
     margin-bottom: 32px;
   }
 }
@@ -143,8 +248,214 @@ exports[`ActivityFeedPagination renders default pagination 1`] = `
   <div
     className="c1"
   >
-    <button
+    <div
       className="c2"
+      loading={false}
+    >
+      <svg
+        className="icon-loading"
+        fill="#0b0c0c"
+        height="50px"
+        preserveAspectRatio="xMidYMid meet"
+        style={
+          Object {
+            "display": "block",
+          }
+        }
+        version="1.1"
+        viewBox="-25 -25 50 50"
+        width="50px"
+      >
+        <title>
+          Loading
+        </title>
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "0ms",
+            }
+          }
+          transform="rotate(0, 0, 2) translate(10 0)"
+          width="12"
+        />
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "83ms",
+            }
+          }
+          transform="rotate(30, 0, 2) translate(10 0)"
+          width="12"
+        />
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "166ms",
+            }
+          }
+          transform="rotate(60, 0, 2) translate(10 0)"
+          width="12"
+        />
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "249ms",
+            }
+          }
+          transform="rotate(90, 0, 2) translate(10 0)"
+          width="12"
+        />
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "332ms",
+            }
+          }
+          transform="rotate(120, 0, 2) translate(10 0)"
+          width="12"
+        />
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "415ms",
+            }
+          }
+          transform="rotate(150, 0, 2) translate(10 0)"
+          width="12"
+        />
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "498ms",
+            }
+          }
+          transform="rotate(180, 0, 2) translate(10 0)"
+          width="12"
+        />
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "581ms",
+            }
+          }
+          transform="rotate(210, 0, 2) translate(10 0)"
+          width="12"
+        />
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "664ms",
+            }
+          }
+          transform="rotate(240, 0, 2) translate(10 0)"
+          width="12"
+        />
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "747ms",
+            }
+          }
+          transform="rotate(270, 0, 2) translate(10 0)"
+          width="12"
+        />
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "830ms",
+            }
+          }
+          transform="rotate(300, 0, 2) translate(10 0)"
+          width="12"
+        />
+        <rect
+          className="c3"
+          fill="#0b0c0c"
+          height="5"
+          opacity="0"
+          rx="2.5"
+          ry="2.5"
+          style={
+            Object {
+              "animationDelay": "913ms",
+            }
+          }
+          transform="rotate(330, 0, 2) translate(10 0)"
+          width="12"
+        />
+      </svg>
+      <div
+        className="c4 overlay"
+      />
+    </div>
+    <button
+      className="c5"
       disabled={false}
       onClick={[Function]}
     >
@@ -181,7 +492,7 @@ exports[`ActivityFeedPagination renders pagination with loader 1`] = `
 }
 
 .c5:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #ffdd00;
   outline-offset: 0;
 }
 
