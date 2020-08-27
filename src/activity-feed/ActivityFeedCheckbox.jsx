@@ -42,7 +42,11 @@ const StyledCheckbox = styled(Checkbox)`
 
 const ActivityFeedCheckbox = (props) => {
   const { children, ...rest } = props
-  return <StyledCheckbox {...rest}>{children}</StyledCheckbox>
+  return (
+    <StyledCheckbox aria-label="activity-across-all-companies" {...rest}>
+      {children}
+    </StyledCheckbox>
+  )
 }
 
 ActivityFeedCheckbox.propTypes = {
