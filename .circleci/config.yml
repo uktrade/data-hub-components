@@ -3,7 +3,7 @@ version: 2 # Do not upgrade to 2.1 until CircleCI CLI supports it
 jobs:
   build:
     docker:
-      - image: circleci/node:10.16.0
+      - image: circleci/node:10.18
         environment:
           CI: true
     steps:

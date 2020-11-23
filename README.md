@@ -42,12 +42,12 @@ const activities = []
 
 **Install dependencies**
 
-Recommended Node.js version: `10.16.0`
+Recommended Node.js version: `10.18.0`
 
 Recommended Yarn version: `1.16.0`
 
 ```bash
-nvm use # 10.16.0 from .nvmrc will be used
+nvm use # 10.18 from .nvmrc will be used
 npm i -g yarn@1.16.0
 yarn
 ```
