@@ -20,6 +20,10 @@
 [codecov-image]: https://codecov.io/gh/uktrade/data-hub-components/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/uktrade/data-hub-components
 
+-------
+This package will be deprecated on Monday 7th December.
+-------
+
 Collection of React Components used by the Data Hub platform.
 
 This component library makes heavy use of the [govuk-react](https://github.com/govuk-react/govuk-react) project.
