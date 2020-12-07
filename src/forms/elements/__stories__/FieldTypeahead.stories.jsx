@@ -34,7 +34,7 @@ storiesOf('Forms', module).add('FieldTypeahead', () => (
         <FieldTypeahead
           label="Typeahead - sync single value"
           hint="Some hint"
-          name="sync_single"
+          name="sync_single_1"
           required="Chose value"
           options={options}
         />
@@ -49,7 +49,7 @@ storiesOf('Forms', module).add('FieldTypeahead', () => (
         <FieldTypeahead
           label="Typeahead - initial value"
           hint="Some hint"
-          name="sync_single"
+          name="sync_single_2"
           required="Chose value"
           initialValue={options[1]}
           options={options}
@@ -68,6 +68,14 @@ storiesOf('Forms', module).add('FieldTypeahead', () => (
           required="Chose value"
           loadOptions={getOptions}
           isMulti={true}
+        />
+        <FieldTypeahead
+          label="Typeahead - sync with error message"
+          hint="Some hint"
+          name="sync_single_error"
+          required="Chose value"
+          errorMessage="My custom error message"
+          options={options}
         />
         <Button>Submit</Button>
         <pre>{JSON.stringify(state, null, 2)}</pre>

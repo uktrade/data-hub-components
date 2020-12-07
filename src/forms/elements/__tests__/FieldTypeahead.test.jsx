@@ -99,6 +99,27 @@ describe('FieldTypeahead', () => {
     })
   })
 
+  describe('with a custom error message', () => {
+    test('should render error message', () => {
+      const myErrorMesage = 'A custom error occurred'
+      const wrapper = mount(
+        <FormStateful>
+          <FieldTypeahead name="testField" errorMessage={myErrorMesage} />
+        </FormStateful>
+      )
+
+      expect(wrapper.find(ErrorText).text()).toEqual(myErrorMesage)
+
+      const inputWrapper = wrapper
+        .find(FieldWrapper)
+        .find('div')
+        .at(1)
+      expect(inputWrapper).toHaveStyleRule('border-left', '4px solid #b10e1e')
+      expect(inputWrapper).toHaveStyleRule('margin-right', '15px')
+      expect(inputWrapper).toHaveStyleRule('padding-left', '10px')
+    })
+  })
+
   describe('when the text is typed to the typeahead', () => {
     test('should update field value', async () => {
       const Value = () => {
