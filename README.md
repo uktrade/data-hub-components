@@ -21,7 +21,7 @@
 [codecov-url]: https://codecov.io/gh/uktrade/data-hub-components
 
 -------
-This package will be deprecated on Monday 7th December.
+As of Monday 7th December this package has been deprecated and will no longer be maintained. If you wish to view or use current versions of these components, they are available on the Data Hub [Storybook site](https://uktrade.github.io/data-hub-frontend) and [FE repository](https://github.com/uktrade/data-hub-frontend/tree/master/src/client/components).
 -------
 
 Collection of React Components used by the Data Hub platform.
