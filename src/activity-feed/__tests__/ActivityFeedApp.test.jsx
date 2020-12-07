@@ -130,7 +130,7 @@ describe('ActivityFeedApp', () => {
       )
 
       wrapper.find('select').simulate('change', {
-        target: { value: 'externalActivity' },
+        target: { value: 'externalActivity', id: 'externalActivityId' },
       })
 
       await act(flushPromises)
@@ -145,7 +145,10 @@ describe('ActivityFeedApp', () => {
 
     test('should display the Select component with the selected value', () => {
       const select = wrapper.find(Select)
-      expect(select.prop('input')).toEqual({ defaultValue: 'externalActivity' })
+      expect(select.prop('input')).toEqual({
+        defaultValue: 'externalActivity',
+        id: 'activity-types',
+      })
     })
 
     test('should pass the filter parameters up to this parent', () => {

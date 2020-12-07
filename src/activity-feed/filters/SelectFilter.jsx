@@ -47,9 +47,10 @@ const SelectFilter = ({ filters, onActivityTypeFilterChange, value }) => {
   return (
     <StyledDropdownContainer>
       <Select
-        input={{ defaultValue: value }}
+        input={{ defaultValue: value, id: 'activity-types' }}
         name="activity-types-filter"
         label="Activity types"
+        htmlFor="activity-types"
         onChange={onActivityTypeFilterChange}
       >
         {map(filters, (item, index) => {
